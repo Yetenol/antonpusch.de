@@ -3,7 +3,7 @@ dg-publish: true
 ---
 # Main examples
 
-![[./minimal 28.svg|minimal 28.svg]]
+![minimal 28.svg](./attachments/minimal%2028.svg)
 
 ```latex
 \documentclass{article}
@@ -58,7 +58,7 @@ dg-publish: true
 
 Problem: Booktabs creates gaps with row colors or vertical lines:
 
-![[./minimal 22.svg|minimal 22.svg]]
+![minimal 22.svg](./attachments/minimal%2022.svg)
 
 Solution
 
@@ -73,7 +73,7 @@ Solution
 !{\vrule width .08em}
 ```
 
-![[./minimal 25.svg|minimal 25.svg]]
+![minimal 25.svg](./attachments/minimal%2025.svg)
 
 Remove booktabs vertical space for conflicts
 

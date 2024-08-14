@@ -44,7 +44,7 @@ Multiple languages
 
 # Examples
 
-- import the file [[Listings - Print source code with syntax highlighting in latex with listings#Styling setup|yetenol-styles.sty]] for the required style definitions
+- import the file [yetenol-styles.sty](Listings%20-%20Print%20source%20code%20with%20syntax%20highlighting%20in%20latex%20with%20listings.md#Styling%20setup) for the required style definitions
 
 Add **inline** code within a paragraph.
 
@@ -59,7 +59,7 @@ Refer to the manual in \verb`README.md` for further information.
 \end{document}
 ```
 
-![[./inline code.svg|inline code.svg]]
+![inline code.svg](./attachments/inline%20code.svg)
 
 Create a code **block**
 
@@ -84,7 +84,7 @@ elif num > 1:
 \end{document}
 ```
 
-![[./code block.svg|code block.svg]]
+![code block.svg](./attachments/code%20block.svg)
 
 Print a source **file**'s content
 
@@ -100,7 +100,7 @@ Print a source **file**'s content
 \end{document}
 ```
 
-![[./code file colorful.svg|code file colorful.svg]]
+![code file colorful.svg](./attachments/code%20file%20colorful.svg)
 
 Add a snippet **caption** and a **label** for cross references
 
@@ -128,7 +128,7 @@ elif num > 1:
 \end{document}
 ```
 
-![[./caption label code.svg|caption label code.svg]]
+![caption label code.svg](./attachments/caption%20label%20code.svg)
 
 # Add custom styling
 
@@ -221,15 +221,16 @@ Try the package `\usepackage{amsmath}` instead.
 \end{document}
 ```
 
-[[Deprecated latex listings|Deprecated latex listings]]
+[Deprecated latex listings](Deprecated%20latex%20listings.md)
 
 ---
 Sources:
 
 Related:
-```dynamic-embed
-[[List related notes]]
-```
+- [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./LaTeX%20-%20Typeset%20mathematical%20and%20scientific%20notation,%20handle%20cross-referencing%20and%20citations,%20and%20position%20images%20according%20to%20defined%20placement%20rules.md)
+- [Style presets - Format your document after you written the content in Word, Latex, Markdown](Style%20presets%20-%20Format%20your%20document%20after%20you%20written%20the%20content%20in%20Word,%20Latex,%20Markdown.md)
+- [Listings - Print source code with syntax highlighting in latex with listings](Listings%20-%20Print%20source%20code%20with%20syntax%20highlighting%20in%20latex%20with%20listings.md)
+
 
 Tags:
-[[./Graphical elements - Standardize tables, images, plots|Graphical elements - Standardize tables, images, plots]]
+[Graphical elements - Standardize tables, images, plots](./Graphical%20elements%20-%20Standardize%20tables,%20images,%20plots.md)

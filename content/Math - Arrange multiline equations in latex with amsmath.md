@@ -48,7 +48,7 @@ This is an inline math expression $\bbox[5px, border: 1px dashed gray]{\scriptst
 
 - **Centered** equation(s)¹: **Single** equation¹ `\[` …`\]`, Multiple equations `\begin{gather*}`
 - Alternating **right/left**-aligned columns²³⁴: **Separated** pairs¹ `\begin{align*}`, $n$ pairs of **touching** columns³ `\begin{alignat*}{2}`, Max. spaced-out to **line width**⁴ `\begin{flalign*}`
-- See source examples [[Vertically align equations|Vertically align equations]]
+- See source examples [Vertically align equations](Vertically%20align%20equations.md)
 
 $$
     \framebox[10em]{x} \tag{1}
@@ -93,7 +93,7 @@ $$
 # Symbols
 
 - Roots, fraction, matrix, operators, relations, accents, greek letter
-- [[./LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows|LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows]]
+- [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)
 - Limits, super/subscript
 - escevt for better vectors #34
 - Split delimiter
@@ -101,12 +101,12 @@ $$
 - Breaking (page/column break)
 - Fonts #23, styles #30
 
-![[./LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows#^287de7|LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows > ^287de7]]
+![LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md#^287de7)
 
 # Wrap long equation over multiple lines
 
 - Split long fractions over two lines¹, Indent subsequent lines²³, Wrap overlong equations³
-- See [[Wrap long equation over multiple lines|Wrap long equation over multiple lines]]
+- See [Wrap long equation over multiple lines](Wrap%20long%20equation%20over%20multiple%20lines.md)
 
 $$
 \begin{align*}\MoveEqLeft{}
@@ -120,7 +120,7 @@ $$
 # Comment equation operators
 
 - Comment: **Above**/below operators¹, In a **paragraph** between math displays², **Braces** under parts of an expression³, Comment a **case**³, Name matrix columns and rows
-- See [[Comment equation operators|Comment equation operators]]
+- See [Comment equation operators](Comment%20equation%20operators.md)
 
 $$
 \begin{flalign*}
@@ -135,7 +135,7 @@ $$
 # Reference equations
 
 - roman style
-- ctagsplit and righttag [[./Mathematical Typesetting with Latex 0.34 2024-02-06.pdf#page=69&selection=174,0,179,0|Mathematical Typesetting with Latex 0.34 2024-02-06, page 69]]`
+- ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/Mathematical%20Typesetting%20with%20Latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)`
 
 $$
 \begin{flalign*}

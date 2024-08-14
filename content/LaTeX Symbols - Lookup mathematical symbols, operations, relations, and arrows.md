@@ -70,14 +70,14 @@ These symbols can also be used in text mode.
 
 | Command      | Rendering | Dependency                                                                                       |         |
 | ------------ | --------- | ------------------------------------------------------------------------------------------------ | ------- |
-| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
-| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
-| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
-| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
-| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
-| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
-| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
-| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
+| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
+| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
+| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
+| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
+| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
+| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
+| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
+| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
 
 # Degree Symbols
 
@@ -700,9 +700,9 @@ Sources:
 - 2022-06-10: [List of mathematical symbols by subject - Wikipedia](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject)
 
 Related:
-[[Vary the style of mathematical symbols - ϖ vs π|Vary the style of mathematical symbols - ϖ vs π]]
+[Vary the style of mathematical symbols - ϖ vs π](Vary%20the%20style%20of%20mathematical%20symbols%20-%20%CF%96%20vs%20%CF%80.md)
 
 Tags:
-[[./Values  - Standardize math, numbers, symbols, quantities, money|Values  - Standardize math, numbers, symbols, quantities, money]]
-[[./Graphical elements - Standardize tables, images, plots|Graphical elements - Standardize tables, images, plots]]
-[[./LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules|LaTeX]]
+[Values  - Standardize math, numbers, symbols, quantities, money](./Values%20%20-%20Standardize%20math,%20numbers,%20symbols,%20quantities,%20money.md)
+[Graphical elements - Standardize tables, images, plots](./Graphical%20elements%20-%20Standardize%20tables,%20images,%20plots.md)
+[LaTeX](./LaTeX%20-%20Typeset%20mathematical%20and%20scientific%20notation,%20handle%20cross-referencing%20and%20citations,%20and%20position%20images%20according%20to%20defined%20placement%20rules.md)

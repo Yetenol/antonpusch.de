@@ -69,4 +69,4 @@ Sources:
 Related:
 
 Tags:
-[[./Graphical elements - Standardize tables, images, plots|Graphical elements - Standardize tables, images, plots]]
+[Graphical elements - Standardize tables, images, plots](./Graphical%20elements%20-%20Standardize%20tables,%20images,%20plots.md)
