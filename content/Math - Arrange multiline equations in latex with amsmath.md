@@ -79,13 +79,12 @@ $$
 - **Attach at** the bottom/center/top `\begin{aligned}[b]`³  - `\begin{aligned}[t]`⁴  
   
 $$  
-\bbox[5px, border: 1px dashed gray]{\begin{pmatrix} \fbox{x} & \fbox{x} \\ \fbox{x} & \fbox{x} \\ \fbox{x} & \fbox{x} \end{pmatrix}}^{\mathrlap{(1)}} + \bbox[5px, border: 1px dashed gray]{\begin{cases} \fbox{x} & \text{for } \fbox{x} \\ \fbox{x} & \text{ow.} \end{cases}}^{\mathrlap{(2)}} \implies  \bbox[5px, border: 1px dashed gray]{\begin{aligned}[b] \framebox[1.2em]{x} & \fbox{x} \\ \fbox{x} &\framebox[1.2em]{x} \end{aligned}}^{\mathrlap{(3)}}  
+\bbox[5px, border: 1px dashed gray]{\begin{pmatrix} \fbox{x} & \fbox{x} \\ \fbox{x} & \fbox{x} \\ \fbox{x} & \fbox{x} \end{pmatrix}}^{\mathrlap{(1)}} + \bbox[5px, border: 1px dashed gray]{\begin{cases} \fbox{x} & \text{for } \fbox{x} \\ \fbox{x} & \text{ow.} \end{cases}}^{\mathrlap{(2)}} \implies  \bbox[5px, border: 1px dashed gray]{\begin{aligned}[b] \framebox[1.2em]{x} & \fbox{x} \\ \fbox{x} &\framebox[1.2em]{x} \end{aligned}}^{(3)}  
 $$  
-  
 $$  
 \begin{align*}\MoveEqLeft{}  
 \framebox[1em]{x} = \framebox[10em]{x} \\&  
- = \bbox[5px, border: 1px dashed gray]{\begin{aligned}[t] \framebox[15em]{x} \\ \framebox[7em]{x} \end{aligned}}^{\mathrlap{(4)}} \\&  
+ = \bbox[5px, border: 1px dashed gray]{\begin{aligned}[t] \framebox[15em]{x} \\ \framebox[7em]{x} \end{aligned}}^{(4)} \\&  
  = \framebox[13em]{x}  
 \end{align*}  
 $$  
@@ -124,12 +123,16 @@ $$
 - See [Comment equation operators](Comment%20equation%20operators.md)  
   
 $$  
+\framebox[1em]{x} \overset{\text{def}}{=} \framebox[2em]{x}\overset{\mathclap{\text{use (3)}}}{=} \framebox[2em]{x} \xRightarrow{+ \,\framebox[1em]{x}} \framebox[2em]{x} \tag{1}  
+$$  
+$$  
 \begin{flalign*}  
-&&& \framebox[1em]{x} \overset{\text{def}}{=} \framebox[2em]{x}\overset{\mathclap{\text{use (3)}}}{=} \framebox[2em]{x} \xRightarrow{+ \,\framebox[1em]{x}} \framebox[2em]{x} & (1) \\[1ex]  
-\mathrlap{\text{Describe in a paragraph, what you are doing:}} &&&& (2) \\[1ex]  
-&&& \framebox[1em]{x} = \underbrace{ \framebox[2em]{x} }_{\text{for }\framebox[1em]{x}} \underbrace{ \framebox[3em]{x} }_{\text{for }\framebox[1em]{x}}  
-= \begin{cases} \framebox[1em]{x},  & \text{for } \framebox[1em]{x} \\ \framebox[1em]{x},  & \text{because blah}  \\& \text{blab blub}  \end{cases} & (3)  
+\mathrlap{\text{Describe in a paragraph, what you are doing:}} && (2)  
 \end{flalign*}  
+$$  
+$$  
+\framebox[1em]{x} = \underbrace{ \framebox[2em]{x} }_{\text{for }\framebox[1em]{x}} \underbrace{ \framebox[3em]{x} }_{\text{for }\framebox[1em]{x}}  
+= \begin{cases} \framebox[1em]{x},  & \text{for } \framebox[1em]{x} \\ \framebox[1em]{x},  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{3}  
 $$  
 ¹²³ used to comment the $(n)^\text{th}$ equation above where $\fbox{x}$ represents math  
   
@@ -140,8 +143,12 @@ $$
   
 $$  
 \begin{flalign*}  
-&& \fbox{x} &= \fbox{x} & \mathllap{(1)} &&&& \fbox{x} &= \fbox{x} & \mathllap{\text{II}}  \\[1ex]  
-\mathrlap{\text{From calculation \textcolor{blue}{(1)} on page \textcolor{blue}{1}, we can derive:}} \\  
+\text{From calculation \textcolor{blue}{(1)} on page \textcolor{blue}{1}, we can derive:} &&  
+\end{flalign*}  
+$$  
+$$  
+\begin{flalign*}  
+&& \fbox{x} &= \fbox{x} & \mathllap{(1)} &&&& \fbox{x} &= \fbox{x} & \mathllap{\text{II}}  \\  
 && \fbox{x} &\overset{\mathclap{\text{use \textcolor{blue}{(2)}}}}{=} \fbox{x} & \mathllap{(\text{I})} && \mathrlap{(3.1)} && \fbox{x} &= \fbox{x} &  \\  
 && \fbox{x} &= \fbox{x} & \mathllap{(2)} &&&& \fbox{x} &= \fbox{x} & \mathllap{[\text{lin.}]}  \\  
 \end{flalign*}  
@@ -149,7 +156,6 @@ $$
   
 # Create commutative diagrams  
   
--   
 - [[Amscd graphs]]  
   
 $$  
