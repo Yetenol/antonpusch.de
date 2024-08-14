@@ -1,7 +1,8 @@
----
-dg-publish: true
----
-
-$$
-a + b
+---  
+dg-publish: true  
+map-category: Development  
+---  
+  
+$$  
+a + b  
 $$
