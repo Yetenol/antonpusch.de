@@ -138,35 +138,37 @@ $$
 # Reference equations  
   
 - roman style  
-- ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/Mathematical%20Typesetting%20with%20Latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)`  
+- ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/Mathematical%20Typesetting%20with%20Latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)  
   
 $\text{From calculation \textcolor{blue}{(1)} on page \textcolor{blue}{1}, we can derive:}$  
 $$  
 \begin{align*}  
 \begin{aligned}  
-\fbox{x} &= \fbox{x} & (1) \\  
-\fbox{x} &\overset{\mathclap{\text{use \textcolor{blue}{(2)}}}}{=} \fbox{x} & (\text{I}) \\  
-\fbox{x} &= \fbox{x} & (2) \\  
+x &= x & (1) \\  
+x &\overset{\mathclap{\text{use \textcolor{blue}{(2)}}}}{=} x & (\text{I}) \\  
+x &= x & (2) \\  
 \end{aligned}  
 \qquad  
 \begin{aligned}  
-&&\fbox{x} &= \fbox{x} & \text{II}  \\  
-(3.1) && \fbox{x} &= \fbox{x} &  \\  
-&&\fbox{x} &= \fbox{x} & [\text{lin.}]  \\  
+&&x &= x & \text{II}  \\  
+(3.1) && x &= x &  \\  
+&&x &= x & [\text{lin.}]  \\  
 \end{aligned}  
 \end{align*}  
 $$  
   
 # Create commutative diagrams  
   
-- [[Amscd graphs]]  
+- [Amscd graphs](Amscd%20graphs.md)  
   
 $$  
+\begin{align*}  
 \begin{CD}  
 A @>a>> B\\  
 @VVbV @VVcV\\  
 C @>d>> D  
 \end{CD}  
+\end{align*}  
 $$  
   
 # Layout multiple equations  
@@ -174,7 +176,7 @@ $$
 - Scale, Placement¹²: Spread math over multiple display columns¹, Scale delimiters manually/automatically, Scale repeating operators, Place limits surrounding/next to it `\limit` - `\nolimit`, Scale equations `exscale`  
 - Spacing³: Between lines `\\[1ex]` - `\jot`, inside matrix, number 1000 sep, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space  
 - Formatting⁴: color, boxed, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough  
-- See [[Layout multiple equations]]  
+- See [Layout multiple equations](Layout%20multiple%20equations.md)  
   
 $$  
 \begin{gather*}  
@@ -190,13 +192,13 @@ $$
   
 - no `\\` at end of align  
 - put `[]` after suqenvironments  
-- [[How not to typeset math in latex]]  
+- [How not to typeset math in latex](How%20not%20to%20typeset%20math%20in%20latex.md)  
 Deprecated  
 - eqnarray  
 - font syntax  
 - stackrel  
 - xalignat, xxalignat  
-- new operator [[Mathematical Typesetting with Latex 0.34 2024-02-06.pdf#page=41&selection=259,7,259,18|Mathematical Typesetting with Latex 0.34 2024-02-06, page 41]]  
+- new operator [Mathematical Typesetting with Latex 0.34 2024-02-06, page 41](./attachments/Mathematical%20Typesetting%20with%20Latex%200.34%202024-02-06.pdf.md#page=41&selection=259,7,259,18)  
   
 - In markdown put display math delimiters `$$` on a separate line  
 - Don't leave spaces in front of caret to prevent block reference detection (write `a^2` instead of `a ^2`)  
