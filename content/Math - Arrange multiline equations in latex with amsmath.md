@@ -51,24 +51,24 @@ This is an inline math expression $\bbox[5px, border: 1px dashed gray]{\scriptst
 - See source examples [Vertically align equations](Vertically%20align%20equations.md)  
   
 $$  
-\gets \bbox[5px, border: 1px dashed gray]{xxxxxx} \to \tag{1}  
+\gets \boxed{xxxxxx} \to \tag{1}  
 $$  
 $$  
 \begin{align*}  
-\gets \bbox[border: 1px dashed gray]{\begin{array}{r:l} xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \end{array}} & \to & \gets   
-\bbox[border: 1px dashed gray]{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \to \tag{2}  
+\gets \boxed{\begin{array}{r|l} xx \!\!&\!\! = xxx \\ \hline x \!\!&\!\! =  x \end{array}} & \to & \gets   
+\boxed{\begin{array}{r|l} xxxx \!\!&\!\! =  x \\ \hline xx \!\!&\!\! = xxx \end{array}} \to \tag{2}  
 \end{align*}  
 $$  
 $$  
 \begin{alignat*}{2}  
-\gets \bbox[border: 1px dashed gray]{\begin{array}{r:l} xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \end{array}} & &   
-\bbox[border: 1px dashed gray]{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \to \tag{3}  
+\gets \boxed{\begin{array}{r:l} xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \end{array}} & &   
+\boxed{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \to \tag{3}  
 \end{alignat*}  
 $$  
 $$  
 \begin{flalign*}  
-\bbox[border: 1px dashed gray]{\begin{array}{r:l} xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \end{array}} & \to & \gets   
-\bbox[border: 1px dashed gray]{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \\  
+\boxed{\begin{array}{r:l} xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \end{array}} & \to & \gets   
+\boxed{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \\  
 && (4)  
 \end{flalign*}  
 $$  
@@ -80,9 +80,9 @@ $$
 - **Attach at** the bottom/center/top `\begin{aligned}[b]`³  - `\begin{aligned}[t]`⁴  
   
 $$  
-\bbox[4px, border: 1px dashed gray]{\begin{pmatrix} \begin{array}{c:c} xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \end{array} \end{pmatrix}}_{\mathrlap{(1)}}  
-+ \bbox[4px, border: 1px dashed gray]{\begin{cases} \begin{array}{l:l} xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise}   \end{array} \end{cases}}_{\mathrlap{(2)}}  
-+ \bbox[4px, border: 1px dashed gray]{\begin{aligned}[b] &\begin{array}{r:l} xxx \!\!&\!\! x \end{array} \\ \hdashline &\begin{array}{r:l} \hphantom{xx}x \!\!&\!\! xx \end{array}  \end{aligned}}_{(3)}   
+\bbox[4px, border: 1px dashed gray]{\begin{pmatrix} \begin{array}{c|c} xx \!\!&\!\! x \\ \hline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \end{array} \end{pmatrix}}_{\mathrlap{(1)}}  
++ \bbox[4px, border: 1px dashed gray]{\begin{cases} \begin{array}{l|l} xxx \!\!&\!\! \text{if } x \\ \hline x \!\!&\!\! \text{otherwise}   \end{array} \end{cases}}_{\mathrlap{(2)}}  
++ \bbox[4px, border: 1px dashed gray]{\begin{aligned}[b] xxx\rule[-.3em]{0.4pt}{1em} & x \\ \hline x \rule[-.3em]{0.4pt}{1em}& xx  \end{aligned}}_{(3)}   
 $$  
 $$  
 \begin{align*}\MoveEqLeft{}  
