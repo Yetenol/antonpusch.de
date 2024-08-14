@@ -51,27 +51,28 @@ This is an inline math expression $\bbox[5px, border: 1px dashed gray]{\scriptst
 - See source examples [Vertically align equations](Vertically%20align%20equations.md)  
   
 $$  
-    \boxed{xxxxxxx} \tag{1}  
+\gets \bbox[5px, border: 1px dashed gray]{xxxxxx} \to \tag{1}  
 $$  
 $$  
 \begin{align*}  
-\boxed{x} &= \boxed{x} & \boxed{xxx} &= \boxed{xxx} \tag{2} \\  
-\boxed{xxx} &= \boxed{xx}   & \boxed{x}   &= \boxed{x}  
+\gets \bbox[border: 1px dashed gray]{\begin{array}{r:l} xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \end{array}} & \to & \gets   
+\bbox[border: 1px dashed gray]{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \to \tag{2}  
 \end{align*}  
 $$  
 $$  
 \begin{alignat*}{2}  
-\framebox[1.5em]{x} &= \framebox[3em]{x} & \framebox[2em]{x} &= \framebox[2em]{x} \tag{3} \\  
-\framebox[3em]{x} &= \framebox[1em]{x}   & \framebox[1em]{x}   &= \framebox[1em]{x}  
+\gets \bbox[border: 1px dashed gray]{\begin{array}{r:l} xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \end{array}} & &   
+\bbox[border: 1px dashed gray]{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \to \tag{3}  
 \end{alignat*}  
 $$  
 $$  
-\begin{align*}  
-\framebox[1.5em]{x} &= \framebox[3em]{x} &&&&& \framebox[1em]{x} &= \fbox{x} \\  
-\framebox[3em]{x} &= \framebox[1em]{x} &&&&& \framebox[2em]{x} &= \framebox[2em]{x}  
-\end{align*}  
+\begin{flalign*}  
+\bbox[border: 1px dashed gray]{\begin{array}{r:l} xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \end{array}} & \to & \gets   
+\bbox[border: 1px dashed gray]{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \\  
+&& (4)  
+\end{flalign*}  
 $$  
-¹²³⁴ as seen in the $(n)^\text{th}$ math display above where $\fbox{x}$ represents math  
+¹²³⁴ as seen in the $(n)^\text{th}$ math display above where $x$ represents math  
   
 ## Nested tabular mode  
   
@@ -79,17 +80,20 @@ $$
 - **Attach at** the bottom/center/top `\begin{aligned}[b]`³  - `\begin{aligned}[t]`⁴  
   
 $$  
-\boxed{\begin{pmatrix} \boxed{x} & \boxed{x} \\ \boxed{x} & \boxed{x} \\ \boxed{x} & \boxed{x} \end{pmatrix}}^{\mathrlap{(1)}} + \boxed{\begin{cases} \boxed{x} & \boxed{\text{for }x} \\ \boxed{x} & \boxed{\text{ow.}} \end{cases}}^{\mathrlap{(2)}} \implies  \boxed{\begin{aligned}[b] \boxed{xx} & \boxed{x} \\ \boxed{x} & \boxed{xx} \end{aligned}}^{(3)}  
+\bbox[4px, border: 1px dashed gray]{\begin{pmatrix} \begin{array}{c:c} xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \end{array} \end{pmatrix}}_{\mathrlap{(1)}}  
++ \bbox[4px, border: 1px dashed gray]{\begin{cases} \begin{array}{l:l} xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise}   \end{array} \end{cases}}_{\mathrlap{(2)}}  
++ \bbox[4px, border: 1px dashed gray]{\begin{aligned}[b] &\begin{array}{r:l} xxx \!\!&\!\! x \end{array} \\ \hdashline &\begin{array}{r:l} \hphantom{xx}x \!\!&\!\! xx \end{array}  \end{aligned}}_{(3)}   
 $$  
-  
 $$  
 \begin{align*}\MoveEqLeft{}  
-\framebox[1em]{x} = \framebox[10em]{x} \\&  
- = \bbox[5px, border: 1px dashed gray]{\begin{aligned}[t] \framebox[15em]{x} \\ \framebox[7em]{x} \end{aligned}}^{(4)} \\&  
- = \framebox[13em]{x}  
+xx = xxxxxxxxxxx \\&  
+ = \!\bbox[4px, border: 1px dashed gray]{\begin{aligned}[t]  
+\!xxxxxxxxxxxxx & \\ \hdashline xxxxxxx&  
+\end{aligned}}_{(4)} \\&  
+ = xxxxxxx  
 \end{align*}  
 $$  
-¹²³⁴ as seen in the $(n)^\text{th}$ dashed box above where $\fbox{x}$ represents math  
+¹²³⁴ as seen in the $(n)^\text{th}$ dashed box above where $x$ represents math  
   
 # Symbols  
   
@@ -110,13 +114,21 @@ $$
 - See [Wrap long equation over multiple lines](Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
 $$  
+\begin{align*}  
+&x = xx +  \frac{\bbox[4px, border: 1px dashed gray]{\splitfrac{xxxx}{xxxx}}_{\mathrlap{(1)}}}{x} \\  
+&\begin{array}{r:l} \qquad \!\!&\!\! = \!\bbox[4px, border: 1px dashed gray]{\begin{aligned}[t] \begin{array}{r} \!xxxxxxxxxxx \end{array} \\ \hdashline \begin{array}{r} xxxx \end{array} \end{aligned}}_{(3)} \\ &\!\! = xxx \end{array} \\&  
+\qquad^{\mathclap{(2)}}  
+\end{align*}   
+$$  
+  
+$$  
 \begin{align*}\MoveEqLeft{}  
 \framebox[3em]{x} = \framebox[1em]{x} + \frac{\splitfrac{\scriptstyle\framebox[5em]{x}}{\scriptstyle\framebox[5em]{x}}}{\framebox[2em]{x}} \tag{1} \\&  
  = \framebox[7em]{x} \tag{2} \\&  
  = \,\!\begin{aligned}[t] \framebox[10em]{x} \\ \framebox[2em]{x} \end{aligned} \tag{3} \\&  
 \end{align*}  
 $$  
-¹²³ as seen in the $(n)^\text{th}$ equation above where $\fbox{x}$ represents math  
+¹²³ as seen in the $(n)^\text{th}$ equation above where $x$ represents math  
   
 # Comment equation operators  
   
@@ -124,14 +136,17 @@ $$
 - See [Comment equation operators](Comment%20equation%20operators.md)  
   
 $$  
-\framebox[1em]{x} \overset{\text{def}}{=} \framebox[2em]{x}\overset{\mathclap{\text{use (3)}}}{=} \framebox[2em]{x} \xRightarrow{+ \,\framebox[1em]{x}} \framebox[2em]{x} \tag{1}  
+x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ x} xxxx \tag{1}  
 $$  
-${} \text{Describe in a paragraph, what you are doing:} \quad (2) {}$  
+$\text{Write a paragraph between equations:}$  
 $$  
-\framebox[1em]{x} = \underbrace{ \framebox[2em]{x} }_{\text{for }\framebox[1em]{x}} \underbrace{ \framebox[3em]{x} }_{\text{for }\framebox[1em]{x}}  
-= \begin{cases} \framebox[1em]{x},  & \text{for } \framebox[1em]{x} \\ \framebox[1em]{x},  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{3}  
+\tag{2}  
 $$  
-¹²³ used to comment the $(n)^\text{th}$ equation above where $\fbox{x}$ represents math  
+$$  
+x = \underbrace{ xxxxx }_{\text{for }x} \underbrace{ xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and relatives}} }  }  
+= \begin{cases} xx,  & \text{for } x \\ x,  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{3}  
+$$  
+¹²³ used to comment the $(n)^\text{th}$ equation above where $x$ represents math  
   
 # Reference equations  
   
@@ -174,13 +189,13 @@ $$
   
 $$  
 \begin{gather*}  
-\fbox{x} = \fbox{x} \quad\fbox{x} = \fbox{x}\quad\fbox{x} = \fbox{x}\mathrlap{\quad\cdots} \tag{1} \\  
+\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{1} \\  
 \Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1,\;  \sideset{_{\text{bl}}^{\text{tl}}}{_{\text{br}}^{\text{tr}}}\sum_{B}^{T} \tag{2} \\  
 \begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \,^{3}\!/\!_{11} \frac{3}{11}\,a,\; 12\,345 \tag{3} \\   
 \textcolor{magenta}{a + b^2},\; \cancel{a + b^2},\; \underline{a + b^2},\; \boxed{a + b^2} \tag{4}  
 \end{gather*}  
 $$  
-¹²³⁴ used to format the $(n)^\text{th}$ equation above where $\fbox{x}$ represents math  
+¹²³⁴ used to format the $(n)^\text{th}$ equation above where $x$ represents math  
   
 # Things to avoid, deprecated, bad syntax  
   
