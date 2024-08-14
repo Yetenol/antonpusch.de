@@ -67,8 +67,8 @@ $$
 $$  
 $$  
 \begin{flalign*}  
-\framebox[1.5em]{x} &= \framebox[3em]{x} & (4) && \framebox[2em]{x} &= \framebox[2em]{x} \\  
-\framebox[3em]{x} &= \framebox[1em]{x} &&& \framebox[1em]{x} &= \framebox[1em]{x}  
+\framebox[1.5em]{x} &= \framebox[3em]{x} & \framebox[1em]{x} &= \fbox{x} \;(4) \\  
+\framebox[3em]{x} &= \framebox[1em]{x} & \framebox[2em]{x} &= \framebox[2em]{x}  
 \end{flalign*}  
 $$  
 ¹²³⁴ as seen in the $(n)^\text{th}$ math display above where $\fbox{x}$ represents math  
@@ -81,6 +81,7 @@ $$
 $$  
 \bbox[5px, border: 1px dashed gray]{\begin{pmatrix} \fbox{x} & \fbox{x} \\ \fbox{x} & \fbox{x} \\ \fbox{x} & \fbox{x} \end{pmatrix}}^{\mathrlap{(1)}} + \bbox[5px, border: 1px dashed gray]{\begin{cases} \fbox{x} & \text{for } \fbox{x} \\ \fbox{x} & \text{ow.} \end{cases}}^{\mathrlap{(2)}} \implies  \bbox[5px, border: 1px dashed gray]{\begin{aligned}[b] \framebox[1.2em]{x} & \fbox{x} \\ \fbox{x} &\framebox[1.2em]{x} \end{aligned}}^{\mathrlap{(3)}}  
 $$  
+  
 $$  
 \begin{align*}\MoveEqLeft{}  
 \framebox[1em]{x} = \framebox[10em]{x} \\&  
