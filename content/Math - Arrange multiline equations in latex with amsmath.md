@@ -66,10 +66,10 @@ $$
 \end{alignat*}  
 $$  
 $$  
-\begin{flalign*}  
-\framebox[1.5em]{x} &= \framebox[3em]{x} & \framebox[1em]{x} &= \fbox{x} \;(4) \\  
-\framebox[3em]{x} &= \framebox[1em]{x} & \framebox[2em]{x} &= \framebox[2em]{x}  
-\end{flalign*}  
+\begin{align*}  
+\framebox[1.5em]{x} &= \framebox[3em]{x} &&&&& \framebox[1em]{x} &= \fbox{x} \\  
+\framebox[3em]{x} &= \framebox[1em]{x} &&&&& \framebox[2em]{x} &= \framebox[2em]{x}  
+\end{align*}  
 $$  
 ¹²³⁴ as seen in the $(n)^\text{th}$ math display above where $\fbox{x}$ represents math  
   
@@ -81,6 +81,7 @@ $$
 $$  
 \bbox[5px, border: 1px dashed gray]{\begin{pmatrix} \fbox{x} & \fbox{x} \\ \fbox{x} & \fbox{x} \\ \fbox{x} & \fbox{x} \end{pmatrix}}^{\mathrlap{(1)}} + \bbox[5px, border: 1px dashed gray]{\begin{cases} \fbox{x} & \text{for } \fbox{x} \\ \fbox{x} & \text{ow.} \end{cases}}^{\mathrlap{(2)}} \implies  \bbox[5px, border: 1px dashed gray]{\begin{aligned}[b] \framebox[1.2em]{x} & \fbox{x} \\ \fbox{x} &\framebox[1.2em]{x} \end{aligned}}^{(3)}  
 $$  
+  
 $$  
 \begin{align*}\MoveEqLeft{}  
 \framebox[1em]{x} = \framebox[10em]{x} \\&  
@@ -125,11 +126,7 @@ $$
 $$  
 \framebox[1em]{x} \overset{\text{def}}{=} \framebox[2em]{x}\overset{\mathclap{\text{use (3)}}}{=} \framebox[2em]{x} \xRightarrow{+ \,\framebox[1em]{x}} \framebox[2em]{x} \tag{1}  
 $$  
-$$  
-\begin{flalign*}  
-\mathrlap{\text{Describe in a paragraph, what you are doing:}} && (2)  
-\end{flalign*}  
-$$  
+${} \text{Describe in a paragraph, what you are doing:} \quad (2) {}$  
 $$  
 \framebox[1em]{x} = \underbrace{ \framebox[2em]{x} }_{\text{for }\framebox[1em]{x}} \underbrace{ \framebox[3em]{x} }_{\text{for }\framebox[1em]{x}}  
 = \begin{cases} \framebox[1em]{x},  & \text{for } \framebox[1em]{x} \\ \framebox[1em]{x},  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{3}  
@@ -141,17 +138,19 @@ $$
 - roman style  
 - ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/Mathematical%20Typesetting%20with%20Latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)`  
   
+$\text{From calculation \textcolor{blue}{(1)} on page \textcolor{blue}{1}, we can derive:}$  
 $$  
-\begin{flalign*}  
-\text{From calculation \textcolor{blue}{(1)} on page \textcolor{blue}{1}, we can derive:} &&  
-\end{flalign*}  
-$$  
-$$  
-\begin{flalign*}  
-&& \fbox{x} &= \fbox{x} & \mathllap{(1)} &&&& \fbox{x} &= \fbox{x} & \mathllap{\text{II}}  \\  
-&& \fbox{x} &\overset{\mathclap{\text{use \textcolor{blue}{(2)}}}}{=} \fbox{x} & \mathllap{(\text{I})} && \mathrlap{(3.1)} && \fbox{x} &= \fbox{x} &  \\  
-&& \fbox{x} &= \fbox{x} & \mathllap{(2)} &&&& \fbox{x} &= \fbox{x} & \mathllap{[\text{lin.}]}  \\  
-\end{flalign*}  
+\begin{aligned}  
+\fbox{x} &= \fbox{x} & (1) \\  
+\fbox{x} &\overset{\mathclap{\text{use \textcolor{blue}{(2)}}}}{=} \fbox{x} & (\text{I}) \\  
+\fbox{x} &= \fbox{x} & (2) \\  
+\end{aligned}  
+\qquad  
+\begin{aligned}  
+&&\fbox{x} &= \fbox{x} & \text{II}  \\  
+(3.1) && \fbox{x} &= \fbox{x} &  \\  
+&&\fbox{x} &= \fbox{x} & [\text{lin.}]  \\  
+\end{aligned}  
 $$  
   
 # Create commutative diagrams  
