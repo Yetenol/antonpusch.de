@@ -1,3 +1,6 @@
 @use "./base.scss";
 
+mjx-container.MathJax > svg {
+    max-width: 100%;
+}
 // put your custom CSS here!
