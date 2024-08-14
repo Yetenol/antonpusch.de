@@ -51,12 +51,12 @@ This is an inline math expression $\bbox[5px, border: 1px dashed gray]{\scriptst
 - See source examples [Vertically align equations](Vertically%20align%20equations.md)  
   
 $$  
-    \framebox[10em]{x} \tag{1}  
+    \boxed{xxxxxxx} \tag{1}  
 $$  
 $$  
 \begin{align*}  
-\framebox[1.5em]{x} &= \framebox[3em]{x} & \framebox[2em]{x} &= \framebox[2em]{x} \tag{2} \\  
-\framebox[3em]{x} &= \framebox[1em]{x}   & \framebox[1em]{x}   &= \framebox[1em]{x}  
+\boxed{x} &= \boxed{x} & \boxed{xxx} &= \boxed{xxx} \tag{2} \\  
+\boxed{xxx} &= \boxed{xx}   & \boxed{x}   &= \boxed{x}  
 \end{align*}  
 $$  
 $$  
@@ -79,7 +79,7 @@ $$
 - **Attach at** the bottom/center/top `\begin{aligned}[b]`³  - `\begin{aligned}[t]`⁴  
   
 $$  
-\bbox[5px, border: 1px dashed gray]{\begin{pmatrix} \fbox{x} & \fbox{x} \\ \fbox{x} & \fbox{x} \\ \fbox{x} & \fbox{x} \end{pmatrix}}^{\mathrlap{(1)}} + \bbox[5px, border: 1px dashed gray]{\begin{cases} \fbox{x} & \text{for } \fbox{x} \\ \fbox{x} & \text{ow.} \end{cases}}^{\mathrlap{(2)}} \implies  \bbox[5px, border: 1px dashed gray]{\begin{aligned}[b] \framebox[1.2em]{x} & \fbox{x} \\ \fbox{x} &\framebox[1.2em]{x} \end{aligned}}^{(3)}  
+\boxed{\begin{pmatrix} \boxed{x} & \boxed{x} \\ \boxed{x} & \boxed{x} \\ \boxed{x} & \boxed{x} \end{pmatrix}}^{\mathrlap{(1)}} + \boxed{\begin{cases} \boxed{x} & \boxed{\text{for }x} \\ \boxed{x} & \boxed{\text{ow.}} \end{cases}}^{\mathrlap{(2)}} \implies  \boxed{\begin{aligned}[b] \boxed{xx} & \boxed{x} \\ \boxed{x} & \boxed{xx} \end{aligned}}^{(3)}  
 $$  
   
 $$  
