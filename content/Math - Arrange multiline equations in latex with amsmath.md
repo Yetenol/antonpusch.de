@@ -80,17 +80,12 @@ $$
 - **Attach at** the bottom/center/top `\begin{aligned}[b]`³  - `\begin{aligned}[t]`⁴  
   
 $$  
-\bbox[4px, border: 1px dashed gray]{\begin{pmatrix} \begin{array}{c|c} xx \!\!&\!\! x \\ \hline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \end{array} \end{pmatrix}}_{\mathrlap{(1)}}  
-+ \bbox[4px, border: 1px dashed gray]{\begin{cases} \begin{array}{l|l} xxx \!\!&\!\! \text{if } x \\ \hline x \!\!&\!\! \text{otherwise}   \end{array} \end{cases}}_{\mathrlap{(2)}}  
-+ \bbox[4px, border: 1px dashed gray]{\begin{aligned}[b] xxx\rule[-.3em]{0.4pt}{1em} & x \\ \hline x \rule[-.3em]{0.4pt}{1em}& xx  \end{aligned}}_{(3)}   
-$$  
-$$  
-\begin{align*}\MoveEqLeft{}  
-xx = xxxxxxxxxxx \\&  
- = \!\bbox[4px, border: 1px dashed gray]{\begin{aligned}[t]  
-\!xxxxxxxxxxxxx & \\ \hdashline xxxxxxx&  
-\end{aligned}}_{(4)} \\&  
- = xxxxxxx  
+\begin{align*} \qquad&\kern{-2em}  
+x = \boxed{\begin{pmatrix} \begin{array}{c:c} xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \end{array} \end{pmatrix}}  + \boxed{\begin{cases} \begin{array}{l:l} xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \end{array} \end{cases}} \tag{1,2} \\&  
+ = xxxxxxx \tag{3} \\&  
+\! \boxed{\begin{split}  
+\; = xxxxxxxxxxxxx & \\ \hdashline xxxxxxx&  
+\end{split}} \tag{4} \\&  
 \end{align*}  
 $$  
 ¹²³⁴ as seen in the $(n)^\text{th}$ dashed box above where $x$ represents math  
@@ -114,19 +109,11 @@ $$
 - See [Wrap long equation over multiple lines](Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
 $$  
-\begin{align*}  
-&x = xx +  \frac{\bbox[4px, border: 1px dashed gray]{\splitfrac{xxxx}{xxxx}}_{\mathrlap{(1)}}}{x} \\  
-&\begin{array}{r:l} \qquad \!\!&\!\! = \!\bbox[4px, border: 1px dashed gray]{\begin{aligned}[t] \begin{array}{r} \!xxxxxxxxxxx \end{array} \\ \hdashline \begin{array}{r} xxxx \end{array} \end{aligned}}_{(3)} \\ &\!\! = xxx \end{array} \\&  
-\qquad^{\mathclap{(2)}}  
+\begin{align*}\qquad&\kern{-2em}  
+x = xx +  \frac{\splitfrac{xxxx}{xxxx}}{x} \tag{1} \\&  
+\begin{split}\; =  xxxxxxxxxx \\ xxx\end{split} \tag{2} \\&  
+ =  xxxxx \tag{3}  
 \end{align*}   
-$$  
-  
-$$  
-\begin{align*}\MoveEqLeft{}  
-\framebox[3em]{x} = \framebox[1em]{x} + \frac{\splitfrac{\scriptstyle\framebox[5em]{x}}{\scriptstyle\framebox[5em]{x}}}{\framebox[2em]{x}} \tag{1} \\&  
- = \framebox[7em]{x} \tag{2} \\&  
- = \,\!\begin{aligned}[t] \framebox[10em]{x} \\ \framebox[2em]{x} \end{aligned} \tag{3} \\&  
-\end{align*}  
 $$  
 ¹²³ as seen in the $(n)^\text{th}$ equation above where $x$ represents math  
   
@@ -155,6 +142,7 @@ $$
   
 $\text{From calculation \textcolor{blue}{(1)} on page \textcolor{blue}{1}, we can derive:}$  
 $$  
+\begin{align*}  
 \begin{aligned}  
 \fbox{x} &= \fbox{x} & (1) \\  
 \fbox{x} &\overset{\mathclap{\text{use \textcolor{blue}{(2)}}}}{=} \fbox{x} & (\text{I}) \\  
@@ -166,6 +154,7 @@ $$
 (3.1) && \fbox{x} &= \fbox{x} &  \\  
 &&\fbox{x} &= \fbox{x} & [\text{lin.}]  \\  
 \end{aligned}  
+\end{align*}  
 $$  
   
 # Create commutative diagrams  
