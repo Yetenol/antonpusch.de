@@ -1,6 +1,6 @@
----  
-dg-publish: true  
----  
+---
+dg-publish: true
+---
 # Main examples  
   
 ![minimal 28.svg](./attachments/minimal%2028.svg)  
