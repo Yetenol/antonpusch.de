@@ -36,4 +36,7 @@ $$
   
 $$  
 x = \frac{\splitfrac{xxxxxx}{xxxxx}}{x}  
-$$
+$$  
+$$  
+\sideset{_{\text{bl}}^{\text{tl}}}{_{\text{br}}^{\text{tr}}}\sum_{B}^{T}  
+$$  
