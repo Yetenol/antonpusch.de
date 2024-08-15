@@ -13,16 +13,25 @@ Mainly based on [Mathematical Typesetting with LaTeX - Herbert Voß 2023](https:
   
 ```latex  
 \documentclass{article}  
-\usepackage{amsmath}  
+\usepackage{mathtools,amssymb,amsfonts}  
 \begin{document}  
 Let $f = x^2 + \frac{1}{11}$:  
-\begin{align*} \qquad&\kern{-2em}  
+\begin{align*} \qquad&\hspace{-2em}  
 \mathbb{P}(X+Y=k)   
-= \sum_{x \in X(\Omega)} \mathbb{P}(X = x) \cdot \mathbb{P}(Y=k-x) \\&  
+= \sum_{\mathclap{x \in X(\Omega)}} \mathbb{P}(X = x) \cdot \mathbb{P}(Y=k-x) \\&  
 = \sum_{x = 0}^n \binom{n}{x}\, p^x\, (1-p)^{n-x} \cdot \binom{m}{k-x}\, q^{k-x}\, (1-q)^{m-(k-x)}  
 \end{align*}  
 \end{document}  
 ```  
+  
+Let $f = x^2 + \frac{1}{11}$:  
+$$  
+\begin{align*} \qquad&\hspace{-2em}  
+\mathbb{P}(X+Y=k)   
+= \sum_{\mathclap{x \in X(\Omega)}} \mathbb{P}(X = x) \cdot \mathbb{P}(Y=k-x) \\&  
+= \sum_{x = 0}^n \binom{n}{x}\, p^x\, (1-p)^{n-x} \cdot \binom{m}{k-x}\, q^{k-x}\, (1-q)^{m-(k-x)}  
+\end{align*}  
+$$  
   
 # Math modes  
   
@@ -36,7 +45,7 @@ This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \s
   
 - **Centered** equation(s)¹: **Single** equation¹ `\[` …`\]`, Multiple equations `\begin{gather*}`  
 - Alternating **right/left**-aligned columns²³⁴: **Separated** pairs¹ `\begin{align*}`, $n$ pairs of **touching** columns³ `\begin{alignat*}{2}`, Max. spaced-out to **line width**⁴ `\begin{flalign*}`  
-- See source examples [Vertically align equations](Vertically%20align%20equations.md)  
+- See source examples [Vertically align equations](./Vertically%20align%20equations.md)  
   
 $$  
 \gets \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \to \tag{1}  
@@ -89,7 +98,7 @@ $$
 # Wrap long equation over multiple lines  
   
 - Split long fractions over two lines¹, Indent subsequent lines²³, Wrap overlong equations³  
-- See [Wrap long equation over multiple lines](Wrap%20long%20equation%20over%20multiple%20lines.md)  
+- See [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
   
 $$  
