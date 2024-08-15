@@ -13,28 +13,16 @@ Mainly based on [Mathematical Typesetting with LaTeX - Herbert Voß 2023](https:
   
 ```latex  
 \documentclass{article}  
+\usepackage{amsmath}  
 \begin{document}  
-  
-The well known Pythagorean theorem $x^2 + y^2 = z^2$ was   
-proved to be invalid for other exponents.   
-Meaning the next equation has no integer solutions:  
-  
-\[   
-\vec{B} = \frac{\mu I}{2 \pi r} \vec{e}_\phi  
-\]  
-  
-\begin{align*}  
-\mathbb{P}(X+Y=k) &  
-= \sum_{x \in X(\Omega)} \mathbb{P}(X = x) \cdot \mathbb{P}(Y=k-x)   
+Let $f = x^2 + \frac{1}{11}$:  
+\begin{align*} \qquad&\kern{-2em}  
+\mathbb{P}(X+Y=k)   
+= \sum_{x \in X(\Omega)} \mathbb{P}(X = x) \cdot \mathbb{P}(Y=k-x) \\&  
 = \sum_{x = 0}^n \binom{n}{x}\, p^x\, (1-p)^{n-x} \cdot \binom{m}{k-x}\, q^{k-x}\, (1-q)^{m-(k-x)}  
 \end{align*}  
-  
 \end{document}  
 ```  
-  
-The well known Pythagorean theorem $x^2 + y^2 = z^2$ was   
-proved to be invalid for other exponents.   
-Meaning the next equation has no integer solutions:  
   
 # Math modes  
   
@@ -55,8 +43,8 @@ $$
 $$  
 $$  
 \begin{align*}  
-\gets \boxed{\begin{array}{r|l} xx \!\!&\!\! = xxx \\ \hline x \!\!&\!\! =  x \end{array}} & \to & \gets   
-\boxed{\begin{array}{r|l} xxxx \!\!&\!\! =  x \\ \hline xx \!\!&\!\! = xxx \end{array}} \to \tag{2}  
+\gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \\ \hdashline \end{array} & \to & \gets   
+\boxed{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \to \tag{2}  
 \end{align*}  
 $$  
 $$  
@@ -81,7 +69,7 @@ $$
   
 $$  
 \begin{align*} \qquad&\kern{-2em}  
-x = \boxed{\begin{pmatrix} \begin{array}{c:c} xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \end{array} \end{pmatrix}}  + \boxed{\begin{cases} \begin{array}{l:l} xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \end{array} \end{cases}} \tag{1,2} \\&  
+x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \boxed{\begin{cases} \begin{array}{l:l} xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \end{array} \end{cases}} \tag{1,2} \\&  
  = xxxxxxx \tag{3} \\&  
 \! \boxed{\begin{split}  
 \; = xxxxxxxxxxxxx & \\ \hdashline xxxxxxx&  
