@@ -1,7 +1,7 @@
----  
-dg-publish: true  
-priority: 2  
----  
+---
+dg-publish: true
+priority: 2
+---
   
 Writing everything in one file reduces readability, increases compile time, and makes debugging more difficult. Therefore a logical project structure is highly recommended.  
   

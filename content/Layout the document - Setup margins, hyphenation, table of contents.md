@@ -1,7 +1,7 @@
----  
-dg-publish: true  
-priority: 7  
----  
+---
+dg-publish: true
+priority: 7
+---
   
 Generate Placeholder Text      
 ```latex  

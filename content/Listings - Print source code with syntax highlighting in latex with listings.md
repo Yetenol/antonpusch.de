@@ -1,7 +1,7 @@
----  
-dg-publish: true  
-dg-permalink: latex-listings  
----  
+---
+dg-publish: true
+dg-permalink: latex-listings
+---
 # Syntax  
   
 ```latex  

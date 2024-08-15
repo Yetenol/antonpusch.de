@@ -1,6 +1,6 @@
----  
-dg-publish: true  
----  
+---
+dg-publish: true
+---
   
 # Centered equation(s)  
   

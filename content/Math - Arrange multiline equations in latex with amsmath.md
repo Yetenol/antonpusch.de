@@ -1,8 +1,8 @@
----  
-dg-publish: true  
-dg-permalink: latex-math  
-dg-show-toc: true  
----  
+---
+dg-publish: true
+dg-permalink: latex-math
+dg-show-toc: true
+---
   
 # Motivation  
   
@@ -120,7 +120,7 @@ x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRigh
 $$  
 $\text{Write a paragraph between equations:}$  
 $$  
-\tag{2}  
+\, \tag{2}  
 $$  
 $$  
 x = \underbrace{ xxxxx }_{\text{for }x} \underbrace{ xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and relatives}} }  }  

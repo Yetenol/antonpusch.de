@@ -1,6 +1,6 @@
----  
-dg-publish: true  
----  
+---
+dg-publish: true
+---
   
 - [Programming Languages - Communicate instructions between humans and computers](./Programming%20Languages%20-%20Communicate%20instructions%20between%20humans%20and%20computers.md)  
 - [Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography](./Markup%20and%20typesetting%20systems%20-%20Produce%20printed%20or%20digital%20documents%20aesthetically%20pleasing%20with%20readable%20typography.md)  

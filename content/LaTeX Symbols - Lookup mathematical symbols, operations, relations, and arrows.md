@@ -1,9 +1,9 @@
----  
-dg-publish: true  
-dg-show-toc: true  
-dg-permalink: latex-symbols  
-priority: 1  
----  
+---
+dg-publish: true
+dg-show-toc: true
+dg-permalink: latex-symbols
+priority: 1
+---
   
 # Favorites  
   
@@ -98,34 +98,64 @@ These symbols can also be used in text mode.
   
 # Greek Letters (lowercase)  
   
-| Command     | Rendering   | Variants      |                                               |  
-| ----------- | ----------- | ------------- | --------------------------------------------- |  
-| `\alpha`    | $\alpha$    |               |                                               |  
-| `\beta`     | $\beta$     |               |                                               |  
-| `\gamma`    | $\gamma$    |               |                                               |  
-| `\delta`    | $\delta$    |               |                                               |  
-| `\epsilon`  | $\epsilon$  | $\varepsilon$ |                                               |  
-| `\zeta`     | $\zeta$     |               |                                               |  
-| `\eta`      | $\eta$      |               |                                               |  
-| `\theta`    | $\theta$    | $\vartheta$   |                                               |  
-| `\iota`     | $\iota$     |               |                                               |  
-| `\kappa`    | $\kappa$    | $\varkappa$   |                                               |  
-| `\lambda`   | $\lambda$   |               |                                               |  
-| `\mu`       | $\mu$       |               |                                               |  
-| `\nu`       | $\nu$       |               |                                               |  
-| `\xi`       | $\xi$       |               |                                               |  
-| `o`         | $o$         |               |                                               |  
-| `\pi`       | $\pi$       | $\varpi$      |                                               |  
-| `\rho`      | $\rho$      | $\varrho$     |                                               |  
-| `\sigma`    | $\sigma$    | $\varsigma$   |                                               |  
-| `\tau`      | $\tau$      |               |                                               |  
-| `\upsilon`  | $\upsilon$  |               |                                               |  
-| `\phi`      | $\phi$      | $\varphi$     |                                               |  
-| `\chi`      | $\chi$      |               |                                               |  
-| `\psi`      | $\psi$      |               |                                               |  
-| `\omega`    | $\omega$    |               |                                               |  
-| `\digamma`  | $\digamma$  |               | [amssymb](https://texdoc.org/serve/amssymb/0) |  
-| `\varkappa` | $\varkappa$ |               | [amssymb](https://texdoc.org/serve/amssymb/0) |  
+|                                                       |                                                      |  
+| ----------------------------------------------------- | ---------------------------------------------------- |  
+| $\alpha$ `\alpha`                                     | ${} \mathrm{A} {}$                                   |  
+| $\beta$ `\beta`                                       | ${} \mathrm{B} {}$                                   |  
+| $\gamma$ `\gamma`                                     | $\Gamma$ `\Gamma`<br>$\varGamma$ `\varGamma`         |  
+| $\delta$ `\delta`                                     | $\Delta$ `\Delta`<br>$\varDelta$ `\varDelta`         |  
+| $\varepsilon$ `\varepsilon` <br>$\epsilon$ `\epsilon` | ${} \mathrm{E} {}$                                   |  
+| $\zeta$ `\zeta`                                       | ${} \mathrm{Z} {}$                                   |  
+| $\eta$ `\eta`                                         | ${} \mathrm{H} {}$                                   |  
+| $\theta$ `\theta` <br>$\vartheta$ `\vartheta`         | $\Theta$ `\Theta`<br>$\varTheta$ `\varTheta`         |  
+| $\iota$ `\iota`                                       | $\mathrm{I}$                                         |  
+| $\kappa$ `\kappa` <br>$\varkappa^1$ `\varkappa`       | ${} \mathrm{K} {}$                                   |  
+| $\lambda$ `\lambda`                                   | $\Lambda$ `\Lambda`<br>$\varLambda$ `\varLambda`     |  
+| $\mu$ `\mu`                                           | ${} \mathrm{M} {}$                                   |  
+| $\nu$ `\nu`                                           | ${} \mathrm{N} {}$                                   |  
+| $\xi$ `\xi`                                           | $\Xi$ `\Xi`<br>$\varXi$ `\varXi`                     |  
+| $o$ `o`                                               | ${} \mathrm{O} {}$                                   |  
+| $\pi$ `\pi`<br>$\varpi$ `\varpi`                      | $\Pi$ `\Pi`<br>$\varPi$ `\varPi`                     |  
+| $\rho$ `\rho`<br>$\varrho$ `\varrho`                  | ${} \mathrm{P} {}$                                   |  
+| $\sigma$ `\sigma`<br>$\varsigma$ `\varsigma`          | $\Sigma$ `\Sigma`<br>$\varSigma$ `\varSigma`         |  
+| $\tau$ `\tau`                                         | ${} \mathrm{T} {}$                                   |  
+| $\upsilon$ `\upsilon`                                 | $\Upsilon$ `\Upsilon`<br>$\varUpsilon$ `\varUpsilon` |  
+| $\varphi$ `\varphi`<br>$\phi$ `\phi`                  | $\Phi$ `\Phi`<br>$\varPhi$ `\varPhi`                 |  
+| $\chi$ `\chi`                                         | ${} \mathrm{X} {}$                                   |  
+| $\psi$ `\psi`                                         | $\Psi$ `\Psi`<br>$\varPsi$ `\varPsi`                 |  
+| $\omega$ `\omega`                                     | $\Omega$ `\Omega`<br>$\varOmega$ `\varOmega`         |  
+| $\digamma^1$ `\digamma`                               |                                                      |  
+  
+$^1$: requires [amssymb](https://texdoc.org/serve/amssymb/0)  
+  
+| Command     | Variants                         |     | Dependencies                                  |  
+| ----------- | -------------------------------- | --- | --------------------------------------------- |  
+| `\alpha`    | $\alpha$                         |     |                                               |  
+| `\beta`     | $\beta$                          |     |                                               |  
+| `\gamma`    | $\gamma$                         |     |                                               |  
+| `\delta`    | $\delta$                         |     |                                               |  
+| `\epsilon`  | ${} \epsilon\quad\varepsilon {}$ |     |                                               |  
+| `\zeta`     | $\zeta$                          |     |                                               |  
+| `\eta`      | $\eta$                           |     |                                               |  
+| `\theta`    | ${} \theta\quad\vartheta {}$     |     |                                               |  
+| `\iota`     | $\iota$                          |     |                                               |  
+| `\kappa`    | $\kappa\quad\varkappa$           |     |                                               |  
+| `\lambda`   | $\lambda$                        |     |                                               |  
+| `\mu`       | $\mu$                            |     |                                               |  
+| `\nu`       | $\nu$                            |     |                                               |  
+| `\xi`       | $\xi$                            |     |                                               |  
+| `o`         | $o$                              |     |                                               |  
+| `\pi`       | ${} \pi\quad\varpi {}$           |     |                                               |  
+| `\rho`      | $\rho\quad\varrho$               |     |                                               |  
+| `\sigma`    | $\sigma\quad\varsigma$           |     |                                               |  
+| `\tau`      | $\tau$                           |     |                                               |  
+| `\upsilon`  | $\upsilon$                       |     |                                               |  
+| `\phi`      | ${} \phi\quad\varphi {}$         |     |                                               |  
+| `\chi`      | $\chi$                           |     |                                               |  
+| `\psi`      | $\psi$                           |     |                                               |  
+| `\omega`    | $\omega$                         |     |                                               |  
+| `\digamma`  | $\digamma$                       |     | [amssymb](https://texdoc.org/serve/amssymb/0) |  
+| `\varkappa` | $\varkappa$                      |     | [amssymb](https://texdoc.org/serve/amssymb/0) |  
   
 Set the **style** of the letter in the preamble  
   
