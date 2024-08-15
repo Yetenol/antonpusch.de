@@ -1,7 +1,7 @@
----  
-dg-publish: true  
-priority: 1  
----  
+---
+dg-publish: true
+priority: 1
+---
   
 # View user guide of a specific packages    
   
