@@ -40,6 +40,7 @@ a = + \frac{ \begin{split} xxxxxxx \quad\\[-1ex] + xxxx \end{split} }{(4)}
 ```  
 a = \frac{ \substack{xxxxxxx \\ +xxxx} }{(5)}  
 ```  
+  
 # Indent subsequent lines  
   
 ```latex  
@@ -83,7 +84,7 @@ a + b + c + d \\&
 \end{align*}  
 $$  
   
-# Set operators as column devider  
+# Set operators as column divider  
   
   
 ```latex  
