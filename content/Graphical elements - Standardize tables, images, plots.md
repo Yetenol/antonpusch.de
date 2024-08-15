@@ -1,7 +1,7 @@
----  
-dg-publish: true  
-priority: 5  
----  
+---
+dg-publish: true
+priority: 5
+---
 - [Tables - Write and style uniform latex tables with pgfplotstable, tabularray](./Tables%20-%20Write%20and%20style%20uniform%20latex%20tables%20with%20pgfplotstable,%20tabularray.md)  
 - [Listings - Print source code with syntax highlighting in latex with listings](./Listings%20-%20Print%20source%20code%20with%20syntax%20highlighting%20in%20latex%20with%20listings.md)  
 - [Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](Graphics%20-%20Draw%20vector%20networks,%20graphs,%20images,%20plots%20in%20latex%20with%20tikz,%20pgf.md)  
