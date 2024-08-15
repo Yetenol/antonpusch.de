@@ -1,9 +1,9 @@
----  
-dg-publish: true  
-dg-permalink: latex  
-aliases:  
-  - LaTeX  
----  
+---
+dg-publish: true
+dg-permalink: latex
+aliases:
+  - LaTeX
+---
   
 - [Math - Arrange multiline equations in latex with amsmath](./Math%20-%20Arrange%20multiline%20equations%20in%20latex%20with%20amsmath.md)  
 - [Tables - Write and style uniform latex tables with pgfplotstable, tabularray](./Tables%20-%20Write%20and%20style%20uniform%20latex%20tables%20with%20pgfplotstable,%20tabularray.md)  
