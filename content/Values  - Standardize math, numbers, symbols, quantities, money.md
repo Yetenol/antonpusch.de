@@ -1,7 +1,7 @@
----  
-dg-publish: true  
-priority: 4  
----  
+---
+dg-publish: true
+priority: 4
+---
   
 - [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
 - [Math - Typeset mathematical equations and expressions](./Math%20-%20Typeset%20mathematical%20equations%20and%20expressions.md)  
