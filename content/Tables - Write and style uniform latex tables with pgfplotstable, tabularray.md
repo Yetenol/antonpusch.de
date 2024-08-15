@@ -1,8 +1,8 @@
----  
-dg-publish: true  
-dg-show-toc: true  
-dg-permalink: latex-tables  
----  
+---
+dg-publish: true
+dg-show-toc: true
+dg-permalink: latex-tables
+---
   
 # Motivation  
   
