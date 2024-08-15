@@ -24,4 +24,16 @@ Problem1: tags overlap with long equations, only eqref and not ref cause tag to 
 ```  
   
 ![minimal 31.svg](./content/attachments/minimal%2031.svg)  
-# More
+# More  
+  
+$$  
+\begin{flalign*}  
+\boxed{\begin{array}{r:l} xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \end{array}} & \to & \gets   
+\boxed{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \\  
+&& (4)  
+\end{flalign*}  
+$$  
+  
+$$  
+x = \frac{\splitfrac{xxxxxx}{xxxxx}}{x}  
+$$
