@@ -62,8 +62,6 @@ LaTeX
 \end{document}  
 ```  
   
-![minimal 43.svg](./attachments/minimal%2043.svg)  
-  
 $$  
 \begin{alignat*}{2}  
 p_{X_3}(1) &= \mathbb{P}(\{ (1,1) \} ) && = 0.13 \\  
