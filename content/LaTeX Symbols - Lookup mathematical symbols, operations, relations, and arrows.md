@@ -7,15 +7,6 @@ priority: 1
   
 # Favorites  
   
-$$  
-\begin{array}{cccccc}  
-\lnot & \land & \lor & \to & \gets & \mathbb{R} \\  
-\texttt{\\lnot} & \texttt{\\land} & \texttt{\\lor}& \texttt{\\to} & \texttt{\\gets}& \texttt{\\mathbb}\textbraceleft \texttt{R} \textbraceright  
-\end{array}  
-$$  
-  
-^287de7  
-  
 | Command      | Rendering    |  
 | ------------ | ------------ |  
 | `\lnot`      | $\lnot$      |  
@@ -107,32 +98,32 @@ These symbols can also be used in text mode.
   
 # Greek Letters (lowercase)  
   
-| Command     | Rendering   | Variants      |  
-| ----------- | ----------- | ------------- |  
-| `\alpha`    | $\alpha$    |  
-| `\beta`     | $\beta$     |  
-| `\gamma`    | $\gamma$    |  
-| `\delta`    | $\delta$    |  
-| `\epsilon`  | $\epsilon$  | $\varepsilon$ |  
-| `\zeta`     | $\zeta$     |  
-| `\eta`      | $\eta$      |  
-| `\theta`    | $\theta$    | $\vartheta$   |  
-| `\iota`     | $\iota$     |  
-| `\kappa`    | $\kappa$    | $\varkappa$   |  
-| `\lambda`   | $\lambda$   |  
-| `\mu`       | $\mu$       |  
-| `\nu`       | $\nu$       |  
-| `\xi`       | $\xi$       |  
-| `o`         | $o$         |  
-| `\pi`       | $\pi$       | $\varpi$      |  
-| `\rho`      | $\rho$      | $\varrho$     |  
-| `\sigma`    | $\sigma$    | $\varsigma$   |  
-| `\tau`      | $\tau$      |  
-| `\upsilon`  | $\upsilon$  |  
-| `\phi`      | $\phi$      | $\varphi$     |  
-| `\chi`      | $\chi$      |  
-| `\psi`      | $\psi$      |  
-| `\omega`    | $\omega$    |  
+| Command     | Rendering   | Variants      |                                               |  
+| ----------- | ----------- | ------------- | --------------------------------------------- |  
+| `\alpha`    | $\alpha$    |               |                                               |  
+| `\beta`     | $\beta$     |               |                                               |  
+| `\gamma`    | $\gamma$    |               |                                               |  
+| `\delta`    | $\delta$    |               |                                               |  
+| `\epsilon`  | $\epsilon$  | $\varepsilon$ |                                               |  
+| `\zeta`     | $\zeta$     |               |                                               |  
+| `\eta`      | $\eta$      |               |                                               |  
+| `\theta`    | $\theta$    | $\vartheta$   |                                               |  
+| `\iota`     | $\iota$     |               |                                               |  
+| `\kappa`    | $\kappa$    | $\varkappa$   |                                               |  
+| `\lambda`   | $\lambda$   |               |                                               |  
+| `\mu`       | $\mu$       |               |                                               |  
+| `\nu`       | $\nu$       |               |                                               |  
+| `\xi`       | $\xi$       |               |                                               |  
+| `o`         | $o$         |               |                                               |  
+| `\pi`       | $\pi$       | $\varpi$      |                                               |  
+| `\rho`      | $\rho$      | $\varrho$     |                                               |  
+| `\sigma`    | $\sigma$    | $\varsigma$   |                                               |  
+| `\tau`      | $\tau$      |               |                                               |  
+| `\upsilon`  | $\upsilon$  |               |                                               |  
+| `\phi`      | $\phi$      | $\varphi$     |                                               |  
+| `\chi`      | $\chi$      |               |                                               |  
+| `\psi`      | $\psi$      |               |                                               |  
+| `\omega`    | $\omega$    |               |                                               |  
 | `\digamma`  | $\digamma$  |               | [amssymb](https://texdoc.org/serve/amssymb/0) |  
 | `\varkappa` | $\varkappa$ |               | [amssymb](https://texdoc.org/serve/amssymb/0) |  
   
@@ -310,10 +301,10 @@ Set the **style** of the relation in the preamble
   
 # Negated Binary Relations and Arrows  
   
-| Command             | Rendering           | Variants         | Dependency         |  
-| ------------------- | ------------------- | ---------------- | ------------------ |  
-| `\neq` <br> `\ne`   | $\neq$ <br> $\ne$   |                  |  
-| `\notin`            | $\notin$            |                  |  
+| Command             | Rendering           | Variants         | Dependency                                    |  
+| ------------------- | ------------------- | ---------------- | --------------------------------------------- |  
+| `\neq` <br> `\ne`   | $\neq$ <br> $\ne$   |                  |                                               |  
+| `\notin`            | $\notin$            |                  |                                               |  
 | `\nless`            | $\nless$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |  
 | `\ngtr`             | $\ngtr$             |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |  
 | `\lneq`             | $\lneq$             |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |  

@@ -30,7 +30,7 @@ Let $f = x^2 + \frac{1}{11}$:
   
 - `$` … `$`  
   
-This is an inline math expression $\bbox[5px, border: 1px dashed gray]{\scriptstyle \sqrt{2} + \frac{1}{2}}$ within a sentence.   
+This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \sqrt{2} + \frac{1}{2}a \\ \hdashline \end{array}$ within a sentence.   
   
 ## Display mode  
   
@@ -39,26 +39,19 @@ This is an inline math expression $\bbox[5px, border: 1px dashed gray]{\scriptst
 - See source examples [Vertically align equations](Vertically%20align%20equations.md)  
   
 $$  
-\gets \boxed{xxxxxx} \to \tag{1}  
+\gets \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \to \tag{1}  
 $$  
 $$  
 \begin{align*}  
 \gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \\ \hdashline \end{array} & \to & \gets   
-\boxed{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \to \tag{2}  
+\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{2}  
 \end{align*}  
 $$  
 $$  
 \begin{alignat*}{2}  
-\gets \boxed{\begin{array}{r:l} xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \end{array}} & &   
-\boxed{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \to \tag{3}  
+\gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \\ \hdashline \end{array} &&   
+\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{3}  
 \end{alignat*}  
-$$  
-$$  
-\begin{flalign*}  
-\boxed{\begin{array}{r:l} xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \end{array}} & \to & \gets   
-\boxed{\begin{array}{r:l} xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \end{array}} \\  
-&& (4)  
-\end{flalign*}  
 $$  
 ¹²³⁴ as seen in the $(n)^\text{th}$ math display above where $x$ represents math  
   
@@ -69,11 +62,9 @@ $$
   
 $$  
 \begin{align*} \qquad&\kern{-2em}  
-x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \boxed{\begin{cases} \begin{array}{l:l} xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \end{array} \end{cases}} \tag{1,2} \\&  
+x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{1,2} \\&  
  = xxxxxxx \tag{3} \\&  
-\! \boxed{\begin{split}  
-\; = xxxxxxxxxxxxx & \\ \hdashline xxxxxxx&  
-\end{split}} \tag{4} \\&  
+\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{4} \\&  
 \end{align*}  
 $$  
 ¹²³⁴ as seen in the $(n)^\text{th}$ dashed box above where $x$ represents math  
@@ -89,16 +80,21 @@ $$
 - Breaking (page/column break)  
 - Fonts #23, styles #30  
   
-![LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md#^287de7)  
+  
+$$  
+\delta \in \subsetneq \lnot \land \lor \to \gets \implies \iff \mathbb{R}  
+$$  
+  
   
 # Wrap long equation over multiple lines  
   
 - Split long fractions over two lines¹, Indent subsequent lines²³, Wrap overlong equations³  
 - See [Wrap long equation over multiple lines](Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
+  
 $$  
 \begin{align*}\qquad&\kern{-2em}  
-x = xx +  \frac{\splitfrac{xxxx}{xxxx}}{x} \tag{1} \\&  
+x = xx +  \frac{  \begin{split} xxxxxxx \quad\\[-1ex] + xxxx \end{split} }{x} +  \frac{ \substack{xxxxxxx \\ +xxxx} }{x}\tag{1} \\&  
 \begin{split}\; =  xxxxxxxxxx \\ xxx\end{split} \tag{2} \\&  
  =  xxxxx \tag{3}  
 \end{align*}   
@@ -169,8 +165,8 @@ $$
 $$  
 \begin{gather*}  
 \hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{1} \\  
-\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1,\;  \sideset{_{\text{bl}}^{\text{tl}}}{_{\text{br}}^{\text{tr}}}\sum_{B}^{T} \tag{2} \\  
-\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \,^{3}\!/\!_{11} \frac{3}{11}\,a,\; 12\,345 \tag{3} \\   
+\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{2} \\  
+\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{3} \\   
 \textcolor{magenta}{a + b^2},\; \cancel{a + b^2},\; \underline{a + b^2},\; \boxed{a + b^2} \tag{4}  
 \end{gather*}  
 $$  
