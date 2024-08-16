@@ -5,30 +5,7 @@ dg-permalink: latex-symbols
 priority: 1
 ---
   
-# Favorites  
-  
-| Command      | Rendering    |  
-| ------------ | ------------ |  
-| `\lnot`      | $\lnot$      |  
-| `\land`      | $\land$      |  
-| `\lor`       | $\lor$       |  
-| `\to`        | $\to$        |  
-| `\gets`      | $\gets$      |  
-| `\iff`       | $\iff$       |  
-| `\implies`   | $\implies$   |  
-| `\impliedby` | $\impliedby$ |  
-| `\mathbb{R}` | $\mathbb{R}$ |  
-| `\approx`    | $\approx$    |  
-| `\subseteq`  | $\subseteq$  |  
-| `\supseteq`  | $\supseteq$  |  
-| `\setminus`  | $\setminus$  |  
-| `\times`     | $\times$     |  
-| `\leq`       | $\leq$       |  
-| `\geq`       | $\geq$       |  
-| `\cap`       | $\cap$       |  
-| `\cup`       | $\cup$       |  
-  
-# Relation  
+# Relations  
   
 | Positive relation         | Negated relation          |  
 | ------------------------- | ------------------------- |  
@@ -50,27 +27,18 @@ priority: 1
 | $\supseteq$ `\supseteq`   | $\nsupseteq$ `\nsupseteq` |  
 | $\ll$ `\ll`               |                           |  
 | $\gg$ `\gg`               |                           |  
+- generic negation: $\not\equiv$ `\not\equiv`  
+- see more [Relation Symbols | LaTeX math symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf)  
   
-# Operators  
+Comment relation  
+- generic comment: $\overset{\text{def}}{=}$ `\overset{\text{def}}{=}`  
+- extensible comment: $\xlongequal{\text{def}}$ `\xlongequal{\text{def}}`  
+- zero-width comment: $\overset{\mathclap{\text{def}}}{=}$ `\overset{\mathclap{\text{def}}}{=}`  
+- see [Comment equation operators](Comment%20equation%20operators.md)  
   
+## Arrows  
   
-|                                      |                          |  
-| ------------------------------------ | ------------------------ |  
-| $+$ `+`                              | $-$ `-`                  |  
-| $\cdot$ `\cdot`<br>$\times$ `\times` | $/$ `/`<br>$\div$ `\div` |  
-| $\mid$ `\mid`                        | $\parallel$ `\parallel`  |  
-| $\cup$ `\cup`                        | $\cap$ `\cap`            |  
-| $\setminus$ `\setminus`              | $\neg$ `\neq`, `lnot`    |  
-| $\land$ `\land`, `\wedge`            | $\lor$ `\lor`, `\vee`    |  
-| $\pm$ `\pm`<br>$\mp$ `\mp`           | $\Join^1$ `\Join`        |  
-  
-  
-  
-$^1$: requires [latexsym](https://texdoc.org/serve/latexsym/0)  
-  
-# Arrows  
-  
-Logic/Extensible Arrows  
+Logic, extensible arrows  
   
 | Logic Arrow                         | Negated arrow                                                                                                                  | Extensible arrow                                        |  
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------- |  
@@ -82,7 +50,7 @@ Logic/Extensible Arrows
 | $\leftrightarrow$ `\leftrightarrow` | $\nleftrightarrow$ `\nleftrightarrow`                                                                                          | $\xleftrightarrow{abc}$ `\xleftrightarrow{abc}`         |  
 |                                     |                                                                                                                                | $\xlongequal{abc}$ `\xlongequal{abc}`                   |  
 |                                     |                                                                                                                                | $\xmapsto{abc}$ `\xmapsto{abc}`                         |  
-- more [extensible arrows](https://katex.org/docs/supported.html#Extensible-Arrows)  
+- see more [Extensible arrows | KaTeX docs](https://katex.org/docs/supported.html#Extensible-Arrows)  
   
   
 Other arrows  
@@ -98,7 +66,25 @@ Other arrows
 | $\Rightarrow$ `\Rightarrow`<br>$\Longrightarrow$ `\Longrightarrow`<br>$\implies$ `\implies`         | $\Leftarrow$ `\Leftarrow`<br>$\Longleftarrow$ `\Longleftarrow`<br>$\impliedby$ `\impliedby` |  
 | $\Downarrow$ `\Downarrow`                                                                           | $\Uparrow$ `\Uparrow`                                                                       |  
 | $\Leftrightarrow$ `\Leftrightarrow`<br>$\Longleftrightarrow$ `\Longleftrightarrow`<br>$\iff$ `\iff` | $\Updownarrow$ `\Updownarrow`                                                               |  
-- more [arrows | KaTeX](https://katex.org/docs/supported#arrows), [arrows | LaTeX](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3)  
+- see more [Arrows | KaTeX docs](https://katex.org/docs/supported#arrows), [Arrows | LaTeX math symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3)  
+  
+# Operators  
+  
+| Operator                             | Opposite                 |  
+| ------------------------------------ | ------------------------ |  
+| $+$ `+`                              | $-$ `-`                  |  
+| $\cdot$ `\cdot`<br>$\times$ `\times` | $/$ `/`<br>$\div$ `\div` |  
+| $\mid$ `\mid`                        | $\parallel$ `\parallel`  |  
+| $\cup$ `\cup`                        | $\cap$ `\cap`            |  
+| $\setminus$ `\setminus`              | $\neg$ `\neq`, `lnot`    |  
+| $\land$ `\land`, `\wedge`            | $\lor$ `\lor`, `\vee`    |  
+| $\pm$ `\pm`<br>$\mp$ `\mp`           | $\Join^1$ `\Join`        |  
+  
+$^1$: requires [latexsym](https://texdoc.org/serve/latexsym/0)  
+  
+- see more [Operators | KaTeX docs](https://katex.org/docs/supported#operators), [Binary Operation | LaTeX math symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2)  
+  
+  
   
 # Non-Mathematical Symbols  
   
@@ -542,6 +528,30 @@ Set the **style** of the symbols in the preamble
 | `\bigodot`   | $\bigodot$   |  
 | `\bigoplus`  | $\bigoplus$  |  
 | `\bigotimes` | $\bigotimes$ |  
+  
+# Favorites  
+  
+| Command      | Rendering    |  
+| ------------ | ------------ |  
+| `\lnot`      | $\lnot$      |  
+| `\land`      | $\land$      |  
+| `\lor`       | $\lor$       |  
+| `\to`        | $\to$        |  
+| `\gets`      | $\gets$      |  
+| `\iff`       | $\iff$       |  
+| `\implies`   | $\implies$   |  
+| `\impliedby` | $\impliedby$ |  
+| `\mathbb{R}` | $\mathbb{R}$ |  
+| `\approx`    | $\approx$    |  
+| `\subseteq`  | $\subseteq$  |  
+| `\supseteq`  | $\supseteq$  |  
+| `\setminus`  | $\setminus$  |  
+| `\times`     | $\times$     |  
+| `\leq`       | $\leq$       |  
+| `\geq`       | $\geq$       |  
+| `\cap`       | $\cap$       |  
+| `\cup`       | $\cup$       |  
+  
   
 # Arrows  
   
