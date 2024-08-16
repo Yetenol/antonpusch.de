@@ -27,29 +27,17 @@ priority: 1
 | $\supseteq$ `\supseteq`   | $\nsupseteq$ `\nsupseteq` |  
 | $\ll$ `\ll`               |                           |  
 | $\gg$ `\gg`               |                           |  
-- generic negation: $\not\equiv$ `\not\equiv`  
-- see more [Relation Symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf) from LaTeX math symbols  
-  
-Comment relation  
-- generic comment: $\overset{\text{def}}{=}$ `\overset{\text{def}}{=}`  
-- extensible operator: $\xlongequal{\text{def}}$ `\xlongequal{\text{def}}`  
-- zero-width comment: $\overset{\mathclap{\text{def}}}{=}$ `\overset{\mathclap{\text{def}}}{=}`  
-- see [Comment equation operators](Comment%20equation%20operators.md)  
-  
-## Arrows  
   
 | Logic/Extensible Arrow                                                                 | Negated arrow                                                                                                                  |  
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |  
 | $\implies$ `\implies`<br>$\;\xRightarrow{xxx}\;$ `\;\xRightarrow{xxx}\;`               | $\;=\!\nRightarrow\;$ `\;=\!\nRightarrow\;`<br>$\!\!\mathrlap{\quad\not}\implies$ `\mathrlap{\quad\not}\implies`               |  
 | $\impliedby$ `\impliedby`<br>$\;\xLeftarrow{xxx}\;$ `\;\xLeftarrow{xxx}\;`<br>         | $\;\nLeftarrow\!=\;$ `\;\nLeftarrow\!=\;`<br>$\!\!\mathrlap{\quad\not}\impliedby$ `\mathrlap{\quad\not}\impliedby`<br>         |  
 | $\iff$ `\iff`<br>$\;\xLeftrightarrow{xxx}\;$ `\;\xLeftrightarrow{xxx}\;`<br>           | $\;\Leftarrow\!\nRightarrow\;$ `\;\Leftarrow\!\nRightarrow\;`<br>$\!\!\mathrlap{\quad\not}\iff$ `\mathrlap{\quad\not}\iff`<br> |  
-| $\to$ `\to`<br>$\xrightarrow[yy]{xx}$ `\xrightarrow[yy]{xx}`                           | $\nrightarrow$ `\nrightarrow`                                                                                                  |  
-| $\gets$ `\gets`<br>$\xleftarrow{xx}$ `\xleftarrow{xx}`                                 | $\nleftarrow$ `\nleftarrow`                                                                                                    |  
+| $\to$ `\to`<br>$\xrightarrow[yyy]{xxx}$ `\xrightarrow[yyy]{xxx}`                       | $\nrightarrow$ `\nrightarrow`                                                                                                  |  
+| $\gets$ `\gets`<br>$\xleftarrow{xxx}$ `\xleftarrow{xxx}`                               | $\nleftarrow$ `\nleftarrow`                                                                                                    |  
 | $\leftrightarrow$ `\leftrightarrow`<br>$\xleftrightarrow{xxx}$ `\xleftrightarrow{xxx}` | $\nleftrightarrow$ `\nleftrightarrow`                                                                                          |  
-| $\xlongequal{abc}$ `\xlongequal{abc}`                                                  |                                                                                                                                |  
-| $\xmapsto{abc}$ `\xmapsto{abc}`                                                        |                                                                                                                                |  
-  
-- see more [Extensible Arrows](https://katex.org/docs/supported.html#Extensible-Arrows) from KaTeX docs  
+| $\xlongequal{xxx}$ `\xlongequal{xxx}`                                                  |                                                                                                                                |  
+| $\xmapsto{xxx}$ `\xmapsto{xxx}`                                                        |                                                                                                                                |  
   
 | Arrow                                                                                               | another                                                                                     |  
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |  
@@ -64,7 +52,14 @@ Comment relation
 | $\Rightarrow$ `\Rightarrow`<br>$\Longrightarrow$ `\Longrightarrow`<br>$\implies$ `\implies`         | $\Leftarrow$ `\Leftarrow`<br>$\Longleftarrow$ `\Longleftarrow`<br>$\impliedby$ `\impliedby` |  
 | $\Downarrow$ `\Downarrow`                                                                           | $\Uparrow$ `\Uparrow`                                                                       |  
 | $\Leftrightarrow$ `\Leftrightarrow`<br>$\Longleftrightarrow$ `\Longleftrightarrow`<br>$\iff$ `\iff` | $\Updownarrow$ `\Updownarrow`                                                               |  
-- see more [Arrows](https://katex.org/docs/supported#arrows) from KaTeX docs, [Arrows](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3) from LaTeX math symbols  
+  
+See more relation in external resources  
+- [Relation Symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf) from LaTeX math symbols  
+- [Arrows](https://katex.org/docs/supported#arrows), [Extensible Arrows](https://katex.org/docs/supported.html#Extensible-Arrows) from KaTeX docs, [Arrows](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3) from LaTeX math symbols  
+  
+Generically negate/comment all relation  
+- negate $\not\equiv$ `\not\equiv`  
+- comment $\overset{\text{def}}{=}$ `\overset{\text{def}}{=}`, and see [Comment equation operators](Comment%20equation%20operators.md)  
   
 # Operators  
   
@@ -93,19 +88,50 @@ x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \m
 $$  
   
   
-See more operators, resources  
+See more operators in external resources  
 - [Operators](https://katex.org/docs/supported#operators), [Big operators](https://katex.org/docs/supported.html#big-operators) from KaTeX docs, [Binary Operation](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2) from LaTeX math symbols  
 - [Create custom big operator ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf), [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) from Mathematical Typsetting with LaTeX by H. Voß  
   
-Names operators  
-- Use predefined operators$^{(1 - 2)}$  `\min()` etc.  
-- Gets spaced out correctly before and behind, compare$^{(3)}$  
+Operators with text name  
+- Use predefined operators$^{(1 - 2)}$  `\min` - `\sin` - etc.  
+- [p] Operators get spaced out correctly before and behind, compare$^{(3)}$  
 - Create custom operator with text name$^{(4)}$ `\operatorname{real}` or math name$^{(4)}$ `\mathop{\mathbb{P}_0}`   
   
-Use limits, or exponents and indices  
-- in display mode: Defaults to limits$^{(1)}$, force exponents and indices `\lim\nolimits_0^1`  
-- in text mode: Defaults to exponents and indices$^{(3)}$, force limits$^{(4)}$ `\int\limits_0^1`  
+Use limits, or exponents and indices$^{(4)}$  
+- in display mode: Defaults to limits, force exponents and indices `\lim\nolimits_0^1`  
+- in text mode: Defaults to exponents and indices, force limits `\int\limits_0^1`  
 - See [Layout multiple equations](Layout%20multiple%20equations.md)  
+  
+# Greek Letters  
+  
+| lower case                                            | upper case                                           |  
+| ----------------------------------------------------- | ---------------------------------------------------- |  
+| $\alpha$ `\alpha`                                     | $\mathrm{A}$ `A`                                     |  
+| $\beta$ `\beta`                                       | $\mathrm{B}$ `B`                                     |  
+| $\gamma$ `\gamma`                                     | $\Gamma$ `\Gamma`<br>$\varGamma$ `\varGamma`         |  
+| $\delta$ `\delta`                                     | $\Delta$ `\Delta`<br>$\varDelta$ `\varDelta`         |  
+| $\varepsilon$ `\varepsilon` <br>$\epsilon$ `\epsilon` | $\mathrm{E}$ `E`                                     |  
+| $\zeta$ `\zeta`                                       | $\mathrm{Z}$ `Z`                                     |  
+| $\eta$ `\eta`                                         | $\mathrm{H}$ `H`                                     |  
+| $\theta$ `\theta` <br>$\vartheta$ `\vartheta`         | $\Theta$ `\Theta`<br>$\varTheta$ `\varTheta`         |  
+| $\iota$ `\iota`                                       | $\mathrm{I}$ `I`                                     |  
+| $\kappa$ `\kappa` <br>$\varkappa^1$ `\varkappa`       | $\mathrm{K}$ `K`                                     |  
+| $\lambda$ `\lambda`                                   | $\Lambda$ `\Lambda`<br>$\varLambda$ `\varLambda`     |  
+| $\mu$ `\mu`                                           | $\mathrm{M}$ `M`                                     |  
+| $\nu$ `\nu`                                           | $\mathrm{N}$ `N`                                     |  
+| $\xi$ `\xi`                                           | $\Xi$ `\Xi`<br>$\varXi$ `\varXi`                     |  
+| $o$ `o`                                               | $\mathrm{O}$ `O`                                     |  
+| $\pi$ `\pi`<br>$\varpi$ `\varpi`                      | $\Pi$ `\Pi`<br>$\varPi$ `\varPi`                     |  
+| $\rho$ `\rho`<br>$\varrho$ `\varrho`                  | $\mathrm{P}$ `P`                                     |  
+| $\sigma$ `\sigma`<br>$\varsigma$ `\varsigma`          | $\Sigma$ `\Sigma`<br>$\varSigma$ `\varSigma`         |  
+| $\tau$ `\tau`                                         | $\mathrm{T}$ `T`                                     |  
+| $\upsilon$ `\upsilon`                                 | $\Upsilon$ `\Upsilon`<br>$\varUpsilon$ `\varUpsilon` |  
+| $\varphi$ `\varphi`<br>$\phi$ `\phi`                  | $\Phi$ `\Phi`<br>$\varPhi$ `\varPhi`                 |  
+| $\chi$ `\chi`                                         | $\mathrm{X}$ `X`                                     |  
+| $\psi$ `\psi`                                         | $\Psi$ `\Psi`<br>$\varPsi$ `\varPsi`                 |  
+| $\omega$ `\omega`                                     | $\Omega$ `\Omega`<br>$\varOmega$ `\varOmega`         |  
+| $\digamma$ [^2] `\digamma`                            |                                                      |  
+  
   
 # Non-Mathematical Symbols  
   
@@ -175,37 +201,7 @@ These symbols can also be used in text mode.
 | `\widehat{AAA}`   | $\widehat{AAA}$   |  
 | `\widetilde{AAA}` | $\widetilde{AAA}$ |  
   
-# Greek Letters  
   
-| lower case                                            | upper case                                           |  
-| ----------------------------------------------------- | ---------------------------------------------------- |  
-| $\alpha$ `\alpha`                                     | $\mathrm{A}$ `A`                                     |  
-| $\beta$ `\beta`                                       | $\mathrm{B}$ `B`                                     |  
-| $\gamma$ `\gamma`                                     | $\Gamma$ `\Gamma`<br>$\varGamma$ `\varGamma`         |  
-| $\delta$ `\delta`                                     | $\Delta$ `\Delta`<br>$\varDelta$ `\varDelta`         |  
-| $\varepsilon$ `\varepsilon` <br>$\epsilon$ `\epsilon` | $\mathrm{E}$ `E`                                     |  
-| $\zeta$ `\zeta`                                       | $\mathrm{Z}$ `Z`                                     |  
-| $\eta$ `\eta`                                         | $\mathrm{H}$ `H`                                     |  
-| $\theta$ `\theta` <br>$\vartheta$ `\vartheta`         | $\Theta$ `\Theta`<br>$\varTheta$ `\varTheta`         |  
-| $\iota$ `\iota`                                       | $\mathrm{I}$ `I`                                     |  
-| $\kappa$ `\kappa` <br>$\varkappa^1$ `\varkappa`       | $\mathrm{K}$ `K`                                     |  
-| $\lambda$ `\lambda`                                   | $\Lambda$ `\Lambda`<br>$\varLambda$ `\varLambda`     |  
-| $\mu$ `\mu`                                           | $\mathrm{M}$ `M`                                     |  
-| $\nu$ `\nu`                                           | $\mathrm{N}$ `N`                                     |  
-| $\xi$ `\xi`                                           | $\Xi$ `\Xi`<br>$\varXi$ `\varXi`                     |  
-| $o$ `o`                                               | $\mathrm{O}$ `O`                                     |  
-| $\pi$ `\pi`<br>$\varpi$ `\varpi`                      | $\Pi$ `\Pi`<br>$\varPi$ `\varPi`                     |  
-| $\rho$ `\rho`<br>$\varrho$ `\varrho`                  | $\mathrm{P}$ `P`                                     |  
-| $\sigma$ `\sigma`<br>$\varsigma$ `\varsigma`          | $\Sigma$ `\Sigma`<br>$\varSigma$ `\varSigma`         |  
-| $\tau$ `\tau`                                         | $\mathrm{T}$ `T`                                     |  
-| $\upsilon$ `\upsilon`                                 | $\Upsilon$ `\Upsilon`<br>$\varUpsilon$ `\varUpsilon` |  
-| $\varphi$ `\varphi`<br>$\phi$ `\phi`                  | $\Phi$ `\Phi`<br>$\varPhi$ `\varPhi`                 |  
-| $\chi$ `\chi`                                         | $\mathrm{X}$ `X`                                     |  
-| $\psi$ `\psi`                                         | $\Psi$ `\Psi`<br>$\varPsi$ `\varPsi`                 |  
-| $\omega$ `\omega`                                     | $\Omega$ `\Omega`<br>$\varOmega$ `\varOmega`         |  
-| $\digamma^1$ `\digamma`                               |                                                      |  
-  
-$^1$: requires [amssymb](https://texdoc.org/serve/amssymb/0)  
   
 Set the **style** of the letter in the preamble  
   
@@ -794,6 +790,7 @@ example TEXT: `ABCDEabcde1234`
 | `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |  
   
 [^1]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
+[^2]: requires [amssymb](https://texdoc.org/serve/amssymb/0)  
   
 ---  
 Sources:  
