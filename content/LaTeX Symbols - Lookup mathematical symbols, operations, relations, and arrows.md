@@ -72,23 +72,16 @@ Other arrows
   
 # Operators  
   
-| Binary Operator                      | another                  |  
-| ------------------------------------ | ------------------------ |  
-| $+$ `+`                              | $-$ `-`                  |  
-| $\cdot$ `\cdot`<br>$\times$ `\times` | $/$ `/`<br>$\div$ `\div` |  
-| $:$ `:`                              | ${} ^\circ$ `^\circ`     |  
-| $\mid$ `\mid`                        | $\parallel$ `\parallel`  |  
-| $\cup$ `\cup`                        | $\cap$ `\cap`            |  
-| $\setminus$ `\setminus`              | $\neg$ `\neq`, `lnot`    |  
-| $\land$ `\land`, `\wedge`            | $\lor$ `\lor`, `\vee`    |  
-| $\pm$ `\pm`<br>$\mp$ `\mp`           | $\Join$ [^1] `\Join`<br> |  
-  
-[^1]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
-  
-- see more [Operators | KaTeX docs](https://katex.org/docs/supported#operators), [Binary Operation | LaTeX math symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2)  
-  
-| Big Operator                                                             | another                          |  
+| Operator                                                                 | another                          |  
 | ------------------------------------------------------------------------ | -------------------------------- |  
+| $+$ `+`                                                                  | $-$ `-`                          |  
+| $\cdot$ `\cdot`<br>$\times$ `\times`                                     | $/$ `/`<br>$\div$ `\div`         |  
+| $:$ `:`                                                                  | ${} ^\circ$ `^\circ`             |  
+| $\mid$ `\mid`                                                            | $\parallel$ `\parallel`          |  
+| $\cup$ `\cup`                                                            | $\cap$ `\cap`                    |  
+| $\setminus$ `\setminus`                                                  | $\neg$ `\neq`, `lnot`            |  
+| $\land$ `\land`, `\wedge`                                                | $\lor$ `\lor`, `\vee`            |  
+| $\pm$ `\pm`<br>$\mp$ `\mp`                                               | $\Join$ [^1] `\Join`<br>         |  
 | $\displaystyle\sum$ `sum`                                                | $\displaystyle\prod$ `\prod`     |  
 | $\displaystyle\int$ `\int`<br>$\displaystyle\iint$ `\iint`<br>$\vdots$   | $\displaystyle\oint$ `\oint`     |  
 | $\displaystyle\bigcup$ `\bigcup`<br>$\displaystyle\biguplus$ `\biguplus` | $\displaystyle\bigcap$ `\bigcap` |  
@@ -103,8 +96,10 @@ x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \m
 \end{gather*}  
 $$  
   
-- see more [Big operators | KaTeX docs](https://katex.org/docs/supported.html#big-operators), [Create custom big operator | 3.2.7 on page 79 in Mathematical Typsetting with LaTeX by H. Voß](https://www.tug.org/~hvoss/PDF/mathmode.pdf)  
-- see [Operator names | 2.12 on page 66 in Mathematical Typsetting with LaTeX by H. Voß](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72)  
+  
+See more resources  
+- [Operators](https://katex.org/docs/supported#operators), [Big operators](https://katex.org/docs/supported.html#big-operators) from KaTeX docs, [Binary Operation](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2) from LaTeX math symbols  
+- [Create custom big operator ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf), [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) from Mathematical Typsetting with LaTeX by H. Voß  
   
 Names operators  
 - Use predefined operators$^{(1 - 2)}$  `\min()` etc.  
@@ -801,6 +796,8 @@ example TEXT: `ABCDEabcde1234`
 | `\mathscr{TEXT}`    | $\mathscr{ABCDE}$             | [mathrsfs](https://texdoc.org/serve/mathrsfs/0)                                                  |  
 | `\mathfrak{TEXT}`   | $\mathfrak{ABCDEabcde1234}$   | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |  
 | `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |  
+  
+[^1]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
   
 ---  
 Sources:  
