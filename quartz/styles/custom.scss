@@ -1,22 +1,31 @@
 @use "./base.scss";
 
 // Scale overflowing mathjax displays to page width
-mjx-container.MathJax > svg {
-    max-width: 100%;
-}
+// mjx-container.MathJax>svg {
+//     max-width: 100%;
+// }
 
 // Prevent horizontal scroll bar on numbered equations in katex
-span.katex-display {
-    max-width: 100%;
-    overflow: hidden;
+.katex-display>.katex>.katex-html>.tag {
+    overflow-x: hidden;
+}
+// Prevent array's topmost \hline to get clipped
+.katex-display {
     padding-top: 1px;
 }
 
+
 // Center SVGs
-img[src^="./attachments/"][src$=".svg"] {
+article>*>img[src$=".svg"] {
     display: block;
     margin: auto;
     max-width: 100%;
+}
+
+// Center tables
+.table-container {
+    display: flex;
+    justify-content: center;
 }
 
 // put your custom CSS here!
