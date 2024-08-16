@@ -28,6 +28,78 @@ priority: 1
 | `\cap`       | $\cap$       |  
 | `\cup`       | $\cup$       |  
   
+# Relation  
+  
+| Positive relation         | Negated relation          |  
+| ------------------------- | ------------------------- |  
+| $=$ <code>=</code>        | $\ne$ `\ne`, `\neq`       |  
+| $\approx$ `\approx`       |                           |  
+| $<$ `<`                   | $\nless$ `\nless`         |  
+| $>$ `>`                   | $\ngtr$ `\ngtr`           |  
+| $\le$ `\le`, `\leq`       | $\nleq$ `\nleq`           |  
+| $\ge$ `\ge`, `\geq`       | $\ngeq$ `\ngeq`           |  
+| $\sim$ `\sim`             | $\nsim$ `\nsim`           |  
+| $\triangleq$ `\triangleq` |                           |  
+| $\coloneqq$ `\coloneqq`   |                           |  
+| $\equiv$ `\equiv`         |                           |  
+| $\in$ `\in`               | ${} \notin$ `\notin`      |  
+| $\ni$ `\ni`               |                           |  
+| $\subset$ `\subset`       |                           |  
+| $\supset$ `\supset`       |                           |  
+| $\subseteq$ `\subseteq`   | $\nsubseteq$ `\nsubseteq` |  
+| $\supseteq$ `\supseteq`   | $\nsupseteq$ `\nsupseteq` |  
+| $\ll$ `\ll`               |                           |  
+| $\gg$ `\gg`               |                           |  
+  
+# Operators  
+  
+  
+|                                      |                          |  
+| ------------------------------------ | ------------------------ |  
+| $+$ `+`                              | $-$ `-`                  |  
+| $\cdot$ `\cdot`<br>$\times$ `\times` | $/$ `/`<br>$\div$ `\div` |  
+| $\mid$ `\mid`                        | $\parallel$ `\parallel`  |  
+| $\cup$ `\cup`                        | $\cap$ `\cap`            |  
+| $\setminus$ `\setminus`              | $\neg$ `\neq`, `lnot`    |  
+| $\land$ `\land`, `\wedge`            | $\lor$ `\lor`, `\vee`    |  
+| $\pm$ `\pm`<br>$\mp$ `\mp`           | $\Join^1$ `\Join`        |  
+  
+  
+  
+$^1$: requires [latexsym](https://texdoc.org/serve/latexsym/0)  
+  
+# Arrows  
+  
+Logic/Extensible Arrows  
+  
+| Logic Arrow                         | Negated arrow                                                                                                                  | Extensible arrow                                        |  
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------- |  
+| $\implies$ `\implies`<br>           | $\;=\!\nRightarrow\;$ `\;=\!\nRightarrow\;`<br>$\!\!\mathrlap{\quad\not}\implies$ `\mathrlap{\quad\not}\implies`               | $\xRightarrow{abc}$ `\xRightarrow{abc}`                 |  
+| $\impliedby$ `\impliedby`           | $\;\nLeftarrow\!=\;$ `\;\nLeftarrow\!=\;`<br>$\!\!\mathrlap{\quad\not}\impliedby$ `\mathrlap{\quad\not}\impliedby`<br>         | $\xLeftarrow{abc}$ `\xLeftarrow{abc}`                   |  
+| $\iff$ `\iff`                       | $\;\Leftarrow\!\nRightarrow\;$ `\;\Leftarrow\!\nRightarrow\;`<br>$\!\!\mathrlap{\quad\not}\iff$ `\mathrlap{\quad\not}\iff`<br> | $\xLeftrightarrow{abc}$ `\xLeftrightarrow{abc}`         |  
+| $\to$ `\to`                         | $\nrightarrow$ `\nrightarrow`                                                                                                  | $\xrightarrow[under]{over}$ `\xrightarrow[under]{over}` |  
+| $\gets$ `\gets`                     | $\nleftarrow$ `\nleftarrow`                                                                                                    | $\xleftarrow{abc}$ `\xleftarrow{abc}`                   |  
+| $\leftrightarrow$ `\leftrightarrow` | $\nleftrightarrow$ `\nleftrightarrow`                                                                                          | $\xleftrightarrow{abc}$ `\xleftrightarrow{abc}`         |  
+|                                     |                                                                                                                                | $\xlongequal{abc}$ `\xlongequal{abc}`                   |  
+|                                     |                                                                                                                                | $\xmapsto{abc}$ `\xmapsto{abc}`                         |  
+- more [extensible arrows](https://katex.org/docs/supported.html#Extensible-Arrows)  
+  
+  
+Other arrows  
+  
+| Arrow                                                                                               | Opposite arrow                                                                              |  
+| --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |  
+| $\circlearrowright$ `\circlearrowright`                                                             | $\circlearrowleft$ `\circlearrowleft`                                                       |  
+| $\curvearrowright$ `\curvearrowright`                                                               | $\curvearrowleft$ `\curvearrowleft`                                                         |  
+| $\to$ `\to`<br>$\longrightarrow$ `\longrightarrow`<br>$\dashrightarrow$ `\dashrightarrow`           | $\gets$ `\gets`<br>$\longleftarrow$ `\longleftarrow`<br>$\dashleftarrow$ `\dashleftarrow`   |  
+| $\nearrow$ `\nearrow`                                                                               | $\searrow$ `\searrow`                                                                       |  
+| $\downarrow$ `\downarrow`                                                                           | $\uparrow$ `\uparrow`                                                                       |  
+| $\nwarrow$ `\nwarrow`                                                                               | $\swarrow$ `\swarrow`                                                                       |  
+| $\Rightarrow$ `\Rightarrow`<br>$\Longrightarrow$ `\Longrightarrow`<br>$\implies$ `\implies`         | $\Leftarrow$ `\Leftarrow`<br>$\Longleftarrow$ `\Longleftarrow`<br>$\impliedby$ `\impliedby` |  
+| $\Downarrow$ `\Downarrow`                                                                           | $\Uparrow$ `\Uparrow`                                                                       |  
+| $\Leftrightarrow$ `\Leftrightarrow`<br>$\Longleftrightarrow$ `\Longleftrightarrow`<br>$\iff$ `\iff` | $\Updownarrow$ `\Updownarrow`                                                               |  
+- more [arrows | KaTeX](https://katex.org/docs/supported#arrows), [arrows | LaTeX](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3)  
+  
 # Non-Mathematical Symbols  
   
 These symbols can also be used in text mode.  
@@ -96,94 +168,50 @@ These symbols can also be used in text mode.
 | `\widehat{AAA}`   | $\widehat{AAA}$   |  
 | `\widetilde{AAA}` | $\widetilde{AAA}$ |  
   
-# Greek Letters (lowercase)  
+# Greek Letters  
   
-|                                                       |                                                      |  
+| lower case                                            | upper case                                           |  
 | ----------------------------------------------------- | ---------------------------------------------------- |  
-| $\alpha$ `\alpha`                                     | ${} \mathrm{A} {}$                                   |  
-| $\beta$ `\beta`                                       | ${} \mathrm{B} {}$                                   |  
+| $\alpha$ `\alpha`                                     | $\mathrm{A}$ `A`                                     |  
+| $\beta$ `\beta`                                       | $\mathrm{B}$ `B`                                     |  
 | $\gamma$ `\gamma`                                     | $\Gamma$ `\Gamma`<br>$\varGamma$ `\varGamma`         |  
 | $\delta$ `\delta`                                     | $\Delta$ `\Delta`<br>$\varDelta$ `\varDelta`         |  
-| $\varepsilon$ `\varepsilon` <br>$\epsilon$ `\epsilon` | ${} \mathrm{E} {}$                                   |  
-| $\zeta$ `\zeta`                                       | ${} \mathrm{Z} {}$                                   |  
-| $\eta$ `\eta`                                         | ${} \mathrm{H} {}$                                   |  
+| $\varepsilon$ `\varepsilon` <br>$\epsilon$ `\epsilon` | $\mathrm{E}$ `E`                                     |  
+| $\zeta$ `\zeta`                                       | $\mathrm{Z}$ `Z`                                     |  
+| $\eta$ `\eta`                                         | $\mathrm{H}$ `H`                                     |  
 | $\theta$ `\theta` <br>$\vartheta$ `\vartheta`         | $\Theta$ `\Theta`<br>$\varTheta$ `\varTheta`         |  
-| $\iota$ `\iota`                                       | $\mathrm{I}$                                         |  
-| $\kappa$ `\kappa` <br>$\varkappa^1$ `\varkappa`       | ${} \mathrm{K} {}$                                   |  
+| $\iota$ `\iota`                                       | $\mathrm{I}$ `I`                                     |  
+| $\kappa$ `\kappa` <br>$\varkappa^1$ `\varkappa`       | $\mathrm{K}$ `K`                                     |  
 | $\lambda$ `\lambda`                                   | $\Lambda$ `\Lambda`<br>$\varLambda$ `\varLambda`     |  
-| $\mu$ `\mu`                                           | ${} \mathrm{M} {}$                                   |  
-| $\nu$ `\nu`                                           | ${} \mathrm{N} {}$                                   |  
+| $\mu$ `\mu`                                           | $\mathrm{M}$ `M`                                     |  
+| $\nu$ `\nu`                                           | $\mathrm{N}$ `N`                                     |  
 | $\xi$ `\xi`                                           | $\Xi$ `\Xi`<br>$\varXi$ `\varXi`                     |  
-| $o$ `o`                                               | ${} \mathrm{O} {}$                                   |  
+| $o$ `o`                                               | $\mathrm{O}$ `O`                                     |  
 | $\pi$ `\pi`<br>$\varpi$ `\varpi`                      | $\Pi$ `\Pi`<br>$\varPi$ `\varPi`                     |  
-| $\rho$ `\rho`<br>$\varrho$ `\varrho`                  | ${} \mathrm{P} {}$                                   |  
+| $\rho$ `\rho`<br>$\varrho$ `\varrho`                  | $\mathrm{P}$ `P`                                     |  
 | $\sigma$ `\sigma`<br>$\varsigma$ `\varsigma`          | $\Sigma$ `\Sigma`<br>$\varSigma$ `\varSigma`         |  
-| $\tau$ `\tau`                                         | ${} \mathrm{T} {}$                                   |  
+| $\tau$ `\tau`                                         | $\mathrm{T}$ `T`                                     |  
 | $\upsilon$ `\upsilon`                                 | $\Upsilon$ `\Upsilon`<br>$\varUpsilon$ `\varUpsilon` |  
 | $\varphi$ `\varphi`<br>$\phi$ `\phi`                  | $\Phi$ `\Phi`<br>$\varPhi$ `\varPhi`                 |  
-| $\chi$ `\chi`                                         | ${} \mathrm{X} {}$                                   |  
+| $\chi$ `\chi`                                         | $\mathrm{X}$ `X`                                     |  
 | $\psi$ `\psi`                                         | $\Psi$ `\Psi`<br>$\varPsi$ `\varPsi`                 |  
 | $\omega$ `\omega`                                     | $\Omega$ `\Omega`<br>$\varOmega$ `\varOmega`         |  
 | $\digamma^1$ `\digamma`                               |                                                      |  
   
 $^1$: requires [amssymb](https://texdoc.org/serve/amssymb/0)  
   
-| Command     | Variants                         |     | Dependencies                                  |  
-| ----------- | -------------------------------- | --- | --------------------------------------------- |  
-| `\alpha`    | $\alpha$                         |     |                                               |  
-| `\beta`     | $\beta$                          |     |                                               |  
-| `\gamma`    | $\gamma$                         |     |                                               |  
-| `\delta`    | $\delta$                         |     |                                               |  
-| `\epsilon`  | ${} \epsilon\quad\varepsilon {}$ |     |                                               |  
-| `\zeta`     | $\zeta$                          |     |                                               |  
-| `\eta`      | $\eta$                           |     |                                               |  
-| `\theta`    | ${} \theta\quad\vartheta {}$     |     |                                               |  
-| `\iota`     | $\iota$                          |     |                                               |  
-| `\kappa`    | $\kappa\quad\varkappa$           |     |                                               |  
-| `\lambda`   | $\lambda$                        |     |                                               |  
-| `\mu`       | $\mu$                            |     |                                               |  
-| `\nu`       | $\nu$                            |     |                                               |  
-| `\xi`       | $\xi$                            |     |                                               |  
-| `o`         | $o$                              |     |                                               |  
-| `\pi`       | ${} \pi\quad\varpi {}$           |     |                                               |  
-| `\rho`      | $\rho\quad\varrho$               |     |                                               |  
-| `\sigma`    | $\sigma\quad\varsigma$           |     |                                               |  
-| `\tau`      | $\tau$                           |     |                                               |  
-| `\upsilon`  | $\upsilon$                       |     |                                               |  
-| `\phi`      | ${} \phi\quad\varphi {}$         |     |                                               |  
-| `\chi`      | $\chi$                           |     |                                               |  
-| `\psi`      | $\psi$                           |     |                                               |  
-| `\omega`    | $\omega$                         |     |                                               |  
-| `\digamma`  | $\digamma$                       |     | [amssymb](https://texdoc.org/serve/amssymb/0) |  
-| `\varkappa` | $\varkappa$                      |     | [amssymb](https://texdoc.org/serve/amssymb/0) |  
   
 Set the **style** of the letter in the preamble  
   
-| Preamble Command                       | Rendering     | Original   | Dependency         |  
-| -------------------------------------- | ------------- | ---------- | ------------------ |  
-| `\renewcommand{\epsilon}{\varepsilon}` | $\varepsilon$ | $\epsilon$ |  
-| `\renewcommand{\theta}{\vartheta}`     | $\vartheta$   | $\theta$   |  
+| Preamble Command                       | Rendering     | Original   | Dependency                                    |  
+| -------------------------------------- | ------------- | ---------- | --------------------------------------------- |  
+| `\renewcommand{\epsilon}{\varepsilon}` | $\varepsilon$ | $\epsilon$ |                                               |  
+| `\renewcommand{\theta}{\vartheta}`     | $\vartheta$   | $\theta$   |                                               |  
 | `\renewcommand{\kappa}{\varkappa}`     | $\varkappa$   | $\kappa$   | [amssymb](https://texdoc.org/serve/amssymb/0) |  
-| `\renewcommand{\pi}{\varpi}`           | $\varpi$      | $\pi$      |  
-| `\renewcommand{\rho}{\varrho}`         | $\varrho$     | $\rho$     |  
-| `\renewcommand{\sigma}{\varsigma}`     | $\varsigma$   | $\sigma$   |  
-| `\renewcommand{\phi}{\varphi}`         | $\varphi$     | $\phi$     |  
-  
-# Greek Letters (uppercase)  
-  
-| Command    | Rendering  |  
-| ---------- | ---------- |  
-| `\Gamma`   | $\Gamma$   |  
-| `\Delta`   | $\Delta$   |  
-| `\Theta`   | $\Theta$   |  
-| `\Lambda`  | $\Lambda$  |  
-| `\Xi`      | $\Xi$      |  
-| `\Pi`      | $\Pi$      |  
-| `\Sigma`   | $\Sigma$   |  
-| `\Upsilon` | $\Upsilon$ |  
-| `\Phi`     | $\Phi$     |  
-| `\Psi`     | $\Psi$     |  
-| `\Omega`   | $\Omega$   |  
+| `\renewcommand{\pi}{\varpi}`           | $\varpi$      | $\pi$      |                                               |  
+| `\renewcommand{\rho}{\varrho}`         | $\varrho$     | $\rho$     |                                               |  
+| `\renewcommand{\sigma}{\varsigma}`     | $\varsigma$   | $\sigma$   |                                               |  
+| `\renewcommand{\phi}{\varphi}`         | $\varphi$     | $\phi$     |                                               |  
   
 # Hebrew Letters  
   
@@ -208,6 +236,28 @@ Set the **style** of the letter in the preamble
 | `\mathbb{Z}` | $\mathbb{Z}$ |  
   
 # Binary Relations  
+  
+| $\le$ `\le`, `\leq`<br>$\leqslant$ `\leqslant`<br>$\leqq$ `\leqq` | $\nleq$ `\nleq`<br>${} \nleqslant$ `\lneq`, `nleqslant`<br>$\lneqq$ `\lneqq`<br>$\lvertneqq$ `\lvertneqq` |  
+| ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |  
+| $\ge$ `\ge`, `\geq`<br>$\geqslant$ `\geqslant`<br>$\geqq$ `\geqq` | $\ngeq$ `\ngeq`<br>$\ngeqslant$ `\gneq`, `\ngeqslant`<br>$\gneqq$ `\gneqq`<br>$\gvertneqq$ `\gvertneqq`   |  
+  
+| `\neq` <br> `\ne` | $\neq$ <br> $\ne$ |  
+| ----------------- | ----------------- |  
+| `\notin`          | $\notin$          |  
+| `\nless`          | $\nless$          |  
+| `\ngtr`           | $\ngtr$           |  
+| `\lneq`           | $\lneq$           |  
+| `\gneq`           | $\gneq$           |  
+| `\nleq`           | $\nleq$           |  
+| `\ngeq`           | $\ngeq$           |  
+| `\nleqslant`      | $\nleqslant$      |  
+| `\ngeqslant`      | $\ngeqslant$      |  
+| `\lneqq`          | $\lneqq$          |  
+| `\gneqq`          | $\gneqq$          |  
+| `\lvertneqq`      | $\lvertneqq$      |  
+| `\gvertneqq`      | $\gvertneqq$      |  
+| `\nleqq`          | $\nleqq$          |  
+| `\ngeqq`          | $\ngeqq$          |  
   
 | Command               | Rendering             | Variants                                    | Dependency                                      |  
 | --------------------- | --------------------- | ------------------------------------------- | ----------------------------------------------- |  
