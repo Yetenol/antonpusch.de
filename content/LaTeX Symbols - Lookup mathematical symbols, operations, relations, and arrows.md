@@ -71,7 +71,7 @@ Generically negate/comment any relation
 | $\cup$ `\cup`                                                            | $\cap$ `\cap`                                                  |  
 | $\setminus$ `\setminus`                                                  | $\neg$ `\neq`, `lnot`                                          |  
 | $\land$ `\land`, `\wedge`                                                | $\lor$ `\lor`, `\vee`                                          |  
-| $\pm$ `\pm`<br>$\mp$ `\mp`                                               | $\Join$ `\Join` [^1]                                           |  
+| $\pm$ `\pm`<br>$\mp$ `\mp`                                               | $\Join$ `\Join` [^2]                                           |  
 | $\displaystyle\sum$ `sum`                                                | $\displaystyle\prod$ `\prod`                                   |  
 | $\displaystyle\int$ `\int`<br>$\displaystyle\oint$ `\oint`               | $\displaystyle\iint$ `\iint`<br>$\displaystyle\iiint$ `\iiint` |  
 | $\displaystyle\bigcup$ `\bigcup`<br>$\displaystyle\biguplus$ `\biguplus` | $\displaystyle\bigcap$ `\bigcap`                               |  
@@ -128,7 +128,7 @@ Use limits, or exponents and indices$^{(4)}$
 | $\chi$ `\chi`                                         | $\mathrm{X}$ `X`                                     |  
 | $\psi$ `\psi`                                         | $\Psi$ `\Psi`<br>$\varPsi$ `\varPsi`                 |  
 | $\omega$ `\omega`                                     | $\Omega$ `\Omega`<br>$\varOmega$ `\varOmega`         |  
-| $\digamma$ `\digamma` [^2]                            |                                                      |  
+| $\digamma$ `\digamma` [^3]                            |                                                      |  
   
   
 # Non-Mathematical Symbols  
