@@ -93,7 +93,7 @@ $$
   
 # Wrap long equation over multiple lines  
   
-- Split long fractions over two lines $\mathrm{(4a)}$, Indent subsequent lines ${} \mathrm{(4b,c)} {}$, Wrap overlong equations $\mathrm{(4b)}$  
+- Split long fractions over two lines $\mathrm{(4a)}$, Indent subsequent lines $\mathrm{(4b\text{-}c)}$, Wrap overlong equations $\mathrm{(4b)}$  
 - See source examples [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
   
@@ -107,19 +107,16 @@ $$
   
 # Comment equation operators  
   
-- Comment: **Above**/below operators$^{(1)}$, In a **paragraph** between math displays$^{(2)}$, **Braces** under parts of an expression${} ^{(3a)}$, Comment a **case**$^{(3b)}$, Name matrix columns and rows  
+- Comment: **Over**/under operators $\mathrm{(5a)}$, In a **paragraph** between math displays, **Braces** under parts of an expression $\mathrm{(5b)}$, Comment a **case** $\mathrm{(5b)}$, Name matrix columns and rows  
 - See source examples [Comment equation operators](Comment%20equation%20operators.md)  
   
 $$  
-x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ x} xxxx \tag{1}  
+x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ x} xxxx \tag{5a}  
 $$  
 $\text{Write a paragraph between equations:}$  
 $$  
-\, \tag{2}  
-$$  
-$$  
 x = \underbrace{ xxxxx }_{\text{for }x} \underbrace{ xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and relatives}} }  }  
-= \begin{cases} xx,  & \text{for } x \\ x,  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{3}  
+= \begin{cases} xx,  & \text{for } x \\ x,  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{5b}  
 $$  
   
 # Reference equations  
@@ -160,17 +157,18 @@ $$
   
 # Layout multiple equations  
   
-- Scale, Placement: Spread math over multiple display columns$^{(1)}$, Scale delimiters manually/automatically$^{(2)}$, Scale repeating operators$^{(2)}$, Place limits surrounding/next to it$^{(2)}$ `\limit` - `\nolimit`, Scale equations `exscale`  
-- Spacing$^{(3)}$: Between lines likes insides a matrix$^{(3)}$ `\\[1ex]` - `\jot`, text fraction styles$^{(3)}$, 1000 separator$^{(3)}$, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space  
-- Formatting${} ^{(4)}$: color$^{(4)}$ `\textcolor`, Diagonal strikeout$^{(4)}$ `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math$^{(4)}$ `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough  
+- Spread math over multiple display columns $\mathrm{(6a)}$  
+- Scale, Placement $\mathrm{(6b)}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`  
+- Spacing $\mathrm{(6c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space  
+- Formatting $\mathrm{(6d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough  
 - See source examples [Layout multiple equations](Layout%20multiple%20equations.md)  
   
 $$  
 \begin{gather*}  
-\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{1} \\  
-\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{2} \\  
-\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{3} \\   
-\textcolor{magenta}{a + b^2},\; \cancel{a + b^2},\; \boxed{a + b^2}\; \begin{array}{:c:} \hdashline a + b^2 \\ \hdashline \end{array} \tag{4}  
+\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{6a} \\  
+\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{6b} \\  
+\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{6c} \\   
+\textcolor{magenta}{a + b^2},\; \cancel{a + b^2},\; \boxed{a + b^2}\; \begin{array}{:c:} \hdashline a + b^2 \\ \hdashline \end{array} \tag{6d}  
 \end{gather*}  
 $$  
   
