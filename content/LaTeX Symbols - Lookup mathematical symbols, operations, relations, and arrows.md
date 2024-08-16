@@ -28,7 +28,7 @@ priority: 1
 | $\ll$ `\ll`               |                           |  
 | $\gg$ `\gg`               |                           |  
 - generic negation: $\not\equiv$ `\not\equiv`  
-- see more [Relation Symbols | LaTeX math symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf)  
+- see more [Relation Symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf) from LaTeX math symbols  
   
 Comment relation  
 - generic comment: $\overset{\text{def}}{=}$ `\overset{\text{def}}{=}`  
@@ -38,24 +38,20 @@ Comment relation
   
 ## Arrows  
   
-Logic, extensible arrows  
+| Logic/Extensible Arrow                                                                 | Negated arrow                                                                                                                  |  
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |  
+| $\implies$ `\implies`<br>$\;\xRightarrow{xxx}\;$ `\;\xRightarrow{xxx}\;`               | $\;=\!\nRightarrow\;$ `\;=\!\nRightarrow\;`<br>$\!\!\mathrlap{\quad\not}\implies$ `\mathrlap{\quad\not}\implies`               |  
+| $\impliedby$ `\impliedby`<br>$\;\xLeftarrow{xxx}\;$ `\;\xLeftarrow{xxx}\;`<br>         | $\;\nLeftarrow\!=\;$ `\;\nLeftarrow\!=\;`<br>$\!\!\mathrlap{\quad\not}\impliedby$ `\mathrlap{\quad\not}\impliedby`<br>         |  
+| $\iff$ `\iff`<br>$\;\xLeftrightarrow{xxx}\;$ `\;\xLeftrightarrow{xxx}\;`<br>           | $\;\Leftarrow\!\nRightarrow\;$ `\;\Leftarrow\!\nRightarrow\;`<br>$\!\!\mathrlap{\quad\not}\iff$ `\mathrlap{\quad\not}\iff`<br> |  
+| $\to$ `\to`<br>$\xrightarrow[yy]{xx}$ `\xrightarrow[yy]{xx}`                           | $\nrightarrow$ `\nrightarrow`                                                                                                  |  
+| $\gets$ `\gets`<br>$\xleftarrow{xx}$ `\xleftarrow{xx}`                                 | $\nleftarrow$ `\nleftarrow`                                                                                                    |  
+| $\leftrightarrow$ `\leftrightarrow`<br>$\xleftrightarrow{xxx}$ `\xleftrightarrow{xxx}` | $\nleftrightarrow$ `\nleftrightarrow`                                                                                          |  
+| $\xlongequal{abc}$ `\xlongequal{abc}`                                                  |                                                                                                                                |  
+| $\xmapsto{abc}$ `\xmapsto{abc}`                                                        |                                                                                                                                |  
   
-| Logic Arrow                         | Negated arrow                                                                                                                  | Extensible arrow                                        |  
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------- |  
-| $\implies$ `\implies`<br>           | $\;=\!\nRightarrow\;$ `\;=\!\nRightarrow\;`<br>$\!\!\mathrlap{\quad\not}\implies$ `\mathrlap{\quad\not}\implies`               | $\xRightarrow{abc}$ `\xRightarrow{abc}`                 |  
-| $\impliedby$ `\impliedby`           | $\;\nLeftarrow\!=\;$ `\;\nLeftarrow\!=\;`<br>$\!\!\mathrlap{\quad\not}\impliedby$ `\mathrlap{\quad\not}\impliedby`<br>         | $\xLeftarrow{abc}$ `\xLeftarrow{abc}`                   |  
-| $\iff$ `\iff`                       | $\;\Leftarrow\!\nRightarrow\;$ `\;\Leftarrow\!\nRightarrow\;`<br>$\!\!\mathrlap{\quad\not}\iff$ `\mathrlap{\quad\not}\iff`<br> | $\xLeftrightarrow{abc}$ `\xLeftrightarrow{abc}`         |  
-| $\to$ `\to`                         | $\nrightarrow$ `\nrightarrow`                                                                                                  | $\xrightarrow[under]{over}$ `\xrightarrow[under]{over}` |  
-| $\gets$ `\gets`                     | $\nleftarrow$ `\nleftarrow`                                                                                                    | $\xleftarrow{abc}$ `\xleftarrow{abc}`                   |  
-| $\leftrightarrow$ `\leftrightarrow` | $\nleftrightarrow$ `\nleftrightarrow`                                                                                          | $\xleftrightarrow{abc}$ `\xleftrightarrow{abc}`         |  
-|                                     |                                                                                                                                | $\xlongequal{abc}$ `\xlongequal{abc}`                   |  
-|                                     |                                                                                                                                | $\xmapsto{abc}$ `\xmapsto{abc}`                         |  
+- see more [Extensible Arrows](https://katex.org/docs/supported.html#Extensible-Arrows) from KaTeX docs  
   
-- see more [Extensible arrows | KaTeX docs](https://katex.org/docs/supported.html#Extensible-Arrows)  
-  
-Other arrows  
-  
-| Arrow                                                                                               | Opposite arrow                                                                              |  
+| Arrow                                                                                               | another                                                                                     |  
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |  
 | $\circlearrowright$ `\circlearrowright`                                                             | $\circlearrowleft$ `\circlearrowleft`                                                       |  
 | $\curvearrowright$ `\curvearrowright`                                                               | $\curvearrowleft$ `\curvearrowleft`                                                         |  
@@ -68,7 +64,7 @@ Other arrows
 | $\Rightarrow$ `\Rightarrow`<br>$\Longrightarrow$ `\Longrightarrow`<br>$\implies$ `\implies`         | $\Leftarrow$ `\Leftarrow`<br>$\Longleftarrow$ `\Longleftarrow`<br>$\impliedby$ `\impliedby` |  
 | $\Downarrow$ `\Downarrow`                                                                           | $\Uparrow$ `\Uparrow`                                                                       |  
 | $\Leftrightarrow$ `\Leftrightarrow`<br>$\Longleftrightarrow$ `\Longleftrightarrow`<br>$\iff$ `\iff` | $\Updownarrow$ `\Updownarrow`                                                               |  
-- see more [Arrows | KaTeX docs](https://katex.org/docs/supported#arrows), [Arrows | LaTeX math symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3)  
+- see more [Arrows](https://katex.org/docs/supported#arrows) from KaTeX docs, [Arrows](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3) from LaTeX math symbols  
   
 # Operators  
   
@@ -89,15 +85,15 @@ Other arrows
   
 $$  
 \begin{gather*}  
-\min()\, \max()\, \log()  \ln()  \det()  \lim_{a \to \infty}() \tag{1} \\  
-\sin()\, \cos()\, \tan()\, \arcsin()\, \arccos()\, \arctan() \tag{2} \\  
+\min\, \max\, \log  \ln  \det  \lim_{a \to \infty} \tag{1} \\  
+\sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{2} \\  
 x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \mathrm{sin}() x} \tag{3} \\  
-\sum_{i = 0}^\infty\, \sum\nolimits_{i = 0}^\infty\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{4}  
+\lim_{a \to \infty}\, \lim\nolimits_{a \to \infty}\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{4}  
 \end{gather*}  
 $$  
   
   
-See more resources  
+See more operators, resources  
 - [Operators](https://katex.org/docs/supported#operators), [Big operators](https://katex.org/docs/supported.html#big-operators) from KaTeX docs, [Binary Operation](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2) from LaTeX math symbols  
 - [Create custom big operator ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf), [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) from Mathematical Typsetting with LaTeX by H. Voß  
   
@@ -107,7 +103,7 @@ Names operators
 - Create custom operator with text name$^{(4)}$ `\operatorname{real}` or math name$^{(4)}$ `\mathop{\mathbb{P}_0}`   
   
 Use limits, or exponents and indices  
-- in display mode: Defaults to limits$^{(1)}$, force exponents and indices `\sum\nolimits_0^1`  
+- in display mode: Defaults to limits$^{(1)}$, force exponents and indices `\lim\nolimits_0^1`  
 - in text mode: Defaults to exponents and indices$^{(3)}$, force limits$^{(4)}$ `\int\limits_0^1`  
 - See [Layout multiple equations](Layout%20multiple%20equations.md)  
   
