@@ -10,13 +10,12 @@ priority: 1
 | Positive relation                                    | negated                     |  
 | ---------------------------------------------------- | --------------------------- |  
 | $=$ <code>=</code>                                   | $\ne$ `\ne`, `\neq`         |  
-| $\triangleq$ `\triangleq`<br>$\coloneqq$ `\coloneqq` |                             |  
 | $\approx$ `\approx`                                  | $\not\approx$ `\not\approx` |  
 | $<$ `<`                                              | $\nless$ `\nless`           |  
 | $>$ `>`                                              | $\ngtr$ `\ngtr`             |  
 | $\le$ `\le`, `\leq`                                  | $\nleq$ `\nleq`             |  
 | $\ge$ `\ge`, `\geq`                                  | $\ngeq$ `\ngeq`             |  
-| $\sim$ `\sim`                                        | $\nsim$ `\nsim`             |  
+| $\triangleq$ `\triangleq`<br>$\coloneqq$ `\coloneqq` |                             |  
 | $\equiv$ `\equiv`                                    | $\not\equiv$ `\not\equiv`   |  
 | $\in$ `\in`                                          | ${} \notin$ `\notin`        |  
 | $\ni$ `\ni`                                          | $\not\ni$ `\not\ni`[^1]     |  
@@ -24,6 +23,7 @@ priority: 1
 | $\supset$ `\supset`                                  | $\not\supset$ `\not\supset` |  
 | $\subseteq$ `\subseteq`                              | $\nsubseteq$ `\nsubseteq`   |  
 | $\supseteq$ `\supseteq`                              | $\nsupseteq$ `\nsupseteq`   |  
+| $\sim$ `\sim`                                        | $\nsim$ `\nsim`             |  
 | $\ll$ `\ll`                                          | $\not\ll$ `\not\ll`         |  
 | $\gg$ `\gg`                                          | $\not\gg$ `\not\gg`         |  
   
@@ -54,9 +54,9 @@ priority: 1
 | $\Leftrightarrow$ `\Leftrightarrow`<br>$\Longleftrightarrow$ `\Longleftrightarrow`<br>$\iff$ `\iff` | $\Updownarrow$ `\Updownarrow`                                                               |  
   
 See more relations in external resources  
-- [Relation Symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf) from LaTeX math symbols  
+- [Relation Symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2) from LaTeX math symbols  
 - Packages for [Relations p. 67](https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf#page=69) or [Arrows p. 94](https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf#page=96) from Comprehensive LaTeX Symbol List  
-- [Arrows](https://katex.org/docs/supported#arrows) - [Extensible Arrows](https://katex.org/docs/supported.html#Extensible-Arrows) from KaTeX docs, [Arrows](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3) from LaTeX math symbols  
+- [Arrows](https://katex.org/docs/supported#arrows) from KaTeX docs; [Arrows](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3) from LaTeX math symbols  
   
 Generically negate/comment any relation  
 - negate $\not\equiv$ `\not\equiv`  
@@ -89,9 +89,9 @@ x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \m
 $$  
   
 See more operators in external resources  
-- [Operators](https://katex.org/docs/supported#operators) or [Big operators](https://katex.org/docs/supported.html#big-operators) from KaTeX docs, [Binary Operation](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2) from LaTeX math symbols  
+- [Operators](https://katex.org/docs/supported#operators) or [Big operators](https://katex.org/docs/supported.html#big-operators) from KaTeX docs  
 - Packages for [Operators p. 37](https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf#page=39) from Comprehensive LaTeX Symbol List  
-- [Create custom big operator ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf), [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) from Mathematical Typsetting with LaTeX by H. Voß  
+- [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) or create custom big operator [mathchar ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=85) from Mathematical Typsetting with LaTeX by H. Voß  
   
 Operators with **function name**  
 - $\mathrm{(1a\text{-}b)}$: Use predefined operators `\min` - `\sin` - etc.  
