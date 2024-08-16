@@ -43,71 +43,71 @@ This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \s
   
 ## Display mode  
   
-- **Centered** equation(s): **Single** equation$^{(1)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`  
-- Alternating **right/left**-aligned columns: **Separated** pairs$^{(2)}$ `\begin{align*}`, $n$ pairs of **touching** columns$^{(3)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`  
+- **Centered** equation(s): **Single** equation$^{(1.1)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`  
+- Alternating **right/left**-aligned columns: **Separated** pairs$^{(1.2)}$ `\begin{align*}`, $n$ pairs of **touching** columns$^{(1.3)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`  
 - See source examples [Vertically align equations](./Vertically%20align%20equations.md)  
   
 $$  
-\gets \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \to \tag{1}  
+\gets \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \to \tag{1.1}  
 $$  
 $$  
 \begin{align*}  
 \gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \\ \hdashline \end{array} & \to & \gets   
-\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{2}  
+\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{1.2}  
 \end{align*}  
 $$  
 $$  
 \begin{alignat*}{2}  
 \gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \\ \hdashline \end{array} &&   
-\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{3}  
+\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{1.3}  
 \end{alignat*}  
 $$  
   
 ## Nested tabular mode  
   
-- Surround with **delimiters** `\begin{pmatrix}`$^{(1)}$ - `\begin{cases}`$^{(1)}$  
-- **Attach at** the bottom/center/top `\begin{aligned}[b]`$^{(2)}$  - `\begin{aligned}[t]`$^{(3)}$  
+- Surround with **delimiters** $(2.1)$ `\begin{pmatrix}` - `\begin{cases}`  
+- **Split** overlong equations in multiple lines $(2.2)$  
   
 $$  
 \begin{align*} \qquad&\kern{-2em}  
-x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{1} \\&  
- = xxxxxxx \tag{2} \\&  
-\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{3} \\&  
+x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{2.1} \\&  
+ = xxxxxxx \\&  
+\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{2.2} \\&  
 \end{align*}  
 $$  
   
 # Symbols  
   
-- Operators$^{(1)}$, Relations${} ^{(2)} {}$, Arrows$^{(3)}$  
+- Operators ${(3a)}$, Relations ${(3b)}$, Arrows ${(3c)}$  
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30  
 - See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
   
 $$  
 \begin{gather*}  
-+ - \cdot \times / \div : {}^\ \mid\,  \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{1} \\  
-=\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{2} \\  
-\implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowleft\, \Rsh \tag{3} \\  
++ - \cdot \times / \div : {}^\ \mid\,  \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{3a} \\  
+=\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{3b} \\  
+\implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowleft\, \Rsh \tag{3c} \\  
 \end{gather*}  
 $$  
   
   
 # Wrap long equation over multiple lines  
   
-- Split long fractions over two lines$^{(1)}$, Indent subsequent lines$^{(2-3)}$, Wrap overlong equations$^{(2)}$  
+- Split long fractions over two lines$^{(4a)}$, Indent subsequent lines${} ^{(4b - c)}$, Wrap overlong equations$^{(4c)}$  
 - See source examples [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
   
 $$  
 \begin{align*}\qquad&\kern{-2em}  
-x = xx +  \frac{  \begin{split} xxxxxxx \quad\\[-1ex] + xxxx \end{split} }{x} +  \frac{ \substack{xxxxxxx \\ +xxxx} }{x}\tag{1} \\&  
-\begin{split}\; =  xxxxxxxxxx \\ xxx\end{split} \tag{2} \\&  
- =  xxxxx \tag{3}  
+x = xx +  \frac{  \begin{split} xxxxxxx \quad\\[-1ex] + xxxx \end{split} }{x} +  \frac{ \substack{xxxxxxx \\ +xxxx} }{x}\tag{4a} \\&  
+\begin{split}\; =  xxxxxxxxxx \\ xxx\end{split} \tag{4b} \\&  
+ =  xxxxx \tag{4c}  
 \end{align*}   
 $$  
   
 # Comment equation operators  
   
-- Comment: **Above**/below operators$^{(1)}$, In a **paragraph** between math displays$^{(2)}$, **Braces** under parts of an expression${} ^{(3a)} {}$, Comment a **case**$^{(3b)}$, Name matrix columns and rows  
+- Comment: **Above**/below operators$^{(1)}$, In a **paragraph** between math displays$^{(2)}$, **Braces** under parts of an expression${} ^{(3a)}$, Comment a **case**$^{(3b)}$, Name matrix columns and rows  
 - See source examples [Comment equation operators](Comment%20equation%20operators.md)  
   
 $$  
