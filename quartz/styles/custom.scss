@@ -12,5 +12,11 @@ span.katex-display {
     padding-top: 1px;
 }
 
+// Center SVGs
+img[src^="./attachments/"][src$=".svg"] {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
 
 // put your custom CSS here!
