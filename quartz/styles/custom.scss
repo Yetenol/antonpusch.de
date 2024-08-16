@@ -18,14 +18,15 @@
 // Center SVGs
 article>*>img[src$=".svg"] {
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
 }
 
 // Center tables
-.table-container {
-    display: flex;
-    justify-content: center;
+.table-container>table {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // put your custom CSS here!
