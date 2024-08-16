@@ -43,8 +43,8 @@ This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \s
   
 ## Display mode  
   
-- **Centered** equation(s): **Single** equation $\text{(1a)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`  
-- Alternating **right/left**-aligned columns: **Separated** pairs ${} \text{(1b)} {}$ `\begin{align*}`, $n$ pairs of **touching** columns $\text{(1c)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`  
+- **Centered** equation(s): **Single** equation $\mathrm{(1a)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`  
+- Alternating **right/left**-aligned columns: **Separated** pairs ${} \text{(1b)} {}$ `\begin{align*}`, $n$ pairs of **touching** columns ${} \mathrm{(1c)} {}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`  
 - See source examples [Vertically align equations](./Vertically%20align%20equations.md)  
   
 $$  
@@ -66,7 +66,7 @@ $$
 ## Nested tabular mode  
   
 - Surround with **delimiters** $\mathrm{(4a)}$ \begin{pmatrix} - \begin{cases}  
-- **Split** overlong equations in multiple lines ${} \mathrm{(4b)} {}$  
+- **Split** overlong equations in multiple lines $\mathrm{(4b)}$  
   
 $$  
 \begin{align*} \qquad&\kern{-2em}  
@@ -78,7 +78,7 @@ $$
   
 # Symbols  
   
-- Operators $\text{(3a)}$, Relations $\text{(3b)}$, Arrows $\text{(3c)}$  
+- Operators ${} \mathrm{(3a)} {}$, Relations ${} \mathrm{(3b)} {}$, Arrows ${} \mathrm{(3c)} {}$  
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30  
 - See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
   
@@ -93,7 +93,7 @@ $$
   
 # Wrap long equation over multiple lines  
   
-- Split long fractions over two lines $\text{(4a)}$, Indent subsequent lines $\text{(4b-c)}$, Wrap overlong equations $\text{(4b)}$  
+- Split long fractions over two lines $\mathrm{(4a)}$, Indent subsequent lines ${} \mathrm{(4b,c)} {}$, Wrap overlong equations $\mathrm{(4b)}$  
 - See source examples [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
   
