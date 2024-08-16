@@ -86,9 +86,9 @@ $$
   
 $$  
 \begin{gather*}  
-+ - \cdot \times / \div : {}^\ \mid \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{1} \\  
-=\, \approx\, <\, >\, \le\, \ge\, \sim\, \triangleq\, \coloneqq\, \equiv\, \in\, \ni\, \subset\, \supset\, \subseteq\, \supseteq\, \ll\, \gg, \ne\, \nless\, \ngtr\, \ngeq\, \nsim\, \notin\, \nsubseteq\, \nsupseteq \tag{2} \\  
-\implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{under}]{\text{over}}\, \xlongequal{\text{abc}}\, \gets\, \nearrow\, \uparrow\, \updownarrow\, \dashrightarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowright\, \curvearrowleft\, \Rsh \tag{3} \\  
++ - \cdot \times / \div : {}^\ \mid\,  \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{1} \\  
+=\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{2} \\  
+\implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xlongequal{\text{def}}\, \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowright\, \curvearrowleft\, \Rsh \tag{3} \\  
 \end{gather*}  
 $$  
   
