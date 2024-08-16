@@ -79,10 +79,10 @@ Generically negate/comment any relation
   
 $$  
 \begin{gather*}  
-\min\, \max\, \log  \ln  \det  \lim \tag{I} \\  
-\sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{II} \\  
-x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \mathrm{sin}() x} \tag{III} \\  
-\lim_{a \to \infty}\, \lim\nolimits_{a \to \infty}\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{IV}  
+\min\, \max\, \log  \ln  \det  \lim \tag{1} \\  
+\sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{2} \\  
+x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \mathrm{sin}() x} \tag{3} \\  
+\lim_{a \to \infty}\, \lim\nolimits_{a \to \infty}\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{4}  
 \end{gather*}  
 $$  
   
@@ -91,7 +91,7 @@ See more operators in external resources
 - [Create custom big operator ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf), [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) from Mathematical Typsetting with LaTeX by H. Voß  
   
 Operators with text name  
-- Use predefined operators[^I]$^{(\mathrm{I - II})}$  `\min` - `\sin` - etc.  
+- Use predefined operators$^{(\mathrm{I - II})}$  `\min` - `\sin` - etc.  
 - [p] Operators get spaced out correctly before and behind, compare$^{(3)}$  
 - Create custom operator with text name$^{(4)}$ `\operatorname{real}` or math name$^{(4)}$ `\mathop{\mathbb{P}_0}`   
   
@@ -787,10 +787,6 @@ example TEXT: `ABCDEabcde1234`
 | `\mathfrak{TEXT}`   | $\mathfrak{ABCDEabcde1234}$   | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |  
 | `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |  
   
-[^1]: the macros `\notni` isn't supported by MathJax  
-[^2]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
-[^3]: requires [amssymb](https://texdoc.org/serve/amssymb/0)  
-  
 ---  
 Sources:  
 - 2022-06-10: [The Not So Short Introduction to LaTeX2e](https://tobi.oetiker.ch/lshort/lshort.pdf)  
@@ -805,3 +801,7 @@ Tags:
 [Values  - Standardize math, numbers, symbols, quantities, money](./Values%20%20-%20Standardize%20math,%20numbers,%20symbols,%20quantities,%20money.md)  
 [Graphical elements - Standardize tables, images, plots](./Graphical%20elements%20-%20Standardize%20tables,%20images,%20plots.md)  
 [LaTeX](./LaTeX%20-%20Typeset%20mathematical%20and%20scientific%20notation,%20handle%20cross-referencing%20and%20citations,%20and%20position%20images%20according%20to%20defined%20placement%20rules.md)  
+  
+[^1]: the macros `\notni` isn't supported by MathJax  
+[^2]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
+[^3]: requires [amssymb](https://texdoc.org/serve/amssymb/0)
