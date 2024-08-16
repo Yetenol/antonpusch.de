@@ -7,7 +7,7 @@ priority: 1
   
 # Relations  
   
-| Positive relation         | Negated relation          |  
+| Positive relation         | negated                   |  
 | ------------------------- | ------------------------- |  
 | $=$ <code>=</code>        | $\ne$ `\ne`, `\neq`       |  
 | $\approx$ `\approx`       |                           |  
@@ -28,7 +28,7 @@ priority: 1
 | $\ll$ `\ll`               |                           |  
 | $\gg$ `\gg`               |                           |  
   
-| Logic/Extensible Arrow                                                                 | Negated arrow                                                                                                                  |  
+| Logic/Extensible Arrow                                                                 | negated                                                                                                                        |  
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |  
 | $\implies$ `\implies`<br>$\;\xRightarrow{xxx}\;$ `\;\xRightarrow{xxx}\;`               | $\;=\!\nRightarrow\;$ `\;=\!\nRightarrow\;`<br>$\!\!\mathrlap{\quad\not}\implies$ `\mathrlap{\quad\not}\implies`               |  
 | $\impliedby$ `\impliedby`<br>$\;\xLeftarrow{xxx}\;$ `\;\xLeftarrow{xxx}\;`<br>         | $\;\nLeftarrow\!=\;$ `\;\nLeftarrow\!=\;`<br>$\!\!\mathrlap{\quad\not}\impliedby$ `\mathrlap{\quad\not}\impliedby`<br>         |  
@@ -39,7 +39,7 @@ priority: 1
 | $\xlongequal{xxx}$ `\xlongequal{xxx}`                                                  |                                                                                                                                |  
 | $\xmapsto{xxx}$ `\xmapsto{xxx}`                                                        |                                                                                                                                |  
   
-| Arrow                                                                                               | another                                                                                     |  
+| Regular Arrow                                                                                       | another                                                                                     |  
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |  
 | $\circlearrowright$ `\circlearrowright`                                                             | $\circlearrowleft$ `\circlearrowleft`                                                       |  
 | $\curvearrowright$ `\curvearrowright`                                                               | $\curvearrowleft$ `\curvearrowleft`                                                         |  
@@ -57,30 +57,30 @@ See more relation in external resources
 - [Relation Symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf) from LaTeX math symbols  
 - [Arrows](https://katex.org/docs/supported#arrows), [Extensible Arrows](https://katex.org/docs/supported.html#Extensible-Arrows) from KaTeX docs, [Arrows](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3) from LaTeX math symbols  
   
-Generically negate/comment all relation  
+Generically negate/comment any relation  
 - negate $\not\equiv$ `\not\equiv`  
 - comment $\overset{\text{def}}{=}$ `\overset{\text{def}}{=}`, and see [Comment equation operators](Comment%20equation%20operators.md)  
   
 # Operators  
   
-| Operator                                                                 | another                          |  
-| ------------------------------------------------------------------------ | -------------------------------- |  
-| $+$ `+`                                                                  | $-$ `-`                          |  
-| $\cdot$ `\cdot`<br>$\times$ `\times`                                     | $/$ `/`<br>$\div$ `\div`         |  
-| $:$ `:`                                                                  | ${} ^\circ$ `^\circ`             |  
-| $\mid$ `\mid`                                                            | $\parallel$ `\parallel`          |  
-| $\cup$ `\cup`                                                            | $\cap$ `\cap`                    |  
-| $\setminus$ `\setminus`                                                  | $\neg$ `\neq`, `lnot`            |  
-| $\land$ `\land`, `\wedge`                                                | $\lor$ `\lor`, `\vee`            |  
-| $\pm$ `\pm`<br>$\mp$ `\mp`                                               | $\Join$ [^1] `\Join`<br>         |  
-| $\displaystyle\sum$ `sum`                                                | $\displaystyle\prod$ `\prod`     |  
-| $\displaystyle\int$ `\int`<br>$\displaystyle\iint$ `\iint`<br>$\vdots$   | $\displaystyle\oint$ `\oint`     |  
-| $\displaystyle\bigcup$ `\bigcup`<br>$\displaystyle\biguplus$ `\biguplus` | $\displaystyle\bigcap$ `\bigcap` |  
-| $\displaystyle\bigwedge$ `\bigwedge`                                     | $\displaystyle\bigvee$ `\bigvee` |  
+| Operator                                                                 | another                                                        |  
+| ------------------------------------------------------------------------ | -------------------------------------------------------------- |  
+| $+$ `+`                                                                  | $-$ `-`                                                        |  
+| $\cdot$ `\cdot`<br>$\times$ `\times`                                     | $/$ `/`<br>$\div$ `\div`                                       |  
+| $:$ `:`                                                                  | ${} ^\circ$ `^\circ`                                           |  
+| $\mid$ `\mid`                                                            | $\parallel$ `\parallel`                                        |  
+| $\cup$ `\cup`                                                            | $\cap$ `\cap`                                                  |  
+| $\setminus$ `\setminus`                                                  | $\neg$ `\neq`, `lnot`                                          |  
+| $\land$ `\land`, `\wedge`                                                | $\lor$ `\lor`, `\vee`                                          |  
+| $\pm$ `\pm`<br>$\mp$ `\mp`                                               | $\Join$ [^1] `\Join`<br>                                       |  
+| $\displaystyle\sum$ `sum`                                                | $\displaystyle\prod$ `\prod`                                   |  
+| $\displaystyle\int$ `\int`<br>$\displaystyle\oint$ `\oint`               | $\displaystyle\iint$ `\iint`<br>$\displaystyle\iiint$ `\iiint` |  
+| $\displaystyle\bigcup$ `\bigcup`<br>$\displaystyle\biguplus$ `\biguplus` | $\displaystyle\bigcap$ `\bigcap`                               |  
+| $\displaystyle\bigwedge$ `\bigwedge`                                     | $\displaystyle\bigvee$ `\bigvee`                               |  
   
 $$  
 \begin{gather*}  
-\min\, \max\, \log  \ln  \det  \lim_{a \to \infty} \tag{1} \\  
+\min\, \max\, \log  \ln  \det  \lim \tag{1} \\  
 \sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{2} \\  
 x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \mathrm{sin}() x} \tag{3} \\  
 \lim_{a \to \infty}\, \lim\nolimits_{a \to \infty}\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{4}  
