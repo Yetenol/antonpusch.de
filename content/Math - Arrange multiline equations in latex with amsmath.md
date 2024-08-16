@@ -88,7 +88,7 @@ $$
 \begin{gather*}  
 + - \cdot \times / \div : {}^\ \mid\,  \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{1} \\  
 =\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{2} \\  
-\implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowright\, \curvearrowleft\, \Rsh \tag{3} \\  
+\implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowleft\, \Rsh \tag{3} \\  
 \end{gather*}  
 $$  
   
