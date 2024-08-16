@@ -80,25 +80,23 @@ $$
   
 # Symbols  
   
-- Roots, fraction, matrix, operators, relations, accents, greek letter  
-- [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
-- Limits, super/subscript  
-- escevt for better vectors #34  
-- Split delimiter  
-- Math in description heading  
-- Breaking (page/column break)  
-- Fonts #23, styles #30  
-  
+- Operators¹, Relations², Arrows³  
+- More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30  
+- See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
   
 $$  
-\delta \in \subsetneq \lnot \land \lor \to \gets \implies \iff \mathbb{R}  
+\begin{gather*}  
++ - \cdot \times / \div : {}^\ \mid \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{1} \\  
+=\, \approx\, <\, >\, \le\, \ge\, \sim\, \triangleq\, \coloneqq\, \equiv\, \in\, \ni\, \subset\, \supset\, \subseteq\, \supseteq\, \ll\, \gg, \ne\, \nless\, \ngtr\, \ngeq\, \nsim\, \notin\, \nsubseteq\, \nsupseteq \tag{2} \\  
+\implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{under}]{\text{over}}\, \xlongequal{\text{abc}}\, \gets\, \nearrow\, \uparrow\, \updownarrow\, \dashrightarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowright\, \curvearrowleft\, \Rsh \tag{3} \\  
+\end{gather*}  
 $$  
   
   
 # Wrap long equation over multiple lines  
   
 - Split long fractions over two lines¹, Indent subsequent lines²³, Wrap overlong equations³  
-- See [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)  
+- See source examples [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
   
 $$  
@@ -113,7 +111,7 @@ $$
 # Comment equation operators  
   
 - Comment: **Above**/below operators¹, In a **paragraph** between math displays², **Braces** under parts of an expression³, Comment a **case**³, Name matrix columns and rows  
-- See [Comment equation operators](Comment%20equation%20operators.md)  
+- See source examples [Comment equation operators](Comment%20equation%20operators.md)  
   
 $$  
 x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ x} xxxx \tag{1}  
