@@ -91,7 +91,7 @@ See more operators in external resources
 - [Create custom big operator ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf), [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) from Mathematical Typsetting with LaTeX by H. Voß  
   
 Operators with text name  
-- Use predefined operators$^{(\mathrm{I - II})}$  `\min` - `\sin` - etc.  
+- Use predefined operators[^I]$^{(\mathrm{I - II})}$  `\min` - `\sin` - etc.  
 - [p] Operators get spaced out correctly before and behind, compare$^{(3)}$  
 - Create custom operator with text name$^{(4)}$ `\operatorname{real}` or math name$^{(4)}$ `\mathop{\mathbb{P}_0}`   
   
