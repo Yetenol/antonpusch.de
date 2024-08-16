@@ -43,42 +43,42 @@ This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \s
   
 ## Display mode  
   
-- **Centered** equation(s): **Single** equation$^{(1.1)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`  
-- Alternating **right/left**-aligned columns: **Separated** pairs$^{(1.2)}$ `\begin{align*}`, $n$ pairs of **touching** columns$^{(1.3)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`  
+- **Centered** equation(s): **Single** equation $\text{(1a)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`  
+- Alternating **right/left**-aligned columns: **Separated** pairs ${} \text{(1b)} {}$ `\begin{align*}`, $n$ pairs of **touching** columns $\text{(1c)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`  
 - See source examples [Vertically align equations](./Vertically%20align%20equations.md)  
   
 $$  
-\gets \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \to \tag{1.1}  
+\gets \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \to \tag{1a}  
 $$  
 $$  
 \begin{align*}  
 \gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \\ \hdashline \end{array} & \to & \gets   
-\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{1.2}  
+\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{1b}  
 \end{align*}  
 $$  
 $$  
 \begin{alignat*}{2}  
 \gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \\ \hdashline \end{array} &&   
-\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{1.3}  
+\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{1c}  
 \end{alignat*}  
 $$  
   
 ## Nested tabular mode  
   
-- Surround with **delimiters** $(2.1)$ `\begin{pmatrix}` - `\begin{cases}`  
-- **Split** overlong equations in multiple lines $(2.2)$  
+- Surround with **delimiters** $\mathrm{(4a)}$ \begin{pmatrix} - \begin{cases}  
+- **Split** overlong equations in multiple lines ${} \mathrm{(4b)} {}$  
   
 $$  
 \begin{align*} \qquad&\kern{-2em}  
-x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{2.1} \\&  
+x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{2a} \\&  
  = xxxxxxx \\&  
-\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{2.2} \\&  
+\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{2b} \\&  
 \end{align*}  
 $$  
   
 # Symbols  
   
-- Operators ${\mathrm{(_3a)}}$, Relations ${(_3b)}$, Arrows ${(_3c)}$  
+- Operators $\text{(3a)}$, Relations $\text{(3b)}$, Arrows $\text{(3c)}$  
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30  
 - See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
   
@@ -93,7 +93,7 @@ $$
   
 # Wrap long equation over multiple lines  
   
-- Split long fractions over two lines ${(4a)}$, Indent subsequent lines ${(4b - c)}$, Wrap overlong equations ${(4c)}$  
+- Split long fractions over two lines $\text{(4a)}$, Indent subsequent lines $\text{(4b-c)}$, Wrap overlong equations $\text{(4b)}$  
 - See source examples [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
   
