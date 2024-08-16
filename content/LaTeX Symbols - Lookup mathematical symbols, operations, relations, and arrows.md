@@ -19,7 +19,7 @@ priority: 1
 | $\triangleq$ `\triangleq`<br>$\coloneqq$ `\coloneqq` |                             |  
 | $\equiv$ `\equiv`                                    | $\not\equiv$ `\not\equiv`   |  
 | $\in$ `\in`                                          | ${} \notin$ `\notin`        |  
-| $\ni$ `\ni`                                          | $\not\ni$ `\not\ni`[^III]   |  
+| $\ni$ `\ni`                                          | $\not\ni$ `\not\ni`[^1]     |  
 | $\subset$ `\subset`                                  | $\not\subset$ `\not\subset` |  
 | $\supset$ `\supset`                                  | $\not\supset$ `\not\supset` |  
 | $\subseteq$ `\subseteq`                              | $\nsubseteq$ `\nsubseteq`   |  
@@ -71,7 +71,7 @@ Generically negate/comment any relation
 | $\cup$ `\cup`                                                            | $\cap$ `\cap`                                                  |  
 | $\setminus$ `\setminus`                                                  | $\neg$ `\neq`, `lnot`                                          |  
 | $\land$ `\land`, `\wedge`                                                | $\lor$ `\lor`, `\vee`                                          |  
-| $\pm$ `\pm`<br>$\mp$ `\mp`                                               | $\Join$ [^a] `\Join`<br>                                       |  
+| $\pm$ `\pm`<br>$\mp$ `\mp`                                               | $\Join$ `\Join` [^1]                                           |  
 | $\displaystyle\sum$ `sum`                                                | $\displaystyle\prod$ `\prod`                                   |  
 | $\displaystyle\int$ `\int`<br>$\displaystyle\oint$ `\oint`               | $\displaystyle\iint$ `\iint`<br>$\displaystyle\iiint$ `\iiint` |  
 | $\displaystyle\bigcup$ `\bigcup`<br>$\displaystyle\biguplus$ `\biguplus` | $\displaystyle\bigcap$ `\bigcap`                               |  
@@ -79,20 +79,19 @@ Generically negate/comment any relation
   
 $$  
 \begin{gather*}  
-\min\, \max\, \log  \ln  \det  \lim \tag{1} \\  
-\sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{2} \\  
-x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \mathrm{sin}() x} \tag{3} \\  
-\lim_{a \to \infty}\, \lim\nolimits_{a \to \infty}\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{4}  
+\min\, \max\, \log  \ln  \det  \lim \tag{I} \\  
+\sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{II} \\  
+x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \mathrm{sin}() x} \tag{III} \\  
+\lim_{a \to \infty}\, \lim\nolimits_{a \to \infty}\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{IV}  
 \end{gather*}  
 $$  
-  
   
 See more operators in external resources  
 - [Operators](https://katex.org/docs/supported#operators), [Big operators](https://katex.org/docs/supported.html#big-operators) from KaTeX docs, [Binary Operation](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2) from LaTeX math symbols  
 - [Create custom big operator ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf), [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) from Mathematical Typsetting with LaTeX by H. Voß  
   
 Operators with text name  
-- Use predefined operators[^1][^2]  `\min` - `\sin` - etc.  
+- Use predefined operators$^{(\mathrm{I - II})}$  `\min` - `\sin` - etc.  
 - [p] Operators get spaced out correctly before and behind, compare$^{(3)}$  
 - Create custom operator with text name$^{(4)}$ `\operatorname{real}` or math name$^{(4)}$ `\mathop{\mathbb{P}_0}`   
   
@@ -129,7 +128,7 @@ Use limits, or exponents and indices$^{(4)}$
 | $\chi$ `\chi`                                         | $\mathrm{X}$ `X`                                     |  
 | $\psi$ `\psi`                                         | $\Psi$ `\Psi`<br>$\varPsi$ `\varPsi`                 |  
 | $\omega$ `\omega`                                     | $\Omega$ `\Omega`<br>$\varOmega$ `\varOmega`         |  
-| $\digamma$ [^II] `\digamma`                           |                                                      |  
+| $\digamma$ `\digamma` [^2]                            |                                                      |  
   
   
 # Non-Mathematical Symbols  
@@ -788,9 +787,9 @@ example TEXT: `ABCDEabcde1234`
 | `\mathfrak{TEXT}`   | $\mathfrak{ABCDEabcde1234}$   | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |  
 | `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |  
   
-[^a]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
-[^II]: requires [amssymb](https://texdoc.org/serve/amssymb/0)  
-[^III]: the macros `\notni` isn't supported by MathJax  
+[^1]: the macros `\notni` isn't supported by MathJax  
+[^2]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
+[^3]: requires [amssymb](https://texdoc.org/serve/amssymb/0)  
   
 ---  
 Sources:  

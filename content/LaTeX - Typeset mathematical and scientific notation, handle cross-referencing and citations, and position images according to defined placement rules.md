@@ -9,7 +9,7 @@ aliases:
 - [Tables - Write and style uniform latex tables with pgfplotstable, tabularray](./Tables%20-%20Write%20and%20style%20uniform%20latex%20tables%20with%20pgfplotstable,%20tabularray.md)  
 - [Listings - Print source code with syntax highlighting in latex with listings](./Listings%20-%20Print%20source%20code%20with%20syntax%20highlighting%20in%20latex%20with%20listings.md)  
 - [Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design](Graphics,%20Plots%20-%20Generate%20dynamic%20professional%20vector%20graphics%20with%20matching%20fonts,%20design.md)  
-- [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
+- [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
 - [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./Float%20-%20Dynamically%20place%20figures,%20images,%20tables,%20and%20listings%20at%20the%20top,%20bottom,%20or%20single%20page.md)  
 - [Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials](./Learn%20and%20troubleshoot%20LaTeX%20-%20Read%20(package)%20documentation,%20cheat%20sheets,%20tutorials.md)  
 - [Project structure - Create folders for setup, resources, bibliographies](./Project%20structure%20-%20Create%20folders%20for%20setup,%20resources,%20bibliographies.md)  
