@@ -78,7 +78,7 @@ $$
   
 # Symbols  
   
-- Operators ${(3a)}$, Relations ${(3b)}$, Arrows ${(3c)}$  
+- Operators ${\mathrm{(_3a)}}$, Relations ${(_3b)}$, Arrows ${(_3c)}$  
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30  
 - See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
   
@@ -93,7 +93,7 @@ $$
   
 # Wrap long equation over multiple lines  
   
-- Split long fractions over two lines$^{(4a)}$, Indent subsequent lines${} ^{(4b - c)}$, Wrap overlong equations$^{(4c)}$  
+- Split long fractions over two lines ${(4a)}$, Indent subsequent lines ${(4b - c)}$, Wrap overlong equations ${(4c)}$  
 - See source examples [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
   
@@ -162,7 +162,7 @@ $$
   
 - Scale, Placement: Spread math over multiple display columns$^{(1)}$, Scale delimiters manually/automatically$^{(2)}$, Scale repeating operators$^{(2)}$, Place limits surrounding/next to it$^{(2)}$ `\limit` - `\nolimit`, Scale equations `exscale`  
 - Spacing$^{(3)}$: Between lines likes insides a matrix$^{(3)}$ `\\[1ex]` - `\jot`, text fraction styles$^{(3)}$, 1000 separator$^{(3)}$, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space  
-- Formatting${} ^{(4)} {}$: color$^{(4)}$ `\textcolor`, Diagonal strikeout$^{(4)}$ `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math$^{(4)}$ `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough  
+- Formatting${} ^{(4)}$: color$^{(4)}$ `\textcolor`, Diagonal strikeout$^{(4)}$ `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math$^{(4)}$ `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough  
 - See source examples [Layout multiple equations](Layout%20multiple%20equations.md)  
   
 $$  
