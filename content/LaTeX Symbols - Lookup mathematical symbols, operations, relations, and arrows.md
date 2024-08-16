@@ -32,7 +32,7 @@ priority: 1
   
 Comment relation  
 - generic comment: $\overset{\text{def}}{=}$ `\overset{\text{def}}{=}`  
-- extensible comment: $\xlongequal{\text{def}}$ `\xlongequal{\text{def}}`  
+- extensible operator: $\xlongequal{\text{def}}$ `\xlongequal{\text{def}}`  
 - zero-width comment: $\overset{\mathclap{\text{def}}}{=}$ `\overset{\mathclap{\text{def}}}{=}`  
 - see [Comment equation operators](Comment%20equation%20operators.md)  
   
@@ -52,14 +52,15 @@ Logic, extensible arrows
 |                                     |                                                                                                                                | $\xmapsto{abc}$ `\xmapsto{abc}`                         |  
 - see more [Extensible arrows | KaTeX docs](https://katex.org/docs/supported.html#Extensible-Arrows)  
   
-  
 Other arrows  
   
 | Arrow                                                                                               | Opposite arrow                                                                              |  
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |  
 | $\circlearrowright$ `\circlearrowright`                                                             | $\circlearrowleft$ `\circlearrowleft`                                                       |  
 | $\curvearrowright$ `\curvearrowright`                                                               | $\curvearrowleft$ `\curvearrowleft`                                                         |  
+| $\Rsh$ `\Rsh`                                                                                       | $\Lsh$ `\Lsh`                                                                               |  
 | $\to$ `\to`<br>$\longrightarrow$ `\longrightarrow`<br>$\dashrightarrow$ `\dashrightarrow`           | $\gets$ `\gets`<br>$\longleftarrow$ `\longleftarrow`<br>$\dashleftarrow$ `\dashleftarrow`   |  
+| $\leftrightarrow$ `\leftrightarrow`<br>$\longleftrightarrow$ `\longleftrightarrow`                  | $\updownarrow$ `\updownarrow`<br>                                                           |  
 | $\nearrow$ `\nearrow`                                                                               | $\searrow$ `\searrow`                                                                       |  
 | $\downarrow$ `\downarrow`                                                                           | $\uparrow$ `\uparrow`                                                                       |  
 | $\nwarrow$ `\nwarrow`                                                                               | $\swarrow$ `\swarrow`                                                                       |  
@@ -74,13 +75,14 @@ Other arrows
 | ------------------------------------ | ------------------------ |  
 | $+$ `+`                              | $-$ `-`                  |  
 | $\cdot$ `\cdot`<br>$\times$ `\times` | $/$ `/`<br>$\div$ `\div` |  
+| $:$ `:`                              | ${} ^\circ$ `^\circ`     |  
 | $\mid$ `\mid`                        | $\parallel$ `\parallel`  |  
 | $\cup$ `\cup`                        | $\cap$ `\cap`            |  
 | $\setminus$ `\setminus`              | $\neg$ `\neq`, `lnot`    |  
 | $\land$ `\land`, `\wedge`            | $\lor$ `\lor`, `\vee`    |  
-| $\pm$ `\pm`<br>$\mp$ `\mp`           | $\Join^1$ `\Join`        |  
+| $\pm$ `\pm`<br>$\mp$ `\mp`           | $\Join^1$ `\Join`<br>    |  
   
-$^1$: requires [latexsym](https://texdoc.org/serve/latexsym/0)  
+$^1$: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
   
 - see more [Operators | KaTeX docs](https://katex.org/docs/supported#operators), [Binary Operation | LaTeX math symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2)  
   
@@ -185,7 +187,6 @@ These symbols can also be used in text mode.
 | $\digamma^1$ `\digamma`                               |                                                      |  
   
 $^1$: requires [amssymb](https://texdoc.org/serve/amssymb/0)  
-  
   
 Set the **style** of the letter in the preamble  
   
