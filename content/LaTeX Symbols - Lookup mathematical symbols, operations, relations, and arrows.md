@@ -7,26 +7,25 @@ priority: 1
   
 # Relations  
   
-| Positive relation         | negated                   |  
-| ------------------------- | ------------------------- |  
-| $=$ <code>=</code>        | $\ne$ `\ne`, `\neq`       |  
-| $\approx$ `\approx`       |                           |  
-| $<$ `<`                   | $\nless$ `\nless`         |  
-| $>$ `>`                   | $\ngtr$ `\ngtr`           |  
-| $\le$ `\le`, `\leq`       | $\nleq$ `\nleq`           |  
-| $\ge$ `\ge`, `\geq`       | $\ngeq$ `\ngeq`           |  
-| $\sim$ `\sim`             | $\nsim$ `\nsim`           |  
-| $\triangleq$ `\triangleq` |                           |  
-| $\coloneqq$ `\coloneqq`   |                           |  
-| $\equiv$ `\equiv`         |                           |  
-| $\in$ `\in`               | ${} \notin$ `\notin`      |  
-| $\ni$ `\ni`               |                           |  
-| $\subset$ `\subset`       |                           |  
-| $\supset$ `\supset`       |                           |  
-| $\subseteq$ `\subseteq`   | $\nsubseteq$ `\nsubseteq` |  
-| $\supseteq$ `\supseteq`   | $\nsupseteq$ `\nsupseteq` |  
-| $\ll$ `\ll`               |                           |  
-| $\gg$ `\gg`               |                           |  
+| Positive relation                                    | negated                     |  
+| ---------------------------------------------------- | --------------------------- |  
+| $=$ <code>=</code>                                   | $\ne$ `\ne`, `\neq`         |  
+| $\approx$ `\approx`                                  | $\not\approx$ `\not\approx` |  
+| $<$ `<`                                              | $\nless$ `\nless`           |  
+| $>$ `>`                                              | $\ngtr$ `\ngtr`             |  
+| $\le$ `\le`, `\leq`                                  | $\nleq$ `\nleq`             |  
+| $\ge$ `\ge`, `\geq`                                  | $\ngeq$ `\ngeq`             |  
+| $\sim$ `\sim`                                        | $\nsim$ `\nsim`             |  
+| $\triangleq$ `\triangleq`<br>$\coloneqq$ `\coloneqq` |                             |  
+| $\equiv$ `\equiv`                                    | $\not\equiv$ `\not\equiv`   |  
+| $\in$ `\in`                                          | ${} \notin$ `\notin`        |  
+| $\ni$ `\ni`                                          | $\not\ni$ `\not\ni`[^III]   |  
+| $\subset$ `\subset`                                  | $\not\subset$ `\not\subset` |  
+| $\supset$ `\supset`                                  | $\not\supset$ `\not\supset` |  
+| $\subseteq$ `\subseteq`                              | $\nsubseteq$ `\nsubseteq`   |  
+| $\supseteq$ `\supseteq`                              | $\nsupseteq$ `\nsupseteq`   |  
+| $\ll$ `\ll`                                          | $\not\ll$ `\not\ll`         |  
+| $\gg$ `\gg`                                          | $\not\gg$ `\not\gg`         |  
   
 | Logic/Extensible Arrow                                                                 | negated                                                                                                                        |  
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |  
@@ -72,7 +71,7 @@ Generically negate/comment any relation
 | $\cup$ `\cup`                                                            | $\cap$ `\cap`                                                  |  
 | $\setminus$ `\setminus`                                                  | $\neg$ `\neq`, `lnot`                                          |  
 | $\land$ `\land`, `\wedge`                                                | $\lor$ `\lor`, `\vee`                                          |  
-| $\pm$ `\pm`<br>$\mp$ `\mp`                                               | $\Join$ [^1] `\Join`<br>                                       |  
+| $\pm$ `\pm`<br>$\mp$ `\mp`                                               | $\Join$ [^a] `\Join`<br>                                       |  
 | $\displaystyle\sum$ `sum`                                                | $\displaystyle\prod$ `\prod`                                   |  
 | $\displaystyle\int$ `\int`<br>$\displaystyle\oint$ `\oint`               | $\displaystyle\iint$ `\iint`<br>$\displaystyle\iiint$ `\iiint` |  
 | $\displaystyle\bigcup$ `\bigcup`<br>$\displaystyle\biguplus$ `\biguplus` | $\displaystyle\bigcap$ `\bigcap`                               |  
@@ -93,7 +92,7 @@ See more operators in external resources
 - [Create custom big operator ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf), [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) from Mathematical Typsetting with LaTeX by H. Voß  
   
 Operators with text name  
-- Use predefined operators$^{(1 - 2)}$  `\min` - `\sin` - etc.  
+- Use predefined operators[^1][^2]  `\min` - `\sin` - etc.  
 - [p] Operators get spaced out correctly before and behind, compare$^{(3)}$  
 - Create custom operator with text name$^{(4)}$ `\operatorname{real}` or math name$^{(4)}$ `\mathop{\mathbb{P}_0}`   
   
@@ -130,7 +129,7 @@ Use limits, or exponents and indices$^{(4)}$
 | $\chi$ `\chi`                                         | $\mathrm{X}$ `X`                                     |  
 | $\psi$ `\psi`                                         | $\Psi$ `\Psi`<br>$\varPsi$ `\varPsi`                 |  
 | $\omega$ `\omega`                                     | $\Omega$ `\Omega`<br>$\varOmega$ `\varOmega`         |  
-| $\digamma$ [^2] `\digamma`                            |                                                      |  
+| $\digamma$ [^II] `\digamma`                           |                                                      |  
   
   
 # Non-Mathematical Symbols  
@@ -789,8 +788,9 @@ example TEXT: `ABCDEabcde1234`
 | `\mathfrak{TEXT}`   | $\mathfrak{ABCDEabcde1234}$   | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |  
 | `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |  
   
-[^1]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
-[^2]: requires [amssymb](https://texdoc.org/serve/amssymb/0)  
+[^a]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
+[^II]: requires [amssymb](https://texdoc.org/serve/amssymb/0)  
+[^III]: the macros `\notni` isn't supported by MathJax  
   
 ---  
 Sources:  
