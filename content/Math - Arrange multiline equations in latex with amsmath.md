@@ -43,8 +43,8 @@ This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \s
   
 ## Display mode  
   
-- **Centered** equation(s)¹: **Single** equation¹ `\[` …`\]`, Multiple equations `\begin{gather*}`  
-- Alternating **right/left**-aligned columns²³⁴: **Separated** pairs¹ `\begin{align*}`, $n$ pairs of **touching** columns³ `\begin{alignat*}{2}`, Max. spaced-out to **line width**⁴ `\begin{flalign*}`  
+- **Centered** equation(s): **Single** equation$^{(1)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`  
+- Alternating **right/left**-aligned columns: **Separated** pairs$^{(2)}$ `\begin{align*}`, $n$ pairs of **touching** columns$^{(3)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`  
 - See source examples [Vertically align equations](./Vertically%20align%20equations.md)  
   
 $$  
@@ -62,25 +62,23 @@ $$
 \begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{3}  
 \end{alignat*}  
 $$  
-¹²³⁴ as seen in the $(n)^\text{th}$ math display above where $x$ represents math  
   
 ## Nested tabular mode  
   
-- Surround with **delimiters** `\begin{pmatrix}`¹ - `\begin{cases}`²  
-- **Attach at** the bottom/center/top `\begin{aligned}[b]`³  - `\begin{aligned}[t]`⁴  
+- Surround with **delimiters** `\begin{pmatrix}`$^{(1)}$ - `\begin{cases}`$^{(1)}$  
+- **Attach at** the bottom/center/top `\begin{aligned}[b]`$^{(2)}$  - `\begin{aligned}[t]`$^{(3)}$  
   
 $$  
 \begin{align*} \qquad&\kern{-2em}  
-x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{1,2} \\&  
- = xxxxxxx \tag{3} \\&  
-\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{4} \\&  
+x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{1} \\&  
+ = xxxxxxx \tag{2} \\&  
+\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{3} \\&  
 \end{align*}  
 $$  
-¹²³⁴ as seen in the $(n)^\text{th}$ dashed box above where $x$ represents math  
   
 # Symbols  
   
-- Operators¹, Relations², Arrows³  
+- Operators$^{(1)}$, Relations${} ^{(2)} {}$, Arrows$^{(3)}$  
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30  
 - See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
   
@@ -95,7 +93,7 @@ $$
   
 # Wrap long equation over multiple lines  
   
-- Split long fractions over two lines¹, Indent subsequent lines²³, Wrap overlong equations³  
+- Split long fractions over two lines$^{(1)}$, Indent subsequent lines$^{(2-3)}$, Wrap overlong equations$^{(2)}$  
 - See source examples [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
   
@@ -106,11 +104,10 @@ x = xx +  \frac{  \begin{split} xxxxxxx \quad\\[-1ex] + xxxx \end{split} }{x} + 
  =  xxxxx \tag{3}  
 \end{align*}   
 $$  
-¹²³ as seen in the $(n)^\text{th}$ equation above where $x$ represents math  
   
 # Comment equation operators  
   
-- Comment: **Above**/below operators¹, In a **paragraph** between math displays², **Braces** under parts of an expression³, Comment a **case**³, Name matrix columns and rows  
+- Comment: **Above**/below operators$^{(1)}$, In a **paragraph** between math displays$^{(2)}$, **Braces** under parts of an expression${} ^{(3a)} {}$, Comment a **case**$^{(3b)}$, Name matrix columns and rows  
 - See source examples [Comment equation operators](Comment%20equation%20operators.md)  
   
 $$  
@@ -124,7 +121,6 @@ $$
 x = \underbrace{ xxxxx }_{\text{for }x} \underbrace{ xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and relatives}} }  }  
 = \begin{cases} xx,  & \text{for } x \\ x,  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{3}  
 $$  
-¹²³ used to comment the $(n)^\text{th}$ equation above where $x$ represents math  
   
 # Reference equations  
   
@@ -164,20 +160,19 @@ $$
   
 # Layout multiple equations  
   
-- Scale, Placement¹²: Spread math over multiple display columns¹, Scale delimiters manually/automatically, Scale repeating operators, Place limits surrounding/next to it `\limit` - `\nolimit`, Scale equations `exscale`  
-- Spacing³: Between lines `\\[1ex]` - `\jot`, inside matrix, number 1000 sep, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space  
-- Formatting⁴: color, boxed, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough  
-- See [Layout multiple equations](Layout%20multiple%20equations.md)  
+- Scale, Placement: Spread math over multiple display columns$^{(1)}$, Scale delimiters manually/automatically$^{(2)}$, Scale repeating operators$^{(2)}$, Place limits surrounding/next to it$^{(2)}$ `\limit` - `\nolimit`, Scale equations `exscale`  
+- Spacing$^{(3)}$: Between lines likes insides a matrix$^{(3)}$ `\\[1ex]` - `\jot`, text fraction styles$^{(3)}$, 1000 separator$^{(3)}$, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space  
+- Formatting${} ^{(4)} {}$: color$^{(4)}$ `\textcolor`, Diagonal strikeout$^{(4)}$ `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math$^{(4)}$ `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough  
+- See source examples [Layout multiple equations](Layout%20multiple%20equations.md)  
   
 $$  
 \begin{gather*}  
 \hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{1} \\  
 \Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{2} \\  
 \begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{3} \\   
-\textcolor{magenta}{a + b^2},\; \cancel{a + b^2},\; \underline{a + b^2},\; \boxed{a + b^2} \tag{4}  
+\textcolor{magenta}{a + b^2},\; \cancel{a + b^2},\; \boxed{a + b^2}\; \begin{array}{:c:} \hdashline a + b^2 \\ \hdashline \end{array} \tag{4}  
 \end{gather*}  
 $$  
-¹²³⁴ used to format the $(n)^\text{th}$ equation above where $x$ represents math  
   
 # Things to avoid, deprecated, bad syntax  
   
