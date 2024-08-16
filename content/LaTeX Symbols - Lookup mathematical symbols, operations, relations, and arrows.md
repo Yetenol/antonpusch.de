@@ -50,6 +50,7 @@ Logic, extensible arrows
 | $\leftrightarrow$ `\leftrightarrow` | $\nleftrightarrow$ `\nleftrightarrow`                                                                                          | $\xleftrightarrow{abc}$ `\xleftrightarrow{abc}`         |  
 |                                     |                                                                                                                                | $\xlongequal{abc}$ `\xlongequal{abc}`                   |  
 |                                     |                                                                                                                                | $\xmapsto{abc}$ `\xmapsto{abc}`                         |  
+  
 - see more [Extensible arrows | KaTeX docs](https://katex.org/docs/supported.html#Extensible-Arrows)  
   
 Other arrows  
@@ -71,7 +72,7 @@ Other arrows
   
 # Operators  
   
-| Operator                             | Opposite                 |  
+| Binary Operator                      | another                  |  
 | ------------------------------------ | ------------------------ |  
 | $+$ `+`                              | $-$ `-`                  |  
 | $\cdot$ `\cdot`<br>$\times$ `\times` | $/$ `/`<br>$\div$ `\div` |  
@@ -80,13 +81,40 @@ Other arrows
 | $\cup$ `\cup`                        | $\cap$ `\cap`            |  
 | $\setminus$ `\setminus`              | $\neg$ `\neq`, `lnot`    |  
 | $\land$ `\land`, `\wedge`            | $\lor$ `\lor`, `\vee`    |  
-| $\pm$ `\pm`<br>$\mp$ `\mp`           | $\Join^1$ `\Join`<br>    |  
+| $\pm$ `\pm`<br>$\mp$ `\mp`           | $\Join$ [^1] `\Join`<br> |  
   
-$^1$: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
+[^1]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)  
   
 - see more [Operators | KaTeX docs](https://katex.org/docs/supported#operators), [Binary Operation | LaTeX math symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2)  
   
+| Big Operator                                                             | another                          |  
+| ------------------------------------------------------------------------ | -------------------------------- |  
+| $\displaystyle\sum$ `sum`                                                | $\displaystyle\prod$ `\prod`     |  
+| $\displaystyle\int$ `\int`<br>$\displaystyle\iint$ `\iint`<br>$\vdots$   | $\displaystyle\oint$ `\oint`     |  
+| $\displaystyle\bigcup$ `\bigcup`<br>$\displaystyle\biguplus$ `\biguplus` | $\displaystyle\bigcap$ `\bigcap` |  
+| $\displaystyle\bigwedge$ `\bigwedge`                                     | $\displaystyle\bigvee$ `\bigvee` |  
   
+$$  
+\begin{gather*}  
+\min()\, \max()\, \log()  \ln()  \det()  \lim_{a \to \infty}() \tag{1} \\  
+\sin()\, \cos()\, \tan()\, \arcsin()\, \arccos()\, \arctan() \tag{2} \\  
+x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \mathrm{sin}() x} \tag{3} \\  
+\sum_{i = 0}^\infty\, \sum\nolimits_{i = 0}^\infty\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{4}  
+\end{gather*}  
+$$  
+  
+- see more [Big operators | KaTeX docs](https://katex.org/docs/supported.html#big-operators), [Create custom big operator | 3.2.7 on page 79 in Mathematical Typsetting with LaTeX by H. Voß](https://www.tug.org/~hvoss/PDF/mathmode.pdf)  
+- see [Operator names | 2.12 on page 66 in Mathematical Typsetting with LaTeX by H. Voß](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72)  
+  
+Names operators  
+- Use predefined operators$^{(1 - 2)}$  `\min()` etc.  
+- Gets spaced out correctly before and behind, compare$^{(3)}$  
+- Create custom operator with text name$^{(4)}$ `\operatorname{real}` or math name$^{(4)}$ `\mathop{\mathbb{P}_0}`   
+  
+Use limits, or exponents and indices  
+- in display mode: Defaults to limits$^{(1)}$, force exponents and indices `\sum\nolimits_0^1`  
+- in text mode: Defaults to exponents and indices$^{(3)}$, force limits$^{(4)}$ `\int\limits_0^1`  
+- See [Layout multiple equations](Layout%20multiple%20equations.md)  
   
 # Non-Mathematical Symbols  
   
