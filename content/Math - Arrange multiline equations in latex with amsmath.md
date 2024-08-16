@@ -78,7 +78,7 @@ $$
   
 # Symbols  
   
-- Operators ${} \mathrm{(3a)} {}$, Relations ${} \mathrm{(3b)} {}$, Arrows ${} \mathrm{(3c)} {}$  
+- Operators ${} \mathrm{(3a)} {}$, Relations ${} \mathrm{(3b)} {}$, Arrows $\mathrm{(3c)}$  
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30  
 - See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)  
   
@@ -93,7 +93,7 @@ $$
   
 # Wrap long equation over multiple lines  
   
-- Split long fractions over two lines $\mathrm{(4a)}$, Indent subsequent lines $\mathrm{(4b\text{-}c)}$, Wrap overlong equations $\mathrm{(4b)}$  
+- **Split** long **fractions** in two lines $\mathrm{(4a)}$, **Indent subsequent** lines $\mathrm{(4b\text{-}c)}$, **Wrap overlong** equations $\mathrm{(4b)}$  
 - See source examples [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)  
   
   

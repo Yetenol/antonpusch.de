@@ -10,13 +10,13 @@ priority: 1
 | Positive relation                                    | negated                     |  
 | ---------------------------------------------------- | --------------------------- |  
 | $=$ <code>=</code>                                   | $\ne$ `\ne`, `\neq`         |  
+| $\triangleq$ `\triangleq`<br>$\coloneqq$ `\coloneqq` |                             |  
 | $\approx$ `\approx`                                  | $\not\approx$ `\not\approx` |  
 | $<$ `<`                                              | $\nless$ `\nless`           |  
 | $>$ `>`                                              | $\ngtr$ `\ngtr`             |  
 | $\le$ `\le`, `\leq`                                  | $\nleq$ `\nleq`             |  
 | $\ge$ `\ge`, `\geq`                                  | $\ngeq$ `\ngeq`             |  
 | $\sim$ `\sim`                                        | $\nsim$ `\nsim`             |  
-| $\triangleq$ `\triangleq`<br>$\coloneqq$ `\coloneqq` |                             |  
 | $\equiv$ `\equiv`                                    | $\not\equiv$ `\not\equiv`   |  
 | $\in$ `\in`                                          | ${} \notin$ `\notin`        |  
 | $\ni$ `\ni`                                          | $\not\ni$ `\not\ni`[^1]     |  
@@ -38,6 +38,7 @@ priority: 1
 | $\xlongequal{xxx}$ `\xlongequal{xxx}`                                                  |                                                                                                                                |  
 | $\xmapsto{xxx}$ `\xmapsto{xxx}`                                                        |                                                                                                                                |  
   
+  
 | Regular Arrow                                                                                       | another                                                                                     |  
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |  
 | $\circlearrowright$ `\circlearrowright`                                                             | $\circlearrowleft$ `\circlearrowleft`                                                       |  
@@ -52,9 +53,10 @@ priority: 1
 | $\Downarrow$ `\Downarrow`                                                                           | $\Uparrow$ `\Uparrow`                                                                       |  
 | $\Leftrightarrow$ `\Leftrightarrow`<br>$\Longleftrightarrow$ `\Longleftrightarrow`<br>$\iff$ `\iff` | $\Updownarrow$ `\Updownarrow`                                                               |  
   
-See more relation in external resources  
+See more relations in external resources  
 - [Relation Symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf) from LaTeX math symbols  
-- [Arrows](https://katex.org/docs/supported#arrows), [Extensible Arrows](https://katex.org/docs/supported.html#Extensible-Arrows) from KaTeX docs, [Arrows](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3) from LaTeX math symbols  
+- Packages for [Relations p. 67](https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf#page=69) or [Arrows p. 94](https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf#page=96) from Comprehensive LaTeX Symbol List  
+- [Arrows](https://katex.org/docs/supported#arrows) - [Extensible Arrows](https://katex.org/docs/supported.html#Extensible-Arrows) from KaTeX docs, [Arrows](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3) from LaTeX math symbols  
   
 Generically negate/comment any relation  
 - negate $\not\equiv$ `\not\equiv`  
@@ -79,25 +81,26 @@ Generically negate/comment any relation
   
 $$  
 \begin{gather*}  
-\min\, \max\, \log  \ln  \det  \lim \tag{1} \\  
-\sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{2} \\  
-x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \mathrm{sin}() x} \tag{3} \\  
-\lim_{a \to \infty}\, \lim\nolimits_{a \to \infty}\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{4}  
+\min\, \max\, \log  \ln  \det  \lim \tag{1a} \\  
+\sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{1b} \\  
+x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \mathrm{sin}() x} \tag{1c} \\  
+\lim_{a \to \infty}\, \lim\nolimits_{a \to \infty}\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{1d}  
 \end{gather*}  
 $$  
   
 See more operators in external resources  
-- [Operators](https://katex.org/docs/supported#operators), [Big operators](https://katex.org/docs/supported.html#big-operators) from KaTeX docs, [Binary Operation](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2) from LaTeX math symbols  
+- [Operators](https://katex.org/docs/supported#operators) or [Big operators](https://katex.org/docs/supported.html#big-operators) from KaTeX docs, [Binary Operation](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2) from LaTeX math symbols  
+- Packages for [Operators p. 37](https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf#page=39) from Comprehensive LaTeX Symbol List  
 - [Create custom big operator ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf), [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) from Mathematical Typsetting with LaTeX by H. Voß  
   
-Operators with text name  
-- Use predefined operators$^{(\mathrm{I - II})}$  `\min` - `\sin` - etc.  
-- [p] Operators get spaced out correctly before and behind, compare$^{(3)}$  
-- Create custom operator with text name$^{(4)}$ `\operatorname{real}` or math name$^{(4)}$ `\mathop{\mathbb{P}_0}`   
+Operators with **function name**  
+- $\mathrm{(1a\text{-}b)}$: Use predefined operators `\min` - `\sin` - etc.  
+- [p] $\mathrm{(1c)}$: Proper operators get correct right and left spacing compared to last two examples  
+- End of $\mathrm{(1d)}$: Create custom operator with text name `\operatorname{real}` or math name `\mathop{\mathbb{P}_0}`  
   
-Use limits, or exponents and indices$^{(4)}$  
-- in display mode: Defaults to limits, force exponents and indices `\lim\nolimits_0^1`  
-- in text mode: Defaults to exponents and indices, force limits `\int\limits_0^1`  
+Use **limits**, or exponents and indices $\mathrm{(1d)}$  
+- **Display mode** defaults to **limits**; to force exponents and indices `\lim\nolimits_0^1`  
+- **Text mode** defaults to **exponents** and **indices**; to force limits `\int\limits_0^1`  
 - See [Layout multiple equations](Layout%20multiple%20equations.md)  
   
 # Greek Letters  
