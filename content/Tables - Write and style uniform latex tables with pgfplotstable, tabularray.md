@@ -42,9 +42,9 @@ dg-permalink: latex-tables
 
 # Create a simple table with borders
 
-- Visually clarify table **boundaries**: thick horizontal lines $\mathrm{1a}$, thick frame $\mathrm{1c}$
-- Visually clarify **column titles** and **row titles**: thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
-- Apply border **pattern**: inner gridlines $\mathrm{1c}$
+- Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$
+- Visually clarify **column titles** and **row titles**: Thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
+- Apply border **pattern**: Inner gridlines $\mathrm{1c}$
 - See [source examples](./Create%20a%20simple%20table%20with%20borders.md) like [this preview](./Create%20a%20simple%20table%20with%20borders.md#Main%20examples), [create borders without tabularray](./Create%20a%20simple%20table%20with%20borders.md#Create%20borders%20without%20tabularray), center table
 
 ![minimal 45.svg](./attachments/minimal%2045.svg)
@@ -57,7 +57,7 @@ dg-permalink: latex-tables
 - Visually **guide horizontal reading**: shade every other row¹, add dashed line every third row³
 - Process input data: sort with column³
 - More ideas: filter, sort, custom column titles, multi column names
-- See [source examples](./Import%20data%20from%20files.md) like [decimal or scientific separator](./Import%20data%20from%20files.md#Align%20at%20decimal%20or%20scientific%20separator)
+- See source examples [Import data from files](./Import%20data%20from%20files.md) like [decimal or scientific separator](./Import%20data%20from%20files.md#Align%20at%20decimal%20or%20scientific%20separator)
 
 ![minimal 18.svg](./attachments/minimal%2018.svg)
 ¹²³ applied in *n*-th table above; see; see [latex source](./Import%20data%20from%20files.md#Main%20example)
