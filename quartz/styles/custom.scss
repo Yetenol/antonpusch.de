@@ -12,6 +12,7 @@
     // flex-wrap: wrap;
 }
 
+// Don't overlay the equation number in KaTeX displays
 .katex-display>.katex>.katex-html>.tag {
     overflow-x: hidden;
     position: static !important;
@@ -42,6 +43,11 @@ article>*>img[src$=".svg"] {
 .table-container>table {
     margin-left: auto;
     margin-right: auto;
+}
+
+// Hide scrollbar if not needed in codeblock
+figure[data-rehype-pretty-code-figure] > pre > code {
+    overflow-x: auto;
 }
 
 // put your custom CSS here!
