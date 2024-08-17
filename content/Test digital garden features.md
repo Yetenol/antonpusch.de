@@ -37,8 +37,9 @@ Second Term
 
 
 
-- 3D Objects (folder) `0DB7E03F-FC29-4DC6-9020-FF41B59E513A"`
-- 
+- 3D Objects (folder) 
+```fancy
+explorer "shell:::{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}"
 ```
 
 Add Network Location
