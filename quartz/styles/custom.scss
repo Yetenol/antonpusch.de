@@ -18,9 +18,11 @@
     position: static !important;
     margin-left: auto;
 }
+
 .katex-display>.katex>.katex-html>.base:first-child {
     margin-left: auto;
 }
+
 .katex-display>.katex>.katex-html>.base:last-child {
     margin-right: auto;
 }
@@ -54,6 +56,35 @@ pre>code {
 .clipboard-button {
     margin: .2rem !important;
     padding: .3rem !important;
+}
+
+// Float thumbnail in the top left corner next to the installation instruction
+img[alt="thumbnail"] {
+    float: right;
+    margin-left: 16px;
+    max-height: 160px
+}
+
+// Smaller font size for headings
+h1 {
+    font-size: 1.4rem !important;
+    margin-top: 1.9rem !important;
+    margin-bottom: 1rem !important;
+}
+
+h2 {
+    font-size: 1.12rem !important;
+    margin-top: 1.62rem !important;
+    margin-bottom: 1rem !important;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
 }
 
 // put your custom CSS here!
