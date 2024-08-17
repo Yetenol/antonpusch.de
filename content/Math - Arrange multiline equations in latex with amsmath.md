@@ -113,7 +113,7 @@ $$
 $$  
 x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ x} xxxx \tag{5a}  
 $$  
-$\text{Write a paragraph between equations:}$  
+Write a paragraph between equations.  
 $$  
 x = \underbrace{ xxxxx }_{\text{for }x} \underbrace{ xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and relatives}} }  }  
 = \begin{cases} xx,  & \text{for } x \\ x,  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{5b}  
@@ -124,7 +124,7 @@ $$
 - roman style  
 - ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/Mathematical%20Typesetting%20with%20Latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)  
   
-$\text{From calculation \textcolor{blue}{(1)} on page \textcolor{blue}{1}, we can derive:}$  
+From calculation $\textcolor{blue}{(1)}$ on page $\textcolor{blue}{1}$, we can derive:  
 $$  
 \begin{align*}  
 \begin{aligned}  
