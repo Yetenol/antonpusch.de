@@ -42,13 +42,12 @@ dg-permalink: latex-tables
 
 # Create a simple table with borders
 
-- Visually clarify table **boundaries**: thick horizontal lines¹, thick frame³
-- Visually clarify **column titles** and **row titles**: thin border line¹², left-aligned row title²³, bold font³
-- Apply border **pattern**: inner gridlines³
+- Visually clarify table **boundaries**: thick horizontal lines $\mathrm{1a}$, thick frame $\mathrm{1c}$
+- Visually clarify **column titles** and **row titles**: thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
+- Apply border **pattern**: inner gridlines $\mathrm{1c}$
 - See [source examples](./Create%20a%20simple%20table%20with%20borders.md) like [this preview](./Create%20a%20simple%20table%20with%20borders.md#Main%20examples), [create borders without tabularray](./Create%20a%20simple%20table%20with%20borders.md#Create%20borders%20without%20tabularray), center table
 
-![minimal 28.svg](./attachments/minimal%2028.svg)
-¹²³ applied in *n*-th table above; see [latex source](./Create%20a%20simple%20table%20with%20borders.md#Main%20examples)
+![minimal 45.svg](./attachments/minimal%2045.svg)
 
 # Import data from files
 
@@ -94,6 +93,48 @@ dg-permalink: latex-tables
 - make all math displaymode, inline, fancyfrac [Nicefrac, sfrac - Nice fractions for inline math](Nicefrac,%20sfrac%20-%20Nice%20fractions%20for%20inline%20math.md)
 
 Image in table
+
+Calculate column sum
+```latex
+\documentclass{article}
+
+\usepackage{pgfplotstable}
+
+\begin{document}
+
+% Original data
+\pgfplotstableread{
+    0.0     75.9638
+    0.380665    206.565
+    0.58711     243.435
+    0.793555    333.435
+}\data
+
+% Get column names
+\pgfplotstablegetcolumnnamebyindex{0}\of{\data}\to{\firstcolumnname}
+\pgfplotstablegetcolumnnamebyindex{1}\of{\data}\to{\secondcolumnname}
+
+% Retrieve desired element
+\pgfplotstablegetelem{1}{[index]1}\of\data
+
+% Perform calculation, save to \result
+\pgfmathsetmacro\result{\pgfplotsretval + 360}
+
+% Assemble new line
+\edef\createsumrow{\noexpand\pgfplotstableread[header=has colnames,col sep=comma,row sep=crcr]{
+    \firstcolumnname,\secondcolumnname\noexpand\\
+    1.0,\result\noexpand\\
+}\sum}
+\createsumrow
+
+% Concatenate
+\pgfplotstablevertcat{\data}{\sum}
+
+% Output
+\pgfplotstabletypeset{\data}
+
+\end{document}
+```
 
 # Formatting - Create table styles and apply them across your document
 
