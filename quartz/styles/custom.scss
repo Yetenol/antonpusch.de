@@ -46,8 +46,14 @@ article>*>img[src$=".svg"] {
 }
 
 // Hide scrollbar if not needed in codeblock
-article>*>pre>code {
+pre>code {
     overflow-x: auto !important;
+}
+
+// Shrink clipboard button to fit in a single line code block
+.clipboard-button {
+    margin: .2rem !important;
+    padding: .3rem !important;
 }
 
 // put your custom CSS here!
