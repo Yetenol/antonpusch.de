@@ -44,10 +44,20 @@ dg-permalink: latex-tables
 
 - Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$
 - Visually clarify **column titles** and **row titles**: Thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
-- Apply border **pattern**: Inner gridlines $\mathrm{1c}$
-- See [source examples](./Create%20a%20simple%20table%20with%20borders.md) like [this preview](./Create%20a%20simple%20table%20with%20borders.md#Main%20examples), [create borders without tabularray](./Create%20a%20simple%20table%20with%20borders.md#Create%20borders%20without%20tabularray), center table
+- Apply border **pattern**: Inner gridlines $\mathrm{1c}$, Lines without tabularray
+- See source examples [Create a simple table with borders](./Create%20a%20simple%20table%20with%20borders.md)
 
 ![minimal 45.svg](./attachments/minimal%2045.svg)
+
+# Add title and reference the table elsewhere
+
+- **Placement, alignment**: center the table horizontally
+- Add **references**: caption underneath and in the list of tables, label to cross-reference elsewhere
+- More ideas: legende, Multifigure, Split, Longtable, surpress tableoftables entry, table next to text, globally set placement specifiers
+- Center, Caption, Reference, Longtable
+- See source examples [Add title and reference the table elsewhere](./Add%20title%20and%20reference%20the%20table%20elsewhere.md) 
+
+![minimal 29.svg](./attachments/minimal%2029.svg)
 
 # Import data from files
 
@@ -62,15 +72,6 @@ dg-permalink: latex-tables
 ![minimal 18.svg](./attachments/minimal%2018.svg)
 ¹²³ applied in *n*-th table above; see; see [latex source](./Import%20data%20from%20files.md#Main%20example)
 
-# Add title and reference the table elsewhere
-
-- **Placement, alignment**: center the table horizontally
-- Add **references**: caption underneath and in the list of tables, label to cross-reference elsewhere
-- More ideas: legende, Multifigure, Split, Longtable, surpress tableoftables entry, table next to text, globally set placement specifiers
-- See [source examples](./Add%20title%20and%20reference%20the%20table%20elsewhere.md) 
-
-![minimal 29.svg](./attachments/minimal%2029.svg)
-- See [latex source](./Add%20title%20and%20reference%20the%20table%20elsewhere.md#Main%20example)
 
 # Layout the table
 
