@@ -46,8 +46,8 @@ article>*>img[src$=".svg"] {
 }
 
 // Hide scrollbar if not needed in codeblock
-article>*>pre > code {
-    overflow-x: auto;
+article>*>pre>code {
+    overflow-x: auto !important;
 }
 
 // put your custom CSS here!
