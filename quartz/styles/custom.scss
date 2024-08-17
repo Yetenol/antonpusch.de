@@ -46,7 +46,7 @@ article>*>img[src$=".svg"] {
 }
 
 // Hide scrollbar if not needed in codeblock
-figure[data-rehype-pretty-code-figure] > pre > code {
+article>*>pre > code {
     overflow-x: auto;
 }
 
