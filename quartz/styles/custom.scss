@@ -87,4 +87,15 @@ h6 {
     margin-bottom: 1rem !important;
 }
 
+code[data-language="clipboard"] {
+    max-width: min-content;
+    padding: revert-layer;
+}
+code[data-language="clipboard"] > span {
+    display: none;
+}
+code[data-language="clipboard"]:after {
+    content: "Clipboard"
+}
+
 // put your custom CSS here!

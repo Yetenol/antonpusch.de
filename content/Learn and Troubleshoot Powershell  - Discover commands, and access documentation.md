@@ -4,19 +4,19 @@ priority: 1
 ---  
   
 **Update help files** using elevated command  
-```powershell  
+```clipboard  
 Update-Help  
 ```  
   
 # Discover commands  
   
 Discover **all nouns** of PowerShell modules      
-```powershell  
+```clipboard Anton Pusch  
 Get-Command -Module Microsoft.PowerShell* | group Noun | Format-Wide -AutoSize  
 ```  
   
 Discover **all commands** about a noun      
-```powershell  
+```clipboard  "Anton Pusch"
 Get-Command -Noun Web* | foreach { Get-Help $_ } | Format-Table Name, Synopsis  
 ```  
   
