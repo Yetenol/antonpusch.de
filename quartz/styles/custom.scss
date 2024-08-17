@@ -8,7 +8,7 @@
 // Prevent horizontal scroll bar on numbered equations in katex
 .katex-display>.katex>.katex-html {
     display: flex !important;
-    justify-content: right;
+    // justify-content: right;
     // flex-wrap: wrap;
     align-items: baseline;
 }
