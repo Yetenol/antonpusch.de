@@ -53,7 +53,54 @@ dg-publish: true
 \end{document}
 ```
 
-
+```latex
+\documentclass{article}\pagestyle{empty}\setcounter{table}{0}\renewcommand{\thetable}{1\alph{table}}
+\usepackage{pgfplotstable,tabularray}
+\UseTblrLibrary{booktabs}\SetTblrInner[tblr,talltblr]{column{1,Z}={c}}
+\pgfplotstableset{
+    /pgfplots/compat = 1.17,
+    tblr/.style = {begin table = \begin{tblr}{}, end table = \end{tblr}, skip coltypes},
+    yescaption/.style = {begin table = \begin{talltblr}{}, end table = \end{talltblr}, skip coltypes},
+    tabular/.style = {col sep = &, row sep = \\, string type},
+    hlines/.style={every table/.append code= {\SetTblrInner[tblr,talltblr]{
+        hline{1,Z}={\heavyrulewidth},hline{2}={\lightrulewidth} }}},
+    hasrowname/.style={every first column/.append style = {string type}, 
+        every table/.append code= {\SetTblrInner[tblr,talltblr]{column{1}={l} }}},
+    cross/.style={hasrowname, every table/.append code= {\SetTblrInner[tblr,talltblr]{
+        vline{2}, hline{2} }}},
+    frame/.style={every table/.append code= {\SetTblrInner[tblr,talltblr]{
+        vline{1,Z}={\heavyrulewidth},hline{1,Z}={\heavyrulewidth} }}},
+    innergrid/.style={every table/.append code= {\SetTblrInner[tblr,talltblr]{
+        vline{2-Y},hline{2-Y} }}},
+    boldcolname/.style={every table/.append code= {\SetTblrInner[tblr,talltblr]{
+        row{1}={font=\bfseries} }}},
+    boldrowname/.style={hasrowname, every table/.append code= {\SetTblrInner[tblr,talltblr]{
+        column{1}={font=\bfseries} }}},
+    stylespack/.style={tabular,tblr,frame,innergrid,boldcolname,boldrowname,yescaption},
+}
+\begin{document}
+\pgfplotstabletypeset[tabular,tblr,hlines,yescaption]{
+    Name & Identifier \\
+    Peter & 3 \\
+    Io & Hat \\
+    Lara & $\triangle$ \\
+}
+\hspace{1cm}
+\pgfplotstabletypeset[tabular,tblr,cross,yescaption]{
+    Name & Identifier \\
+    Peter & 3 \\
+    Io & Hat \\
+    Lara & $\triangle$ \\
+}
+\hspace{1cm}
+\pgfplotstabletypeset[stylespack]{
+    Name & Identifier \\
+    Peter & 3 \\
+    Io & Hat \\
+    Lara & $\triangle$ \\
+}
+\end{document}
+```
 # Create borders without tabularray
 
 Problem: Booktabs creates gaps with row colors or vertical lines:
