@@ -79,7 +79,7 @@ dg-permalink: latex-tables
 - Split in equal parts
 - See [[./Layout the table|source examples]]
 
-![[./Layout the table#^723814|Layout the table > ^723814]]
+![[./Layout the table#^723814|Layout the table#^723814]]
 - See [[./Layout the table#Main example|latex code]]
 
 # Advanced input processing
@@ -556,7 +556,7 @@ Hlines like bookstabs
 \end{document}
 ```
 
-![[./attachments/minimal.svg|minimal]]
+![[./attachments/minimal.svg|attachments/minimal.svg]]
 
 ```tex
 \documentclass{article}

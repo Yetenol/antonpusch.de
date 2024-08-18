@@ -55,4 +55,4 @@ Sources:
 Related:
 
 Tags:
-[[./latex|latex]]
+[[./latex|LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules]]
