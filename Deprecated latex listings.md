@@ -43,7 +43,7 @@ def incmatrix(genl1,genl2):
 ```
 
 ![code_listings.svg](./content/attachments/code_listings.svg)
-![Pasted image 20240727224057.png](./content/attachments/Pasted%20image%2020240727224057.png)
+![Pasted image 20240727224057.png](./content/attachments/pasted%20image%2020240727224057.png)
 
 ![pdfresizer.com-pdf-crop.pdf](./content/attachments/pdfresizer%20com-pdf-crop.pdf)
 
