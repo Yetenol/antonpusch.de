@@ -1,50 +1,139 @@
 ---
 dg-publish: true
 ---
-# Main examples
-
-![minimal 28.svg](./attachments/minimal%2028.svg)
-
+Requires
 ```latex
-\documentclass{article}
-\usepackage{pgfplotstable,tabularray}
-\UseTblrLibrary{booktabs}\SetTblrInner{column{1,Z}={c}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
-    tblr/.style = {begin table = \begin{tblr}{}, end table = \end{tblr}, skip coltypes},
-    tabular/.style = {col sep = &, row sep = \\, string type},
-    hlines/.style={every table/.append code=\SetTblrInner{
-        hline{1,Z}={\heavyrulewidth},hline{2}={\lightrulewidth} }},
-    hasrowname/.style={every first column/.append style = {string type}, 
-        every table/.append code=\SetTblrInner{column{1}={l} }},
-    cross/.style={hasrowname, every table/.append code=\SetTblrInner{
-        vline{2}, hline{2} }},
-    frame/.style={every table/.append code=\SetTblrInner{
-        vline{1,Z}={\heavyrulewidth},hline{1,Z}={\heavyrulewidth} }},
-    innergrid/.style={every table/.append code=\SetTblrInner{
-        vline{2-Y},hline{2-Y} }},
-    boldcolname/.style={every table/.append code=\SetTblrInner{
-        row{1}={font=\bfseries} }},
-    boldrowname/.style={hasrowname, every table/.append code=\SetTblrInner{
-        column{1}={font=\bfseries} }},
-    stylespack/.style={tabular,tblr,frame,innergrid,boldcolname,boldrowname},
+    tex/.style = {col sep = &, row sep = \\},
+    text cells/.style = {string type,tblr={ column{1,Z}={c} }},
+    tblr/.style = {environment=tblr, every table/.append code={\SetTblrInner[tblr,talltblr,longtblr]{#1}}},
+    tblr outer/.style = {tblr, every table/.append code={\SetTblrOuter[tblr,talltblr,longtblr]{#1}}},
+    environment/.style = {begin table = \begin{#1}{}, end table = \end{#1}, skip coltypes },
+    caption/.style = {tblr outer={tall,caption={#1}}},
+}
+```
+
+- **tex**: Use LaTeX's default tabular separators for columns `&` and rows `\\`
+- **text cells**: Don't parse cells as numbers, center align cells
+- **tblr**: use the tabularray environment
+- **tblr=⟨key-value pairs⟩**: add inner tabularray configuration
+- **tblr outer=⟨key-value pairs⟩**: add outer tabularray configuration
+- **environment**: set environment to be used by pgfplotstable, and don't generate column types
+- **caption**: Add table number to identify the demo tables
+
+Setup border styles
+```latex
+\pgfplotstableset{
+    hasrowname/.style={every first column/.append style={string type}, tblr={ column{1}={l} }},
+    cross/.style={hasrowname, tblr={ vline{2}, hline{2} }},
+    frame/.style={tblr={ vline{1,Z}={.08em},hline{1,Z}={.08em} }},
+    innergrid/.style={tblr={ vline{2-Y},hline{2-Y} }},
+    boldcolname/.style={tblr={ row{1}={font=\bfseries} }},
+    boldrowname/.style={hasrowname, tblr={ column{1}={font=\bfseries} }},
+}
+```
+
+- Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$
+- Visually clarify **column titles** and **row titles**: Thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
+- Apply border **pattern**: Inner **gridlines** $\mathrm{1c}$, Lines without tabularray
+
+Rule widths equals booktabs' defaults for toprule, midrule, and bottomrule
+
+Add thick **horizontal** lines around the table and a regular line below the **first row**, see $\mathrm{1a}$
+```latex
+\pgfplotstabletypeset[hlines]{…}
+```
+
+Add two **crossing** lines separating the **first row** and **first column** from the rest, see $\mathrm{1b}$
+- Visually clarify **column titles** and **row titles**
+- **Left aligns** the first column
+```latex
+\pgfplotstabletypeset[cross]{…}
+```
+
+Add **inner gridlines**: vertical and horizontal lines everywhere except the outside border, see $\mathrm{1c, 1d}$
+```latex
+\pgfplotstabletypeset[innergrid]{…}
+```
+
+Box the table with a thick **frame** line, see $\mathrm{1c, 1f}$
+```latex
+\pgfplotstabletypeset[frame]{…}
+```
+
+Format the **first row bold**, see $\mathrm{1c, 1e}$
+```latex
+\pgfplotstabletypeset[boldcolname]{…}
+```
+
+Format the **first column bold**, see $\mathrm{1c, 1f}$
+- **Left aligns** the first column
+```latex
+\pgfplotstabletypeset[boldrowname]{…}
+```
+
+![minimal 54.svg](./attachments/minimal%2054.svg)
+
+```latex
+\documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
+\usepackage{pgfplotstable,tabularray}
+\pgfplotstableset{
+    /pgfplots/compat = 1.17,
+    tex/.style = {col sep = &, row sep = \\},
+    text cells/.style = {string type,tblr={ column{1,Z}={c} }},
+    tblr/.style = {environment=tblr, every table/.append code={\SetTblrInner[tblr,talltblr,longtblr]{#1}}},
+    tblr outer/.style = {tblr, every table/.append code={\SetTblrOuter[tblr,talltblr,longtblr]{#1}}},
+    environment/.style = {begin table = \begin{#1}{}, end table = \end{#1}, skip coltypes },
+    caption/.style = {tblr outer={tall,caption={#1}}},
+    hlines/.style={tblr={ hline{1,Z}={.08em},hline{2}={.05em} }},
+    hasrowname/.style={every first column/.append style={string type}, tblr={ column{1}={l} }},
+    cross/.style={hasrowname, tblr={ vline{2}, hline{2} }},
+    frame/.style={tblr={ vline{1,Z}={.08em},hline{1,Z}={.08em} }},
+    innergrid/.style={tblr={ vline{2-Y},hline{2-Y} }},
+    boldcolname/.style={tblr={ row{1}={font=\bfseries} }},
+    boldrowname/.style={hasrowname, tblr={ column{1}={font=\bfseries} }},
+    tex,tblr,text cells,caption
 }
 \begin{document}
-\pgfplotstabletypeset[tabular,tblr,hlines]{
+\noindent
+\pgfplotstabletypeset[hlines]{
     Name & Identifier \\
     Peter & 3 \\
     Io & Hat \\
     Lara & $\triangle$ \\
 }
 \hspace{1cm}
-\pgfplotstabletypeset[tabular,tblr,cross]{
+\pgfplotstabletypeset[cross]{
     Name & Identifier \\
     Peter & 3 \\
     Io & Hat \\
     Lara & $\triangle$ \\
 }
 \hspace{1cm}
-\pgfplotstabletypeset[stylespack]{
+\pgfplotstabletypeset[frame,innergrid,boldcolname,boldrowname]{
+    Name & Identifier \\
+    Peter & 3 \\
+    Io & Hat \\
+    Lara & $\triangle$ \\
+}
+
+\vspace{1em}\noindent
+\pgfplotstabletypeset[innergrid]{
+    Name & Identifier \\
+    Peter & 3 \\
+    Io & Hat \\
+    Lara & $\triangle$ \\
+}
+\hspace{1cm}
+\pgfplotstabletypeset[boldcolname]{
+    Name & Identifier \\
+    Peter & 3 \\
+    Io & Hat \\
+    Lara & $\triangle$ \\
+}
+\hspace{1cm}
+\pgfplotstabletypeset[frame,boldrowname]{
     Name & Identifier \\
     Peter & 3 \\
     Io & Hat \\
@@ -53,62 +142,31 @@ dg-publish: true
 \end{document}
 ```
 
+# Make booktabs compatible with tabularray
+
+Replace hlines and frame styles
 ```latex
-\documentclass{article}\pagestyle{empty}\setcounter{table}{0}\renewcommand{\thetable}{1\alph{table}}
-\usepackage{pgfplotstable,tabularray}
-\UseTblrLibrary{booktabs}\SetTblrInner[tblr,talltblr]{column{1,Z}={c}}
+\UseTblrLibrary{booktabs}
 \pgfplotstableset{
-    /pgfplots/compat = 1.17,
-    tblr/.style = {begin table = \begin{tblr}{}, end table = \end{tblr}, skip coltypes},
-    yescaption/.style = {begin table = \begin{talltblr}{}, end table = \end{talltblr}, skip coltypes},
-    tabular/.style = {col sep = &, row sep = \\, string type},
-    hlines/.style={every table/.append code= {\SetTblrInner[tblr,talltblr]{
-        hline{1,Z}={\heavyrulewidth},hline{2}={\lightrulewidth} }}},
-    hasrowname/.style={every first column/.append style = {string type}, 
-        every table/.append code= {\SetTblrInner[tblr,talltblr]{column{1}={l} }}},
-    cross/.style={hasrowname, every table/.append code= {\SetTblrInner[tblr,talltblr]{
-        vline{2}, hline{2} }}},
-    frame/.style={every table/.append code= {\SetTblrInner[tblr,talltblr]{
-        vline{1,Z}={\heavyrulewidth},hline{1,Z}={\heavyrulewidth} }}},
-    innergrid/.style={every table/.append code= {\SetTblrInner[tblr,talltblr]{
-        vline{2-Y},hline{2-Y} }}},
-    boldcolname/.style={every table/.append code= {\SetTblrInner[tblr,talltblr]{
-        row{1}={font=\bfseries} }}},
-    boldrowname/.style={hasrowname, every table/.append code= {\SetTblrInner[tblr,talltblr]{
-        column{1}={font=\bfseries} }}},
-    stylespack/.style={tabular,tblr,frame,innergrid,boldcolname,boldrowname,yescaption},
+    hlines/.style={tblr={ hline{1,Z}={\heavyrulewidth},hline{2}={\lightrulewidth} }},
+    frame/.style={tblr={ vline{1,Z}={\heavyrulewidth},hline{1,Z}={\heavyrulewidth} }},
 }
-\begin{document}
-\pgfplotstabletypeset[tabular,tblr,hlines,yescaption]{
-    Name & Identifier \\
-    Peter & 3 \\
-    Io & Hat \\
-    Lara & $\triangle$ \\
-}
-\hspace{1cm}
-\pgfplotstabletypeset[tabular,tblr,cross,yescaption]{
-    Name & Identifier \\
-    Peter & 3 \\
-    Io & Hat \\
-    Lara & $\triangle$ \\
-}
-\hspace{1cm}
-\pgfplotstabletypeset[stylespack]{
-    Name & Identifier \\
-    Peter & 3 \\
-    Io & Hat \\
-    Lara & $\triangle$ \\
-}
-\end{document}
 ```
+
+Change heavy rule width, see modified $\mathrm{1a', 1b', 1c'}$
+```latex
+\heavyrulewidth=1.5pt
+```
+
+![minimal 57.svg](./attachments/minimal%2057.svg)
+
 # Create borders without tabularray
 
-Problem: Booktabs creates gaps with row colors or vertical lines:
+**Problem**: Booktabs creates gaps to row shading or within vertical lines:
 
 ![minimal 22.svg](./attachments/minimal%2022.svg)
 
-Solution
-
+**Workaround**: Remove booktabs' vertical spacing
 - Remove vertical separation from `\toprule`, `\midrule`, `\bottomrule`
 - Create custom width vertical lines with `!{\vrule width .08em}` in the column type
 
@@ -120,9 +178,10 @@ Solution
 !{\vrule width .08em}
 ```
 
-![minimal 25.svg](./attachments/minimal%2025.svg)
+![minimal 58.svg](./attachments/minimal%2058.svg)
 
-Remove booktabs vertical space for conflicts
+**Ugly example**: Remove booktabs vertical space for conflicts
+- boldcolname* or boldrowname* must be applied before any line styles
 
 ```latex
 \documentclass{article}
@@ -187,4 +246,3 @@ Remove booktabs vertical space for conflicts
 }
 \end{document}
 ```
-
