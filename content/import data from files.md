@@ -2,13 +2,99 @@
 title: "Import data from files"
 dg-publish: true
 ---
+
+Use essential styles and hlines from [Create a simple table with borders](./create%20a%20simple%20table%20with%20borders.md)
+
+Setup styles for data importing
+```latex
+\pgfplotstableset{
+    csv/.style = {col sep = comma, row sep = newline, column type = {r}, },
+    numberic cells/.style = {numeric type, tblr={ column{1,Z}={r} }},
+    shade 2nd/.style = {tblr={ row{even} = {gray9} }},
+    dash 3rd/.style = {every nth row = {3}{before row = \hline[dashed]}},
+    german/.style = {dec sep={,\!}, 1000 sep ={\,}},
+}
+```
+
+![minimal 59.svg](./attachments/minimal%2059.svg)
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{3\alph{table}}
+\usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
+\pgfplotstableset{
+    /pgfplots/compat = 1.17,
+    tex/.style = {col sep = &, row sep = \\},
+    text cells/.style = {string type,tblr={ column{1,Z}={c} }},
+    tblr/.style = {environment=tblr, every table/.append code={\SetTblrInner[tblr,talltblr,longtblr]{#1}}},
+    tblr outer/.style = {tblr, every table/.append code={\SetTblrOuter[tblr,talltblr,longtblr]{#1}}},
+    environment/.style={begin table=\begin{#1}{},end table=\end{#1},skip coltypes,environment/.style={}},
+    caption/.style = {tblr outer={tall,caption={#1}}},
+    hlines/.style={tblr={ hline{1,Z}={.08em},hline{2}={.05em} }},
+    csv/.style = {col sep = comma, row sep = newline, column type = {r}, },
+    numberic cells/.style = {numeric type, tblr={ column{1,Z}={r} }},
+    shade 2nd/.style = {tblr={ row{even} = {gray9} }},
+    dash 3rd/.style = {every nth row = {3}{before row = \hline[dashed]}},
+    german/.style = {dec sep={,\!}, 1000 sep ={\,}},
+    rename column/.style 2 args = {columns/#1/.style = {column name = {#2}}},
+    csv, numberic cells, hlines, caption
+}
+\begin{document}
+\noindent
+\pgfplotstabletypeset[shade 2nd]{resources/data.csv}
+\hspace{1cm}
+\pgfplotstabletypeset[dash 3rd, german]{resources/data.csv}
+\hspace{1cm}
+\pgfplotstabletypeset[int detect, sort=true, sort key={[index]1}]{resources/data.csv}
+
+\vspace{1em}\noindent
+\pgfplotstabletypeset[rename column/.list={{t}{$t$ in ms},{U}{$U_\mathrm{mess}$ in V}},
+    tblr outer={ remark{$t$} = {Time when datapoint was meassured},
+    remark{$U_\mathrm{mess}$} = {Voltage meassured}  }
+    ]{resources/data.csv}
+\end{document}
+```
+
+
+
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{3\alph{table}}
+\usepackage{pgfplotstable,tabularray}
+\pgfplotstableset{
+    /pgfplots/compat = 1.17,
+    tex/.style = {col sep = &, row sep = \\},
+    text cells/.style = {string type,tblr={ column{1,Z}={c} }},
+    tblr/.style = {environment=tblr, every table/.append code={\SetTblrInner[tblr,talltblr,longtblr]{#1}}},
+    tblr outer/.style = {tblr, every table/.append code={\SetTblrOuter[tblr,talltblr,longtblr]{#1}}},
+    environment/.style={begin table=\begin{#1}{},end table=\end{#1},skip coltypes,environment/.style={}},
+    caption/.style = {tblr outer={tall,caption={#1}}},
+    hlines/.style={tblr={ hline{1,Z}={.08em},hline{2}={.05em} }},
+    csv/.style = {col sep = comma, row sep = newline, column type = {r}, },
+    numberic cells/.style = {numeric type, tblr={ column{1,Z}={r} }},
+    shade 2nd/.style = {tblr={ row{even} = {gray9} }},
+    dash 3rd/.style = {every nth row = {3}{before row = \hline[dashed]}},
+    german/.style = {dec sep={,\!}, 1000 sep ={\,}},
+    csv, numberic cells, hlines, caption
+}
+\begin{document}
+\noindent
+\pgfplotstabletypeset[shade 2nd]{resources/data.csv}
+\hspace{1cm}
+\pgfplotstabletypeset[dash 3rd, german]{resources/data.csv}
+\hspace{1cm}
+\pgfplotstabletypeset[int detect, sort=true, sort key={[index]1}]{resources/data.csv}
+\end{document}
+```
+
 # Main example
 
 ![minimal 18.svg](./attachments/minimal%2018.svg)
 
 ```latex
 \documentclass{article}
-\usepackage{pgfplotstable,tabularray,amsmath,amssymb,xcolor}
+\usepackage{pgfplotstable,tabularray}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     csv/.style = {col sep = comma, row sep = newline, column type = {r}, numeric type},

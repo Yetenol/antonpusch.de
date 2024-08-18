@@ -2,6 +2,7 @@
 title: "Create a simple table with borders"
 dg-publish: true
 ---
+
 # Essential styles
 
 Setup **essential styles** for demos
@@ -12,7 +13,7 @@ Setup **essential styles** for demos
     text cells/.style = {string type,tblr={ column{1,Z}={c} }},
     tblr/.style = {environment=tblr, every table/.append code={\SetTblrInner[tblr,talltblr,longtblr]{#1}}},
     tblr outer/.style = {tblr, every table/.append code={\SetTblrOuter[tblr,talltblr,longtblr]{#1}}},
-    environment/.style = {begin table = \begin{#1}{}, end table = \end{#1}, skip coltypes },
+    environment/.style={begin table=\begin{#1}{},end table=\end{#1},skip coltypes,environment/.style={}},
     caption/.style = {tblr outer={tall,caption={#1}}},
 }
 ```
@@ -29,6 +30,10 @@ Setup demo projects
 ```latex
 \documentclass{article} \pagestyle{empty}
 \renewcommand{\thetable}{⟨chapter⟩\alph{table}} \setcounter{table}{⟨skip n letters⟩}
+\usepackage{pgfplotstable,tabularray}
+\pgfplotstableset{…}
+\begin{document}
+\end{document}
 ```
 - Use article class without page numbers for easier pdf cropping
 - **chapter**: set number at the start of table numbers
@@ -69,7 +74,7 @@ Box the table with a thick **frame** line, see $\mathrm{1c, 1f}$
 - Use style **frame**
 
 Format the **first row bold**, see $\mathrm{1c, 1e}$
--  Use style **boldcolname**
+- Use style **boldcolname**
 
 Format the **first column bold**, see $\mathrm{1c, 1f}$
 - **Left aligns** the first column
@@ -88,7 +93,7 @@ Complete source code for $\mathrm{1a - 1f}$
     text cells/.style = {string type,tblr={ column{1,Z}={c} }},
     tblr/.style = {environment=tblr, every table/.append code={\SetTblrInner[tblr,talltblr,longtblr]{#1}}},
     tblr outer/.style = {tblr, every table/.append code={\SetTblrOuter[tblr,talltblr,longtblr]{#1}}},
-    environment/.style = {begin table = \begin{#1}{}, end table = \end{#1}, skip coltypes },
+    environment/.style={begin table=\begin{#1}{},end table=\end{#1},skip coltypes,environment/.style={}},
     caption/.style = {tblr outer={tall,caption={#1}}},
     hlines/.style={tblr={ hline{1,Z}={.08em},hline{2}={.05em} }},
     hasrowname/.style={every first column/.append style={string type}, tblr={ column{1}={l} }},
@@ -166,6 +171,8 @@ Change heavy rule width, see modified $\mathrm{1a', 1b', 1c'}$
 
 # Create borders without tabularray
 
+Use tabularray if you somehow can. If you have to use another tabular environment, it is still possible to create styles for border lines. To set the rule width of line, booktabs is used.
+
 **Problem**: Booktabs creates gaps within vertical lines and next to colored rows:
 
 ![minimal 22.svg](./attachments/minimal%2022.svg)
@@ -187,61 +194,51 @@ Change heavy rule width, see modified $\mathrm{1a', 1b', 1c'}$
 **Ugly example**: Remove booktabs vertical space for conflicts
 - boldcolname* or boldrowname* must be applied before any line styles
 ```latex
-\documentclass{article}
-\pagestyle{empty}
+\documentclass{article} \pagestyle{empty}
 \usepackage{pgfplotstable,booktabs}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
-    tabular/.style = {col sep = &, row sep = \\, string type},
-    hlines/.style = {
+    tex/.style = {col sep = &, row sep = \\},
+    text cells*/.style = {string type},
+    hlines*/.style = {
         every head row/.style = {before row = \toprule, after row = \midrule},
-        every last row/.style = {after row = \bottomrule},
-    },
-    vline+/.style = {clearbooktabssep,every first column/.style = {column type=l|,string type}},
-    cross+/.style = {
-        clearbooktabssep,
+        every last row/.style = {after row = \bottomrule}, },
+    cross*/.style = {clearbooktabssep*,
         every first column/.style = {column type=l|,string type},
-        every head row/.append style = {after row = \midrule}
-    },
-    clearbooktabssep/.style = {
-        every table/.code = {
-            \setlength{\abovetopsep}{0em}
-            \setlength{\aboverulesep}{0em}
-            \setlength{\belowrulesep}{0em}
-            \setlength{\belowbottomsep}{0em}
-        },
-    },
-    frame+/.style = {
+        every head row/.append style = {after row = \midrule} },
+    clearbooktabssep*/.style = {every table/.code = {
+        \setlength{\abovetopsep}{0em}\setlength{\aboverulesep}{0em}
+        \setlength{\belowrulesep}{0em}\setlength{\belowbottomsep}{0em} }},
+    frame*/.style = {
         every head row/.append style = {before row = \toprule },
         every last row/.append style = {after row = \bottomrule },
         every first column/.style = {column type/.add={!{\vrule width .08em}}{}},
         every last column/.style = {column type/.add={}{!{\vrule width .08em}}},
-        clearbooktabssep
-    },
-    innergrid+/.style = {
+        clearbooktabssep*, },
+    innergrid*/.style = {
         every column/.code={\ifnum\pgfplotstablecol>0 \pgfkeysalso{column type/.add={|}{}} \fi},
-        every even row/.style={before row/.add=\hline},
-        every odd row/.style={before row/.add=\hline},
-    },
-    boldcolname+/.style = {assign column name/.style={/pgfplots/table/column name={\textbf{##1}}}},
-    boldrowname+/.style = {before row=\bfseries},
+        every even row/.style={before row/.add=\hline}, 
+        every odd row/.style={before row/.add=\hline}, },
+    boldcolname*/.style = {assign column name/.style={/pgfplots/table/column name={\textbf{##1}}}},
+    boldrowname*/.style = {every first column/.style = {column type=l},before row=\bfseries},
+    tex, text cells*
 }
 \begin{document}
-\pgfplotstabletypeset[tabular,hlines]{
+\pgfplotstabletypeset[hlines*]{
     Name & Identifier \\
     Peter & 3 \\
     Io & 7 \\
     Lara & $\cap$ \\
 }
 \hspace{1cm}
-\pgfplotstabletypeset[tabular,cross+]{
+\pgfplotstabletypeset[cross*]{
     Name & Identifier \\
     Peter & 3 \\
     Io & 7 \\
     Lara & $\cap$ \\
 }
 \hspace{1cm}
-\pgfplotstabletypeset[tabular,frame+,innergrid+,boldcolname+,boldrowname+]{
+\pgfplotstabletypeset[boldcolname*,boldrowname*,frame*,innergrid*]{
     Name & Identifier \\
     Peter & 3 \\
     Io & 7 \\

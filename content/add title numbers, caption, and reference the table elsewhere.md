@@ -14,8 +14,8 @@ Setup styles for referencing
     entry/.style = {tblr outer={tall,entry={#1}}},
     label/.style = {tblr outer={tall,label={#1}}},
     center table/.style = {
-        begin table/.add = {\parskip=0pt\par\nopagebreak\centering{}}{},
-        end table/.add = {}{\par\noindent\ignorespacesafterend{}}  },
+        begin table/.prefix={ \parskip=0pt\par\nopagebreak\centering{} },
+        end table/.append={ \par\noindent\ignorespacesafterend{} }},
 }
 ```
 
@@ -65,7 +65,7 @@ Demos with tex, text cells, and hlines styles from [Create a simple table with b
     text cells/.style = {string type,tblr={ column{1,Z}={c} }},
     tblr/.style = {environment=tblr, every table/.append code={\SetTblrInner[tblr,talltblr,longtblr]{#1}}},
     tblr outer/.style = {tblr, every table/.append code={\SetTblrOuter[tblr,talltblr,longtblr]{#1}}},
-    environment/.style = {begin table = \begin{#1}{}, end table = \end{#1}, skip coltypes },
+    environment/.style={begin table=\begin{#1}{},end table=\end{#1},skip coltypes,environment/.style={}},
     caption/.style = {tblr outer={tall,caption={#1}}},
     entry/.style = {tblr outer={tall,entry={#1}}},
     label/.style = {tblr outer={tall,label={#1}}},
