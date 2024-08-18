@@ -90,7 +90,7 @@ $$
 
 # Comment matrix columns
 
-![minimal 34.svg](./content/attachments/minimal%2034.svg) 
+![[./content/attachments/minimal 34.svg|minimal 34.svg]] 
 
 ```latex
 \documentclass{article}
@@ -114,7 +114,7 @@ X_z & Y_z & Z_z & T_z \\
 
 # Overlapping braces
 
-![minimal 35.svg](./content/attachments/minimal%2035.svg) 
+![[./content/attachments/minimal 35.svg|minimal 35.svg]] 
 
 ```latex
 \documentclass{article}
@@ -144,7 +144,7 @@ y\textcolor{blue}{-\frac{31}{8}}
 
 # Vertical and horizontal aligned braces
 
-![minimal 36.svg](./content/attachments/minimal%2036.svg) 
+![[./content/attachments/minimal 36.svg|minimal 36.svg]] 
 
 ```latex
 \documentclass{article}
