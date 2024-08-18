@@ -4,7 +4,7 @@ dg-publish: true
 ---
 # Main example
 
-![minimal 18.svg](./attachments/minimal%2018.svg)
+![[./attachments/minimal 18.svg|minimal 18.svg]]
 
 ```latex
 \documentclass{article}
@@ -54,7 +54,7 @@ $t$ in ms, $U_{mess}$ in V
 - color rows with `\rowcolor[gray]{0.9}` from `colortbl`
 - create dashed horizontal lines with `\hdashline` from `arydshln`
 
-![minimal 24.svg](./attachments/minimal%2024.svg)
+![[./attachments/minimal 24.svg|minimal 24.svg]]
 
 ```latex
 \documentclass{article}
