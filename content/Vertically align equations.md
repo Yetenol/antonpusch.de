@@ -120,7 +120,7 @@ LaTeX supported by Overleaf, VS Code (pdflatex)
 \end{document}
 ```
 
-![minimal 40.svg](./attachments/minimal%2040.svg)
+![[./attachments/minimal 40.svg|minimal 40.svg]]
 
 (2) Markdown math supported by Obsidian, VS Code, Quartz
 ```
