@@ -1,4 +1,5 @@
 ---
+title: "LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules"
 dg-publish: true
 dg-permalink: latex
 aliases:
@@ -35,7 +36,6 @@ My setup
 - which editor comparison
 - Don't spent so much time on your setup, start writing code
 - alternative markup systems
-
 
 ---
 Sources:

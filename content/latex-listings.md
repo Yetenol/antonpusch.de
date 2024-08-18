@@ -1,4 +1,5 @@
 ---
+title: "Listings - Print source code with syntax highlighting in latex with listings"
 dg-publish: true
 dg-permalink: latex-listings
 ---

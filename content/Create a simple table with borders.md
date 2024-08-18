@@ -1,4 +1,5 @@
 ---
+title: "Create a simple table with borders"
 dg-publish: true
 ---
 # Essential styles

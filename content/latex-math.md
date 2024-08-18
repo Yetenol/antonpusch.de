@@ -1,4 +1,5 @@
 ---
+title: "Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath"
 dg-publish: true
 dg-permalink: latex-math
 dg-show-toc: true

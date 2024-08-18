@@ -1,4 +1,5 @@
 ---
+title: "Import data from files"
 dg-publish: true
 ---
 # Main example

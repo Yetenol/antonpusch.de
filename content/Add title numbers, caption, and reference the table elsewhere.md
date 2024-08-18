@@ -1,4 +1,5 @@
 ---
+title: "Add title numbers, caption, and reference the table elsewhere"
 dg-publish: true
 ---
 
