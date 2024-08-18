@@ -16,7 +16,7 @@
 - Logistic bots only supply players
 - Tag building plans on the map
 - Separate each component into its own block
-- Faster long inserters aren't in the game for a reason [Long Inserters](./content/Long%20Inserters.md)
+- Faster long inserters aren't in the game for a reason [[./content/Long Inserters|Long Inserters]]
 
 # Robots
 
