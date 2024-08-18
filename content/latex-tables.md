@@ -1,4 +1,5 @@
 ---
+title: "Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray"
 dg-publish: true
 dg-show-toc: true
 dg-permalink: latex-tables
