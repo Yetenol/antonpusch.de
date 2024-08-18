@@ -62,7 +62,7 @@ See more relations in external resources
 
 Generically negate/comment any relation
 - negate $\not\equiv$ `\not\equiv`
-- comment $\overset{\text{def}}{=}$ `\overset{\text{def}}{=}`, and see [Comment equation operators](Comment%20equation%20operators.md)
+- comment $\overset{\text{def}}{=}$ `\overset{\text{def}}{=}`, and see [[Comment equation operators|Comment equation operators]]
 
 # Operators
 
@@ -103,7 +103,7 @@ Operators with **function name**
 Use **limits**, or exponents and indices $\mathrm{(1d)}$
 - **Display mode** defaults to **limits**; to force exponents and indices `\lim\nolimits_0^1`
 - **Text mode** defaults to **exponents** and **indices**; to force limits `\int\limits_0^1`
-- See [Layout multiple equations](Layout%20multiple%20equations.md)
+- See [[Layout multiple equations|Layout multiple equations]]
 
 # Greek Letters
 
@@ -169,14 +169,14 @@ These symbols can also be used in text mode.
 
 | Command      | Rendering | Dependency                                                                                       |         |
 | ------------ | --------- | ------------------------------------------------------------------------------------------------ | ------- |
-| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
+| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
+| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
+| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
+| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
+| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
+| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
+| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
+| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | setup]] |
 
 # Degree Symbols
 
@@ -416,12 +416,12 @@ Sources:
 - 2022-06-10: [List of mathematical symbols by subject - Wikipedia](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject)
 
 Related:
-[Vary the style of mathematical symbols - ϖ vs π](Vary%20the%20style%20of%20mathematical%20symbols%20-%20%CF%96%20vs%20%CF%80.md)
+[[Vary the style of mathematical symbols - ϖ vs π|Vary the style of mathematical symbols - ϖ vs π]]
 
 Tags:
-[Values  - Standardize math, numbers, symbols, quantities, money](./Values%20%20-%20Standardize%20math,%20numbers,%20symbols,%20quantities,%20money.md)
-[Graphical elements - Standardize tables, images, plots](./Graphical%20elements%20-%20Standardize%20tables,%20images,%20plots.md)
-[LaTeX](./latex.md)
+[[./Values  - Standardize math, numbers, symbols, quantities, money|Values  - Standardize math, numbers, symbols, quantities, money]]
+[[./Graphical elements - Standardize tables, images, plots|Graphical elements - Standardize tables, images, plots]]
+[[./latex|LaTeX]]
 
 [^1]: the macros `\notni` isn't supported by MathJax
 [^2]: improved by [latexsym](https://texdoc.org/serve/latexsym/0)
