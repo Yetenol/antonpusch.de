@@ -46,7 +46,7 @@ This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \s
 
 - **Centered** equation(s): **Single** equation $\mathrm{(1a)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`
 - Alternating **right/left**-aligned columns: **Separated** pairs ${} \text{(1b)} {}$ `\begin{align*}`, $n$ pairs of **touching** columns ${} \mathrm{(1c)} {}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`
-- See source examples [Vertically align equations](./Vertically%20align%20equations.md)
+- See source examples [[./Vertically align equations|Vertically align equations]]
 
 $$
 \gets \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \to \tag{1a}
@@ -81,7 +81,7 @@ $$
 
 - Operators ${} \mathrm{(3a)} {}$, Relations ${} \mathrm{(3b)} {}$, Arrows $\mathrm{(3c)}$
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30
-- See source examples [latex-symbols](./latex-symbols.md)
+- See source examples [[./latex-symbols|latex-symbols]]
 
 $$
 \begin{gather*}
@@ -95,7 +95,7 @@ $$
 # Wrap long equation over multiple lines
 
 - **Split** long **fractions** in two lines $\mathrm{(4a)}$, **Indent subsequent** lines $\mathrm{(4b\text{-}c)}$, **Wrap overlong** equations $\mathrm{(4b)}$
-- See source examples [Wrap long equation over multiple lines](./Wrap%20long%20equation%20over%20multiple%20lines.md)
+- See source examples [[./Wrap long equation over multiple lines|Wrap long equation over multiple lines]]
 
 
 $$
@@ -109,7 +109,7 @@ $$
 # Comment equation operators
 
 - Comment: **Over**/under operators $\mathrm{(5a)}$, In a **paragraph** between math displays, **Braces** under parts of an expression $\mathrm{(5b)}$, Comment a **case** $\mathrm{(5b)}$, Name matrix columns and rows
-- See source examples [Comment equation operators](Comment%20equation%20operators.md)
+- See source examples [[Comment equation operators|Comment equation operators]]
 
 $$
 x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ x} xxxx \tag{5a}
@@ -123,7 +123,7 @@ $$
 # Reference equations
 
 - roman style
-- ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/Mathematical%20Typesetting%20with%20Latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)
+- ctagsplit and righttag [[./attachments/Mathematical Typesetting with Latex 0.34 2024-02-06.pdf#page=69&selection=174,0,179,0|Mathematical Typesetting with Latex 0.34 2024-02-06, page 69]]
 
 From calculation $\textcolor{limegreen}{(1)}$ on page $\textcolor{limegreen}{1}$, we can derive:
 $$
@@ -144,7 +144,7 @@ $$
 
 # Create commutative diagrams
 
-- [Amscd graphs](Amscd%20graphs.md)
+- [[Amscd graphs|Amscd graphs]]
 
 $$
 \begin{align*}
@@ -162,7 +162,7 @@ $$
 - Scale, Placement $\mathrm{(6b)}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
 - Spacing $\mathrm{(6c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
 - Formatting $\mathrm{(6d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough
-- See source examples [Layout multiple equations](Layout%20multiple%20equations.md)
+- See source examples [[Layout multiple equations|Layout multiple equations]]
 
 $$
 \begin{gather*}
@@ -177,13 +177,13 @@ $$
 
 - no `\\` at end of align
 - put `[]` after suqenvironments
-- [How not to typeset math in latex](How%20not%20to%20typeset%20math%20in%20latex.md)
+- [[How not to typeset math in latex|How not to typeset math in latex]]
 Deprecated
 - eqnarray
 - font syntax
 - stackrel
 - xalignat, xxalignat
-- new operator [Mathematical Typesetting with Latex 0.34 2024-02-06, page 41](./attachments/Mathematical%20Typesetting%20with%20Latex%200.34%202024-02-06.pdf.md#page=41&selection=259,7,259,18)
+- new operator [[./attachments/Mathematical Typesetting with Latex 0.34 2024-02-06.pdf#page=41&selection=259,7,259,18|Mathematical Typesetting with Latex 0.34 2024-02-06, page 41]]
 
 - In markdown put display math delimiters `$$` on a separate line
 - Don't leave spaces in front of caret to prevent block reference detection (write `a^2` instead of `a ^2`)
