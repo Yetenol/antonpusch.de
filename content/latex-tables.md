@@ -46,7 +46,7 @@ dg-permalink: latex-tables
 - Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$
 - Visually clarify **column titles** and **row titles**: Thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
 - Apply border **pattern**: Inner **gridlines** $\mathrm{1c}$
-- See source examples [Create a simple table with borders](./create%20a%20simple%20table%20with%20borders.md)
+- See source examples: [Create a simple table with borders](./create%20a%20simple%20table%20with%20borders.md)
 
 ![minimal 45.svg](./attachments/minimal%2045.svg)
 
@@ -62,26 +62,24 @@ dg-permalink: latex-tables
 
 # Import data from files
 
-- Keep the data in **raw** and **universal** (csv) form: update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell
-- Render **scientific notation** correctly and **uniform**: render `4.41941738e-02` as $4.42 \cdot 10^{-2}$ ¹²³
-- **Format numbers**: set max. decimal places¹²³, when to show exponent³, use German commas²
-- Visually **guide horizontal reading**: shade every other row¹, add dashed line every third row³
-- Process input data: sort with column³
-- More ideas: filter, sort, custom column titles, multi column names
-- See source examples [Import data from files](./import%20data%20from%20files.md) like [decimal or scientific separator](./import%20data%20from%20files.md#Align%20at%20decimal%20or%20scientific%20separator)
+- Keep the data in **raw** and **universal** (csv) form: Update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell
+- Render **scientific notation** correctly and **uniform**: Render `4.41941738e-02` as $4.42 \cdot 10^{-2}$ $\mathrm{3a, 3b, 3c}$ 
+- **Format numbers**: Set max. decimal places $\mathrm{3a, 3b, 3c}$; When to show exponent $\mathrm{3c}$; Use German commas $\mathrm{3b}$
+- Visually **guide horizontal reading**: Shade every other row $\mathrm{3a}$; Add dashed line every third row $\mathrm{3b}$ 
+- Process input data: sort with column $\mathrm{3c}$ 
+- More ideas: filter, sort, custom column titles, multi column names, Align at decimal or scientific separator
+- See source examples: [Import data from files](./import%20data%20from%20files.md)
 
-![minimal 18.svg](./attachments/minimal%2018.svg)
-¹²³ applied in *n*-th table above; see; see [latex source](./import%20data%20from%20files.md#Main%20example)
+![minimal 60.svg](./attachments/minimal%2060.svg)
+
 
 
 # Layout the table
 
 - Split in equal parts
-- See [source examples](./layout%20the%20table.md)
+- See source examples: [Layout the table](./layout%20the%20table.md)
 
-![Layout the table](./layout%20the%20table.md#^723814)
-- See [latex code](./layout%20the%20table.md#Main%20example)
-
+![minimal 61.svg](./attachments/minimal%2061.svg)
 # Advanced input processing
 
 # Advanced cell content
