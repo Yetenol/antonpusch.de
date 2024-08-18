@@ -419,8 +419,8 @@ Related:
 [Vary the style of mathematical symbols - ϖ vs π](Vary%20the%20style%20of%20mathematical%20symbols%20-%20%CF%96%20vs%20%CF%80.md)
 
 Tags:
-[Values  - Standardize math, numbers, symbols, quantities, money](./Values%20%20-%20Standardize%20math,%20numbers,%20symbols,%20quantities,%20money.md)
-[Graphical elements - Standardize tables, images, plots](./Graphical%20elements%20-%20Standardize%20tables,%20images,%20plots.md)
+[Values  - Standardize math, numbers, symbols, quantities, money](./Values.md)
+[Graphical elements - Standardize tables, images, plots](./Graphical%20elements.md)
 [LaTeX](./latex.md)
 
 [^1]: the macros `\notni` isn't supported by MathJax

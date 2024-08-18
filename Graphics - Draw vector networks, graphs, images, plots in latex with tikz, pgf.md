@@ -169,4 +169,4 @@ Related:
 
 
 Tags:
-[Graphical elements - Standardize tables, images, plots](./content/Graphical%20elements%20-%20Standardize%20tables,%20images,%20plots.md)
+[Graphical elements - Standardize tables, images, plots](./content/Graphical%20elements.md)
