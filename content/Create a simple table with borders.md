@@ -55,7 +55,7 @@ Rule widths equals booktabs' defaults for toprule, midrule, and bottomrule
 Style **hlines**, see $\mathrm{1a}$
 - Add thick **horizontal** lines around the table and a regular line below the **first row**
 
-Style **cross**, see $\mathrm{1b}$
+Style **cross** requiring hasrowname, see $\mathrm{1b}$
 - Add two **crossing** lines separating the **first row** and **first column** from the rest
 - Visually clarify **column titles** and **row titles**
 - **Left aligns** the first column
@@ -69,7 +69,7 @@ Style **frame**, see $\mathrm{1c, 1f}$
 Style **boldcolname**, see $\mathrm{1c, 1e}$
 - Format the **first row bold**
 
-Style **boldrowname**, see $\mathrm{1c, 1f}$
+Style **boldrowname** requiring hasrowname, see $\mathrm{1c, 1f}$
 - Format the **first column bold**
 - **Left aligns** the first column
 
