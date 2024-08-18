@@ -40,12 +40,12 @@ To accept a mod it need to be UPS friendly and complement the idea of Factorio. 
 ---
 Sources:
 - 2023-03-02: [QOL mods that should be in vanilla : factorio](https://www.reddit.com/r/factorio/comments/10q36jl/qol_mods_that_should_be_in_vanilla/)
-- 2023-03-02: [The most addictive game](./content/The%20most%20addictive%20game.md)
-- 2023-03-03: [Factorio Evolution of Design](./content/Factorio%20Evolution%20of%20Design.md)
+- 2023-03-02: [[./content/The most addictive game|The most addictive game]]
+- 2023-03-03: [[./content/Factorio Evolution of Design|Factorio Evolution of Design]]
 
 
 
 Related:
 
 Tags:
-[Factorio](./content/Factorio.md)
+[[./content/Factorio|Factorio]]
