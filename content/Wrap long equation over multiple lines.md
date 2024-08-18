@@ -19,7 +19,7 @@ a = \frac{ \splitfrac{xxxxxxx}{+ xxxx} }{(1)}
 \end{document}
 ```
 
-![minimal 44.svg](./attachments/minimal%2044.svg)
+![[./attachments/minimal 44.svg|minimal 44.svg]]
 
 - use (1) in Obsidian
 ```
@@ -107,7 +107,7 @@ y_n & a_{n1}x_1 & a_{n2}x_2 & a_{n3}x_3 & \dots & a_{(n)(n-1)}x_{n-1} & a_{nn}x_
 ```
 - [mirror.physik.tu-berlin.de/pub/CTAN/obsolete/info/math/voss/mathmode/Mathmode.pdf#page=110](https://mirror.physik.tu-berlin.de/pub/CTAN/obsolete/info/math/voss/mathmode/Mathmode.pdf#page=110)
 
-![minimal 33.svg](./attachments/minimal%2033.svg)
+![[./attachments/minimal 33.svg|minimal 33.svg]]
 
 # More
 
