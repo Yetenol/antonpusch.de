@@ -17,7 +17,7 @@ cssclasses: []
 - [Install gaming apps](./Install%20gaming%20apps.md)
 - [Install development apps](./Install%20development%20apps.md)
 - [See deprecated apps](./See%20deprecated%20apps.md)
-- [Setup printers - Install drivers, setup scanning software](./Setup%20printers%20-%20Install%20drivers,%20setup%20scanning%20software.md)
+- [Setup printers - Install drivers, setup scanning software](./Setup%20printers.md)
 - [Customize Windows Settings](./Customize%20Windows%20Settings.md)
 
 
@@ -55,7 +55,7 @@ cssclasses: []
 | [Microsoft 365](./Microsoft%20365.md)                                                                                                             |        | <a class=tag>Office</a>                                                                   |
 | [MediathekView](./MediathekView.md)                                                                                                             |        | <a class=tag>Entertainment</a>                                                            |
 | [Minecraft](./minecraft.md)                                                                                                                     |        | <a class=tag>Gaming</a>                                                                   |
-| [Minecraft (Bedrock Edition)](./Minecraft%20(Bedrock%20Edition).md)                                                                                 |        | <a class=tag>Gaming</a>                                                                   |
+| [Minecraft (Bedrock Edition)](./Minecraft%20Bedrock%20Edition).md)                                                                                 |        | <a class=tag>Gaming</a>                                                                   |
 | [NBT Editor](./NBT%20Editor.md)                                                                                                                   |        | \-                                                                                        |
 | [Nextcloud](./Nextcloud.md)                                                                                                                     |        | <a class=tag>Storage</a>                                                                  |
 | [OBS Studio](./OBS%20Studio.md)                                                                                                                   |        | <a class=tag>Entertainment</a>                                                            |
@@ -81,7 +81,7 @@ cssclasses: []
 | [Automatic Train Fuel Stop](./Automatic%20Train%20Fuel%20Stop.md)                                                                                     | ➕      | <a class=tag>Content</a> <a class=tag>Trains</a>                                          |
 | [Belt Reverser](./Belt%20Reverser.md)                                                                                                             | ➕      | <a class=tag>Quality of life</a>                                                          |
 | [Bottleneck Lite](./Bottleneck%20Lite.md)                                                                                                         | ➕      | <a class=tag>Testing</a> <a class=tag>Visual</a>                                          |
-| [C, C++](./C,%20C++.md)                                                                                                                           | ➕      | \-                                                                                        |
+| [C, C++](./C%20C++.md)                                                                                                                           | ➕      | \-                                                                                        |
 | [CMake Tools](./CMake%20Tools.md)                                                                                                                 | ➕      | \-                                                                                        |
 | [Change Case](./Change%20Case.md)                                                                                                                 | ➕      | \-                                                                                        |
 | [Copy as Latex](./Copy%20as%20Latex.md)                                                                                                             | ➕      | \-                                                                                        |
@@ -143,7 +143,7 @@ cssclasses: []
 | [drawio Diagrams](./drawio%20Diagrams.md)                                                                                                         | 🗑     | <a class=tag>Education</a>                                                                |
 | [EarTrumpet](./EarTrumpet.md)                                                                                                                   | 🗑     | <a class=tag>Personalization</a>                                                          |
 | [EdgeDeflector](./EdgeDeflector.md)                                                                                                             | 🗑     | <a class=tag>Personalization</a>                                                          |
-| [Fishshell - Syntax highlighting, auto-suggestions for a linux shell](./Fishshell%20-%20Syntax%20highlighting,%20auto-suggestions%20for%20a%20linux%20shell.md) | 🗑     | <a class=tag>Development</a>                                                              |
+| [Fishshell - Syntax highlighting, auto-suggestions for a linux shell](./Fishshell.md) | 🗑     | <a class=tag>Development</a>                                                              |
 | [GeoGebra](./GeoGebra.md)                                                                                                                       | 🗑     | \-                                                                                        |
 | [Gitkraken](./Gitkraken.md)                                                                                                                     | 🗑     | <a class=tag>Development</a>                                                              |
 | [JetBrains IntelliJ IDEA](./JetBrains%20IntelliJ%20IDEA.md)                                                                                         | 🗑     | <a class=tag>Development</a>                                                              |
