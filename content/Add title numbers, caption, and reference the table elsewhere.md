@@ -5,7 +5,7 @@ dg-publish: true
 
 Table numbers allow cross-referencing and add a entry in *List of Tables*.
 
-Use essential styles and hlines from [Create a simple table with borders](./Create%20a%20simple%20table%20with%20borders.md)
+Use essential styles and hlines from [[./Create a simple table with borders|Create a simple table with borders]]
 
 Setup styles for referencing
 ```latex
@@ -33,7 +33,7 @@ Override the **entry** in the *List of Tables*, see $\mathrm{2b}$
 - Write `\listoftables` and the end of the document
 
 **Reference** a table using **label**, see $\mathrm{2c}$
-- See [Layout the table](./Layout%20the%20table.md) for clickable, colored links
+- See [[./Layout the table|Layout the table]] for clickable, colored links
 - Write `\ref{tab:identifiers}` to reference the table elsewhere
 - Use style **label=tab:identifiers** and optionally caption
 ```latex
@@ -43,7 +43,7 @@ See table \ref{tab:identifiers} for details. \\
 
 Put table in a **floating** environment, see $\mathrm{2d}$
 - table reserves the entire line width
-- See [Layout the table](./Layout%20the%20table.md) to set default placement specifiers
+- See [[./Layout the table|Layout the table]] to set default placement specifiers
 ```latex
 See table \ref{tab:identifiers} for details.
 \begin{table}[hbp]
@@ -52,8 +52,8 @@ See table \ref{tab:identifiers} for details.
 \end{table}
 ```
 
-Demos with tex, text cells, and hlines styles from [Create a simple table with borders](./Create%20a%20simple%20table%20with%20borders.md) as default:
-![minimal 52.svg](./attachments/minimal%2052.svg)
+Demos with tex, text cells, and hlines styles from [[./Create a simple table with borders|Create a simple table with borders]] as default:
+![[./attachments/minimal 52.svg|minimal 52.svg]]
 
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{2\alph{table}}
