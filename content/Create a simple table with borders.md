@@ -37,7 +37,7 @@ Setup demo projects
 
 Use essential styles from above
 
-Setup border styles
+Setup styles for border lines
 ```latex
 \pgfplotstableset{
     hlines/.style={tblr={ hline{1,Z}={.08em},hline{2}={.05em} }},
@@ -52,25 +52,25 @@ Setup border styles
 
 Rule widths equals booktabs' defaults for toprule, midrule, and bottomrule
 
-Style **hlines**, see $\mathrm{1a}$
-- Add thick **horizontal** lines around the table and a regular line below the **first row**
+Add thick **horizontal** lines around the table and a regular line below the **first row**
+- Use style **hlines**, see $\mathrm{1a}$
 
-Style **cross** requiring hasrowname, see $\mathrm{1b}$
-- Add two **crossing** lines separating the **first row** and **first column** from the rest
+Add two **crossing** lines separating the **first row** and **first column** from the rest
+- Use style **cross** requiring hasrowname, see $\mathrm{1b}$
 - Visually clarify **column titles** and **row titles**
 - **Left aligns** the first column
 
-Style **innergrid**, see $\mathrm{1c, 1d}$
-- Add **inner gridlines**: vertical and horizontal lines everywhere except the outside border
+Add **inner gridlines**: vertical and horizontal lines everywhere except the outside border
+- Use style **innergrid**, see $\mathrm{1c, 1d}$
 
-Style **frame**, see $\mathrm{1c, 1f}$
-- Box the table with a thick **frame** line
+Box the table with a thick **frame** line
+- Use style **frame**, see $\mathrm{1c, 1f}$
 
-Style **boldcolname**, see $\mathrm{1c, 1e}$
-- Format the **first row bold**
+Format the **first row bold**
+-  Use style **boldcolname**, see $\mathrm{1c, 1e}$
 
-Style **boldrowname** requiring hasrowname, see $\mathrm{1c, 1f}$
-- Format the **first column bold**
+Format the **first column bold**
+- Use style **boldrowname** requiring hasrowname, see $\mathrm{1c, 1f}$
 - **Left aligns** the first column
 
 Demos with essential styles tex, text cells, and caption from [Essential styles](Create%20a%20simple%20table%20with%20borders.md#Essential%20styles) as default:
