@@ -6,7 +6,7 @@ Should bots supply the player **character**?
 
 Should bots **unload trains** into buffer chests?
 
-![RoboTrainStation_small.gif](./content/attachments/RoboTrainStation_small.gif)
+![[./content/attachments/RoboTrainStation_small.gif|RoboTrainStation_small.gif]]
 
 - [ ] Makes designing train stations less interesting
 - [x] Allows higher throughput than direct insertion into buffer boxes
@@ -32,7 +32,7 @@ Should bots supply **smelting** or **bulk item production**?
 
 # Summary
 
-Too often I found myself just quickly flying those supposedly rarely used resources in and out, with the demand quickly spiraling out of control and frustratingly having to fix in an ugly way. It's difficult for me to set clear rules for appropriate use cases and dead ends for the future. I only use them to supply the player. To enforce this, I mod requester, buffer and active provider chests as unplaceable using [Remove requester buffer activer provider chests](Remove%20requester%20buffer%20activer%20provider%20chests.md). Storage and passive provider chests can still easily limit global resource reserves and supply the player.
+Too often I found myself just quickly flying those supposedly rarely used resources in and out, with the demand quickly spiraling out of control and frustratingly having to fix in an ugly way. It's difficult for me to set clear rules for appropriate use cases and dead ends for the future. I only use them to supply the player. To enforce this, I mod requester, buffer and active provider chests as unplaceable using [[Remove requester buffer activer provider chests|Remove requester buffer activer provider chests]]. Storage and passive provider chests can still easily limit global resource reserves and supply the player.
 
 ---
 Sources:

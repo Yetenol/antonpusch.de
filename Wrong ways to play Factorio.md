@@ -36,4 +36,4 @@ Sources:
 Related:
 
 Tags:
-[Factorio](./content/Factorio.md)
+[[./content/Factorio|Factorio]]

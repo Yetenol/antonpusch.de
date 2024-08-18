@@ -1,6 +1,6 @@
 ---
-dg-publish: true
 title: Factorio - Evolution of Design
+dg-publish: true
 creator: Bigfoot
 date: 2022-05-16
 duration: 2335 seconds

@@ -1,6 +1,6 @@
 ---
-dg-publish: true
 title: The most addictive game
+dg-publish: true
 creator: martincitopants
 date: 2020-03-28
 duration: 956 seconds

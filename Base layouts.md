@@ -1,6 +1,6 @@
 # Layouts
 
-![Main bus base.png](./content/attachments/Main%20bus%20base.png)
+![[./content/attachments/Main bus base.png|Main bus base.png]]
 
 
 
