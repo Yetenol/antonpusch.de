@@ -52,26 +52,27 @@ Setup styles for border lines
 
 Rule widths equals booktabs' defaults for toprule, midrule, and bottomrule
 
-Add thick **horizontal** lines around the table and a regular line below the **first row**
-- Use style **hlines**, see $\mathrm{1a}$
+Add thick **horizontal** lines around the table and a regular line below the **first row**, see $\mathrm{1a}$
+- Use style **hlines**
 
-Add two **crossing** lines separating the **first row** and **first column** from the rest
-- Use style **cross** requiring hasrowname, see $\mathrm{1b}$
+Add two **crossing** lines separating the **first row** and **first column** from the rest, see $\mathrm{1b}$
 - Visually clarify **column titles** and **row titles**
 - **Left aligns** the first column
+- Use style **cross** requiring hasrowname
 
-Add **inner gridlines**: vertical and horizontal lines everywhere except the outside border
-- Use style **innergrid**, see $\mathrm{1c, 1d}$
+Add **inner gridlines**, see $\mathrm{1c, 1d}$
+- Vertical and horizontal lines everywhere except the outside border
+- Use style **innergrid**
 
-Box the table with a thick **frame** line
-- Use style **frame**, see $\mathrm{1c, 1f}$
+Box the table with a thick **frame** line, see $\mathrm{1c, 1f}$
+- Use style **frame**
 
-Format the **first row bold**
--  Use style **boldcolname**, see $\mathrm{1c, 1e}$
+Format the **first row bold**, see $\mathrm{1c, 1e}$
+-  Use style **boldcolname**
 
-Format the **first column bold**
-- Use style **boldrowname** requiring hasrowname, see $\mathrm{1c, 1f}$
+Format the **first column bold**, see $\mathrm{1c, 1f}$
 - **Left aligns** the first column
+- Use style **boldrowname** requiring hasrowname
 
 Demos with essential styles tex, text cells, and caption from [Essential styles](Create%20a%20simple%20table%20with%20borders.md#Essential%20styles) as default:
 ![minimal 54.svg](./attachments/minimal%2054.svg)
