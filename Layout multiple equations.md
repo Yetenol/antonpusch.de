@@ -5,7 +5,7 @@
 - [p] easy to move equations up and down
 - [p] allows tab placement in every line
 
-![minimal 37.svg](./content/attachments/minimal%2037.svg) ^a638e9
+![[./content/attachments/minimal 37.svg|minimal 37.svg]] ^a638e9
 
 ```latex
 \documentclass{article}
