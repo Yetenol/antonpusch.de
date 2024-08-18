@@ -1,4 +1,5 @@
 ---
+title: "Wrap long equation over multiple lines"
 dg-publish: true
 ---
 
