@@ -45,7 +45,7 @@ Multiple languages
 
 # Examples
 
-- import the file [yetenol-styles.sty](latex-listings.md#Styling%20setup) for the required style definitions
+- import the file [[latex-listings#Styling setup|yetenol-styles.sty]] for the required style definitions
 
 Add **inline** code within a paragraph.
 
@@ -60,7 +60,7 @@ Refer to the manual in \verb`README.md` for further information.
 \end{document}
 ```
 
-![inline code.svg](./attachments/inline%20code.svg)
+![[./attachments/inline code.svg|inline code.svg]]
 
 Create a code **block**
 
@@ -85,7 +85,7 @@ elif num > 1:
 \end{document}
 ```
 
-![code block.svg](./attachments/code%20block.svg)
+![[./attachments/code block.svg|code block.svg]]
 
 Print a source **file**'s content
 
@@ -101,7 +101,7 @@ Print a source **file**'s content
 \end{document}
 ```
 
-![code file colorful.svg](./attachments/code%20file%20colorful.svg)
+![[./attachments/code file colorful.svg|code file colorful.svg]]
 
 Add a snippet **caption** and a **label** for cross references
 
@@ -129,7 +129,7 @@ elif num > 1:
 \end{document}
 ```
 
-![caption label code.svg](./attachments/caption%20label%20code.svg)
+![[./attachments/caption label code.svg|caption label code.svg]]
 
 # Add custom styling
 
@@ -222,15 +222,15 @@ Try the package `\usepackage{amsmath}` instead.
 \end{document}
 ```
 
-[Deprecated latex listings](Deprecated%20latex%20listings.md)
+[[Deprecated latex listings|Deprecated latex listings]]
 
 ---
 Sources:
 
 Related:
-- [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex.md)
-- [Style presets - Format your document after you written the content in Word, Latex, Markdown](Style%20presets%20-%20Format%20your%20document%20after%20you%20written%20the%20content%20in%20Word,%20Latex,%20Markdown.md)
+- [[./latex|LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules]]
+- [[Style presets - Format your document after you written the content in Word, Latex, Markdown|Style presets - Format your document after you written the content in Word, Latex, Markdown]]
 
 
 Tags:
-[Graphical elements - Standardize tables, images, plots](./Graphical%20elements%20-%20Standardize%20tables,%20images,%20plots.md)
+[[./Graphical elements - Standardize tables, images, plots|Graphical elements - Standardize tables, images, plots]]

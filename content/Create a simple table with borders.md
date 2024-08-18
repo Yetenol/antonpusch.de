@@ -75,8 +75,8 @@ Format the **first column bold**, see $\mathrm{1c, 1f}$
 - **Left aligns** the first column
 - Use style **boldrowname** requiring hasrowname
 
-Demos with essential styles tex, text cells, and caption from [Essential styles](Create%20a%20simple%20table%20with%20borders.md#Essential%20styles) as default:
-![minimal 54.svg](./attachments/minimal%2054.svg)
+Demos with essential styles tex, text cells, and caption from [[Create a simple table with borders#Essential styles|Essential styles]] as default:
+![[./attachments/minimal 54.svg|minimal 54.svg]]
 
 Complete source code for $\mathrm{1a - 1f}$
 ```latex
@@ -162,13 +162,13 @@ Change heavy rule width, see modified $\mathrm{1a', 1b', 1c'}$
 \heavyrulewidth=1.5pt
 ```
 
-![minimal 57.svg](./attachments/minimal%2057.svg)
+![[./attachments/minimal 57.svg|minimal 57.svg]]
 
 # Create borders without tabularray
 
 **Problem**: Booktabs creates gaps within vertical lines and next to colored rows:
 
-![minimal 22.svg](./attachments/minimal%2022.svg)
+![[./attachments/minimal 22.svg|minimal 22.svg]]
 
 **Workaround**: Remove booktabs' vertical spacing
 - Remove vertical separation from `\toprule`, `\midrule`, `\bottomrule`
@@ -182,7 +182,7 @@ Change heavy rule width, see modified $\mathrm{1a', 1b', 1c'}$
 !{\vrule width .08em}
 ```
 
-![minimal 58.svg](./attachments/minimal%2058.svg)
+![[./attachments/minimal 58.svg|minimal 58.svg]]
 
 **Ugly example**: Remove booktabs vertical space for conflicts
 - boldcolname* or boldrowname* must be applied before any line styles

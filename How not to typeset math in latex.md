@@ -23,7 +23,7 @@ Problem1: tags overlap with long equations, only eqref and not ref cause tag to 
 \end{document}
 ```
 
-![minimal 31.svg](./content/attachments/minimal%2031.svg)
+![[./content/attachments/minimal 31.svg|minimal 31.svg]]
 # More
 
 $$

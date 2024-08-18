@@ -114,4 +114,4 @@ Sources:
 Related:
 
 Tags:
-[latex](./latex.md)
+[[./latex|latex]]

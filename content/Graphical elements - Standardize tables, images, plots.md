@@ -3,17 +3,17 @@ title: "Graphical elements - Standardize tables, images, plots"
 dg-publish: true
 priority: 5
 ---
-- [latex-tables](./latex-tables.md)
-- [latex-listings](./latex-listings.md)
-- [Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](Graphics%20-%20Draw%20vector%20networks,%20graphs,%20images,%20plots%20in%20latex%20with%20tikz,%20pgf.md)
-- [latex-math](./latex-math.md)
-- [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
-- [Floating Table - Add caption, cross reference a table](./Floating%20Table%20-%20Add%20caption,%20cross%20reference%20a%20table.md)
-- [CSV Table - Generate table from raw data in a CSV file, automatically detect and format column headers, and values](./CSV%20Table%20-%20Generate%20table%20from%20raw%20data%20in%20a%20CSV%20file,%20automatically%20detect%20and%20format%20column%20headers,%20and%20values.md)
-- [Table with Equal Width Columns - Typeset tables with distributed column width](./Table%20with%20Equal%20Width%20Columns%20-%20Typeset%20tables%20with%20distributed%20column%20width.md)
-- [Numeric Table - Typeset tables with numeric values, and display a symbol legend](./Numeric%20Table%20-%20Typeset%20tables%20with%20numeric%20values,%20and%20display%20a%20symbol%20legend.md)
-- [Column Types - Lookup column types aligned left, right, or center, with fixed, or evenly distributed width](./Column%20Types%20-%20Lookup%20column%20types%20aligned%20left,%20right,%20or%20center,%20with%20fixed,%20or%20evenly%20distributed%20width.md)
-- [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./Float%20-%20Dynamically%20place%20figures,%20images,%20tables,%20and%20listings%20at%20the%20top,%20bottom,%20or%20single%20page.md)
+- [[./latex-tables|latex-tables]]
+- [[./latex-listings|latex-listings]]
+- [[Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf|Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf]]
+- [[./latex-math|latex-math]]
+- [[./latex-symbols|LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows]]
+- [[./Floating Table - Add caption, cross reference a table|Floating Table - Add caption, cross reference a table]]
+- [[./CSV Table - Generate table from raw data in a CSV file, automatically detect and format column headers, and values|CSV Table - Generate table from raw data in a CSV file, automatically detect and format column headers, and values]]
+- [[./Table with Equal Width Columns - Typeset tables with distributed column width|Table with Equal Width Columns - Typeset tables with distributed column width]]
+- [[./Numeric Table - Typeset tables with numeric values, and display a symbol legend|Numeric Table - Typeset tables with numeric values, and display a symbol legend]]
+- [[./Column Types - Lookup column types aligned left, right, or center, with fixed, or evenly distributed width|Column Types - Lookup column types aligned left, right, or center, with fixed, or evenly distributed width]]
+- [[./Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page|Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page]]
  
 
 ---
@@ -22,4 +22,4 @@ Sources:
 Related:
 
 Tags:
-[latex](./latex.md)
+[[./latex|latex]]

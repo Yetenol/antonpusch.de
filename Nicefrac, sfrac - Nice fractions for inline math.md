@@ -10,6 +10,6 @@ https://tex.stackexchange.com/a/251123/63540
 
 https://tex.stackexchange.com/questions/43119/improved-kerning-in-fractions
 
-![Pasted image 20240812022422.png](./content/attachments/Pasted%20image%2020240812022422.png)
-![Pasted image 20240812022455.png](./content/attachments/Pasted%20image%2020240812022455.png)
-![Pasted image 20240812022528.png](./content/attachments/Pasted%20image%2020240812022528.png)
+![[./content/attachments/Pasted image 20240812022422.png|Pasted image 20240812022422.png]]
+![[./content/attachments/Pasted image 20240812022455.png|Pasted image 20240812022455.png]]
+![[./content/attachments/Pasted image 20240812022528.png|Pasted image 20240812022528.png]]

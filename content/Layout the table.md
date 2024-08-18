@@ -4,7 +4,7 @@ dg-publish: true
 ---
 # Main example
 
-![minimal 30.svg](./attachments/minimal%2030.svg) ^723814
+![[./attachments/minimal 30.svg|minimal 30.svg]] ^723814
 
 ```latex
 \documentclass{article}
