@@ -29,9 +29,9 @@ Setup demo projects
 \documentclass{article} \pagestyle{empty}
 \renewcommand{\thetable}{⟨chapter⟩\alph{table}} \setcounter{table}{⟨skip n letters⟩}
 ```
-- Use article class without page numbers for easier svg cropping
+- Use article class without page numbers for easier pdf cropping
 - **chapter**: set number at the start of table numbers
-- **skip n letters**: start the table numbers with the $n+1^\text{th}$ letter of the lowercase alphabet 
+- **skip n letters**: start the table numbers with the $n+1^\text{th}$ letter of the lowercase alphabet, default 0
 
 # Add table borders
 
