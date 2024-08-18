@@ -7,7 +7,7 @@ Sources:
 
 
 Related:
-- [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./content/latex-math.md)
+- [[./content/latex-math|Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath]]
 
 
 Tags:
