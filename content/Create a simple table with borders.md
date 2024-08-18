@@ -1,7 +1,7 @@
 ---
 dg-publish: true
 ---
-Requires
+Setup **essential styles** for demos
 ```latex
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
