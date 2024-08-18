@@ -1,4 +1,5 @@
 ---
+title: "LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows"
 dg-publish: true
 dg-show-toc: true
 dg-permalink: latex-symbols
