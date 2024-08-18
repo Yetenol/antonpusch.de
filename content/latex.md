@@ -6,11 +6,11 @@ aliases:
   - LaTeX
 ---
 
-- [[./latex-math|latex-math]]
-- [[./latex-tables|latex-tables]]
-- [[./latex-listings|latex-listings]]
+- [[./latex-math|Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath]]
+- [[./latex-tables|Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray]]
+- [[./latex-listings|Listings - Print source code with syntax highlighting in latex with listings]]
 - [[Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design|Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design]]
-- [[./latex-symbols|latex-symbols]]
+- [[./latex-symbols|LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows]]
 - [[./Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page|Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page]]
 - [[./Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials|Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials]]
 - [[./Project structure - Create folders for setup, resources, bibliographies|Project structure - Create folders for setup, resources, bibliographies]]
