@@ -4,7 +4,9 @@ dg-publish: true
 
 Table numbers allow cross-referencing and add a entry in *List of Tables*.
 
-Setup styles and use essential styles from [Create a simple table with borders](./Create%20a%20simple%20table%20with%20borders.md)
+Use essential styles and hlines from [Create a simple table with borders](./Create%20a%20simple%20table%20with%20borders.md)
+
+Setup styles for referencing
 ```latex
 \pgfplotstableset{
     caption/.style = {tblr outer={tall,caption={#1}}},
@@ -17,32 +19,25 @@ Setup styles and use essential styles from [Create a simple table with borders](
 ```
 
 Show just a table **number**, see $\mathrm{2a}$
-```latex
-\pgfplotstabletypeset[caption]{…}
-```
+- Use style **caption** without a value
 
 Add table **caption**, see $\mathrm{2b, 2c}$
-- caption is wrapped to table width
-```latex
-\pgfplotstabletypeset[caption=People's identifiers]{…}
-```
+- Caption is wrapped to table width
+- Use style **caption=People's identifiers** 
 
 Override the **entry** in the *List of Tables*, see $\mathrm{2b}$
-```latex
-\pgfplotstabletypeset[entry=IDS,⟨caption optional⟩]{…}
-```
+- Use style **entry=IDS** and optionally caption
 
 **List** all tables with table numbers
-```latex
-\listoftables
-```
+- Write `\listoftables` and the end of the document
 
 **Reference** a table using **label**, see $\mathrm{2c}$
 - See [Layout the table](./Layout%20the%20table.md) for clickable, colored links
+- Write `\ref{tab:identifiers}` to reference the table elsewhere
+- Use style **label=tab:identifiers** and optionally caption
 ```latex
-See table \ref{tab:identifiers} for details.
-
-\pgfplotstabletypeset[label=tab:identifiers,⟨caption optional⟩]{…}
+See table \ref{tab:identifiers} for details. \\
+\pgfplotstabletypeset[caption=People's identifiers,label=tab:identifiers]{…}
 ```
 
 Put table in a **floating** environment, see $\mathrm{2d}$
@@ -52,15 +47,11 @@ Put table in a **floating** environment, see $\mathrm{2d}$
 See table \ref{tab:identifiers} for details.
 \begin{table}[hbp]
     \caption{People's identifiers}\label{tab:identifiers}
-    \pgfplotstabletypeset[centering]{
-    Name & Identifier \\
-    Peter & 3 \\
-    Io & Hat \\
-    Lara & $\triangle$ \\
-}
+    \pgfplotstabletypeset[center table]{…}
 \end{table}
 ```
 
+Demos with tex, text cells, and hlines styles from [Create a simple table with borders](./Create%20a%20simple%20table%20with%20borders.md) as default:
 ![minimal 52.svg](./attachments/minimal%2052.svg)
 
 ```latex
