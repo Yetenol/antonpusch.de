@@ -42,10 +42,10 @@ def incmatrix(genl1,genl2):
 \end{lstlisting}
 ```
 
-![code_listings.svg](./content/attachments/code_listings.svg)
-![Pasted image 20240727224057.png](./content/attachments/Pasted%20image%2020240727224057.png)
+![[./content/attachments/code_listings.svg|code_listings.svg]]
+![[./content/attachments/Pasted image 20240727224057.png|Pasted image 20240727224057.png]]
 
-![pdfresizer.com-pdf-crop.pdf](./content/attachments/pdfresizer.com-pdf-crop.pdf)
+![[./content/attachments/pdfresizer.com-pdf-crop.pdf|pdfresizer.com-pdf-crop.pdf]]
 
 
 ```latex
@@ -63,7 +63,7 @@ def incmatrix(genl1,genl2):
     {This is some code.}
 ```
 
-![code_lix.svg](./content/attachments/code_lix.svg)
+![[./content/attachments/code_lix.svg|code_lix.svg]]
 
 # Algorithmus
 
@@ -78,5 +78,5 @@ def incmatrix(genl1,genl2):
     {This is an algorithm described in pseudo-code.}
 ```
 
-![algo_lix.svg](./content/attachments/algo_lix.svg)
+![[./content/attachments/algo_lix.svg|algo_lix.svg]]
 
