@@ -46,9 +46,9 @@ dg-permalink: latex-tables
 - Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$
 - Visually clarify **column titles** and **row titles**: Thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
 - Apply border **pattern**: Inner **gridlines** $\mathrm{1c}$
-- See source examples [Create a simple table with borders](./Create%20a%20simple%20table%20with%20borders.md)
+- See source examples [[./Create a simple table with borders|Create a simple table with borders]]
 
-![minimal 45.svg](./attachments/minimal%2045.svg)
+![[./attachments/minimal 45.svg|minimal 45.svg]]
 
 # Add title and reference the table elsewhere
 
@@ -56,9 +56,9 @@ dg-permalink: latex-tables
 - Add **references**: caption underneath and in the list of tables, label to cross-reference elsewhere
 - More ideas: legende, Multifigure, Split, Longtable, surpress tableoftables entry, table next to text, globally set placement specifiers
 - Center, Caption, Reference, Longtable, Caption below/above, Caption number, Figurename
-- See source examples [Add title numbers, caption, and reference the table elsewhere](./Add%20title%20numbers,%20caption,%20and%20reference%20the%20table%20elsewhere.md) 
+- See source examples [[./Add title numbers, caption, and reference the table elsewhere|Add title numbers, caption, and reference the table elsewhere]] 
 
-![minimal 50.svg](./attachments/minimal%2050.svg)
+![[./attachments/minimal 50.svg|minimal 50.svg]]
 
 # Import data from files
 
@@ -68,19 +68,19 @@ dg-permalink: latex-tables
 - Visually **guide horizontal reading**: shade every other row¹, add dashed line every third row³
 - Process input data: sort with column³
 - More ideas: filter, sort, custom column titles, multi column names
-- See source examples [Import data from files](./Import%20data%20from%20files.md) like [decimal or scientific separator](./Import%20data%20from%20files.md#Align%20at%20decimal%20or%20scientific%20separator)
+- See source examples [[./Import data from files|Import data from files]] like [[./Import data from files#Align at decimal or scientific separator|decimal or scientific separator]]
 
-![minimal 18.svg](./attachments/minimal%2018.svg)
-¹²³ applied in *n*-th table above; see; see [latex source](./Import%20data%20from%20files.md#Main%20example)
+![[./attachments/minimal 18.svg|minimal 18.svg]]
+¹²³ applied in *n*-th table above; see; see [[./Import data from files#Main example|latex source]]
 
 
 # Layout the table
 
 - Split in equal parts
-- See [source examples](./Layout%20the%20table.md)
+- See [[./Layout the table|source examples]]
 
-![Layout the table](./Layout%20the%20table.md#^723814)
-- See [latex code](./Layout%20the%20table.md#Main%20example)
+![[./Layout the table#^723814|Layout the table > ^723814]]
+- See [[./Layout the table#Main example|latex code]]
 
 # Advanced input processing
 
@@ -92,7 +92,7 @@ dg-permalink: latex-tables
 - convert `X \ Y` to diagonal row title and column title
 - detect columntitle is first markdown column is left aligned
 - detect diagonal splitcell in top-leftmost when is contains `\`
-- make all math displaymode, inline, fancyfrac [Nicefrac, sfrac - Nice fractions for inline math](Nicefrac,%20sfrac%20-%20Nice%20fractions%20for%20inline%20math.md)
+- make all math displaymode, inline, fancyfrac [[Nicefrac, sfrac - Nice fractions for inline math|Nicefrac, sfrac - Nice fractions for inline math]]
 
 Image in table
 
@@ -220,12 +220,12 @@ Get  key
 
 
 
-![simple table.svg](./attachments/simple%20table.svg)![csv alternate table.svg](./attachments/csv%20alternate%20table.svg)
-![minimal 2.svg](./attachments/minimal%202.svg)
+![[./attachments/simple table.svg|simple table.svg]]![[./attachments/csv alternate table.svg|csv alternate table.svg]]
+![[./attachments/minimal 2.svg|minimal 2.svg]]
 
 # Examples
 
-- import the file [yetenol-styles.sty](latex-tables.md#Styling%20setup) for the required style definitions
+- import the file [[latex-tables#Styling setup|yetenol-styles.sty]] for the required style definitions
 
 Code in table
 
@@ -334,7 +334,7 @@ Create a **simple** table
 \end{document}
 ```
 
-![minimal 5.svg](./attachments/minimal%205.svg)
+![[./attachments/minimal 5.svg|minimal 5.svg]]
 
 Create a **center aligned** table with **horizontal lines** around the header and at the end of the table
 
@@ -363,10 +363,10 @@ Create a **center aligned** table with **horizontal lines** around the header an
 \end{document}
 ```
 
-![simple table.svg](./attachments/simple%20table.svg)
+![[./attachments/simple table.svg|simple table.svg]]
 
 Generate a table from a **csv**-spreadsheet (comma separated values)
-- requires [resources/data.csv](latex-tables.md#Example%20files)
+- requires [[latex-tables#Example files|resources/data.csv]]
 
 ```tex
 \documentclass{article}
@@ -380,9 +380,9 @@ Generate a table from a **csv**-spreadsheet (comma separated values)
 \end{document}
 ```
 
-![minimal 14.svg](./attachments/minimal%2014.svg)
+![[./attachments/minimal 14.svg|minimal 14.svg]]
 
-Generate a table from a **csv** [file](latex-tables.md#Example%20files) and **color** every other row
+Generate a table from a **csv** [[latex-tables#Example files|file]] and **color** every other row
 
 ```tex
 \documentclass{article}
@@ -395,7 +395,7 @@ Generate a table from a **csv** [file](latex-tables.md#Example%20files) and **co
 \end{document}
 ```
 
-![csv alternate table.svg](./attachments/csv%20alternate%20table.svg)
+![[./attachments/csv alternate table.svg|csv alternate table.svg]]
 
 Add a table **caption** and a **label** for cross references
 
@@ -429,7 +429,7 @@ Each person gets assigned a number listed in table \ref{tab:identifiers} on page
 \end{document}
 ```
 
-![minimal 9.svg](./attachments/minimal%209.svg)
+![[./attachments/minimal 9.svg|minimal 9.svg]]
 
 Use **german** number seperator $3,\!1416$ and **align at exponent** in scientific representation $\cdot 10^n$
 
@@ -450,7 +450,7 @@ Use **german** number seperator $3,\!1416$ and **align at exponent** in scientif
 \end{document}
 ```
 
-![minimal 11.svg](./attachments/minimal%2011.svg)
+![[./attachments/minimal 11.svg|minimal 11.svg]]
 
 Allow table to split across **multiple pages**
 
@@ -478,7 +478,7 @@ Allow table to split across **multiple pages**
 \end{document}
 ```
 
-![longtable combined.svg](./attachments/longtable%20combined.svg)
+![[./attachments/longtable combined.svg|longtable combined.svg]]
 
 ```tex
 \documentclass{article}
@@ -499,7 +499,7 @@ Each person gets assigned a number listed in table \ref{tab:identifiers} on page
 \end{document}
 ```
 
-![caption label table.svg](./attachments/caption%20label%20table.svg)
+![[./attachments/caption label table.svg|caption label table.svg]]
 
 Use **german** number seperator $3,\!1416$ and **align at exponent** in scientific representation $\cdot 10^n$
 
@@ -514,7 +514,7 @@ Use **german** number seperator $3,\!1416$ and **align at exponent** in scientif
 \end{document}
 ```
 
-![german scisepalign table.svg](./attachments/german%20scisepalign%20table.svg)
+![[./attachments/german scisepalign table.svg|german scisepalign table.svg]]
 
 Allow table to split across **multiple pages**
 
@@ -530,7 +530,7 @@ Allow table to split across **multiple pages**
 \end{document}
 ```
 
-![longtable combined.svg](./attachments/longtable%20combined.svg)
+![[./attachments/longtable combined.svg|longtable combined.svg]]
 
 Hlines like bookstabs
 
@@ -556,7 +556,7 @@ Hlines like bookstabs
 \end{document}
 ```
 
-![minimal](./attachments/minimal.svg)
+![[./attachments/minimal.svg|minimal]]
 
 ```tex
 \documentclass{article}
@@ -581,7 +581,7 @@ Hlines like bookstabs
 \end{document}
 ```
 
-![minimal 1.svg](./attachments/minimal%201.svg)
+![[./attachments/minimal 1.svg|minimal 1.svg]]
 
 Vlines and hlines
 
@@ -609,7 +609,7 @@ Vlines and hlines
 \end{document}
 ```
 
-![minimal 2.svg](./attachments/minimal%202.svg)
+![[./attachments/minimal 2.svg|minimal 2.svg]]
 
 Shade every second row
 
@@ -637,7 +637,7 @@ Shade every second row
 \end{document}
 ```
 
-![minimal 3.svg](./attachments/minimal%203.svg)
+![[./attachments/minimal 3.svg|minimal 3.svg]]
 
 ```tex
 \documentclass{article}
@@ -663,7 +663,7 @@ Shade every second row
 \end{document}
 ```
 
-![minimal 4.svg](./attachments/minimal%204.svg)
+![[./attachments/minimal 4.svg|minimal 4.svg]]
 
 ```tex
 
@@ -939,10 +939,10 @@ Longtblr
 Sources:
 
 Related:
-- [Graphical elements - Standardize tables, images, plots](./Graphical%20elements%20-%20Standardize%20tables,%20images,%20plots.md)
-- [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex.md)
-- [Style presets - Format your document after you written the content in Word, Latex, Markdown](Style%20presets%20-%20Format%20your%20document%20after%20you%20written%20the%20content%20in%20Word,%20Latex,%20Markdown.md)
-- [Excel to latex - Embed spreadsheet files as latex tables](Excel%20to%20latex%20-%20Embed%20spreadsheet%20files%20as%20latex%20tables.md)
+- [[./Graphical elements - Standardize tables, images, plots|Graphical elements - Standardize tables, images, plots]]
+- [[./latex|LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules]]
+- [[Style presets - Format your document after you written the content in Word, Latex, Markdown|Style presets - Format your document after you written the content in Word, Latex, Markdown]]
+- [[Excel to latex - Embed spreadsheet files as latex tables|Excel to latex - Embed spreadsheet files as latex tables]]
 
 
 Tags:
