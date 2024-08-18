@@ -16,6 +16,6 @@ dg-publish: true
 - [Comments - Express way of intent with code not comments](./Comments%20-%20Express%20way%20of%20intent%20with%20code%20not%20comments.md)
 - [Command Prompt Comparison - PowerShell vs CMD](Command%20Prompt%20Comparison%20-%20PowerShell%20vs%20CMD.md)
 - [Bash Comparison - Powershell Core vs Bash](Bash%20Comparison%20-%20Powershell%20Core%20vs%20Bash.md)
-- [Antiviruses Software - Is it still recommended](Antiviruses%20Software%20-%20Is%20it%20still%20recommended.md)
 - [Moodle](./Moodle.md)
+- [Antiviruses Software - Is it still recommended](Antiviruses%20Software%20-%20Is%20it%20still%20recommended.md)
 

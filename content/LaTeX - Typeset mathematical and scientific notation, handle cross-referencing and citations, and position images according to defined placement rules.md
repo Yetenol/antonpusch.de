@@ -5,8 +5,8 @@ aliases:
   - LaTeX
 ---
 
-- [Math - Arrange multiline equations in latex with amsmath](./Math%20-%20Arrange%20multiline%20equations%20in%20latex%20with%20amsmath.md)
-- [Tables - Write and style uniform latex tables with pgfplotstable, tabularray](./Tables%20-%20Write%20and%20style%20uniform%20latex%20tables%20with%20pgfplotstable,%20tabularray.md)
+- [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./Math%20-%20Typeset,%20align,%20wrap,%20comment,%20enumerate,%20space%20out,%20scale,%20and%20style%20mathematical%20expressions,%20utilizing%20amsmath.md)
+- [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./Tables%20-%20Create%20tables%20and%20format%20by%20definiting%20styles%20in%20the%20preamble,%20utilizing%20pgfplotstable,%20tabularray.md)
 - [Listings - Print source code with syntax highlighting in latex with listings](./Listings%20-%20Print%20source%20code%20with%20syntax%20highlighting%20in%20latex%20with%20listings.md)
 - [Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design](Graphics,%20Plots%20-%20Generate%20dynamic%20professional%20vector%20graphics%20with%20matching%20fonts,%20design.md)
 - [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./LaTeX%20Symbols%20-%20Lookup%20mathematical%20symbols,%20operations,%20relations,%20and%20arrows.md)
@@ -18,7 +18,7 @@ aliases:
 - [Layout the document - Setup margins, hyphenation, table of contents](./Layout%20the%20document%20-%20Setup%20margins,%20hyphenation,%20table%20of%20contents.md)
 - [Develop LaTeX packages](./Develop%20LaTeX%20packages.md)
 
-Learn, Troubleshoot,Debugging/Help/Documentation
+Learn, Troubleshoot, Debugging/Help/Documentation
 - keep package number low
 - don't create macros
 - problem with text, quotes, math, tables, images, floats, listings, layout, development, setup, conversion, compile time, plots, graphics, citations
