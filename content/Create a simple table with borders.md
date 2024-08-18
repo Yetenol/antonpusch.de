@@ -1,6 +1,8 @@
 ---
 dg-publish: true
 ---
+# Essential styles
+
 Setup **essential styles** for demos
 ```latex
 \pgfplotstableset{
@@ -22,9 +24,23 @@ Setup **essential styles** for demos
 - **environment**: set environment to be used by pgfplotstable, and don't generate column types
 - **caption**: Add table number to identify the demo tables
 
+Setup demo projects
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{⟨chapter⟩\alph{table}} \setcounter{table}{⟨skip n letters⟩}
+```
+- Use article class without page numbers for easier svg cropping
+- **chapter**: set number at the start of table numbers
+- **skip n letters**: start the table numbers with the $n+1^\text{th}$ letter of the lowercase alphabet 
+
+# Add table borders
+
+Use essential styles from above
+
 Setup border styles
 ```latex
 \pgfplotstableset{
+    hlines/.style={tblr={ hline{1,Z}={.08em},hline{2}={.05em} }},
     hasrowname/.style={every first column/.append style={string type}, tblr={ column{1}={l} }},
     cross/.style={hasrowname, tblr={ vline{2}, hline{2} }},
     frame/.style={tblr={ vline{1,Z}={.08em},hline{1,Z}={.08em} }},
@@ -33,10 +49,6 @@ Setup border styles
     boldrowname/.style={hasrowname, tblr={ column{1}={font=\bfseries} }},
 }
 ```
-
-- Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$
-- Visually clarify **column titles** and **row titles**: Thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
-- Apply border **pattern**: Inner **gridlines** $\mathrm{1c}$, Lines without tabularray
 
 Rule widths equals booktabs' defaults for toprule, midrule, and bottomrule
 
@@ -73,8 +85,10 @@ Format the **first column bold**, see $\mathrm{1c, 1f}$
 \pgfplotstabletypeset[boldrowname]{…}
 ```
 
+Demos with essential styles tex, text cells, and caption from [Essential styles](Create%20a%20simple%20table%20with%20borders.md#Essential%20styles) as default:
 ![minimal 54.svg](./attachments/minimal%2054.svg)
 
+Complete source code for $\mathrm{1a - 1f}$
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
 \usepackage{pgfplotstable,tabularray}
