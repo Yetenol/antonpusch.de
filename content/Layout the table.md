@@ -1,4 +1,5 @@
 ---
+title: "Layout the table"
 dg-publish: true
 ---
 # Main example
