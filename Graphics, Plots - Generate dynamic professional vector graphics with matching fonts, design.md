@@ -1,3 +1,0 @@
-# Design
-
-Tufte Design
