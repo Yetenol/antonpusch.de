@@ -13,4 +13,4 @@ $$
 $$
 
 
-[[LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules|LaTeX]]
+[[LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules|LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules]]
