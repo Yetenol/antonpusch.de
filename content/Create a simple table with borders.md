@@ -52,38 +52,26 @@ Setup border styles
 
 Rule widths equals booktabs' defaults for toprule, midrule, and bottomrule
 
-Add thick **horizontal** lines around the table and a regular line below the **first row**, see $\mathrm{1a}$
-```latex
-\pgfplotstabletypeset[hlines]{…}
-```
+Style **hlines**, see $\mathrm{1a}$
+- Add thick **horizontal** lines around the table and a regular line below the **first row**
 
-Add two **crossing** lines separating the **first row** and **first column** from the rest, see $\mathrm{1b}$
+Style **cross**, see $\mathrm{1b}$
+- Add two **crossing** lines separating the **first row** and **first column** from the rest
 - Visually clarify **column titles** and **row titles**
 - **Left aligns** the first column
-```latex
-\pgfplotstabletypeset[cross]{…}
-```
 
-Add **inner gridlines**: vertical and horizontal lines everywhere except the outside border, see $\mathrm{1c, 1d}$
-```latex
-\pgfplotstabletypeset[innergrid]{…}
-```
+Style **innergrid**, see $\mathrm{1c, 1d}$
+- Add **inner gridlines**: vertical and horizontal lines everywhere except the outside border
 
-Box the table with a thick **frame** line, see $\mathrm{1c, 1f}$
-```latex
-\pgfplotstabletypeset[frame]{…}
-```
+Style **frame**, see $\mathrm{1c, 1f}$
+- Box the table with a thick **frame** line
 
-Format the **first row bold**, see $\mathrm{1c, 1e}$
-```latex
-\pgfplotstabletypeset[boldcolname]{…}
-```
+Style **boldcolname**, see $\mathrm{1c, 1e}$
+- Format the **first row bold**
 
-Format the **first column bold**, see $\mathrm{1c, 1f}$
+Style **boldrowname**, see $\mathrm{1c, 1f}$
+- Format the **first column bold**
 - **Left aligns** the first column
-```latex
-\pgfplotstabletypeset[boldrowname]{…}
-```
 
 Demos with essential styles tex, text cells, and caption from [Essential styles](Create%20a%20simple%20table%20with%20borders.md#Essential%20styles) as default:
 ![minimal 54.svg](./attachments/minimal%2054.svg)
@@ -176,7 +164,7 @@ Change heavy rule width, see modified $\mathrm{1a', 1b', 1c'}$
 
 # Create borders without tabularray
 
-**Problem**: Booktabs creates gaps to row shading or within vertical lines:
+**Problem**: Booktabs creates gaps within vertical lines and next to colored rows:
 
 ![minimal 22.svg](./attachments/minimal%2022.svg)
 
@@ -196,7 +184,6 @@ Change heavy rule width, see modified $\mathrm{1a', 1b', 1c'}$
 
 **Ugly example**: Remove booktabs vertical space for conflicts
 - boldcolname* or boldrowname* must be applied before any line styles
-
 ```latex
 \documentclass{article}
 \pagestyle{empty}
