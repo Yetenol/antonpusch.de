@@ -11,12 +11,12 @@ aliases:
 - [Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
 - [Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design](Graphics,%20Plots%20-%20Generate%20dynamic%20professional%20vector%20graphics%20with%20matching%20fonts,%20design.md)
 - [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
-- [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./Float%20-%20Dynamically%20place%20figures,%20images,%20tables,%20and%20listings%20at%20the%20top,%20bottom,%20or%20single%20page.md)
-- [Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials](./Learn%20and%20troubleshoot%20LaTeX%20-%20Read%20(package)%20documentation,%20cheat%20sheets,%20tutorials.md)
-- [Project structure - Create folders for setup, resources, bibliographies](./Project%20structure%20-%20Create%20folders%20for%20setup,%20resources,%20bibliographies.md)
-- [Values  - Standardize math, numbers, symbols, quantities, money](./Values%20%20-%20Standardize%20math,%20numbers,%20symbols,%20quantities,%20money.md)
-- [Graphical elements - Standardize tables, images, plots](./Graphical%20elements%20-%20Standardize%20tables,%20images,%20plots.md)
-- [Layout the document - Setup margins, hyphenation, table of contents](./Layout%20the%20document%20-%20Setup%20margins,%20hyphenation,%20table%20of%20contents.md)
+- [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./Float.md)
+- [Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials](./Learn%20and%20troubleshoot%20LaTeX.md)
+- [Project structure - Create folders for setup, resources, bibliographies](./Project%20structure.md)
+- [Values  - Standardize math, numbers, symbols, quantities, money](./Values.md)
+- [Graphical elements - Standardize tables, images, plots](./Graphical%20elements.md)
+- [Layout the document - Setup margins, hyphenation, table of contents](./Layout%20the%20document.md)
 - [Develop LaTeX packages](./Develop%20LaTeX%20packages.md)
 
 Learn, Troubleshoot, Debugging/Help/Documentation
@@ -47,4 +47,4 @@ Related:
  
 
 Tags:
-[Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography](./Markup%20and%20typesetting%20systems%20-%20Produce%20printed%20or%20digital%20documents%20aesthetically%20pleasing%20with%20readable%20typography.md)
+[Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography](./Markup%20and%20typesetting%20systems.md)
