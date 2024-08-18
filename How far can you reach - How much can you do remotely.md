@@ -32,7 +32,7 @@ Should you even play and control a character aka engineer?
 
 Should your reach scale with your armor?
 
-- [Armor Reach](Armor%20Reach.md)
+- [[Armor Reach|Armor Reach]]
 
 Should you utilize *God Mode* to fly around and reach as far as you want?
 
@@ -45,7 +45,7 @@ Should you utilize *God Mode* to fly around and reach as far as you want?
 
 Should you swap in and out of the editor mode?
 
-- greatly simplified by [Editor Extensions](./content/Editor%20Extensions.md)
+- greatly simplified by [[./content/Editor Extensions|Editor Extensions]]
 
 - [x] Enables further zoom
 - [x] Infinite construction reach
@@ -62,4 +62,4 @@ Sources:
 Related:
 
 Tags:
-[Factorio](./content/Factorio.md)
+[[./content/Factorio|Factorio]]
