@@ -75,7 +75,7 @@ Format the **first column bold**, see $\mathrm{1c, 1f}$
 - **Left aligns** the first column
 - Use style **boldrowname** requiring hasrowname
 
-Demos with essential styles tex, text cells, and caption from [[Create a simple table with borders#Essential styles|Essential styles]] as default:
+Demos with essential styles tex, text cells, and caption from [[Create a simple table with borders#Essential styles|#Essential styles]] as default:
 ![[./attachments/minimal 54.svg|minimal 54.svg]]
 
 Complete source code for $\mathrm{1a - 1f}$
