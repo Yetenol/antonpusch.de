@@ -1,21 +1,22 @@
 ---
+title: "Discussions"
 dg-publish: true
 ---
 
-- [Monitor setup - Increase screen real estate with an ultrawide or dual monitor setup](./Monitor%20setup%20-%20Increase%20screen%20real%20estate%20with%20an%20ultrawide%20or%20dual%20monitor%20setup.md)
-- [Window Managment - Fixed panes vs floating windows](Window%20Managment%20-%20Fixed%20panes%20vs%20floating%20windows.md)
-- [Which apps should have command pallettes or dark mode](Which%20apps%20should%20have%20command%20pallettes%20or%20dark%20mode.md)
-- [Return multiple values in C](./Return%20multiple%20values%20in%20C.md)
-- [Peer to peer vs Server Client model](Peer%20to%20peer%20vs%20Server%20Client%20model.md)
-- [Moodle, ISIS - App vs Website](./Moodle,%20ISIS%20-%20App%20vs%20Website.md)
-- [IPv6 vs IPv4](IPv6%20vs%20IPv4.md)
-- [Indent your code using tabs or spaces](./Indent%20your%20code%20using%20tabs%20or%20spaces.md)
-- [IDE - Why are they so cluttered with different build tools](IDE%20-%20Why%20are%20they%20so%20cluttered%20with%20different%20build%20tools.md)
-- [Curved vs flat monitor](Curved%20vs%20flat%20monitor.md)
-- [Composition vs Inheritance](Composition%20vs%20Inheritance.md)
-- [Comments - Express way of intent with code not comments](./Comments%20-%20Express%20way%20of%20intent%20with%20code%20not%20comments.md)
-- [Command Prompt Comparison - PowerShell vs CMD](Command%20Prompt%20Comparison%20-%20PowerShell%20vs%20CMD.md)
-- [Bash Comparison - Powershell Core vs Bash](Bash%20Comparison%20-%20Powershell%20Core%20vs%20Bash.md)
-- [Moodle](./Moodle.md)
-- [Antiviruses Software - Is it still recommended](Antiviruses%20Software%20-%20Is%20it%20still%20recommended.md)
+- [[./Monitor setup - Increase screen real estate with an ultrawide or dual monitor setup|Monitor setup - Increase screen real estate with an ultrawide or dual monitor setup]]
+- [[Window Managment - Fixed panes vs floating windows|Window Managment - Fixed panes vs floating windows]]
+- [[Which apps should have command pallettes or dark mode|Which apps should have command pallettes or dark mode]]
+- [[./Return multiple values in C|Return multiple values in C]]
+- [[Peer to peer vs Server Client model|Peer to peer vs Server Client model]]
+- [[./Moodle, ISIS - App vs Website|Moodle, ISIS - App vs Website]]
+- [[IPv6 vs IPv4|IPv6 vs IPv4]]
+- [[./Indent your code using tabs or spaces|Indent your code using tabs or spaces]]
+- [[IDE - Why are they so cluttered with different build tools|IDE - Why are they so cluttered with different build tools]]
+- [[Curved vs flat monitor|Curved vs flat monitor]]
+- [[Composition vs Inheritance|Composition vs Inheritance]]
+- [[./Comments - Express way of intent with code not comments|Comments - Express way of intent with code not comments]]
+- [[Command Prompt Comparison - PowerShell vs CMD|Command Prompt Comparison - PowerShell vs CMD]]
+- [[Bash Comparison - Powershell Core vs Bash|Bash Comparison - Powershell Core vs Bash]]
+- [[./Moodle|Moodle]]
+- [[Antiviruses Software - Is it still recommended|Antiviruses Software - Is it still recommended]]
 
