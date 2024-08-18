@@ -1,4 +1,5 @@
 ---
+title: "Vertically align equations"
 dg-publish: true
 ---
 
