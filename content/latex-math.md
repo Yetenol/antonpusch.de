@@ -81,7 +81,7 @@ $$
 
 - Operators ${} \mathrm{(3a)} {}$, Relations ${} \mathrm{(3b)} {}$, Arrows $\mathrm{(3c)}$
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30
-- See source examples [[./latex-symbols|latex-symbols]]
+- See source examples [[./latex-symbols|LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows]]
 
 $$
 \begin{gather*}
