@@ -138,7 +138,7 @@ Use **limits**, or exponents and indices $\mathrm{(1d)}$
 $$
 \begin{gather*}
 (x)  \left( \sqrt{2} \right) &
-\left. \sqrt{2} \right\uparrow \vphantom{\Bigg)} &
+\left. e^{x^2}  \right\uparrow \vphantom{\Bigg)} &
 \left\{ x \middle\vert x > \frac{1}{2} \right\} \tag{2a,\,2b,\,2c} \\
 ( \big( \Big( \bigg( \Bigg( &
 \begin{bmatrix} a&b\\c&d \end{bmatrix} \vphantom{\Bigg)} &
@@ -146,9 +146,13 @@ $$
 \end{gather*}
 $$
 
+$$
+\Set{x}
+$$
+
 - Use **default** size `(`…`)` or **auto** scale to enclosed content `\left(`…`\right)`, see $\mathrm{(2a)}$ 
   $(x)$ `(`…`)` - $[x]$ `[`…`]` - $\{x\}$ `\{`…`\}` - $\vert x\vert$ `\vert`…`\vert` - $\Vert\,\Vert$ `\Vert`…`\Vert` - $\langle x \rangle$ `\langle`…`\rangle` - $\lfloor x \rfloor$ `\lfloor`…`\rfloor` - $\lceil x \rceil$ `\lceil`…`\rceil` - $[\![ x ]\!]$ 
-- Enclose with a **blank** delimiter `\left.`…`\right\uparrow`, see $\mathrm{(2b)}$  ${} box {}$
+- Enclose with a **blank** delimiter `\left.`…`\right\uparrow`, see $\mathrm{(2b)}$ 
 - Enclose with a **middle** delimiter `\left\{`…`\middle\vert`…`\right\}`, see $\mathrm{(2c)}$ 
 - **Manually** set size `\big(` -  `\Big(` - `\bigg(` - `\Bigg(`, see $\mathrm{(2d)}$ 
 - Use matrix with auto scaled delimiters: `\begin{matrix} a&b\\c&d \end{matrix}`, see $\mathrm{(2e)}$ 
@@ -158,23 +162,20 @@ $$
 \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]
 ```
 
-|                                                     |                                                    |
-| --------------------------------------------------- | -------------------------------------------------- |
-| $\displaystyle(x), \binom{n}{k},{n \choose k}$      | `(`…`)` - <br>`\binom{n}{k}` - <br>`{n \choose k}` |
-| $\displaystyle[x],  {n \brack k}$                   | `[`…`]` - <br>`{n \brack k}`                       |
-| ${} \displaystyle \set{x},  \{x\}, {n \brace k} {}$ | `\set{x}` - `\{`…`\}` - <br>`{n \brace k}`         |
-| ${} \displaystyle\Set{x \| x < \frac{1}{2}} {}$     | `\Set{x \|`…`}`                                    |
-| $\vert x\vert$                                      | `\vert`…`\vert`                                    |
-| $x \mid  x \in \mathbb{N}$                          | …`\mid`…                                           |
-| ${} \Vert \vec{x} \Vert {}$                         | `\Vert`…`\Vert`                                    |
-| ${} AB \parallel CD {}$                             | …`\parallel`…                                      |
-| $\langle x \rangle$                                 | `\langle`…`\rangle`                                |
-| $\lfloor x \rfloor$                                 | `\lfloor`…`\rfloor`                                |
-| $\lceil x \rceil$                                   | `\lceil`…`\rceil`                                  |
+| Math                                            | Markup                                             |
+| ----------------------------------------------- | -------------------------------------------------- |
+| $(x), \binom{n}{k},{n \choose k}$               | `(`…`)` - <br>`\binom{n}{k}` - <br>`{n \choose k}` |
+| $[x],  {n \brack k}$                            | `[`…`]` - <br>`{n \brack k}`                       |
+| $\set{x},  \{x\}, {n \brace k}$                 | `\set{`…`}` - <br>`\{`…`\}` - <br>`{n \brace k}`   |
+| $\left\{x \middle\vert x < \frac{1}{2}\right\}$ | `\Set{x \|`…`}`                                    |
+| $\vert x\vert$                                  | `\vert`…`\vert`                                    |
+| $x \mid  x \in \mathbb{N}$                      | …`\mid`…                                           |
+| ${} \Vert \vec{x} \Vert {}$                     | `\Vert`…`\Vert`                                    |
+| ${} AB \parallel CD {}$                         | …`\parallel`…                                      |
+| $\langle x \rangle$                             | `\langle`…`\rangle`                                |
+| $\lfloor x \rfloor$                             | `\lfloor`…`\rfloor`                                |
+| $\lceil x \rceil$                               | `\lceil`…`\rceil`                                  |
 
-
-
-|     |     |
 
 
 
