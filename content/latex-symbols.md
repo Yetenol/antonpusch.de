@@ -136,14 +136,14 @@ Use **limits**, or exponents and indices $\mathrm{(1d)}$
 # Delimiters
 
 $$
-\begin{align*}
-\underbrace{ (x),  \left( \sqrt{2} \right) \vphantom{\Bigg)} }_{\displaystyle(2a)}, 
-\underbrace{\left. \sqrt{2} \right\uparrow \vphantom{\Bigg)} }_{\displaystyle(2b)}, 
-\underbrace{\left\{ x \middle\vert x > \frac{1}{2} \right\} \vphantom{\Bigg)} }_{\displaystyle(2c)}, 
-\underbrace{ ( \big( \Big( \bigg( \Bigg( }_{\displaystyle(2d)}, 
-\underbrace{ \begin{bmatrix} a&b\\c&d \end{bmatrix} \vphantom{\Bigg)} }_{\displaystyle(2e)}, 
-\underbrace{\left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right] \vphantom{\Bigg)}}_{\displaystyle(2f)}
-\end{align*}
+\begin{gather*}
+(x)  \left( \sqrt{2} \right) &
+\left. \sqrt{2} \right\uparrow \vphantom{\Bigg)} &
+\left\{ x \middle\vert x > \frac{1}{2} \right\} \tag{2a,\,2b,\,2c} \\
+( \big( \Big( \bigg( \Bigg( &
+\begin{bmatrix} a&b\\c&d \end{bmatrix} \vphantom{\Bigg)} &
+\left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right] \tag{2d,\,2e,\,2f}
+\end{gather*}
 $$
 
 - Use **default** size `(`…`)` or **auto** scale to enclosed content `\left(`…`\right)`, see $\mathrm{(2a)}$ 
