@@ -79,18 +79,19 @@ $$
 
 # Symbols
 
-- Operators ${} \mathrm{(3a)} {}$, Relations ${} \mathrm{(3b)} {}$, Arrows $\mathrm{(3c)}$
+- Operators $\mathrm{(3a)}$, Relations ${} \mathrm{(3b)} {}$, Arrows $\mathrm{(3c)}$
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30
 - See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 
 $$
 \begin{gather*}
-+ - \cdot \times / \div : {}^\ \mid\,  \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{3a} \\
++ - \cdot \times / \div :{} \Sigma \smallint \mid\, \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{3a} \\
 =\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{3b} \\
 \implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowleft\, \Rsh \tag{3c} \\
+\alpha \beta \varGamma \Delta E, \mathrm{Z H}, \mathit{\Theta I}, \mathcal{K \Lambda}, \mathscr{M N},  \mathfrak{3 O},  \mathbb{2 P} \tag{3d} \\
+(\, )\; \Big\lgroup\,\Big\rgroup\; [\,]\; \left\{ x \;\middle\vert\; x < \sqrt{2}  \right\}\;  \Vert\; \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right] \tag{3e}
 \end{gather*}
 $$
-
 
 # Wrap long equation over multiple lines
 
