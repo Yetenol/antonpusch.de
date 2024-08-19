@@ -85,7 +85,7 @@ $$
 \begin{gather*}
 \min\, \max\, \log  \ln  \det  \lim \tag{1a} \\
 \sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{1b} \\
-x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x \mathrm{sin}() x} \tag{1c} \\
+x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x sin() x} \tag{1c} \\
 \lim_{a \to \infty}\, \lim\nolimits_{a \to \infty}\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{1d}
 \end{gather*}
 $$
@@ -134,6 +134,81 @@ Use **limits**, or exponents and indices $\mathrm{(1d)}$
 | $\psi$ `\psi`                                         | $\Psi$ `\Psi`<br>$\varPsi$ `\varPsi`                 |
 | $\omega$ `\omega`                                     | $\Omega$ `\Omega`<br>$\varOmega$ `\varOmega`         |
 | $\digamma$ `\digamma` [^3]                            |                                                      |
+# Delimiters
+
+
+| Math                                                                                                                                                           | Markup                                                                                                                                                                       |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $(x), \left( \sqrt{2} \right)$                                                                                                                                 | `(x)` - `\left( \sqrt{2} \right)`                                                                                                                                            |
+| ${} \displaystyle\binom{n}{k},  {n \choose k} {}$                                                                                                              | `\binom{n}{k}` - `{n \choose k}`                                                                                                                                             |
+| $\begin{pmatrix} a&b\\c&d \end{pmatrix}, \left(\begin{smallmatrix} a&b\\c&d \end{smallmatrix}\right)$                                                          | `\begin{pmatrix} a&b\\c&d \end{pmatrix}` -  <br>`\left( \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right), `                                                            |
+| $[x], \lbrack x \rbrack,  \left[ \sqrt{2} \right]$                                                                                                             | `[x]` - `\lbrack x \rbrack` - `\left[ \sqrt{2} \right]`                                                                                                                      |
+| $\displaystyle{n \brack k}$                                                                                                                                    | `{n \brack k}`                                                                                                                                                               |
+| $\begin{bmatrix} a&b\\c&d \end{bmatrix}, {\scriptstyle \begin{bmatrix} a&b\\c&d \end{bmatrix}}, \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]$ | `\begin{bmatrix} a&b\\c&d \end{bmatrix}` - <br>`{\scriptstyle \begin{bmatrix} a&b\\c&d \end{bmatrix}}` - <br>`\left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]` |
+|                                                                                                                                                                |                                                                                                                                                                              |
+
+
+
+
+
+$$
+(x), \left( \sqrt{2} \right)
+\binom{a}{b}, 
+{a \choose b}, 
+\begin{pmatrix} a&b\\c&d \end{pmatrix}, 
+\left(\begin{smallmatrix} a&b\\c&d \end{smallmatrix}\right), 
+[x],  \{ x \}, 
+$$
+
+$$
+\bra{\phi } \ket{\psi} \Set{as \mid s}
+$$
+
+- ${} (x)$ `()`
+- $[x]$ `[ ]` `\rbrack \lbrack`
+- $\{x\}$ `\{ \}`, `\rbrace \lbrace`
+
+| Opening                       | Closing              |
+| ----------------------------- | -------------------- |
+| $($ `(`                       | $)$ `)`              |
+| $[$ `[`<br>$\,$ `\rbrace`<br> | $]$ `]`<br>`\lbrace` |
+| $\{$ `\{`, `\lbrace`          | $\}$ `\}`, `\rbrace` |
+| $\mid$                        |                      |
+
+
+
+| Command             | Rendering             | Dependency                                                                                   |
+| ------------------- | --------------------- | -------------------------------------------------------------------------------------------- |
+| `(`                 | $($                   |                                                                                              |
+| `)`                 | $)$                   |                                                                                              |
+| `\uparrow`          | $\uparrow$            |                                                                                              |
+| `\lbrack` <br> `[`  | $\lbrack$ <br> $[$    |                                                                                              |
+| `\rbrack` <br> `]`  | $\rbrack$ <br> $]$    |                                                                                              |
+| `\downarrow`        | $\downarrow$          |                                                                                              |
+| `\lbrace` <br> `\{` | $\lbrace$ <br> $\\\{$ |                                                                                              |
+| `\rbrace` <br> `\}` | $\rbrace$ <br> $\\\}$ |                                                                                              |
+| `\updownarrow`      | $\updownarrow$        |                                                                                              |
+| `\langle`           | $\langle$             |                                                                                              |
+| `\rangle`           | $\rangle$             |                                                                                              |
+| `\Uparrow`          | $\Uparrow$            |                                                                                              |
+| `\vert` <br> `\|`   | $\vert$ <br> $\|$     |                                                                                              |
+| `\Vert` <br> `\​\|` | $\Vert$ <br> $\\\|$   |                                                                                              |
+| `\Downarrow`        | $\Downarrow$          |                                                                                              |
+| `/`                 | $/$                   |                                                                                              |
+| `\backslash`        | $\backslash$          |                                                                                              |
+| `\Updownarrow`      | $\Updownarrow$        |                                                                                              |
+| `\lfloor`           | $\lfloor$             |                                                                                              |
+| `\rfloor`           | $\rfloor$             |                                                                                              |
+| `\rceil`            | $\rceil$              |                                                                                              |
+| `\lceil`            | $\lceil$              |                                                                                              |
+| `\ulcorner`         | $\ulcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                |
+| `\urcorner`         | $\urcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                |
+| `\llcorner`         | $\llcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                |
+| `\lrcorner`         | $\lrcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                |
+| `\lvert`            | $\lvert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
+| `\rvert`            | $\rvert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
+| `\lVert`            | $\lVert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
+| `\rVert`            | $\rVert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
 
 ---
 # Non-Mathematical Symbols
@@ -278,38 +353,7 @@ Set the **style** of the letter in the preamble
 
 # Delimiters
 
-| Command             | Rendering             | Dependency                                                                                                                                  |
-| ------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `(`                 | $($                   |                                                                                                                                             |
-| `)`                 | $)$                   |                                                                                                                                             |
-| `\uparrow`          | $\uparrow$            |                                                                                                                                             |
-| `\lbrack` <br> `[`  | $\lbrack$ <br> $[$    |                                                                                                                                             |
-| `\rbrack` <br> `]`  | $\rbrack$ <br> $]$    |                                                                                                                                             |
-| `\downarrow`        | $\downarrow$          |                                                                                                                                             |
-| `\lbrace` <br> `\{` | $\lbrace$ <br> $\\\{$ |                                                                                                                                             |
-| `\rbrace` <br> `\}` | $\rbrace$ <br> $\\\}$ |                                                                                                                                             |
-| `\updownarrow`      | $\updownarrow$        |                                                                                                                                             |
-| `\langle`           | $\langle$             |                                                                                                                                             |
-| `\rangle`           | $\rangle$             |                                                                                                                                             |
-| `\Uparrow`          | $\Uparrow$            |                                                                                                                                             |
-| `\vert` <br> `\|`   | $\vert$ <br> $\|$     |                                                                                                                                             |
-| `\Vert` <br> `\​\|` | $\Vert$ <br> $\\\|$                                                                                                                                           |
-| `\Downarrow`        | $\Downarrow$          |                                                                                                                                             |
-| `/`                 | $/$                   |                                                                                                                                             |
-| `\backslash`        | $\backslash$          |                                                                                                                                             |
-| `\Updownarrow`      | $\Updownarrow$        |                                                                                                                                             |
-| `\lfloor`           | $\lfloor$             |                                                                                                                                             |
-| `\rfloor`           | $\rfloor$             |                                                                                                                                             |
-| `\rceil`            | $\rceil$              |                                                                                                                                             |
-| `\lceil`            | $\lceil$              |                                                                                                                                             |
-| `\ulcorner`         | $\ulcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                                                               |
-| `\urcorner`         | $\urcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                                                               |
-| `\llcorner`         | $\llcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                                                               |
-| `\lrcorner`         | $\lrcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                                                               |
-| `\lvert`            | $\lvert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
-| `\rvert`            | $\rvert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
-| `\lVert`            | $\lVert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
-| `\rVert`            | $\rVert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
+
 
 # Large Delimiters
 
