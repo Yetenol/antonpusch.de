@@ -147,14 +147,15 @@ $$
 $$
 
 - Use **default** size `(`…`)` or **auto** scale to enclosed content `\left(`…`\right)`, see $\mathrm{(2a)}$ 
-- Enclose with a **blank** delimiter `\left.`…`\right\uparrow`, see $\mathrm{(2b)}$ 
+  $(x)$ `(`…`)` - $[x]$ `[`…`]` - $\{x\}$ `\{`…`\}` - $\vert x\vert$ `\vert`…`\vert` - $\Vert\,\Vert$ `\Vert`…`\Vert` - $\langle x \rangle$ `\langle`…`\rangle` - $\lfloor x \rfloor$ `\lfloor`…`\rfloor` - $\lceil x \rceil$ `\lceil`…`\rceil` - $[\![ x ]\!]$ 
+- Enclose with a **blank** delimiter `\left.`…`\right\uparrow`, see $\mathrm{(2b)}$  ${} box {}$
 - Enclose with a **middle** delimiter `\left\{`…`\middle\vert`…`\right\}`, see $\mathrm{(2c)}$ 
 - **Manually** set size `\big(` -  `\Big(` - `\bigg(` - `\Bigg(`, see $\mathrm{(2d)}$ 
 - Use matrix with auto scaled delimiters: `\begin{matrix} a&b\\c&d \end{matrix}`, see $\mathrm{(2e)}$ 
-  $(\,)$ pmatrix - $[\, ]$ bmatrix - ${} \{\,\} {}$ Bmatrix - $\vert\,\vert$ vmatrix - $\Vert\,\Vert$ Vmatrix
+  $(\,)$ pmatrix - $[\, ]$ bmatrix - $\{\,\}$ Bmatrix - $\vert\,\vert$ vmatrix - $\Vert\,\Vert$ Vmatrix
 - Use smaller matrix variant, see $\mathrm{(2f)}$:
 ```
-\left( \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right)
+\left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]
 ```
 
 | Math                                                                                                                                                                   | Markup                                                                                                                                                                               |
