@@ -137,12 +137,12 @@ Use **limits**, or exponents and indices $\mathrm{(1d)}$
 
 $$
 \begin{align*}
-\underbrace{ (x),  \left( \sqrt{2} \right) \label{\Bigg)} }_{\displaystyle(2a)}, 
-\underbrace{\left. \sqrt{2} \right\uparrow \label{\Bigg)} }_{\displaystyle(2b)}, 
-\underbrace{\left\{ x \middle\vert x > \frac{1}{2} \right\} \label{\Bigg)} }_{\displaystyle(2c)}, 
+\underbrace{ (x),  \left( \sqrt{2} \right) \vphantom{\Bigg)} }_{\displaystyle(2a)}, 
+\underbrace{\left. \sqrt{2} \right\uparrow \vphantom{\Bigg)} }_{\displaystyle(2b)}, 
+\underbrace{\left\{ x \middle\vert x > \frac{1}{2} \right\} \vphantom{\Bigg)} }_{\displaystyle(2c)}, 
 \underbrace{ ( \big( \Big( \bigg( \Bigg( }_{\displaystyle(2d)}, 
-\underbrace{ \begin{bmatrix} a&b\\c&d \end{bmatrix} \label{\Bigg)} }_{\displaystyle(2e)}, 
-\underbrace{\left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right] \label{\Bigg)}}_{\displaystyle(2f)}
+\underbrace{ \begin{bmatrix} a&b\\c&d \end{bmatrix} \vphantom{\Bigg)} }_{\displaystyle(2e)}, 
+\underbrace{\left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right] \vphantom{\Bigg)}}_{\displaystyle(2f)}
 \end{align*}
 $$
 
