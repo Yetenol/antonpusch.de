@@ -158,10 +158,14 @@ $$
 \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]
 ```
 
+$$
+(\, )\; \lgroup\,\rgroup\; [\,]\; \{\,\}\;  \vert\,\vert\; \Vert\, \Vert\; \lfloor\,\rfloor\; \lceil\,\rceil\; \langle\,\rangle\; \ulcorner\,\urcorner\; \llcorner\,\lrcorner\; \uparrow\,\downarrow\; \updownarrow\,\Updownarrow\; \Uparrow\,\Downarrow
+$$
 
 | Math                                                        | Markup                                         |
 | ----------------------------------------------------------- | ---------------------------------------------- |
 | $(x), \binom{n}{k},{n \choose k}$                           | `(`…`)` - <br>`\binom{n}{k}` - `{n \choose k}` |
+| ${} \lgroup x\rgroup {}$                                    | `\lgroup`…`\rgroup`                            |
 | $[x],  {n \brack k}$                                        | `[`…`]` - <br>`{n \brack k}`                   |
 | $\{x\}, {n \brace k}$                                       | `\{`…`\}` - <br>`{n \brace k}`                 |
 | $\vert x\vert$                                              | `\vert`…`\vert`                                |
@@ -169,84 +173,12 @@ $$
 | ${} \left\{ x \;\middle\vert\; x > \frac{1}{2} \right\} {}$ | `\left\{`…`\;\middle\vert\;`…`\right\}`        |
 | ${} \Vert \vec{x} \Vert {}$                                 | `\Vert`…`\Vert`                                |
 | ${} AB \parallel CD {}$                                     | …`\parallel`…                                  |
-| $\langle x \rangle$                                         | `\langle`…`\rangle`                            |
 | $\lfloor x \rfloor$                                         | `\lfloor`…`\rfloor`                            |
 | $\lceil x \rceil$                                           | `\lceil`…`\rceil`                              |
+| $\langle x \rangle$                                         | `\langle`…`\rangle`                            |
 
-
-
-
-| Math                                                                                                                                                                   | Markup                                                                                                                                                                               |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| $(x), \left( \sqrt{2} \right)$                                                                                                                                         | `(x)` - `\left( \sqrt{2} \right)`                                                                                                                                                    |
-| ${} \displaystyle\binom{n}{k},  {n \choose k} {}$                                                                                                                      | `\binom{n}{k}` - `{n \choose k}`                                                                                                                                                     |
-| $\begin{pmatrix} a&b\\c&d \end{pmatrix}, \left(\begin{smallmatrix} a&b\\c&d \end{smallmatrix}\right)$                                                                  | `\begin{pmatrix} a&b\\c&d \end{pmatrix}` -  <br>`\left( \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right), `                                                                    |
-| $[x], \lbrack x \rbrack,  \left[ \sqrt{2} \right]$                                                                                                                     | `[x]` - `\lbrack x \rbrack` - `\left[ \sqrt{2} \right]`                                                                                                                              |
-| $\displaystyle{n \brack k}$                                                                                                                                            | `{n \brack k}`                                                                                                                                                                       |
-| $\begin{bmatrix} a&b\\c&d \end{bmatrix}, {\scriptstyle \begin{bmatrix} a&b\\c&d \end{bmatrix}}, \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]$         | `\begin{bmatrix} a&b\\c&d \end{bmatrix}` - <br>`{\scriptstyle \begin{bmatrix} a&b\\c&d \end{bmatrix}}` - <br>`\left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]`         |
-| $x \mid  x \in \mathbb{N}$                                                                                                                                             | `x \mid  x \in \mathbb{N}`                                                                                                                                                           |
-| $\displaystyle\vert x \vert, \left\vert \sqrt{2}  \right\vert$                                                                                                         | `\vert x \vert` - `\left\vert \sqrt{2}  \right\vert`                                                                                                                                 |
-| $\begin{vmatrix} a&b\\c&d \end{vmatrix}, {\scriptstyle \begin{vmatrix} a&b\\c&d \end{vmatrix}}, \left\vert \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right\vert$ | `\begin{vmatrix} a&b\\c&d \end{vmatrix}` - <br>`{\scriptstyle \begin{vmatrix} a&b\\c&d \end{vmatrix}}` - <br>`\left\vert \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right\vert` |
-| ${} AB \parallel CD {}$                                                                                                                                                | `AB \parallel CD`                                                                                                                                                                    |
-| $\Vert \vec{x} \Vert, \left\Vert \overrightarrow{AB} \right\Vert$                                                                                                      | `\Vert \vec{x} \Vert` - `\left\Vert \overrightarrow{AB} \right\Vert`                                                                                                                 |
-| ${} \begin{Vmatrix}  \end{Vmatrix} {}$                                                                                                                                 |                                                                                                                                                                                      |
-
-$$
-(x), \left( \sqrt{2} \right)
-\binom{a}{b}, 
-{a \choose b}, 
-\begin{pmatrix} a&b\\c&d \end{pmatrix}, 
-\left(\begin{smallmatrix} a&b\\c&d \end{smallmatrix}\right), 
-[x],  \{ x \}, 
-$$
-
-$$
-\bra{\phi } \ket{\psi} \Set{as \mid s}
-$$
-
-- ${} (x)$ `()`
-- $[x]$ `[ ]` `\rbrack \lbrack`
-- $\{x\}$ `\{ \}`, `\rbrace \lbrace`
-
-| Opening                       | Closing              |
-| ----------------------------- | -------------------- |
-| $($ `(`                       | $)$ `)`              |
-| $[$ `[`<br>$\,$ `\rbrace`<br> | $]$ `]`<br>`\lbrace` |
-| $\{$ `\{`, `\lbrace`          | $\}$ `\}`, `\rbrace` |
-| $\mid$                        |                      |
-
-| Command             | Rendering             | Dependency                                                                                   |
-| ------------------- | --------------------- | -------------------------------------------------------------------------------------------- |
-| `(`                 | $($                   |                                                                                              |
-| `)`                 | $)$                   |                                                                                              |
-| `\uparrow`          | $\uparrow$            |                                                                                              |
-| `\lbrack` <br> `[`  | $\lbrack$ <br> $[$    |                                                                                              |
-| `\rbrack` <br> `]`  | $\rbrack$ <br> $]$    |                                                                                              |
-| `\downarrow`        | $\downarrow$          |                                                                                              |
-| `\lbrace` <br> `\{` | $\lbrace$ <br> $\\\{$ |                                                                                              |
-| `\rbrace` <br> `\}` | $\rbrace$ <br> $\\\}$ |                                                                                              |
-| `\updownarrow`      | $\updownarrow$        |                                                                                              |
-| `\langle`           | $\langle$             |                                                                                              |
-| `\rangle`           | $\rangle$             |                                                                                              |
-| `\Uparrow`          | $\Uparrow$            |                                                                                              |
-| `\vert` <br> `\|`   | $\vert$ <br> $\|$     |                                                                                              |
-| `\Vert` <br> `\​\|` | $\Vert$ <br> $\\\|$   |                                                                                              |
-| `\Downarrow`        | $\Downarrow$          |                                                                                              |
-| `/`                 | $/$                   |                                                                                              |
-| `\backslash`        | $\backslash$          |                                                                                              |
-| `\Updownarrow`      | $\Updownarrow$        |                                                                                              |
-| `\lfloor`           | $\lfloor$             |                                                                                              |
-| `\rfloor`           | $\rfloor$             |                                                                                              |
-| `\rceil`            | $\rceil$              |                                                                                              |
-| `\lceil`            | $\lceil$              |                                                                                              |
-| `\ulcorner`         | $\ulcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                |
-| `\urcorner`         | $\urcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                |
-| `\llcorner`         | $\llcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                |
-| `\lrcorner`         | $\lrcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                                                |
-| `\lvert`            | $\lvert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
-| `\rvert`            | $\rvert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
-| `\lVert`            | $\lVert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
-| `\rVert`            | $\rVert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
+See more operators in external resources
+- [Delimiters](https://katex.org/docs/supported#delimiters) from KaTeX docs
 
 ---
 
