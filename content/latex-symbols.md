@@ -158,6 +158,26 @@ $$
 \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]
 ```
 
+|                                                     |                                                    |
+| --------------------------------------------------- | -------------------------------------------------- |
+| $\displaystyle(x), \binom{n}{k},{n \choose k}$      | `(`…`)` - <br>`\binom{n}{k}` - <br>`{n \choose k}` |
+| $\displaystyle[x],  {n \brack k}$                   | `[`…`]` - <br>`{n \brack k}`                       |
+| ${} \displaystyle \set{x},  \{x\}, {n \brace k} {}$ | `\set{x}` - `\{`…`\}` - <br>`{n \brace k}`         |
+| ${} \displaystyle\Set{x \| x < \frac{1}{2}} {}$     | `\Set{x \|`…`}`                                    |
+| $\vert x\vert$                                      | `\vert`…`\vert`                                    |
+| $x \mid  x \in \mathbb{N}$                          | …`\mid`…                                           |
+| ${} \Vert \vec{x} \Vert {}$                         | `\Vert`…`\Vert`                                    |
+| ${} AB \parallel CD {}$                             | …`\parallel`…                                      |
+| $\langle x \rangle$                                 | `\langle`…`\rangle`                                |
+| $\lfloor x \rfloor$                                 | `\lfloor`…`\rfloor`                                |
+| $\lceil x \rceil$                                   | `\lceil`…`\rceil`                                  |
+
+
+
+|     |     |
+
+
+
 | Math                                                                                                                                                                   | Markup                                                                                                                                                                               |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | $(x), \left( \sqrt{2} \right)$                                                                                                                                         | `(x)` - `\left( \sqrt{2} \right)`                                                                                                                                                    |
