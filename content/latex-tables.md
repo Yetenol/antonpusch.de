@@ -11,6 +11,9 @@ dg-permalink: latex-tables
 - formatting shouldn't touch data
 - export from markdown
 - future proof
+- pgf great for calculation
+- why not calculate before hand?
+- tabularray great for formatting: better margin, auto fit cell content, easier cell formatting
 
 # More ideas
 
@@ -68,7 +71,7 @@ dg-permalink: latex-tables
 - Visually **guide horizontal reading**: Shade every other row $\mathrm{3a}$; Add dashed line every third row $\mathrm{3b}$ 
 - Process input data: sort with column $\mathrm{3c}$ 
 - More ideas: filter, sort, custom column titles, multi column names, Align at decimal or scientific separator
-- See source examples: [Import data from files](./import%20data%20from%20files.md)
+- See source examples: [Process, and format values from files](./process%20and%20format%20values%20from%20files.md)
 
 ![minimal 60.svg](./attachments/minimal%2060.svg)
 
