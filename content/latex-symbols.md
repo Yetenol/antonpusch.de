@@ -147,7 +147,6 @@ $$
 $$
 
 - Use **default** size `(`…`)` or **auto** scale to enclosed content `\left(`…`\right)`, see $\mathrm{(2a)}$ 
-  $(x)$ `(`…`)` - $[x]$ `[`…`]` - $\{x\}$ `\{`…`\}` - $\vert x\vert$ `\vert`…`\vert` - $\Vert\,\Vert$ `\Vert`…`\Vert` - $\langle x \rangle$ `\langle`…`\rangle` - $\lfloor x \rfloor$ `\lfloor`…`\rfloor` - $\lceil x \rceil$ `\lceil`…`\rceil` - $[\![ x ]\!]$ 
 - Enclose with a **blank** delimiter `\left.`…`\right\uparrow`, see $\mathrm{(2b)}$ 
 - Enclose with a **middle** delimiter `\left\{`…`\;\middle\vert\;`…`\right\}`, see $\mathrm{(2c)}$ 
 - **Manually** set size `\big(` -  `\Big(` - `\bigg(` - `\Bigg(`, see $\mathrm{(2d)}$ 
@@ -177,7 +176,7 @@ $$
 | $\lceil x \rceil$                                           | `\lceil`…`\rceil`                              |
 | $\langle x \rangle$                                         | `\langle`…`\rangle`                            |
 
-See more operators in external resources
+See more delimiters in external resources
 - [Delimiters](https://katex.org/docs/supported#delimiters) from KaTeX docs
 
 ---
