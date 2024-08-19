@@ -39,7 +39,6 @@ priority: 1
 | $\xlongequal{xxx}$ `\xlongequal{xxx}`                                                  |                                                                                                                                |
 | $\xmapsto{xxx}$ `\xmapsto{xxx}`                                                        |                                                                                                                                |
 
-
 | Regular Arrow                                                                                       | another                                                                                     |
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | $\circlearrowright$ `\circlearrowright`                                                             | $\circlearrowleft$ `\circlearrowleft`                                                       |
@@ -53,7 +52,6 @@ priority: 1
 | $\Rightarrow$ `\Rightarrow`<br>$\Longrightarrow$ `\Longrightarrow`<br>$\implies$ `\implies`         | $\Leftarrow$ `\Leftarrow`<br>$\Longleftarrow$ `\Longleftarrow`<br>$\impliedby$ `\impliedby` |
 | $\Downarrow$ `\Downarrow`                                                                           | $\Uparrow$ `\Uparrow`                                                                       |
 | $\Leftrightarrow$ `\Leftrightarrow`<br>$\Longleftrightarrow$ `\Longleftrightarrow`<br>$\iff$ `\iff` | $\Updownarrow$ `\Updownarrow`                                                               |
-
 
 See more relations in external resources
 - [Relation Symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2) from LaTeX math symbols
@@ -134,17 +132,30 @@ Use **limits**, or exponents and indices $\mathrm{(1d)}$
 | $\psi$ `\psi`                                         | $\Psi$ `\Psi`<br>$\varPsi$ `\varPsi`                 |
 | $\omega$ `\omega`                                     | $\Omega$ `\Omega`<br>$\varOmega$ `\varOmega`         |
 | $\digamma$ `\digamma` [^3]                            |                                                      |
+
 # Delimiters
 
 $$
 \begin{align*}
-(x) \left( \sqrt{2} \right)\,  ) \big) \Big) \bigg) \Bigg) 
-\begin{bmatrix} a&b\\c&d \end{bmatrix}, 
-{\scriptstyle \begin{bmatrix} a&b\\c&d \end{bmatrix}}, 
-\left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right], 
-{\scriptscriptstyle \begin{bmatrix} a&b\\c&d \end{bmatrix}}, 
+\underbrace{ (x),  \left( \sqrt{2} \right) \label{\Bigg)} }_{\displaystyle(2a)}, 
+\underbrace{\left. \sqrt{2} \right\uparrow \label{\Bigg)} }_{\displaystyle(2b)}, 
+\underbrace{\left\{ x \middle\vert x > \frac{1}{2} \right\} \label{\Bigg)} }_{\displaystyle(2c)}, 
+\underbrace{ ( \big( \Big( \bigg( \Bigg( }_{\displaystyle(2d)}, 
+\underbrace{ \begin{bmatrix} a&b\\c&d \end{bmatrix} \label{\Bigg)} }_{\displaystyle(2e)}, 
+\underbrace{\left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right] \label{\Bigg)}}_{\displaystyle(2f)}
 \end{align*}
 $$
+
+- Use **default** size `(`…`)` or **auto** scale to enclosed content `\left(`…`\right)`, see $\mathrm{(2a)}$ 
+- Enclose with a **blank** delimiter `\left.`…`\right\uparrow`, see $\mathrm{(2b)}$ 
+- Enclose with a **middle** delimiter `\left\{`…`\middle\vert`…`\right\}`, see $\mathrm{(2c)}$ 
+- **Manually** set size `\big(` -  `\Big(` - `\bigg(` - `\Bigg(`, see $\mathrm{(2d)}$ 
+- Use matrix with auto scaled delimiters: `\begin{matrix} a&b\\c&d \end{matrix}`, see $\mathrm{(2e)}$ 
+  $(\,)$ pmatrix - $[\, ]$ bmatrix - ${} \{\,\} {}$ Bmatrix - $\vert\,\vert$ vmatrix - $\Vert\,\Vert$ Vmatrix
+- Use smaller matrix variant, see $\mathrm{(2f)}$:
+```
+\left( \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right)
+```
 
 | Math                                                                                                                                                                   | Markup                                                                                                                                                                               |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -160,10 +171,6 @@ $$
 | ${} AB \parallel CD {}$                                                                                                                                                | `AB \parallel CD`                                                                                                                                                                    |
 | $\Vert \vec{x} \Vert, \left\Vert \overrightarrow{AB} \right\Vert$                                                                                                      | `\Vert \vec{x} \Vert` - `\left\Vert \overrightarrow{AB} \right\Vert`                                                                                                                 |
 | ${} \begin{Vmatrix}  \end{Vmatrix} {}$                                                                                                                                 |                                                                                                                                                                                      |
-
-
-
-
 
 $$
 (x), \left( \sqrt{2} \right)
@@ -188,8 +195,6 @@ $$
 | $[$ `[`<br>$\,$ `\rbrace`<br> | $]$ `]`<br>`\lbrace` |
 | $\{$ `\{`, `\lbrace`          | $\}$ `\}`, `\rbrace` |
 | $\mid$                        |                      |
-
-
 
 | Command             | Rendering             | Dependency                                                                                   |
 | ------------------- | --------------------- | -------------------------------------------------------------------------------------------- |
@@ -225,6 +230,7 @@ $$
 | `\rVert`            | $\rVert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amsmath/0) |
 
 ---
+
 # Non-Mathematical Symbols
 
 These symbols can also be used in text mode.
@@ -293,7 +299,6 @@ These symbols can also be used in text mode.
 | `\widehat{AAA}`   | $\widehat{AAA}$   |
 | `\widetilde{AAA}` | $\widetilde{AAA}$ |
 
-
 Set the **style** of the letter in the preamble
 
 | Preamble Command                       | Rendering     | Original   | Dependency                                    |
@@ -329,7 +334,6 @@ Set the **style** of the letter in the preamble
 | `\mathbb{Z}` | $\mathbb{Z}$ |
 |              |              |
 
-
 # Favorites
 
 | Command      | Rendering    |
@@ -353,7 +357,6 @@ Set the **style** of the letter in the preamble
 | `\cap`       | $\cap$       |
 | `\cup`       | $\cup$       |
 
-
 # Arrows as Accents
 
 | Command                    | Rendering                  |
@@ -366,8 +369,6 @@ Set the **style** of the letter in the preamble
 | `\underleftrightarrow{AB}` | $\underleftrightarrow{AB}$ |
 
 # Delimiters
-
-
 
 # Large Delimiters
 
