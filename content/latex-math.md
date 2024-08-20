@@ -77,7 +77,7 @@ $$
 =\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{2b} \\
 \implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowleft\, \Rsh \tag{2c} \\
 \alpha \beta \varGamma \Delta E, \mathrm{Z H}, \mathit{\Theta I}, \mathcal{K \Lambda}, \mathscr{M N},  \mathfrak{3 O},  \mathbb{1 P} \tag{2d} \\
-(\, )\; \Big\lgroup\,\Big\rgroup\; [\,]\; \left\{ x \;\middle\vert\; x < \sqrt{2}  \right\}\;  \vert\, \rangle \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]\, \lfloor\rceil \tag{2e}
+(\, )\; \Big\lgroup\,\Big\rgroup\; \big[\,\big]\; \left\{ x \;\middle\vert\; x < \sqrt{2}  \right\}\;  \vert\, \rangle \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]\, \lfloor\rceil \tag{2e}
 \end{gather*}
 $$
 
@@ -113,7 +113,7 @@ $$
 - roman style
 - ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/mathematical%20typesetting%20with%20latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)
 
-Calculations are shown in equation $[1]$ or ${} \mathrm{[2]\;(I)\; i\;ii\;linear\; [3]\;[3a]\;[3b]\;(I\mbox{-}3\text{-}0) } {}$.
+Calculations are shown in equation $[1]$ or ${} \mathrm{[2]\;(I)\; i\;ii\;linear\; [3]\;[3a]\;[3b]\;(I\text{-}3\text{-}0) } {}$.
 
 # Create commutative diagrams
 
@@ -131,7 +131,7 @@ $$
 
 # Layout multiple equations
 
-- Spread math over multiple display columns ${} \mathrm{(5a)} {}$
+- Spread math over multiple display columns $\mathrm{(5a)}$
 - Scale, Placement ${} \mathrm{(5b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
 - Spacing ${} \mathrm{(5c)} {}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
 - Formatting $\mathrm{(5d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough
