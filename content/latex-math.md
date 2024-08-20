@@ -37,11 +37,13 @@ $$
 # Math modes
 
 **Inline** mode: `$` … `$`, see example in the paragraph
+
 **Display** mode, see $(\mathrm{1a\text{-}c})$ 
 - **Centered** equation(s): **Single** equation $\mathrm{(1a)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`
-- Alternating **right/left**-aligned columns: **Separated** pairs $\text{(1b)}$ `\begin{align*}`, $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`
+- Alternating **right/left**-aligned columns: **Separated** pairs $\text{(1b)}$ `\begin{align*}` - $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}` - Max. spaced-out to line width `\begin{flalign*}`
 - See source examples: [Vertically align equations](./vertically%20align%20equations.md)
-Nested tabular mode with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
+
+**Nested** tabular mode with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
 - Surround with **delimiters**, see $\mathrm{(1d)}$: $\left( \begin{smallmatrix} c&c\\ c&c \end{smallmatrix} \right)$ `\begin{pmatrix}` - $\left\{ \begin{smallmatrix} l&l\\ l&l \end{smallmatrix} \right.$ `\begin{cases}`
 - **Split** overlong equations in multiple lines $\mathrm{(1e)}$: $\;\begin{smallmatrix} r\\ r \end{smallmatrix}$ `\begin{split}`
 
