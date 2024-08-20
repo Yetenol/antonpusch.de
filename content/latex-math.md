@@ -83,7 +83,7 @@ $$
 
 # Wrap long equation over multiple lines
 
-- **Split** long **fractions** in two lines ${} \mathrm{(3a)} {}$, **Indent subsequent** lines ${} \mathrm{(3b\text{-}c)} {}$, **Wrap overlong** equations $\mathrm{(3b)}$
+- **Split** long **fractions** in two lines $\mathrm{(3a)}$, **Indent subsequent** lines $\mathrm{(3b\text{-}c)}$, **Wrap overlong** equations $\mathrm{(3b)}$
 - See source examples [Wrap long equation over multiple lines](./wrap%20long%20equation%20over%20multiple%20lines.md)
 
 $$
@@ -113,22 +113,7 @@ $$
 - roman style
 - ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/mathematical%20typesetting%20with%20latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)
 
-From calculation $\textcolor{limegreen}{(1)}$ on page $\textcolor{limegreen}{1}$, we can derive:
-$$
-\begin{align*}
-\begin{aligned}
-x &= x & (1) \\
-x &\overset{\mathclap{\text{use \textcolor{limegreen}{(2)}}}}{=} x & (\text{I}) \\
-x &= x & (2) \\
-\end{aligned}
-\qquad
-\begin{aligned}
-&&x &= x & \text{II}  \\
-(3.1) && x &= x &  \\
-&&x &= x & [\text{lin.}]  \\
-\end{aligned}
-\end{align*}
-$$
+Calculations are shown in equation $[1]$ or $\mathrm{[2]\;(I)\; i\;ii\;linear\; [3]\;[3a]\;[3b]\;(I\text{-}3\text{-}0) }$.
 
 # Create commutative diagrams
 

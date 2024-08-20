@@ -85,7 +85,9 @@ $$
 \min\, \max\, \log  \ln  \det  \lim \tag{1a} \\
 \sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{1b} \\
 x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x sin() x} \tag{1c} \\
-\lim_{a \to \infty}\, \lim\nolimits_{a \to \infty}\, {\textstyle \text{use } \textstyle\int_0^\infty\, \text{use } \int\limits_0^\infty}\, \operatorname{real}\, \mathop{\mathbb{P}_0}  \tag{1d}
+\lim_{a \to \infty}\, \lim\nolimits_{a \to \infty};\; 
+{\textstyle \sum_0^\infty \sum\limits_0^\infty};\; 
+\operatorname{pre-norm}()\, \mathop{\mathbb{P}_0}_a^b()  \tag{1d}
 \end{gather*}
 $$
 
@@ -95,13 +97,13 @@ See more operators in external resources
 - [Operator names ch. 2.12 p. 66](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=72) or create custom big operator [mathchar ch. 3.2.7 p. 79](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=85) from Mathematical Typsetting with LaTeX by H. Voß
 
 Operators with **function name**
-- $\mathrm{(1a\text{-}b)}$: Use predefined operators `\min` - `\sin` - etc.
-- [p] $\mathrm{(1c)}$: Proper operators get correct right and left spacing compared to last two examples
-- End of $\mathrm{(1d)}$: Create custom operator with text name `\operatorname{real}` or math name `\mathop{\mathbb{P}_0}`
+- Use predefined operators `\min` - `\sin` - etc., see $\mathrm{(1a\text{-}b)}$ 
+- [p] Proper operators get **correct** right and left **spacing** compared to last two examples, see $\mathrm{(1c)}$
+- Create custom operator with text name `\operatorname{pre-norm}()` or math name `\mathop{\mathbb{P}_0}_a^b()`, see end of $\mathrm{(1d)}$
 
 Use **limits**, or exponents and indices $\mathrm{(1d)}$
 - **Display mode** defaults to **limits**; to force exponents and indices `\lim\nolimits_0^1`
-- **Text mode** defaults to **exponents** and **indices**; to force limits `\int\limits_0^1`
+- **Text mode** defaults to **exponents** and **indices**; to force limits `\sum\limits_0^1`
 - See [Layout multiple equations](Layout%20multiple%20equations.md)
 
 # Greek Letters
