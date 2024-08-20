@@ -104,8 +104,8 @@ x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRigh
 $$
 Write a paragraph between equations.
 $$
-x = \mathrlap{\phantom{(x)}\overbracket{\phantom{x\cdot xx}}^{\text{for }x}}  \underbrace{ (x)x }_{\text{for }x} \cdot \underbrace{ \vphantom{(} xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and its relatives}} }  }
-= \begin{cases} xx  & \text{for } xx \\ & \text{because}\ldots \\ x  & \text{ow.} \end{cases} \tag{4b}
+x = \mathrlap{\phantom{(x)}\overbrace{\phantom{x\cdot xx}}^{\text{for }x}}  \underbrace{ (x)x }_{\text{for }x} \cdot \underbrace{ \vphantom{(} xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and its relatives}} }  }
+= \begin{cases} xx  & \text{for } xx \\[-1ex] & \text{because}\ldots \\ x  & \text{ow.} \end{cases} \tag{4b}
 $$
 
 # Reference equations
