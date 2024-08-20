@@ -96,7 +96,7 @@ $$
 
 # Comment, explain your calculations
 
-- Comment **relations**, see $\mathrm{4a}$: $\;^\text{def}$ Write short text **above**/below - $^i$ Put **longer** text in a separate **paragraph** - $^\text{use (4b)}$ Write **zero-width** overlapping text - $^{+xx}$ Write on a **extensible** arrow
+- Comment **relations**, see $\mathrm{4a}$: ${} \;{}^\text{def} {}$ Write short text **above**/below - $^i$ Put **longer** text in a separate **paragraph** - $^\text{use (4b)}$ Write **zero-width** overlapping text - $^{+xx}$ Write on a **extensible** arrow
 - Span **braces** under/over expressions, with possible overlap, see start of $\mathrm{4b}$ 
 - Comment nested **array**: Describe a case, see end of $\mathrm{4b}$; Name matrix columns and rows
 - See source examples: [Comment equation operators](Comment%20equation%20operators.md)
