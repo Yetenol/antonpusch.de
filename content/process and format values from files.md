@@ -9,7 +9,7 @@ dg-publish: true
 Calculate sum, Standardabweichung, Varianz in footer with line
 3c: Csv file
 
-![minimal 64.svg](./attachments/minimal%2064.svg)
+![minimal 65.svg](./attachments/minimal%2065.svg)
 
 ```latex
 \documentclass{article} \pagestyle{empty}
@@ -40,7 +40,7 @@ Calculate sum, Standardabweichung, Varianz in footer with line
     legende/.style={tblr outer={ remark{$t$} = {Time when datapoint was meassured},
     remark{$U_\mathrm{mess}$} = {Voltage meassured} }},
     rename column/.list={{t}{$t$ in ms},{U}{$U_\mathrm{mess}$ in V}},
-    snippet/.style = {col sep={&},verb string type, tblr={vlines={0pt},column{1}={l}}},
+    snippet/.style = {col sep={&},verb string type, tblr={vlines={0pt},column{1}={l,cmd=\texttt}}},
     csv, numberic cells, caption, tblr={baseline=T},
 }
 \begin{document}
