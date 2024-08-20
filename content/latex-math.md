@@ -43,7 +43,7 @@ $$
 - Alternating **right/left**-aligned columns: **Separated** pairs $\text{(1b)}$ `\begin{align*}` - $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}` - Max. spaced-out to line width `\begin{flalign*}`
 - See source examples: [Vertically align equations](./vertically%20align%20equations.md)
 
-**Nested** tabular math with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
+**Nested array** of math with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
 - Surround with **delimiters**, see $\mathrm{(1d)}$: $\left( \begin{smallmatrix} c&c\\ c&c \end{smallmatrix} \right)$ `\begin{pmatrix}` - $\left\{ \begin{smallmatrix} l&l\\ l&l \end{smallmatrix} \right.$ `\begin{cases}`
 - **Split** overlong equations in multiple lines $\mathrm{(1e)}$: $\;\begin{smallmatrix} r\\ r \end{smallmatrix}$ `\begin{split}`
 
@@ -69,7 +69,7 @@ $$
 
 - Operators $\mathrm{(2a)}$, Relations ${} \mathrm{(2b)}$, Arrows $\mathrm{(2c)}$
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30
-- See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
+- See source examples: [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 
 $$
 \begin{gather*}
@@ -84,7 +84,7 @@ $$
 # Wrap long equation over multiple lines
 
 - **Split** long **fractions** in two lines $\mathrm{(3a)}$, **Indent subsequent** lines $\mathrm{(3b\text{-}c)}$, **Wrap overlong** equations $\mathrm{(3b)}$
-- See source examples [Wrap long equation over multiple lines](./wrap%20long%20equation%20over%20multiple%20lines.md)
+- See source examples: [Wrap long equation over multiple lines](./wrap%20long%20equation%20over%20multiple%20lines.md)
 
 $$
 \begin{align*}\qquad&\kern{-2em}
@@ -94,19 +94,21 @@ x = xx +  \frac{  \begin{split} xxxxxxx \quad\\[-1ex] + xxxx \end{split} }{x} + 
 \end{align*} 
 $$
 
-# Comment equation operators
+# Comment, explain your calculations
 
-- Comment: **Over**/under operators ${} \mathrm{(4a)} {}$, In a **paragraph** between math displays, **Braces** under parts of an expression $\mathrm{(4b)}$, Comment a **case** $\mathrm{(4b)}$, Name matrix columns and rows
-- See source examples [Comment equation operators](Comment%20equation%20operators.md)
+- Comment **relations**, see $\mathrm{4a}$: $\;^\text{def}$ Write short text **above**/below - $^i$ Put **longer** text in a separate **paragraph** - $^\text{use (4b)}$ Write **zero-width** overlapping text - $^{+xx}$ Write on a **extensible** arrow
+- Span **braces** under/over expressions, with possible overlap, see start of $\mathrm{4b}$ 
+- Comment nested **array**: Describe a case, see end of $\mathrm{4b}$; Name matrix columns and rows
+- See source examples: [Comment equation operators](Comment%20equation%20operators.md)
 
 $$
-x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ xx} xxxx \tag{4a}
-$$
-Write a paragraph between equations.
-$$
-x = \mathrlap{\phantom{(x)}\overbrace{\phantom{x\cdot xx}}^{\text{for }x}}  \underbrace{ (x)x }_{\text{for }x} \cdot \underbrace{ \vphantom{(} xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and its relatives}} }  }
+\begin{gather*}
+x \overset{\text{def}}{=} x \overset{i}{=} xxx \overset{\mathclap{\text{use (4b)}}}{=} xxx \xRightarrow{+ xx} x \tag{4a} \\
+x = \mathrlap{\phantom{(x)}\overbrace{\phantom{x xx}}^{\text{for }x}}  \underbrace{ (x)x }_{\text{for }x}  \underbrace{ \vphantom{(} xx \cdot x }_{ \mathclap{\substack{\text{for }x\\ \text{and relatives}} }  }
 = \begin{cases} xx  & \text{for } xx \\[-1ex] & \text{because}\ldots \\ x  & \text{ow.} \end{cases} \tag{4b}
+\end{gather*}
 $$
+$\overset{i}{=}\;:$ Is equal because the the function is symmetric in the interval $[-1, 1]$.
 
 # Reference equations
 
@@ -135,7 +137,7 @@ $$
 - Scale, Placement ${} \mathrm{(5b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
 - Spacing ${} \mathrm{(5c)} {}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
 - Formatting $\mathrm{(5d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough
-- See source examples [Layout multiple equations](Layout%20multiple%20equations.md)
+- See source examples: [Layout multiple equations](Layout%20multiple%20equations.md)
 
 $$
 \begin{gather*}
