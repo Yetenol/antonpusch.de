@@ -43,11 +43,11 @@ $$
 - Alternating **right/left**-aligned columns: **Separated** pairs $\text{(1b)}$ `\begin{align*}` - $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}` - Max. spaced-out to line width `\begin{flalign*}`
 - See source examples: [Vertically align equations](./vertically%20align%20equations.md)
 
-**Nested** tabular mode with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
+**Nested** tabular math with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
 - Surround with **delimiters**, see $\mathrm{(1d)}$: $\left( \begin{smallmatrix} c&c\\ c&c \end{smallmatrix} \right)$ `\begin{pmatrix}` - $\left\{ \begin{smallmatrix} l&l\\ l&l \end{smallmatrix} \right.$ `\begin{cases}`
 - **Split** overlong equations in multiple lines $\mathrm{(1e)}$: $\;\begin{smallmatrix} r\\ r \end{smallmatrix}$ `\begin{split}`
 
-This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \!\! \sqrt{2} + \frac{1}{2}a +^{1} \!/_{2} \!\! \\ \hdashline \end{array}$ within a paragraph, where symbols are smaller to keep the line height consistent within blocks of text. 
+This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \!\! \sqrt{2} + \frac{1}{2}a + {}^{1} \!/_{2} \!\! \\ \hdashline \end{array}$ within a paragraph, where symbols are smaller to keep the line height consistent within blocks of text. 
 $$
 \begin{gather*}
 \gets\! \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \!\to \tag{1a} \\
@@ -59,7 +59,7 @@ $$
 
 $$
 \begin{align*} \qquad&\kern{-2em}
-x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{1d} \\&
+x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } xx \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{1d} \\&
  = xxxxxxx \\&
 \! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{1e} \\&
 \end{align*}
@@ -73,7 +73,7 @@ $$
 
 $$
 \begin{gather*}
-+ - \cdot \times / \div :{} \Sigma \smallint \mid\, \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{2a} \\
++ - \cdot \times / \div :{} \Sigma \smallint \Im\,  \Re \mid\, \parallel \cap \setminus \neg \land \pm \Join \tag{2a} \\
 =\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{2b} \\
 \implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowleft\, \Rsh \tag{2c} \\
 \alpha \beta \varGamma \Delta E, \mathrm{Z H}, \mathit{\Theta I}, \mathcal{K \Lambda}, \mathscr{M N},  \mathfrak{3 O},  \mathbb{1 P} \tag{2d} \\
@@ -83,30 +83,29 @@ $$
 
 # Wrap long equation over multiple lines
 
-- **Split** long **fractions** in two lines $\mathrm{(4a)}$, **Indent subsequent** lines $\mathrm{(4b\text{-}c)}$, **Wrap overlong** equations $\mathrm{(4b)}$
+- **Split** long **fractions** in two lines ${} \mathrm{(3a)} {}$, **Indent subsequent** lines ${} \mathrm{(3b\text{-}c)} {}$, **Wrap overlong** equations $\mathrm{(3b)}$
 - See source examples [Wrap long equation over multiple lines](./wrap%20long%20equation%20over%20multiple%20lines.md)
-
 
 $$
 \begin{align*}\qquad&\kern{-2em}
-x = xx +  \frac{  \begin{split} xxxxxxx \quad\\[-1ex] + xxxx \end{split} }{x} +  \frac{ \substack{xxxxxxx \\ +xxxx} }{x}\tag{4a} \\&
-\begin{split}\; =  xxxxxxxxxx \\ xxx\end{split} \tag{4b} \\&
- =  xxxxx \tag{4c}
+x = xx +  \frac{  \begin{split} xxxxxxx \quad\\[-1ex] + xxxx \end{split} }{x} +  \frac{ \substack{xxxxxxx \\ +xxxx} }{x}\tag{3a} \\&
+\begin{split}\; =  xxxxxxxxxx \\ xxx\end{split} \tag{3b} \\&
+ =  xxxxx \tag{3c}
 \end{align*} 
 $$
 
 # Comment equation operators
 
-- Comment: **Over**/under operators $\mathrm{(5a)}$, In a **paragraph** between math displays, **Braces** under parts of an expression $\mathrm{(5b)}$, Comment a **case** $\mathrm{(5b)}$, Name matrix columns and rows
+- Comment: **Over**/under operators ${} \mathrm{(4a)} {}$, In a **paragraph** between math displays, **Braces** under parts of an expression $\mathrm{(4b)}$, Comment a **case** $\mathrm{(4b)}$, Name matrix columns and rows
 - See source examples [Comment equation operators](Comment%20equation%20operators.md)
 
 $$
-x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ x} xxxx \tag{5a}
+x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ x} xxxx \tag{4a}
 $$
 Write a paragraph between equations.
 $$
 x = \underbrace{ xxxxx }_{\text{for }x} \underbrace{ xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and relatives}} }  }
-= \begin{cases} xx,  & \text{for } x \\ x,  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{5b}
+= \begin{cases} xx,  & \text{for } x \\ x,  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{4b}
 $$
 
 # Reference equations
@@ -147,18 +146,18 @@ $$
 
 # Layout multiple equations
 
-- Spread math over multiple display columns $\mathrm{(6a)}$
-- Scale, Placement $\mathrm{(6b)}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
-- Spacing $\mathrm{(6c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
-- Formatting $\mathrm{(6d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough
+- Spread math over multiple display columns ${} \mathrm{(5a)} {}$
+- Scale, Placement ${} \mathrm{(5b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
+- Spacing ${} \mathrm{(5c)} {}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
+- Formatting $\mathrm{(5d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough
 - See source examples [Layout multiple equations](Layout%20multiple%20equations.md)
 
 $$
 \begin{gather*}
-\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{6a} \\
-\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{6b} \\
-\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{6c} \\ 
-\textcolor{magenta}{a + b^2},\; \cancel{a + b^2},\; \boxed{a + b^2}\; \begin{array}{:c:} \hdashline a + b^2 \\ \hdashline \end{array} \tag{6d}
+\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{5a} \\
+\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{5b} \\
+\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{5c} \\ 
+\textcolor{magenta}{a + b^2},\; \cancel{a + b^2},\; \boxed{a + b^2}\; \begin{array}{:c:} \hdashline a + b^2 \\ \hdashline \end{array} \tag{5d}
 \end{gather*}
 $$
 
