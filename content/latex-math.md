@@ -69,7 +69,7 @@ $$
 
 - Operators $\mathrm{(2a)}$, Relations ${} \mathrm{(2b)}$, Arrows $\mathrm{(2c)}$
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30
-- See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
+- See source examples: [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 
 $$
 \begin{gather*}
@@ -84,7 +84,7 @@ $$
 # Wrap long equation over multiple lines
 
 - **Split** long **fractions** in two lines $\mathrm{(3a)}$, **Indent subsequent** lines $\mathrm{(3b\text{-}c)}$, **Wrap overlong** equations $\mathrm{(3b)}$
-- See source examples [Wrap long equation over multiple lines](./wrap%20long%20equation%20over%20multiple%20lines.md)
+- See source examples: [Wrap long equation over multiple lines](./wrap%20long%20equation%20over%20multiple%20lines.md)
 
 $$
 \begin{align*}\qquad&\kern{-2em}
@@ -96,10 +96,10 @@ $$
 
 # Comment, explain your calculations
 
-- Comment **relations**, see $\mathrm{4a}$: $\;^\text{def}$ Write short text **above**/below - $^i$ Put **longer** text in a separate **paragraph**, see second example - ${} ^\text{use (4b)} {}$ Write **zero-width** overlapping text - $^{+xx}$ Write on a **extensible** arrow
+- Comment **relations**, see $\mathrm{4a}$: $\;^\text{def}$ Write short text **above**/below - $^i$ Put **longer** text in a separate **paragraph** - $^\text{use (4b)}$ Write **zero-width** overlapping text - $^{+xx}$ Write on a **extensible** arrow
 - Span **braces** under/over expressions, with possible overlap, see start of $\mathrm{4b}$ 
 - Comment nested **array**: Describe a case, see end of $\mathrm{4b}$; Name matrix columns and rows
-- See source examples [Comment equation operators](Comment%20equation%20operators.md)
+- See source examples: [Comment equation operators](Comment%20equation%20operators.md)
 
 $$
 \begin{gather*}
@@ -137,7 +137,7 @@ $$
 - Scale, Placement ${} \mathrm{(5b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
 - Spacing ${} \mathrm{(5c)} {}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
 - Formatting $\mathrm{(5d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough
-- See source examples [Layout multiple equations](Layout%20multiple%20equations.md)
+- See source examples: [Layout multiple equations](Layout%20multiple%20equations.md)
 
 $$
 \begin{gather*}
