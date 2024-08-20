@@ -36,50 +36,36 @@ $$
 
 # Math modes
 
-## Inline mode
-
-- `$` … `$`
-
-This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \sqrt{2} + \frac{1}{2}a \\ \hdashline \end{array}$ within a sentence. 
-
-## Display mode
-
+**Inline** mode: `$` … `$`, see example in the paragraph
+**Display** mode, see $(\mathrm{1a\text{-}c})$ 
 - **Centered** equation(s): **Single** equation $\mathrm{(1a)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`
-- Alternating **right/left**-aligned columns: **Separated** pairs ${} \text{(1b)} {}$ `\begin{align*}`, $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`
-- See source examples [Vertically align equations](./vertically%20align%20equations.md)
+- Alternating **right/left**-aligned columns: **Separated** pairs $\text{(1b)}$ `\begin{align*}`, $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`
+- See source examples: [Vertically align equations](./vertically%20align%20equations.md)
+Nested tabular mode $\mathrm{(1d\text{-}f)}$
+- Surround with **delimiters**: $\mathrm{(1d)}$ `\begin{pmatrix}` - $\mathrm{(1e)}$ `\begin{cases}`
+- **Split** overlong equations in multiple lines $\mathrm{(1f)}$ 
 
+This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \!\! \sqrt{2} + \frac{1}{2}a +^{1} \!/_{2} \!\! \\ \hdashline \end{array}$ within a paragraph, where symbols are smaller to keep the line height consistent within blocks of text. 
 $$
-\gets \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \to \tag{1a}
+\begin{gather*}
+\gets \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \to \tag{1a} \\
+\gets\! \begin{array}{:r:l:} \hdashline xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \\ \hdashline \end{array} \!\to \qquad \gets\! 
+\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \!\to \tag{1b} \\
+\gets \begin{array}{:r:l:r:l:} \hdashline xx \!\!&\!\! =  xxx\!\! & \!\!= \!\!&\!\!  x \\ \hdashline x \!\!&\!\! = x & \!\!= \!\!&\!\! xxx \\ \hdashline \end{array} \to \tag{1c}
+\end{gather*}
 $$
-$$
-\begin{align*}
-\gets\! \begin{array}{:r:l:} \hdashline xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \\ \hdashline \end{array} & \hspace{-.2em}\to & \gets\! 
-\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \!\to \tag{1b}
-\end{align*}
-$$
-$$
-\begin{alignat*}{2}
-\gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! =  xxx\!\! \\ \hdashline x \!\!&\!\! = x \\ \hdashline \end{array} && 
-\begin{array}{:r:l:} \hdashline \!\!= \!\!&\!\!  x \\ \hdashline \!\!= \!\!&\!\! xxx \\ \hdashline \end{array} \to \tag{1c}
-\end{alignat*}
-$$
-
-## Nested tabular mode
-
-- Surround with **delimiters** $\mathrm{(2a)}$ `\begin{pmatrix}` - `\begin{cases}`
-- **Split** overlong equations in multiple lines $\mathrm{(2b)}$ 
 
 $$
 \begin{align*} \qquad&\kern{-2em}
-x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{2a} \\&
+x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{1d,\,1e} \\&
  = xxxxxxx \\&
-\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{2b} \\&
+\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{1f} \\&
 \end{align*}
 $$
 
 # Symbols
 
-- Operators $\mathrm{(3a)}$, Relations ${} \mathrm{(3b)} {}$, Arrows $\mathrm{(3c)}$
+- Operators $\mathrm{(3a)}$, Relations ${} \mathrm{(3b)}$, Arrows $\mathrm{(3c)}$
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30
 - See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 
