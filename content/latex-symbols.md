@@ -18,7 +18,7 @@ priority: 1
 | $\ge$ `\ge`, `\geq`                                  | $\ngeq$ `\ngeq`             |
 | $\triangleq$ `\triangleq`<br>$\coloneqq$ `\coloneqq` |                             |
 | $\equiv$ `\equiv`                                    | $\not\equiv$ `\not\equiv`   |
-| $\in$ `\in`                                          | ${} \notin$ `\notin`        |
+| $\in$ `\in`                                          | $\notin$ `\notin`        |
 | $\ni$ `\ni`                                          | $\not\ni$ `\not\ni`[^1]     |
 | $\subset$ `\subset`                                  | $\not\subset$ `\not\subset` |
 | $\supset$ `\supset`                                  | $\not\supset$ `\not\supset` |
@@ -68,12 +68,13 @@ Generically negate/comment any relation
 | ------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | $+$ `+`                                                                  | $-$ `-`                                                        |
 | $\cdot$ `\cdot`<br>$\times$ `\times`                                     | $/$ `/`<br>$\div$ `\div`                                       |
-| $:$ `:`                                                                  | ${} ^\circ$ `^\circ`                                           |
+| $:$ `:`                                                                  | $^\circ$ `^\circ`                                           |
 | $\mid$ `\mid`                                                            | $\parallel$ `\parallel`                                        |
 | $\cup$ `\cup`                                                            | $\cap$ `\cap`                                                  |
 | $\setminus$ `\setminus`                                                  | $\neg$ `\neq`, `lnot`                                          |
 | $\land$ `\land`, `\wedge`                                                | $\lor$ `\lor`, `\vee`                                          |
 | $\pm$ `\pm`<br>$\mp$ `\mp`                                               | $\Join$ `\Join` [^2]                                           |
+| $\Im$ `\Im` imaginary                                                    | $\Re$ `\Re` real                                               |
 | $\displaystyle\sum$ `sum`                                                | $\displaystyle\prod$ `\prod`                                   |
 | $\displaystyle\int$ `\int`<br>$\displaystyle\oint$ `\oint`               | $\displaystyle\iint$ `\iint`<br>$\displaystyle\iiint$ `\iiint` |
 | $\displaystyle\bigcup$ `\bigcup`<br>$\displaystyle\biguplus$ `\biguplus` | $\displaystyle\bigcap$ `\bigcap`                               |
@@ -164,14 +165,14 @@ $$
 | Math                                                        | Markup                                         |
 | ----------------------------------------------------------- | ---------------------------------------------- |
 | $(x), \binom{n}{k},{n \choose k}$                           | `(`…`)` - <br>`\binom{n}{k}` - `{n \choose k}` |
-| ${} \lgroup x\rgroup {}$                                    | `\lgroup`…`\rgroup`                            |
+| $\lgroup x\rgroup$                                    | `\lgroup`…`\rgroup`                            |
 | $[x],  {n \brack k}$                                        | `[`…`]` - <br>`{n \brack k}`                   |
 | $\{x\}, {n \brace k}$                                       | `\{`…`\}` - <br>`{n \brace k}`                 |
 | $\vert x\vert$                                              | `\vert`…`\vert`                                |
 | $x \mid  x \in \mathbb{N}$                                  | …`\mid`…                                       |
-| ${} \left\{ x \;\middle\vert\; x > \frac{1}{2} \right\} {}$ | `\left\{`…`\;\middle\vert\;`…`\right\}`        |
-| ${} \Vert \vec{x} \Vert {}$                                 | `\Vert`…`\Vert`                                |
-| ${} AB \parallel CD {}$                                     | …`\parallel`…                                  |
+| $\left\{ x \;\middle\vert\; x > \frac{1}{2} \right\}$ | `\left\{`…`\;\middle\vert\;`…`\right\}`        |
+| $\Vert \vec{x} \Vert$                                 | `\Vert`…`\Vert`                                |
+| $AB \parallel CD$                                     | …`\parallel`…                                  |
 | $\lfloor x \rfloor$                                         | `\lfloor`…`\rfloor`                            |
 | $\lceil x \rceil$                                           | `\lceil`…`\rceil`                              |
 | $\langle x \rangle$                                         | `\langle`…`\rangle`                            |
@@ -334,44 +335,44 @@ Set the **style** of the letter in the preamble
 
 # Miscellaneous Symbols
 
-| Command              | Rendering            | Variants       | Dependency           |
-| -------------------- | -------------------- | -------------- | -------------------- |
-| `\dots`              | $\dots$              |
-| `\cdots`             | $\cdots$             |
-| `\vdots`             | $\vdots$             |
-| `\ddots`             | $\ddots$             |
-| `\hbar`              | $\hbar$              |
-| `\imath`             | $\imath$             |
-| `\jmath`             | $\jmath$             |
-| `\ell`               | $\ell$               |
-| `\Re`                | $\Re$                |
-| `\Im`                | $\Im$                |
-| `\aleph`             | $\aleph$             |
-| `\wp`                | $\wp$                |
-| `\forall`            | $\forall$            |
-| `\exists`            | $\exists$            |
+| Command              | Rendering            | Variants       | Dependency                                      |
+| -------------------- | -------------------- | -------------- | ----------------------------------------------- |
+| `\dots`              | $\dots$              |                |                                                 |
+| `\cdots`             | $\cdots$             |                |                                                 |
+| `\vdots`             | $\vdots$             |                |                                                 |
+| `\ddots`             | $\ddots$             |                |                                                 |
+| `\hbar`              | $\hbar$              |                |                                                 |
+| `\imath`             | $\imath$             |                |                                                 |
+| `\jmath`             | $\jmath$             |                |                                                 |
+| `\ell`               | $\ell$               |                |                                                 |
+| `\Re`                | $\Re$                |                |                                                 |
+| `\Im`                | $\Im$                |                |                                                 |
+| `\aleph`             | $\aleph$             |                |                                                 |
+| `\wp`                | $\wp$                |                |                                                 |
+| `\forall`            | $\forall$            |                |                                                 |
+| `\exists`            | $\exists$            |                |                                                 |
 | `\mho`               | $\mho$               |                | [latexsym](https://texdoc.org/serve/latexsym/0) |
-| `\partial`           | $\partial$           |
-| `'`                  | $'$                  |
-| `\prime`             | $\prime$             |
-| `\emptyset`          | $\emptyset$          |
-| `\infty`             | $\infty$             |
-| `\nabla`             | $\nabla$             |
+| `\partial`           | $\partial$           |                |                                                 |
+| `'`                  | $'$                  |                |                                                 |
+| `\prime`             | $\prime$             |                |                                                 |
+| `\emptyset`          | $\emptyset$          |                |                                                 |
+| `\infty`             | $\infty$             |                |                                                 |
+| `\nabla`             | $\nabla$             |                |                                                 |
 | `\triangle`          | $\triangle$          | $\vartriangle$ | [amssymb](https://texdoc.org/serve/amssymb/0)   |
 | `\Box`               | $\Box$               |                | [latexsym](https://texdoc.org/serve/latexsym/0) |
 | `\Diamond`           | $\Diamond$           |                | [latexsym](https://texdoc.org/serve/latexsym/0) |
-| `\bot`               | $\bot$               |
-| `\top`               | $\top$               |
-| `\angle`             | $\angle$             |
-| `\surd`              | $\surd$              |
-| `\diamondsuit`       | $\diamondsuit$       |
-| `\heartsuit`         | $\heartsuit$         |
-| `\clubsuit`          | $\clubsuit$          |
-| `\spadesuit`         | $\spadesuit$         |
-| `\neg` <br> `\lnot`  | $\neg$ <br> $\lnot$  |
-| `\flat`              | $\flat$              |
-| `\natural`           | $\natural$           |
-| `\sharp`             | $\sharp$             |
+| `\bot`               | $\bot$               |                |                                                 |
+| `\top`               | $\top$               |                |                                                 |
+| `\angle`             | $\angle$             |                |                                                 |
+| `\surd`              | $\surd$              |                |                                                 |
+| `\diamondsuit`       | $\diamondsuit$       |                |                                                 |
+| `\heartsuit`         | $\heartsuit$         |                |                                                 |
+| `\clubsuit`          | $\clubsuit$          |                |                                                 |
+| `\spadesuit`         | $\spadesuit$         |                |                                                 |
+| `\neg` <br> `\lnot`  | $\neg$ <br> $\lnot$  |                |                                                 |
+| `\flat`              | $\flat$              |                |                                                 |
+| `\natural`           | $\natural$           |                |                                                 |
+| `\sharp`             | $\sharp$             |                |                                                 |
 | `\square`            | $\square$            |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
 | `\vartriangle`       | $\vartriangle$       |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
 | `\triangledown`      | $\triangledown$      |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
