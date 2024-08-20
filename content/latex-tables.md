@@ -76,15 +76,7 @@ multi column header
 - More ideas: filter, sort, custom column titles, multi column names, Align at decimal or scientific separator
 - See source examples: [Process, and format values from files](./process%20and%20format%20values%20from%20files.md)
 
-3a: Legende unter Tabelle
-3b: Add index with line,
-Calculate sum, Standardabweichung, Varianz in footer with line
-3c: Csv file
-
-
-![minimal 60.svg](./attachments/minimal%2060.svg)
-
-
+![minimal 64.svg](./attachments/minimal%2064.svg)
 
 # Layout the table
 
