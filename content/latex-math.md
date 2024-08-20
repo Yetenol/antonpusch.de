@@ -43,7 +43,7 @@ $$
 - Alternating **right/left**-aligned columns: **Separated** pairs $\text{(1b)}$ `\begin{align*}` - $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}` - Max. spaced-out to line width `\begin{flalign*}`
 - See source examples: [Vertically align equations](./vertically%20align%20equations.md)
 
-**Nested** tabular math with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
+**Nested array** of math with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
 - Surround with **delimiters**, see $\mathrm{(1d)}$: $\left( \begin{smallmatrix} c&c\\ c&c \end{smallmatrix} \right)$ `\begin{pmatrix}` - $\left\{ \begin{smallmatrix} l&l\\ l&l \end{smallmatrix} \right.$ `\begin{cases}`
 - **Split** overlong equations in multiple lines $\mathrm{(1e)}$: $\;\begin{smallmatrix} r\\ r \end{smallmatrix}$ `\begin{split}`
 
@@ -94,19 +94,21 @@ x = xx +  \frac{  \begin{split} xxxxxxx \quad\\[-1ex] + xxxx \end{split} }{x} + 
 \end{align*} 
 $$
 
-# Comment equation operators
+# Comment, explain your calculations
 
-- Comment: **Over**/under operators ${} \mathrm{(4a)} {}$, In a **paragraph** between math displays, **Braces** under parts of an expression $\mathrm{(4b)}$, Comment a **case** $\mathrm{(4b)}$, Name matrix columns and rows
+- Comment **relations**, see $\mathrm{4a}$: $\;^\text{def}$ Write short text **above**/below - $^i$ Put **longer** text in a separate **paragraph**, see second example - ${} ^\text{use (4b)} {}$ Write **zero-width** overlapping text - $^{+xx}$ Write on a **extensible** arrow
+- Span **braces** under/over expressions, with possible overlap, see start of $\mathrm{4b}$ 
+- Comment nested **array**: Describe a case, see end of $\mathrm{4b}$; Name matrix columns and rows
 - See source examples [Comment equation operators](Comment%20equation%20operators.md)
 
 $$
-x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ xx} xxxx \tag{4a}
-$$
-Write a paragraph between equations.
-$$
-x = \mathrlap{\phantom{(x)}\overbrace{\phantom{x\cdot xx}}^{\text{for }x}}  \underbrace{ (x)x }_{\text{for }x} \cdot \underbrace{ \vphantom{(} xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and its relatives}} }  }
+\begin{gather*}
+x \overset{\text{def}}{=} x \overset{i}{=} xxx \overset{\mathclap{\text{use (4b)}}}{=} xxx \xRightarrow{+ xx} x \tag{4a} \\
+x = \mathrlap{\phantom{(x)}\overbrace{\phantom{x xx}}^{\text{for }x}}  \underbrace{ (x)x }_{\text{for }x}  \underbrace{ \vphantom{(} xx \cdot x }_{ \mathclap{\substack{\text{for }x\\ \text{and its relatives}} }  }
 = \begin{cases} xx  & \text{for } xx \\[-1ex] & \text{because}\ldots \\ x  & \text{ow.} \end{cases} \tag{4b}
+\end{gather*}
 $$
+$\overset{i}{=}\;:$ Is equal because the the function is symmetric in the interval $[-1, 1]$.
 
 # Reference equations
 
