@@ -100,12 +100,12 @@ $$
 - See source examples [Comment equation operators](Comment%20equation%20operators.md)
 
 $$
-x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ x} xxxx \tag{4a}
+x \overset{\text{def}}{=} xxxx\overset{\mathclap{\text{use (3)}}}{=} xxxx \xRightarrow{+ xx} xxxx \tag{4a}
 $$
 Write a paragraph between equations.
 $$
 x = \underbrace{ xxxxx }_{\text{for }x} \underbrace{ xxxx }_{ \mathclap{\substack{\text{for }x\\ \text{and relatives}} }  }
-= \begin{cases} xx,  & \text{for } x \\ x,  & \text{because blah}  \\& \text{blab blub} \end{cases} \tag{4b}
+= \begin{cases} xx  & \text{for } xx \\ & \text{because}\ldots \\ x  & \text{ow.} \end{cases} \tag{4b}
 $$
 
 # Reference equations
