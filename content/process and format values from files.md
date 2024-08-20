@@ -22,6 +22,8 @@ Setup styles for data importing
 
 decimal align
 
+3
+- show how columns can be renames with index `1{new title}` or name `{Umess}{$U_\mathrm{mess}$}`
 
 3a
 - default import
