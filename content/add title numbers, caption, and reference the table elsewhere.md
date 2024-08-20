@@ -52,6 +52,12 @@ See table \ref{tab:identifiers} for details.
 \end{table}
 ```
 
+Hyperref
+```latex
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue}
+```
+
 Demos with tex, text cells, and hlines styles from [Create a simple table with borders](./create%20a%20simple%20table%20with%20borders.md) as default:
 ![minimal 52.svg](./attachments/minimal%2052.svg)
 

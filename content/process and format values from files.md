@@ -2,6 +2,62 @@
 title: "Process, and format values from files"
 dg-publish: true
 ---
+# Main example
+
+3a: Legende unter Tabelle
+3b: Add index with line,
+Calculate sum, Standardabweichung, Varianz in footer with line
+3c: Csv file
+
+![minimal 64.svg](./attachments/minimal%2064.svg)
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{3\alph{table}}
+\usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
+\pgfplotstableset{
+    /pgfplots/compat = 1.17,
+    tex/.style = {col sep = &, row sep = \\},
+    text cells/.style = {string type,tblr={ column{1,Z}={c} }},
+    tblr/.style = {environment=tblr, every table/.append code={\SetTblrInner[tblr,talltblr,longtblr]{#1}}},
+    tblr outer/.style = {tblr, every table/.append code={\SetTblrOuter[tblr,talltblr,longtblr]{#1}}},
+    environment/.style={begin table=\begin{#1}{},end table=\end{#1},skip coltypes,environment/.style={}},
+    caption/.style = {tblr outer={tall,caption={#1}}},
+    hlines/.style={tblr={ hline{1,Z}={.08em},hline{2}={.05em} }},
+    csv/.style = {col sep = comma, row sep = newline, column type = {r}, },
+    numberic cells/.style = {numeric type, tblr={ column{1,Z}={r} }},
+    shade 2nd/.style = {tblr={ row{even} = {gray9} }},
+    dash 3rd/.style = {every nth row = {3}{before row = \hline[dashed]}},
+    german/.style = {dec sep={,\!}, 1000 sep ={\,}},
+    rename column/.style 2 args = {assign column name/.append style={
+        /pgfplots/table/column name/.add={\ifx##1#1#2\else}{\fi}}},
+    column unit/.style 2 args = {tblr={ cell{2-Z}{#1}={appto={\,#2}} }},
+    row counter/.style={tblr = {column{2}={r},vline{2}={solid}},
+    create on use/id/.style = {create col/expr = {\pgfplotstablerow+1}},
+    columns/id/.style={column name={\#}},
+    columns={id,[index]0,[index]1}, },
+    data table/.style={hlines, dash 3rd},
+    legende/.style={tblr outer={ remark{$t$} = {Time when datapoint was meassured},
+    remark{$U_\mathrm{mess}$} = {Voltage meassured} }},
+    rename column/.list={{t}{$t$ in ms},{U}{$U_\mathrm{mess}$ in V}},
+    snippet/.style = {col sep={&},verb string type, tblr={vlines={0pt},column{1}={l}}},
+    csv, numberic cells, caption, tblr={baseline=T},
+}
+\begin{document}
+\noindent
+\def\x{0}
+\pgfplotstabletypeset[data table, legende]{resources/data.csv}
+\hspace{1cm}
+\pgfplotstabletypeset[data table, german, int detect, row counter, columns/U/.style={sci subscript}]{resources/data.csv}
+\hspace{1cm}
+\pgfplotstabletypeset[snippet, caption=Data.csv]{resources/data.csv}
+\end{document}
+```
+
+
+
+
+
 
 Use essential styles and hlines from [Create a simple table with borders](./create%20a%20simple%20table%20with%20borders.md)
 
@@ -56,21 +112,25 @@ decimal align
     german/.style = {dec sep={,\!}, 1000 sep ={\,}},
     rename column/.style 2 args = {columns/#1/.style = {column name = {#2}}},
     column unit/.style 2 args = {tblr={ cell{2-Z}{#1}={appto={\,#2}} }},
-    csv, numberic cells, hlines, caption, tblr={baseline=T}
+    rename column/.list={{t}{$t$ in ms},{U}{$U_\mathrm{mess}$ in V}},
+    row counter/.style={tblr = {column{2}={r},vline{2}={solid}},
+        create on use/id/.style = {create col/expr = {\pgfplotstablerow+1}},
+        columns/id/.style={column name={\#}},
+        columns={id,[index]0,[index]1}, },
+    tblr outer={remark{$t$} = {Time when datapoint was meassured},
+        remark{$U_\mathrm{mess}$} = {Voltage meassured}},
+    csv, numberic cells, hlines, caption, dash 3rd, tblr={baseline=T},
 }
 \begin{document}
 \noindent
-\pgfplotstabletypeset[shade 2nd]{resources/data.csv}
+\pgfplotstabletypeset[dash 3rd]{resources/data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[dash 3rd, german]{resources/data.csv}
+\pgfplotstabletypeset[german, int detect, row counter, columns/U/.style={sci subscript}]{resources/data.csv}
 \hspace{1cm}
 \pgfplotstabletypeset[int detect, sort=true, sort key={[index]1}]{resources/data.csv}
 
 \vspace{1em}\noindent
-\pgfplotstabletypeset[rename column/.list={{t}{$t$ in ms},{U}{$U_\mathrm{mess}$ in V}},
-    tblr outer={ remark{$t$} = {Time when datapoint was meassured},
-    remark{$U_\mathrm{mess}$} = {Voltage meassured}  }
-    ]{resources/data.csv}
+\pgfplotstabletypeset[]{resources/data.csv}
 \hspace{1cm}
 \pgfplotstabletypeset[column unit/.list={1{m},2{V}}]{resources/data.csv}
 \end{document}
