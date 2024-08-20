@@ -48,16 +48,16 @@ Nested tabular mode $\mathrm{(1d\text{-}f)}$
 This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \!\! \sqrt{2} + \frac{1}{2}a +^{1} \!/_{2} \!\! \\ \hdashline \end{array}$ within a paragraph, where symbols are smaller to keep the line height consistent within blocks of text. 
 $$
 \begin{gather*}
-\gets \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \to \tag{1a} \\
-\gets\! \begin{array}{:r:l:} \hdashline xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \\ \hdashline \end{array} \!\to \qquad \gets\! 
+\gets\! \begin{array}{:c:} \hdashline xxxxx \\ \hdashline \end{array} \!\to \tag{1a} \\
+\gets\! \begin{array}{:r:l:} \hdashline xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \\ \hdashline \end{array} \!\to \quad \gets\! 
 \begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \!\to \tag{1b} \\
-\gets \begin{array}{:r:l:r:l:} \hdashline xx \!\!&\!\! =  xxx\!\! & \!\!= \!\!&\!\!  x \\ \hdashline x \!\!&\!\! = x & \!\!= \!\!&\!\! xxx \\ \hdashline \end{array} \to \tag{1c}
+\gets\! \begin{array}{:r:l:r:l:} \hdashline xx \!\!&\!\! =  xxx\!\! & \!\!= \!\!&\!\!  x \\ \hdashline x \!\!&\!\! = x & \!\!= \!\!&\!\! xxx \\ \hdashline \end{array} \!\to \tag{1c}
 \end{gather*}
 $$
 
 $$
 \begin{align*} \qquad&\kern{-2em}
-x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{1d,\,1e} \\&
+x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag*{$\begin{split} \mathrm{(1d)} \\ \mathrm{(1e)} \end{split}$} \\&
  = xxxxxxx \\&
 \! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{1f} \\&
 \end{align*}
@@ -65,17 +65,17 @@ $$
 
 # Symbols
 
-- Operators $\mathrm{(3a)}$, Relations ${} \mathrm{(3b)}$, Arrows $\mathrm{(3c)}$
+- Operators $\mathrm{(2a)}$, Relations ${} \mathrm{(2b)} {}$, Arrows $\mathrm{(2c)}$
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30
 - See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 
 $$
 \begin{gather*}
-+ - \cdot \times / \div :{} \Sigma \smallint \mid\, \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{3a} \\
-=\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{3b} \\
-\implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowleft\, \Rsh \tag{3c} \\
-\alpha \beta \varGamma \Delta E, \mathrm{Z H}, \mathit{\Theta I}, \mathcal{K \Lambda}, \mathscr{M N},  \mathfrak{3 O},  \mathbb{1 P} \tag{3d} \\
-(\, )\; \Big\lgroup\,\Big\rgroup\; [\,]\; \left\{ x \;\middle\vert\; x < \sqrt{2}  \right\}\;  \vert\, \rangle \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]\, \lfloor\rceil \tag{3e}
++ - \cdot \times / \div :{} \Sigma \smallint \mid\, \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{2a} \\
+=\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{2b} \\
+\implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowleft\, \Rsh \tag{2c} \\
+\alpha \beta \varGamma \Delta E, \mathrm{Z H}, \mathit{\Theta I}, \mathcal{K \Lambda}, \mathscr{M N},  \mathfrak{3 O},  \mathbb{1 P} \tag{2d} \\
+(\, )\; \Big\lgroup\,\Big\rgroup\; [\,]\; \left\{ x \;\middle\vert\; x < \sqrt{2}  \right\}\;  \vert\, \rangle \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]\, \lfloor\rceil \tag{2e}
 \end{gather*}
 $$
 
