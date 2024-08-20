@@ -61,6 +61,9 @@ dg-permalink: latex-tables
 - Center, Caption, Reference, Longtable, Caption below/above, Caption number, Figurename
 - See source examples [Add title numbers, caption, and reference the table elsewhere](./add%20title%20numbers,%20caption,%20and%20reference%20the%20table%20elsewhere.md) 
 
+2: diagonal cell A1
+multi column header
+
 ![minimal 50.svg](./attachments/minimal%2050.svg)
 
 # Import data from files
@@ -73,6 +76,12 @@ dg-permalink: latex-tables
 - More ideas: filter, sort, custom column titles, multi column names, Align at decimal or scientific separator
 - See source examples: [Process, and format values from files](./process%20and%20format%20values%20from%20files.md)
 
+3a: Legende unter Tabelle
+3b: Add index with line,
+Calculate sum, Standardabweichung, Varianz in footer with line
+3c: Csv file
+
+
 ![minimal 60.svg](./attachments/minimal%2060.svg)
 
 
@@ -81,6 +90,8 @@ dg-permalink: latex-tables
 
 - Split in equal parts
 - See source examples: [Layout the table](./layout%20the%20table.md)
+
+4a: Longtable split in half
 
 ![minimal 61.svg](./attachments/minimal%2061.svg)
 # Advanced input processing
