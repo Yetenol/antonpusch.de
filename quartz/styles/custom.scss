@@ -52,6 +52,15 @@ pre>code {
     overflow-x: auto !important;
 }
 
+// Style inline code like codeblocks
+pre {
+    border: unset !important;
+}
+code {
+    border: 1px solid var(--lightgray);
+    background: unset !important;
+}
+
 // Shrink clipboard button to fit in a single line code block
 .clipboard-button {
     margin: .2rem !important;
