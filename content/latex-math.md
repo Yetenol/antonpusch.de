@@ -108,7 +108,7 @@ x = \mathrlap{\phantom{(x)}\overbrace{\phantom{x xx}}^{\text{for }x}}  \underbra
 = \begin{cases} xx  & \text{for } xx \\[-1ex] & \text{because}\ldots \\ x  & \text{ow.} \end{cases} \tag{4b}
 \end{gather*}
 $$
-$\overset{i}{=}\;:$ Is equal because the the function is symmetric in the interval $[-1, 1]$.
+$\overset{i}{=}\;:$ Is equal because the function is symmetrical in the interval $[-1, 1]$.
 
 # Reference equations
 
