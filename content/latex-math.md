@@ -41,9 +41,9 @@ $$
 - **Centered** equation(s): **Single** equation $\mathrm{(1a)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`
 - Alternating **right/left**-aligned columns: **Separated** pairs $\text{(1b)}$ `\begin{align*}`, $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`
 - See source examples: [Vertically align equations](./vertically%20align%20equations.md)
-Nested tabular mode with $r$-ight, $c$-enter, and $l$-eft aligned columns, see $\mathrm{(1d\text{-}f)}$
+Nested tabular mode with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
 - Surround with **delimiters**, see $\mathrm{(1d)}$: $\left( \begin{smallmatrix} c&c\\ c&c \end{smallmatrix} \right)$ `\begin{pmatrix}` - $\left\{ \begin{smallmatrix} l&l\\ l&l \end{smallmatrix} \right.$ `\begin{cases}`
-- **Split** overlong equations in multiple lines $\mathrm{(1e)}$: $\begin{smallmatrix} r\\ r \end{smallmatrix}$ `\begin{split}`
+- **Split** overlong equations in multiple lines $\mathrm{(1e)}$: $\;\begin{smallmatrix} r\\ r \end{smallmatrix}$ `\begin{split}`
 
 This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \!\! \sqrt{2} + \frac{1}{2}a +^{1} \!/_{2} \!\! \\ \hdashline \end{array}$ within a paragraph, where symbols are smaller to keep the line height consistent within blocks of text. 
 $$
@@ -65,7 +65,7 @@ $$
 
 # Symbols
 
-- Operators $\mathrm{(2a)}$, Relations ${} \mathrm{(2b)} {}$, Arrows $\mathrm{(2c)}$
+- Operators $\mathrm{(2a)}$, Relations ${} \mathrm{(2b)}$, Arrows $\mathrm{(2c)}$
 - More: Roots, fraction, matrix, operators, relations, accents, greek letter | Limits, super/subscript | escevt for better vectors #34 | Split delimiter | Math in description heading | Breaking (page/column break) | Fonts #23, styles #30
 - See source examples [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 
