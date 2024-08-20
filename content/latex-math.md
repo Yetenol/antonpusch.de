@@ -89,7 +89,7 @@ $$
 =\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{3b} \\
 \implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowleft\, \Rsh \tag{3c} \\
 \alpha \beta \varGamma \Delta E, \mathrm{Z H}, \mathit{\Theta I}, \mathcal{K \Lambda}, \mathscr{M N},  \mathfrak{3 O},  \mathbb{2 P} \tag{3d} \\
-(\, )\; \Big\lgroup\,\Big\rgroup\; [\,]\; \left\{ x \;\middle\vert\; x < \sqrt{2}  \right\}\;  \Vert\, \rangle \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]\, \lfloor\rceil \tag{3e}
+(\, )\; \Big\lgroup\,\Big\rgroup\; [\,]\; \left\{ x \;\middle\vert\; x < \sqrt{2}  \right\}\;  \vert\, \rangle \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]\, \lfloor\rceil \tag{3e}
 \end{gather*}
 $$
 
