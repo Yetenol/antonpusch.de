@@ -113,7 +113,7 @@ $$
 - roman style
 - ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/mathematical%20typesetting%20with%20latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)
 
-Calculations are shown in equation $[1]$ or $\mathrm{[2]\;(I)\; i\;ii\;linear\; [3]\;[3a]\;[3b]\;(I\text{-}3\text{-}0) }$.
+Calculations are shown in equation $[1]$ or ${} \mathrm{[2]\;(I)\; i\;ii\;linear\; [3]\;[3a]\;[3b]\;(I\mbox{-}3\text{-}0) } {}$.
 
 # Create commutative diagrams
 
