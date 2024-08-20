@@ -42,8 +42,8 @@ $$
 - Alternating **right/left**-aligned columns: **Separated** pairs $\text{(1b)}$ `\begin{align*}`, $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`
 - See source examples: [Vertically align equations](./vertically%20align%20equations.md)
 Nested tabular mode $\mathrm{(1d\text{-}f)}$
-- Surround with **delimiters**: $\mathrm{(1d)}$ `\begin{pmatrix}` - $\mathrm{(1e)}$ `\begin{cases}`
-- **Split** overlong equations in multiple lines $\mathrm{(1f)}$ 
+- Surround with **delimiters**, see $\mathrm{(1d)}$: ${} \left( \begin{smallmatrix} c&c\\ c&c \end{smallmatrix} \right) {}$ `\begin{pmatrix}` - $\left\{ \begin{smallmatrix} l&l\\ l&l \end{smallmatrix} \right.$ `\begin{cases}`
+- **Split** overlong equations in multiple lines $\mathrm{(1e)}$: $\begin{smallmatrix} r\\ r \end{smallmatrix}$ `\begin{split}`
 
 This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \!\! \sqrt{2} + \frac{1}{2}a +^{1} \!/_{2} \!\! \\ \hdashline \end{array}$ within a paragraph, where symbols are smaller to keep the line height consistent within blocks of text. 
 $$
@@ -57,9 +57,9 @@ $$
 
 $$
 \begin{align*} \qquad&\kern{-2em}
-x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag*{$\begin{split} \mathrm{(1d)} \\ \mathrm{(1e)} \end{split}$} \\&
+x = \begin{pmatrix} \begin{array}{:c:c:} \hdashline xx \!\!&\!\! x \\ \hdashline x \!\!&\!\! xx \\ \hdashline x \!\!&\!\! x \\ \hdashline \end{array} \end{pmatrix}  + \begin{cases} \begin{array}{:l:l:} \hdashline xxx \!\!&\!\! \text{if } x \\ \hdashline x \!\!&\!\! \text{otherwise} \\ \hdashline \end{array} \end{cases} \tag{1d} \\&
  = xxxxxxx \\&
-\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{1f} \\&
+\! \begin{split} \begin{array}{:r:} \hdashline = xxxxxxxxxxxxx \\ \hdashline xxxxxxx \\ \hdashline \end{array}\end{split} \tag{1e} \\&
 \end{align*}
 $$
 
