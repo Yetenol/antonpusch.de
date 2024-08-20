@@ -45,7 +45,7 @@ This is an inline math expression $\begin{array}{:c:} \hdashline \scriptstyle \s
 ## Display mode
 
 - **Centered** equation(s): **Single** equation $\mathrm{(1a)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`
-- Alternating **right/left**-aligned columns: **Separated** pairs ${} \text{(1b)} {}$ `\begin{align*}`, $n$ pairs of **touching** columns ${} \mathrm{(1c)} {}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`
+- Alternating **right/left**-aligned columns: **Separated** pairs ${} \text{(1b)} {}$ `\begin{align*}`, $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}`, Max. spaced-out to line width `\begin{flalign*}`
 - See source examples [Vertically align equations](./vertically%20align%20equations.md)
 
 $$
@@ -53,21 +53,21 @@ $$
 $$
 $$
 \begin{align*}
-\gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \\ \hdashline \end{array} & \to & \gets 
-\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{1b}
+\gets\! \begin{array}{:r:l:} \hdashline xx \!\!&\!\! = xxx \\ \hdashline x \!\!&\!\! =  x \\ \hdashline \end{array} & \hspace{-.2em}\to & \gets\! 
+\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \!\to \tag{1b}
 \end{align*}
 $$
 $$
 \begin{alignat*}{2}
-\gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! =  xxx \\ \hdashline x \!\!&\!\! = x \\ \hdashline \end{array} && 
-\begin{array}{:r:l:} \hdashline xxxx \!\!&\!\! =  x \\ \hdashline xx \!\!&\!\! = xxx \\ \hdashline \end{array} \to \tag{1c}
+\gets \begin{array}{:r:l:} \hdashline xx \!\!&\!\! =  xxx\!\! \\ \hdashline x \!\!&\!\! = x \\ \hdashline \end{array} && 
+\begin{array}{:r:l:} \hdashline \!\!= \!\!&\!\!  x \\ \hdashline \!\!= \!\!&\!\! xxx \\ \hdashline \end{array} \to \tag{1c}
 \end{alignat*}
 $$
 
 ## Nested tabular mode
 
-- Surround with **delimiters** $\mathrm{(4a)}$ \begin{pmatrix} - \begin{cases}
-- **Split** overlong equations in multiple lines $\mathrm{(4b)}$
+- Surround with **delimiters** $\mathrm{(2a)}$ `\begin{pmatrix}` - `\begin{cases}`
+- **Split** overlong equations in multiple lines $\mathrm{(2b)}$ 
 
 $$
 \begin{align*} \qquad&\kern{-2em}
@@ -88,7 +88,7 @@ $$
 + - \cdot \times / \div :{} \Sigma \smallint \mid\, \parallel \cup \cap \setminus \neg \land \lor \pm \Join \tag{3a} \\
 =\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim  \tag{3b} \\
 \implies \nLeftarrow\!= \!\!\!\mathrlap{\quad\not}\iff \xrightarrow[\text{text}]{\text{long}}\, \nearrow\, \uparrow\, \updownarrow\, \dashleftarrow\, \Leftrightarrow\, \Downarrow\, \Updownarrow\, \circlearrowleft\, \Rsh \tag{3c} \\
-\alpha \beta \varGamma \Delta E, \mathrm{Z H}, \mathit{\Theta I}, \mathcal{K \Lambda}, \mathscr{M N},  \mathfrak{3 O},  \mathbb{2 P} \tag{3d} \\
+\alpha \beta \varGamma \Delta E, \mathrm{Z H}, \mathit{\Theta I}, \mathcal{K \Lambda}, \mathscr{M N},  \mathfrak{3 O},  \mathbb{1 P} \tag{3d} \\
 (\, )\; \Big\lgroup\,\Big\rgroup\; [\,]\; \left\{ x \;\middle\vert\; x < \sqrt{2}  \right\}\;  \vert\, \rangle \left[ \begin{smallmatrix} a&b\\c&d \end{smallmatrix} \right]\, \lfloor\rceil \tag{3e}
 \end{gather*}
 $$
