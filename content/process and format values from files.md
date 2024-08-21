@@ -9,7 +9,66 @@ dg-publish: true
 Calculate sum, Standardabweichung, Varianz in footer with line
 3c: Csv file
 
-![minimal 65.svg](./attachments/minimal%2065.svg)
+call snippet style raw snippet
+call set environment->lock environment
+
+![minimal 67.svg](./attachments/minimal%2067.svg)
+
+Faked second table
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{3\alph{table}}
+\usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
+\pgfplotstableset{
+    /pgfplots/compat = 1.17,
+    tex/.style = {col sep = &, row sep = \\},
+    text cells/.style = {string type,tblr={ column{1,Z}={c} }},
+    tblr/.style = {environment=tblr, every table/.append code={\SetTblrInner[tblr,talltblr,longtblr]{#1}}},
+    tblr outer/.style = {tblr, every table/.append code={\SetTblrOuter[tblr,talltblr,longtblr]{#1}}},
+    environment/.style={begin table=\begin{#1}{},end table=\end{#1},skip coltypes,environment/.style={}},
+    caption/.style = {tblr outer={tall,caption={#1}}},
+    hlines/.style={tblr={ hline{1,Z}={.08em},hline{2}={.05em} }},
+    csv/.style = {col sep = comma, row sep = newline, column type = {r}, },
+    numeric cells/.style = {numeric type, tblr={ column{1,Z}={r} }},
+    shade 2nd/.style = {tblr={ row{even} = {gray9} }},
+    dash 3rd/.style = {every nth row = {3}{before row = \hline[dashed]}},
+    german/.style = {dec sep={,\!}, 1000 sep ={\,}},
+    rename column/.style 2 args = {assign column name/.append style={
+        /pgfplots/table/column name/.add={\ifx##1#1#2\else}{\fi}}},
+    column unit/.style 2 args = {tblr={ cell{2-Z}{#1}={appto={\,#2}} }},
+    row counter/.style={tblr = {column{2}={r}},
+    create on use/id/.style = {create col/expr = {int(\pgfplotstablerow+1)}},
+    columns/id/.style={column name={\#}, numeric type},
+    columns={id,[index]0,[index]1}, },
+    data table/.style={csv, hlines, dash 3rd, numeric cells},
+    legende/.style={tblr outer={ remark{$t$} = {Time when datapoint was meassured},
+    remark{$U_\mathrm{mess}$} = {Voltage meassured} }},
+    rename column/.list={{t}{$t$ in ms},{U}{$U_\mathrm{mess}$ in V}},
+    snippet/.style = {col sep={&},verb string type, tblr={vlines={0pt},column{1}={l,cmd=\texttt}}},
+    stats/.style={tblr={hline{12}},
+        every row 10 column 0/.style={assign cell content/.style={/pgfplots/table/@cell content={$\Sigma$}}},
+        every row 11 column 0/.style={assign cell content/.style={/pgfplots/table/@cell content={$\bar{x}$}}} },
+    caption, tblr={baseline=T},
+}
+\begin{document}
+\noindent
+\pgfplotstabletypeset[data table, legende]{resources/data.csv}
+\hspace{1cm}
+\pgfplotstableset{csv}
+\pgfplotstableread{resources/data.csv}{\output}
+\pgfplotstableread[tex]{
+t & U \\
+ & 1.76483 \\
+ & 0.176483 \\
+}\statsLines
+\pgfplotstablevertcat{\output}{\statsLines}
+\pgfplotstabletypeset[csv, numeric cells, stats, row counter, hlines, dash 3rd, 
+    int detect, sci subscript, zerofill,
+    tblr={cell{2-Z}{1-Z}={r}},  ]\output
+\hspace{1cm}
+\pgfplotstabletypeset[snippet, caption=Data.csv]{resources/data.csv}
+\end{document}
+```
 
 ```latex
 \documentclass{article} \pagestyle{empty}
@@ -54,7 +113,146 @@ Calculate sum, Standardabweichung, Varianz in footer with line
 \end{document}
 ```
 
+calculate sum, mean, standard deviation under table
+- [Add rows for sum/mean/std at end of pgfplotstable - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/179177/add-rows-for-sum-mean-std-at-end-of-pgfplotstable)
+- [\[Pgfplots-features\] Simple calculations on columns of data](https://pgfplots-features.narkive.com/tu1Qxhx5/simple-calculations-on-columns-of-data)
 
+combine files
+```latex
+\pgfplotstableread{resources/data.csv}\output
+\pgfplotstablevertcat{\output}{resources/stats.csv}
+\pgfplotstabletypeset[csv]\outp
+```
+
+```latex
+\pgfplotstabletypeset[
+    calc/.style 2 args={create col/assign/.code={%
+    \getthisrow{#1}\entry
+    \ifnum\pgfplotstablerow>0
+    \pgfmathsetmacro{\entry}{#2(\entry,\pgfmathaccuma)}%
+    \fi
+    \edef\pgfmathaccuma{\entry}
+    \xdef\MAXVAL{\pgfmathaccuma}
+    \pgfkeyslet{/pgfplots/table/create col/next content}\entry
+    }},
+    create max column/.style={create on use/max(#1)/.style={calc={#1}{max}}},
+    create min column/.style={create on use/min(#1)/.style={calc={#1}{min}}},
+    create sum column/.style={create on use/sum(#1)/.style={calc={#1}{add}}},
+    create max column=Val, create min column=Val, create sum column=Val,
+    columns={Val,max(Val),min(Val),sum(Val)},
+]{testdata.table}
+```
+
+
+```latex
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=newest}
+\usepackage{filecontents}
+
+\begin{filecontents*}{testdata.table}
+Val
+2
+1
+3
+\end{filecontents*}
+
+\begin{document}
+
+
+\pgfplotstableread{testdata.table}{\testdata}
+\pgfplotstablecreatecol[%
+create col/assign/.code={%
+\getthisrow{Val}\entry
+\ifnum\pgfplotstablerow>0
+\pgfmathsetmacro{\entry}{max(\entry,\pgfmathaccuma)}%
+\fi
+\edef\pgfmathaccuma{\entry}%<--- CF : ATTENTION: do not forget
+'%' after lines otherwise TeX introduces spurious spaces
+\xdef\MAXVAL{\pgfmathaccuma}%<-- CF: this is a "dirty hack":
+% simply write the result to some global variable - which can be used at
+% any place in the file.
+\pgfkeyslet{/pgfplots/table/create col/next content}\entry
+}]{max(Val)}\testdata
+
+\pgfplotstablecreatecol[%
+create col/assign/.code={%
+\getthisrow{Val}\entry
+\ifnum\pgfplotstablerow>0
+\pgfmathsetmacro{\entry}{min(\entry,\pgfmathaccuma)}%
+\fi
+\edef\pgfmathaccuma{\entry}
+\pgfkeyslet{/pgfplots/table/create col/next content}\entry
+}]{min(Val)}\testdata
+
+\pgfplotstablecreatecol[%
+create col/assign/.code={%
+\getthisrow{Val}\entry
+\ifnum\pgfplotstablerow>0
+\pgfmathsetmacro{\entry}{add(\entry,\pgfmathaccuma)}%
+\fi
+\edef\pgfmathaccuma{\entry}
+\pgfkeyslet{/pgfplots/table/create col/next content}\entry
+}]{sum(Val)}\testdata
+
+\pgfplotstablecreatecol[%
+create col/assign/.code={%
+\getthisrow{sum(Val)}\entry
+\pgfmathsetmacro{\entry}{divide(\entry,\pgfplotstablerows)}%
+\pgfkeyslet{/pgfplots/table/create col/next content}\entry
+}]{avg(Val)}\testdata
+
+
+\pgfplotstabletypeset[%
+every head row/.style={before row=\hline,after row=\hline},
+every last row/.style={after row=\hline},
+columns/Val/.style={fixed,fixed zerofill,precision=2},
+columns/min(Val)/.style={fixed,fixed zerofill,precision=2},
+columns/max(Val)/.style={fixed,fixed zerofill,precision=2},
+columns/avg(Val)/.style={fixed,fixed zerofill,precision=2},
+columns/sum(Val)/.style={fixed,fixed zerofill,precision=2},
+]{\testdata}
+
+
+\pgfplotstabletypeset[
+    calc/.style 2 args={create col/assign/.code={%
+    \getthisrow{#1}\entry
+    \ifnum\pgfplotstablerow>0
+    \pgfmathsetmacro{\entry}{#2(\entry,\pgfmathaccuma)}%
+    \fi
+    \edef\pgfmathaccuma{\entry}
+    \xdef\MAXVAL{\pgfmathaccuma}
+    \pgfkeyslet{/pgfplots/table/create col/next content}\entry
+    }},
+    create max column/.style={create on use/max(#1)/.style={calc={#1}{max}}},
+    create min column/.style={create on use/min(#1)/.style={calc={#1}{min}}},
+    create sum column/.style={create on use/sum(#1)/.style={calc={#1}{add}}},
+    create max column=Val, create min column=Val, create sum column=Val,
+    columns={Val,max(Val),min(Val),sum(Val)},
+]{testdata.table}
+
+% CF: dirty hack result: simply dereference global variable:
+The max value is \pgfmathprintnumber{\MAXVAL}.
+
+% CF: clean solution: get a single value of the table.
+\pgfplotstablegetelem{2}{avg(Val)}\of\testdata
+The average value is \pgfmathprintnumber{\pgfplotsretval}.
+
+% CF: get number of rows, subtract by 1, and use that value:
+{%
+\pgfplotstablegetrowsof{\testdata}%
+\count0=\pgfplotsretval % means: store \pgfplotsretval into artihmetic
+TeX register
+\advance\count0 by-1 % subtract 1 from that register
+\edef\pgfplotsretval{\the\count0}% store result into \pgfplotsretval (as
+string)
+\pgfplotstablegetelem{\pgfplotsretval}{sum(Val)}\of\testdata
+The sum is \pgfmathprintnumber{\pgfplotsretval}.
+}% this here restores \count0 to its previous value
+\end{document}
+```
 
 
 
@@ -135,8 +333,6 @@ decimal align
 \pgfplotstabletypeset[column unit/.list={1{m},2{V}}]{resources/data.csv}
 \end{document}
 ```
-
-
 
 
 ```latex
@@ -245,3 +441,12 @@ $t$ in ms, $U_{mess}$ in V
 \pgfplotstabletypeset[csv,hlines+,int detect,sort=true,sort key={[index]1}]{resources/data.csv}
 \end{document}
 ```
+
+
+---
+Sources:
+- [\[Pgfplots-features\] Simple calculations on columns of data](https://pgfplots-features.narkive.com/tu1Qxhx5/simple-calculations-on-columns-of-data)
+
+Related:
+
+Tags:
