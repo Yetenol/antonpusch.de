@@ -66,8 +66,7 @@ multi column header
 
 ![minimal 50.svg](./attachments/minimal%2050.svg)
 
-# Import data from files
-
+# Import data from files 
 - Keep the data in **raw** and **universal** (csv) form: Update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell
 - Render **scientific notation** correctly and **uniform**: Render `4.41941738e-02` as $4.42 \cdot 10^{-2}$ $\mathrm{3a, 3b, 3c}$ 
 - **Format numbers**: Set max. decimal places $\mathrm{3a, 3b, 3c}$; When to show exponent $\mathrm{3c}$; Use German commas $\mathrm{3b}$
@@ -76,7 +75,7 @@ multi column header
 - More ideas: filter, sort, custom column titles, multi column names, Align at decimal or scientific separator
 - See source examples: [Process, and format values from files](./process%20and%20format%20values%20from%20files.md)
 
-![minimal 65.svg](./attachments/minimal%2065.svg)
+![minimal 67.svg](./attachments/minimal%2067.svg)
 
 # Layout the table
 
