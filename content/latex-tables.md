@@ -62,29 +62,10 @@ aliases:
 See source examples: [Format table headings](Format%20table%20headings.md)
 ![minimal 73.svg](./attachments/minimal%2073.svg)
 
-# Create a simple table with borders
+# Process cell body
 
-- Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$
-- Visually clarify **column titles** and **row titles**: Thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
-- Apply border **pattern**: Inner **gridlines** $\mathrm{1c}$
-- See source examples: [Create a simple table with borders](./create%20a%20simple%20table%20with%20borders.md)
+## Import data from files 
 
-![minimal 45.svg](./attachments/minimal%2045.svg)
-
-# Add title and reference the table elsewhere
-
-- **Placement, alignment**: center the table horizontally
-- Add **references**: caption underneath and in the list of tables, label to cross-reference elsewhere
-- More ideas: legende, Multifigure, Split, Longtable, surpress tableoftables entry, table next to text, globally set placement specifiers
-- Center, Caption, Reference, Longtable, Caption below/above, Caption number, Figurename
-- See source examples [Add title numbers, caption, and reference the table elsewhere](./add%20title%20numbers,%20caption,%20and%20reference%20the%20table%20elsewhere.md) 
-
-2: diagonal cell A1
-multi column header
-
-![minimal 50.svg](./attachments/minimal%2050.svg)
-
-# Import data from files 
 - Keep the data in **raw** and **universal** (csv) form: Update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell
 - Render **scientific notation** correctly and **uniform**: Render `4.41941738e-02` as $4.42 \cdot 10^{-2}$ $\mathrm{3a, 3b, 3c}$ 
 - **Format numbers**: Set max. decimal places $\mathrm{3a, 3b, 3c}$; When to show exponent $\mathrm{3c}$; Use German commas $\mathrm{3b}$
@@ -95,17 +76,7 @@ multi column header
 
 ![minimal 67.svg](./attachments/minimal%2067.svg)
 
-# Layout the table
-
-- Split in equal parts
-- See source examples: [Layout the table](./layout%20the%20table.md)
-
-4a: Longtable split in half
-
-![minimal 61.svg](./attachments/minimal%2061.svg)
-# Advanced input processing
-
-# Advanced cell content
+## Advanced input processing
 
 - formatted text, multicolumn, code in table, image in content, empty cell, postproc, true/false → tickboxes, postprocess make command, detect backtick for commands
 - convert backticks to verbatim
@@ -118,6 +89,43 @@ multi column header
 Image in table
 
 Calculate column sum
+
+# Layout, reference the table
+
+## Split table in page columns
+
+- Split in equal parts
+- See source examples: [Layout the table](./layout%20the%20table.md)
+- 4a: Longtable split in half
+- References
+
+![minimal 61.svg](./attachments/minimal%2061.svg)
+
+
+## Create a simple table with borders
+
+- Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$
+- Visually clarify **column titles** and **row titles**: Thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
+- Apply border **pattern**: Inner **gridlines** $\mathrm{1c}$
+- See source examples: [Create a simple table with borders](./create%20a%20simple%20table%20with%20borders.md)
+
+![minimal 45.svg](./attachments/minimal%2045.svg)
+
+## Add title and reference the table elsewhere
+
+- **Placement, alignment**: center the table horizontally
+- Add **references**: caption underneath and in the list of tables, label to cross-reference elsewhere
+- More ideas: legende, Multifigure, Split, Longtable, surpress tableoftables entry, table next to text, globally set placement specifiers
+- Center, Caption, Reference, Longtable, Caption below/above, Caption number, Figurename
+- See source examples [Add title numbers, caption, and reference the table elsewhere](./add%20title%20numbers,%20caption,%20and%20reference%20the%20table%20elsewhere.md) 
+
+2: diagonal cell A1
+multi column header
+
+![minimal 50.svg](./attachments/minimal%2050.svg)
+
+
+
 ```latex
 \documentclass{article}
 
