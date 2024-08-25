@@ -1,7 +1,7 @@
 
 
 
-![minimal 70.svg](./content/attachments/minimal%2070.svg)
+![minimal 72.svg](./content/attachments/minimal%2072.svg)
 
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
@@ -36,8 +36,8 @@ $\delta$ delta & U+03B4 & Alt 235 \\
 \begin{tblr}[tall,caption]{colspec={lcc},vline{2},hline{2}}
  & Word & Docs \\
 Collab. & ++ & ++ \\
-Price & - & ++ \\
-Simpe & o & + \\
+Price & -- & ++ \\
+Simple & $\circ$ & + \\
 \end{tblr}
 \hspace{1cm}
 \begin{tblr}[tall,caption]{colspec={lccc},vline{2},hline{2}}
