@@ -3,9 +3,22 @@ title: "Tables - Create tables and format by definiting styles in the preamble, 
 dg-publish: true
 dg-show-toc: true
 dg-permalink: latex-tables
+aliases:
+  - Table
 ---
+[table examples](table%20examples.md)
 
-# Motivation
+
+# Motivation, Design Principles 
+
+- compatible with Overleaf's pdflatex, Obsidian's Visual editor, Obsidian, Quartz, Powershell (gridview, csv, html, terminal), Excel, Python
+- no macros in table content
+- latex: format, layout table
+- table content must work in tabular
+
+- [Table interoperable designs](Table%20interoperable%20designs.md)
+
+
 
 - project independent
 - formatting shouldn't touch data
@@ -43,6 +56,11 @@ dg-permalink: latex-tables
 - **⟨file name or inline table⟩**: table **body** or relative **path** of file with table content
 - [p] minimal formatting information at the snippet; style **definitions** in the **preamble** preset the formatting globally
 - [p] the code is **independent** of the project: no user-defined macros; clearly shows which package draws the table
+
+# Format headings (first row, first column)
+
+See source examples: [Format table headings](Format%20table%20headings.md)
+![minimal 69.svg](./attachments/minimal%2069.svg)
 
 # Create a simple table with borders
 
@@ -944,6 +962,7 @@ Sources:
 Related:
 - [Graphical elements - Standardize tables, images, plots](./graphical%20elements.md)
 - [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex.md)
+- [Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography](./markup%20and%20typesetting%20systems.md)
 - [Style presets - Format your document after you written the content in Word, Latex, Markdown](Style%20presets%20-%20Format%20your%20document%20after%20you%20written%20the%20content%20in%20Word,%20Latex,%20Markdown.md)
 - [Excel to latex - Embed spreadsheet files as latex tables](Excel%20to%20latex%20-%20Embed%20spreadsheet%20files%20as%20latex%20tables.md)
 
