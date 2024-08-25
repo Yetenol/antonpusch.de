@@ -29,12 +29,9 @@ aliases:
 [Syntax - How to write tables](Syntax%20-%20How%20to%20write%20tables.md)
 
 # Format headings (first row, first column)
-- Remark overlong headings in footer
-- ToDo: describe x,y in footer
 
 See source examples: [Format table headings](Format%20table%20headings.md)
-![minimal 73.svg](./attachments/minimal%2073.svg)
-
+![minimal 74.svg](./attachments/minimal%2074.svg)
 # Process, format cell body
 
 ## Import data from files 
