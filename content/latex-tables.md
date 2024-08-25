@@ -60,7 +60,7 @@ aliases:
 # Format headings (first row, first column)
 
 See source examples: [Format table headings](Format%20table%20headings.md)
-![minimal 69.svg](./attachments/minimal%2069.svg)
+![minimal 71.svg](./attachments/minimal%2071.svg)
 
 # Create a simple table with borders
 

@@ -1,7 +1,7 @@
 
 
 
-![minimal 69.svg](./content/attachments/minimal%2069.svg)
+![minimal 70.svg](./content/attachments/minimal%2070.svg)
 
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
