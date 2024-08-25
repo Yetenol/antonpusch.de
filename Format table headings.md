@@ -1,7 +1,40 @@
 
+![minimal 74.svg](./content/attachments/minimal%2074.svg)
+
+```latex
+\documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
+\usepackage{tabularray}
+\UseTblrLibrary{diagbox}
+\SetTblrOuter{tall,caption}
+\SetTblrInner{baseline=T}
+\begin{document}
+\noindent
+\begin{tblr}{colspec={ccc},hline{1,Z}={.08em},hline{2},row{1}={font=\bfseries}}
+Name & Unicode & Alt code \\
+$\alpha$ alpha & U+03B1 & Alt 224 \\
+$\gamma$ gamma & U+0393 & Alt 226 \\
+$\delta$ delta & U+03B4 & Alt 235 \\
+\end{tblr}
+\hspace{1cm}
+\begin{tblr}[note{a}={Synchronous and asynchronous collaboration}]
+    {colspec={lcc},vline{2},hline{2}}
+ & Word & Docs \\
+Collab.\TblrNote{a} & ++ & ++ \\
+Price & -- & ++ \\
+Simple & $\circ$ & + \\
+\end{tblr}
+\hspace{1cm}
+\begin{tblr}[remark{$x$}={horizontal axis},remark{$y$}={vertical axis}]
+    {colspec={lccc},vline{2},hline{2},column{1}={colsep=2pt} }
+\diagbox{$x$}{$y$} &              0 &              1 &              2 \\
+0                  & $^1\!/_{\!16}$ & $^1\!/_{\!16}$ &            $0$ \\
+1                  & $^3\!/_{\!16}$ & $^3\!/_{\!16}$ & $^1\!/_{\!16}$ \\
+2                  & $0$ & $^4\!/_{\!16}$ & $^3\!/_{\!16}$ \\
+\end{tblr}
+\end{document}
+```
 
 
-![minimal 72.svg](./content/attachments/minimal%2072.svg)
 
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
