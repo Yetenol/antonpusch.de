@@ -18,8 +18,6 @@ aliases:
 
 - [Table interoperable designs](Table%20interoperable%20designs.md)
 
-
-
 - project independent
 - formatting shouldn't touch data
 - export from markdown
@@ -28,41 +26,14 @@ aliases:
 - why not calculate before hand?
 - tabularray great for formatting: better margin, auto fit cell content, easier cell formatting
 
-# More ideas
-
-- library diagbox for compined axis table
-
-# Syntax - How to write tables
-
-```tex
-\documentclass{article}
-\usepackage{pgfplotstable, ⟨dependencies for styles⟩}
-\pgfplotstableset{
-    /pgfplots/compat = 1.17,
-    mystyle/.style = {⟨define formatting style⟩},
-    ⟨apply global styles⟩
-}
-\begin{document}
-\pgfplotstabletypeset[⟨apply individual styles⟩]{
-    ⟨file name or inline table⟩
-}
-\end{document}
-```
-
-- **⟨dependencies for styles⟩**: some styles require additional packages
-- **⟨define formatting style⟩**: configure how tables with this style get **formatted**
-- **⟨apply global styles⟩**: list styles and configurations that are applied to **all** pgfplots tables
-- **⟨individual styles⟩**: list styles and configurations that are applied to **this** pgfplots tables
-- **⟨file name or inline table⟩**: table **body** or relative **path** of file with table content
-- [p] minimal formatting information at the snippet; style **definitions** in the **preamble** preset the formatting globally
-- [p] the code is **independent** of the project: no user-defined macros; clearly shows which package draws the table
+[Syntax - How to write tables](Syntax%20-%20How%20to%20write%20tables.md)
 
 # Format headings (first row, first column)
 
 See source examples: [Format table headings](Format%20table%20headings.md)
 ![minimal 73.svg](./attachments/minimal%2073.svg)
 
-# Process cell body
+# Process, format cell body
 
 ## Import data from files 
 
