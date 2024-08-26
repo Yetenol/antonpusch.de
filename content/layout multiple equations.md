@@ -37,7 +37,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu
 $$
 \frac{1}{2} + \frac{3}{4} = \frac{5}{4}
 $$
-```math
+```latex
 \begin{align*}
 {^{1}\!/_{\!2}} + {^{3}\!/_{\!4}} = {^{5}\!/_{\!4}} \\
 \tfrac{1}{2} + \tfrac{3}{4} = \tfrac{5}{4} \\
