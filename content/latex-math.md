@@ -3,9 +3,15 @@ title: "Math - Typeset, align, wrap, comment, enumerate, space out, scale, and s
 dg-publish: true
 dg-permalink: latex-math
 dg-show-toc: true
+aliases:
+  - Math
 ---
 
-# Motivation
+# Motivation, Design principles
+
+- compatible with Obsidian's MathJax, Quartz's KaTeX, Overleaf's pdflatex, Overleaf's visual editor's MathJax implementation
+- Erfahrung einfach lesbar
+
 
 Mainly based on [Mathematical Typesetting with LaTeX - Herbert Voß 2023](https://www.tug.org/~hvoss/PDF/mathmode.pdf) (view [TeX code](https://www.tug.org/~hvoss/)) which is an updated version of [Math mode - Herbert Voß 2014](https://mirror.physik.tu-berlin.de/pub/CTAN/obsolete/info/math/voss/mathmode/Mathmode.pdf).
 - Packages: amsmath, mathtools, empheq
@@ -41,7 +47,7 @@ $$
 **Display** mode, see $(\mathrm{1a\text{-}c})$ 
 - **Centered** equation(s): **Single** equation $\mathrm{(1a)}$ `\[` …`\]`, Multiple equations `\begin{gather*}`
 - Alternating **right/left**-aligned columns: **Separated** pairs $\text{(1b)}$ `\begin{align*}` - $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}` - Max. spaced-out to line width `\begin{flalign*}`
-- See source examples: [Vertically align equations](./vertically%20align%20equations.md)
+- See source examples: [Array-like environments - Align equations and relation symbol relative to each other](./array-like%20environments.md)
 
 **Nested array** of math with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
 - Surround with **delimiters**, see $\mathrm{(1d)}$: $\left( \begin{smallmatrix} c&c\\ c&c \end{smallmatrix} \right)$ `\begin{pmatrix}` - $\left\{ \begin{smallmatrix} l&l\\ l&l \end{smallmatrix} \right.$ `\begin{cases}`
@@ -96,9 +102,9 @@ $$
 
 # Comment, explain your calculations
 
-- Comment **relations**, see $\mathrm{4a}$: ${} \;{}^\text{def} {}$ Write short text **above**/below - $^i$ Put **longer** text in a separate **paragraph** - $^\text{use (4b)}$ Write **zero-width** overlapping text - $^{+xx}$ Write on a **extensible** arrow
-- Span **braces** under/over expressions, with possible overlap, see start of $\mathrm{4b}$ 
-- Comment nested **array**: Describe a case, see end of $\mathrm{4b}$; Name matrix columns and rows
+- Comment **relations**, see $\mathrm{(4a)}$: $\;{}^\text{def}$ Write short text **above**/below - $^i$ Put **longer** text in a separate **paragraph** - $^\text{use (4b)}$ Write **zero-width** overlapping text - $^{+xx}$ Write on a **extensible** arrow
+- Span **braces** under/over expressions, with possible overlap, see start of $\mathrm{(4b)}$ 
+- Comment nested **array**: Describe a case, see end of $\mathrm{(4b)}$; Name matrix columns and rows
 - See source examples: [Comment equation operators](Comment%20equation%20operators.md)
 
 $$
@@ -115,7 +121,7 @@ $\overset{i}{=}\;:$ Is equal because the function is symmetrical in the interval
 - roman style
 - ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/mathematical%20typesetting%20with%20latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)
 
-Calculations are shown in equation $[1]$ or ${} \mathrm{[2]\;(I)\; i\;ii\;linear\; [3]\;[3a]\;[3b]\;(I\text{-}3\text{-}0) } {}$.
+Calculations are shown in equation $[1]$ or $\mathrm{[2]\;(I)\; i\;ii\;linear\; [3]\;[3a]\;[3b]\;(I\text{-}3\text{-}0) }$.
 
 # Create commutative diagrams
 
@@ -136,8 +142,10 @@ $$
 - Spread math over multiple display columns $\mathrm{(5a)}$
 - Scale, Placement ${} \mathrm{(5b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
 - Spacing ${} \mathrm{(5c)} {}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
-- Formatting $\mathrm{(5d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough
-- See source examples: [Layout multiple equations](Layout%20multiple%20equations.md)
+- Formatting $\mathrm{(5d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough, allowlinebreak, delimitershortfal
+- See source examples: [Layout multiple equations](./layout%20multiple%20equations.md)
+
+
 
 $$
 \begin{gather*}
