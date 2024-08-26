@@ -2,6 +2,34 @@
 title: "Layout multiple equations"
 dg-publish: true
 ---
+# Numbers
+
+
+
+
+# Delimiters
+
+![minimal 80.svg](./attachments/minimal%2080.svg)
+
+```latex
+\documentclass{article}\pagestyle{empty}
+\usepackage{mathtools, amssymb, amsfonts}
+\begin{document}
+$\delimitershortfall=-1pt \left( \left( \left( ( ) \right) \right) \right)$ \qquad
+$\bigg( \Big( \big( ( ) \big) \Big) \bigg)$ \quad
+$\left( \left( \left( ( ) \right) \right) \right)$
+\end{document}
+```
+
+$$
+\bigg( \Big( \big( ( ) \big) \Big) \bigg) \quad
+\left( \left( \left( ( ) \right) \right) \right)
+$$
+
+```tex
+\left( \left( \left( ( ) \right) \right) \right) \qquad
+\bigg( \Big( \big( ( ) \big) \Big) \bigg)
+```
 
 # Fractions
 
