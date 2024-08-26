@@ -37,7 +37,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu
 $$
 \frac{1}{2} + \frac{3}{4} = \frac{5}{4}
 $$
-```latex
+```tex
 \begin{align*}
 {^{1}\!/_{\!2}} + {^{3}\!/_{\!4}} = {^{5}\!/_{\!4}} \\
 \tfrac{1}{2} + \tfrac{3}{4} = \tfrac{5}{4} \\
@@ -81,7 +81,8 @@ $$
     0 &= t+d & 0 &= t+d & 0 &= t+d & 0 &= t+d & 0 &= t+d
 \end{align*}
 $$
-```math
+
+```tex
 \begin{align*}
     a &= b+c & 0 &= t+d & 0 &= t+d & 0 &= t+d & 0 &= t+d & 0 &= t+d \\
     0 &= t+d & 0 &= t+d & 0 &= t+d & 0 &= t+d & 0 &= t+d
@@ -130,7 +131,7 @@ $$
 \end{align*}
 $$
 
-```math
+```tex
 \begin{align*} \qquad&\hspace{-2em}
 \Big( \exists\, y : \neg \big( P_1(y) \lor P_2(y) \big) \Big) \lor \neg \big( \forall\, z : \neg P_2(z) \lor P_1(z) \big) \to \big( \exists\, x : \neg P_1(x) \big) \\&
 \overset{\mathclap{\text{Proposition 0.5.6}}}{\equiv}\hspace{2em} \neg\big(\forall\, y : P_1(y) \lor P_2(y)\big) \lor \neg\big(\forall\, z : \neg P_2(z) \lor  P_1(z)\big) \to \big(\exists\, x : \neg P_1(x)\big) \\&
