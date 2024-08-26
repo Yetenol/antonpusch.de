@@ -1,5 +1,4 @@
 ---
-title: "Layout the document - Setup margins, hyphenation, table of contents"
 dg-publish: true
 priority: 7
 ---
