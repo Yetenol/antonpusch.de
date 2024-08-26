@@ -1,5 +1,4 @@
 ---
-title: "Mengenoperationen"
 aliases:
   - Vereinigung
   - Schnitt
@@ -34,9 +33,9 @@ Sources:
 - 2023-04-20: [Begriffe und Mathematische Objekte](https://isis.tu-berlin.de/pluginfile.php/2819913/mod_resource/content/1/01_mengen.pdf)
 
 Related:
-- [Menge](Menge.md)
-- [DS Test 2023-06-01](DS%20Test%202023-06-01.md)
- 
+```dynamic-embed
+[[List related notes]]
+``` 
 
 Tags:
 [Aussagen- und Prädikatenlogik](Aussagen-%20und%20Pr%C3%A4dikatenlogik.md)

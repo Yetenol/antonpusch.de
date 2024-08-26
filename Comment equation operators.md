@@ -25,7 +25,7 @@ g(x) = a_0 x^4 \tag{1}
 \end{gather*}
 $$
 
-```math
+```latex
 f(g(x)) \overset{\text{nutze \eqref{eq:inner}}}{=} f(a_0 x^4)
 g(x) = a_0 x^4 \vphantom{eq:inner}\tag{*} 
 ```

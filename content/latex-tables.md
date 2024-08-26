@@ -15,6 +15,7 @@ aliases:
 - no macros in table content
 - latex: format, layout table
 - table content must work in tabular
+- no pgfmathparse of texttt in every cell, easy to edit values
 
 - [Table interoperable designs](Table%20interoperable%20designs.md)
 
@@ -29,10 +30,17 @@ aliases:
 [Syntax - How to write tables](Syntax%20-%20How%20to%20write%20tables.md)
 
 # Format headings (first row, first column)
+- Multicolumn header
+- Stats
 
 See source examples: [Format table headings](Format%20table%20headings.md)
 ![minimal 74.svg](./attachments/minimal%2074.svg)
 # Process, format cell body
+
+
+## Format raw cell body
+
+- [Format raw cell body](Format%20raw%20cell%20body.md)
 
 ## Import data from files 
 

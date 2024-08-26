@@ -1,5 +1,4 @@
 ---
-title: "Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page"
 dg-publish: true
 ---
 

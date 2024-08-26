@@ -1,5 +1,4 @@
 ---
-title: "Diskrete Strukturen"
 aliases:
   - DS
 mts-id: 40024
@@ -42,16 +41,9 @@ Erwartungen für Induktionsbeweis:
 TODO
 - Greedy Färbealgorithmus
 
-- [organisiere Diskrete Strukturen](organisiere%20Diskrete%20Strukturen.md)
-- [Berechne die Wahrscheinlichkeit in Urnenmodellen](Berechne%20die%20Wahrscheinlichkeit%20in%20Urnenmodellen.md)
-- [Ordne Relation Eigenschaften zu](Ordne%20Relation%20Eigenschaften%20zu.md)
-- [Beweise kombinatorische Aussagen - Rechne mit Kardinalitäten](Beweise%20kombinatorische%20Aussagen%20-%20Rechne%20mit%20Kardinalit%C3%A4ten.md)
-- [Mengenoperationen](Mengenoperationen.md)
-- [Teilmenge](Teilmenge.md)
-- [Graphentheorie](Graphentheorie.md)
-- [formulierte in Diskrete Strukturen](formulierte%20in%20Diskrete%20Strukturen.md)
-- [Diskret im Gegensatz zu Kontinuierlichem](Diskret%20im%20Gegensatz%20zu%20Kontinuierlichem.md)
- 
+```dynamic-embed
+[[List related notes]]
+``` 
 # Inhalt
 
 Kombinatorik

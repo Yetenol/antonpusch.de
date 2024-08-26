@@ -18,7 +18,7 @@ priority: 1
 | $\ge$ `\ge`, `\geq`                                  | $\ngeq$ `\ngeq`             |
 | $\triangleq$ `\triangleq`<br>$\coloneqq$ `\coloneqq` |                             |
 | $\equiv$ `\equiv`                                    | $\not\equiv$ `\not\equiv`   |
-| $\in$ `\in`                                          | $\notin$ `\notin`        |
+| $\in$ `\in`                                          | $\notin$ `\notin`           |
 | $\ni$ `\ni`                                          | $\not\ni$ `\not\ni`[^1]     |
 | $\subset$ `\subset`                                  | $\not\subset$ `\not\subset` |
 | $\supset$ `\supset`                                  | $\not\supset$ `\not\supset` |
@@ -104,7 +104,7 @@ Operators with **function name**
 Use **limits**, or exponents and indices $\mathrm{(1d)}$
 - **Display mode** defaults to **limits**; to force exponents and indices `\lim\nolimits_0^1`
 - **Text mode** defaults to **exponents** and **indices**; to force limits `\sum\limits_0^1`
-- See [Layout multiple equations](Layout%20multiple%20equations.md)
+- See [Layout multiple equations](./layout%20multiple%20equations.md)
 
 # Greek Letters
 

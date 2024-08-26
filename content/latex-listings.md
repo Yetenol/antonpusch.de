@@ -1,5 +1,4 @@
 ---
-title: "Listings - Print source code with syntax highlighting in latex with listings"
 dg-publish: true
 dg-permalink: latex-listings
 ---
@@ -228,9 +227,9 @@ Try the package `\usepackage{amsmath}` instead.
 Sources:
 
 Related:
-- [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex.md)
-- [Style presets - Format your document after you written the content in Word, Latex, Markdown](Style%20presets%20-%20Format%20your%20document%20after%20you%20written%20the%20content%20in%20Word,%20Latex,%20Markdown.md)
-
+```dynamic-embed
+[[List related notes]]
+```
 
 Tags:
 [Graphical elements - Standardize tables, images, plots](./graphical%20elements.md)
