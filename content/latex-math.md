@@ -116,12 +116,26 @@ x = \mathrlap{\phantom{(x)}\overbrace{\phantom{x xx}}^{\text{for }x}}  \underbra
 $$
 $\overset{i}{=}\;:$ Is equal because the function is symmetrical in the interval $[-1, 1]$.
 
-# Reference equations
+# Reference, highlight equations
 
 - roman style
 - ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/mathematical%20typesetting%20with%20latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)
 
-Calculations are shown in equation $[1]$ or $\mathrm{[2]\;(I)\; i\;ii\;linear\; [3]\;[3a]\;[3b]\;(I\text{-}3\text{-}0) }$.
+Equation number ${} \mathrm{(5a)} {}$: Use different alphabets to reference equations: 
+
+Formatting $\mathrm{(5d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath
+
+$$
+\begin{gather*} \\
+\text{[1], [2], (I), i, ii, linear, [3], [3a], [3b], or (I-3-0)} \tag{5a} \\
+x + \boldsymbol{xx^{x}x} + \cancel{xx^{x}x} + \boxed{xx^{x}x} + \begin{array}{:c:} \hdashline\! xx^{x}x \!\\ \hdashline \end{array} +x \tag{5b} \\
+\end{gather*}
+$$
+
+
+$$
+\textcolor{magenta}{a + b^2},\; \cancel{a + b^2},\; \boxed{a + b^2},\; \begin{array}{:c:} \hdashline a + b^2 \\ \hdashline \end{array} \tag{5d}
+$$
 
 # Create commutative diagrams
 
@@ -140,9 +154,9 @@ $$
 # Layout multiple equations
 
 - Spread math over multiple display columns $\mathrm{(5a)}$
-- Scale, Placement ${} \mathrm{(5b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
-- Spacing ${} \mathrm{(5c)} {}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
-- Formatting $\mathrm{(5d)}$: color `\textcolor`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`, boldmath, titlemath, everydisplay, everymath, underline, long text -> parbox, strikethrough, allowlinebreak, delimitershortfal
+- Scale, Placement $\mathrm{(5b)}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
+- Spacing $\mathrm{(5c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
+- everydisplay, everymath, underline, long text -> parbox, strikethrough, allowlinebreak, delimitershortfal
 - See source examples: [Layout multiple equations](./layout%20multiple%20equations.md)
 
 
@@ -152,7 +166,6 @@ $$
 \hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{5a} \\
 \Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{5b} \\
 \begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{5c} \\ 
-\textcolor{magenta}{a + b^2},\; \cancel{a + b^2},\; \boxed{a + b^2}\; \begin{array}{:c:} \hdashline a + b^2 \\ \hdashline \end{array} \tag{5d}
 \end{gather*}
 $$
 
