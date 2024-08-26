@@ -166,7 +166,9 @@ Sources:
 - [TikZ and PGF | TeXample.net](http://www.texample.net/tikz/)
 
 Related:
-
+```dynamic-embed
+[[List related notes]]
+```
 
 Tags:
 [Graphical elements - Standardize tables, images, plots](./content/graphical%20elements.md)
