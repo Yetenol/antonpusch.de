@@ -125,8 +125,8 @@ $\overset{i}{=}\;:$ Is equal because the function is symmetrical in the interval
 
 $$
 \begin{gather*} \\
-\text{[1], [2], (I), i, ii, linear, [3], [3a], [3b], or (I-3-0)} \tag{5a} \\
-x + \boldsymbol{xx^{x}x} + \cancel{xx^{x}x} + \boxed{xx^{x}x} + \begin{array}{:c:} \hdashline\! xx^{x}x \!\\ \hdashline \end{array} +x \tag{5b} \\
+\text{[1], [2], (I), i, ii, linear, [3a], [3b], (I-3-0)} \tag{5a} \\
+x + \boldsymbol{xx^{x}x} + \cancel{xx^{x}x} + \boxed{xx^{x}x} + \begin{array}{:c:} \hdashline\! xx^{x}x \!\\ \hdashline \end{array} \tag{5b} \\
 \end{gather*}
 $$
 
@@ -146,7 +146,8 @@ $$
 
 # Follow varying typographic conventions with the same input syntax
 
-- Auto-scale left-right delimiter pairs ${} \mathrm{(6a)} {}$: `\delimitershortfall`
+- [c] not supported in Obsidian (mathjax)
+- Auto-scale left-right delimiter pairs $\mathrm{(6a)}$: `\delimitershortfall`
 - Fraction in textstyle $\mathrm{(6b)}$: `\frac` - `\sfrac` - `\nicefrac`
 - European, American number format $\mathrm{(6c)}$: `\num` - `\pgfmathprintnumber`
 - Units, quantities $\mathrm{(6d)}$: `\unit` - `\qty`
@@ -160,7 +161,7 @@ $$
 \frac{235}{711} \quad \tfrac{235}{711} \quad  {^{235} {\!/\!} _{711}} \quad {^{235} \mathclap{\diagup} _{711}} \tag{6b} \\
 2.71828\times 10^{3} \quad 2{,}72\cdot 10^{3} \quad 2\,718{,}28 \tag{6c} \\
 1 \, \mathrm{kg\, m / s^2} \quad 1 \, \mathrm{kg\, m s^{-2}} \quad 1 \, \mathrm{\tfrac{kg\, m}{s^2} } \tag{6d} \\
-1{,}50 \,\text€ \quad $\, 1.50 \quad 2 \,¥ \quad 1.50 \,\text{GBP} \tag{6e} \\
+1{,}50 \,\text€ \quad \, 1.50 \quad 2 \,¥ \quad 1.50 \,\text{GBP} \tag{6e} \\
 \text{2024-08-27\quad Aug. 27, '24\quad 27. August 2024} \tag{6f}
 \end{gather*}
 $$
