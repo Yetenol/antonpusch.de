@@ -164,20 +164,20 @@ $$
 (\, )\; \lgroup\,\rgroup\; [\,]\; \{\,\}\;  \vert\,\vert\; \Vert\, \Vert\; \lfloor\,\rfloor\; \lceil\,\rceil\; \langle\,\rangle\; \ulcorner\,\urcorner\; \llcorner\,\lrcorner\; \uparrow\,\downarrow\; \updownarrow\,\Updownarrow\; \Uparrow\,\Downarrow
 $$
 
-| Math                                                        | Markup                                         |
-| ----------------------------------------------------------- | ---------------------------------------------- |
-| $(x), \binom{n}{k},{n \choose k}$                           | `(`…`)` - <br>`\binom{n}{k}` - `{n \choose k}` |
+| Math                                                  | Markup                                         |
+| ----------------------------------------------------- | ---------------------------------------------- |
+| $(x), \binom{n}{k},{n \choose k}$                     | `(`…`)` - <br>`\binom{n}{k}` - `{n \choose k}` |
 | $\lgroup x\rgroup$                                    | `\lgroup`…`\rgroup`                            |
-| $[x],  {n \brack k}$                                        | `[`…`]` - <br>`{n \brack k}`                   |
-| $\{x\}, {n \brace k}$                                       | `\{`…`\}` - <br>`{n \brace k}`                 |
-| $\vert x\vert$                                              | `\vert`…`\vert`                                |
-| $x \mid  x \in \mathbb{N}$                                  | …`\mid`…                                       |
+| $[x],  {n \brack k}$                                  | `[`…`]` - <br>`{n \brack k}`                   |
+| $\{x\}, {n \brace k}$                                 | `\{`…`\}` - <br>`{n \brace k}`                 |
+| $\vert x\vert$                                        | `\vert`…`\vert`                                |
+| $x \mid  x \in \mathbb{N}$                            | …`\mid`…                                       |
 | $\left\{ x \;\middle\vert\; x > \frac{1}{2} \right\}$ | `\left\{`…`\;\middle\vert\;`…`\right\}`        |
 | $\Vert \vec{x} \Vert$                                 | `\Vert`…`\Vert`                                |
 | $AB \parallel CD$                                     | …`\parallel`…                                  |
-| $\lfloor x \rfloor$                                         | `\lfloor`…`\rfloor`                            |
-| $\lceil x \rceil$                                           | `\lceil`…`\rceil`                              |
-| $\langle x \rangle$                                         | `\langle`…`\rangle`                            |
+| $\lfloor x \rfloor$                                   | `\lfloor`…`\rfloor`                            |
+| $\lceil x \rceil$                                     | `\lceil`…`\rceil`                              |
+| $\langle x \rangle$                                   | `\langle`…`\rangle`                            |
 
 See more delimiters in external resources
 - [Delimiters](https://katex.org/docs/supported#delimiters) from KaTeX docs
