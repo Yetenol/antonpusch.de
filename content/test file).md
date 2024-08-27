@@ -1,5 +1,4 @@
 ---
-title: "Test (File) - Test syntax for quartz"
 dg-publish: true
 map-category: Development
 ---
