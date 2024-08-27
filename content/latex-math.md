@@ -168,9 +168,9 @@ $$
 
 # Use typographic template for appearance of numbers
 
-- Spread math over multiple display columns $\mathrm{(6a)}$
-- Scale, Placement $\mathrm{(6b)}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
-- Spacing $\mathrm{(6c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
+- Spread math over multiple display columns ${} \mathrm{(7a)} {}$
+- Scale, Placement ${} \mathrm{(7b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
+- Spacing $\mathrm{(7c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
 - everydisplay, everymath, underline, long text -> parbox, strikethrough, allowlinebreak, delimitershortfal
 - See source examples: [Layout multiple equations](./layout%20multiple%20equations.md)
 
@@ -178,9 +178,9 @@ $$
 
 $$
 \begin{gather*}
-\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{6a} \\
-\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{6b} \\
-\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{6c} \\ 
+\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{7a} \\
+\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{7b} \\
+\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{7c} \\ 
 \end{gather*}
 $$
 
