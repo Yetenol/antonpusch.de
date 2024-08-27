@@ -161,7 +161,7 @@ $$
 \frac{235}{711} \quad \tfrac{235}{711} \quad  {^{235} {\!/\!} _{711}} \quad {^{235} \mathclap{\diagup} _{711}} \tag{6b} \\
 2.71828\times 10^{3} \quad 2{,}72\cdot 10^{3} \quad 2\,718{,}28 \tag{6c} \\
 1 \, \mathrm{kg\, m / s^2} \quad 1 \, \mathrm{kg\, m s^{-2}} \quad 1 \, \mathrm{\tfrac{kg\, m}{s^2} } \tag{6d} \\
-1{,}50 \,\text€ \quad \, 1.50 \quad 2 \,¥ \quad 1.50 \,\text{GBP} \tag{6e} \\
+1{,}50 \,\text€ \quad \$\, 1.50 \quad 2 \,¥ \quad 1.50 \,\text{GBP} \tag{6e} \\
 \text{2024-08-27\quad Aug. 27, '24\quad 27. August 2024} \tag{6f}
 \end{gather*}
 $$
@@ -169,7 +169,7 @@ $$
 
 # Use typographic template for appearance of numbers
 
-- Spread math over multiple display columns ${} \mathrm{(7a)} {}$
+- Spread math over multiple display columns $\mathrm{(7a)}$
 - Scale, Placement ${} \mathrm{(7b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
 - Spacing $\mathrm{(7c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
 - everydisplay, everymath, underline, long text -> parbox, strikethrough, allowlinebreak, delimitershortfal
