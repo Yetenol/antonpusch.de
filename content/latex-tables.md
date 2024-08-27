@@ -17,6 +17,11 @@ aliases:
 - table content must work in tabular
 - no pgfmathparse of texttt in every cell, easy to edit values
 
+> This package reads tab-separated numerical tables from input and generates code for pretty-printed
+> LATEX-tabulars. It rounds to the desired precision and prints it in different number formatting styles.
+- [Abstract p. 1](https://texdoc.org/serve/pgfplotstable/0) from PgfplotsTable Manual
+
+
 - [Table interoperable designs](Table%20interoperable%20designs.md)
 
 - project independent
@@ -35,12 +40,29 @@ aliases:
 
 See source examples: [Format table headings](Format%20table%20headings.md)
 ![minimal 74.svg](./attachments/minimal%2074.svg)
+
+$$
+\begin{array}{ccc} \hline
+\textbf{Name} & \textbf{Uniform} & \textbf{Alt code} \\ \hline
+\alpha\ \backslash\text{alpha} & \text{U+03B1} & \text{Alt 224} \\
+\gamma \backslash\text{gamma} & \text{U+0393} & \text{Alt 226} \\
+\delta \backslash\text{delta} & \text{U+03B4} & \text{Alt 235}   \\ \hline
+\end{array}
+$$
+
+| Name              | Uniform | Alt code |
+| ----------------- | ------- | -------- |
+| $\alpha$ `\alpha` | U+03B1  | Alt 224  |
+| $\gamma$ `\gamma` | U+0393  | Alt 226  |
+| $\delta$ `\delta` | U+03B4  | Alt 235  |
+
 # Process, format cell body
 
 
 ## Format raw cell body
 
 - [Format raw cell body](Format%20raw%20cell%20body.md)
+- See [Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
 
 ## Import data from files 
 
