@@ -46,9 +46,9 @@ $$
 \text{Table 1a:} \\
 \begin{array}{ccc} \hline
 \textbf{Name} & \textbf{Uniform} & \textbf{Alt code} \\ \hline
-\alpha\ \backslash\text{alpha} & \text{U+03B1} & \text{Alt 224} \\
-\gamma \backslash\text{gamma} & \text{U+0393} & \text{Alt 226} \\
-\delta \backslash\text{delta} & \text{U+03B4} & \text{Alt 235}   \\ \hline
+\alpha\ \backslash\texttt{alpha} & \text{U+03B1} & \text{Alt 224} \\
+\gamma\ \backslash\texttt{gamma} & \text{U+0393} & \text{Alt 226} \\
+\delta\ \backslash\texttt{delta} & \text{U+03B4} & \text{Alt 235}   \\ \hline
 \end{array}
 \end{gather*}
 $$
