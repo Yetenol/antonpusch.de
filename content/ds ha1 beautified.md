@@ -51,9 +51,9 @@ M & = 11 \cdot 19 \cdot 20 \cdot 21 \cdot 23 \\
 \quad
 \begin{aligned}
 M_{i} & = {^M  {\!/\!}_{m_{i}}} \\
-M_{1} &= {^M {\!/\!}_{11}} = 19 \cdot 20 \cdot 21 \cdot 23 = 183\,540 \\ 
-M_{2} &= {^M {\!/\!}_{19}} = 11 \cdot 20 \cdot 21 \cdot 23 = 106\,260 \\
-M_{3} &= {^M {\!/\!}_{20}} = 11 \cdot 19 \cdot 21 \cdot 23 = 100\,947 \\
+M_{1} &= {^1 \mathclap{\diagup}_{23} } = 19 \cdot 20 \cdot 21 \cdot 23 = 183\,540 \\ 
+M_{2} &= {^1 \mathclap{\diagup}_{2} } = 11 \cdot 20 \cdot 21 \cdot 23 = 106\,260 \\
+M_{3} &= {^1 {\!\!\diagup\!\!}_{2}} = 11 \cdot 19 \cdot 21 \cdot 23 = 100\,947 \\
 M_{4} &= \tfrac{M}{21} = 11 \cdot 19 \cdot 20 \cdot 23 = 96\,140 \\
 M_{5} &= \frac{M}{23} = 11 \cdot 19 \cdot 20 \cdot 21 = 87\,780 \\
 \end{aligned}
