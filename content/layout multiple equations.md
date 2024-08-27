@@ -9,26 +9,25 @@ dg-publish: true
 
 # Delimiters
 
-![minimal 80.svg](./attachments/minimal%2080.svg)
+![minimal 82.svg](./attachments/minimal%2082.svg)
 
 ```latex
 \documentclass{article}\pagestyle{empty}
 \usepackage{mathtools, amssymb, amsfonts}
 \begin{document}
-$\delimitershortfall=-1pt \left( \left( \left( ( ) \right) \right) \right)$ \qquad
-$\bigg( \Big( \big( ( ) \big) \Big) \bigg)$ \quad
-$\left( \left( \left( ( ) \right) \right) \right)$
+$\displaystyle \left( \left( \left( ( ) \sqrt{2} \right) \right) \right)$ \quad
+$\displaystyle\delimitershortfall=-1pt \left( \left( \left( ( ) \sqrt{2} \right) \right) \right)$ \qquad
 \end{document}
 ```
 
 $$
-\bigg( \Big( \big( ( ) \big) \Big) \bigg) \quad
-\left( \left( \left( ( ) \right) \right) \right)
+\left( \left( \left( ( ) \sqrt{2}  \right) \right) \right) \qquad
+\Bigg( \bigg( \Big( ( ) \sqrt{2}  \Big) \bigg) \Bigg)
 $$
 
 ```tex
-\left( \left( \left( ( ) \right) \right) \right) \qquad
-\bigg( \Big( \big( ( ) \big) \Big) \bigg)
+\left( \left( \left( ( ) \sqrt{2}  \right) \right) \right) \qquad
+\Bigg( \bigg( \Big( ( ) \sqrt{2}  \Big) \bigg) \Bigg)
 ```
 
 # Fractions
