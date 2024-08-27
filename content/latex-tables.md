@@ -42,12 +42,15 @@ See source examples: [Format table headings](Format%20table%20headings.md)
 ![minimal 74.svg](./attachments/minimal%2074.svg)
 
 $$
+\begin{gather*}
+\text{Table 1a:} \\
 \begin{array}{ccc} \hline
 \textbf{Name} & \textbf{Uniform} & \textbf{Alt code} \\ \hline
 \alpha\ \backslash\text{alpha} & \text{U+03B1} & \text{Alt 224} \\
 \gamma \backslash\text{gamma} & \text{U+0393} & \text{Alt 226} \\
 \delta \backslash\text{delta} & \text{U+03B4} & \text{Alt 235}   \\ \hline
 \end{array}
+\end{gather*}
 $$
 
 | Name              | Uniform | Alt code |
