@@ -10,7 +10,8 @@ aliases:
 # Motivation, Design principles
 
 - compatible with Obsidian's MathJax, Quartz's KaTeX, Overleaf's pdflatex, Overleaf's visual editor's MathJax implementation
-- Erfahrung einfach lesbar
+- einfach lesbar
+- on-demand minimal syntax (add left-right, add braces around indices,exponents)
 
 
 Mainly based on [Mathematical Typesetting with LaTeX - Herbert Voß 2023](https://www.tug.org/~hvoss/PDF/mathmode.pdf) (view [TeX code](https://www.tug.org/~hvoss/)) which is an updated version of [Math mode - Herbert Voß 2014](https://mirror.physik.tu-berlin.de/pub/CTAN/obsolete/info/math/voss/mathmode/Mathmode.pdf).
@@ -118,10 +119,9 @@ $\overset{i}{=}\;:$ Is equal because the function is symmetrical in the interval
 
 # Reference, highlight equations
 
-Equation number $\mathrm{(5a)}$: Use arabic, roman, custom alphabets to reference equations 
-Highlight part of an equation $\mathrm{(5b)}$: Bold math `boldsymbol`, Diagonal strikeout `\cancel` - `\bcancel` - `\xcancel`, Draw rectangle around math `\boxed` - `\begin{array}`
-- color `\textcolor`, boldmath, titlemath, 
-- ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/mathematical%20typesetting%20with%20latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)
+- Equation number $\mathrm{(5a)}$: Combine **arabic, roman** alphabet; current **section, part** numbers; and static **delimiters, text** to reference the equation elsewhere
+- **Highlight** part of an equation $\mathrm{(5b)}$: **Bold** math `boldsymbol`, Diagonal **strikeout** `\cancel` - `\bcancel` - `\xcancel`, Draw **rectangle** around math `\boxed` - `\begin{array}`
+- More: color `\textcolor`, boldmath, titlemath, ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/mathematical%20typesetting%20with%20latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)
 
 $$
 \begin{gather*} \\
@@ -144,11 +144,33 @@ C @>d>> D
 \end{align*}
 $$
 
-# Layout multiple equations
+# Follow varying typographic conventions with the same input syntax
 
-- Spread math over multiple display columns $\mathrm{(5a)}$
-- Scale, Placement $\mathrm{(5b)}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
-- Spacing $\mathrm{(5c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
+- Auto-scale left-right delimiter pairs ${} \mathrm{(6a)} {}$: `\delimitershortfall`
+- Fraction in textstyle $\mathrm{(6b)}$: `\frac` - `\sfrac` - `\nicefrac`
+- European, American number format $\mathrm{(6c)}$: `\num` - `\pgfmathprintnumber`
+- Units, quantities $\mathrm{(6d)}$: `\unit` - `\qty`
+- Currencies, money $\mathrm{(6e)}$: `\dEUR` - `\cJPY`
+- Dates $\mathrm{(6f)}$: pgfcalendar
+
+$$
+\begin{gather*}
+\left( \left( \left( ( ) \sqrt{2}  \right) \right) \right) \quad
+\Bigg( \bigg( \Big( ( ) \sqrt{2}  \Big) \bigg) \Bigg) \tag{6a} \\
+\frac{235}{711} \quad \tfrac{235}{711} \quad  {^{235} {\!/\!} _{711}} \quad {^{235} \mathclap{\diagup} _{711}} \tag{6b} \\
+2.71828\times 10^{3} \quad 2{,}72\cdot 10^{3} \quad 2\,718{,}28 \tag{6c} \\
+1 \, \mathrm{kg\, m / s^2} \quad 1 \, \mathrm{kg\, m s^{-2}} \quad 1 \, \mathrm{\tfrac{kg\, m}{s^2} } \tag{6d} \\
+1{,}50 \,\text€ \quad $\, 1.50 \quad 2 \,¥ \quad 1.50 \,\text{GBP} \tag{6e} \\
+\text{2024-08-27\quad Aug. 27, '24\quad 27. August 2024} \tag{6f}
+\end{gather*}
+$$
+
+
+# Use typographic template for appearance of numbers
+
+- Spread math over multiple display columns $\mathrm{(6a)}$
+- Scale, Placement $\mathrm{(6b)}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
+- Spacing $\mathrm{(6c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
 - everydisplay, everymath, underline, long text -> parbox, strikethrough, allowlinebreak, delimitershortfal
 - See source examples: [Layout multiple equations](./layout%20multiple%20equations.md)
 
@@ -156,11 +178,13 @@ $$
 
 $$
 \begin{gather*}
-\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{5a} \\
-\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{5b} \\
-\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{5c} \\ 
+\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{6a} \\
+\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{6b} \\
+\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{6c} \\ 
 \end{gather*}
 $$
+
+
 
 # Things to avoid, deprecated, bad syntax
 
