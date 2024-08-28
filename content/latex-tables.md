@@ -7,8 +7,6 @@ aliases:
   - Table
 ---
 
-![minimal 89.svg](./attachments/minimal%2089.svg)
-
 # Motivation, Design Principles 
 
 - Keep the data in **raw** and **universal** (csv) form: Update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell
@@ -55,7 +53,7 @@ aliases:
 - Multicolumn header
 - See source examples: [Format table headings](./format%20table%20headings.md)
 
-![minimal 89.svg](./attachments/minimal%2089.svg)
+![minimal 93.svg](./attachments/minimal%2093.svg)
 
 # Process, format cell body
 
