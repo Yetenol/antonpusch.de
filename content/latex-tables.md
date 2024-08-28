@@ -6,8 +6,6 @@ dg-permalink: latex-tables
 aliases:
   - Table
 ---
-[table examples](table%20examples.md)
-
 
 # Motivation, Design Principles 
 
@@ -21,8 +19,7 @@ aliases:
 > LATEX-tabulars. It rounds to the desired precision and prints it in different number formatting styles.
 - [Abstract p. 1](https://texdoc.org/serve/pgfplotstable/0) from PgfplotsTable Manual
 
-
-- [Table interoperable designs](Table%20interoperable%20designs.md)
+## How to do it right
 
 - project independent
 - formatting shouldn't touch data
@@ -31,33 +28,28 @@ aliases:
 - pgf great for calculation
 - why not calculate before hand?
 - tabularray great for formatting: better margin, auto fit cell content, easier cell formatting
+- [Table interoperable designs](Table%20interoperable%20designs.md)
+
+# Examples
+
+- [table examples](table%20examples.md)
+- [Dos & don't of table design - Guide what to consider when creating tables](./dos%20don't%20of%20table%20design.md)
+- [Data Tables Design. Basics | by Taras Bakusevych | Medium](https://taras-bakusevych.medium.com/data-tables-design-3c705b106a64)
+- [Design better data tables](Design%20better%20data%20tables.md)
+- [getinthepicture.org/sites/default/files/resources/8. Good tables.pdf](https://getinthepicture.org/sites/default/files/resources/8.%20Good%20tables.pdf)
+- [What to consider when creating tables](https://blog.datawrapper.de/guide-what-to-consider-when-creating-tables/)
+- [Table vs Graph - The Visual Battle — storytelling with data](https://www.storytellingwithdata.com/blog/2011/11/visual-battle-table-vs-graph)
+- [How to design complex web tables | Slava Shestopalov | Design Bridges](https://medium.com/design-bridges/complex-tables-356826d11861)
+- [Interactive diagram](Interactive%20diagram.md)
 
 [Syntax - How to write tables](Syntax%20-%20How%20to%20write%20tables.md)
 
 # Format headings (first row, first column)
 - Multicolumn header
 - Stats
-
 See source examples: [Format table headings](Format%20table%20headings.md)
-![minimal 74.svg](./attachments/minimal%2074.svg)
 
-$$
-\begin{gather*}
-\text{Table 1a:} \\
-\begin{array}{ccc} \hline
-\textbf{Name} & \textbf{Uniform} & \textbf{Alt code} \\ \hline
-\alpha\ \backslash\texttt{alpha} & \text{U+03B1} & \text{Alt 224} \\
-\gamma\ \backslash\texttt{gamma} & \text{U+0393} & \text{Alt 226} \\
-\delta\ \backslash\texttt{delta} & \text{U+03B4} & \text{Alt 235}   \\ \hline
-\end{array}
-\end{gather*}
-$$
-
-| Name              | Uniform | Alt code |
-| ----------------- | ------- | -------- |
-| $\alpha$ `\alpha` | U+03B1  | Alt 224  |
-| $\gamma$ `\gamma` | U+0393  | Alt 226  |
-| $\delta$ `\delta` | U+03B4  | Alt 235  |
+![minimal 88.svg](./attachments/minimal%2088.svg)
 
 # Process, format cell body
 
@@ -126,6 +118,28 @@ Calculate column sum
 multi column header
 
 ![minimal 50.svg](./attachments/minimal%2050.svg)
+
+
+# Export formatted table
+
+
+$$
+\begin{gather*}
+\text{Table 1a:} \\
+\begin{array}{ccc} \hline
+\textbf{Name} & \textbf{Uniform} & \textbf{Alt code} \\ \hline
+\alpha\ \backslash\texttt{alpha} & \text{U+03B1} & \text{Alt 224} \\
+\gamma\ \backslash\texttt{gamma} & \text{U+0393} & \text{Alt 226} \\
+\delta\ \backslash\texttt{delta} & \text{U+03B4} & \text{Alt 235}   \\ \hline
+\end{array}
+\end{gather*}
+$$
+
+|       Name        | Uniform | Alt code |
+| :---------------: | :-----: | :------: |
+| $\alpha$ `\alpha` | U+03B1  | Alt 224  |
+| $\gamma$ `\gamma` | U+0393  | Alt 226  |
+| $\delta$ `\delta` | U+03B4  | Alt 235  |
 
 
 
