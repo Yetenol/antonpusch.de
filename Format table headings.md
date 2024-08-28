@@ -1,3 +1,70 @@
+![minimal 89.svg](./content/attachments/minimal%2089.svg)
+
+```latex
+\documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
+\usepackage{tabularray,rotating,makecell,mathtools,amsfonts,amssymb}
+\UseTblrLibrary{diagbox}
+\SetTblrOuter{tall,caption}
+\setlength\rotheadsize{1.25cm}
+\renewcommand\theadfont{}
+% Rotation: \rot[<angle>][<width>]{<stuff>}
+\NewDocumentCommand{\rot}{O{45} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
+\begin{document}
+\noindent
+\begin{tblr}{
+  colspec={lrrrr},
+  hline{1,Z}={.1em},hline{3},
+  column{1}={halign=l,cmd=\quad}, 
+    row{3-Z}={,rowsep=0pt},
+    row{3,6}={font=\bfseries,cmd={},abovesep=6pt,belowsep=2pt},
+    row{3}={abovesep=2pt},
+  cell{1}{2,4}={c=2}{c},
+    row{1-2}={halign=c},
+    column{4}={leftsep+=6pt},
+    hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
+    hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
+}
+& Dogs && Cats \\
+& M & F & M & F \\
+Age \\
+$< 18$   & 2 & 12 & 7 & 11 \\ 
+$\ge 18$ & 4 & 44 & 5 & 3 \\
+Residence \\
+Urban & 43 & 46 & 15 & 33 \\
+Rural & 5  & 12 &  - & 14 \\
+\end{tblr}
+\hspace{1em}
+\begin{tblr}[note{a}={Synchronous and asynchronous collaboration}]{
+  cell{1}{2-Z} = {halign=l,cmd=\rot},
+  colspec={lcc},hline{2,Z}={.1em},
+  column{1}={rightsep+=4pt},
+}
+Aspect & Overleaf & MarkMD \\
+Collab.\TblrNote{a} & ++ & ++ \\
+Price & -- & ++ \\
+Simple & $\circ$ & + \\
+\end{tblr}
+\hspace{2em}
+$\begin{tblr}[remark{$x$}={horizontal axis},remark{$y$}={vertical axis}]{
+  colspec={cccc},
+  vline{2}={2-Z}{.1em},
+  hline{2}={2-Z}{.1em},
+  cell{1}{1}={font=\bfseries,preto={\diagbox[linewidth=.1em]}},
+    column{1}={colsep=2pt},
+    cell{1}{2-Z}={valign=f},
+}
+{\boldsymbol{x}}{\boldsymbol{y}} & 0 & 1 & 2 \\
+0 & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} &              0 \\
+1 & ^3{\!/\!}_{16} & ^3{\!/\!}_{16} & ^1{\!/\!}_{16} \\
+2 & 0              & ^4{\!/\!}_{16} & ^3{\!/\!}_{16} \\
+\end{tblr}$
+\end{document}
+```
+
+# More examples
+
+
+
 ![minimal 87.svg](./content/attachments/minimal%2087.svg)
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}

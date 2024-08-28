@@ -7,14 +7,37 @@ aliases:
 ---
 
 - [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./latex-math.md)
+$$
+\begin{align*} \qquad&\hspace{-2em}
+\mathbb{P}(X+Y=k) 
+= \sum_{\mathclap{x \in X(\Omega)}} \mathbb{P}(X = x) \cdot \mathbb{P}(Y=k-x) \\&
+= \sum_{x = 0}^n \binom{n}{x}\, p^x\, (1-p)^{n-x} \cdot \binom{m}{k-x}\, q^{k-x}\, (1-q)^{m-(k-x)}
+\end{align*}
+$$
+
 - [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
+![minimal 89.svg](./attachments/minimal%2089.svg)
+
 - [Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
+![code block.svg](./attachments/code%20block.svg)
+- [Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
+$$
+\begin{gather*}
+\left( \left( \left( ( ) \sqrt{2}  \right) \right) \right) \quad
+\Bigg( \bigg( \Big( ( ) \sqrt{2}  \Big) \bigg) \Bigg) \tag{6a} \\
+\frac{235}{711} \quad \tfrac{235}{711} \quad  {^{235} {\!/\!} _{711}} \quad {^{235} \mathclap{\diagup} _{711}} \tag{6b} \\
+2.71828\times 10^{3} \quad 2{,}72\cdot 10^{3} \quad 2\,718{,}28 \tag{6c} \\
+1 \, \mathrm{kg\, m / s^2} \quad 1 \, \mathrm{kg\, m s^{-2}} \quad 1 \, \mathrm{\tfrac{kg\, m}{s^2} } \tag{6d} \\
+1{,}50 \,\text€ \quad \$\, 1.50 \quad 2 \,¥ \quad 1.50 \,\text{GBP} \tag{6e} \\
+\text{March 1, 2024 \quad 1. März '24} \tag{6f}
+\end{gather*}
+$$
+- [Values  - Standardize math, numbers, symbols, quantities, money](./values.md)
+- [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./float.md)
 - [Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design](Graphics,%20Plots%20-%20Generate%20dynamic%20professional%20vector%20graphics%20with%20matching%20fonts,%20design.md)
 - [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
-- [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./float.md)
 - [Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials](./learn%20and%20troubleshoot%20latex.md)
 - [Project structure - Create folders for setup, resources, bibliographies](./project%20structure.md)
-- [Values  - Standardize math, numbers, symbols, quantities, money](./values.md)
 - [Graphical elements - Standardize tables, images, plots](./graphical%20elements.md)
 - [Layout the document - Setup margins, hyphenation, table of contents](./layout%20the%20document.md)
 - [Develop LaTeX packages](./develop%20latex%20packages.md)
