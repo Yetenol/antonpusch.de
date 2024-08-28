@@ -38,7 +38,9 @@ Urban     & 43   & 46 & 15   & 33 \\
 Rural     & 5    & 12 & --   & 14 \\
 \end{tblr}
 \hspace{1em}
-\begin{tblr}[caption=Comparison,note{a}={Collaborate live with team members on the same document}]{
+\begin{tblr}[caption=Comparison, 
+  note{a}={Collaborate live with team members on the same document}
+]{
   colspec={lcc},
   hline{Z}={.1em}, hline{2}, 
   cell{1}{2-Z} = {halign=l,cmd=\rot},
@@ -51,7 +53,9 @@ Price   & o        & +        \\
 Simple  & -        & ++       \\
 \end{tblr}
 \hspace{2em}
-$\begin{tblr}[caption=Probabilities,remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
+$\begin{tblr}[caption=Probabilities,
+  remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}
+]{
   colspec={lccc},
   vline{2}={2-Z}{}, vline{Y}, hline{2}={2-Z}{}, hline{Y},
   cell{1}{1}={preto={\diagbox}}, column{1}={colsep=2pt},
