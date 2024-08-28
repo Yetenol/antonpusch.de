@@ -53,7 +53,7 @@ aliases:
 - Multicolumn header
 - See source examples: [Format table headings](./format%20table%20headings.md)
 
-![minimal 93.svg](./attachments/minimal%2093.svg)
+![minimal 94.svg](./attachments/minimal%2094.svg)
 
 # Process, format cell body
 
