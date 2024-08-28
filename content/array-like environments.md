@@ -1,4 +1,5 @@
 ---
+title: "Array-like environments - Align equations and relation symbol relative to each other"
 dg-publish: true
 ---
 
