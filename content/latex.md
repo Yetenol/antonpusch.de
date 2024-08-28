@@ -7,6 +7,7 @@ aliases:
 ---
 
 - [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./latex-math.md)
+
 $$
 \begin{align*} \qquad&\hspace{-2em}
 \mathbb{P}(X+Y=k) 
@@ -16,11 +17,15 @@ $$
 $$
 
 - [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
+
 ![minimal 89.svg](./attachments/minimal%2089.svg)
 
 - [Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
+
 ![code block.svg](./attachments/code%20block.svg)
+
 - [Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
+
 $$
 \begin{gather*}
 \left( \left( \left( ( ) \sqrt{2}  \right) \right) \right) \quad
@@ -32,6 +37,7 @@ $$
 \text{March 1, 2024 \quad 1. März '24} \tag{6f}
 \end{gather*}
 $$
+
 - [Values  - Standardize math, numbers, symbols, quantities, money](./values.md)
 - [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./float.md)
 - [Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design](Graphics,%20Plots%20-%20Generate%20dynamic%20professional%20vector%20graphics%20with%20matching%20fonts,%20design.md)

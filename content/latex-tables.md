@@ -46,18 +46,17 @@ aliases:
 
 # Format headings (first row, first column)
 - Multicolumn header
-- Stats
-See source examples: [Format table headings](Format%20table%20headings.md)
+- See source examples: [Format table headings](Format%20table%20headings.md)
 
 ![minimal 89.svg](./attachments/minimal%2089.svg)
 
 # Process, format cell body
 
-
 ## Format raw cell body
 
 - [Format raw cell body](Format%20raw%20cell%20body.md)
 - See [Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
+- Stats
 
 ## Import data from files 
 
