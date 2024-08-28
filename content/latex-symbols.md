@@ -104,7 +104,7 @@ Operators with **function name**
 Use **limits**, or exponents and indices $\mathrm{(1d)}$
 - **Display mode** defaults to **limits**; to force exponents and indices `\lim\nolimits_0^1`
 - **Text mode** defaults to **exponents** and **indices**; to force limits `\sum\limits_0^1`
-- See [Layout multiple equations](./layout%20multiple%20equations.md)
+- See [Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
 
 # Greek Letters
 
