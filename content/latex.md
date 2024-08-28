@@ -6,7 +6,7 @@ aliases:
   - LaTeX
 ---
 
-- [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./latex-math.md)
+[Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./latex-math.md)
 
 $$
 \begin{align*} \qquad&\hspace{-2em}
@@ -16,15 +16,15 @@ $$
 \end{align*}
 $$
 
-- [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
+[Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
 
-![minimal 93.svg](./attachments/minimal%2093.svg)
+![minimal 94.svg](./attachments/minimal%2094.svg)
 
-- [Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
+[Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
 
 ![code block.svg](./attachments/code%20block.svg)
 
-- [Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
+[Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
 
 $$
 \begin{gather*}
