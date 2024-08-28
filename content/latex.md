@@ -18,7 +18,7 @@ $$
 
 [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
 
-![minimal 94.svg](./attachments/minimal%2094.svg)
+![minimal 97.svg](./attachments/minimal%2097.svg)
 
 [Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
 
