@@ -215,16 +215,16 @@ These symbols can also be used in text mode.
 
 `€`, `\$`, `pounds` and `\yen` are not recommended
 
-| Command      | Rendering | Dependency                                                                                       |         |
-| ------------ | --------- | ------------------------------------------------------------------------------------------------ | ------- |
-| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
-| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [ setup](Standardize%20currencies%20and%20monetary%20values%20-.md) |
+| Dependency                                                                                       | Command      | Rendering |         |
+| ------------------------------------------------------------------------------------------------ | ------------ | --------- | ------- |
+| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\cEUR{}`    | €         | setup]] |
+| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\cUSD{}`    | $         | setup]] |
+| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\cJPY{}`    | ¥         | setup]] |
+| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\cGBP{}`    | £         | setup]] |
+| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\dEUR{1.5}` | 1.50 €    | setup]] |
+| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\dUSD{1.5}` | $ 1.50    | setup]] |
+| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\dJPY{1.5}` | 2 ¥       | setup]] |
+| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\dGBP{1.5}` | £ 1.50    | setup]] |
 
 # Degree Symbols
 
