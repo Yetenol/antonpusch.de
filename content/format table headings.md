@@ -2,7 +2,8 @@
 title: "Format table headings"
 dg-publish: true
 ---
-![minimal 94.svg](./attachments/minimal%2094.svg)
+
+![minimal 97.svg](./attachments/minimal%2097.svg)
 
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
@@ -15,40 +16,42 @@ dg-publish: true
 \NewDocumentCommand{\rot}{O{45} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
 \begin{document}
 \noindent
-\begin{tblr}{
+\begin{tblr}[caption=Pet Owners]{
   colspec={lrrrr},
   hline{1,Z}={.1em}, hline{3},
   column{1}={halign=l,cmd=\quad},
   row{3-Z}={,rowsep=0pt}, row{3}={abovesep=2pt},
   row{3,6}={font=\bfseries,cmd={},abovesep=6pt,belowsep=2pt},
   cell{1}{2,4}={c=2}{c}, row{1-2}={halign=c},
+  cell{1-2}{1}={l,cmd={}},
   column{4}={leftsep+=6pt},
   hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
   hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
 }
           & Dogs &    & Cats      \\
-          & M    & F  & M    & F  \\
+Owner     & M    & F  & M    & F  \\
 Age                               \\
 $< 18$    & 2    & 12 & 7    & 11 \\
 $\ge 18$  & 4    & 44 & 5    & 3  \\
 Residence                         \\
 Urban     & 43   & 46 & 15   & 33 \\
-Rural     & 5    & 12 & -    & 14 \\
+Rural     & 5    & 12 & --   & 14 \\
 \end{tblr}
 \hspace{1em}
-\begin{tblr}[note{a}={Synchronous and asynchronous collaboration}]{
+\begin{tblr}[caption=Comparison,note{a}={Collaborate live with team members on the same document}]{
   colspec={lcc},
   hline{Z}={.1em}, hline{2}, 
   cell{1}{2-Z} = {halign=l,cmd=\rot},
   column{1}={rightsep+=4pt},
+  cell{2-Z}{2-Z}={mode=math,cmd=\mathrm}, cell{2}{1}={appto=\TblrNote{a}},
 }
-Aspect              & Overleaf & MarkMD \\
-Collab.\TblrNote{a} & ++       & ++     \\
-Price               & --       & ++     \\
-Simple              & $\circ$  & +      \\
+Aspect  & Overleaf & Obsidian \\
+Collab. & ++       & --       \\
+Price   & o        & +        \\
+Simple  & -        & ++       \\
 \end{tblr}
 \hspace{2em}
-$\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
+$\begin{tblr}[caption=Probabilities,remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
   colspec={lccc},
   vline{2}={2-Z}{}, vline{Y}, hline{2}={2-Z}{}, hline{Y},
   cell{1}{1}={preto={\diagbox}}, column{1}={colsep=2pt},
