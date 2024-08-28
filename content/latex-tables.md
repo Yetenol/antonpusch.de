@@ -49,7 +49,7 @@ aliases:
 - Stats
 See source examples: [Format table headings](Format%20table%20headings.md)
 
-![minimal 88.svg](./attachments/minimal%2088.svg)
+![minimal 89.svg](./attachments/minimal%2089.svg)
 
 # Process, format cell body
 
