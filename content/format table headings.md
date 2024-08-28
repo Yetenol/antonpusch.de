@@ -2,7 +2,7 @@
 title: "Format table headings"
 dg-publish: true
 ---
-![minimal 93.svg](./attachments/minimal%2093.svg)
+![minimal 94.svg](./attachments/minimal%2094.svg)
 
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
@@ -143,7 +143,7 @@ System 3        & X &   &  X    \\
 
 # Two dimensional table
 
-![minimal 92.svg](./attachments/minimal%2092.svg)
+![minimal 95.svg](./attachments/minimal%2095.svg)
 
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
@@ -158,7 +158,7 @@ System 3        & X &   &  X    \\
 \begin{document}
 \noindent
 $\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
-  colspec={lccc},
+  colspec={lcccc},
   vline{2}={2-Z}{}, vline{Y}, hline{2}={2-Z}{}, hline{Y},
   cell{1}{1}={preto={\diagbox}}, column{1}={colsep=2pt},
   cell{1}{2-Y}={f}, cell{2-Y}{1}={c}, 
@@ -173,7 +173,7 @@ $\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
 \end{tblr}$
 \hspace{1em}
 $\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
-  colspec={lccc},
+  colspec={lcccc},
   hline{1,Z}={.1em}, hline{2}={leftpos=-7,endpos},
   cell{1}{1}={preto={\diagbox[linewidth=-100pt]}}, column{1}={colsep=2pt},
   cell{1}{2-Y}={f}, cell{2-Y}{1}={c}, 
