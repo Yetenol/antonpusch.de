@@ -7,15 +7,20 @@ aliases:
   - Math
 ---
 
-# Motivation, Design principles
+# Motivation, Design principles, Philosophy
 
 - compatible with Obsidian's MathJax, Quartz's KaTeX, Overleaf's pdflatex, Overleaf's visual editor's MathJax implementation
 - einfach lesbar
 - on-demand minimal syntax (add left-right, add braces around indices,exponents)
+- live in live preview
 
 
 Mainly based on [Mathematical Typesetting with LaTeX - Herbert Voß 2023](https://www.tug.org/~hvoss/PDF/mathmode.pdf) (view [TeX code](https://www.tug.org/~hvoss/)) which is an updated version of [Math mode - Herbert Voß 2014](https://mirror.physik.tu-berlin.de/pub/CTAN/obsolete/info/math/voss/mathmode/Mathmode.pdf).
 - Packages: amsmath, mathtools, empheq
+
+> The amsmath package is a LATEX package that provides miscellaneous enhancements for improving the information structure and printed output of documents
+> that contain mathematical formulas.
+- [Introduction p. 5](https://texdoc.org/serve/amsmath/0#page=5) from AMSmath User’s Guide
 
 # Syntax
 
@@ -130,6 +135,52 @@ x + \boldsymbol{xx^{x}x} + \cancel{xx^{x}x} + \boxed{xx^{x}x} + \begin{array}{:c
 \end{gather*}
 $$
 
+# Follow varying typographic conventions with the same input syntax
+
+- [c] usually not supported in Obsidian (MathJax); VSCode, Quartz (KaTeX)
+- [c] less readable source
+- [c] depend on package, or project
+- [p] formatting in separate from the document
+- Auto-scale left-right delimiter pairs $\mathrm{(6a)}$: `\delimitershortfall`
+- Fraction in textstyle $\mathrm{(6b)}$: `\frac` - `\sfrac` - `\nicefrac`
+- European, American number format $\mathrm{(6c)}$: `\num` - `\pgfmathprintnumber`
+- Units, quantities $\mathrm{(6d)}$: `\unit` - `\qty`
+- Currencies, money $\mathrm{(6e)}$: `\dEUR` - `\cJPY`
+- Dates $\mathrm{(6f)}$: pgfcalendar
+- See source examples: [Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
+
+$$
+\begin{gather*}
+\left( \left( \left( ( ) \sqrt{2}  \right) \right) \right) \quad
+\Bigg( \bigg( \Big( ( ) \sqrt{2}  \Big) \bigg) \Bigg) \tag{6a} \\
+\frac{235}{711} \quad \tfrac{235}{711} \quad  {^{235} {\!/\!} _{711}} \quad {^{235} \mathclap{\diagup} _{711}} \tag{6b} \\
+2.71828\times 10^{3} \quad 2{,}72\cdot 10^{3} \quad 2\,718{,}28 \tag{6c} \\
+1 \, \mathrm{kg\, m / s^2} \quad 1 \, \mathrm{kg\, m s^{-2}} \quad 1 \, \mathrm{\tfrac{kg\, m}{s^2} } \tag{6d} \\
+1{,}50 \,\text€ \quad \$\, 1.50 \quad 2 \,¥ \quad 1.50 \,\text{GBP} \tag{6e} \\
+\text{March 1, 2024 \quad 1. März '24} \tag{6f}
+\end{gather*}
+$$
+
+
+# Use typographic template for appearance of numbers
+
+- Spread math over multiple display columns $\mathrm{(7a)}$
+- Scale, Placement ${} \mathrm{(7b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
+- Spacing $\mathrm{(7c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
+- everydisplay, everymath, underline, long text -> parbox, strikethrough, allowlinebreak, delimitershortfal
+
+
+
+$$
+\begin{gather*}
+\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{7a} \\
+\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{7b} \\
+\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{7c} \\ 
+\end{gather*}
+$$
+
+
+
 # Create commutative diagrams
 
 - [Amscd graphs](Amscd%20graphs.md)
@@ -143,48 +194,6 @@ C @>d>> D
 \end{CD}
 \end{align*}
 $$
-
-# Follow varying typographic conventions with the same input syntax
-
-- [c] not supported in Obsidian (mathjax)
-- Auto-scale left-right delimiter pairs $\mathrm{(6a)}$: `\delimitershortfall`
-- Fraction in textstyle $\mathrm{(6b)}$: `\frac` - `\sfrac` - `\nicefrac`
-- European, American number format $\mathrm{(6c)}$: `\num` - `\pgfmathprintnumber`
-- Units, quantities $\mathrm{(6d)}$: `\unit` - `\qty`
-- Currencies, money $\mathrm{(6e)}$: `\dEUR` - `\cJPY`
-- Dates $\mathrm{(6f)}$: pgfcalendar
-
-$$
-\begin{gather*}
-\left( \left( \left( ( ) \sqrt{2}  \right) \right) \right) \quad
-\Bigg( \bigg( \Big( ( ) \sqrt{2}  \Big) \bigg) \Bigg) \tag{6a} \\
-\frac{235}{711} \quad \tfrac{235}{711} \quad  {^{235} {\!/\!} _{711}} \quad {^{235} \mathclap{\diagup} _{711}} \tag{6b} \\
-2.71828\times 10^{3} \quad 2{,}72\cdot 10^{3} \quad 2\,718{,}28 \tag{6c} \\
-1 \, \mathrm{kg\, m / s^2} \quad 1 \, \mathrm{kg\, m s^{-2}} \quad 1 \, \mathrm{\tfrac{kg\, m}{s^2} } \tag{6d} \\
-1{,}50 \,\text€ \quad \$\, 1.50 \quad 2 \,¥ \quad 1.50 \,\text{GBP} \tag{6e} \\
-\text{2024-08-27\quad Aug. 27, '24\quad 27. August 2024} \tag{6f}
-\end{gather*}
-$$
-
-
-# Use typographic template for appearance of numbers
-
-- Spread math over multiple display columns $\mathrm{(7a)}$
-- Scale, Placement ${} \mathrm{(7b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
-- Spacing $\mathrm{(7c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
-- everydisplay, everymath, underline, long text -> parbox, strikethrough, allowlinebreak, delimitershortfal
-- See source examples: [Layout multiple equations](./layout%20multiple%20equations.md)
-
-
-
-$$
-\begin{gather*}
-\hphantom{\cdots\quad} x = x \quad x = x \quad x = x \quad\cdots \tag{7a} \\
-\Big(\big(()\big)\Big),\; {\huge\sum_{j = 1}} \sum_{i = 1}^{\infty} i,\; \int_0^1 \int\limits_0^1 \tag{7b} \\
-\begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{7c} \\ 
-\end{gather*}
-$$
-
 
 
 # Things to avoid, deprecated, bad syntax
