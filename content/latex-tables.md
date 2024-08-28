@@ -7,8 +7,11 @@ aliases:
   - Table
 ---
 
+![minimal 89.svg](./attachments/minimal%2089.svg)
+
 # Motivation, Design Principles 
 
+- Keep the data in **raw** and **universal** (csv) form: Update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell
 - compatible with Overleaf's pdflatex, Obsidian's Visual editor, Obsidian, Quartz, Powershell (gridview, csv, html, terminal), Excel, Python
 - no macros in table content
 - latex: format, layout table
@@ -45,8 +48,12 @@ aliases:
 [Syntax - How to write tables](Syntax%20-%20How%20to%20write%20tables.md)
 
 # Format headings (first row, first column)
+- **Group** row, column headings, see 1a
+- Visually clarify table **boundaries**: Thick horizontal lines 1a
+- Visually clarify **column titles** and **row titles**: Thin border line 1b, 1c
+- Apply border **pattern**: Inner **gridlines** $\mathrm{1c}$
 - Multicolumn header
-- See source examples: [Format table headings](Format%20table%20headings.md)
+- See source examples: [Format table headings](./format%20table%20headings.md)
 
 ![minimal 89.svg](./attachments/minimal%2089.svg)
 
