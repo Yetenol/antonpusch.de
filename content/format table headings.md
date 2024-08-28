@@ -143,7 +143,7 @@ System 3        & X &   &  X    \\
 
 # Two dimensional table
 
-![minimal 91.svg](./attachments/minimal%2091.svg)
+![minimal 92.svg](./attachments/minimal%2092.svg)
 
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
@@ -175,7 +175,7 @@ $\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
 $\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
   colspec={lccc},
   hline{1,Z}={.1em}, hline{2}={leftpos=-7,endpos},
-  cell{1}{1}={preto={\diagbox[linecolor=white]}}, column{1}={colsep=2pt},
+  cell{1}{1}={preto={\diagbox[linewidth=-100pt]}}, column{1}={colsep=2pt},
   cell{1}{2-Y}={f}, cell{2-Y}{1}={c}, 
   cell{1,Z}{1}={font=\boldmath,l}, cell{1}{Z}={h,font=\boldmath},
   row{Z}={abovesep+=6pt}, column{Z}={leftsep+=6pt},
