@@ -1,12 +1,14 @@
-
-![minimal 74.svg](./content/attachments/minimal%2074.svg)
-
+![minimal 87.svg](./content/attachments/minimal%2087.svg)
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
-\usepackage{tabularray}
+\usepackage{tabularray,rotating,makecell}
 \UseTblrLibrary{diagbox}
 \SetTblrOuter{tall,caption}
-\SetTblrInner{baseline=T}
+\SetTblrInner{}
+\setlength\rotheadsize{1.25cm}
+\renewcommand\theadfont{}
+% Rotation: \rot[<angle>][<width>]{<stuff>}
+\NewDocumentCommand{\rot}{O{45} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
 \begin{document}
 \noindent
 \begin{tblr}{colspec={ccc},hline{1,Z}={.08em},hline{2},row{1}={font=\bfseries}}
@@ -15,7 +17,7 @@ $\alpha$ alpha & U+03B1 & Alt 224 \\
 $\gamma$ gamma & U+0393 & Alt 226 \\
 $\delta$ delta & U+03B4 & Alt 235 \\
 \end{tblr}
-\hspace{1cm}
+\hspace{1em}
 \begin{tblr}[note{a}={Synchronous and asynchronous collaboration}]
     {colspec={lcc},vline{2},hline{2}}
  & Word & Docs \\
@@ -23,7 +25,7 @@ Collab.\TblrNote{a} & ++ & ++ \\
 Price & -- & ++ \\
 Simple & $\circ$ & + \\
 \end{tblr}
-\hspace{1cm}
+\hspace{1em}
 \begin{tblr}[remark{$x$}={horizontal axis},remark{$y$}={vertical axis}]
     {colspec={lccc},vline{2},hline{2},column{1}={colsep=2pt} }
 \diagbox{$x$}{$y$} &              0 &              1 &              2 \\
@@ -31,10 +33,71 @@ Simple & $\circ$ & + \\
 1                  & $^3\!/_{\!16}$ & $^3\!/_{\!16}$ & $^1\!/_{\!16}$ \\
 2                  & $0$ & $^4\!/_{\!16}$ & $^3\!/_{\!16}$ \\
 \end{tblr}
+
+\vspace{1em}\noindent
+\begin{tblr}{
+  colspec={lrrrr},
+  hline{1,Z}={.08em},hline{3},
+  column{1}={halign=l,cmd=\quad}, 
+    row{3-Z}={,rowsep=0pt},
+    row{3,6}={font=\bfseries,cmd={},abovesep=6pt,belowsep=2pt},
+    row{3}={abovesep=2pt},
+  cell{1}{2,4}={c=2}{c},
+    row{1-2}={halign=c},
+    column{4}={leftsep+=6pt},
+    hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
+    hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
+}
+& Dogs && Cats \\
+& M & F & M & F \\
+Age \\
+$< 18$   & 2 & 12 & 7 & 11 \\ 
+$\ge 18$ & 4 & 44 & 5 & 3 \\
+Residence \\
+Urban & 43 & 46 & 15 & 33 \\
+Rural & 5  & 12 &  - & 14 \\
+\end{tblr}
+\hspace{1em}
+\begin{tblr}{
+  row{1} = {halign=l,cmd=\rot},
+  colspec={lcc},vline{2},hline{2},
+}
+& Property 1 & Property 2 & Property 3 \\
+System 1        &       &       &  X    \\ 
+System 2        & X     & X     &  X    \\
+System 3        & X &   &  X    \\
+\end{tblr}
 \end{document}
 ```
 
+# Alternative rotated column headers
 
+
+![minimal 85.svg](./content/attachments/minimal%2085.svg)
+```latex
+\documentclass{article}\pagestyle{empty}
+\usepackage{adjustbox,array}
+\newcolumntype{R}[2]{%
+    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+\newcommand*\rot{\multicolumn{1}{R{45}{1em}}}% no optional argument here, please!
+\begin{document}
+\begin{tabular}{r|ccc}
+&
+\rot{Property 1} &
+\rot{Property 2} &
+\rot{Property 3}
+    \\ \hline
+System 1        &       &       &  X    \\ 
+System 2        & X     & X     &  X    \\
+System 3        & X &   &  X    \\ \hline
+\end{tabular}
+\end{document}
+```
+
+# Old pgfplotstable version
 
 ```latex
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
