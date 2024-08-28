@@ -141,6 +141,73 @@ System 3        & X &   &  X    \\
 \end{document}
 ```
 
+# Two dimensional table
+
+![minimal 91.svg](./attachments/minimal%2091.svg)
+
+```latex
+\documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
+\usepackage{tabularray,rotating,makecell,mathtools,amsfonts,amssymb,xcolor}
+\UseTblrLibrary{diagbox}
+\SetTblrOuter{tall,caption}
+\setlength\rotheadsize{1.25cm}
+\renewcommand\theadfont{}
+% Rotation: \rot[<angle>][<width>]{<stuff>}
+\NewDocumentCommand{\rot}{O{45} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
+\NewDocumentCommand{\rotA}{O{0} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
+\begin{document}
+\noindent
+$\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
+  colspec={lccc},
+  vline{2}={2-Z}{}, vline{Y}, hline{2}={2-Z}{}, hline{Y},
+  cell{1}{1}={preto={\diagbox}}, column{1}={colsep=2pt},
+  cell{1}{2-Y}={f}, cell{2-Y}{1}={c}, 
+  cell{1,Z}{1}={font=\boldmath,l}, cell{1}{Z}={m,font=\boldmath},
+}
+{x}{y} & 0              & 1              & 2              & \Sigma        \\
+0      & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & 0              & ^1{\!/\!}_{8} \\
+1      & ^2{\!/\!}_{16} & ^3{\!/\!}_{16} & ^1{\!/\!}_{16} & ^3{\!/\!}_{8} \\
+2      & ^1{\!/\!}_{16} & ^3{\!/\!}_{16} & ^2{\!/\!}_{16} & ^3{\!/\!}_{8} \\
+3      & 0              & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & ^1{\!/\!}_{8} \\
+\Sigma & ^1{\!/\!}_{4}  & ^1{\!/\!}_{2}  & ^1{\!/\!}_{4}  &  1             \\
+\end{tblr}$
+\hspace{1em}
+$\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
+  colspec={lccc},
+  hline{1,Z}={.1em}, hline{2}={leftpos=-7,endpos},
+  cell{1}{1}={preto={\diagbox[linecolor=white]}}, column{1}={colsep=2pt},
+  cell{1}{2-Y}={f}, cell{2-Y}{1}={c}, 
+  cell{1,Z}{1}={font=\boldmath,l}, cell{1}{Z}={h,font=\boldmath},
+  row{Z}={abovesep+=6pt}, column{Z}={leftsep+=6pt},
+}
+{x}{y} & 0              & 1              & 2              & \Sigma        \\
+0      & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & 0              & ^1{\!/\!}_{8} \\
+1      & ^2{\!/\!}_{16} & ^3{\!/\!}_{16} & ^1{\!/\!}_{16} & ^3{\!/\!}_{8} \\
+2      & ^1{\!/\!}_{16} & ^3{\!/\!}_{16} & ^2{\!/\!}_{16} & ^3{\!/\!}_{8} \\
+3      & 0              & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & ^1{\!/\!}_{8} \\
+\Sigma & ^1{\!/\!}_{4}  & ^1{\!/\!}_{2}  & ^1{\!/\!}_{4}  &  1            \\
+\end{tblr}$
+\hspace{1em}
+$\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}]{
+  colspec={lcccc},
+  hline{1,Z}={.1em}, hline{2},
+  cell{3-6}{1}={cmd=\quad,font={}},
+  cell{1}{1}={r}, cell{1}{2-4}={mode=text,cmd={\\}},
+  column{1}={font=\boldmath}, row{1}={valign=h,font=\boldmath},
+  row{Z}={abovesep+=6pt}, column{Z}={leftsep+=6pt},
+}
+y=     & 0              & 1              & 2              & \Sigma        \\
+x=                                                                        \\
+0      & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & 0              & ^1{\!/\!}_{8} \\
+1      & ^2{\!/\!}_{16} & ^3{\!/\!}_{16} & ^1{\!/\!}_{16} & ^3{\!/\!}_{8} \\
+2      & ^1{\!/\!}_{16} & ^3{\!/\!}_{16} & ^2{\!/\!}_{16} & ^3{\!/\!}_{8} \\
+3      & 0              & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & ^1{\!/\!}_{8} \\
+\Sigma & ^1{\!/\!}_{4}  & ^1{\!/\!}_{2}  & ^1{\!/\!}_{4}  & 1             \\
+\end{tblr}$
+\end{document}
+```
+
+|                       | y=<br>0        | <br>1          | <br>2            | $\mathbb{P}(X=\cdot)$ |
 | --------------------- | -------------- | -------------- | ---------------- | --------------------- |
 | $\boldsymbol{x=}$     |                |                |                  |                       |
 | $\quad$ 0             | $^1\!/_{\!16}$ | $^1\!/_{\!16}$ | 0                | $^1\!/_{\!8}$         |
