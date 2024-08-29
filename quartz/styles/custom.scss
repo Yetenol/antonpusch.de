@@ -74,6 +74,11 @@ img[alt="thumbnail"] {
     max-height: 160px
 }
 
+// Hide Created with Quatz
+footer > p {
+    display: none;
+}
+
 // Smaller font size for headings
 h1 {
     font-size: 1.4rem !important;
