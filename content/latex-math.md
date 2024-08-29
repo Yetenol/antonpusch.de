@@ -6,17 +6,16 @@ dg-show-toc: true
 aliases:
   - Math
 ---
+# Motivation, Design Principles
 
-# Motivation, Design principles, Philosophy
+It's easy to start typesetting math, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. To prevent that, I evaluate my own practices with the following guidelines, improve or discard were needed, but keep it simple.
 
-- compatible with Obsidian's MathJax, Quartz's KaTeX, Overleaf's pdflatex, Overleaf's visual editor's MathJax implementation
-- einfach lesbar
-- on-demand minimal syntax (add left-right, add braces around indices,exponents)
-- live in live preview
+- Maximum **compatibility**: Use macros supported by KaTeX, MathJax, PdfLaTeX, to edit and preview in Obsidian, VSCode, or Overleaf, and to generate websites and PDFs.
+- **Portability**: **Established packages** are better implemented. **No custom macros** - Build-in macros might be longer, but everybody understands them.
+- **Math isn't programming**: I want to see, edit the typesetting in place and not jump through variable or macro definitions.
+- On-demand **minimal syntax**: Add complexity (like `\left`-`\right` or extra braces) only when needed.
 
-
-Mainly based on [Mathematical Typesetting with LaTeX - Herbert Voß 2023](https://www.tug.org/~hvoss/PDF/mathmode.pdf) (view [TeX code](https://www.tug.org/~hvoss/)) which is an updated version of [Math mode - Herbert Voß 2014](https://mirror.physik.tu-berlin.de/pub/CTAN/obsolete/info/math/voss/mathmode/Mathmode.pdf).
-- Packages: amsmath, mathtools, empheq
+My main resources are *Mathematical Typesetting with LaTeX*[^1] and the older LaTeX2 guide *The Not So Short Introduction to LATEX*[^2], as well as the AMSmath User’s Guide.
 
 > The amsmath package is a LATEX package that provides miscellaneous enhancements for improving the information structure and printed output of documents
 > that contain mathematical formulas.
@@ -210,3 +209,6 @@ Deprecated
 
 - In markdown put display math delimiters `$$` on a separate line
 - Don't leave spaces in front of caret to prevent block reference detection (write `a^2` instead of `a ^2`)
+
+[^1]: [Mathematical Typesetting with LaTeX](https://www.tug.org/~hvoss/PDF/mathmode.pdf) by Herbert Voß in 2024 which is an updated version of his 2014 [Math mode](https://mirror.physik.tu-berlin.de/pub/CTAN/obsolete/info/math/voss/mathmode/Mathmode.pdf) 
+[^2]: [The Not So Short Introduction to LATEX](https://tobi.oetiker.ch/lshort/lshort.pdf) - Or LATEX in 280 minutes by Tobias Oetiker, Marcin Serwin Hubert Partl, Irene Hyna, and Elisabeth Schlegl in 2023 which in based on the german [LATEX 2ε-Kurzbeschreibung](https://ftp.gwdg.de/pub/ctan/info/lshort/german/l2kurz.pdf) by Marco Daniel, Patrick Gundlach, Walter Schmidt, Jörg Knappen, Hubert Partl, and Irene Hyna in 2018

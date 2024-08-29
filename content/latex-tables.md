@@ -7,7 +7,7 @@ aliases:
   - Table
 ---
 
-# Design Principles
+# My Design Principles
 
 - Keep the table data **raw**, and readable: No macros in table content (except math macros supported by MathJax, KaTeX)
 - Row, column **headers**: More rows than columns; **Narrow** (down) **titles**; **Group** similar titles; Put more important columns to the left
