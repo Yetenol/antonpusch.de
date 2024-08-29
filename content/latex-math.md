@@ -6,7 +6,6 @@ dg-show-toc: true
 aliases:
   - Math
 ---
-# Motivation, Design Principles
 
 It's easy to start typesetting math, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. To prevent that, I evaluate my own practices with the following guidelines, improve or discard were needed, but keep it simple.
 
@@ -15,26 +14,13 @@ It's easy to start typesetting math, and rely on TeX Stack Exchange's plentiful 
 - **Math isn't programming**: I want to see, edit the typesetting in place and not jump through variable or macro definitions.
 - On-demand **minimal syntax**: Add complexity (like `\left`-`\right` or extra braces) only when needed.
 
-My main resources are *Mathematical Typesetting with LaTeX*[^1] and the older LaTeX2 guide *The Not So Short Introduction to LATEX*[^2], as well as the AMSmath User’s Guide.
+
+My main resources are *Mathematical Typesetting with LaTeX*[^1] and the older LaTeX2 guide *The Not So Short Introduction to LATEX*[^2], as well as the official package documentations.
 
 > The amsmath package is a LATEX package that provides miscellaneous enhancements for improving the information structure and printed output of documents
 > that contain mathematical formulas.
 - [Introduction p. 5](https://texdoc.org/serve/amsmath/0#page=5) from AMSmath User’s Guide
 
-# Syntax
-
-```latex
-\documentclass{article}
-\usepackage{mathtools,amssymb,amsfonts}
-\begin{document}
-Let $f = x^2 + \frac{1}{11}$:
-\begin{align*} \qquad&\hspace{-2em}
-\mathbb{P}(X+Y=k) 
-= \sum_{\mathclap{x \in X(\Omega)}} \mathbb{P}(X = x) \cdot \mathbb{P}(Y=k-x) \\&
-= \sum_{x = 0}^n \binom{n}{x}\, p^x\, (1-p)^{n-x} \cdot \binom{m}{k-x}\, q^{k-x}\, (1-q)^{m-(k-x)}
-\end{align*}
-\end{document}
-```
 
 Let $f = x^2 + \frac{1}{11}$:
 $$
@@ -44,6 +30,7 @@ $$
 = \sum_{x = 0}^n \binom{n}{x}\, p^x\, (1-p)^{n-x} \cdot \binom{m}{k-x}\, q^{k-x}\, (1-q)^{m-(k-x)}
 \end{align*}
 $$
+- See source example: [Showcase of math equations](Showcase%20of%20math%20equations.md)
 
 # Math modes
 
