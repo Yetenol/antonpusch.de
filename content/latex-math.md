@@ -8,7 +8,7 @@ aliases:
 ---
 
 It's easy to start typesetting math, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
-Therefore I wrote this guide. The following principles help me evaluate my own practices, improve or discard were needed, but keep it simple.
+Therefore, I developed these best practices following these guidelines:
 
 - Maximum **compatibility**: Use macros supported by KaTeX, MathJax, PdfLaTeX, to edit and preview in Obsidian, VSCode, or Overleaf, and to generate websites and PDFs.
 - **Portability**: **Established packages** are better implemented. **No custom macros** - Build-in macros might be longer, but everybody understands them.
