@@ -7,11 +7,9 @@ aliases:
   - Math
 ---
 
-It's easy to start typesetting math, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
-Therefore, I developed these best practices following these guidelines:
 
 - Maximum **compatibility**: Use macros supported by KaTeX, MathJax, PdfLaTeX, to edit and preview in Obsidian, VSCode, or Overleaf, and to generate websites and PDFs.
-- **Portability**: **Established packages** are better implemented. **No custom macros** - Build-in macros might be longer, but everybody understands them.
+- **Portability**: **Established packages** are better implemented. **No custom macros** - Built-in macros might be longer, but everybody understands them.
 - **Math isn't programming**: I want to see, edit the typesetting in place and not jump through variable or macro definitions.
 - On-demand **minimal syntax**: Add complexity (like `\left`-`\right` or extra braces) only when needed.
 
