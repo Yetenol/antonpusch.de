@@ -6,12 +6,13 @@ dg-show-toc: true
 aliases:
   - Math
 ---
-
+LaTeX's mathematical notation syntax has gained widespread adoption for formatting equations and formulas. It is now integrated into numerous digital platforms like markdown editors, web pages, word processing software, and online forums. But as with text, uniform, comprehensible formatting is not a matter of course. Good information is often spread across different documentation and organized according to implementation rather than the problem it solves.
+Therefore, I created my own documentation to achieve the following objectives:
 
 - Maximum **compatibility**: Use macros supported by KaTeX, MathJax, PdfLaTeX, to edit and preview in Obsidian, VSCode, or Overleaf, and to generate websites and PDFs.
-- **Portability**: **Established packages** are better implemented. **No custom macros** - Built-in macros might be longer, but everybody understands them.
-- **Math isn't programming**: I want to see, edit the typesetting in place and not jump through variable or macro definitions.
-- On-demand **minimal syntax**: Add complexity (like `\left`-`\right` or extra braces) only when needed.
+- **Portability**: Emphasis on **established packages** that are better implemented. **No custom macros** - Built-in macros might be longer, but they are universally understood.
+- Direct representation:  Seeing and editing the output values in place, rather than jumping through variables, dynamic calculations or macro definitions.
+- On-demand **minimal syntax**: Add complexity (like `\left`-`\right` or extra braces) only when needed to keep the expressions shorter, and visually light weight.
 
 My main resources are *Mathematical Typesetting with LaTeX*[^1] and the older LaTeX2 guide *The Not So Short Introduction to LATEX*[^2], as well as the official package documentations.
 
