@@ -41,6 +41,11 @@ article>*>img[src$=".svg"] {
     max-width: 100%;
 }
 
+// Invert SVGs in dark mode
+:root[saved-theme="dark"] article>*>img[src$=".svg"] {
+    filter: invert(1);
+}
+
 // Center tables
 .table-container>table {
     margin-left: auto;
