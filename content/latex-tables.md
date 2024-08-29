@@ -6,6 +6,7 @@ dg-permalink: latex-tables
 aliases:
   - Table
 ---
+There are dozens[^1] of packages for tables, and built-in environments, so what is the problem. 
 
 # My Design Principles
 
@@ -953,6 +954,8 @@ Longtblr
 \end{document}
 ```
 
+
+
 ---
 Sources:
 
@@ -965,3 +968,6 @@ Related:
 
 
 Tags:
+
+
+[^1]: Here are some of the packages for tables, though the descriptions are not good: [tables - Which tabular packages do which tasks and which packages conflict? - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/12672/which-tabular-packages-do-which-tasks-and-which-packages-conflict)
