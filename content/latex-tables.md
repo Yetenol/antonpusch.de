@@ -7,16 +7,17 @@ aliases:
   - Table
 ---
 
-# Design Principles 
+# Design Principles
 
 - Keep the table data **raw**, and readable: No macros in table content (except math macros supported by MathJax, KaTeX)
 - Row, column **headers**: More rows than columns; **Narrow** (down) **titles**; **Group** similar titles; Put more important columns to the left
-- Make layout **light-weight**: Few border lines; Spacing between cell, row, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
+- Make layout **light-weight**: Few border lines; Spacing between cells, rows, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
 - Horizontal **alignment**: **Left**-align text, row headers; **Right**-align numbers; **Center**-align column headers
 - [How to design good tables](How%20to%20design%20good%20tables.md)
 - [Syntax - How to write tables](Syntax%20-%20How%20to%20write%20tables.md)
 
 # Format headings (first row, first column)
+
 - **Group** row, column headings, see 1a
 - Visually clarify table **boundaries**: Thick horizontal lines 1a
 - Visually clarify **column titles** and **row titles**: Thin border line 1b, 1c; Left-aligned first column 1a, 1b
@@ -34,7 +35,7 @@ aliases:
 - See [Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
 - Stats
 
-## Import data from files 
+## Import data from files
 
 - Keep the data in **raw** and **universal** (csv) form: Update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell
 - Render **scientific notation** correctly and **uniform**: Render `4.41941738e-02` as $4.42 \cdot 10^{-2}$ $\mathrm{3a, 3b, 3c}$ 
@@ -71,7 +72,6 @@ Calculate column sum
 
 ![minimal 61.svg](./attachments/minimal%2061.svg)
 
-
 ## Create a simple table with borders
 
 - Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$
@@ -94,9 +94,7 @@ multi column header
 
 ![minimal 50.svg](./attachments/minimal%2050.svg)
 
-
 # Export formatted table
-
 
 $$
 \begin{gather*}
@@ -115,8 +113,6 @@ $$
 | $\alpha$ `\alpha` | U+03B1  | Alt 224  |
 | $\gamma$ `\gamma` | U+0393  | Alt 226  |
 | $\delta$ `\delta` | U+03B4  | Alt 235  |
-
-
 
 ```latex
 \documentclass{article}
@@ -174,7 +170,7 @@ $$
 
 - full key (similar to absolute path): starts with a `/` slash like `/pgf/table/a`
 - partial key (similar to relative path): doesn't start with a `/` slash like `a`
-- handler (like hidden files): start with a  `.` dot like `.code`
+- handler (like hidden files): start with a `.` dot like `.code`
 
 Handlers
 - change directory `.cd` like `\pgfkeys{/pgf/table/.cd, a=}`
@@ -194,7 +190,7 @@ Set key
 \pgfkeys{/my key=hi!} % Set key
 ```
 
-Get  key
+Get key
 ```latex
 \pgfkeys{/my key/.initial=red}
 \pgfkeys{/my key=blue}
@@ -214,6 +210,7 @@ Get  key
 ```
 - output: `(b:1)(a:1) (a:2)`
  
+
 # How
 
 - pgf keys for pgfplotstable styles
