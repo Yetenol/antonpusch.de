@@ -71,8 +71,10 @@ My setup
 ---
 Sources:
 - 2023-06-19: [How I'm able to take notes in mathematics lectures using LaTeX and Vim | Gilles Castel](https://castel.dev/post/lecture-notes-1/)
+- [The LaTeX fetish (Or: Don’t write in LaTeX! It’s just for typesetting) – Daniel Allington](http://www.danielallington.net/2016/09/the-latex-fetish/)
 
 Related:
+- [Markdown - Write plaintext in a centralized location and generate to PDF, Jupiter notebooks, web pages, social media posts](Markdown%20-%20Write%20plaintext%20in%20a%20centralized%20location%20and%20generate%20to%20PDF,%20Jupiter%20notebooks,%20web%20pages,%20social%20media%20posts.md)
 - [latex, pdf to cropped svg - Redraw selection of a pdf as paths in a svg with Inkscape](latex,%20pdf%20to%20cropped%20svg%20-%20Redraw%20selection%20of%20a%20pdf%20as%20paths%20in%20a%20svg%20with%20Inkscape.md)
 - [Excel to latex - Embed spreadsheet files as latex tables](Excel%20to%20latex%20-%20Embed%20spreadsheet%20files%20as%20latex%20tables.md)
  
