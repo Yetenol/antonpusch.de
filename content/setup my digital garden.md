@@ -64,7 +64,7 @@ Use `$1` to add a line break with pastes the grouped `(\n)` from the pattern
 - Don't put a line break behind the `$1`
 
 ```
-Setup my digital garden is a note$1- [[(Erweiterte) Entity-Relationship-Modellierung.md|(Erweiterte) Entity-Relationship-Modellierung]]
+Setup my digital garden is a note$1- [[01 Introduction - Computer networks, Classification, Multiplexing, Standardization.md|01 Introduction - Computer networks, Classification, Multiplexing, Standardization]]
 
 ```
 
