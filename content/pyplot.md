@@ -68,3 +68,5 @@ plt.ylabel('Y axis')
 plt.savefig(@vault_path + '/attachments/sine_wave_plot.svg', format='svg', dpi=300, bbox_inches='tight', transparent=True)
 plt.close()
 ```
+
+![sine_wave_plot.svg](./attachments/sine_wave_plot.svg)
