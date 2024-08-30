@@ -1,4 +1,5 @@
 ---
+title: "TYPST - A modern, readable, robust, fast typesetting system"
 dg-publish: true
 ---
 
