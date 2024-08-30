@@ -1,5 +1,4 @@
 ---
-title: "Bash Equivalents - Replace code from Linux Bash with PowerShell equivalents"
 dg-publish: true
 dg-show-toc: true
 ---

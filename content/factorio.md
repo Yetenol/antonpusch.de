@@ -1,5 +1,5 @@
 ---
-title: "Factorio"
+title: "Factorio - A game about automation, logistics and network optimizations"
 dg-publish: true
 microsoft-id: 
 winget-id: 
@@ -22,7 +22,7 @@ thumbnail: https://styles.redditmedia.com/t5_2wabp/styles/communityIcon_lnp25hfm
 ---
 
 ![thumbnail](https://styles.redditmedia.com/t5_2wabp/styles/communityIcon_lnp25hfmcbg01.png) 
-Factorio is a [gaming](install%20gaming%20apps.md.md) app. Factorio is a game in which you build and maintain factories. 
+Factorio - A game about automation, logistics and network optimizations is a [gaming](install%20gaming%20apps.md.md) app. Factorio is a game in which you build and maintain factories. 
 - Download it from the [publisher's website](https://factorio.com/download)
 - Open in [Steam](steam://store/427520)
 
@@ -129,6 +129,9 @@ Tweak game aspects - Does this mod go to far?
 
 # Extensions
 
+- Picket Dollies: Move combinators
+- Tree Xray: See below trees
+- Temporary Stop Default: No 5s restart timer
 | Name                                                                                                                 | Thumbnail                                                                                      | Modportal links                                                            | Categories                               | Description                                                                                                                                                                                              |
 | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **[Task List](./task%20list.md)**                                                                                 | ![](https://assets-mod.factorio.com/assets/9c1fa1d5fbf7e1f203c2e7e36dc54d4c635ceae6.thumb.png) | [Mod portal](https://mods.factorio.com/mod/TaskList)                       | Collaboration, Organisation, Multiplayer | Keep track of your tasks in a simple and unobtrusive interface. Similar to Todo List.                                                                                                                    |
@@ -153,6 +156,7 @@ Tweak game aspects - Does this mod go to far?
 | **[Long Inserters🗑](./long%20inserters.md)**                                                                     | ![](https://assets-mod.factorio.com/assets/05a7985a9f013255b622d76c09458b24cca4eaf4.thumb.png) | [Mod portal](https://mods.factorio.com/mod/Long%20Inserters)               | Content, Logistics                       | Adds long fast, filter and stack inserters.                                                                                                                                                              |
 | **[Blueprint logistics requests🗑](./blueprint%20logistics%20requests.md)**                                         | ![](https://assets-mod.factorio.com/assets/1fe6060b282db7106343a189815dff1e4a54566c.thumb.png) | [Mod portal](https://mods.factorio.com/mod/blueprint-request)              | Quality of life                          | A button that you can click with a blueprint in hand to add all its contents to your current personal logistics requests. Click multiple times to request more. Right click to request less, will not... |
 | **[Player Request Crafting Layout🗑](./player%20request%20crafting%20layout.md)**                                     | ![](https://assets-mod.factorio.com/assets/fd268eaf5688f5a78f594f9b4279f2e836a45e2d.thumb.png) | [Mod portal](https://mods.factorio.com/mod/player_request_crafting_layout) | Quality of life                          | A way for players to apply their crafting item layout to their logistics window                                                                                                                          |
+
 
 
 Replace local settings with synchronized cloud settings

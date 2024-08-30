@@ -1,5 +1,4 @@
 ---
-title: "Editor Extensions"
 dg-publish: true
 microsoft-id: 
 winget-id: 
@@ -14,13 +13,12 @@ categories:
   - Planning
 synopsis: |
   Extends the Factorio map editor with new tools and utilities, and makes tweaks to aid with sandbox play. Adds a suite of supercharged items and entities to assist with testing setups, and allows for easy and painless switching between the editor and normal play.
-extends-app: "[[Factorio|Factorio]]"
+extends-app: "[[Factorio - A game about automation, logistics and network optimizations|Factorio - A game about automation, logistics and network optimizations]]"
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/98e9b78eb4b0bee2c7543fd02f3f425f1a218ecf.thumb.png) 
-Editor Extensions is a [Factorio](./factorio.md) extension about testing, planning. Extends the Factorio map editor with new tools and utilities, and makes tweaks to aid with sandbox play. Adds a suite of supercharged items and entities to assist with testing setups, and allows for easy and painless switching between the editor and normal play.  
-- Install extension via [Mod portal](https://mods.factorio.com/mod/EditorExtensions)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Related articles
 

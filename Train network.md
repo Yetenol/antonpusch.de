@@ -1,4 +1,3 @@
-# Train network
 
 - 4 directional lanes
 - left-hand traffic

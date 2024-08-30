@@ -1,10 +1,10 @@
 
-| Resource     | Distance | Transport medium                            |     |
-| ------------ | -------- | ------------------------------------------- | --- |
-| items        | short    | belts                                       |     |
-| fluids       | short    | pipes                                       |     |
-| items/fluids | medium   | item/fluid busses with 4 lanes per item     |     |
-| items/fluids | long     | trains with requester and provider stations |     |
+| Resource     | Distance | Transport medium                            |
+| ------------ | -------- | ------------------------------------------- |
+| items        | short    | belts                                       |
+| fluids       | short    | pipes                                       |
+| items/fluids | medium   | item/fluid busses with 4 lanes per item     |
+| items/fluids | long     | trains with requester and provider stations |
 
 - order 2 rows max
 - use Spidertrons for bulk orders

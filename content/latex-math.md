@@ -9,9 +9,9 @@ aliases:
 LaTeX's mathematical notation syntax has gained widespread adoption for formatting equations and formulas. It is now integrated into numerous digital platforms like markdown editors, web pages, word processing software, and online forums. But as with text, uniform, comprehensible formatting is not a matter of course. Good information is often spread across different documentation and organized according to implementation rather than the problem it solves.
 Therefore, I created my own documentation to achieve the following objectives:
 
-- Maximum **compatibility**: Use macros supported by KaTeX, MathJax, PdfLaTeX, to edit and preview in Obsidian, VSCode, or Overleaf, and to generate websites and PDFs.
+- Maximum **compatibility**: Use macros supported by KaTeX, MathJax, PdfLaTeX, to edit and preview in Obsidian, VSCode, and Overleaf, and to generate websites and PDFs.
 - **Portability**: Emphasis on **established packages** that are better implemented. **No custom macros** - Built-in macros might be longer, but they are universally understood.
-- Direct representation:  Seeing and editing the output values in place, rather than jumping through variables, dynamic calculations or macro definitions.
+- **Direct** representation of **values**: I prefer seeing and editing the output values in place, rather than jumping through variables, dynamic calculations, or macro definitions.
 - On-demand **minimal syntax**: Add complexity (like `\left`-`\right` or extra braces) only when needed to keep the expressions shorter, and visually light weight.
 
 My main resources are *Mathematical Typesetting with LaTeX*[^1] and the older LaTeX2 guide *The Not So Short Introduction to LATEX*[^2], as well as the official package documentations.
@@ -29,7 +29,7 @@ $$
 = \sum_{x = 0}^n \binom{n}{x}\, p^x\, (1-p)^{n-x} \cdot \binom{m}{k-x}\, q^{k-x}\, (1-q)^{m-(k-x)}
 \end{align*}
 $$
-- See source example: [Showcase of math equations](Showcase%20of%20math%20equations.md)
+- See source example: [Showcase of math equations](./showcase%20of%20math%20equations.md)
 
 # Math modes
 
@@ -146,12 +146,11 @@ $$
 \end{gather*}
 $$
 
-
 # Use typographic template for appearance of numbers
 
 - Spread math over multiple display columns $\mathrm{(7a)}$
 - Scale, Placement ${} \mathrm{(7b)} {}$: **Scale delimiters** manually/automatically, Scale **repeating operators**, Force **limits**, or exponents and indices `\limit` - `\nolimit`, Scale equations `exscale`
-- Spacing $\mathrm{(7c)}$: After line breaks `\\[1ex]` - `\jot`,  fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
+- Spacing $\mathrm{(7c)}$: After line breaks `\\[1ex]` - `\jot`, fraction styles, 1000 separator, Index (icomma german), smash for inline math, `mathrlap`, Matrix spacing #30, styles, Fix delimiter space
 - everydisplay, everymath, underline, long text -> parbox, strikethrough, allowlinebreak, delimitershortfal
 
 
@@ -163,8 +162,6 @@ $$
 \begin{pmatrix} 0 1 \\[-1ex] 10 \\ 01 \end{pmatrix},\; \tfrac{3}{11} \, {}^{3\!}/_{\!11} \frac{3}{11}\,a,\; 12\,345 \tag{7c} \\ 
 \end{gather*}
 $$
-
-
 
 # Create commutative diagrams
 
@@ -179,7 +176,6 @@ C @>d>> D
 \end{CD}
 \end{align*}
 $$
-
 
 # Things to avoid, deprecated, bad syntax
 

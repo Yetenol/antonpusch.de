@@ -6,7 +6,7 @@ dg-permalink: powershell
 PowerShell is a command-line shell and scripting language developed by Microsoft for Windows, designed to provide a powerful and flexible interface for managing Windows systems and automating administrative tasks.
 
 - [Learn and Troubleshoot Powershell  - Discover commands, and access documentation](./learn%20and%20troubleshoot%20powershell.md)
-- [Objects - Handle, Import, Export, Filter and RegEx query objects](./objects.md)
+- [PowerShell Objects - Handle, Import, Export, Filter and RegEx query objects](./powershell%20objects.md)
 - [File System - Use paths, get meta data, link, download, and encrypt files and folders](./file%20system.md)
 - [Programm PowerShell - Learn PowerShell's programming paradigms](./programm%20powershell.md)
 - [Naming Convention - Name PowerShell functions with one of the predefined verbs](./naming%20convention.md)
