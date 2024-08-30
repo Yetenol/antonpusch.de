@@ -52,7 +52,9 @@ Sources:
 - [c# - Find out whether a Process is a System Process - Stack Overflow](https://stackoverflow.com/questions/53354644/find-out-whether-a-process-is-a-system-process)
 
 Related:
-
+```dynamic-embed
+[[List related notes]]
+```
 
 Tags:
 [PowerShell](./content/powershell.md)
