@@ -65,12 +65,8 @@ plt.xlabel('X axis')
 plt.ylabel('Y axis')
 
 # Save the plot as SVG
-plt.savefig(@vault_path + '/attachments/sine_wave_plot.svg', format='svg', dpi=300, bbox_inches='tight')
+plt.savefig(@vault_path + '/attachments/sine_wave_plot.svg', format='svg', dpi=300, bbox_inches='tight', transparent=True)
 plt.close()
-
-# To display the plot in a Jupyter notebook or similar environment, you can use:
-# plt.savefig('sine_wave_plot.svg', format='svg')
-# plt.show()
 ```
 
 ![sine_wave_plot.svg](./attachments/sine_wave_plot.svg)
