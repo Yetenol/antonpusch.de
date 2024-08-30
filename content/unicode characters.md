@@ -1,16 +1,15 @@
 ---
-title: "Unicode characters - Push files to the top of bottom of the list in alphabetical sorting"
 dg-publish: true
 ---
 
 # Useful characters
 
-| Purpose     | Char | Name             | Alt code    |
-| ----------- | ---- | ---------------- | ----------- |
-| Invisible   | ` `  | [No-Break Space](https://unicode-table.com/en/00A0/)   | 225 or 0160 |
-| Sort first  | `!`  | Exclamation Mark |             |
-| Sort second | `+`  | Plus Sign        |             |
-| Sort last   | `Ξ`  | [Capital Xi](https://unicode-table.com/en/039E/)       |             |
+| Purpose     | Char | Name                                                 | Alt code    |
+| ----------- | ---- | ---------------------------------------------------- | ----------- |
+| Invisible   | ` `  | [No-Break Space](https://unicode-table.com/en/00A0/) | 225 or 0160 |
+| Sort first  | `!`  | Exclamation Mark                                     |             |
+| Sort second | `+`  | Plus Sign                                            |             |
+| Sort last   | `Ξ`  | [Capital Xi](https://unicode-table.com/en/039E/)     |             |
 
 # Greek letters
 

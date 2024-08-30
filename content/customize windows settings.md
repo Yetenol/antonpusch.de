@@ -1,5 +1,4 @@
 ---
-title: "Customize Windows Settings"
 dg-publish: true
 dg-show-toc: true
 ---

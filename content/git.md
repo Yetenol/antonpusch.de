@@ -1,5 +1,4 @@
 ---
-title: "Git - Track changes, collaborate, and backup"
 dg-publish: true
 dg-show-toc: true
 ---

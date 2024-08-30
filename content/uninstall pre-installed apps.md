@@ -1,5 +1,4 @@
 ---
-title: "Uninstall pre-installed apps"
 dg-publish: true
 priority: 2
 ---

@@ -1,5 +1,4 @@
 ---
-title: "Install Windows 11 with 2 partitions"
 dg-publish: true
 priority: 1
 ---
