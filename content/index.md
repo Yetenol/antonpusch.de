@@ -14,7 +14,6 @@ If linked pages cannot be accessed, they do not meet my standards for publicatio
 
 Here are a few pinned notes:
 
-- [Markdown - Write plaintext in a centralized location and generate to PDF, Jupiter notebooks, web pages, social media posts](Markdown%20-%20Write%20plaintext%20in%20a%20centralized%20location%20and%20generate%20to%20PDF,%20Jupiter%20notebooks,%20web%20pages,%20social%20media%20posts.md)
 - [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex.md)
 - [PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](./powershell.md)
 - [Factorio - A game about automation, logistics and network optimizations](./factorio.md)
