@@ -36,4 +36,4 @@ Sources:
 Related:
 
 Tags:
-[Factorio](./content/factorio.md)
+[Factorio - A game about automation, logistics and network optimizations](./content/factorio.md)
