@@ -10,6 +10,6 @@ dg-publish: true
 - [Outdated phrases](./outdated%20phrases.md)
 - [Monospace vs kerning - Spacing characters in proportional fonts](Monospace%20vs%20kerning%20-%20Spacing%20characters%20in%20proportional%20fonts.md)
 - [Ja, aber - Füge Information hinzu ohne das ursprüngliche Statement zu relativieren, verharmlosen, oder abzuschwächen](Ja,%20aber%20-%20F%C3%BCge%20Information%20hinzu%20ohne%20das%20urspr%C3%BCngliche%20Statement%20zu%20relativieren,%20verharmlosen,%20oder%20abzuschw%C3%A4chen.md)
-- [Impossible German](./impossible%20german.md)
 - [Impossible English](./impossible%20english.md)
+- [Impossible German](./impossible%20german.md)
 

@@ -1,18 +1,15 @@
 ---
-title: Anton's Digital Garden
+title: Welcome to my Digital Garden
 dg-publish: true
 dg-home: true
 dg-show-inline-title: false
 dg-enable-search: true
-aliases:
-  - Anton's Digital Garden
+aliases: []
 suppress-backlinks-to-me: true
 ---
-This Digital Garden is a self-written collection of summaries, documentation, tips, tricks, guides, glossaries, databases and thoughts. Everything I write down is primarily for myself. Nevertheless, the published notes are written in high quality, especially the guides. 
+This is my Digital Garden - a collection of interconnected notes on topics that interest me or that I want to preserve. Unlike a blog, this is an evolving network of ideas and information. The content includes guides, glossaries, tips and tricks, personal thoughts, documentation, and summaries.
 
-If linked pages cannot be accessed, they do not meet my standards for publication yet. All notes may evolve over time. At any time could I rename, restructure, merge, or delete content, thus affecting URLs. 
-
-Here are a few pinned notes:
+To navigate, simply follow the links between notes or search keywords. There's no strict hierarchy; instead, ideas are connected in a wiki-like graph network. You can start exploring by checking out these topics:
 
 - [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex.md)
 - [PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](./powershell.md)
@@ -25,3 +22,7 @@ Here are a few pinned notes:
 - [Improve workflow in applications](./improve%20workflow%20in%20applications.md)
 - [Setup my computers](./setup%20my%20computers.md)
 - [Discussions](./discussions.md)
+
+This is a personal space for learning and growth, so you may encounter unfinished thoughts or work-in-progress pages. URLs to specific notes might change over time, as I update, restructure, or unlink pages.
+
+Feel free to explore.
