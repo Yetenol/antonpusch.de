@@ -1,5 +1,4 @@
 ---
-title: "Setup my digital garden"
 dg-publish: true
 ---
 # Digital Obsidian Garden
