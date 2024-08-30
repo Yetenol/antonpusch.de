@@ -3,9 +3,9 @@ title: "Cinematography"
 dg-publish: true
 ---
 
-- [Enjoy a favorite movie again](./enjoy%20a%20favorite%20movie%20again.md)
+- [Enjoy a favorite movie again](./favorite-movies.md)
 - [Enjoy a favorite television series again](./enjoy%20a%20favorite%20television%20series%20again.md)
-- [Watch a new movie](./watch%20a%20new%20movie.md)
+- [Watch a new movie](./movies.md)
 - [Watch a new television series](./watch%20a%20new%20television%20series.md)
 - [Internationale Filmfestspiele Berlin](./internationale%20filmfestspiele%20berlin.md)
 - [Watch a new video](Watch%20a%20new%20video.md)
