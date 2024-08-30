@@ -1,4 +1,5 @@
 ---
+title: "Digital Garden"
 dg-publish: true
 not-in-use: 
 microsoft-id: 
@@ -18,9 +19,11 @@ modportal1-id: digitalgarden
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-```dynamic-embed
-[[Describe this app and list installation sources]]
-```
+Digital Garden is a [Obsidian](./obsidian.md) extension about publishing. Publish your notes to a digital garden for others to enjoy.  
+- Install extension via [Comminity plugins](obsidian://show-plugin?id=digitalgarden), [Webstore](https://obsidian.md/plugins?id=digitalgarden)
+- Install extension via 
+- Download the [latest release](https://github.com/oleeskild/obsidian-digital-garden/releases/latest) from [Github](https://github.com/oleeskild/obsidian-digital-garden)
+
 
 # Setup note publishing
 
