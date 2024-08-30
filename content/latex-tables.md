@@ -6,11 +6,14 @@ dg-permalink: latex-tables
 aliases:
   - Table
 ---
+- modern LaTeX3 package with key-value configuration
+- why not just booktabs
+
 There are dozens[^1] of packages for tables, and built-in environments, so what is the problem. 
 
 # My Design Principles
 
-- Keep the table data **raw**, and readable: No macros in table content (except math macros supported by MathJax, KaTeX)
+- Keep the table data **raw**, and readable: No ma                                  cros in table content (except math macros supported by MathJax, KaTeX)
 - Row, column **headers**: More rows than columns; **Narrow** (down) **titles**; **Group** similar titles; Put more important columns to the left
 - Make layout **light-weight**: Few border lines; Spacing between cells, rows, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
 - Horizontal **alignment**: **Left**-align text, row headers; **Right**-align numbers; **Center**-align column headers
