@@ -7,6 +7,7 @@ aliases:
 # Content
 
 [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./latex-math.md)
+
 $$
 \begin{align*} \qquad&\hspace{-2em}
 \mathbb{P}(X+Y=k) 
@@ -14,10 +15,18 @@ $$
 = \sum_{x = 0}^n \binom{n}{x}\, p^x\, (1-p)^{n-x} \cdot \binom{m}{k-x}\, q^{k-x}\, (1-q)^{m-(k-x)}
 \end{align*}
 $$
+
 [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
-![minimal 45.svg](./attachments/minimal%2045.svg)
+
+![minimal 97.svg](./attachments/minimal%2097.svg)
+
 [Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
+
 ![code block.svg](./attachments/code%20block.svg)
+
+[PyPlot](./pyplot.md)
+
+![pyplot_features_demo.svg](./attachments/pyplot_features_demo.svg)
 
 # Tools
 
