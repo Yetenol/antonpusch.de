@@ -58,7 +58,7 @@ generate_latex_figure(r"""
 ![figure tikz 2.svg](./attachments/figure%20tikz%202.svg)
 
 ```python
-\documentclass{article}\pagestyle{empty}\title{tikz 2}
+\documentclass{standalone}\title{tikz 2}
 \usepackage{tikz}
 \usetikzlibrary{trees, decorations, arrows, automata, shadows, positioning, plotmarks, calc, matrix}
 \begin{document}
@@ -327,6 +327,7 @@ Sources:
 - [TikZ and PGF | TeXample.net](http://www.texample.net/tikz/)
 
 Related:
+- [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex.md)
 - [Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography](./markup%20and%20typesetting%20systems.md)
 
 
