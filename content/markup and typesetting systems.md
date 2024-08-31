@@ -24,7 +24,10 @@ $$
 
 ![code block.svg](./attachments/code%20block.svg)
 
+
 [Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](./graphics.md)
+
+![figure tikz 2.svg](./attachments/figure%20tikz%202.svg)
 
 [PyPlot](./pyplot.md)
 
