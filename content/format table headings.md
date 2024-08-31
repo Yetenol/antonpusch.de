@@ -3,10 +3,21 @@ title: "Format table headings"
 dg-publish: true
 ---
 
-![minimal 97.svg](./attachments/minimal%2097.svg)
+Generate LaTeX figures from code blocks marked as python in this file by parsing them as a multiline string parameter.
 
-```latex
+```python {pre}
+generate_latex_figure(r"""
+```
+
+```python {post}
+""")
+```
+
+![figure Format table headings.svg](./attachments/figure%20format%20table%20headings.svg)
+
+```python
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
+\title{Format table headings}
 \usepackage{tabularray,rotating,makecell,mathtools,amsfonts,amssymb}
 \UseTblrLibrary{diagbox}
 \SetTblrOuter{tall,caption}
@@ -74,11 +85,11 @@ $\begin{tblr}[caption=Probabilities,
 
 # More examples
 
+![figure Table headers more.svg](./attachments/figure%20table%20headers%20more.svg)
 
-
-![minimal 87.svg](./attachments/minimal%2087.svg)
-```latex
+```python
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
+\title{Table headers more}
 \usepackage{tabularray,rotating,makecell}
 \UseTblrLibrary{diagbox}
 \SetTblrOuter{tall,caption}
@@ -150,10 +161,11 @@ System 3        & X &   &  X    \\
 
 # Two dimensional table
 
-![minimal 95.svg](./attachments/minimal%2095.svg)
+![figure Table headers x y.svg](./attachments/figure%20table%20headers%20x%20y.svg)
 
-```latex
+```python
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
+\title{Table headers x,y}
 \usepackage{tabularray,rotating,makecell,mathtools,amsfonts,amssymb,xcolor}
 \UseTblrLibrary{diagbox}
 \SetTblrOuter{tall,caption}
@@ -234,10 +246,11 @@ x=                                                                        \\
 
 # Alternative rotated column headers
 
+![figure Table headers rotated.svg](./attachments/figure%20table%20headers%20rotated.svg)
 
-![minimal 85.svg](./attachments/minimal%2085.svg)
-```latex
+```python
 \documentclass{article}\pagestyle{empty}
+\title{Table headers rotated}
 \usepackage{adjustbox,array}
 \newcolumntype{R}[2]{%
     >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
@@ -261,8 +274,11 @@ System 3        & X &   &  X    \\ \hline
 
 # Old pgfplotstable version
 
-```latex
+![figure Table headers pgfplotstable.svg](./attachments/figure%20table%20headers%20pgfplotstable.svg)
+
+```python
 \documentclass{article}\pagestyle{empty}\renewcommand{\thetable}{1\alph{table}}
+\title{Table headers pgfplotstable}
 \usepackage{pgfplotstable,tabularray}
 \UseTblrLibrary{diagbox}
 \pgfplotstableset{
