@@ -49,7 +49,7 @@ plt.show()
 
 SVG export
 
-```run-python
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 
