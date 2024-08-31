@@ -5,7 +5,7 @@ priority: 5
 ---
 - [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
 - [Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
-- [Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](Graphics%20-%20Draw%20vector%20networks,%20graphs,%20images,%20plots%20in%20latex%20with%20tikz,%20pgf.md)
+- [Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](./graphics.md)
 - [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./latex-math.md)
 - [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 - [Floating Table - Add caption, cross reference a table](./floating%20table.md)
