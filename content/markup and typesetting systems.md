@@ -18,15 +18,24 @@ $$
 
 [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
 
-![minimal 97.svg](./attachments/minimal%2097.svg)
+![figure Format table headings.svg](./attachments/figure%20format%20table%20headings.svg)
 
 [Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
 
 ![code block.svg](./attachments/code%20block.svg)
 
+[Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](./graphics.md)
+
 [PyPlot](./pyplot.md)
 
 ![pyplot_features_demo.svg](./attachments/pyplot_features_demo.svg)
+
+[Dataview - Create dynamic tables using data stored in note properties](./dataview.md)
+
+[Convert dataview to static markdown for publishing](Convert%20dataview%20to%20static%20markdown%20for%20publishing.md)
+
+
+
 
 # Tools
 
