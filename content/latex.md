@@ -40,6 +40,12 @@ $$
 \end{gather*}
 $$
 
+[Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](./graphics.md)
+
+![figure tikz 2.svg](./attachments/figure%20tikz%202.svg)
+
+
+
 - [Values  - Standardize math, numbers, symbols, quantities, money](./values.md)
 - [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./float.md)
 - [Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design](Graphics,%20Plots%20-%20Generate%20dynamic%20professional%20vector%20graphics%20with%20matching%20fonts,%20design.md)
