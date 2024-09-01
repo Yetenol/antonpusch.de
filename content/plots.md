@@ -10,7 +10,7 @@ dg-publish: true
 ![figure tikz 2.svg](./attachments/figure%20tikz%202.svg)
 
 ```latex
-\documentclass{standalone}\title{tikz 2}
+\documentclass{standalone}
 \usepackage{tikz}
 \usetikzlibrary{trees, decorations, arrows, automata, shadows, positioning, plotmarks, calc, matrix}
 \begin{document}
@@ -30,10 +30,11 @@ dg-publish: true
 # 3D Plot - PgfPlots
 
 - [Embed TikZ in Obsidian](Embed%20TikZ%20in%20Obsidian.md)
+
 ![figure 3D plot.svg](./attachments/figure%203d%20plot.svg)
 
 ```latex
-\documentclass{article}\pagestyle{empty}\title{3D plot}
+\documentclass{standalone}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
 \begin{document}
@@ -57,7 +58,7 @@ dg-publish: true
 ![figure plots.svg](./attachments/figure%20plots.svg)
 
 ```latex
-\documentclass{standalone}\title{plots}
+\documentclass{standalone}
 \usepackage{tikz,pgfplots}
 \pgfplotsset{compat=1.16}
 \usetikzlibrary{trees, decorations, arrows, automata, shadows, positioning, plotmarks, calc, matrix}
