@@ -165,7 +165,8 @@ $$
 
 # Create commutative diagrams
 
-- [Amscd graphs](Amscd%20graphs.md)
+- See source examples: [Simple commutative diagrams supported by KaTeX, MathJaX - Amscd](Simple%20commutative%20diagrams%20supported%20by%20KaTeX,%20MathJaX%20-%20Amscd.md)
+- See more complex examples: [Networks, Commutative diagrams - Dynamically draw graph networks as a vector graphic](Networks,%20Commutative%20diagrams%20-%20Dynamically%20draw%20graph%20networks%20as%20a%20vector%20graphic.md)
 
 $$
 \begin{align*}
