@@ -89,7 +89,7 @@ Hello World!
 \end{document}
 ```
 
-![figure Hello world.svg](figure%20Hello%20world.svg)
+![figure hello world.svg](./attachments/figure%20hello%20world.svg)
 
 Regular python code
 
