@@ -4,15 +4,7 @@ dg-publish: true
 dg-permalink: latex
 aliases: LaTeX
 ---
-- LaTeX as cli tool
-- this is a webpage, obviously not pdf
-- figures
-- like css
-- not just one document
-- don't worry about compile time
-
-It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
-Therefore, I developed guides on the following topics:
+The powerful typesetting system LaTeX is well known in the world of academia, scientific publishing, and technical documentation. While LaTeX mainly gets used to produce pages in PDF, it integrates well as a pre-processing tool to create vector graphics in notes, websites, and documents, too. Guides show how to improve, or generate the following content elements:
 
 [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./latex-math.md)
 
@@ -91,6 +83,30 @@ My setup
 - which editor comparison
 - Don't spent so much time on your setup, start writing code
 - alternative markup systems
+
+LaTeX is a powerful typesetting system widely used in academia, scientific publishing, and technical documentation. 
+This lookup system showcases LaTeX capabilities beyond creating an entire document. 
+
+This lookup system showcases integrations, capabilities beyond the usual creation of an entire document, similar to word processing software like Microsoft Word. Because at its core, LaTeX is a command line compiler generating vector graphics with metadata as PDF. 
+For a website, creating pages of PDF is not suitable. But LaTeX can be used as a tool before the static site generation, to generate flexible math equations, generate plots, graphics. Math gets generated to individual html elements. CSS positions equation number optimally for desktop and mobile viewing. 
+
+If often gets compared to word processing software like Microsoft Word. While LaTeX is a great tool for document creating, it is so much more. Instead of writing your entire project in a single LaTeX document, I see LaTeX more as a tool in document creation. At its core, LaTeX is a command line compiler that generates high-quality vector graphics as PDF. 
+
+- LaTeX is not just an alternative to word processing software
+- LaTeX can be used as a tool like a static site generator in generating elements of notes, web articles, documents
+- LaTeX is a great tool to format markdown content for high-quality typographical document creation
+- Don't need to write the entire document in latex
+
+- LaTeX as cli tool
+- this is a webpage, obviously not pdf
+- figures
+- like css
+- not just one document
+- don't worry about compile time
+- if you can scroll through this page without feeling anything, you don't have a heart => 3blue1brown
+
+It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
+Therefore, I developed guides on the following topics:
 
 ---
 Sources:
