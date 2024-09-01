@@ -32,3 +32,49 @@
 
 \end{document}
 ```
+
+
+
+```tikz
+\usepackage{circuitikz}
+\begin{document}
+
+\begin{circuitikz}[american, voltage shift=0.5]
+\draw (0,0)
+to[isource, l=$I_0$, v=$V_0$] (0,3)
+to[short, -*, i=$I_0$] (2,3)
+to[R=$R_1$, i>_=$i_1$] (2,0) -- (0,0);
+\draw (2,3) -- (4,3)
+to[R=$R_2$, i>_=$i_2$]
+(4,0) to[short, -*] (2,0);
+\end{circuitikz}
+
+\end{document}
+```
+
+
+```tikz
+\usepackage{chemfig}
+\begin{document}
+
+\definesubmol\fragment1{
+(-[:#1,0.85,,,draw=none]
+-[::126]-[::-54](=_#(2pt,2pt)[::180])
+-[::-70](-[::-56.2,1.07]=^#(2pt,2pt)[::180,1.07])
+-[::110,0.6](-[::-148,0.60](=^[::180,0.35])-[::-18,1.1])
+-[::50,1.1](-[::18,0.60]=_[::180,0.35])
+-[::50,0.6]
+-[::110])
+}
+
+\chemfig{
+!\fragment{18}
+!\fragment{90}
+!\fragment{162}
+!\fragment{234}
+!\fragment{306}
+}
+
+\end{document}
+```
+

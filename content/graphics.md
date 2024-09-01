@@ -4,7 +4,7 @@ dg-publish: true
 cssclasses:
   - img-grid
 ---
-- [LaTeX to SVG - Embed LaTeX figures in markdown. Automate compiling, cropping, and exporting.](LaTeX%20to%20SVG%20-%20Embed%20LaTeX%20figures%20in%20markdown.%20Automate%20compiling,%20cropping,%20and%20exporting..md)
+- [LaTeX to SVG - Embed LaTeX figures in markdown. Automate compiling, cropping, and exporting.](./latex%20to%20svg)
 
 [Plots - Dynamically plot mathematical functions as a vector graphic](./plots.md)
 
@@ -14,10 +14,9 @@ cssclasses:
 
 ![figure networks.svg](./attachments/figure%20networks.svg)
 
+[Electrical circuit - Dynamically draw electronic circuit diagrams as a vector graphic](./electrical%20circuit.md)
 
-[Electrical circuit - Dynamically draw electronic circuit diagrams as vector graphic](./electrical%20circuit.md)
-
-![figure Electrical circuit.svg](./attachments/figure%20electrical%20circuit.svg)
+![figure electrical circuit.svg](./attachments/figure%20electrical%20circuit.svg)
 
 [Molecules - Dynamically draw structural formulas of chemical molecules as a vector graphic](./molecules.md)
 

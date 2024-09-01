@@ -35,9 +35,9 @@ aliases:
 | Informationssysteme und Datenanalyse                       | [2023-SS](Informationssysteme%20und%20Datenanalyse.md)                       | 6  | 2    | 2    | Pflichtbereich | [more](Informationssysteme%20und%20Datenanalyse.md)                       |
 | Systemprogrammierung                                       | [2022-SS](Systemprogrammierung.md)                                       | 6  | 2.7  | 2    | Pflichtbereich | [more](Systemprogrammierung.md)                                       |
 | Stochastik für Informatik                                  | [2023-SS](Stochastik%20f%C3%BCr%20Informatik.md)                                  | 9  | 3.3  | 4    | Pflichtbereich | [more](Stochastik%20f%C3%BCr%20Informatik.md)                                  |
-| Grundlagen der Elektrotechnik (GLET)                       | [2021-WS](Grundlagen%20der%20Elektrotechnik%20(GLET).md)                       | 9  | 1.3  | \-   | Wahlbereich    | [more](Grundlagen%20der%20Elektrotechnik%20(GLET).md)                       |
 | Analysis II für Ingenieurwissenschaften                    | [2022-SS](Analysis%20II%20f%C3%BCr%20Ingenieurwissenschaften.md)                    | 9  | 2.3  | \-   | Wahlbereich    | [more](Analysis%20II%20f%C3%BCr%20Ingenieurwissenschaften.md)                    |
 | Elektrische Netzwerke                                      | [2022-SS](Elektrische%20Netzwerke.md)                                      | 6  | 3.7  | \-   | Wahlbereich    | [more](Elektrische%20Netzwerke.md)                                      |
+| Grundlagen der Elektrotechnik (GLET)                       | [2021-WS](Grundlagen%20der%20Elektrotechnik%20(GLET).md)                       | 9  | 1.3  | \-   | Wahlbereich    | [more](Grundlagen%20der%20Elektrotechnik%20(GLET).md)                       |
 
 
 # Neues Module wählen

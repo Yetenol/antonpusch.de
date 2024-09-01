@@ -1,42 +1,16 @@
 ---
-title: "Electrical circuit - Dynamically draw electronic circuit diagrams as vector graphic"
+title: "Electrical circuit - Dynamically draw electronic circuit diagrams as a vector graphic"
 dg-publish: true
 ---
 
-Generate LaTeX figures from code blocks marked as python in this file by parsing them as a multiline string parameter.
-
-```python {pre}
-generate_latex_figure(r"""
-```
-
-```python {post}
-""")
-```
-
-
 # Electrical circuit
 
-![figure Electrical circuit.svg](./attachments/figure%20electrical%20circuit.svg)
+- [Embed TikZ in Obsidian](Embed%20TikZ%20in%20Obsidian.md)
 
-```python
-\documentclass{article}\pagestyle{empty}\title{Electrical circuit}
-\usepackage{circuitikz}
-\begin{document}
+![figure electrical circuit.svg](./attachments/figure%20electrical%20circuit.svg)
 
-\begin{circuitikz}[american, voltage shift=0.5]
-\draw (0,0)
-to[isource, l=$I_0$, v=$V_0$] (0,3)
-to[short, -*, i=$I_0$] (2,3)
-to[R=$R_1$, i>_=$i_1$] (2,0) -- (0,0);
-\draw (2,3) -- (4,3)
-to[R=$R_2$, i>_=$i_2$]
-(4,0) to[short, -*] (2,0);
-\end{circuitikz}
-
-\end{document}
-```
-
-```tikz
+```latex
+\documentclass{standalone}
 \usepackage{circuitikz}
 \begin{document}
 

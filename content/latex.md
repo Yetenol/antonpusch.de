@@ -4,6 +4,13 @@ dg-publish: true
 dg-permalink: latex
 aliases: LaTeX
 ---
+- LaTeX as cli tool
+- this is a webpage, obviously not pdf
+- figures
+- like css
+- not just one document
+- don't worry about compile time
+
 It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
 Therefore, I developed guides on the following topics:
 
@@ -19,7 +26,7 @@ $$
 
 [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
 
-![figure Format table headings.svg](./attachments/figure%20format%20table%20headings.svg)
+![figure format table headings.svg](./attachments/figure%20format%20table%20headings.svg)
 
 [Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
 
@@ -47,9 +54,9 @@ $$
 
 ![figure networks.svg](./attachments/figure%20networks.svg)
 
-[Electrical circuit - Dynamically draw electronic circuit diagrams as vector graphic](./electrical%20circuit.md)
+[Electrical circuit - Dynamically draw electronic circuit diagrams as a vector graphic](./electrical%20circuit.md)
 
-![figure Electrical circuit.svg](./attachments/figure%20electrical%20circuit.svg)
+![figure electrical circuit.svg](./attachments/figure%20electrical%20circuit.svg)
 
 [Molecules - Dynamically draw structural formulas of chemical molecules as a vector graphic](./molecules.md)
 

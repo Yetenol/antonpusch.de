@@ -3,6 +3,13 @@ title: "Listings - Print source code with syntax highlighting in latex with list
 dg-publish: true
 dg-permalink: latex-listings
 ---
+- Combine `<=` to $\le$
+- All languages
+- listings vs minted
+- in table
+- text copyable
+- lines numbers not are not selectable
+
 # Syntax
 
 ```latex
