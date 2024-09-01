@@ -2,15 +2,6 @@
 title: "Networks, Commutative diagrams - Dynamically draw graph networks as a vector graphic"
 dg-publish: true
 ---
-Generate LaTeX figures from code blocks marked as python in this file by parsing them as a multiline string parameter.
-
-```python {pre}
-generate_latex_figure(r"""
-```
-
-```python {post}
-""")
-```
 
 # Simple commutative diagrams - AMSCD
 
@@ -34,8 +25,8 @@ $$
 
 ![figure tikz 1.svg](./attachments/figure%20tikz%201.svg)
 
-```python
-\documentclass{article}\pagestyle{empty}\title{tikz 1}
+```latex
+\documentclass{standalone}
 \usepackage{tikz}
 \usetikzlibrary{trees, decorations, arrows, automata, shadows, positioning, plotmarks, calc, matrix}
 \tikzstyle{alter}=[circle, minimum size=16pt, draw, inner sep=1pt] 
@@ -73,8 +64,8 @@ $$
 
 ![figure tikzcd.svg](./attachments/figure%20tikzcd.svg)
 
-```python
-\documentclass{article}\pagestyle{empty}\title{tikzcd}
+```latex
+\documentclass{standalone}
 \usepackage{tikz-cd}
 \begin{document}
 
@@ -138,8 +129,8 @@ C' \arrow[rr,"k'" near end] \arrow[dr,swap,"c"] && D' \arrow[dr,swap,"d"] \\
 
 ![figure networks.svg](./attachments/figure%20networks.svg)
 
-```python
-\documentclass{standalone}\title{networks}
+```latex
+\documentclass{standalone}
 \usepackage{tikz,tikz-cd}
 \usetikzlibrary{trees, decorations, arrows, automata, shadows, positioning, plotmarks, calc, matrix}
 \tikzstyle{alter}=[circle, minimum size=16pt, draw, inner sep=1pt] 
