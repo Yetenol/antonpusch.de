@@ -12,7 +12,8 @@ dg-publish: true
 ```latex
 \documentclass{standalone}
 \usepackage{tikz}
-\usetikzlibrary{trees, decorations, arrows, automata, shadows, positioning, plotmarks, calc, matrix}
+\usetikzlibrary{trees, decorations, arrows, automata, shadows, 
+    positioning, plotmarks, calc, matrix}
 \begin{document}
 \begin{tikzpicture}[domain=0:4]
 \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
@@ -53,7 +54,8 @@ dg-publish: true
 \documentclass{standalone}
 \usepackage{tikz,pgfplots}
 \pgfplotsset{compat=1.16}
-\usetikzlibrary{trees, decorations, arrows, automata, shadows, positioning, plotmarks, calc, matrix}
+\usetikzlibrary{trees, decorations, arrows, automata, shadows, 
+    positioning, plotmarks, calc, matrix}
 \begin{document}
 
 \begin{tikzpicture}[domain=0:4]
