@@ -40,9 +40,21 @@ $$
 \end{gather*}
 $$
 
-[Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](./graphics.md)
+[Plots - Dynamically plot mathematical functions as a vector graphic](Plots%20-%20Dynamically%20plot%20mathematical%20functions%20as%20a%20vector%20graphic.md)
 
-![figure tikz 2.svg](./attachments/figure%20tikz%202.svg)
+![figure plots.svg](./attachments/figure%20plots.svg)
+
+[Networks, Commutative diagrams - Dynamically draw graph networks as a vector graphic](Networks,%20Commutative%20diagrams%20-%20Dynamically%20draw%20graph%20networks%20as%20a%20vector%20graphic.md)
+
+![figure networks.svg](./attachments/figure%20networks.svg)
+
+[Electrical circuit - Dynamically draw electronic circuit diagrams as vector graphic](Electrical%20circuit%20-%20Dynamically%20draw%20electronic%20circuit%20diagrams%20as%20vector%20graphic.md)
+
+![figure Electrical circuit.svg](./attachments/figure%20electrical%20circuit.svg)
+
+[Molecules - Dynamically draw structural formulas of chemical molecules as a vector graphic](Molecules%20-%20Dynamically%20draw%20structural%20formulas%20of%20chemical%20molecules%20as%20a%20vector%20graphic.md)
+
+![figure molecules.svg](./attachments/figure%20molecules.svg)
 
 
 
