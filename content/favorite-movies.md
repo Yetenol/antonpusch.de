@@ -2,10 +2,8 @@
 title: "Enjoy a favorite movie again"
 dg-publish: true
 dg-link-preview: true
-cssclasses:
-  - cards
-dg-content-classes:
-  - cards
+cssclasses: cards
+dg-content-classes: cards
 dg-permalink: favorite-movies
 ---
 
