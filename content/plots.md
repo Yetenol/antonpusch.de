@@ -14,7 +14,6 @@ dg-publish: true
 \usepackage{tikz}
 \usetikzlibrary{trees, decorations, arrows, automata, shadows, positioning, plotmarks, calc, matrix}
 \begin{document}
-
 \begin{tikzpicture}[domain=0:4]
 \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
 \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
@@ -23,7 +22,6 @@ dg-publish: true
 \draw[color=blue]   plot (\x,{sin(\x r)})    node[right] {$f(x) = \sin x$};
 \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
 \end{tikzpicture}
-
 \end{document}
 ```
 
@@ -38,14 +36,12 @@ dg-publish: true
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
 \begin{document}
-
 \begin{tikzpicture}
 \begin{axis}[colormap/viridis]
 \addplot3[ surf, samples=18, domain=-3:3, ]{
     exp(-x^2-y^2)*x  };
 \end{axis}
 \end{tikzpicture}
-
 \end{document}
 ```
 
