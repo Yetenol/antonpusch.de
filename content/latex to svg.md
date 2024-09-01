@@ -2,7 +2,7 @@
 title: "LaTeX to SVG - Embed LaTeX figures in markdown. Automate compiling, cropping, and exporting."
 dg-publish: true
 ---
-Dependencies
+# Dependencies
 
 [TeX Live](https://www.tug.org/texlive/)
 - `pdflatex`: Compile LaTeX source to PDF
@@ -18,8 +18,6 @@ Dependencies
 # Setup Execute Code
 
 Open Language-Specific Settings > Python
-
-Disable: **Run Python blocks in Notebook Mode**
 
 Inject python code
 
@@ -89,7 +87,7 @@ Hello World!
 \end{document}
 ```
 
-![figure Hello world.svg](figure%20Hello%20world.svg)
+![figure hello world.svg](./attachments/figure%20hello%20world.svg)
 
 Regular python code
 
