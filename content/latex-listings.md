@@ -9,6 +9,7 @@ dg-permalink: latex-listings
 - in table
 - text copyable
 - lines numbers not are not selectable
+- verbatimn without escape characters => portable, copyable
 
 # Syntax
 
