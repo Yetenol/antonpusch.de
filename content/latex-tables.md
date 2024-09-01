@@ -6,6 +6,8 @@ dg-permalink: latex-tables
 aliases:
   - Table
 ---
+It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
+
 - modern LaTeX3 package with key-value configuration
 - why not just booktabs
 
