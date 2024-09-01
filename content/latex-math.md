@@ -40,7 +40,7 @@ $$
 - Alternating **right/left**-aligned columns: **Separated** pairs $\text{(1b)}$ `\begin{align*}` - $n$ pairs of **touching** columns $\mathrm{(1c)}$ `\begin{alignat*}{2}` - Max. spaced-out to line width `\begin{flalign*}`
 - See source examples: [Array-like environments - Align equations and relation symbol relative to each other](./array-like%20environments.md)
 
-**Nested array** of math with **r**ight, **c**enter, and **l**eft aligned columns, see $\mathrm{(1d\text{-}e)}$
+**Nested Array**: Element inside inline or display mode containing columns aligned to the **r**ight, **c**enter, or **l**eft, see $\mathrm{(1d\text{-}e)}$
 - Surround with **delimiters**, see $\mathrm{(1d)}$: $\left( \begin{smallmatrix} c&c\\ c&c \end{smallmatrix} \right)$ `\begin{pmatrix}` - $\left\{ \begin{smallmatrix} l&l\\ l&l \end{smallmatrix} \right.$ `\begin{cases}`
 - **Split** overlong equations in multiple lines $\mathrm{(1e)}$: $\;\begin{smallmatrix} r\\ r \end{smallmatrix}$ `\begin{split}`
 

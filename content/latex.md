@@ -4,7 +4,7 @@ dg-publish: true
 dg-permalink: latex
 aliases: LaTeX
 ---
-The powerful typesetting system LaTeX is well known in the world of academia, scientific publishing, and technical documentation. While LaTeX mainly gets used to produce pages in PDF, it integrates well as a pre-processing tool to create vector graphics in notes, websites, and documents, too. Guides show how to improve, or generate the following content elements:
+The powerful typesetting system LaTeX is well known in the world of academia, scientific publishing, and technical documentation. While LaTeX mainly gets used to produce pages of PDF, it integrates well as a pre-processing tool to create vector graphics in notes, websites, and documents, too. Guides show how to improve, or generate the following content elements:
 
 [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./latex-math.md)
 
