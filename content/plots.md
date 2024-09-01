@@ -31,7 +31,7 @@ dg-publish: true
 
 - [Embed TikZ in Obsidian](Embed%20TikZ%20in%20Obsidian.md)
 
-![figure 3D plot.svg](./attachments/figure%203d%20plot.svg)
+![figure 3d plot.svg](./attachments/figure%203d%20plot.svg)
 
 ```latex
 \documentclass{standalone}
