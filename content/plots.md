@@ -43,8 +43,7 @@ dg-publish: true
 
 ![figure 3D plot.svg](./attachments/figure%203d%20plot.svg)
 
-```py
-generate_latex_figure(r"""
+```latex
 \documentclass{article}\pagestyle{empty}\title{3D plot}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
@@ -62,7 +61,6 @@ generate_latex_figure(r"""
 \end{tikzpicture}
 
 \end{document}
-""")
 ```
 
 ```tikz
@@ -89,8 +87,7 @@ generate_latex_figure(r"""
 
 ![figure plots.svg](./attachments/figure%20plots.svg)
 
-```py
-generate_latex_figure(r"""
+```latex
 \documentclass{standalone}\title{plots}
 \usepackage{tikz,pgfplots}
 \pgfplotsset{compat=1.16}
@@ -118,5 +115,4 @@ generate_latex_figure(r"""
 \end{tikzpicture}
 
 \end{document}
-""")
 ```
