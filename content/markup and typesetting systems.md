@@ -27,7 +27,7 @@ $$
 
 [Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](./graphics.md)
 
-![figure tikz 2.svg](./attachments/figure%20tikz%202.svg)
+![figure plots.svg](./attachments/figure%20plots.svg)
 
 [PyPlot](./pyplot.md)
 
@@ -35,7 +35,7 @@ $$
 
 [Dataview - Create dynamic tables using data stored in note properties](./dataview.md)
 
-[Convert dataview to static markdown for publishing](Convert%20dataview%20to%20static%20markdown%20for%20publishing.md)
+- [Convert dataview to static markdown for publishing](Convert%20dataview%20to%20static%20markdown%20for%20publishing.md)
 
 
 
