@@ -6,7 +6,7 @@ dg-publish: true
 
 ![figure tikz 2.svg](./attachments/figure%20tikz%202.svg)
 
-```python
+```latex
 \documentclass{standalone}\title{tikz 2}
 \usepackage{tikz}
 \usetikzlibrary{trees, decorations, arrows, automata, shadows, positioning, plotmarks, calc, matrix}
@@ -22,7 +22,6 @@ dg-publish: true
 \end{tikzpicture}
 
 \end{document}
-""")
 ```
 
 ```tikz
@@ -44,7 +43,8 @@ dg-publish: true
 
 ![figure 3D plot.svg](./attachments/figure%203d%20plot.svg)
 
-```python
+```py
+generate_latex_figure(r"""
 \documentclass{article}\pagestyle{empty}\title{3D plot}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
@@ -62,6 +62,7 @@ dg-publish: true
 \end{tikzpicture}
 
 \end{document}
+""")
 ```
 
 ```tikz
@@ -88,7 +89,8 @@ dg-publish: true
 
 ![figure plots.svg](./attachments/figure%20plots.svg)
 
-```python
+```py
+generate_latex_figure(r"""
 \documentclass{standalone}\title{plots}
 \usepackage{tikz,pgfplots}
 \pgfplotsset{compat=1.16}
@@ -116,4 +118,5 @@ dg-publish: true
 \end{tikzpicture}
 
 \end{document}
+""")
 ```
