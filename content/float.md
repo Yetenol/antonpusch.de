@@ -63,6 +63,7 @@ Example
 
 TODO: Tufte Design  floats in separate columns next to main content
 
+
 ---
 
 Sources:
