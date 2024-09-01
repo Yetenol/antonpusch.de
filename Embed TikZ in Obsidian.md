@@ -113,3 +113,15 @@ C' \arrow[rr,"k'" near end] \arrow[dr,swap,"c"] && D' \arrow[dr,swap,"d"] \\
 
 \end{document}
 ```
+
+
+
+
+```tikz
+\usepackage{chemfig}
+\begin{document}
+
+\chemfig{[:-90]HN(-[::-45](-[::-45]R)=[::+45]O)>[::+45]*4(-(=O)-N*5(-(<:(=[::-60]O)-[::+60]OH)-(<[::+0])(<:[::-108])-S>)--)}
+
+\end{document}
+```

@@ -5,25 +5,15 @@ dg-publish: true
 
 # Chemistry
 
+- [Embed TikZ in Obsidian](Embed%20TikZ%20in%20Obsidian.md)
+
 ![figure chemistry.svg](./attachments/figure%20chemistry.svg)
 
 ```latex
 \documentclass{standalone}
 \usepackage{chemfig}
 \begin{document}
-
 \chemfig{[:-90]HN(-[::-45](-[::-45]R)=[::+45]O)>[::+45]*4(-(=O)-N*5(-(<:(=[::-60]O)-[::+60]OH)-(<[::+0])(<:[::-108])-S>)--)}
-
-\end{document}
-```
-
-
-```tikz
-\usepackage{chemfig}
-\begin{document}
-
-\chemfig{[:-90]HN(-[::-45](-[::-45]R)=[::+45]O)>[::+45]*4(-(=O)-N*5(-(<:(=[::-60]O)-[::+60]OH)-(<[::+0])(<:[::-108])-S>)--)}
-
 \end{document}
 ```
 
@@ -37,7 +27,6 @@ dg-publish: true
 \documentclass{standalone}
 \usepackage{chemfig}
 \begin{document}
-
 \definesubmol\fragment1{
 (-[:#1,0.85,,,draw=none]
 -[::126]-[::-54](=_#(2pt,2pt)[::180])
@@ -47,7 +36,6 @@ dg-publish: true
 -[::50,0.6]
 -[::110])
 }
-
 \chemfig{
 !\fragment{18}
 !\fragment{90}
@@ -55,7 +43,6 @@ dg-publish: true
 !\fragment{234}
 !\fragment{306}
 }
-
 \end{document}
 ```
 
