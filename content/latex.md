@@ -2,8 +2,7 @@
 title: "LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules"
 dg-publish: true
 dg-permalink: latex
-aliases:
-  - LaTeX
+aliases: LaTeX
 ---
 It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
 Therefore, I developed guides on the following topics:
@@ -40,19 +39,19 @@ $$
 \end{gather*}
 $$
 
-[Plots - Dynamically plot mathematical functions as a vector graphic](Plots%20-%20Dynamically%20plot%20mathematical%20functions%20as%20a%20vector%20graphic.md)
+[Plots - Dynamically plot mathematical functions as a vector graphic](./plots.md)
 
 ![figure plots.svg](./attachments/figure%20plots.svg)
 
-[Networks, Commutative diagrams - Dynamically draw graph networks as a vector graphic](Networks,%20Commutative%20diagrams%20-%20Dynamically%20draw%20graph%20networks%20as%20a%20vector%20graphic.md)
+[Networks, Commutative diagrams - Dynamically draw graph networks as a vector graphic](./networks%20commutative%20diagrams.md)
 
 ![figure networks.svg](./attachments/figure%20networks.svg)
 
-[Electrical circuit - Dynamically draw electronic circuit diagrams as vector graphic](Electrical%20circuit%20-%20Dynamically%20draw%20electronic%20circuit%20diagrams%20as%20vector%20graphic.md)
+[Electrical circuit - Dynamically draw electronic circuit diagrams as vector graphic](./electrical%20circuit.md)
 
 ![figure Electrical circuit.svg](./attachments/figure%20electrical%20circuit.svg)
 
-[Molecules - Dynamically draw structural formulas of chemical molecules as a vector graphic](Molecules%20-%20Dynamically%20draw%20structural%20formulas%20of%20chemical%20molecules%20as%20a%20vector%20graphic.md)
+[Molecules - Dynamically draw structural formulas of chemical molecules as a vector graphic](./molecules.md)
 
 ![figure molecules.svg](./attachments/figure%20molecules.svg)
 
@@ -60,7 +59,7 @@ $$
 
 - [Values  - Standardize math, numbers, symbols, quantities, money](./values.md)
 - [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./float.md)
-- [Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design](Graphics,%20Plots%20-%20Generate%20dynamic%20professional%20vector%20graphics%20with%20matching%20fonts,%20design.md)
+- [Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design](./graphics%20plots.md)
 - [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 - [Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials](./learn%20and%20troubleshoot%20latex.md)
 - [Project structure - Create folders for setup, resources, bibliographies](./project%20structure.md)
