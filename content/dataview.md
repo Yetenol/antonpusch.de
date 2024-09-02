@@ -36,15 +36,14 @@ Dataview - Create dynamic tables using data stored in note properties is a [Obsi
 - software you own and associated renewal dates and amounts
 - upcoming expenses, when they are due, with the amount due
 
-| Video                                                                                                                                                                                                                                                                            | Information                                                                                                                                                                                                                                                                                                                     |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div class="video dataview-table"><iframe src="https://www.youtube-nocookie.com/embed/t-hKCgGhQuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> | [How To Create a Movie Database in Obsidian](https://www.youtube.com/watch?v=t-hKCgGhQuk) <br> from [FromSergio](http://www.youtube.com/@FromSergio) <br> on 2022-00-23 <br> about Science & Technology <br> taking 9 minutes, 58 seconds <br> see [Automatic captions](./how%20to%20create%20a%20movie%20database%20in%20obsidian.md) |
+| Video | Information |
+| ----- | ----------- |
 
 
 ---
 Sources:
 - 2023-03-07: [The Beginner’s Guide to DATAVIEW Obsidian Plugin — 10 areas where things can go wrong and how to fix them | by Denise Todd | Medium](https://denisetodd.medium.com/obsidian-dataview-for-beginners-a-checklist-to-help-fix-your-dataview-queries-11acc57f1e48)
-- 2023-03-08: [How To Create a Movie Database in Obsidian](./how%20to%20create%20a%20movie%20database%20in%20obsidian.md)
+- 2023-03-08: [How To Create a Movie Database in Obsidian](How%20To%20Create%20a%20Movie%20Database%20in%20Obsidian.md)
 
 Related:
 

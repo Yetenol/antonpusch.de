@@ -5,7 +5,7 @@ dg-publish: true
 
 # Graustufendrucker **HP LaserJet 1010**
 
-- download **driver files** using [script](./attachments/setup-hplaserjet1010%20ps1.bat)  
+- download **driver files** using [script](../configs/Setup-HPLaserJet1010.ps1.bat)  
   and extract to `C:\Driver\HP LaserJet 1010`
   ```powershell
   $url = 'https://raw.githubusercontent.com/Yetenol/Setup-Computer/main/configs/Setup-HPLaserJet1010.ps1.bat'
