@@ -48,7 +48,7 @@ $$
 
 [Electrical circuit - Dynamically draw electronic circuit diagrams as a vector graphic](./electrical%20circuit.md)
 
-![figure electrical circuit.svg](./attachments/figure%20electrical%20circuit.svg)
+![figure circuits.svg](./attachments/figure%20circuits.svg)
 
 [Molecules - Dynamically draw structural formulas of chemical molecules as a vector graphic](./molecules.md)
 

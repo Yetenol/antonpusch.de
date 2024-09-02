@@ -45,6 +45,8 @@ to[european resistor=$R_2$, i>_=$i_2$]
 
 # Figure collection for note preview
 
+![figure circuits.svg](./attachments/figure%20circuits.svg)
+
 ```python
 generate_latex_figure(r"""
 \documentclass{standalone}
