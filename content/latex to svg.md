@@ -24,13 +24,6 @@ Inject python code
 ```python {ignore='global'}
 import os, contextlib
 
-def new_temporary_folder():
-    import tempfile, uuid
-    user_temp_directory = tempfile.gettempdir()
-    new_subfolder = os.path.join(user_temp_directory, str(uuid.uuid4()))
-    os.makedirs(new_subfolder)
-    return new_subfolder
-    
 def save_source_to_file(latex_source, destination):
     import os
     file_path = os.path.join(destination,'figure.tex')
@@ -113,7 +106,6 @@ Hello World!
 ```
 
 Minimal example
-![](file:///C:\Users\anton\AppData\Local\Temp\tmpw5wyk1ko\figure.svg)
 
 ```latex
 \documentclass{standalone}
