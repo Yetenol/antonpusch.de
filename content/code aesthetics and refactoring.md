@@ -12,7 +12,7 @@ dg-publish: true
 ---
 Sources:
 - 2023-03-22: [Refactoring and Design Patterns](https://refactoring.guru/)
-- 2023-04-04: [Clean Code Horrible Performance](./clean%20code%20horrible%20performance.md)
+- 2023-04-04: [Clean Code Horrible Performance](Clean%20Code%20Horrible%20Performance.md)
 
 
 Related:
