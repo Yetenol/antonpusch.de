@@ -24,7 +24,7 @@ dg-publish: true
   hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
   hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
 }
-          & Dogs &    & Cats      \\
+          & Dogs &    & Cats &    \\
 Owner     & M    & F  & M    & F  \\
 Age                               \\
 $< 18$    & 2    & 12 & 7    & 11 \\
