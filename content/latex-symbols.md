@@ -163,13 +163,16 @@ $$
 $$
 (\, )\; \lgroup\,\rgroup\; [\,]\; \{\,\}\;  \vert\,\vert\; \Vert\, \Vert\; \lfloor\,\rfloor\; \lceil\,\rceil\; \langle\,\rangle\; \ulcorner\,\urcorner\; \llcorner\,\lrcorner\; \uparrow\,\downarrow\; \updownarrow\,\Updownarrow\; \Uparrow\,\Downarrow
 $$
+$$
+{1\atop2}
+$$
 
 | Math                                                  | Markup                                         |
 | ----------------------------------------------------- | ---------------------------------------------- |
-| $(x), \binom{n}{k},{n \choose k}$                     | `(`…`)` - <br>`\binom{n}{k}` - `{n \choose k}` |
+| $(x), \binom{n}{k},{n \choose k}$                     | `(`…`)` ; <br>`\binom{n}{k}` ; `{n \choose k}` |
 | $\lgroup x\rgroup$                                    | `\lgroup`…`\rgroup`                            |
-| $[x],  {n \brack k}$                                  | `[`…`]` - <br>`{n \brack k}`                   |
-| $\{x\}, {n \brace k}$                                 | `\{`…`\}` - <br>`{n \brace k}`                 |
+| $[x],  {n \brack k}$                                  | `[`…`]` ; <br>`{n \brack k}`                   |
+| $\{x\}, {n \brace k}$                                 | `\{`…`\}` ; <br>`{n \brace k}`                 |
 | $\vert x\vert$                                        | `\vert`…`\vert`                                |
 | $x \mid  x \in \mathbb{N}$                            | …`\mid`…                                       |
 | $\left\{ x \;\middle\vert\; x > \frac{1}{2} \right\}$ | `\left\{`…`\;\middle\vert\;`…`\right\}`        |
@@ -178,6 +181,8 @@ $$
 | $\lfloor x \rfloor$                                   | `\lfloor`…`\rfloor`                            |
 | $\lceil x \rceil$                                     | `\lceil`…`\rceil`                              |
 | $\langle x \rangle$                                   | `\langle`…`\rangle`                            |
+| ${_1^2}, {1\atop2}$                                   | `{_1^2}` ; `{1 \atop 2}`                       |
+
 
 See more delimiters in external resources
 - [Delimiters](https://katex.org/docs/supported#delimiters) from KaTeX docs
