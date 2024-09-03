@@ -18,7 +18,7 @@ Faked second table
 ```latex
 \documentclass{standalone}
 \usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
-\renewcommand{\thetable}{2.1\alph{table}}
+\renewcommand{\thetable}{3.1\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -51,9 +51,8 @@ Faked second table
     caption, tblr={baseline=T},
 }
 \begin{document}
-\noindent
 \pgfplotstabletypeset[data table, legende]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstableset{csv}
 \pgfplotstableread{data.csv}{\output}
 \pgfplotstableread[tex]{
@@ -65,7 +64,7 @@ t & U \\
 \pgfplotstabletypeset[csv, numeric cells, stats, row counter, hlines, dash 3rd, 
     int detect, sci subscript, zerofill,
     tblr={cell{2-Z}{1-Z}={r}},  ]\output
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[snippet, caption=Data.csv]{data.csv}
 \end{document}
 ```
@@ -75,7 +74,7 @@ t & U \\
 ```latex
 \documentclass{standalone}
 \usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
-\renewcommand{\thetable}{2.2\alph{table}}
+\renewcommand{\thetable}{3.2\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -108,9 +107,9 @@ t & U \\
 \noindent
 \def\x{0}
 \pgfplotstabletypeset[data table, legende]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[data table, german, int detect, row counter, columns/U/.style={sci subscript}]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[snippet, caption=Data.csv]{data.csv}
 \end{document}
 ```
@@ -150,7 +149,7 @@ combine files
 ```latex
 \documentclass{article} \pagestyle{empty}
 \usepackage{tikz,pgfplots,pgfplotstable}
-\renewcommand{\thetable}{2.3}
+\renewcommand{\thetable}{3.3}
 \pgfplotsset{compat=newest}
 \begin{document}
 
@@ -287,7 +286,7 @@ decimal align
 ```latex
 \documentclass{article} \pagestyle{empty}
 \usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
-\renewcommand{\thetable}{2.4\alph{table}}
+\renewcommand{\thetable}{3.4\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -316,14 +315,14 @@ decimal align
 \begin{document}
 \noindent
 \pgfplotstabletypeset[dash 3rd]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[german, int detect, row counter, columns/U/.style={sci subscript}]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[int detect, sort=true, sort key={[index]1}]{data.csv}
 
 \vspace{1em}\noindent
 \pgfplotstabletypeset[]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[column unit/.list={1{m},2{V}}]{data.csv}
 \end{document}
 ```
@@ -333,7 +332,7 @@ decimal align
 ```latex
 \documentclass{article} \pagestyle{empty}
 \usepackage{pgfplotstable,tabularray}
-\renewcommand{\thetable}{2.5\alph{table}}
+\renewcommand{\thetable}{3.5\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -353,9 +352,9 @@ decimal align
 \begin{document}
 \noindent
 \pgfplotstabletypeset[shade 2nd]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[dash 3rd, german]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[int detect, sort=true, sort key={[index]1}]{data.csv}
 \end{document}
 ```
@@ -369,7 +368,7 @@ decimal align
 ```latex
 \documentclass{standalone}
 \usepackage{pgfplotstable,tabularray}
-\renewcommand{\thetable}{2.6\alph{table}}
+\renewcommand{\thetable}{3.6\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     csv/.style = {col sep = comma, row sep = newline, column type = {r}, numeric type},
@@ -384,9 +383,9 @@ decimal align
 }
 \begin{document}
 \pgfplotstabletypeset[csv,tblr,hlines,shade2nd]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[csv,tblr,hlines,dash3rd,german]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[csv,tblr,hlines,int detect,sort=true,sort key={[index]1}]{data.csv}
 \end{document}
 ```
@@ -422,7 +421,7 @@ $t$ in ms, $U_{mess}$ in V
 ```latex
 \documentclass{standalone}
 \usepackage{pgfplotstable,booktabs,colortbl,arydshln}
-\renewcommand{\thetable}{2.7\alph{table}}
+\renewcommand{\thetable}{3.7\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     csv/.style = {col sep = comma, row sep = newline, column type = {r}, numeric type},
@@ -436,9 +435,9 @@ $t$ in ms, $U_{mess}$ in V
 }
 \begin{document}
 \pgfplotstabletypeset[csv,hlines+,shade2nd+,dec sep align]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[csv,hlines+,dash3rd+,german,sci sep align]{data.csv}
-\hspace{1cm}
+\hspace{1em}
 \pgfplotstabletypeset[csv,hlines+,int detect,sort=true,sort key={[index]1}]{data.csv}
 \end{document}
 ```

@@ -59,10 +59,10 @@ Rural     & 5    & 12 & --   & 14 \\
     cell{2-Z}{2-Z}={mode=math,cmd=\mathrm}, 
     cell{2}{1}={appto=\TblrNote{a}},
 }
-Aspect  & Overleaf & Obsidian \\
-Collab. & ++       & --       \\
-Price   & o        & +        \\
-Simple  & -        & ++       \\
+Aspect    & Overleaf & Obsidian \\
+Collab.   & ++       & --       \\
+Price     & o        & +        \\
+Feautures & ++       & +       \\
 \end{tblr}
 \end{document}
 ```
@@ -170,50 +170,6 @@ x=                                                                        \\
 3      & 0              & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & ^1{\!/\!}_{8} \\
 \Sigma & ^1{\!/\!}_{4}  & ^1{\!/\!}_{2}  & ^1{\!/\!}_{4}  & 1             \\
 \end{tblr}$
-\end{document}
-```
-
-# Print macros in table
-
-![table macro column.svg](./attachments/table%20macro%20column.svg)
-
-```latex
-\documentclass{standalone}
-\usepackage{tabularray}
-\renewcommand{\thetable}{1.4\alph{table}}
-\begin{document}
-\begin{tblr}[ tall,caption, 
-]{  colspec={rlcc}, hline{1,Z}={.08em}, hline{2},
-    column{1}={mode=math,rightsep=0pt},
-    column{2}={preto=\textbackslash,font=\ttfamily,leftsep=2pt},
-    row{1}={c,mode=text,font=\bfseries}, cell{1}{1}={c=2}{},
-}
-Name   &       & Unicode & Alt code \\
-\alpha & alpha & U+03B1  & Alt 224  \\
-\gamma & gamma & U+0393  & Alt 226  \\
-\delta & delta & U+03B4  & Alt 235  \\
-\end{tblr}
-\end{document}
-```
-
-![table macro listings.svg](./attachments/table%20macro%20listings.svg)
-
-```latex
-\documentclass{standalone}
-\usepackage{tabularray,codehigh,graphics}
-\renewcommand{\thetable}{1.4\alph{table}}\setcounter{table}{1}
-\begin{document}
-\includegraphics{table macro column}
-\hspace{1em}
-\begin{tblr}[ tall, caption
-]{  colspec={rlcc}, hline{1,Z}={.08em}, hline{2},
-    row{1}={c,font=\bfseries}, baseline=b,
-}
-Name                       & Unicode & Alt code \\
-$\alpha$ \fakeverb{\alpha} & U+03B1  & Alt 224  \\
-$\gamma$ \fakeverb{\gamma} & U+0393  & Alt 226  \\
-$\delta$ \fakeverb{\delta} & U+03B4  & Alt 235  \\
-\end{tblr}
 \end{document}
 ```
 
