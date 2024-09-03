@@ -12,13 +12,13 @@ Calculate sum, Standardabweichung, Varianz in footer with line
 call snippet style raw snippet
 call set environment->lock environment
 
-![minimal 67.svg](./attachments/minimal%2067.svg)
+![table measurements 1.svg](./attachments/table%20measurements%201.svg)
 
 Faked second table
 ```latex
-\documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{3\alph{table}}
+\documentclass{standalone}
 \usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
+\renewcommand{\thetable}{2.1\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -52,10 +52,10 @@ Faked second table
 }
 \begin{document}
 \noindent
-\pgfplotstabletypeset[data table, legende]{resources/data.csv}
+\pgfplotstabletypeset[data table, legende]{data.csv}
 \hspace{1cm}
 \pgfplotstableset{csv}
-\pgfplotstableread{resources/data.csv}{\output}
+\pgfplotstableread{data.csv}{\output}
 \pgfplotstableread[tex]{
 t & U \\
  & 1.76483 \\
@@ -66,14 +66,16 @@ t & U \\
     int detect, sci subscript, zerofill,
     tblr={cell{2-Z}{1-Z}={r}},  ]\output
 \hspace{1cm}
-\pgfplotstabletypeset[snippet, caption=Data.csv]{resources/data.csv}
+\pgfplotstabletypeset[snippet, caption=Data.csv]{data.csv}
 \end{document}
 ```
 
+![table measurements 2.svg](./attachments/table%20measurements%202.svg)
+
 ```latex
-\documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{3\alph{table}}
+\documentclass{standalone}
 \usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
+\renewcommand{\thetable}{2.2\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -105,11 +107,11 @@ t & U \\
 \begin{document}
 \noindent
 \def\x{0}
-\pgfplotstabletypeset[data table, legende]{resources/data.csv}
+\pgfplotstabletypeset[data table, legende]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[data table, german, int detect, row counter, columns/U/.style={sci subscript}]{resources/data.csv}
+\pgfplotstabletypeset[data table, german, int detect, row counter, columns/U/.style={sci subscript}]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[snippet, caption=Data.csv]{resources/data.csv}
+\pgfplotstabletypeset[snippet, caption=Data.csv]{data.csv}
 \end{document}
 ```
 
@@ -119,7 +121,7 @@ calculate sum, mean, standard deviation under table
 
 combine files
 ```latex
-\pgfplotstableread{resources/data.csv}\output
+\pgfplotstableread{data.csv}\output
 \pgfplotstablevertcat{\output}{resources/stats.csv}
 \pgfplotstabletypeset[csv]\outp
 ```
@@ -143,24 +145,14 @@ combine files
 ]{testdata.table}
 ```
 
+![table measurements 3.svg](./attachments/table%20measurements%203.svg)
 
 ```latex
-\documentclass{article}
-\usepackage{tikz}
-\usepackage{pgfplots}
-\usepackage{pgfplotstable}
+\documentclass{article} \pagestyle{empty}
+\usepackage{tikz,pgfplots,pgfplotstable}
+\renewcommand{\thetable}{2.3}
 \pgfplotsset{compat=newest}
-\usepackage{filecontents}
-
-\begin{filecontents*}{testdata.table}
-Val
-2
-1
-3
-\end{filecontents*}
-
 \begin{document}
-
 
 \pgfplotstableread{testdata.table}{\testdata}
 \pgfplotstablecreatecol[%
@@ -204,7 +196,6 @@ create col/assign/.code={%
 \pgfkeyslet{/pgfplots/table/create col/next content}\entry
 }]{avg(Val)}\testdata
 
-
 \pgfplotstabletypeset[%
 every head row/.style={before row=\hline,after row=\hline},
 every last row/.style={after row=\hline},
@@ -215,7 +206,7 @@ columns/avg(Val)/.style={fixed,fixed zerofill,precision=2},
 columns/sum(Val)/.style={fixed,fixed zerofill,precision=2},
 ]{\testdata}
 
-
+\begin{table} \centering{} \caption{}
 \pgfplotstabletypeset[
     calc/.style 2 args={create col/assign/.code={%
     \getthisrow{#1}\entry
@@ -232,6 +223,7 @@ columns/sum(Val)/.style={fixed,fixed zerofill,precision=2},
     create max column=Val, create min column=Val, create sum column=Val,
     columns={Val,max(Val),min(Val),sum(Val)},
 ]{testdata.table}
+\end{table}
 
 % CF: dirty hack result: simply dereference global variable:
 The max value is \pgfmathprintnumber{\MAXVAL}.
@@ -290,10 +282,12 @@ decimal align
 
 ![minimal 62.svg](./attachments/minimal%2062.svg)
 
+![table measurements 4.svg](./attachments/table%20measurements%204.svg)
+
 ```latex
 \documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{3\alph{table}}
 \usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
+\renewcommand{\thetable}{2.4\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -321,24 +315,25 @@ decimal align
 }
 \begin{document}
 \noindent
-\pgfplotstabletypeset[dash 3rd]{resources/data.csv}
+\pgfplotstabletypeset[dash 3rd]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[german, int detect, row counter, columns/U/.style={sci subscript}]{resources/data.csv}
+\pgfplotstabletypeset[german, int detect, row counter, columns/U/.style={sci subscript}]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[int detect, sort=true, sort key={[index]1}]{resources/data.csv}
+\pgfplotstabletypeset[int detect, sort=true, sort key={[index]1}]{data.csv}
 
 \vspace{1em}\noindent
-\pgfplotstabletypeset[]{resources/data.csv}
+\pgfplotstabletypeset[]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[column unit/.list={1{m},2{V}}]{resources/data.csv}
+\pgfplotstabletypeset[column unit/.list={1{m},2{V}}]{data.csv}
 \end{document}
 ```
 
+![table measurements 5.svg](./attachments/table%20measurements%205.svg)
 
 ```latex
 \documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{3\alph{table}}
 \usepackage{pgfplotstable,tabularray}
+\renewcommand{\thetable}{2.5\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -357,11 +352,11 @@ decimal align
 }
 \begin{document}
 \noindent
-\pgfplotstabletypeset[shade 2nd]{resources/data.csv}
+\pgfplotstabletypeset[shade 2nd]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[dash 3rd, german]{resources/data.csv}
+\pgfplotstabletypeset[dash 3rd, german]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[int detect, sort=true, sort key={[index]1}]{resources/data.csv}
+\pgfplotstabletypeset[int detect, sort=true, sort key={[index]1}]{data.csv}
 \end{document}
 ```
 
@@ -369,9 +364,12 @@ decimal align
 
 ![minimal 18.svg](./attachments/minimal%2018.svg)
 
+![table measurements 6.svg](./attachments/table%20measurements%206.svg)
+
 ```latex
-\documentclass{article}
+\documentclass{standalone}
 \usepackage{pgfplotstable,tabularray}
+\renewcommand{\thetable}{2.6\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     csv/.style = {col sep = comma, row sep = newline, column type = {r}, numeric type},
@@ -385,15 +383,15 @@ decimal align
     german/.style = {dec sep={,\!}, 1000 sep ={\,}},
 }
 \begin{document}
-\pgfplotstabletypeset[csv,tblr,hlines,shade2nd]{resources/data.csv}
+\pgfplotstabletypeset[csv,tblr,hlines,shade2nd]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[csv,tblr,hlines,dash3rd,german]{resources/data.csv}
+\pgfplotstabletypeset[csv,tblr,hlines,dash3rd,german]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[csv,tblr,hlines,int detect,sort=true,sort key={[index]1}]{resources/data.csv}
+\pgfplotstabletypeset[csv,tblr,hlines,int detect,sort=true,sort key={[index]1}]{data.csv}
 \end{document}
 ```
 
-Example file `resources/data.csv`:
+Example file `data.csv`:
 ```
 # Convergence results
 # fictional source generated 2008
@@ -419,9 +417,12 @@ $t$ in ms, $U_{mess}$ in V
 
 ![minimal 24.svg](./attachments/minimal%2024.svg)
 
+![table measurements 7.svg](./attachments/table%20measurements%207.svg)
+
 ```latex
-\documentclass{article}
+\documentclass{standalone}
 \usepackage{pgfplotstable,booktabs,colortbl,arydshln}
+\renewcommand{\thetable}{2.7\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     csv/.style = {col sep = comma, row sep = newline, column type = {r}, numeric type},
@@ -434,11 +435,11 @@ $t$ in ms, $U_{mess}$ in V
     german/.style = {dec sep={,\!}, 1000 sep ={\,}},
 }
 \begin{document}
-\pgfplotstabletypeset[csv,hlines+,shade2nd+,dec sep align]{resources/data.csv}
+\pgfplotstabletypeset[csv,hlines+,shade2nd+,dec sep align]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[csv,hlines+,dash3rd+,german,sci sep align]{resources/data.csv}
+\pgfplotstabletypeset[csv,hlines+,dash3rd+,german,sci sep align]{data.csv}
 \hspace{1cm}
-\pgfplotstabletypeset[csv,hlines+,int detect,sort=true,sort key={[index]1}]{resources/data.csv}
+\pgfplotstabletypeset[csv,hlines+,int detect,sort=true,sort key={[index]1}]{data.csv}
 \end{document}
 ```
 
