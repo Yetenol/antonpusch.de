@@ -110,7 +110,7 @@ $\overset{i}{=}\;:$ Is equal because the function is symmetrical in the interval
 
 - Equation number $\mathrm{(5a)}$: Combine **arabic, roman** alphabet; current **section, part** numbers; and static **delimiters, text** to reference the equation elsewhere
 - **Highlight** part of an equation $\mathrm{(5b)}$: **Bold** math `boldsymbol`, Diagonal **strikeout** `\cancel` - `\bcancel` - `\xcancel`, Draw **rectangle** around math `\boxed` - `\begin{array}`
-- More: color `\textcolor`, boldmath, titlemath, ctagsplit and righttag [Mathematical Typesetting with Latex 0.34 2024-02-06, page 69](./attachments/mathematical%20typesetting%20with%20latex%200.34%202024-02-06.pdf.md#page=69&selection=174,0,179,0)
+- More: color `\textcolor`, boldmath, titlemath, ctagsplit and righttag [Mathematical Typesetting with LaTeX p. 69](https://www.tug.org/~hvoss/PDF/mathmode.pdf#page=69)
 
 $$
 \begin{gather*} \\
