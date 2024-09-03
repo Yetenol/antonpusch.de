@@ -18,7 +18,7 @@ $$
 
 [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./tables.md)
 
-![figure format table headings.svg](./attachments/figure%20format%20table%20headings.svg)
+![table headers.svg](./attachments/table%20headers.svg)
 
 [Code Snippets - Print source code with syntax highlighting in latex with listings](./code%20snippets.md)
 
