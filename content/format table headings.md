@@ -218,7 +218,7 @@ $\delta$ \fakeverb{\delta} & U+03B4  & Alt 235  \\
 
 # Alternatives to tabularray
 
-# Rotated headers without tabularray
+## Rotated headers without tabularray
 
 ![figure table headers rotated.svg](./attachments/figure%20table%20headers%20rotated.svg)
 
@@ -251,7 +251,7 @@ System 3        & X &   &  X    \\ \hline
 \end{document}
 ```
 
-# PgfPlotsTable and tabularray
+## PgfPlotsTable and tabularray
 
 ![figure table headers pgfplotstable.svg](./attachments/figure%20table%20headers%20pgfplotstable.svg)
 
@@ -299,5 +299,19 @@ Simple & $\circ$ & + \\
 1                  & $^3\!/_{\!16}$ & $^3\!/_{\!16}$ & $^1\!/_{\!16}$ \\
 2                  & $0$ & $^4\!/_{\!16}$ & $^3\!/_{\!16}$ \\
 \end{tblr}
+\end{document}
+```
+
+# Figure collection for note preview
+
+![figure format table headings.svg](./attachments/figure%20format%20table%20headings.svg)
+
+```latex
+\documentclass{standalone}
+\usepackage{graphicx}
+\begin{document}
+\includegraphics{figure table pet owners}
+\includegraphics{figure table comparison 1}
+\includegraphics{figure table probabilities 1}
 \end{document}
 ```
