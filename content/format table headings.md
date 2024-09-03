@@ -281,14 +281,14 @@ $\alpha$ alpha & U+03B1  & Alt 224  \\
 $\gamma$ gamma & U+0393  & Alt 226  \\
 $\delta$ delta & U+03B4  & Alt 235  \\
 }
-\hspace{1cm}
+\hspace{1em}
 \begin{tblr}[tall,caption]{colspec={lcc},vline{2},hline{2}}
         & Word    & Docs \\
 Collab. & ++      & ++   \\
 Price   & --      & ++   \\
 Simple  & $\circ$ & +    \\
 \end{tblr}
-\hspace{1cm}
+\hspace{1em}
 \begin{tblr}[tall,caption]{colspec={lccc},vline{2},hline{2}}
 \diagbox{$x$}{$y$} &              0 &              1 &              2 \\
 0                  & $^1\!/_{\!16}$ & $^1\!/_{\!16}$ & $0$            \\
