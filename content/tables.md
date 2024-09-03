@@ -50,7 +50,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 - More ideas: filter, sort, custom column titles, multi column names, Align at decimal or scientific separator
 - See source examples: [Process, and format values from files](./process%20and%20format%20values%20from%20files.md)
 
-![minimal 67.svg](./attachments/minimal%2067.svg)
+![table measurements 1.svg](./attachments/table%20measurements%201.svg)
 
 ## Advanced input processing
 
@@ -75,7 +75,7 @@ Calculate column sum
 - 4a: Longtable split in half
 - References
 
-![minimal 61.svg](./attachments/minimal%2061.svg)
+![table layout 1.svg](./attachments/table%20layout%201.svg)
 
 ## Create a simple table with borders
 
