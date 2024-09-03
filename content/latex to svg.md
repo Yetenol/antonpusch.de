@@ -25,7 +25,6 @@ Inject python code
 import os, contextlib
 
 def save_source_to_file(latex_source, destination):
-    import os
     file_path = os.path.join(destination,'figure.tex')
     with open(file_path, 'w') as source_file:
         print(latex_source, file=source_file)
