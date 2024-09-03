@@ -5,15 +5,12 @@ dg-publish: true
 
 - set baseline
 
-![minimal 61.svg](./attachments/minimal%2061.svg)
-
-![table layout 1.svg](table%20layout%201.svg)
+![table layout 1.svg](./attachments/table%20layout%201.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{article} \pagestyle{empty}
 \usepackage{pgfplotstable,tabularray,pgffor}
 \renewcommand{\thetable}{3.1\alph{table}}
-\def\x{0}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -57,28 +54,18 @@ dg-publish: true
 }
 \begin{document}
 \noindent
-% \pgfkeys{/my key}
-\pgfkeys{/my key/.code/.evaluated/.list={{int(4/3)}},
-    /my key=1,
-}
-\pgfkeys{/my key/.get=\mymacro}
-\mymacro
-
-\pgfmathparse{int(2/3)} \pgfmathresult
-
-
-\noindent
 \pgfplotstabletypeset[split2]{data.csv}
 \vspace{1em}
 \pgfplotstabletypeset[split3]{data.csv}
 \end{document}
 ```
 
+![table layout 2.svg](./attachments/table%20layout%202.svg)
 
 ```latex
 \documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{4\alph{table}}
 \usepackage{pgfplotstable,tabularray}
+\renewcommand{\thetable}{3.2\alph{table}}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -133,7 +120,7 @@ dg-publish: true
 
 # Main example
 
-![minimal 30.svg](./attachments/minimal%2030.svg)
+![table layout 3.svg](./attachments/table%20layout%203.svg)
 
 ```latex
 \documentclass{article}
