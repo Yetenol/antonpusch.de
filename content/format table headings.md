@@ -5,11 +5,12 @@ dg-publish: true
 
 # Pet Owners
 
-![figure table pet owners.svg](./attachments/figure%20table%20pet%20owners.svg)
+![table pet owners.svg](./attachments/table%20pet%20owners.svg)
 
 ```latex
 \documentclass{standalone}
 \usepackage{tabularray}
+\renewcommand{\thetable}{1.1}
 \begin{document}
 \noindent
 \begin{tblr}[tall,caption=Pet Owners]{
@@ -38,12 +39,12 @@ Rural     & 5    & 12 & --   & 14 \\
 
 # Comparison
 
-![figure table comparison 1.svg](./attachments/figure%20table%20comparison%201.svg)
+![table comparison 1.svg](./attachments/table%20comparison%201.svg)
 
 ```latex
 \documentclass{article} \pagestyle{empty}
 \usepackage{tabularray,rotating,makecell}
-\renewcommand{\thetable}{2\alph{table}}
+\renewcommand{\thetable}{1.2\alph{table}}
 \setlength\rotheadsize{1.25cm}
 \renewcommand\theadfont{}
 % Rotation: \rot[<angle>][<width>]{<stuff>}
@@ -66,19 +67,19 @@ Simple  & -        & ++       \\
 \end{document}
 ```
 
-![figure table comparisons.svg](./attachments/figure%20table%20comparisons.svg)
+![table comparisons.svg](./attachments/table%20comparisons.svg)
 
 ```latex
 \documentclass{article} \pagestyle{empty}
 \usepackage{tabularray,rotating,makecell,graphics}
-\renewcommand{\thetable}{2\alph{table}}\setcounter{table}{1}
+\renewcommand{\thetable}{1.2\alph{table}}\setcounter{table}{1}
 \setlength\rotheadsize{1.25cm}
 \renewcommand\theadfont{}
 % Rotation: \rot[<angle>][<width>]{<stuff>}
 \NewDocumentCommand{\rot}{O{45} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
 \SetTblrOuter{}
 \begin{document}
-\includegraphics{figure table comparison 1}
+\includegraphics{table comparison 1}
 \begin{tblr}[tall, caption, baseline=B ]{
     row{1} = {halign=l,cmd=\rot},
     colspec={lcc},vline{2},hline{2},
@@ -93,12 +94,12 @@ System 3 & X          &            & X          \\
 
 # Two dimensional table
 
-![figure table probabilities 1.svg](./attachments/figure%20table%20probabilities%201.svg)
+![table probabilities 1.svg](./attachments/table%20probabilities%201.svg)
 
 ```latex
 \documentclass{standalone}
 \usepackage{tabularray}
-\renewcommand{\thetable}{3\alph{table}}
+\renewcommand{\thetable}{1.3\alph{table}}
 \UseTblrLibrary{diagbox}
 \let\oldfrac\frac
 \renewcommand{\frac}[2]{\mathchoice 
@@ -124,12 +125,12 @@ $\begin{tblr}[tall,caption=Probabilities,
 \end{document}
 ```
 
-![figure table probabilities.svg](./attachments/figure%20table%20probabilities.svg)
+![table probabilities.svg](./attachments/table%20probabilities.svg)
 
 ```latex
 \documentclass{standalone}
 \usepackage{tabularray,graphicx}
-\renewcommand{\thetable}{3\alph{table}}\setcounter{table}{1}
+\renewcommand{\thetable}{1.3\alph{table}}\setcounter{table}{1}
 \UseTblrLibrary{diagbox}
 \let\oldfrac\frac
 \renewcommand{\frac}[2]{\mathchoice 
@@ -137,7 +138,7 @@ $\begin{tblr}[tall,caption=Probabilities,
     {\oldfrac{#1}{#2}} {\oldfrac{#1}{#2}}  }
 \SetTblrOuter{tall, caption, baseline=b}
 \begin{document}
-\includegraphics{figure table probabilities 1}
+\includegraphics{table probabilities 1}
 \hspace{1em}
 $\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}
 ]{  colspec={lcccc}, hline{1,Z}={.1em}, hline{2}={leftpos=-7,endpos},
@@ -174,12 +175,12 @@ x=                                                                        \\
 
 # Print macros in table
 
-![figure table macro column.svg](./attachments/figure%20table%20macro%20column.svg)
+![table macro column.svg](./attachments/table%20macro%20column.svg)
 
 ```latex
 \documentclass{standalone}
 \usepackage{tabularray}
-\renewcommand{\thetable}{4\alph{table}}
+\renewcommand{\thetable}{1.4\alph{table}}
 \begin{document}
 \begin{tblr}[ tall,caption, 
 ]{  colspec={rlcc}, hline{1,Z}={.08em}, hline{2},
@@ -195,14 +196,14 @@ Name   &       & Unicode & Alt code \\
 \end{document}
 ```
 
-![figure table macro listings.svg](./attachments/figure%20table%20macro%20listings.svg)
+![table macro listings.svg](./attachments/table%20macro%20listings.svg)
 
 ```latex
 \documentclass{standalone}
 \usepackage{tabularray,codehigh,graphics}
-\renewcommand{\thetable}{4\alph{table}}\setcounter{table}{1}
+\renewcommand{\thetable}{1.4\alph{table}}\setcounter{table}{1}
 \begin{document}
-\includegraphics{figure table macro column}
+\includegraphics{table macro column}
 \hspace{1em}
 \begin{tblr}[ tall, caption
 ]{  colspec={rlcc}, hline{1,Z}={.08em}, hline{2},
@@ -220,12 +221,12 @@ $\delta$ \fakeverb{\delta} & U+03B4  & Alt 235  \\
 
 ## Rotated headers without tabularray
 
-![figure table headers rotated.svg](./attachments/figure%20table%20headers%20rotated.svg)
+![table headers rotated.svg](./attachments/table%20headers%20rotated.svg)
 
 ```latex
 \documentclass{article} \pagestyle{empty}
 \usepackage{adjustbox,array,float,graphicx}
-\renewcommand{\thetable}{2\alph{table}}\setcounter{table}{2}
+\renewcommand{\thetable}{1.2\alph{table}}\setcounter{table}{2}
 \newcolumntype{R}[2]{%
     >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
     l%
@@ -233,7 +234,7 @@ $\delta$ \fakeverb{\delta} & U+03B4  & Alt 235  \\
 }
 \newcommand*\rot{\multicolumn{1}{R{45}{1em}}}% no optional argument here, please!
 \begin{document}
-\includegraphics{figure table comparisons}
+\includegraphics{table comparisons}
 \begin{minipage}[b]{.3\textwidth}
 \begin{table}[H] \caption{}
 \begin{tabular}{r|ccc}
@@ -249,12 +250,12 @@ System 3 & X                &                  & X                \\ \hline
 
 ## PgfPlotsTable and tabularray
 
-![figure table headers pgfplotstable.svg](./attachments/figure%20table%20headers%20pgfplotstable.svg)
+![table headers pgfplotstable.svg](./attachments/table%20headers%20pgfplotstable.svg)
 
 ```latex
 \documentclass{standalone}
 \usepackage{pgfplotstable,tabularray}
-\renewcommand{\thetable}{5\alph{table}}
+\renewcommand{\thetable}{1.5\alph{table}}
 \UseTblrLibrary{diagbox}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
@@ -300,14 +301,14 @@ Simple  & $\circ$ & +    \\
 
 # Figure collection for note preview
 
-![figure format table headings.svg](./attachments/figure%20format%20table%20headings.svg)
+![table headers.svg](./attachments/table%20headers.svg)
 
 ```latex
 \documentclass{standalone}
 \usepackage{graphicx}
 \begin{document}
-\includegraphics{figure table pet owners}
-\includegraphics{figure table comparison 1}
-\includegraphics{figure table probabilities 1}
+\includegraphics{table pet owners}
+\includegraphics{table comparison 1}
+\includegraphics{table probabilities 1}
 \end{document}
 ```
