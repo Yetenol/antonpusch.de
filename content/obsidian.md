@@ -142,8 +142,8 @@ Sources:
 
 Related:
 - [Symlinks in Obsidian](Symlinks%20in%20Obsidian.md)
-- [Obsidian as a markdown editor - Switch between Vscode and Obsidian](./obsidian%20as%20a%20markdown%20editor.md)
 - [Obsidian - Organize, link, and explore their thoughts, ideas, and information through a system of interconnected notes](Obsidian%20-%20Organize,%20link,%20and%20explore%20their%20thoughts,%20ideas,%20and%20information%20through%20a%20system%20of%20interconnected%20notes.md)
+- [Obsidian as a markdown editor - Switch between Vscode and Obsidian](./obsidian%20as%20a%20markdown%20editor.md)
 - [Markdown - Write plaintext in a centralized location and generate to PDF, Jupiter notebooks, web pages, social media posts](Markdown%20-%20Write%20plaintext%20in%20a%20centralized%20location%20and%20generate%20to%20PDF,%20Jupiter%20notebooks,%20web%20pages,%20social%20media%20posts.md)
 - [How to structure notes - Bottom up, Tags, Top down](How%20to%20structure%20notes%20-%20Bottom%20up,%20Tags,%20Top%20down.md)
 - [Writing tools](Writing%20tools.md)
