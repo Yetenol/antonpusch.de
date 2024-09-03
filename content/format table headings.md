@@ -237,14 +237,10 @@ $\delta$ \fakeverb{\delta} & U+03B4  & Alt 235  \\
 \begin{minipage}[b]{.3\textwidth}
 \begin{table}[H] \caption{}
 \begin{tabular}{r|ccc}
-&
-\rot{Property 1} &
-\rot{Property 2} &
-\rot{Property 3}
-    \\ \hline
-System 1        &       &       &  X    \\ 
-System 2        & X     & X     &  X    \\
-System 3        & X &   &  X    \\ \hline
+         & \rot{Property 1} & \rot{Property 2} & \rot{Property 3} \\ \hline
+System 1 &                  &                  & X                \\ 
+System 2 & X                & X                & X                \\
+System 3 & X                &                  & X                \\ \hline
 \end{tabular}
 \end{table}
 \end{minipage}
@@ -280,24 +276,24 @@ System 3        & X &   &  X    \\ \hline
 \begin{document}
 \noindent
 \pgfplotstabletypeset[hlines, boldcolname]{
-Name & Unicode & Alt code \\
-$\alpha$ alpha & U+03B1 & Alt 224 \\
-$\gamma$ gamma & U+0393 & Alt 226 \\
-$\delta$ delta & U+03B4 & Alt 235 \\
+Name           & Unicode & Alt code \\
+$\alpha$ alpha & U+03B1  & Alt 224  \\
+$\gamma$ gamma & U+0393  & Alt 226  \\
+$\delta$ delta & U+03B4  & Alt 235  \\
 }
 \hspace{1cm}
 \begin{tblr}[tall,caption]{colspec={lcc},vline{2},hline{2}}
- & Word & Docs \\
-Collab. & ++ & ++ \\
-Price & -- & ++ \\
-Simple & $\circ$ & + \\
+        & Word    & Docs \\
+Collab. & ++      & ++   \\
+Price   & --      & ++   \\
+Simple  & $\circ$ & +    \\
 \end{tblr}
 \hspace{1cm}
 \begin{tblr}[tall,caption]{colspec={lccc},vline{2},hline{2}}
 \diagbox{$x$}{$y$} &              0 &              1 &              2 \\
-0                  & $^1\!/_{\!16}$ & $^1\!/_{\!16}$ &            $0$ \\
+0                  & $^1\!/_{\!16}$ & $^1\!/_{\!16}$ & $0$            \\
 1                  & $^3\!/_{\!16}$ & $^3\!/_{\!16}$ & $^1\!/_{\!16}$ \\
-2                  & $0$ & $^4\!/_{\!16}$ & $^3\!/_{\!16}$ \\
+2                  & $0$            & $^4\!/_{\!16}$ & $^3\!/_{\!16}$ \\
 \end{tblr}
 \end{document}
 ```
