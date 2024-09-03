@@ -49,7 +49,7 @@ float    & sci      & {sci\\sub.} & frac     & num      \\
 \usetikzlibrary{fpu}
 \renewcommand{\thetable}{2.2}
 \begin{document}
-$\begin{tblr}[tall,caption=Evaluate]{ 
+$\begin{tblr}[tall,caption=Evaluate]{ hline{1,Z}={.08em},
     column{1}={r,rightsep=3pt},
     column{2}={l,cmd=\simeq\pgfmathprint,leftsep=0pt}, }
 -1          & -1      \\
