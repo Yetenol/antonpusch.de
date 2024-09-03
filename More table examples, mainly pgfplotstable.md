@@ -1,104 +1,13 @@
----
-title: "Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray"
-dg-publish: true
-dg-show-toc: true
-aliases:
-  - Table
----
-It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
+# Create a simple table with borders
 
-- modern LaTeX3 package with key-value configuration
-- why not just booktabs
-
-There are dozens[^1] of packages for tables, and built-in environments, so what is the problem. 
-
-# My Design Principles
-
-- Keep the table data **raw**, and readable: No ma                                  cros in table content (except math macros supported by MathJax, KaTeX)
-- Row, column **headers**: More rows than columns; **Narrow** (down) **titles**; **Group** similar titles; Put more important columns to the left
-- Make layout **light-weight**: Few border lines; Spacing between cells, rows, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
-- Horizontal **alignment**: **Left**-align text, row headers; **Right**-align numbers; **Center**-align column headers
-- [How to design good tables](How%20to%20design%20good%20tables.md)
-- [Syntax - How to write tables](Syntax%20-%20How%20to%20write%20tables.md)
-
-# Format headers (first row, first column)
-
-- **Group** row, column headings, see 1a
-- Visually clarify table **boundaries**: Thick horizontal lines 1a
-- Visually clarify **column titles** and **row titles**: Thin border line 1b, 1c; Left-aligned first column 1a, 1b
+- Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$
+- Visually clarify **column titles** and **row titles**: Thin border line $\mathrm{1a, 1b}$; Left-aligned row title $\mathrm{1b, 1c}$; Bold font $\mathrm{1c}$
 - Apply border **pattern**: Inner **gridlines** $\mathrm{1c}$
-- Multicolumn header
-- See source examples: [Format table headings](./format%20table%20headings.md)
+- See source examples: [Create a simple table with borders](./content/create%20a%20simple%20table%20with%20borders.md)
 
-![table headers.svg](./attachments/table%20headers.svg)
-
-# Process, format cell body
-
-## Format raw cell body
-
-- Prefix, Suffix, numbers right-aligned, text/left center-aligned; Number format, scientific notation, rounding, group every three digits, monospace, evaluate. Stats, also see [more styles](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
-- See source examples: [Format raw cell body](./format%20raw%20cell%20body.md)
-
-![table body.svg](./attachments/table%20body.svg)
-
-## Import data from files
-
-- Keep the data in **raw** and **universal** (csv) form: Update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell
-- Render **scientific notation** correctly and **uniform**: Render `4.41941738e-02` as $4.42 \cdot 10^{-2}$ $\mathrm{3a, 3b, 3c}$ 
-- **Format numbers**: Set max. decimal places $\mathrm{3a, 3b, 3c}$; When to show exponent $\mathrm{3c}$; Use German commas $\mathrm{3b}$
-- Visually **guide horizontal reading**: Shade every other row $\mathrm{3a}$; Add dashed line every third row $\mathrm{3b}$ 
-- Process input data: sort with column $\mathrm{3c}$ 
-- More ideas: filter, sort, custom column titles, multi column names, Align at decimal or scientific separator
-- See source examples: [Process, and format values from files](./process%20and%20format%20values%20from%20files.md)
-
-![table measurements 1.svg](./attachments/table%20measurements%201.svg)
-
-# Layout, reference the table
-
-## Split table in page columns
-
-- Split in equal parts
-- See source examples: [Layout the table](./layout%20the%20table.md)
-- 4a: Longtable split in half
-- References
-
-![table layout 1.svg](./attachments/table%20layout%201.svg)
+![minimal 45.svg](./content/attachments/minimal%2045.svg)
 
 
-## Add title and reference the table elsewhere
-
-- **Placement, alignment**: center the table horizontally
-- Add **references**: caption underneath and in the list of tables, label to cross-reference elsewhere
-- More ideas: legende, Multifigure, Split, Longtable, surpress tableoftables entry, table next to text, globally set placement specifiers
-- Center, Caption, Reference, Longtable, Caption below/above, Caption number, Figurename
-- See source examples [Add title numbers, caption, and reference the table elsewhere](./add%20title%20numbers,%20caption,%20and%20reference%20the%20table%20elsewhere.md) 
-
-2: diagonal cell A1
-multi column header
-
-![minimal 50.svg](./attachments/minimal%2050.svg)
-
-# Export formatted table
-
-![table body macro column.svg](./attachments/table%20body%20macro%20column.svg)
-
-$$
-\begin{gather*}
-\text{Table 1a:} \\
-\begin{array}{ccc} \hline
-\textbf{Name} & \textbf{Uniform} & \textbf{Alt code} \\ \hline
-\alpha\ \backslash\texttt{alpha} & \text{U+03B1} & \text{Alt 224} \\
-\gamma\ \backslash\texttt{gamma} & \text{U+0393} & \text{Alt 226} \\
-\delta\ \backslash\texttt{delta} & \text{U+03B4} & \text{Alt 235}   \\ \hline
-\end{array}
-\end{gather*}
-$$
-
-|       Name        | Uniform | Alt code |
-| :---------------: | :-----: | :------: |
-| $\alpha$ `\alpha` | U+03B1  | Alt 224  |
-| $\gamma$ `\gamma` | U+0393  | Alt 226  |
-| $\delta$ `\delta` | U+03B4  | Alt 235  |
 
 ```latex
 \documentclass{article}
@@ -224,12 +133,12 @@ Get key
 
 
 
-![simple table.svg](./attachments/simple%20table.svg)![csv alternate table.svg](./attachments/csv%20alternate%20table.svg)
-![minimal 2.svg](./attachments/minimal%202.svg)
+![simple table.svg](./content/attachments/simple%20table.svg)![csv alternate table.svg](./content/attachments/csv%20alternate%20table.svg)
+![minimal 2.svg](./content/attachments/minimal%202.svg)
 
 # Examples
 
-- import the file [yetenol-styles.sty](tables.md#Styling%20setup) for the required style definitions
+- import the file [yetenol-styles.sty](More%20table%20examples,%20mainly%20pgfplotstable.md#Styling%20setup) for the required style definitions
 
 Code in table
 
@@ -338,7 +247,7 @@ Create a **simple** table
 \end{document}
 ```
 
-![minimal 5.svg](./attachments/minimal%205.svg)
+![minimal 5.svg](./content/attachments/minimal%205.svg)
 
 Create a **center aligned** table with **horizontal lines** around the header and at the end of the table
 
@@ -367,10 +276,10 @@ Create a **center aligned** table with **horizontal lines** around the header an
 \end{document}
 ```
 
-![simple table.svg](./attachments/simple%20table.svg)
+![simple table.svg](./content/attachments/simple%20table.svg)
 
 Generate a table from a **csv**-spreadsheet (comma separated values)
-- requires [resources/data.csv](tables.md#Example%20files)
+- requires [resources/data.csv](More%20table%20examples,%20mainly%20pgfplotstable.md#Example%20files)
 
 ```tex
 \documentclass{article}
@@ -384,9 +293,9 @@ Generate a table from a **csv**-spreadsheet (comma separated values)
 \end{document}
 ```
 
-![minimal 14.svg](./attachments/minimal%2014.svg)
+![minimal 14.svg](./content/attachments/minimal%2014.svg)
 
-Generate a table from a **csv** [file](tables.md#Example%20files) and **color** every other row
+Generate a table from a **csv** [file](More%20table%20examples,%20mainly%20pgfplotstable.md#Example%20files) and **color** every other row
 
 ```tex
 \documentclass{article}
@@ -399,7 +308,7 @@ Generate a table from a **csv** [file](tables.md#Example%20files) and **color** 
 \end{document}
 ```
 
-![csv alternate table.svg](./attachments/csv%20alternate%20table.svg)
+![csv alternate table.svg](./content/attachments/csv%20alternate%20table.svg)
 
 Add a table **caption** and a **label** for cross references
 
@@ -433,7 +342,7 @@ Each person gets assigned a number listed in table \ref{tab:identifiers} on page
 \end{document}
 ```
 
-![minimal 9.svg](./attachments/minimal%209.svg)
+![minimal 9.svg](./content/attachments/minimal%209.svg)
 
 Use **german** number seperator $3,\!1416$ and **align at exponent** in scientific representation $\cdot 10^n$
 
@@ -454,7 +363,7 @@ Use **german** number seperator $3,\!1416$ and **align at exponent** in scientif
 \end{document}
 ```
 
-![minimal 11.svg](./attachments/minimal%2011.svg)
+![minimal 11.svg](./content/attachments/minimal%2011.svg)
 
 Allow table to split across **multiple pages**
 
@@ -482,7 +391,7 @@ Allow table to split across **multiple pages**
 \end{document}
 ```
 
-![longtable combined.svg](./attachments/longtable%20combined.svg)
+![longtable combined.svg](./content/attachments/longtable%20combined.svg)
 
 ```tex
 \documentclass{article}
@@ -503,7 +412,7 @@ Each person gets assigned a number listed in table \ref{tab:identifiers} on page
 \end{document}
 ```
 
-![caption label table.svg](./attachments/caption%20label%20table.svg)
+![caption label table.svg](./content/attachments/caption%20label%20table.svg)
 
 Use **german** number seperator $3,\!1416$ and **align at exponent** in scientific representation $\cdot 10^n$
 
@@ -518,7 +427,7 @@ Use **german** number seperator $3,\!1416$ and **align at exponent** in scientif
 \end{document}
 ```
 
-![german scisepalign table.svg](./attachments/german%20scisepalign%20table.svg)
+![german scisepalign table.svg](./content/attachments/german%20scisepalign%20table.svg)
 
 Allow table to split across **multiple pages**
 
@@ -534,7 +443,7 @@ Allow table to split across **multiple pages**
 \end{document}
 ```
 
-![longtable combined.svg](./attachments/longtable%20combined.svg)
+![longtable combined.svg](./content/attachments/longtable%20combined.svg)
 
 Hlines like bookstabs
 
@@ -584,7 +493,7 @@ Hlines like bookstabs
 \end{document}
 ```
 
-![minimal 1.svg](./attachments/minimal%201.svg)
+![minimal 1.svg](./content/attachments/minimal%201.svg)
 
 Vlines and hlines
 
@@ -612,7 +521,7 @@ Vlines and hlines
 \end{document}
 ```
 
-![minimal 2.svg](./attachments/minimal%202.svg)
+![minimal 2.svg](./content/attachments/minimal%202.svg)
 
 Shade every second row
 
@@ -640,7 +549,7 @@ Shade every second row
 \end{document}
 ```
 
-![minimal 3.svg](./attachments/minimal%203.svg)
+![minimal 3.svg](./content/attachments/minimal%203.svg)
 
 ```tex
 \documentclass{article}
@@ -666,7 +575,7 @@ Shade every second row
 \end{document}
 ```
 
-![minimal 4.svg](./attachments/minimal%204.svg)
+![minimal 4.svg](./content/attachments/minimal%204.svg)
 
 ```tex
 
@@ -938,20 +847,3 @@ Longtblr
 \end{document}
 ```
 
-
-
----
-Sources:
-
-Related:
-- [Graphical elements - Standardize tables, images, plots](./graphical%20elements.md)
-- [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex.md)
-- [Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography](./markup%20and%20typesetting%20systems.md)
-- [Style presets - Format your document after you written the content in Word, Latex, Markdown](Style%20presets%20-%20Format%20your%20document%20after%20you%20written%20the%20content%20in%20Word,%20Latex,%20Markdown.md)
-- [Excel to latex - Embed spreadsheet files as latex tables](Excel%20to%20latex%20-%20Embed%20spreadsheet%20files%20as%20latex%20tables.md)
-
-
-Tags:
-
-
-[^1]: Here are some of the packages for tables, though the descriptions are not good: [tables - Which tabular packages do which tasks and which packages conflict? - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/12672/which-tabular-packages-do-which-tasks-and-which-packages-conflict)

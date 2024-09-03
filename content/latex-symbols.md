@@ -163,9 +163,6 @@ $$
 $$
 (\, )\; \lgroup\,\rgroup\; [\,]\; \{\,\}\;  \vert\,\vert\; \Vert\, \Vert\; \lfloor\,\rfloor\; \lceil\,\rceil\; \langle\,\rangle\; \ulcorner\,\urcorner\; \llcorner\,\lrcorner\; \uparrow\,\downarrow\; \updownarrow\,\Updownarrow\; \Uparrow\,\Downarrow
 $$
-$$
-{1\atop2}
-$$
 
 | Math                                                  | Markup                                         |
 | ----------------------------------------------------- | ---------------------------------------------- |
@@ -181,8 +178,7 @@ $$
 | $\lfloor x \rfloor$                                   | `\lfloor`…`\rfloor`                            |
 | $\lceil x \rceil$                                     | `\lceil`…`\rceil`                              |
 | $\langle x \rangle$                                   | `\langle`…`\rangle`                            |
-| ${_1^2}, {1\atop2}$                                   | `{_1^2}` ; `{1 \atop 2}`                       |
-
+| ${_1^2}, {2\atop1}$                                   | `{_1^2}` ; `{2 \atop 1}`                       |
 
 See more delimiters in external resources
 - [Delimiters](https://katex.org/docs/supported#delimiters) from KaTeX docs
