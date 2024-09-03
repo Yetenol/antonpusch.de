@@ -45,7 +45,7 @@ float    & sci      & {sci\\sub.} & frac     & num      \\
 \usetikzlibrary{fpu}
 \renewcommand{\thetable}{2.2}
 \begin{document}
-$\begin{tblr}[tall,caption ]{ 
+$\begin{tblr}[tall,caption=Evaluate]{ 
     column{1}={r,rightsep=3pt},
     column{2}={l,cmd=\simeq\pgfmathprint,leftsep=0pt}, }
 -1          & -1      \\
@@ -115,15 +115,15 @@ $\delta$ \fakeverb{\delta} &
 \renewcommand{\thetable}{2.3\alph{table}}\setcounter{table}{2}
 \begin{document}
 \hspace{1em}
-\begin{tblr}[tall, caption ]{
+\begin{tblr}[tall, caption=Monospace ]{
     colspec={rl}, hline{1,Z}={.08em},hline{2},
     row{1}={font=\bfseries,halign=c}, 
     cell{2-Z}{1}={font=\ttfamily},  
 }
-command & Description \\
-calc    & Calculator \\
-cmd     & Command Prompt \\
-control & Control Panel \\
+command     & Description \\
+calc        & Calculator \\
+cmd         & Command Prompt \\
+devmgmt.msc & Device Manager \\
 \end{tblr}
 \end{document}
 ```
