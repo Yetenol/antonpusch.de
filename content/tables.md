@@ -21,7 +21,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 - [How to design good tables](How%20to%20design%20good%20tables.md)
 - [Syntax - How to write tables](Syntax%20-%20How%20to%20write%20tables.md)
 
-# Format headings (first row, first column)
+# Format headers (first row, first column)
 
 - **Group** row, column headings, see 1a
 - Visually clarify table **boundaries**: Thick horizontal lines 1a
