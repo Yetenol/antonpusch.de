@@ -3,10 +3,10 @@ title: "Graphical elements - Standardize tables, images, plots"
 dg-publish: true
 priority: 5
 ---
-- [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
-- [Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
+- [Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./tables.md)
+- [Code Snippets - Print source code with syntax highlighting in latex with listings](./code%20snippets.md)
 - [Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](./graphics.md)
-- [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./latex-math.md)
+- [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./math.md)
 - [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 - [Floating Table - Add caption, cross reference a table](./floating%20table.md)
 - [CSV Table - Generate table from raw data in a CSV file, automatically detect and format column headers, and values](./csv%20table.md)
