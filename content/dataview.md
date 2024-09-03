@@ -48,8 +48,8 @@ Sources:
 Related:
 
 - [Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography](./markup%20and%20typesetting%20systems.md)
-- [Query, filter, sort and transform frontmatter of your notes](./query%20filter,%20sort%20and%20transform%20frontmatter%20of%20your%20notes.md)
 - [Update dataview queries](Update%20dataview%20queries.md)
+- [Query, filter, sort and transform frontmatter of your notes](./query%20filter,%20sort%20and%20transform%20frontmatter%20of%20your%20notes.md)
 - [Hide the first-level bullet points from results of list queries](./hide%20the%20first-level%20bullet%20points%20from%20results%20of%20list%20queries.md)
 
 
