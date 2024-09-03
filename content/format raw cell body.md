@@ -124,7 +124,7 @@ $\delta$ \fakeverb{\delta} &
     row{1}={font=\bfseries,halign=c}, 
     cell{2-Z}{1}={font=\ttfamily},  
 }
-command     & Description \\
+Command     & Description \\
 calc        & Calculator \\
 cmd         & Command Prompt \\
 devmgmt.msc & Device Manager \\
