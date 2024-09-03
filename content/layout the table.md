@@ -1,4 +1,5 @@
 ---
+title: "Layout the table"
 dg-publish: true
 ---
 
@@ -6,10 +7,12 @@ dg-publish: true
 
 ![minimal 61.svg](./attachments/minimal%2061.svg)
 
+![table layout 1.svg](table%20layout%201.svg)
+
 ```latex
-\documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{4\alph{table}}
+\documentclass{standalone}
 \usepackage{pgfplotstable,tabularray,pgffor}
+\renewcommand{\thetable}{3.1\alph{table}}
 \def\x{0}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
@@ -65,9 +68,9 @@ dg-publish: true
 
 
 \noindent
-\pgfplotstabletypeset[split2]{resources/data.csv}
+\pgfplotstabletypeset[split2]{data.csv}
 \vspace{1em}
-\pgfplotstabletypeset[split3]{resources/data.csv}
+\pgfplotstabletypeset[split3]{data.csv}
 \end{document}
 ```
 
@@ -121,9 +124,9 @@ dg-publish: true
 }
 \begin{document}
 \noindent
-\pgfplotstabletypeset[split2]{resources/data.csv}
+\pgfplotstabletypeset[split2]{data.csv}
 \vspace{1em}
-\pgfplotstabletypeset[split3]{resources/data.csv}
+\pgfplotstabletypeset[split3]{data.csv}
 \end{document}
 ```
 
@@ -177,10 +180,10 @@ dg-publish: true
 }
 \begin{document}
 
-\pgfplotstabletypeset[csv,tblr,centering,hlines,split2]{resources/data.csv}
+\pgfplotstabletypeset[csv,tblr,centering,hlines,split2]{data.csv}
 \vspace{1cm}
 \begin{table}[H]
-\pgfplotstabletypeset[csv,tblr,centering,hlines,split3]{resources/data.csv}
+\pgfplotstabletypeset[csv,tblr,centering,hlines,split3]{data.csv}
 \caption{This table was spread across three columns}
 \end{table}
 
