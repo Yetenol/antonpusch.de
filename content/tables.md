@@ -36,9 +36,11 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 ## Format raw cell body
 
-- [Format raw cell body](Format%20raw%20cell%20body.md)
-- See [Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
-- Stats
+- Number format, scientific notation, rounding, group every three digits, monospace, evaluate. Stats
+- See source examples: [Format raw cell body](Format%20raw%20cell%20body.md)
+- Also see [Follow varying typographic conventions with the same input syntax](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
+
+![table body.svg](./attachments/table%20body.svg)
 
 ## Import data from files
 
