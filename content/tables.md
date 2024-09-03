@@ -81,7 +81,7 @@ $$
 \text{Table 2.3a:} \\
 \begin{array}{ccr} \hline
 \text{Name} & \text{Uniform} &
-    \begin{matrix}\text{Alt}\\ \text{code}\end{matrix} \\ \hline
+    \begin{matrix}\text{Alt}\\[-10pt] \text{code}\end{matrix} \\ \hline
 \alpha\ \backslash\texttt{alpha} & \text{U+03B1} & 224 \\
 \gamma\ \backslash\texttt{gamma} & \text{U+0393} & 226 \\
 \delta\ \backslash\texttt{delta} & \text{U+03B4} & 235 \\ \hline
