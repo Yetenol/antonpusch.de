@@ -580,7 +580,6 @@ Hlines like bookstabs
 \end{document}
 ```
 
-![attachments/minimal.svg](./attachments/minimal.svg)
 
 ```tex
 \documentclass{article}
