@@ -30,7 +30,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 - Multicolumn header
 - See source examples: [Format table headings](./format%20table%20headings.md)
 
-![figure format table headings.svg](./attachments/figure%20format%20table%20headings.svg)
+![table headers.svg](./attachments/table%20headers.svg)
 
 # Process, format cell body
 
