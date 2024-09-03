@@ -146,18 +146,18 @@ Related:
 - [Update dataview queries](Update%20dataview%20queries.md)
 - [Symlinks in Obsidian](Symlinks%20in%20Obsidian.md)
 - [Pandoc - Convert markup languages context aware with pandoc filters](Pandoc%20-%20Convert%20markup%20languages%20context%20aware%20with%20pandoc%20filters.md)
-- [Obsidian as a markdown editor - Switch between Vscode and Obsidian](./obsidian%20as%20a%20markdown%20editor.md)
 - [How to structure notes - Bottom up, Tags, Top down](How%20to%20structure%20notes%20-%20Bottom%20up,%20Tags,%20Top%20down.md)
 - [Writing tools](Writing%20tools.md)
 - [The graph view in Obsidian shows to which topics a note relates](The%20graph%20view%20in%20Obsidian%20shows%20to%20which%20topics%20a%20note%20relates.md)
 - [Synchronize content between devices](Synchronize%20content%20between%20devices.md)
 - [Other people's obsidian projects](Other%20people's%20obsidian%20projects.md)
+- [Obsidian as a markdown editor - Switch between Vscode and Obsidian](./obsidian%20as%20a%20markdown%20editor.md)
 - [Integrate Ai into note taking](Integrate%20Ai%20into%20note%20taking.md)
 - [How to build this garden](How%20to%20build%20this%20garden.md)
-- [Hide the first-level bullet points from results of list queries](./hide%20the%20first-level%20bullet%20points%20from%20results%20of%20list%20queries.md)
 - [Create diagrams](Create%20diagrams.md)
-- [Convert wikilinks to markdown links](./convert%20wikilinks%20to%20markdown%20links.md)
 - [Collaborate on synchronized notes in real-time](Collaborate%20on%20synchronized%20notes%20in%20real-time.md)
+- [Hide the first-level bullet points from results of list queries](./hide%20the%20first-level%20bullet%20points%20from%20results%20of%20list%20queries.md)
+- [Convert wikilinks to markdown links](./convert%20wikilinks%20to%20markdown%20links.md)
 
 
 Tags:
