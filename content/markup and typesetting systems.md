@@ -6,7 +6,7 @@ aliases:
 ---
 # Content
 
-[Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./latex-math.md)
+[Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./math.md)
 
 $$
 \begin{align*} \qquad&\hspace{-2em}
@@ -16,11 +16,11 @@ $$
 \end{align*}
 $$
 
-[Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./latex-tables.md)
+[Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./tables.md)
 
 ![figure Format table headings.svg](./attachments/figure%20format%20table%20headings.svg)
 
-[Listings - Print source code with syntax highlighting in latex with listings](./latex-listings.md)
+[Code Snippets - Print source code with syntax highlighting in latex with listings](./code%20snippets.md)
 
 ![code block.svg](./attachments/code%20block.svg)
 
