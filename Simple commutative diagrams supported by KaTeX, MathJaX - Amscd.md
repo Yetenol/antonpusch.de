@@ -18,7 +18,7 @@ Sources:
 
 Related:
 - [Networks, Commutative diagrams - Dynamically draw graph networks as a vector graphic](./content/networks%20commutative%20diagrams.md)
-- [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./content/latex-math.md)
+- [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./content/math.md)
 
 
 Tags:
