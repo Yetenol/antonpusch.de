@@ -62,6 +62,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 ![table layout 1.svg](./attachments/table%20layout%201.svg)
 
+
 ## Add title and reference the table elsewhere
 
 - **Placement, alignment**: center the table horizontally
@@ -81,7 +82,7 @@ $$
 \text{Table 2.3a:} \\
 \begin{array}{ccr} \hline
 \text{Name} & \text{Uniform} &
-    \begin{matrix}\text{Alt}\\[-10pt] \text{code}\end{matrix} \\ \hline
+    \begin{matrix}\text{Alt}\\[-2pt] \text{code}\end{matrix} \\ \hline
 \alpha\ \backslash\texttt{alpha} & \text{U+03B1} & 224 \\
 \gamma\ \backslash\texttt{gamma} & \text{U+0393} & 226 \\
 \delta\ \backslash\texttt{delta} & \text{U+03B4} & 235 \\ \hline
