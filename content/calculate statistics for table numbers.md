@@ -16,7 +16,6 @@ calculate sum, mean, standard deviation under table
 - [Add rows for sum/mean/std at end of pgfplotstable - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/179177/add-rows-for-sum-mean-std-at-end-of-pgfplotstable)
 - [\[Pgfplots-features\] Simple calculations on columns of data](https://pgfplots-features.narkive.com/tu1Qxhx5/simple-calculations-on-columns-of-data)
 
-
 # Sum up integers
 
 ![table stats integer sum.svg](./attachments/table%20stats%20integer%20sum.svg)
