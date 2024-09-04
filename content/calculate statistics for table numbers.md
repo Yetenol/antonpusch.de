@@ -130,3 +130,73 @@ Roman  \\
 \end{tblr}
 \end{document}
 ```
+
+
+# Statistics
+
+# Calculate sum, mean, or standard deviation for each column
+
+![table stats.svg](./attachments/table%20stats.svg)
+
+```latex
+\documentclass{standalone}
+\usepackage{tabularray}
+\usepackage{tabularray,tikz}
+\UseTblrLibrary{functional}
+\usetikzlibrary{fpu}
+\renewcommand{\thetable}{3.2}
+\IgnoreSpacesOn
+\prgNewFunction \sumRowRange {mm} {
+    \fpZero \sum % sum = 0.0
+    \intStepOneInline {#1} {#2} { % for rows 2-Y
+        \fpAdd \sum {\cellGetText {##1} {\thecolnum}} % sum += cell
+    }
+    \prgReturn {\fpEval {round(\sum,2)}}
+}
+\prgNewFunction \meanRowRange {mm} {
+    \prgReturn {\fpEval{\sumRowRange{#1}{#2}/(#2-#1)}}
+}
+\prgNewFunction \standardDeviationRowRange {mm} {
+    \fpSet \mean {\meanRowRange{#1}{#2}}
+    \fpZero \sum % sum = 0.0
+    \intStepOneInline {#1} {#2} { % for rows 2-Y
+        \fpAdd \sum {(\cellGetText {##1} {\thecolnum} - \mean)^2}
+    }
+    \prgReturn {\fpEval {round(\sum,2)}}
+}
+\IgnoreSpacesOff
+\begin{document}
+\begin{tblr}[tall,caption]{
+    colspec={rrr}, hline{1,Z}={.08em},hline{2,W},
+    column{2-Z}={r,mode=math,cmd=\pgfmathprintnumber}, 
+    column{1}={mode=math},
+    cell{2-4}{1}={cmd=\intEval{\therownum-1}},
+    row{1}={c,mode=text,cmd={}}, 
+    cell{X}{2-Z}={cmd=\sumRowRange{2}{4}},
+    cell{Y}{2-Z}={cmd=\meanRowRange{2}{4}},
+    cell{Z}{2-Z}={cmd=\standardDeviationRowRange{2}{4}},
+}
+\#     & a & b    & c              \\
+       & 1 & 2.3  & 1.43587294e-01 \\
+       & 4 & 5.2  & 4.41941738e-02 \\
+       & 7 & 8.44 & 8.20091159e-03 \\
+\Sigma                             \\
+\mu                                \\
+\sigma                             \\
+\end{tblr}
+\end{document}
+```
+
+# Figure collection for note preview
+
+![table functional.svg](./attachments/table%20functional.svg)
+
+```latex
+\documentclass{standalone}
+\usepackage{graphics}
+\begin{document}
+\includegraphics{table counters}
+\hspace{1em}
+\includegraphics{table stats}
+\end{document}
+```
