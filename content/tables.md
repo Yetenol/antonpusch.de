@@ -41,6 +41,13 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 ![table body.svg](./attachments/table%20body.svg)
 
+# Process, evaluate cells with functional programming
+
+-  See source examples: [Calculate statistics for table numbers](./calculate%20statistics%20for%20table%20numbers.md)
+
+![table functional.svg](./attachments/table%20functional.svg)
+
+
 ## Import data from files
 
 - Keep the data in **raw** and **universal** (csv) form: Update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell
