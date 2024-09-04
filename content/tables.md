@@ -34,15 +34,20 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 # Process, format cell body
 
-## Format raw cell body
+## Format numbers
 
-- Prefix, Suffix, numbers right-aligned, text/left center-aligned; Number format, scientific notation, rounding, group every three digits, monospace, evaluate. Stats, also see [more styles](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
+- Prefix, Suffix, url, numbers right-aligned, text/left center-aligned; Number format, scientific notation, rounding, group every three digits, monospace, evaluate. Stats, also see [more styles](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
 - See source examples: [Format raw cell body](./format%20raw%20cell%20body.md)
 
 ![table body.svg](./attachments/table%20body.svg)
 
-# Process, evaluate cells with functional programming
+## Format text
 
+Url, Monospace
+
+# Set cell text, style with functions
+
+- Row, column counter; Statistics (sum, mean, standard deviation), regex replace, conditional formatting, heatmap, negative values
 -  See source examples: [Calculate statistics for table numbers](./calculate%20statistics%20for%20table%20numbers.md)
 
 ![table functional.svg](./attachments/table%20functional.svg)
