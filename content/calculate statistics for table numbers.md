@@ -78,10 +78,11 @@ calculate sum, mean, standard deviation under table
 \begin{tblr}[tall,caption]{
     colspec={rrr}, process=\funcSum, hline{1,Z}={.08em},hline{2,Y},
     column{1-Z}={r,mode=math,cmd=\pgfmathprintnumber}, 
-    column{1}={rightsep=0pt,cmd={}},
+    column{1}={rightsep=0pt,cmd=\intEval{\therownum-1}},
     row{1}={c,mode=text,cmd={}}, 
+    row{Z}={cmd={}}
 }
-       & a & b & c \\
+\#     & a & b & c \\
        & 1 & 2.3 & 1.43587294e-01 \\
        & 4 & 5.2 & 4.41941738e-02 \\
        & 7 & 8.44 & 8.20091159e-03 \\
@@ -90,3 +91,42 @@ calculate sum, mean, standard deviation under table
 \end{document}
 ```
 
+
+# Counters
+
+- counters rownum, colnum, rowcount, colcount are available
+Print counter with format
+- `\arabic{rownum}`, `\alph{rownum}`, `\Alph{rownum}`, `\roman{rownum}`, `\Roman{rownum}`, `\therownum`
+
+![table counters.svg](./attachments/table%20counters.svg)
+
+```latex
+\documentclass{standalone}
+\usepackage{tabularray}
+\renewcommand{\thetable}{1.2\alph{table}}
+\begin{document}
+\begin{tblr}[tall,caption]{ 
+    hline{1,Z}={.08em},hline{3}, column{1-Z}={c},
+    cell{3-Z}{2}={preto=\arabic{colnum}},
+    cell{3-Z}{3}={preto=\alph{colnum}},
+    cell{3-Z}{4}={preto=\Alph{colnum}},
+    cell{3-Z}{5}={preto=\roman{colnum}},
+    cell{3-Z}{6}={preto=\Roman{colnum}},
+    cell{3}{2-Z}={appto={,\arabic{rownum}}},
+    cell{4}{2-Z}={appto={,\alph{rownum}}},
+    cell{5}{2-Z}={appto={,\Alph{rownum}}},
+    cell{6}{2-Z}={appto={,\roman{rownum}}},
+    cell{7}{2-Z}={appto={,\Roman{rownum}}},
+    cell{1}{1}={r=2}{font=\bfseries}, cell{1}{2}={c=5}{font=\bfseries},
+    hline{2}={2-Z}{leftpos=-1,rightpos=-1,endpos},
+}
+{rownum\\counter} & colnum counter \\
+& arabic & alph & Alph & roman & Roman \\
+arabic \\
+alph   \\
+Alph   \\
+roman  \\
+Roman  \\
+\end{tblr}
+\end{document}
+```
