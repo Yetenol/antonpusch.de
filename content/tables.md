@@ -1,5 +1,5 @@
 ---
-title: "Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray"
+title: "Tables - Create tables and format by definiting styles in the preamble, utilizing  tabularray"
 dg-publish: true
 dg-show-toc: true
 aliases:
@@ -43,7 +43,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 ## Format text
 
-Url, Monospace
+Url, Monospace, Movie list
 
 # Set cell text, style with functions
 
@@ -51,7 +51,6 @@ Url, Monospace
 -  See source examples: [Calculate statistics for table numbers](./calculate%20statistics%20for%20table%20numbers.md)
 
 ![table functional.svg](./attachments/table%20functional.svg)
-
 
 ## Import data from files
 
