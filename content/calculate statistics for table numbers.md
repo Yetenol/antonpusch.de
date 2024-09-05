@@ -29,7 +29,7 @@ Print counter with format
 ```latex
 \documentclass{standalone}
 \usepackage{tabularray}
-\renewcommand{\thetable}{1.2\alph{table}}
+\renewcommand{\thetable}{3.1\alph{table}}
 \begin{document}
 \begin{tblr}[tall,caption]{ 
     hline{1,Z}={.08em},hline{3}, column{1-Z}={c},
@@ -66,7 +66,7 @@ Roman  \\
 \usepackage{tabularray}
 \UseTblrLibrary{counter}
 \UseTblrLibrary{functional}
-\renewcommand{\thetable}{1.2\alph{table}}
+\renewcommand{\thetable}{3.1\alph{table}} \setcounter{table}{1}
 \IgnoreSpacesOn
 \newcounter{colindex}
 \newcounter{rowindex}
@@ -85,7 +85,7 @@ Roman  \\
 }
 \IgnoreSpacesOff
 \begin{document}
-\begin{tblr}[tall,caption]{ 
+\begin{tblr}[tall,caption,baseline=b]{ 
     hline{1,Z}={.08em},hline{3}, column{1-Z}={c},
     cell{3-Z}{2}={preto=\arabic{colindex}},
     cell{3-Z}{3}={preto=\alph{colindex}},
@@ -205,42 +205,32 @@ Rural     & 5    & 12 & --   & 14 \\
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
 \renewcommand{\thetable}{3.2}
-\IgnoreSpacesOn
-\fpNew\nsum \fpNew\nmean \intNew\nlast
-\prgNewFunction\resolveUVWXYZ{ mm }{
-    \strCaseTF {#1} {
-         U{\tlSet\nlast{5}}  V{\tlSet\nlast{4}}
-         W{\tlSet\nlast{3}}  X{\tlSet\nlast{2}}
-         Y{\tlSet\nlast{1}}  Z{\tlSet\nlast{0}}
-    }{  \prgReturn{ \intEval{ #2 - \nlast }}
-    }{  \prgReturn{#1} }
+\ExplSyntaxOn
+\clistNew\vchilds 
+\fpNew\naccum \fpNew\nmean \intNew\nlast \fpNew\ncell
+\prgNewFunction\vclist{ n }{
+    \__tblr_get_childs:nx{ #1 }{ \therowcount }
+    \prgReturn{\l_tblr_childs_clist}%
 }
-\prgNewFunction\colnum{ m }{
-    \prgReturn{ \resolveUVWXYZ{#1}{\therowcount} }
-}
-\prgNewFunction\vsum{ mm }{
-    \fpZero\nsum
-    \intStepOneInline{ \colnum{#1} }{ \colnum{#2} }{
-        \fpAdd\nsum{ \cellGetText{##1}{\thecolnum} }
+\prgNewFunction\vMapInline{ mm }{
+    \fpZero\naccum
+    \clistVarMapInline{ \vclist{#1} }{
+        \fpSet\ncell{ \cellGetText{##1}{\thecolnum} }
+        \fpSet\naccum{ #2 }
     }
-    \prgReturn{ \fpEval{ round(\nsum,2) } }
+    \prgReturn{ \fpEval{ round(\naccum,2) }}
 }
-\prgNewFunction\vmean{ mm }{
-    \prgReturn{ \fpEval{ 
-        \vsum{ \colnum{#1} }{ \colnum{#2} } 
-        / ( \colnum{#2} - \colnum{#1} ) 
-    }}
+\prgNewFunction\vsum{ m }{
+    \prgReturn{ \vMapInline{#1}{\naccum + \ncell}  }}
+\prgNewFunction\vcount{ m }{
+    \prgReturn{ \clistVarCount{\vclist{#1}} }
 }
-\prgNewFunction\vstandarddeviation{ mm }{
-    \fpSet\nmean{ \vmean{#1}{#2} }
-    \fpZero\nsum
-    \intStepOneInline{ \colnum{#1} }{ \colnum{#2} }{
-        \fpAdd\nsum{ 
-            ( \cellGetText{##1}{\thecolnum} - \nmean )^2 }
-    }
-    \prgReturn{ \fpEval{ round(\nsum,2) }}
-}
-\IgnoreSpacesOff
+\prgNewFunction\vmean{ m }{
+    \prgReturn{ \fpEval{ round( \vsum{#1} / \vcount{#1} ,2) }}}
+\prgNewFunction\vstandarddeviation{ m }{
+    \fpSet\nmean{ \vmean{#1} }
+    \prgReturn{ \vMapInline{#1}{\naccum + (\ncell - \nmean)^2 }  }}
+\ExplSyntaxOff
 \begin{document}
 \begin{tblr}[tall,caption]{
     colspec={rrr}, hline{1,Z}={.08em},hline{2,W},
@@ -248,9 +238,9 @@ Rural     & 5    & 12 & --   & 14 \\
     column{1}={mode=math},
     cell{2-4}{1}={cmd=\intEval{\therownum-1}},
     row{1}={c,mode=text,cmd={}}, 
-    cell{X}{2-Z}={cmd=\vsum{2}{W}},
-    cell{Y}{2-Z}={cmd=\vmean{2}{W}},
-    cell{Z}{2-Z}={cmd=\vstandarddeviation{2}{W}},
+    cell{X}{2-Z}={cmd=\vsum{2-W}},
+    cell{Y}{2-Z}={cmd=\vmean{2-W}},
+    cell{Z}{2-Z}={cmd=\vstandarddeviation{2-W}},
 }
 \#     & a & b    & c              \\
        & 1 & 2.3  & 1.43587294e-01 \\
@@ -262,7 +252,7 @@ Rural     & 5    & 12 & --   & 14 \\
 \end{tblr}
 \end{document}
 ```
-
+[Table calculation](./table%20calculation.md)
 # Sum up integers
 
 ![table stats integer sum.svg](./attachments/table%20stats%20integer%20sum.svg)
@@ -405,18 +395,42 @@ Rural     & 5    & 12 & --   & 14 \\
 \end{document}
 ```
 
-
+```latex
+\documentclass{standalone}
+\usepackage{tabularray}
+\UseTblrLibrary{functional}
+\ExplSyntaxOn
+\prgNewFunction\getVChilds{ m }{
+    \__tblr_get_childs:nx{ #1 }{ \therowcount }
+    \prgReturn \l_tblr_childs_clist
+}
+\prgNewFunction\getHChilds{ m }{
+    \__tblr_get_childs:nx{ #1 }{ \thecolcount }
+    \prgReturn \l_tblr_childs_clist
+}
+\ExplSyntaxOff
+\begin{document}
+\begin{tblr}[tall, caption]{}
+a & b & c & d \\
+1 & 2 & 3 & 4 \\
+5 & \getVChilds{1-Z} & 7 & 8 \\
+9 & 9 & 9 & 9 \\
+\end{tblr}
+\end{document}
+```
 
 # Figure collection for note preview
 
 ![table functional.svg](./attachments/table%20functional.svg)
 
-```latex
+```py
+generate_latex_figure(r"""
 \documentclass{standalone}
 \usepackage{graphics}
 \begin{document}
-\includegraphics{table counters}
+\includegraphics{table counters 2}
 \hspace{1em}
 \includegraphics{table stats}
 \end{document}
+""", outfile="table functional")
 ```
