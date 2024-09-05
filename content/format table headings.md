@@ -39,6 +39,8 @@ Rural     & 5    & 12 & --   & 14 \\
 
 # Comparison
 
+- Rotated title crip
+
 ![table comparison 1.svg](./attachments/table%20comparison%201.svg)
 
 ```latex
@@ -93,6 +95,8 @@ System 3 & X          &            & X          \\
 ```
 
 # Two dimensional table
+
+- To dynamically calculate the sum, see [Calculate statistics for table numbers](./calculate%20statistics%20for%20table%20numbers.md)
 
 ![table probabilities 1.svg](./attachments/table%20probabilities%201.svg)
 

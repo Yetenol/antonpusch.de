@@ -43,11 +43,11 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 ## Format text
 
-Url, Monospace, Movie list
+Url, Monospace, Movie list, regex, detect name, replace LaTeX -> `\LaTeX`
 
 # Set cell text, style with functions
 
-- Row, column counter; Statistics (sum, mean, standard deviation), regex replace, conditional formatting, heatmap, negative values
+- Row, column counter; Statistics (sum, mean, standard deviation), regex replace, conditional formatting, heatmap, negative values, validate values, calculate function, compare ideal function to meassured values
 -  See source examples: [Calculate statistics for table numbers](./calculate%20statistics%20for%20table%20numbers.md)
 
 ![table functional.svg](./attachments/table%20functional.svg)
