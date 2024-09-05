@@ -43,7 +43,13 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 ## Format text
 
-Url, Monospace, Movie list, regex, detect name, replace LaTeX -> `\LaTeX`
+Url, Monospace, Movie list, regex, detect name, replace LaTeX -> `\LaTeX`, auto truncate to footnote, autoheaders(rotate, group), vgroupdetect, hgroupdetect, auto format, replace empty cells,
+
+# Table calculation
+
+- See source examples: [Table calculation](./table%20calculation.md)
+
+![table accumulate.svg](./attachments/table%20accumulate.svg)
 
 # Set cell text, style with functions
 
