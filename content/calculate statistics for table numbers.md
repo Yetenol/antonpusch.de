@@ -72,23 +72,39 @@ Roman  \\
 \usetikzlibrary{fpu}
 \renewcommand{\thetable}{3.2}
 \IgnoreSpacesOn
-\prgNewFunction \sumRowRange {mm} {
-    \fpZero \sum % sum = 0.0
-    \intStepOneInline {#1} {#2} { % for rows 2-Y
-        \fpAdd \sum {\cellGetText {##1} {\thecolnum}} % sum += cell
-    }
-    \prgReturn {\fpEval {round(\sum,2)}}
+\fpNew\nsum \fpNew\nmean \intNew\nlast
+\prgNewFunction\resolveUVWXYZ{ mm }{
+    \strCaseTF {#1} {
+         U{\tlSet\nlast{5}}  V{\tlSet\nlast{4}}
+         W{\tlSet\nlast{3}}  X{\tlSet\nlast{2}}
+         Y{\tlSet\nlast{1}}  Z{\tlSet\nlast{0}}
+    }{  \prgReturn{ \intEval{ #2 - \nlast }}
+    }{  \prgReturn{#1} }
 }
-\prgNewFunction \meanRowRange {mm} {
-    \prgReturn {\fpEval{\sumRowRange{#1}{#2}/(#2-#1)}}
+\prgNewFunction\colnum {m} {
+    \prgReturn{ \resolveUVWXYZ{#1}{\therowcount} }
 }
-\prgNewFunction \standardDeviationRowRange {mm} {
-    \fpSet \mean {\meanRowRange{#1}{#2}}
-    \fpZero \sum % sum = 0.0
-    \intStepOneInline {#1} {#2} { % for rows 2-Y
-        \fpAdd \sum {(\cellGetText {##1} {\thecolnum} - \mean)^2}
+\prgNewFunction\vsum{ mm }{
+    \fpZero\nsum
+    \intStepOneInline{ \colnum{#1} }{ \colnum{#2} }{
+        \fpAdd\nsum{ \cellGetText{##1}{\thecolnum} }
     }
-    \prgReturn {\fpEval {round(\sum,2)}}
+    \prgReturn{ \fpEval{ round(\nsum,2) } }
+}
+\prgNewFunction\vmean{ mm }{
+    \prgReturn{ \fpEval{ 
+        \vsum{ \colnum{#1} }{ \colnum{#2} } 
+        / ( \colnum{#2} - \colnum{#1} ) 
+    }}
+}
+\prgNewFunction\vstandarddeviation{ mm }{
+    \fpSet\nmean{ \vmean{#1}{#2} }
+    \fpZero\nsum
+    \intStepOneInline{ \colnum{#1} }{ \colnum{#2} }{
+        \fpAdd\nsum{ 
+            ( \cellGetText{##1}{\thecolnum} - \nmean )^2 }
+    }
+    \prgReturn{ \fpEval{ round(\nsum,2) }}
 }
 \IgnoreSpacesOff
 \begin{document}
@@ -98,9 +114,9 @@ Roman  \\
     column{1}={mode=math},
     cell{2-4}{1}={cmd=\intEval{\therownum-1}},
     row{1}={c,mode=text,cmd={}}, 
-    cell{X}{2-Z}={cmd=\sumRowRange{2}{4}},
-    cell{Y}{2-Z}={cmd=\meanRowRange{2}{4}},
-    cell{Z}{2-Z}={cmd=\standardDeviationRowRange{2}{4}},
+    cell{X}{2-Z}={cmd=\vsum{2}{W}},
+    cell{Y}{2-Z}={cmd=\vmean{2}{W}},
+    cell{Z}{2-Z}={cmd=\vstandarddeviation{2}{W}},
 }
 \#     & a & b    & c              \\
        & 1 & 2.3  & 1.43587294e-01 \\
@@ -150,7 +166,7 @@ Roman  \\
 
 # Sum up floats
 
-![table stats integer sum.svg](./attachments/table%20stats%20integer%20sum.svg)
+![table stats float sum.svg](./attachments/table%20stats%20float%20sum.svg)
 
 ```latex
 \documentclass{standalone}
@@ -186,6 +202,75 @@ Roman  \\
 \end{tblr}
 \end{document}
 ```
+
+
+```latex
+\documentclass{standalone}
+\usepackage{tabularray}
+\usepackage{tabularray,tikz}
+\UseTblrLibrary{functional}
+\usetikzlibrary{fpu}
+\renewcommand{\thetable}{3.2}
+\IgnoreSpacesOn
+\prgNewFunction \sumRowRange {mm} {
+    \fpZero \sum % sum = 0.0
+    \intStepOneInline {#1} {#2} { % for rows 2-Y
+        \fpAdd \sum {\cellGetText {##1} {\thecolnum}} % sum += cell
+    }
+    \prgReturn {\fpEval {round(\sum,2)}}
+}
+\prgNewFunction \meanRowRange {mm} {
+    \prgReturn {\fpEval{\sumRowRange{#1}{#2}/(#2-#1)}}
+}
+\prgNewFunction \standardDeviationRowRange {mm} {
+    \fpSet \mean {\meanRowRange{#1}{#2}}
+    \fpZero \sum % sum = 0.0
+    \intStepOneInline {#1} {#2} { % for rows 2-Y
+        \fpAdd \sum {(\cellGetText {##1} {\thecolnum} - \mean)^2}
+    }
+    \prgReturn {\fpEval {round(\sum,2)}}
+}
+\IgnoreSpacesOff
+\begin{document}
+\begin{tblr}[tall,caption]{
+    colspec={rrr}, hline{1,Z}={.08em},hline{2,W},
+    column{2-Z}={r,mode=math,cmd=\pgfmathprintnumber}, 
+    column{1}={mode=math},
+    cell{2-4}{1}={cmd=\intEval{\therownum-1}},
+    row{1}={c,mode=text,cmd={}}, 
+    cell{X}{2-Z}={cmd=\sumRowRange{2}{4}},
+    cell{Y}{2-Z}={cmd=\meanRowRange{2}{4}},
+    cell{Z}{2-Z}={cmd=\standardDeviationRowRange{2}{4}},
+}
+\#     & a & b    & c              \\
+       & 1 & 2.3  & 1.43587294e-01 \\
+       & 4 & 5.2  & 4.41941738e-02 \\
+       & 7 & 8.44 & 8.20091159e-03 \\
+\Sigma                             \\
+\mu                                \\
+\sigma                             \\
+\end{tblr}
+\end{document}
+```
+
+```latex
+\documentclass{standalone}
+\usepackage{tabularray}
+\UseTblrLibrary{functional}
+\begin{document}
+\IgnoreSpacesOn
+\prgNewFunction \charToNum{mm} {
+    \strCaseTF {#1} {
+         {U} {\tlSet\lTmpkTl{5}}  {V} {\tlSet\lTmpkTl{4}}
+         {W} {\tlSet\lTmpkTl{3}}  {X} {\tlSet\lTmpkTl{2}}
+         {Y} {\tlSet\lTmpkTl{1}}  {Z} {\tlSet\lTmpkTl{0}}
+    }{  \prgReturn{\intEval{#2-\lTmpkTl}}  }
+    {  \prgReturn{#1}  }}
+\IgnoreSpacesOff
+\charToNum{X}{5} \charToNum{Y}{5} \charToNum{Z}{5} \charToNum{3}{5}
+\end{document}
+```
+
 
 
 # Figure collection for note preview
