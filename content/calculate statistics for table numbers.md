@@ -128,7 +128,7 @@ Roman  \\
   colspec={lrrrr},
   hline{1,Z}={.1em}, hline{3},
   row{3-Z}={,rowsep=0pt}, row{3}={abovesep=2pt},
-  column{1}={halign=l,cmd={\stepcounter{rowindex}\roman{rowindex}\quad}},
+  column{1}={halign=l,cmd={\stepcounter{rowindex}\rlap{\roman{rowindex}}\qquad}},
   row{3}={cmd={\stepcounter{colindex}\roman{colindex}}},
   cell{1}{1}={preto=\setcounter{rowindex}{0}\setcounter{colindex}{0}},
       cell{3,6}{1}={font=\bfseries,cmd={}},
@@ -150,6 +150,46 @@ Rural     & 5    & 12 & --   & 14 \\
 \end{tblr}
 \end{document}
 ```
+
+# Count per group
+
+![table counters 4.svg](./attachments/table%20counters%204.svg)
+
+```latex
+\documentclass{standalone}
+\usepackage{tabularray}
+\UseTblrLibrary{counter}
+\renewcommand{\thetable}{1.1}
+\newcounter{rowindex}
+\newcounter{colindex}
+\begin{document}
+\begin{tblr}[tall,caption=Pet Owners]{
+  colspec={lrrrr},
+  hline{1,Z}={.1em}, hline{3},
+  row{3-Z}={,rowsep=0pt}, row{3}={abovesep=2pt},
+  column{1}={halign=l,cmd={\stepcounter{rowindex}\rlap{\roman{rowindex}}\qquad}},
+  cell{3}{2-Z}={preto={\stepcounter{colindex}\roman{colindex}}},
+      cell{3,6}{1}={font=\bfseries,cmd=\setcounter{rowindex}{0}},
+      row{3,6}={abovesep=6pt,belowsep=2pt},
+  cell{1}{2,4}={c=2}{c}, row{1-2}={halign=c},
+  cell{3}{2,4}={preto=\setcounter{colindex}{0}},
+  cell{1-2}{1}={l,cmd={}},
+  column{4}={leftsep+=6pt},
+  hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
+  hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
+}
+          & Dogs &    & Cats &    \\
+Owner     & M    & F  & M    & F  \\
+Age                               \\
+$< 18$    & 2    & 12 & 7    & 11 \\
+$\ge 18$  & 4    & 44 & 5    & 3  \\
+Residence                         \\
+Urban     & 43   & 46 & 15   & 33 \\
+Rural     & 5    & 12 & --   & 14 \\
+\end{tblr}
+\end{document}
+```
+
 
 
 # Statistics
