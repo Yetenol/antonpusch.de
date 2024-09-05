@@ -37,10 +37,7 @@ Available function:
 \usetikzlibrary{fpu}
 \renewcommand{\thetable}{3.2}
 \ExplSyntaxOn
-\clistNew\columnList \clistNew\rowList
-\intNew\rowIterate \intNew\columnIterate
-\fpNew\nAccum \fpNew\nCell \fpNew\meanValue
-\clistNew\nrowrange \tlNew\ncolumnrange
+\clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell
 \prgNewFunction\rowRangesToList{ n }{
     \__tblr_get_childs:nx{ #1 }{ \therowcount }
     \prgReturn{\l_tblr_childs_clist}  }
@@ -53,9 +50,9 @@ Available function:
     \clistSet\columnList{ \tlIfEmptyTF{#2}{
         \tlUse{\thecolnum}  }{  \tlUse{\ColumnRangesToList{#2}}}  }
     \fpZero\nAccum
-    \clistVarMapVariable \rowList \rowIterate{
-        \clistVarMapVariable \columnList \columnIterate{
-            \fpSet\nCell{ \cellGetText{\rowIterate}{\columnIterate} }
+    \clistVarMapVariable \rowList \lTmpaInt{
+        \clistVarMapVariable \columnList \lTmpbInt{
+            \fpSet\nCell{ \cellGetText{\lTmpaInt}{\lTmpbInt} }
             \fpSet\nAccum{ #3 }  }  }
     \prgReturn{ \fpEval{ round(\nAccum,2) }}  }
 \prgNewFunction\cellSum{ mm }{
