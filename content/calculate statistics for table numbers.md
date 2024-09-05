@@ -57,6 +57,100 @@ Roman  \\
 \end{document}
 ```
 
+# Shift column, row index to main content
+
+![table counters 2.svg](./attachments/table%20counters%202.svg)
+
+```latex
+\documentclass{standalone}
+\usepackage{tabularray}
+\UseTblrLibrary{counter}
+\UseTblrLibrary{functional}
+\renewcommand{\thetable}{1.2\alph{table}}
+\IgnoreSpacesOn
+\newcounter{colindex}
+\newcounter{rowindex}
+\intNew\nindex
+\prgNewFunction\updatecolindex{ m }{
+    \intCompareTF {\thecolnum} > {#1}
+        { \intSet\nindex{ \intEval{ \thecolnum - #1 }}}
+        { \intZero\nindex }
+    \setcounter{colindex}{\nindex}
+}
+\prgNewFunction\updaterowindex{ m }{
+    \intCompareTF {\therownum} > {#1}
+        { \intSet\nindex{ \intEval{ \therownum - #1 }}}
+        { \intZero\nindex }
+    \setcounter{rowindex}{\nindex}
+}
+\IgnoreSpacesOff
+\begin{document}
+\begin{tblr}[tall,caption]{ 
+    hline{1,Z}={.08em},hline{3}, column{1-Z}={c},
+    cell{3-Z}{2}={preto=\arabic{colindex}},
+    cell{3-Z}{3}={preto=\alph{colindex}},
+    cell{3-Z}{4}={preto=\Alph{colindex}},
+    cell{3-Z}{5}={preto=\roman{colindex}},
+    cell{3-Z}{6}={preto=\Roman{colindex}},
+    cell{3}{2-Z}={appto={,\arabic{rowindex}}},
+    cell{4}{2-Z}={appto={,\alph{rowindex}}},
+    cell{5}{2-Z}={appto={,\Alph{rowindex}}},
+    cell{6}{2-Z}={appto={,\roman{rowindex}}},
+    cell{7}{2-Z}={appto={,\Roman{rowindex}}},
+    cell{1-Z}{1-Z}={preto={\updatecolindex{1}\updaterowindex{2}}},
+    cell{1}{1}={r=2}{font=\bfseries}, cell{1}{2}={c=5}{font=\bfseries},
+    hline{2}={2-Z}{leftpos=-1,rightpos=-1,endpos},
+}
+{rowindex\\counter} & colindex counter \\
+& arabic & alph & Alph & roman & Roman \\
+arabic \\
+alph   \\
+Alph   \\
+roman  \\
+Roman  \\
+\end{tblr}
+\end{document}
+```
+
+# Only index valid columns, rows
+
+![table counters 3.svg](./attachments/table%20counters%203.svg)
+
+```latex
+\documentclass{standalone}
+\usepackage{tabularray}
+\UseTblrLibrary{counter}
+\renewcommand{\thetable}{1.1}
+\newcounter{rowindex}
+\newcounter{colindex}
+\begin{document}
+\begin{tblr}[tall,caption=Pet Owners]{
+  colspec={lrrrr},
+  hline{1,Z}={.1em}, hline{3},
+  row{3-Z}={,rowsep=0pt}, row{3}={abovesep=2pt},
+  column{1}={halign=l,cmd={\stepcounter{rowindex}\roman{rowindex}\quad}},
+  row{3}={cmd={\stepcounter{colindex}\roman{colindex}}},
+  cell{1}{1}={preto=\setcounter{rowindex}{0}\setcounter{colindex}{0}},
+      cell{3,6}{1}={font=\bfseries,cmd={}},
+      row{3,6}={abovesep=6pt,belowsep=2pt},
+  cell{1}{2,4}={c=2}{c}, row{1-2}={halign=c},
+  cell{1-2}{1}={l,cmd={}},
+  column{4}={leftsep+=6pt},
+  hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
+  hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
+}
+          & Dogs &    & Cats &    \\
+Owner     & M    & F  & M    & F  \\
+Age                               \\
+$< 18$    & 2    & 12 & 7    & 11 \\
+$\ge 18$  & 4    & 44 & 5    & 3  \\
+Residence                         \\
+Urban     & 43   & 46 & 15   & 33 \\
+Rural     & 5    & 12 & --   & 14 \\
+\end{tblr}
+\end{document}
+```
+
 
 # Statistics
 
@@ -81,7 +175,7 @@ Roman  \\
     }{  \prgReturn{ \intEval{ #2 - \nlast }}
     }{  \prgReturn{#1} }
 }
-\prgNewFunction\colnum {m} {
+\prgNewFunction\colnum{ m }{
     \prgReturn{ \resolveUVWXYZ{#1}{\therowcount} }
 }
 \prgNewFunction\vsum{ mm }{
