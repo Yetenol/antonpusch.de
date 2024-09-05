@@ -197,19 +197,23 @@ t      & U      \\
     \fpSet\lTmpbFp{ \cellAccum{#1}{#2}{\nAccum + (\nCell - \lTmpaFp)^2}{0} }
     \fpSet\lTmpcFp{ sqrt(\lTmpbFp / \cellCount{#1}{#2})  }
     \prgReturn{ \fpEval{ round(\lTmpcFp,2) }}  }
+\prgNewFunction\cellProd{ mm }{
+    \prgReturn{ \cellAccum{#1}{#2}{\nAccum * \nCell}{1} }  }
+\prgNewFunction\cellMin{ mm }{
+    \prgReturn{ \cellAccum{#1}{#2}{min(\nAccum, \nCell)}{\cInfFp} }  }
 \ExplSyntaxOff
 \begin{document}
 \begin{tblr}[tall,caption={Calculate over rows, columns}]{
     column{1-Z}={r,mode=math}, row{1}={c}, 
     hline{1,Z}={.08em},hline{2}={1-3}{},
-    row{X}={abovesep+=6pt}, cell{X-Z}{X}={l},
+    row{X}={abovesep+=6pt}, cell{X-Z}{X}={l}, cell{X-Z}{Y-Z}={c},
     cell{5}{1-3}={cmd=\cellSum{2-W}{}}, cell{X}{X}={cmd={_\Sigma{\;}^N}},
     cell{6}{1-3}={cmd=\cellMean{2-W}{}}, cell{Y}{X}={cmd=\mu},
     cell{7}{1-3}={cmd=\cellStandardDeviation{2-W}{}}, cell{Z}{X}={cmd=\sigma},
-    cell{2-4}{X}={cmd=\cellAccum{}{1-W}{\nAccum + 1}{0}}, 
-    cell{2-4}{Y}={cmd=\cellAccum{}{1-W}{\nAccum * \nCell}{1}}, cell{X}{Y}={cmd=\prod},
-    cell{2-4}{Z}={cmd=\cellAccum{}{1-W}{min(\nAccum, \nCell)}{\cInfFp}}, cell{X}{Z}={cmd=\max},
-    cell{Y}{Y}={r=2,c=2}{c,cmd=Statistics,mode=text,font=\bfseries},
+    cell{2-4}{X}={cmd=\cellCount{}{1-W}}, 
+    cell{2-4}{Y}={cmd=\cellProd{}{1-W}}, cell{X}{Y}={cmd=\Pi},
+    cell{2-4}{Z}={cmd=\cellMin{}{1-W}}, cell{X}{Z}={cmd=\min},
+    cell{Y}{Y}={r=2,c=2}{l,cmd=Statistics,mode=text,font=\bfseries},
 }
 a & b    & c    &&& \\
 1 & 2.3  & 1.43e-01 \\
