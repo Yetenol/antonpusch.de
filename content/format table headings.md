@@ -8,9 +8,8 @@ dg-publish: true
 ![table pet owners.svg](./attachments/table%20pet%20owners.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \renewcommand{\thetable}{1.1}
 \usepackage{tabularray}
-\renewcommand{\thetable}{1.1}
 \begin{document}
 \noindent
 \begin{tblr}[tall,caption=Pet Owners]{
@@ -44,20 +43,17 @@ Rural     & 5    & 12 & --   & 14 \\
 ![table comparison 1.svg](./attachments/table%20comparison%201.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{standalone} \renewcommand{\thetable}{1.2}
 \usepackage{tabularray,rotating,makecell}
-\renewcommand{\thetable}{1.2\alph{table}}
 \setlength\rotheadsize{1.25cm}
 \renewcommand\theadfont{}
-% Rotation: \rot[<angle>][<width>]{<stuff>}
 \NewDocumentCommand{\rot}{O{45} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
-\SetTblrOuter{tall, caption}
 \begin{document}
 \begin{tblr}[tall, caption=Comparison, 
     note{a}={Collaborate live with team members on the same document}
-]{  colspec={lcc}, hline{Z}={.1em}, hline{2}, 
-    cell{1}{2-Z} = {halign=l,cmd=\rot},
-    column{1}={rightsep+=4pt},
+]{  colspec={lcc}, hline{1,Z}={.1em}, hline{2}, 
+    cell{1}{2-Z} = {halign=l,cmd=\rot[45][1em]},
+    column{1}={rightsep+=4pt}, column{Z}={rightsep+=12pt},
     cell{2-Z}{2-Z}={mode=math,cmd=\mathrm}, 
     cell{2}{1}={appto=\TblrNote{a}},
 }
@@ -69,31 +65,6 @@ Feautures & ++       & +       \\
 \end{document}
 ```
 
-![table comparisons.svg](./attachments/table%20comparisons.svg)
-
-```latex
-\documentclass{article} \pagestyle{empty}
-\usepackage{tabularray,rotating,makecell,graphics}
-\renewcommand{\thetable}{1.2\alph{table}}\setcounter{table}{1}
-\setlength\rotheadsize{1.25cm}
-\renewcommand\theadfont{}
-% Rotation: \rot[<angle>][<width>]{<stuff>}
-\NewDocumentCommand{\rot}{O{45} O{1em} m}{\makebox[#2][l]{\rotatebox{#1}{#3}}}%
-\SetTblrOuter{}
-\begin{document}
-\includegraphics{table comparison 1}
-\begin{tblr}[tall, caption, baseline=B ]{
-    row{1} = {halign=l,cmd=\rot},
-    colspec={lcc},vline{2},hline{2},
-}
-         & Property 1 & Property 2 & Property 3 \\
-System 1 &            &            & X          \\ 
-System 2 & X          & X          & X          \\
-System 3 & X          &            & X          \\
-\end{tblr}
-\end{document}
-```
-
 # Two dimensional table
 
 - To dynamically calculate the sum, see [Calculate statistics for table numbers](./calculate%20statistics%20for%20table%20numbers.md)
@@ -101,9 +72,8 @@ System 3 & X          &            & X          \\
 ![table probabilities 1.svg](./attachments/table%20probabilities%201.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \renewcommand{\thetable}{1.3a}
 \usepackage{tabularray}
-\renewcommand{\thetable}{1.3\alph{table}}
 \UseTblrLibrary{diagbox}
 \let\oldfrac\frac
 \renewcommand{\frac}[2]{\mathchoice 
@@ -129,22 +99,23 @@ $\begin{tblr}[tall,caption=Probabilities,
 \end{document}
 ```
 
+## More variants
+
 ![table probabilities.svg](./attachments/table%20probabilities.svg)
 
+Style B
+
 ```latex
-\documentclass{standalone}
-\usepackage{tabularray,graphicx}
-\renewcommand{\thetable}{1.3\alph{table}}\setcounter{table}{1}
+\documentclass{standalone} \renewcommand{\thetable}{1.3b}
+\usepackage{tabularray}
 \UseTblrLibrary{diagbox}
 \let\oldfrac\frac
 \renewcommand{\frac}[2]{\mathchoice 
     {\oldfrac{#1}{#2}} {{^{#1}\!/_{\!#2}}}
     {\oldfrac{#1}{#2}} {\oldfrac{#1}{#2}}  }
-\SetTblrOuter{tall, caption, baseline=b}
 \begin{document}
-\includegraphics{table probabilities 1}
-\hspace{1em}
-$\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}
+$\begin{tblr}[tall,caption=Style B, 
+    remark{$x$}={horizontal axis}, remark{$y$}={vertical axis},
 ]{  colspec={lcccc}, hline{1,Z}={.1em}, hline{2}={leftpos=-7,endpos},
     cell{1}{1}={preto={\diagbox[linewidth=-100pt]}}, column{1}={colsep=2pt},
     cell{1}{2-Y}={f}, cell{2-Y}{1}={c}, 
@@ -158,8 +129,17 @@ $\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}
 3      & 0            & \frac{1}{16} & \frac{1}{16} & \frac{1}{8} \\
 \Sigma & \frac{1}{4}  & \frac{1}{2}  & \frac{1}{4}  & 1           \\
 \end{tblr}$
-\hspace{1em}
-$\begin{tblr}[remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}
+\end{document}
+```
+
+Style C
+
+```latex
+\documentclass{standalone} \renewcommand{\thetable}{1.3c}
+\usepackage{tabularray}
+\begin{document}
+$\begin{tblr}[tall, caption=Style C,
+    remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}
 ]{  colspec={lcccc}, hline{1,Z}={.1em}, hline{2},
     cell{3-6}{1}={cmd=\quad,font={}},
     cell{1}{1}={r}, cell{1}{2-4}={mode=text,cmd={\\}},
@@ -177,6 +157,15 @@ x=                                                                        \\
 \end{document}
 ```
 
+```latex
+\documentclass{standalone} \usepackage{graphbox}
+\begin{document}
+\includegraphics[align=c]{table probabilities 1} \hspace{1em}
+\includegraphics[align=c]{table probabilities 2} \hspace{1em}
+\includegraphics[align=c]{table probabilities 3}
+\end{document}
+```
+
 # Alternatives to tabularray
 
 ## Rotated headers without tabularray
@@ -185,16 +174,13 @@ x=                                                                        \\
 
 ```latex
 \documentclass{article} \pagestyle{empty}
-\usepackage{adjustbox,array,float,graphicx}
+\usepackage{adjustbox,array,float}
 \renewcommand{\thetable}{1.2\alph{table}}\setcounter{table}{2}
 \newcolumntype{R}[2]{%
-    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}%
-    l%
-    <{\egroup}%
+    >{\adjustbox{angle=#1,lap=\width-(#2)}\bgroup}l<{\egroup}%
 }
 \newcommand*\rot{\multicolumn{1}{R{45}{1em}}}% no optional argument here, please!
 \begin{document}
-\includegraphics{table comparisons}
 \begin{minipage}[b]{.3\textwidth}
 \begin{table}[H] \caption{}
 \begin{tabular}{r|ccc}
@@ -205,6 +191,14 @@ System 3 & X                &                  & X                \\ \hline
 \end{tabular}
 \end{table}
 \end{minipage}
+\end{document}
+```
+
+```latex
+\documentclass{standalone} \usepackage{graphbox}
+\begin{document}
+\includegraphics[align=c]{table comparison 1} \hspace{1em}
+\includegraphics[align=c]{table comparison 2}
 \end{document}
 ```
 
@@ -264,11 +258,10 @@ Simple  & $\circ$ & +    \\
 ![table headers.svg](./attachments/table%20headers.svg)
 
 ```latex
-\documentclass{standalone}
-\usepackage{graphicx}
+\documentclass{standalone} \usepackage{graphbox}
 \begin{document}
-\includegraphics{table pet owners}
-\includegraphics{table comparison 1}
-\includegraphics{table probabilities 1}
+\includegraphics[align=c]{table pet owners} \hspace{1em}
+\includegraphics[align=c]{table comparison 1} \hspace{1em}
+\includegraphics[align=c]{table probabilities 1}
 \end{document}
 ```
