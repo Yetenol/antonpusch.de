@@ -70,6 +70,8 @@ def export_figure(filename, new_filename, source_folder, destination_folder):
     new_basename, filter_ext = os.path.splitext(new_filename)
     if filter_ext and source_ext != filter_ext:
         return
+    if source_ext == '.tex' and filter_ext != '.tex':
+        return
     copy_from = os.path.join(source_folder, filename)
     copy_to = os.path.join(destination_folder, new_basename + source_ext)
     try:
@@ -92,6 +94,7 @@ def generate_latex_figure(latex_source, compiler="pdflatex", escape_shell=False,
     if outfile:
         export_figure('figure.svg', outfile, figure_folder, assets_folder)
         export_figure('figure.pdf', outfile, figure_folder, assets_folder)
+        export_figure('figure.tex', outfile, figure_folder, assets_folder)
     print_figure('figure.svg', figure_folder, '.temp')
     if not keep_intermediates:
         delete_figure(figure_folder)
