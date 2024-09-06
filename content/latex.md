@@ -16,7 +16,7 @@ $$
 \end{align*}
 $$
 
-[Tables - Create tables and format by definiting styles in the preamble, utilizing pgfplotstable, tabularray](./tables.md)
+[Tables - Create tables and format by definiting styles in the preamble, utilizing  tabularray](./tables.md)
 
 ![table headers.svg](./attachments/table%20headers.svg)
 
@@ -54,6 +54,9 @@ $$
 
 ![figure molecules.svg](./attachments/figure%20molecules.svg)
 
+[Heatmaps](Heatmaps.md)
+
+![figure heatmap.svg](./attachments/figure%20heatmap.svg)
 
 
 - [Values  - Standardize math, numbers, symbols, quantities, money](./values.md)
@@ -65,6 +68,10 @@ $$
 - [Graphical elements - Standardize tables, images, plots](./graphical%20elements.md)
 - [Layout the document - Setup margins, hyphenation, table of contents](./layout%20the%20document.md)
 - [Develop LaTeX packages](./develop%20latex%20packages.md)
+
+Color gradients
+- [Color gradients and my gradual descent into madness – Typst Blog](https://typst.app/blog/2023/color-gradients/)
+
 
 Learn, Troubleshoot, Debugging/Help/Documentation
 - keep package number low
