@@ -181,11 +181,11 @@ devmgmt.msc & Device Manager \\
 ![table body.svg](./attachments/table%20body.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
-\usepackage{graphicx}
+\documentclass{standalone} \usepackage{graphicx}
 \begin{document}
+\begin{minipage}{\textwidth} \centering{}
+
 \includegraphics{table body number format}
-\begin{minipage}[b]{.5\textwidth} \centering{}
 \includegraphics{table body evaluate math}
 
 \vspace{1em}
