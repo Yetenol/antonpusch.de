@@ -13,8 +13,8 @@ dg-publish: true
 \UseTblrLibrary{functional}
 \begin{document}
 \begin{tblr}[tall,caption=Count rows]{
-    hline{1,Z}={.08em},hline{2}, column{1-Z}={c},
-    cell{2-Z}{1}={r,cmd=\fpEval{\therownum - 1}}
+hline{1,Z}={.08em},hline{2}, column{1-Z}={c},
+cell{2-Z}{1}={r,cmd=\fpEval{\therownum - 1}}
 }
 \# & Name             \\
    & Alexia Beasley   \\
@@ -38,11 +38,11 @@ dg-publish: true
 \UseTblrLibrary{functional}
 \begin{document}
 \begin{tblr}[tall,caption=Count rows]{
-    colspec={rrl},
-    hline{1,Z}={.08em},hline{2},
-    cell{1}{2}={c=2}{c}, 
-    column{2}={rightsep=2pt}, column{3}={leftsep=2pt},
-    cell{2-Z}{1}={cmd=\fpEval{\therownum - 1}}
+colspec={rrl},
+hline{1,Z}={.08em},hline{2},
+cell{1}{2}={c=2}{c}, 
+column{2}={rightsep=2pt}, column{3}={leftsep=2pt},
+cell{2-Z}{1}={cmd=\fpEval{\therownum - 1}}
 }
 \# & Name                \\
    & Alexia & Beasley    \\
@@ -79,19 +79,19 @@ Print counter with format
 \usepackage{tabularray}
 \begin{document}
 \begin{tblr}[tall,caption=Absolute counters in different alphabets]{ 
-    hline{1,Z}={.08em},hline{3}, column{1-Z}={c},
-    cell{3-Z}{2}={preto=\arabic{colnum}},
-    cell{3-Z}{3}={preto=\alph{colnum}},
-    cell{3-Z}{4}={preto=\Alph{colnum}},
-    cell{3-Z}{5}={preto=\roman{colnum}},
-    cell{3-Z}{6}={preto=\Roman{colnum}},
-    cell{3}{2-Z}={appto={,\arabic{rownum}}},
-    cell{4}{2-Z}={appto={,\alph{rownum}}},
-    cell{5}{2-Z}={appto={,\Alph{rownum}}},
-    cell{6}{2-Z}={appto={,\roman{rownum}}},
-    cell{7}{2-Z}={appto={,\Roman{rownum}}},
-    cell{1}{1}={r=2}{font=\bfseries}, cell{1}{2}={c=5}{font=\bfseries},
-    hline{2}={2-Z}{leftpos=-1,rightpos=-1,endpos},
+hline{1,Z}={.08em},hline{3}, column{1-Z}={c},
+cell{3-Z}{2}={preto=\arabic{colnum}},
+cell{3-Z}{3}={preto=\alph{colnum}},
+cell{3-Z}{4}={preto=\Alph{colnum}},
+cell{3-Z}{5}={preto=\roman{colnum}},
+cell{3-Z}{6}={preto=\Roman{colnum}},
+cell{3}{2-Z}={appto={,\arabic{rownum}}},
+cell{4}{2-Z}={appto={,\alph{rownum}}},
+cell{5}{2-Z}={appto={,\Alph{rownum}}},
+cell{6}{2-Z}={appto={,\roman{rownum}}},
+cell{7}{2-Z}={appto={,\Roman{rownum}}},
+cell{1}{1}={r=2}{font=\bfseries}, cell{1}{2}={c=5}{font=\bfseries},
+hline{2}={2-Z}{leftpos=-1,rightpos=-1,endpos},
 }
 {rownum\\counter} & colnum counter \\
 & arabic & alph & Alph & roman & Roman \\
@@ -127,20 +127,20 @@ Roman  \\
 \IgnoreSpacesOff
 \begin{document}
 \begin{tblr}[tall,caption=Relative counters in different alphabets]{ 
-    hline{1,Z}={.08em},hline{3}, column{1-Z}={c},
-    cell{3-Z}{2}={preto=\arabic{colindex}},
-    cell{3-Z}{3}={preto=\alph{colindex}},
-    cell{3-Z}{4}={preto=\Alph{colindex}},
-    cell{3-Z}{5}={preto=\roman{colindex}},
-    cell{3-Z}{6}={preto=\Roman{colindex}},
-    cell{3}{2-Z}={appto={,\arabic{rowindex}}},
-    cell{4}{2-Z}={appto={,\alph{rowindex}}},
-    cell{5}{2-Z}={appto={,\Alph{rowindex}}},
-    cell{6}{2-Z}={appto={,\roman{rowindex}}},
-    cell{7}{2-Z}={appto={,\Roman{rowindex}}},
-    cell{1-Z}{1-Z}={preto={\updatecolindex{1}\updaterowindex{2}}},
-    cell{1}{1}={r=2}{font=\bfseries}, cell{1}{2}={c=5}{font=\bfseries},
-    hline{2}={2-Z}{leftpos=-1,rightpos=-1,endpos},
+hline{1,Z}={.08em},hline{3}, column{1-Z}={c},
+cell{3-Z}{2}={preto=\arabic{colindex}},
+cell{3-Z}{3}={preto=\alph{colindex}},
+cell{3-Z}{4}={preto=\Alph{colindex}},
+cell{3-Z}{5}={preto=\roman{colindex}},
+cell{3-Z}{6}={preto=\Roman{colindex}},
+cell{3}{2-Z}={appto={,\arabic{rowindex}}},
+cell{4}{2-Z}={appto={,\alph{rowindex}}},
+cell{5}{2-Z}={appto={,\Alph{rowindex}}},
+cell{6}{2-Z}={appto={,\roman{rowindex}}},
+cell{7}{2-Z}={appto={,\Roman{rowindex}}},
+cell{1-Z}{1-Z}={preto={\updatecolindex{1}\updaterowindex{2}}},
+cell{1}{1}={r=2}{font=\bfseries}, cell{1}{2}={c=5}{font=\bfseries},
+hline{2}={2-Z}{leftpos=-1,rightpos=-1,endpos},
 }
 {rowindex\\counter} & colindex counter \\
 & arabic & alph & Alph & roman & Roman \\
