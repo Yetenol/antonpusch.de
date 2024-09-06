@@ -1,11 +1,11 @@
 ---
-title: "Tables - Separate content and styles like alignment, spacing, markup, and calculation, utilizing tabularray"
+title: "Tables - Separate content and styles like alignment, spacing, markup, and calculation, utilizing Tabularray"
 dg-publish: true
 dg-show-toc: true
 aliases:
   - Table
 ---
-+It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
+It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
 
 - modern LaTeX3 package with key-value configuration
 - why not just booktabs
@@ -51,6 +51,10 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 ![table text formatting.svg](./attachments/table%20text%20formatting.svg)
 
 # Dynamically calculate cell text, style
+
+- explain expl3, functional
+- compare typst, lualatex, xetex, python, dataview, excel
+- why separate formula
 
 ## Row and column numbers
 
