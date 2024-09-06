@@ -13,7 +13,7 @@ dg-publish: true
 \UseTblrLibrary{functional}
 \begin{document}
 \begin{tblr}[tall,caption=Count rows]{
-hline{1,Z}={.08em},hline{2}, 
+hline{1,Z}={.08em},hline{2}, column{1}={l}, row{1}={c},
 cell{2-Z}{1}={r,cmd=\fpEval{\therownum - 1}}
 }
 \# & Name             \\
