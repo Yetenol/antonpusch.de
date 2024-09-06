@@ -15,7 +15,7 @@ Available dynamic values for calculation:
 - `\therownum`: current row number
 - `\thecolnum`: current column number
 
-![table accumulate 1.svg](./content/attachments/table%20accumulate%201.svg)
+![table accumulate sum.svg](./content/attachments/table%20accumulate%20sum.svg)
 
 ```latex
 \documentclass{standalone} \renewcommand{\thetable}{5.1}
@@ -63,10 +63,10 @@ t      & U      \\
 
 # Add expenses
 
-![table accumulate 1.svg](./content/attachments/table%20accumulate%201.svg)
+![table accumulate trip expenses.svg](./content/attachments/table%20accumulate%20trip%20expenses.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{5.1}
+\documentclass{standalone} \renewcommand{\thetable}{5.2}
 \usepackage{tabularray}
 \UseTblrLibrary{functional,siunitx}
 \ExplSyntaxOn
@@ -99,12 +99,13 @@ t      & U      \\
 }
 \ExplSyntaxOff
 \begin{document}
-\begin{tblr}[tall,caption=Canoeing trip expenses,
+\begin{tblr}[tall,caption={Calculate non-bold trip expenses, distances},
 note{}={We travel \qty{30}{km} on the Mecklenburg Lakeland and \qty{20}{km} on the Havel River. Overnight prices range from \qty{0}{EUR} to \qty{16}{EUR}. In total, accommodation costs \qty{120}{EUR} averaging \qty{14.3}{EUR} per night.},
 ]{
 hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l}, 
 cell{1}{2-Z}={c}, row{2,7}={abovesep+=6pt,belowsep+=2pt},
 cell{2-Z}{1}={cmd=\quad}, cell{2,7}{1}={c=6}{cmd={},font=\bfseries},
+cell{2-Z}{2,4,5}={font=\bfseries},
 cell{4-6,9-11}{3}={cmd={\fpEval{
     abs(\cellRel{-1}{-1} - \cellRel{0}{-1})  }}},
 cell{3-6,8-11}{6}={cmd={\fpEval{ 
