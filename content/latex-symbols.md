@@ -61,7 +61,7 @@ See more relations in external resources
 
 Generically negate/comment any relation
 - negate $\not\equiv$ `\not\equiv`
-- comment $\overset{\text{def}}{=}$ `\overset{\text{def}}{=}`, and see [Comment equation operators](Comment%20equation%20operators.md)
+- comment $\overset{\text{def}}{=}$ `\overset{\text{def}}{=}`, and see [Comment equation operators](./comment%20equation%20operators.md)
 
 # Operators
 
