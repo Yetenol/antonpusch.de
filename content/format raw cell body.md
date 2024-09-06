@@ -61,83 +61,6 @@ $\begin{tblr}[tall,caption=Evaluate]{ hline{1,Z}={.08em},
 \end{document}
 ```
 
-# Print macros in table
-
-![table body macro column.svg](./attachments/table%20body%20macro%20column.svg)
-
-```latex
-\documentclass{standalone}
-\usepackage{tabularray}
-\renewcommand{\thetable}{2.3\alph{table}}
-\begin{document}
-\begin{tblr}[ tall,caption, 
-]{  colspec={rlcr}, hline{1,Z}={.08em}, hline{2},
-    column{1}={mode=math,rightsep=0pt},
-    column{2}={preto=\textbackslash,font=\ttfamily,leftsep=2pt},
-    row{1}={c,m,mode=text,font=\bfseries}, cell{1}{1}={c=2}{},
-    cell{2-Z}{3}={preto={U+}}, 
-}
-Name          && Unicode & {Alt\\code} \\
-\alpha & alpha & 03B1    & 224         \\
-\gamma & gamma & 0393    & 226         \\
-\delta & delta & 03B4    & 235         \\
-\end{tblr}
-\end{document}
-```
-
-![table body macro verbatim.svg](./attachments/table%20body%20macro%20verbatim.svg)
-
-```latex
-\documentclass{standalone}
-\usepackage{tabularray,codehigh,amsmath,graphics}
-\renewcommand{\thetable}{2.3\alph{table}}\setcounter{table}{1}
-\begin{document}
-\includegraphics{table body macro column}
-\hspace{1em}
-\begin{tblr}[ tall, caption, baseline=B ]{  
-    colspec={ll}, hline{1,Z}={.08em}, hline{2},
-    row{1}={c,m,font=\bfseries},
-}
-{Lower\\case}              & {Upper\\case}                         \\
-$\alpha$ \fakeverb{\alpha} & $A$ \fakeverb{A}                      \\
-$\beta$  \fakeverb{\beta}  & $B$ \fakeverb{B}                      \\
-$\gamma$ \fakeverb{\gamma} & 
-    {$\Gamma$ \fakeverb{\Gamma}\\$\varGamma$ \fakeverb{\varGamma}} \\
-$\delta$ \fakeverb{\delta} & 
-    {$\Delta$ \fakeverb{\Delta}\\$\varDelta$ \fakeverb{\varDelta}} \\
-\end{tblr}
-\end{document}
-```
-
-# Glossary of commands in monospace
-
-![table body monospace.svg](./attachments/table%20body%20monospace.svg)
-
-```latex
-\documentclass{standalone}
-\usepackage{tabularray}
-\renewcommand{\thetable}{2.3\alph{table}}\setcounter{table}{2}
-\begin{document}
-\hspace{1em}
-\begin{tblr}[tall, caption=Monospace ]{
-    colspec={rl}, hline{1,Z}={.08em},hline{2},
-    row{1}={font=\bfseries,halign=c}, 
-    cell{2-Z}{1}={font=\ttfamily},  
-}
-Command     & Description \\
-calc        & Calculator \\
-cmd         & Command Prompt \\
-devmgmt.msc & Device Manager \\
-\end{tblr}
-\end{document}
-```
-
-- pgfmathparse
-- texttt for commands
-- dash 3rd line
-- math, siunit, pgfmathparse, date, money, command, macro, bold, color, fraction styles
-- dateformat, fraction format, yes/no symbol, 
-
 # Complex evaluate, assign cell content with PgfPlotsTable
 
 ![table body pgfplotstable.svg](./attachments/table%20body%20pgfplotstable.svg)
@@ -181,15 +104,9 @@ devmgmt.msc & Device Manager \\
 ![table body.svg](./attachments/table%20body.svg)
 
 ```latex
-\documentclass{standalone} \usepackage{graphicx}
+\documentclass{standalone} \usepackage{graphicx,graphbox}
 \begin{document}
-\begin{minipage}{\textwidth} \centering{}
-
-\includegraphics{table body number format}
-\includegraphics{table body evaluate math}
-
-\vspace{1em}
-\includegraphics{table body monospace}
-\end{minipage}
+\includegraphics[align=c]{table body number format} \hspace{1em}
+\includegraphics[align=c]{table body evaluate math}
 \end{document}
 ```
