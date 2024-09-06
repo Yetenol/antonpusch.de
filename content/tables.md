@@ -21,7 +21,9 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 - [How to design good tables](How%20to%20design%20good%20tables.md)
 - [Syntax - How to write tables](Syntax%20-%20How%20to%20write%20tables.md)
 
-# Format headers (first row, first column)
+# Format table header or body with the same input data
+
+## Format headers (first row, first column)
 
 - **Group** row, column headings, see 1a
 - Visually clarify table **boundaries**: Thick horizontal lines 1a
@@ -31,8 +33,6 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 - See source examples: [Format table headings](./format%20table%20headings.md)
 
 ![table headers.svg](./attachments/table%20headers.svg)
-
-# Process, format cell body
 
 ## Format numbers
 
@@ -44,6 +44,16 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 ## Format text
 
 Url, Monospace, Movie list, regex, detect name, replace LaTeX -> `\LaTeX`, auto truncate to footnote, autoheaders(rotate, group), vgroupdetect, hgroupdetect, auto format, replace empty cells,
+
+# Dynamically calculate cell text, style
+
+# Get row, column numbers of relative to the entire table, its body, or the current group
+
+- See source examples: [Table counters - Get row, column numbers of relative to the entire table, its body, or the current group](Table%20counters%20-%20Get%20row,%20column%20numbers%20of%20relative%20to%20the%20entire%20table,%20its%20body,%20or%20the%20current%20group.md)
+
+![table counters.svg](./attachments/table%20counters.svg)
+
+
 
 # Table calculation
 
