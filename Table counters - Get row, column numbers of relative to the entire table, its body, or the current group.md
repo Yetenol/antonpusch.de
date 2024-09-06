@@ -9,28 +9,25 @@
 \UseTblrLibrary{functional}
 \renewcommand{\thetable}{4.1\alph{table}}
 \begin{document}
-\begin{tblr}[tall,caption]{
+\begin{tblr}[tall,caption=Count rows]{
     hline{1,Z}={.08em},hline{2}, column{1-Z}={c},
     cell{2-Z}{1}={r,cmd=\fpEval{\therownum - 1}}
 }
-\# & Name            \\
-   & Alexia Beasley  \\      
-   & Lauren Beard    \\  
-   & Esme   Sanford  \\      
-   & Leyla  Smith    \\  
-   & Shane  Fisher   \\    
-   & Rosie  O'Neill  \\      
-   & Daisy  Bright   \\    
-   & Talia  Hodge    \\  
-   & Carla  Hart     \\ 
-   & Angela Cardenas \\
+\# & Name             \\
+   & Alexia Beasley   \\
+   & Lauren Beard     \\
+   & Esme Sanford     \\
+   & Leyla Smith      \\
+   & Shane Fisher     \\
+   & Rosie O'Neill    \\
+   & Daisy McGonagall \\
 \end{tblr}
 \end{document}
 ```
 
 ## Align first, last names
 
-![table counter rownum 2.svg](./content/attachments/table%20counter%20rownum%202.svg)
+![table counter rownum 1, 2.svg](./content/attachments/table%20counter%20rownum%201,%202.svg)
 
 ```latex
 \documentclass{standalone} \usepackage{graphicx}
@@ -46,26 +43,21 @@
 \UseTblrLibrary{functional}
 \renewcommand{\thetable}{4.1\alph{table}} \setcounter{table}{1}
 \begin{document}
-\includegraphics{table counter rownum 1}
-\hspace{1em}
-\begin{tblr}[tall,caption, baseline=b]{
+\begin{tblr}[tall,caption=Count rows]{
     colspec={rrl},
     hline{1,Z}={.08em},hline{2},
     cell{1}{2}={c=2}{c}, 
     column{2}={rightsep=2pt}, column{3}={leftsep=2pt},
     cell{2-Z}{1}={cmd=\fpEval{\therownum - 1}}
 }
-\# & Name              \\
-   & Alexia & Beasley  \\      
-   & Lauren & Beard    \\  
-   & Esme   & Sanford  \\      
-   & Leyla  & Smith    \\  
-   & Shane  & Fisher   \\    
-   & Rosie  & O'Neill  \\      
-   & Daisy  & Bright   \\    
-   & Talia  & Hodge    \\  
-   & Carla  & Hart     \\ 
-   & Angela & Cardenas \\
+\# & Name                \\
+   & Alexia & Beasley    \\
+   & Lauren & Beard      \\
+   & Esme   & Sanford    \\
+   & Leyla  & Smith      \\
+   & Shane  & Fisher     \\
+   & Rosie  & O'Neill    \\
+   & Daisy  & McGonagall \\   
 \end{tblr}
 \end{document}
 ```
@@ -84,7 +76,7 @@ Print counter with format
 \usepackage{tabularray}
 \renewcommand{\thetable}{4.2\alph{table}}
 \begin{document}
-\begin{tblr}[tall,caption]{ 
+\begin{tblr}[tall,caption=Absolute counters in different alphabets]{ 
     hline{1,Z}={.08em},hline{3}, column{1-Z}={c},
     cell{3-Z}{2}={preto=\arabic{colnum}},
     cell{3-Z}{3}={preto=\alph{colnum}},
@@ -146,7 +138,7 @@ Roman  \\
 }
 \IgnoreSpacesOff
 \begin{document}
-\begin{tblr}[tall,caption]{ 
+\begin{tblr}[tall,caption=Relative counters in different alphabets]{ 
     hline{1,Z}={.08em},hline{3}, column{1-Z}={c},
     cell{3-Z}{2}={preto=\arabic{colindex}},
     cell{3-Z}{3}={preto=\alph{colindex}},
@@ -185,20 +177,20 @@ Roman  \\
 \newcounter{rowindex}
 \newcounter{colindex}
 \begin{document}
-\begin{tblr}[tall,caption=Pet Owners]{
-  colspec={lrrrr},
-  hline{1,Z}={.1em}, hline{3},
-  row{3-Z}={,rowsep=0pt}, row{3}={abovesep=2pt},
-  column{1}={halign=l,cmd={\stepcounter{rowindex}\rlap{\roman{rowindex}}\qquad}},
-  row{3}={cmd={\stepcounter{colindex}\roman{colindex}}},
-  cell{1}{1}={preto=\setcounter{rowindex}{0}\setcounter{colindex}{0}},
-      cell{3,6}{1}={font=\bfseries,cmd={}},
-      row{3,6}={abovesep=6pt,belowsep=2pt},
-  cell{1}{2,4}={c=2}{c}, row{1-2}={halign=c},
-  cell{1-2}{1}={l,cmd={}},
-  column{4}={leftsep+=6pt},
-  hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
-  hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
+\begin{tblr}[tall,caption=Continually count grouped headers]{
+colspec={lrrrr}, cell{1-2}{2-Z}={c},
+cell{1}{2,4}={c=2}{c},
+hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
+hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
+%
+hline{1,Z}={.1em}, hline{3},
+cell{2}{2-Z}={appto={\stepcounter{colindex}$_{\roman{colindex}}$}},
+column{2-Z}={colsep=2pt},
+column{2,4}={leftsep+=6pt},
+%
+cell{3-Z}{1}={cmd={\stepcounter{rowindex}\rlap{\roman{rowindex})}\qquad}},
+row{3-Z}={rowsep=0pt},
+row{3,6}={font=\bfseries,cmd={},abovesep=6pt,belowsep=2pt},
 }
           & Dogs &    & Cats &    \\
 Owner     & M    & F  & M    & F  \\
@@ -232,20 +224,22 @@ Rural     & 5    & 12 & --   & 14 \\
 \newcounter{rowindex}
 \newcounter{colindex}
 \begin{document}
-\begin{tblr}[tall,caption=Pet Owners]{
-  colspec={lrrrr},
-  hline{1,Z}={.1em}, hline{3},
-  row{3-Z}={,rowsep=0pt}, row{3}={abovesep=2pt},
-  column{1}={halign=l,cmd={\stepcounter{rowindex}\rlap{\roman{rowindex}}\qquad}},
-  cell{3}{2-Z}={preto={\stepcounter{colindex}\roman{colindex}}},
-      cell{3,6}{1}={font=\bfseries,cmd=\setcounter{rowindex}{0}},
-      row{3,6}={abovesep=6pt,belowsep=2pt},
-  cell{1}{2,4}={c=2}{c}, row{1-2}={halign=c},
-  cell{3}{2,4}={preto=\setcounter{colindex}{0}},
-  cell{1-2}{1}={l,cmd={}},
-  column{4}={leftsep+=6pt},
-  hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
-  hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
+\begin{tblr}[tall,caption=Separately count grouped headers]{
+colspec={lrrrr}, cell{1-2}{2-Z}={c},
+cell{1}{2,4}={c=2}{c},
+hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
+hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
+%
+hline{1,Z}={.1em}, hline{3},
+cell{2}{2-Z}={appto={\stepcounter{colindex}$_{\roman{colindex}}$}},
+column{2-Z}={colsep=2pt},
+cell{2}{2,4}={preto=\setcounter{colindex}{0}},
+column{2,4}={leftsep+=6pt},
+%
+cell{3-Z}{1}={cmd={\stepcounter{rowindex}\rlap{\roman{rowindex})}\qquad}},
+row{3-Z}={rowsep=0pt},
+row{3,6}={font=\bfseries,cmd=\setcounter{rowindex}{0},
+    abovesep=6pt,belowsep=2pt},
 }
           & Dogs &    & Cats &    \\
 Owner     & M    & F  & M    & F  \\
@@ -266,8 +260,10 @@ Rural     & 5    & 12 & --   & 14 \\
 ```latex
 \documentclass{standalone} \usepackage{graphicx}
 \begin{document}
-\includegraphics{table counter rownum 1} \hspace{1em}
-\includegraphics{table counter body} \hspace{1em}
-\includegraphics{table counter groups}
+\begin{minipage}{\textwidth} \centering{}
+\includegraphics{table counter rownum 2} \hspace{1em}
+\includegraphics{table counter groups} \\ \vspace{1em}
+\includegraphics{table counter body} 
+\end{minipage}
 \end{document}
 ```
