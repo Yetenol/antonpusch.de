@@ -156,6 +156,8 @@ t      & U      \\
 \end{document}
 ```
 
+# Add statistics to data table
+
 ![table accumulate 2.svg](./attachments/table%20accumulate%202.svg)
 
 ```latex
@@ -205,7 +207,8 @@ t      & U      \\
 \begin{document}
 \begin{tblr}[tall,caption={Calculate over rows, columns}]{
     column{1-Z}={r,mode=math}, row{1}={c}, 
-    hline{1,Z}={.08em},hline{2}={1-3}{},
+    hline{1,Z}={.08em},hline{2,5}={1-3}{}, 
+    cell{2-4}{1-3}={cmd=\pgfmathprintnumber},
     row{X}={abovesep+=6pt}, cell{X-Z}{X}={l}, cell{X-Z}{Y-Z}={c},
     cell{5}{1-3}={cmd=\cellSum{2-W}{}}, cell{X}{X}={cmd={_\Sigma{\;}^N}},
     cell{6}{1-3}={cmd=\cellMean{2-W}{}}, cell{Y}{X}={cmd=\mu},
