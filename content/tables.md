@@ -21,7 +21,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 - [How to design good tables](How%20to%20design%20good%20tables.md)
 - [Table Syntax - How to write tables](Table%20Syntax%20-%20How%20to%20write%20tables.md)
 
-# Format table header or body with the same input data
+# Format table without changing the input data
 
 ## Format headers (first row, first column)
 
