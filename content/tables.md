@@ -60,7 +60,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 ## Spreadsheets
 
-- See source examples: [Spreadsheets - Calculate sum, mean, standard deviation, max, and min across selection of cells](Spreadsheets%20-%20Calculate%20sum,%20mean,%20standard%20deviation,%20max,%20and%20min%20across%20selection%20of%20cells.md)
+- See source examples: [Spreadsheets - Calculate sum, mean, standard deviation, max, and min across selection of cells](./spreadsheets.md)
 
 ![table accumulate trip expenses.svg](./attachments/table%20accumulate%20trip%20expenses.svg)
 
