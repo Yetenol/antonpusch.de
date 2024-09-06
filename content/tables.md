@@ -37,14 +37,15 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 ## Format numbers
 
 - Prefix, Suffix, url, numbers right-aligned, text/left center-aligned; Number format, scientific notation, rounding, group every three digits, monospace, evaluate. Stats, also see [more styles](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
+- pgfmathparse, dash 3rd line, math, siunit, pgfmathparse, date, money, command, macro, bold, color, fraction styles
+- dateformat, fraction format, yes/no symbol, 
 - See source examples: [Format raw cell body](./format%20raw%20cell%20body.md)
 
 ![table body.svg](./attachments/table%20body.svg)
 
 ## Format text
 
-Url, Monospace, Movie list, regex, detect name, replace LaTeX -> `\LaTeX`, auto truncate to footnote, autoheaders(rotate, group), vgroupdetect, hgroupdetect, auto format, replace empty cells,
-
+- Url, Monospace, Movie list, regex, detect name, replace LaTeX -> `\LaTeX`, auto truncate to footnote, autoheaders(rotate, group), vgroupdetect, hgroupdetect, auto format, replace empty cells, texttt
 - See source examples: [Format text in tables](./format%20text%20in%20tables.md)
 
 ![table text formatting.svg](./attachments/table%20text%20formatting.svg)
