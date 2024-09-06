@@ -45,11 +45,15 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 Url, Monospace, Movie list, regex, detect name, replace LaTeX -> `\LaTeX`, auto truncate to footnote, autoheaders(rotate, group), vgroupdetect, hgroupdetect, auto format, replace empty cells,
 
+- See source examples: [Format text in tables](./format%20text%20in%20tables.md)
+
+![table text formatting.svg](./attachments/table%20text%20formatting.svg)
+
 # Dynamically calculate cell text, style
 
 # Get row, column numbers of relative to the entire table, its body, or the current group
 
-- See source examples: [Table counters - Get row, column numbers of relative to the entire table, its body, or the current group](Table%20counters%20-%20Get%20row,%20column%20numbers%20of%20relative%20to%20the%20entire%20table,%20its%20body,%20or%20the%20current%20group.md)
+- See source examples: [Table counters - Get row, column numbers of relative to the entire table, its body, or the current group](./table%20counters.md)
 
 ![table counters.svg](./attachments/table%20counters.svg)
 
