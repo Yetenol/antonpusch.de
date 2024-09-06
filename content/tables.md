@@ -30,7 +30,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 - Visually clarify **column titles** and **row titles**: Thin border line 1b, 1c; Left-aligned first column 1a, 1b
 - Apply border **pattern**: Inner **gridlines** $\mathrm{1c}$
 - Multicolumn header
-- See source examples: [Format table headings](./format%20table%20headings.md)
+- See source examples: [Format headers - Group, align, rotate, separate, and abbreviate the titles for rows and columns](./format%20headers.md)
 
 ![table headers.svg](./attachments/table%20headers.svg)
 
@@ -39,26 +39,24 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 - Prefix, Suffix, url, numbers right-aligned, text/left center-aligned; Number format, scientific notation, rounding, group every three digits, monospace, evaluate. Stats, also see [more styles](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
 - pgfmathparse, dash 3rd line, math, siunit, pgfmathparse, date, money, command, macro, bold, color, fraction styles
 - dateformat, fraction format, yes/no symbol, 
-- See source examples: [Format raw cell body](./format%20raw%20cell%20body.md)
+- See source examples: [Format numbers - Evaluate, Round to precision, Set decimal and thousands separator, Use scientific notations](./format%20numbers.md)
 
 ![table body.svg](./attachments/table%20body.svg)
 
 ## Format text
 
 - Url, Monospace, Movie list, regex, detect name, replace LaTeX -> `\LaTeX`, auto truncate to footnote, autoheaders(rotate, group), vgroupdetect, hgroupdetect, auto format, replace empty cells, texttt
-- See source examples: [Format text in tables](./format%20text%20in%20tables.md)
+- See source examples: [Format text - Style body text in monospace, macros with slash](./format%20text.md)
 
 ![table text formatting.svg](./attachments/table%20text%20formatting.svg)
 
 # Dynamically calculate cell text, style
 
-# Get row, column numbers relative to the entire table, its body, or the current group
+# Count rows and column relative to the entire table, its body, or the current group
 
-- See source examples: [Table counters - Get row, column numbers of relative to the entire table, its body, or the current group](./table%20counters.md)
+- See source examples: [Table counters - Count rows and column relative to the entire table, its body, or the current group](./table%20counters.md)
 
 ![table counters.svg](./attachments/table%20counters.svg)
-
-
 
 # Table calculation
 
