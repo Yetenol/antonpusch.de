@@ -19,7 +19,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 - Make layout **light-weight**: Few border lines; Spacing between cells, rows, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
 - Horizontal **alignment**: **Left**-align text, row headers; **Right**-align numbers; **Center**-align column headers
 - [How to design good tables](How%20to%20design%20good%20tables.md)
-- [Syntax - How to write tables](Syntax%20-%20How%20to%20write%20tables.md)
+- [Table Syntax - How to write tables](Table%20Syntax%20-%20How%20to%20write%20tables.md)
 
 # Format table header or body with the same input data
 
@@ -54,11 +54,17 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 # Count rows and column relative to the entire table, its body, or the current group
 
-- See source examples: [Table counters - Count rows and column relative to the entire table, its body, or the current group](./table%20counters.md)
+- See source examples: [Cell addresses - Count rows and column relative to the entire table, its body, or the current group](./cell%20addresses.md)
 
 ![table counters.svg](./attachments/table%20counters.svg)
 
-# Table calculation
+## Accumulate sum, average, standard deviation, count, minimum, maximum other selection of cells
+
+
+- [Accumulate other cells](Accumulate%20other%20cells.md)
+
+
+## Table calculation
 
 - See source examples: [Table calculation](./table%20calculation.md)
 
