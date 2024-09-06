@@ -61,7 +61,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 ## Accumulate sum, average, standard deviation, count, minimum, maximum over selection of cells
 
 
-- [Accumulate other cells](Accumulate%20other%20cells.md)
+- See source examples: [Accumulate other cells](Accumulate%20other%20cells.md)
 
 ![table accumulate trip expenses.svg](./attachments/table%20accumulate%20trip%20expenses.svg)
 
