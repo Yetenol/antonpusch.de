@@ -1,5 +1,5 @@
 ---
-title: "Table counters - Get row, column numbers of relative to the entire table, its body, or the current group"
+title: "Table counters - Count rows and column relative to the entire table, its body, or the current group"
 dg-publish: true
 ---
 

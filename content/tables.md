@@ -52,7 +52,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 # Dynamically calculate cell text, style
 
-# Get row, column numbers of relative to the entire table, its body, or the current group
+# Get row, column numbers relative to the entire table, its body, or the current group
 
 - See source examples: [Table counters - Get row, column numbers of relative to the entire table, its body, or the current group](./table%20counters.md)
 

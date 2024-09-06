@@ -14,7 +14,7 @@ dg-publish: true
 \noindent
 \begin{tblr}[tall,caption=Pet Owners]{
   colspec={lrrrr},
-  hline{1,Z}={.1em}, hline{3},
+  hline{1,Z}={.08em}, hline{3},
   column{1}={halign=l,cmd=\quad},
   row{3-Z}={,rowsep=0pt}, row{3}={abovesep=2pt},
   row{3,6}={font=\bfseries,cmd={},abovesep=6pt,belowsep=2pt},
@@ -51,7 +51,7 @@ Rural     & 5    & 12 & --   & 14 \\
 \begin{document}
 \begin{tblr}[tall, caption=Comparison, 
     note{a}={Collaborate live with team members on the same document}
-]{  colspec={lcc}, hline{1,Z}={.1em}, hline{2}, 
+]{  colspec={lcc}, hline{1,Z}={.08em}, hline{2}, 
     cell{1}{2-Z} = {halign=l,cmd=\rot[45][1em]},
     column{1}={rightsep+=4pt}, column{Z}={rightsep+=12pt},
     cell{2-Z}{2-Z}={mode=math,cmd=\mathrm}, 
@@ -81,13 +81,11 @@ Feautures & ++       & +       \\
     {\oldfrac{#1}{#2}} {\oldfrac{#1}{#2}}  }
 \begin{document}
 $\begin{tblr}[tall,caption=Probabilities,
-  remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}
-]{
-  colspec={lccc},
-  vline{2}={2-Z}{}, vline{Y}, hline{2}={2-Z}{}, hline{Y},
-  cell{1}{1}={preto={\diagbox}}, column{1}={colsep=2pt},
-  cell{1}{2-Y}={f}, cell{2-Y}{1}={c},
-  cell{1,Z}{1}={font=\boldmath,l}, cell{1}{Z}={m,font=\boldmath},
+    remark{$x$}={horizontal axis}, remark{$y$}={vertical axis} 
+]{  hline{2}={2-Z}{}, vline{2}={2-Z}{}, hline{Y}, vline{Y}, 
+    column{1-Z}={c}, column{1}={colsep=2pt},
+    cell{1}{1}={preto={\diagbox}}, 
+    cell{1,Z}{1,Z}={font=\boldmath},
 }
 {x}{y} & 0            & 1            & 2            & \Sigma      \\
 0      & \frac{1}{16} & \frac{1}{16} & 0            & \frac{1}{8} \\
@@ -103,7 +101,7 @@ $\begin{tblr}[tall,caption=Probabilities,
 
 ![table probabilities.svg](./attachments/table%20probabilities.svg)
 
-Style B
+Separate the sum row and column with more spacing instead of additional border lines
 
 ```latex
 \documentclass{standalone} \renewcommand{\thetable}{1.3b}
@@ -114,13 +112,14 @@ Style B
     {\oldfrac{#1}{#2}} {{^{#1}\!/_{\!#2}}}
     {\oldfrac{#1}{#2}} {\oldfrac{#1}{#2}}  }
 \begin{document}
-$\begin{tblr}[tall,caption=Style B, 
-    remark{$x$}={horizontal axis}, remark{$y$}={vertical axis},
-]{  colspec={lcccc}, hline{1,Z}={.1em}, hline{2}={leftpos=-7,endpos},
-    cell{1}{1}={preto={\diagbox[linewidth=-100pt]}}, column{1}={colsep=2pt},
-    cell{1}{2-Y}={f}, cell{2-Y}{1}={c}, 
-    cell{1,Z}{1}={font=\boldmath,l}, cell{1}{Z}={h,font=\boldmath},
+$\begin{tblr}[tall,caption=Separation instead of vlines,
+    remark{$x$}={horizontal axis}, remark{$y$}={vertical axis} 
+]{  hline{1,Z}={.08em}, hline{2}={leftpos=-7,endpos},
+    column{1-Z}={c}, column{1}={colsep=2pt},
     row{Z}={abovesep+=6pt}, column{Z}={leftsep+=6pt},
+    cell{1}{1}={preto={\diagbox[linewidth=-100pt]}},
+    cell{1}{Z}={h}, cell{Z}{1}={l},
+    cell{1,Z}{1,Z}={font=\boldmath},
 }
 {x}{y} & 0            & 1            & 2            & \Sigma      \\
 0      & \frac{1}{16} & \frac{1}{16} & 0            & \frac{1}{8} \\
@@ -132,19 +131,19 @@ $\begin{tblr}[tall,caption=Style B,
 \end{document}
 ```
 
-Style C
+Don't combine $x$ and $y$ in the same diagbox cell
 
 ```latex
 \documentclass{standalone} \renewcommand{\thetable}{1.3c}
 \usepackage{tabularray}
 \begin{document}
-$\begin{tblr}[tall, caption=Style C,
-    remark{$x$}={horizontal axis}, remark{$y$}={vertical axis}
-]{  colspec={lcccc}, hline{1,Z}={.1em}, hline{2},
-    cell{3-6}{1}={cmd=\quad,font={}},
-    cell{1}{1}={r}, cell{1}{2-4}={mode=text,cmd={\\}},
-    column{1}={font=\boldmath}, row{1}={valign=h,font=\boldmath},
+$\begin{tblr}[tall,caption=No diagbox,
+    remark{$x$}={horizontal axis}, remark{$y$}={vertical axis} 
+]{  hline{1,Z}={.08em}, hline{2},
+    column{1-Z}={c}, column{1}={colsep=2pt},
     row{Z}={abovesep+=6pt}, column{Z}={leftsep+=6pt},
+    cell{1}{1,Z}={h,font=\boldmath}, cell{2,Z}{1}={l,font=\boldmath},
+    row{1}={ht=1.8em}, cell{1}{2-Y}={f}
 }
 y=     & 0              & 1              & 2              & \Sigma        \\
 x=                                                                        \\
