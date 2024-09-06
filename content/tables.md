@@ -63,6 +63,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 - [Accumulate other cells](Accumulate%20other%20cells.md)
 
+![table accumulate 1.svg](./attachments/table%20accumulate%201.svg)
 
 ## Table calculation
 
