@@ -1,11 +1,11 @@
 ---
-title: "Tables - Create tables and format by definiting styles in the preamble, utilizing  tabularray"
+title: "Tables - Separate content and styles like alignment, spacing, markup, and calculation, utilizing tabularray"
 dg-publish: true
 dg-show-toc: true
 aliases:
   - Table
 ---
-It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
++It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
 
 - modern LaTeX3 package with key-value configuration
 - why not just booktabs

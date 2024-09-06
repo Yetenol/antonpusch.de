@@ -16,7 +16,7 @@ $$
 \end{align*}
 $$
 
-[Tables - Create tables and format by definiting styles in the preamble, utilizing  tabularray](./tables.md)
+[Tables - Separate content and styles like alignment, spacing, markup, and calculation, utilizing tabularray](./tables.md)
 
 ![table headers.svg](./attachments/table%20headers.svg)
 

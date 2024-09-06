@@ -3,7 +3,7 @@ title: "Graphical elements - Standardize tables, images, plots"
 dg-publish: true
 priority: 5
 ---
-- [Tables - Create tables and format by definiting styles in the preamble, utilizing  tabularray](./tables.md)
+- [Tables - Separate content and styles like alignment, spacing, markup, and calculation, utilizing tabularray](./tables.md)
 - [Code Snippets - Print source code with syntax highlighting in latex with listings](./code%20snippets.md)
 - [Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf](./graphics.md)
 - [Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./math.md)

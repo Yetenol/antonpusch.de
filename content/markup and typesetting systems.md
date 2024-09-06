@@ -6,7 +6,7 @@ aliases:
 ---
 # Content
 
-[Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./math.md)
+[Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing AMSmath](./math.md)
 
 $$
 \begin{align*} \qquad&\hspace{-2em}
@@ -16,7 +16,7 @@ $$
 \end{align*}
 $$
 
-[Tables - Create tables and format by definiting styles in the preamble, utilizing  tabularray](./tables.md)
+[Tables - Separate content and styles like alignment, spacing, markup, and calculation, utilizing Tabularray](./tables.md)
 
 ![table headers.svg](./attachments/table%20headers.svg)
 
