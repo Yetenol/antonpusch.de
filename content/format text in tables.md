@@ -9,7 +9,7 @@ dg-publish: true
 ```latex
 \documentclass{standalone}
 \usepackage{tabularray}
-\renewcommand{\thetable}{2.3\alph{table}}
+\renewcommand{\thetable}{3.1\alph{table}}
 \begin{document}
 \begin{tblr}[tall,caption=Macro names]{  
     colspec={rlcr}, hline{1,Z}={.08em}, hline{2},
@@ -39,7 +39,7 @@ Name          && Unicode & {Alt\\code} \\
 ```latex
 \documentclass{standalone}
 \usepackage{tabularray,codehigh,amsmath}
-\renewcommand{\thetable}{2.3\alph{table}}\setcounter{table}{1}
+\renewcommand{\thetable}{3.1\alph{table}}\setcounter{table}{1}
 \begin{document}
 \begin{tblr}[tall, caption=Preformatted text]{  
     colspec={ll}, hline{1,Z}={.08em}, hline{2},
@@ -63,7 +63,7 @@ $\delta$ \fakeverb{\delta} &
 ```latex
 \documentclass{standalone}
 \usepackage{tabularray}
-\renewcommand{\thetable}{2.3\alph{table}}\setcounter{table}{2}
+\renewcommand{\thetable}{3.2}
 \begin{document}
 \begin{tblr}[tall, caption=Monospace]{
     colspec={rl}, hline{1,Z}={.08em},hline{2},
