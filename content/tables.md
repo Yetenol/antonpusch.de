@@ -12,10 +12,10 @@ Use only one[^1] package for tables, a modern LaTeX3 package with key-value conf
 - Make layout **light-weight**: Few border lines; Spacing between cells, rows, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
 - Horizontal **alignment**: **Left**-align text, row headers; **Right**-align numbers; **Center**-align column headers
 
-My main resources are the official package documentations for Tabularray[^2], and documentation on LaTeX3 functional[^3], and expl3[^4].
+My main resources are the official package documentation of Tabularray[^2], and documentation on LaTeX3 functional[^3], and expl3[^4].
 
 > This tabularray package will \[...\] directly use LaTeX3 functions to parse the table, and then typeset the entire table. Under the premise of being compatible with the basic syntax of LaTeX2 tables, this macro package will completely separate the content and style of the table, and the style of the table can be completely set in keyval way.
-- Package description on CTAN[^2]
+- from package description of Tabularray
 
 # Format table without changing the input data
 
@@ -167,7 +167,7 @@ Related:
 Tags:
 
 
-[^1]: Here are some of the packages for tables, though the descriptions are not good: [tables - Which tabular packages do which tasks and which packages conflict? - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/12672/which-tabular-packages-do-which-tasks-and-which-packages-conflict)
+[^1]: There are dozens of traditional LaTeX2 packages for tables which are inconsistent, and unpleasant to use. Here is a list, through the descriptions are not good: [tables - Which tabular packages do which tasks and which packages conflict? - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/12672/which-tabular-packages-do-which-tasks-and-which-packages-conflict)
 [^2]: tabularray – Typeset tabulars and arrays with LaTeX3: [Overview - CTAN](https://ctan.org/pkg/tabularray) ; [Documentation - Mirrors](http://mirrors.ctan.org/macros/latex/contrib/tabularray/tabularray.pdf) ; [Wiki - GitHub](https://github.com/lvjr/tabularray/wiki) 
 [^3]: functional – Provide an intuitive functional programming interface for LaTeX2: [Overview · CTAN](https://ctan.org/pkg/functional) - [Documentation · Mirrors](http://mirrors.ctan.org/macros/latex/contrib/functional/functional.pdf) - [Wiki · GitHub](https://github.com/lvjr/functional/wiki) 
 [^4]: expl3 – Wrapper package for experimental LaTeX3: [Overview - CTAN](https://ctan.org/pkg/expl3) ; [Documentation - Mirrors](http://mirrors.ctan.org/macros/latex/required/l3kernel/expl3.pdf) ; [The LaTeX Project](https://www.latex-project.org/latex3/) 
