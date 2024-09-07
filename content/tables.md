@@ -15,7 +15,7 @@ Use only one[^1] package for tables, a modern LaTeX3 package with key-value conf
 My main resources are the official package documentations for Tabularray[^2], and documentation on LaTeX3 functional[^3], and expl3[^4].
 
 > This tabularray package will \[...\] directly use LaTeX3 functions to parse the table, and then typeset the entire table. Under the premise of being compatible with the basic syntax of LaTeX2 tables, this macro package will completely separate the content and style of the table, and the style of the table can be completely set in keyval way.
-- [CTAN: Package tabularray](https://ctan.org/pkg/tabularray)
+- Package description on CTAN[^2]
 
 # Format table without changing the input data
 
