@@ -31,6 +31,7 @@ Caption on tables in text mode
 \documentclass{article} \pagestyle{empty}
 \renewcommand{\thetable}{4.1\alph{table}}
 \usepackage{tabularray,graphbox,caption}
+\captionsetup[table]{skip=2pt}
 \begin{document}
 \begin{minipage}{.4\textwidth} \centering{}
 \captionof{table}{Pre-compiled table}
@@ -77,5 +78,32 @@ Susan Wood    & Driver \\
 \end{document}
 ```
 
+# Sub-float mode
 
-![Pasted image 20221230110738.png](./attachments/pasted%20image%2020221230110738.png)
+![table reference subfloat mode.svg](./attachments/table%20reference%20subfloat%20mode.svg)
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{4.3\alph{table}}
+\usepackage{tabularray,graphbox}
+\begin{document}
+\begin{table}
+\begin{minipage}[b]{0.35\textwidth} \centering{}
+\caption{Pre-compiled} \vspace{3pt}
+\includegraphics{table reference nolabel}
+\end{minipage}
+\hspace{1em}
+\begin{minipage}[b]{0.35\textwidth} \centering{}
+\begin{tblr}[tall,baseline=b,caption={Inline table},note{}={Drivers ride busses.}]{
+hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name          & Job \\
+Zaid Knowles  & Teacher \\
+Hayley Conner & Doctor  \\
+Susan Wood    & Driver \\
+\end{tblr}
+\end{minipage}
+\end{table}
+\listoftables
+\end{document}
+```
