@@ -46,8 +46,9 @@ My main resources are the official package documentation of Tabularray[^2], and 
 
 ![table text formatting.svg](./attachments/table%20text%20formatting.svg)
 
-## Reference floating tables
+# Layout the final document
 
+-  Reference floating tables
 - Let table float here, superwide, above, below, next to a page's main text
 - Add caption,  and reference the table elsewhere
 - **Placement, alignment**: center the table horizontally
