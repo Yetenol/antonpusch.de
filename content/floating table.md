@@ -9,6 +9,7 @@ dg-publish: true
 
 ```latex
 \documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{4.1\alph{table}}
 \usepackage{tabularray,sidenotes,lipsum}
 \begin{document}
 \lipsum[4]
@@ -57,7 +58,8 @@ Lara   & 10  \\
 ![table floats 2.svg](./attachments/table%20floats%202.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \pagestyle{empty} 
+\renewcommand{\thetable}{4.2\alph{table}}
 \usepackage{tabularray,sidenotes,float,lipsum}
 \begin{document}
 \lipsum[4]
@@ -150,7 +152,7 @@ Caption on tables in text mode
 
 ```latex
 \documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{4.1\alph{table}}
+\renewcommand{\thetable}{4.3\alph{table}}
 \usepackage{tabularray,graphbox,caption}
 \captionsetup[table]{skip=2pt}
 \begin{document}
@@ -177,7 +179,7 @@ Susan Wood    & Driver \\
 
 ```latex
 \documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{4.2\alph{table}}
+\renewcommand{\thetable}{4.4\alph{table}}
 \usepackage{tabularray,graphbox}
 \begin{document}
 \begin{table}[h] \centering{}
@@ -205,7 +207,7 @@ Floating tables in sidebar
 
 ```latex
 \documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{4.2\alph{table}}
+\renewcommand{\thetable}{4.5\alph{table}}
 \usepackage{tabularray,graphbox,sidenotes,lipsum}
 \begin{document}
 See tables in the sidebar.
@@ -235,7 +237,7 @@ Susan Wood    & Driver \\
 
 ```latex
 \documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{4.3\alph{table}}
+\renewcommand{\thetable}{4.6\alph{table}}
 \usepackage{tabularray,graphbox}
 \begin{document}
 \begin{table}
@@ -263,7 +265,7 @@ Susan Wood    & Driver \\
 
 ```latex
 \documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{4.3\alph{table}}
+\renewcommand{\thetable}{4.7\alph{table}}
 \usepackage{tabularray,graphbox}
 \begin{document}
 \begin{table}
