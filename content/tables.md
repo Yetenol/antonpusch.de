@@ -46,6 +46,17 @@ My main resources are the official package documentation of Tabularray[^2], and 
 
 ![table text formatting.svg](./attachments/table%20text%20formatting.svg)
 
+## Add caption and reference the table elsewhere
+
+- **Placement, alignment**: center the table horizontally
+- Add **references**: caption above and in the list of tables, label to cross-reference elsewhere
+- More ideas: legende, Multifigure, Split, Longtable, surpress tableoftables entry, table next to text, globally set placement specifiers
+- Center, Caption, Reference, Longtable, Caption below/above, Caption number, Figurename
+- See source examples: [Reference table - Add caption, label, and cross-references](./reference%20table.md)
+
+![table reference text mode.svg](./attachments/table%20reference%20text%20mode.svg)
+
+
 # Dynamically calculate cell text, style
 
 - Dynamic calculation vs external preprocessing
@@ -102,15 +113,6 @@ My main resources are the official package documentation of Tabularray[^2], and 
 ![table layout 1.svg](./attachments/table%20layout%201.svg)
 
 
-## Add title and reference the table elsewhere
-
-- **Placement, alignment**: center the table horizontally
-- Add **references**: caption underneath and in the list of tables, label to cross-reference elsewhere
-- More ideas: legende, Multifigure, Split, Longtable, surpress tableoftables entry, table next to text, globally set placement specifiers
-- Center, Caption, Reference, Longtable, Caption below/above, Caption number, Figurename
-- See source examples: [Add title numbers, caption, and reference the table elsewhere](./add%20title%20numbers,%20caption,%20and%20reference%20the%20table%20elsewhere.md) 
-
-![minimal 50.svg](./attachments/minimal%2050.svg)
 
 # Export formatted table
 
