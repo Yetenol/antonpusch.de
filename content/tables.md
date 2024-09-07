@@ -1,25 +1,19 @@
 ---
-title: "Tables - Separate content and styles like alignment, spacing, markup, and calculation, utilizing Tabularray"
+title: "Tables - Separate content in plaintext and styles like alignment, spacing, markup, and calculation, utilizing Tabularray"
 dg-publish: true
 dg-show-toc: true
 aliases:
   - Table
 ---
-It's easy to start typesetting in LaTeX, and rely on TeX Stack Exchange's plentiful answers, whenever you don't know how to implement something. However, I encountered many seemingly simple solutions, that caused more trouble afterwards. Sometimes, changes will unknowingly affect other parts of your document; packages are outdated or straight up cause conflicts; or more modern LaTeX3 approaches should be preferred. 
+Use only one[^1] package for tables, a modern LaTeX3 package with key-value configuration separating the styles and table content. Calculate correct cell dimensions, and spacing. Select rows, columns, cell spacing and grid lines for flexible design, following these objectives:
 
-- modern LaTeX3 package with key-value configuration
-- why not just booktabs
-
-There are dozens[^1] of packages for tables, and built-in environments, so what is the problem. 
-
-# My Design Principles
-
-- Keep the table data **raw**, and readable: No ma cros in table content (except math macros supported by MathJax, KaTeX)
+- Keep the table data **raw**, and readable: No macros in table content (except math macros supported by MathJax, KaTeX)
 - Row, column **headers**: More rows than columns; **Narrow** (down) **titles**; **Group** similar titles; Put more important columns to the left
 - Make layout **light-weight**: Few border lines; Spacing between cells, rows, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
 - Horizontal **alignment**: **Left**-align text, row headers; **Right**-align numbers; **Center**-align column headers
-- [How to design good tables](How%20to%20design%20good%20tables.md)
-- [Table Syntax - How to write tables](Table%20Syntax%20-%20How%20to%20write%20tables.md)
+
+> This tabularray package will \[...\] directly use LaTeX3 functions to parse the table, and then typeset the entire table. Under the premise of being compatible with the basic syntax of LaTeX2 tables, this macro package will completely separate the content and style of the table, and the style of the table can be completely set in keyval way.
+- [CTAN: Package tabularray](https://ctan.org/pkg/tabularray)
 
 # Format table without changing the input data
 
@@ -52,9 +46,11 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 
 # Dynamically calculate cell text, style
 
+- Dynamic calculation vs external preprocessing
 - explain expl3, functional
 - compare typst, lualatex, xetex, python, dataview, excel
-- why separate formula
+- why separate formulas? excel copy pasting includes formatting
+- Calculations need to be shown somewhere else in the document? => Dynamic calculations
 
 ## Row and column numbers
 
@@ -77,6 +73,7 @@ There are dozens[^1] of packages for tables, and built-in environments, so what 
 # Set cell text, style with functions
 
 - Row, column counter; Statistics (sum, mean, standard deviation), regex replace, conditional formatting, heatmap, negative values, validate values, calculate function, compare ideal function to meassured values
+- excels capture values with text
 -  See source examples: [Calculate statistics for table numbers](./calculate%20statistics%20for%20table%20numbers.md)
 
 ![table functional.svg](./attachments/table%20functional.svg)
@@ -136,7 +133,10 @@ $$
 | $\gamma$ `\gamma` | U+0393  |     226     |
 | $\delta$ `\delta` | U+03B4  |     235     |
 
-# Advanced input processing
+# Things to avoid - Notes - Other
+
+- [How to design good tables](How%20to%20design%20good%20tables.md)
+- [More table examples, mainly pgfplotstable](./more%20table%20examples,%20mainly%20pgfplotstable.md)
 
 - formatted text, multicolumn, code in table, image in content, empty cell, postproc, true/false → tickboxes, postprocess make command, detect backtick for commands
 - convert backticks to verbatim
@@ -150,7 +150,6 @@ Image in table
 
 Calculate column sum
 
-[More table examples, mainly pgfplotstable](./more%20table%20examples,%20mainly%20pgfplotstable.md)
 
 ---
 Sources:
