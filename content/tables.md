@@ -5,10 +5,10 @@ dg-show-toc: true
 aliases:
   - Table
 ---
-Use only one[^1] package for tables, a modern LaTeX3 package with key-value configuration separating the styles and table content. Calculate correct cell dimensions, and spacing. Select rows, columns, cell spacing and grid lines for flexible design, following these objectives:
+Use only one[^1] package for tables, a modern LaTeX3 package with key-value configuration separating the styles and table content. Calculate correct cell dimensions, and spacing. Select rows, columns, cells, and grid lines for flexible designs, following these objectives:
 
-- Keep the table data **raw**, and readable: No macros in table content (except math macros supported by MathJax, KaTeX)
-- Row, column **headers**: Prefer **more rows** than columns; **Narrow** (down) **titles**; **Group** similar titles; Put more Important columns to the left
+- Keep the table data **portable**, raw, and readable: No macros in table content (except math macros supported by MathJax and KaTeX)
+- Row, column **headers**: **Narrow** (down) **titles**; **Group** similar titles; Put more important columns to the left; Prefer **more rows** than columns
 - Make layout **light-weight**: Few border lines; Spacing between cells, rows, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
 - Horizontal **alignment**: **Left**-align text, row headers; **Right**-align numbers; **Center**-align column headers
 
@@ -56,7 +56,7 @@ My main resources are the official package documentation of Tabularray[^2], and 
 
 ## Row and column numbers
 
-- See source examples: [Cell addresses - Count rows and column relative to the entire table, its body, or the current group](./cell%20addresses.md)
+- See source examples: [Cell addresses - Count rows and columns relative to the entire table, its body, or the current group](./cell%20addresses.md)
 
 ![table counters.svg](./attachments/table%20counters.svg)
 
@@ -169,5 +169,5 @@ Tags:
 
 [^1]: There are dozens of traditional LaTeX2 packages for tables which are inconsistent, and unpleasant to use. Here is a list, through the descriptions are not good: [tables - Which tabular packages do which tasks and which packages conflict? - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/12672/which-tabular-packages-do-which-tasks-and-which-packages-conflict)
 [^2]: tabularray – Typeset tabulars and arrays with LaTeX3: [Overview - CTAN](https://ctan.org/pkg/tabularray) ; [Documentation - Mirrors](http://mirrors.ctan.org/macros/latex/contrib/tabularray/tabularray.pdf) ; [Wiki - GitHub](https://github.com/lvjr/tabularray/wiki) 
-[^3]: functional – Provide an intuitive functional programming interface for LaTeX2: [Overview · CTAN](https://ctan.org/pkg/functional) - [Documentation · Mirrors](http://mirrors.ctan.org/macros/latex/contrib/functional/functional.pdf) - [Wiki · GitHub](https://github.com/lvjr/functional/wiki) 
+[^3]: functional – Provide an intuitive functional programming interface for LaTeX2: [Overview - CTAN](https://ctan.org/pkg/functional) ; [Documentation - Mirrors](http://mirrors.ctan.org/macros/latex/contrib/functional/functional.pdf) ; [Wiki - GitHub](https://github.com/lvjr/functional/wiki) 
 [^4]: expl3 – Wrapper package for experimental LaTeX3: [Overview - CTAN](https://ctan.org/pkg/expl3) ; [Documentation - Mirrors](http://mirrors.ctan.org/macros/latex/required/l3kernel/expl3.pdf) ; [The LaTeX Project](https://www.latex-project.org/latex3/) 

@@ -1,5 +1,5 @@
 ---
-title: "Cell addresses - Count rows and column relative to the entire table, its body, or the current group"
+title: "Cell addresses - Count rows and columns relative to the entire table, its body, or the current group"
 dg-publish: true
 ---
 
@@ -253,7 +253,7 @@ Rural     & 5    & 12 & --   & 14 \\
 \documentclass{standalone} \usepackage{graphbox}
 \begin{document}
 \begin{minipage}{\textwidth} \centering{}
-\includegraphics{table counter rownum 2} \hspace{1em}
+\includegraphics{table counter rownum 1} \hspace{1em}
 \includegraphics{table counter groups} \\ \vspace{1em}
 \includegraphics{table counter body} 
 \end{minipage}
