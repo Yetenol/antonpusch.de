@@ -12,13 +12,6 @@ Use only one[^1] package for tables, a modern LaTeX3 package with key-value conf
 - Make layout **light-weight**: Few border lines; Spacing between cells, rows, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
 - Horizontal **alignment**: **Left**-align text, row headers; **Right**-align numbers; **Center**-align column headers
 
-My main resources are the official package documentations *Tabularray - Typeset Tabulars and Arrays with LATEX3*[^2], *Functional - Intuitive Functional Programming Interface for LaTeX2*[^3] and *expl3 – Wrapper package for experimental LaTeX3*[^4].
-
-My main resources are
-- Tabularray - Typeset Tabulars and Arrays with LATEX3[^2]
-- Functional - Intuitive Functional Programming Interface for LaTeX2[^3]
-- expl3 – Wrapper package for experimental LaTeX3[^4]
-
 My main resources are the official package documentation of Tabularray[^2], and documentation on LaTeX3 functional[^3], and expl3[^4].
 
 > This tabularray package will \[...\] directly use LaTeX3 functions to parse the table, and then typeset the entire table. Under the premise of being compatible with the basic syntax of LaTeX2 tables, this macro package will completely separate the content and style of the table, and the style of the table can be completely set in keyval way.
