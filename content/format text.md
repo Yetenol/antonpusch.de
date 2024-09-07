@@ -7,9 +7,8 @@ dg-publish: true
 ![table body macro column.svg](./attachments/table%20body%20macro%20column.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \renewcommand{\thetable}{3.1a}
 \usepackage{tabularray}
-\renewcommand{\thetable}{3.1\alph{table}}
 \begin{document}
 \begin{tblr}[tall,caption=Macro names]{  
     colspec={rlcr}, hline{1,Z}={.08em}, hline{2},
@@ -26,20 +25,12 @@ Name          && Unicode & {Alt\\code} \\
 \end{document}
 ```
 
+Compare to cells with inline formatting
 ![table body macros.svg](./attachments/table%20body%20macros.svg)
 
 ```latex
-\documentclass{standalone} \usepackage{graphicx,graphbox}
-\begin{document}
-\includegraphics[align=c]{table body macro column} \hspace{1em}
-\includegraphics[align=c]{table body macro verbatim}
-\end{document}
-```
-
-```latex
-\documentclass{standalone}
+\documentclass{standalone} \renewcommand{\thetable}{3.1b}
 \usepackage{tabularray,codehigh,amsmath}
-\renewcommand{\thetable}{3.1\alph{table}}\setcounter{table}{1}
 \begin{document}
 \begin{tblr}[tall, caption=Preformatted text]{  
     colspec={ll}, hline{1,Z}={.08em}, hline{2},
@@ -56,14 +47,21 @@ $\delta$ \fakeverb{\delta} &
 \end{document}
 ```
 
+```latex
+\documentclass{standalone} \usepackage{graphicx,graphbox}
+\begin{document}
+\includegraphics[align=c]{table body macro column} \hspace{1em}
+\includegraphics[align=c]{table body macro verbatim}
+\end{document}
+```
+
 # Glossary of commands in monospace
 
 ![table body monospace.svg](./attachments/table%20body%20monospace.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \renewcommand{\thetable}{3.2}
 \usepackage{tabularray}
-\renewcommand{\thetable}{3.2}
 \begin{document}
 \begin{tblr}[tall, caption=Monospace]{
     colspec={rl}, hline{1,Z}={.08em},hline{2},

@@ -2,6 +2,10 @@
 title: "More table examples, mainly pgfplotstable"
 dg-publish: true
 ---
+
+- [Add title numbers, caption, and reference the table elsewhere](./add%20title%20numbers,%20caption,%20and%20reference%20the%20table%20elsewhere.md) 
+- [Create a simple table with borders](./create%20a%20simple%20table%20with%20borders.md)
+
 # Create a simple table with borders
 
 - Visually clarify table **boundaries**: Thick horizontal lines $\mathrm{1a}$; Thick frame $\mathrm{1c}$

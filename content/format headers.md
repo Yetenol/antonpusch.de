@@ -60,7 +60,7 @@ Rural     & 5    & 12 & --   & 14 \\
 Aspect    & Overleaf & Obsidian \\
 Collab.   & ++       & --       \\
 Price     & o        & +        \\
-Feautures & ++       & +       \\
+Feautures & ++       & +        \\
 \end{tblr}
 \end{document}
 ```
