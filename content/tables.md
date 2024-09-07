@@ -5,7 +5,7 @@ dg-show-toc: true
 aliases:
   - Table
 ---
-Use only one[^1] package for tables, a modern LaTeX3 package with key-value configuration separating the styles and table content. Calculate correct cell dimensions, and spacing. Select rows, columns, cells, spancells, and grid lines for flexible designs, following these objectives:
+Use only one[^1] package for tables, a modern LaTeX3 package with key-value configuration separating the styles and table content. Calculate correct cell dimensions, and spacing. Select rows, columns, cells, and grid lines for flexible designs, following these objectives:
 
 - Keep the table data **raw**, and readable: No macros in table content (except math macros supported by MathJax, KaTeX)
 - Row, column **headers**: **Narrow** (down) **titles**; **Group** similar titles; Put more important columns to the left; Prefer **more rows** than columns
