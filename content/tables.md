@@ -8,9 +8,16 @@ aliases:
 Use only one[^1] package for tables, a modern LaTeX3 package with key-value configuration separating the styles and table content. Calculate correct cell dimensions, and spacing. Select rows, columns, cell spacing and grid lines for flexible design, following these objectives:
 
 - Keep the table data **raw**, and readable: No macros in table content (except math macros supported by MathJax, KaTeX)
-- Row, column **headers**: Prefer **more rows** than columns; **Narrow** (down) **titles**; **Group** similar titles; Put more important columns to the left
+- Row, column **headers**: Prefer **more rows** than columns; **Narrow** (down) **titles**; **Group** similar titles; Put more Important columns to the left
 - Make layout **light-weight**: Few border lines; Spacing between cells, rows, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
 - Horizontal **alignment**: **Left**-align text, row headers; **Right**-align numbers; **Center**-align column headers
+
+My main resources are the official package documentations *Tabularray - Typeset Tabulars and Arrays with LATEX3*[^2], *Functional - Intuitive Functional Programming Interface for LaTeX2*[^3] and *expl3 – Wrapper package for experimental LaTeX3*[^4].
+
+My main resources are
+- Tabularray - Typeset Tabulars and Arrays with LATEX3[^2]
+- Functional - Intuitive Functional Programming Interface for LaTeX2[^3]
+- expl3 – Wrapper package for experimental LaTeX3[^4]
 
 My main resources are the official package documentation of Tabularray[^2], and documentation on LaTeX3 functional[^3], and expl3[^4].
 
