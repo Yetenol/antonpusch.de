@@ -46,16 +46,17 @@ My main resources are the official package documentation of Tabularray[^2], and 
 
 ![table text formatting.svg](./attachments/table%20text%20formatting.svg)
 
-## Add caption and reference the table elsewhere
+## Reference floating tables
 
+- Let table float here, superwide, above, below, next to a page's main text
+- Add caption,  and reference the table elsewhere
 - **Placement, alignment**: center the table horizontally
 - Add **references**: caption above and in the list of tables, label to cross-reference elsewhere
 - More ideas: legende, Multifigure, Split, Longtable, surpress tableoftables entry, table next to text, globally set placement specifiers
 - Center, Caption, Reference, Longtable, Caption below/above, Caption number, Figurename
-- See source examples: [Reference table - Add caption, label, and cross-references](./reference%20table.md)
+- See source examples: [Floating table - Let table float here, superwide, above, below, next to a page's main text](./floating%20table.md)
 
-![table reference text mode.svg](./attachments/table%20reference%20text%20mode.svg)
-
+![table floats.svg](./attachments/table%20floats.svg)
 
 # Dynamically calculate cell text, style
 
