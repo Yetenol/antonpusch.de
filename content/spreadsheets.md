@@ -71,7 +71,7 @@ t      & U      \\
 - Trip distance: $dist_n \coloneqq \left| marker_{n - 1} - marker_n \right|, n \in \{ 4, \ldots,  6,  9, \ldots,  11 \}$ 
 - Total price: $total_n \coloneqq  price_n \cdot  overnights_n, n \in \{ 3, \ldots,  6,  8, \ldots,  11 \}$ 
 - Distance on Mecklenburg Lakeland: $meck \coloneqq \sum_{n = 4}^{6} dist_n$ 
-- Distance on Havel River: ${} havel \coloneqq \sum_{n = 9}^{11} dist_n {}$ 
+- Distance on Havel River: $havel \coloneqq \sum_{n = 9}^{11} dist_n$ 
 - Minimum overnight price: $min \coloneqq \min(price_3, \ldots, price_{11} )$ 
 - Maximum overnight price: $max \coloneqq \max(price_3, \ldots, price_{11} )$
 - Total accommodation cost: $accom \coloneqq \sum_{n = 3}^{11} total_n$
