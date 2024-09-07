@@ -8,7 +8,7 @@ dg-publish: true
 ![table counter rownum 1.svg](./attachments/table%20counter%20rownum%201.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{4.1\alph{table}}
+\documentclass{standalone} \renewcommand{\thetable}{5.1\alph{table}}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \begin{document}
@@ -33,7 +33,7 @@ cell{2-Z}{1}={r,cmd=\fpEval{\therownum - 1}}
 ![table counter rownum 1, 2.svg](./attachments/table%20counter%20rownum%201,%202.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{4.1b}
+\documentclass{standalone} \renewcommand{\thetable}{5.1b}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \begin{document}
@@ -75,7 +75,7 @@ Print counter with format
 ![table counter absolute.svg](./attachments/table%20counter%20absolute.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{4.2a}
+\documentclass{standalone} \renewcommand{\thetable}{5.2a}
 \usepackage{tabularray}
 \begin{document}
 \begin{tblr}[tall,caption=Absolute counters in different alphabets]{ 
@@ -109,7 +109,7 @@ Roman  \\
 ![table counter absolute, body.svg](./attachments/table%20counter%20absolute,%20body.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{4.2b}
+\documentclass{standalone} \renewcommand{\thetable}{5.2b}
 \usepackage{tabularray}
 \UseTblrLibrary{counter,functional}
 \IgnoreSpacesOn
@@ -166,7 +166,7 @@ Roman  \\
 ![table counter skip.svg](./attachments/table%20counter%20skip.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{4.3a}
+\documentclass{standalone} \renewcommand{\thetable}{5.3a}
 \usepackage{tabularray}
 \UseTblrLibrary{counter}
 \newcounter{rowindex} \newcounter{colindex}
@@ -203,7 +203,7 @@ Rural     & 5    & 12 & --   & 14 \\
 ![table counter skip, groups.svg](./attachments/table%20counter%20skip,%20groups.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{4.3b}
+\documentclass{standalone} \renewcommand{\thetable}{5.3b}
 \usepackage{tabularray}
 \UseTblrLibrary{counter}
 \newcounter{rowindex} \newcounter{colindex}
