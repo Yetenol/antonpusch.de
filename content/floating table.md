@@ -10,23 +10,35 @@ dg-publish: true
 ```latex
 \documentclass{article} \pagestyle{empty}
 \renewcommand{\thetable}{4.1\alph{table}}
-\usepackage{tabularray,sidenotes,lipsum}
+\usepackage{tabularray,sidenotes,lipsum,graphbox,float}
+\captionsetup[table]{skip=2pt}
 \begin{document}
 \lipsum[4]
 
-\begin{center}
-\begin{tblr}[tall,caption={Float here},note{}={Drivers ride busses.}]{
-colspec={XX}, hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+\begin{table}[H] \centering{}
+\begin{minipage}[b]{.4\textwidth} \centering{}
+\caption{Pre-compiled table}
+\includegraphics{table reference nolabel}
+\end{minipage}
+\hspace{1em}
+\begin{minipage}[b]{.4\textwidth} \centering{}
+\begin{tblr}[tall,baseline=b,note{}={Drivers ride busses.},
+caption={Multiple tables in same float},
+]{
+hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
 }
 Name          & Job \\
 Zaid Knowles  & Teacher \\
 Hayley Conner & Doctor  \\
 Susan Wood    & Driver \\
 \end{tblr}
-\end{center}
+\end{minipage}
+\end{table}
 
 \begin{margintable}
-\begin{tblr}[tall,caption={Float right},note{}={Drivers ride busses.}]{
+\begin{tblr}[tall, note{}={as of 2014},
+entry={No caption, just an entry in list of tables},
+]{
 colspec={XX[r]}, hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
 }
 Name   & Age \\
@@ -39,13 +51,22 @@ Lara   & 10  \\
 \lipsum[2]
 
 \begin{table*}
-\begin{tblr}[tall,caption={Float superwide},note{}={Drivers ride busses.}]{
-colspec={XX[r]}, hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+\begin{tblr}[tall, 
+caption={Superwide table spanning into the margins with adjustable width}, 
+]{
+colspec={lX}, hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+column{1}={wd=15em}, column{2}={font=\ttfamily},
 }
-Name   & Age \\
-Peter  & 7   \\
-Io     & 14  \\
-Lara   & 10  \\
+Page &
+    URI \\
+Bluetooth \& other devices & 
+    {ms-settings:bluetooth\\ms-settings:connecteddevices} \\
+Connect to wireless display or audio device & 
+    ms-settings-connectabledevices:devicediscovery \\
+Printers \& scanners & 
+    ms-settings:printers \\
+Mouse & 
+    ms-settings:mousetouchpad \\
 \end{tblr}
 \end{table*}
 
