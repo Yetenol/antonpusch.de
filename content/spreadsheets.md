@@ -23,7 +23,7 @@ Available dynamic values for calculation:
 ![table accumulate sum.svg](./attachments/table%20accumulate%20sum.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{5.1}
+\documentclass{standalone} \renewcommand{\thetable}{6.1}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
@@ -82,7 +82,7 @@ Calculate the following values, with row number $r$:
 ![table accumulate trip expenses.svg](./attachments/table%20accumulate%20trip%20expenses.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{5.2}
+\documentclass{standalone} \renewcommand{\thetable}{6.2}
 \usepackage{tabularray}
 \UseTblrLibrary{functional,siunitx}
 \ExplSyntaxOn
