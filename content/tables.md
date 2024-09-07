@@ -8,14 +8,14 @@ aliases:
 Use only one[^1] package for tables, a modern LaTeX3 package with key-value configuration separating the styles and table content. Calculate correct cell dimensions, and spacing. Select rows, columns, cell spacing and grid lines for flexible design, following these objectives:
 
 - Keep the table data **raw**, and readable: No macros in table content (except math macros supported by MathJax, KaTeX)
-- Row, column **headers**: More rows than columns; **Narrow** (down) **titles**; **Group** similar titles; Put more important columns to the left
+- Row, column **headers**: Prefer **more rows** than columns; **Narrow** (down) **titles**; **Group** similar titles; Put more important columns to the left
 - Make layout **light-weight**: Few border lines; Spacing between cells, rows, columns; Few colors; Visually guide horizontal reading (Zebra, dashed lines)
 - Horizontal **alignment**: **Left**-align text, row headers; **Right**-align numbers; **Center**-align column headers
 
 My main resources are the official package documentation of Tabularray[^2], and documentation on LaTeX3 functional[^3], and expl3[^4].
 
 > This tabularray package will \[...\] directly use LaTeX3 functions to parse the table, and then typeset the entire table. Under the premise of being compatible with the basic syntax of LaTeX2 tables, this macro package will completely separate the content and style of the table, and the style of the table can be completely set in keyval way.
-- from package description of Tabularray
+- from package description of Tabularray[^2]
 
 # Format table without changing the input data
 
