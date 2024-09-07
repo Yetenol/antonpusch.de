@@ -11,12 +11,29 @@ Table without label, caption
 \usepackage{tabularray}
 \begin{document}
 \begin{tblr}[tall,label=none,note{}={Drivers ride busses.}]{
-hline{1,Z}={.08em}, hline{2}, row{1}={c},
+hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
 }
 Name          & Job \\
 Zaid Knowles  & Teacher \\
 Hayley Conner & Doctor  \\
 Susan Wood    & Driver \\
+\end{tblr}
+\end{document}
+```
+
+![table reference nolabel 2.svg](./attachments/table%20reference%20nolabel%202.svg)
+
+```latex
+\documentclass{standalone} 
+\usepackage{tabularray}
+\begin{document}
+\begin{tblr}[tall,label=none,note{}={as of 2014}]{
+hline{1,Z}={.08em}, hline{2}, colspec={lr}, row{1}={c},
+}
+Name   & Age \\
+Peter  & 7   \\
+Io     & 14  \\
+Lara   & 10  \\
 \end{tblr}
 \end{document}
 ```
@@ -101,6 +118,46 @@ Name          & Job \\
 Zaid Knowles  & Teacher \\
 Hayley Conner & Doctor  \\
 Susan Wood    & Driver \\
+\end{tblr}
+\end{minipage}
+\end{table}
+\listoftables
+\end{document}
+```
+
+![table reference subfloat mode 2.svg](./attachments/table%20reference%20subfloat%20mode%202.svg)
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{4.3\alph{table}}
+\usepackage{tabularray,graphbox}
+\begin{document}
+\begin{table}
+\begin{minipage}[b]{.2\textwidth} \centering{}
+\caption{P} \vspace{4pt}
+\includegraphics{table reference nolabel 2}
+\end{minipage}
+\hspace{1em}
+\begin{minipage}[b]{.2\textwidth} \centering{}
+\begin{tblr}[tall,baseline=b,caption={I},note{}={as of 2014}]{
+hline{1,Z}={.08em}, hline{2}, colspec={lr}, row{1}={c},
+}
+Name   & Age \\
+Peter  & 7   \\
+Io     & 14  \\
+Lara   & 10  \\
+\end{tblr}
+\end{minipage}
+\hspace{1em}
+\begin{minipage}[b]{.2\textwidth} \centering{}
+\caption{C} \vspace{4pt}
+\begin{tblr}[tall,baseline=b,entry=none,label=none,note{}={as of 2014}]{
+hline{1,Z}={.08em}, hline{2}, colspec={lr}, row{1}={c},
+}
+Name   & Age \\
+Peter  & 7   \\
+Io     & 14  \\
+Lara   & 10  \\
 \end{tblr}
 \end{minipage}
 \end{table}
