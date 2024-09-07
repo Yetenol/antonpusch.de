@@ -68,6 +68,15 @@ t      & U      \\
 
 # Add expenses
 
+- Trip distance: $dist_n = \left| marker_{n - 1} - marker_n \right|$ 
+- Total price: $total_n =  price_n \cdot  overnights_n$ 
+- Distance on Mecklenburg Lakeland: $meck = \sum_{n = 4}^{6} dist_n$ 
+- Distance on Havel River: $havel = \sum_{n = 9}^{11} dist_n$ 
+- Minimum overnight price: $min =  \min(price_3, \ldots, price_{11} )$ 
+- Maximum overnight price: $max =  \max(price_3, \ldots, price_{11} )$
+- Total accommodation cost: $accom = \sum_{n = 3}^{11} total_n$
+- Daily average: $avg =  accom \div \operatorname{count}(total_3, \ldots, total_{11} )$ 
+
 ![table accumulate trip expenses.svg](./attachments/table%20accumulate%20trip%20expenses.svg)
 
 ```latex
