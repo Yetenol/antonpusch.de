@@ -68,13 +68,15 @@ t      & U      \\
 
 # Add expenses
 
-- Trip distance: $dist_n \coloneqq \left| marker_{n - 1} - marker_n \right|, n \in \{ 4, \ldots,  6,  9, \ldots,  11 \}$ 
-- Total price: $total_n \coloneqq  price_n \cdot  overnights_n, n \in \{ 3, \ldots,  6,  8, \ldots,  11 \}$ 
-- Distance on Mecklenburg Lakeland: $meck \coloneqq \sum_{n = 4}^{6} dist_n$ 
-- Distance on Havel River: $havel \coloneqq \sum_{n = 9}^{11} dist_n$ 
+Calculate the following values, with row number $r$:
+
+- Trip distance: $dist_r \coloneqq \left| marker_{r - 1} - marker_r \right|$ for $r \in \{ 4, \ldots,  6,  9, \ldots,  11 \}$ 
+- Total price: $total_r \coloneqq  price_r \cdot  overnights_r$ for $r \in \{ 3, \ldots,  6,  8, \ldots,  11 \}$ 
+- Distance on Mecklenburg Lakeland: $meck \coloneqq \sum_{r = 4}^{6} dist_r$ 
+- Distance on Havel River: $havel \coloneqq \sum_{r = 9}^{11} dist_r$ 
 - Minimum overnight price: $min \coloneqq \min(price_3, \ldots, price_{11} )$ 
 - Maximum overnight price: $max \coloneqq \max(price_3, \ldots, price_{11} )$
-- Total accommodation cost: $accom \coloneqq \sum_{n = 3}^{11} total_n$
+- Total accommodation cost: $accom \coloneqq \sum_{r = 3}^{11} total_r$
 - Daily average: $avg \coloneqq accom \div \operatorname{count-nonnull}(total_3, \ldots, total_{11} )$ 
 
 ![table accumulate trip expenses.svg](./attachments/table%20accumulate%20trip%20expenses.svg)
@@ -139,5 +141,18 @@ Sunset Pines      & 66  && 5  & 1 \\
 Starlight Meadows & 72  && 8  & 1 \\
 Evergreen Glade   & 100 && 16 & 1 \\
 \end{tblr}
+\end{document}
+```
+
+# Extract numbers
+
+```latex
+\documentclass{standalone}
+\usepackage{tabularray}
+\ExplSyntaxOn
+
+\ExplSyntaxOff
+\begin{document}
+
 \end{document}
 ```
