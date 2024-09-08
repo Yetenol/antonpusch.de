@@ -43,12 +43,16 @@ def is_standalone_class(latex_source):
     import re
     return re.search(r'\\documentclass\s*(?:\[[^\]]*\])?\s*\{standalone\}', latex_source)
 
-def compile_and_crop_figure(latex_source, attachments_folder, compiler="pdflatex", escape_shell=False):
+def compile_and_crop_figure(latex_source, attachments_folder, compiler="pdflatex", escape_shell=False, rerun=0):
     import subprocess, tempfile
     intermediates_folder = tempfile.mkdtemp()
     input_file = save_source_to_file(latex_source, intermediates_folder)
     with temporary_working_directory(attachments_folder):
-        subprocess.run(f'texfot pdflatex -output-directory={intermediates_folder} {input_file}', shell=True)
+        subprocess.run(['texfot', 'pdflatex', 
+            f'-output-directory={intermediates_folder}', input_file])
+        for _ in range(rerun):
+            subprocess.run(['texfot', 'pdflatex', 
+                f'-output-directory={intermediates_folder}', input_file])
     with temporary_working_directory(intermediates_folder):
         if not is_standalone_class(latex_source):
             os.rename('figure.pdf', 'figure_precrop.pdf')
@@ -70,8 +74,6 @@ def export_figure(filename, new_filename, source_folder, destination_folder):
     new_basename, filter_ext = os.path.splitext(new_filename)
     if filter_ext and source_ext != filter_ext:
         return
-    if source_ext == '.tex' and filter_ext != '.tex':
-        return
     copy_from = os.path.join(source_folder, filename)
     copy_to = os.path.join(destination_folder, new_basename + source_ext)
     try:
@@ -81,20 +83,19 @@ def export_figure(filename, new_filename, source_folder, destination_folder):
         print(f"Error exporting figure: {e}")
 
 def delete_figure(folder_path):
-    files_to_delete = ['figure.tex', 'figure.aux', 'figure.log', 'figure_precrop.pdf', 'figure.pdf', 'figure.svg']
+    files_to_delete = ['figure.tex', 'figure.aux', 'figure.log', 'figure.out', 'figure.lot', 'figure_precrop.pdf', 'figure.pdf', 'figure.svg']
     for filename in files_to_delete:
         file_path = os.path.join(folder_path, filename)
         if os.path.exists(file_path):
             os.remove(file_path)
     os.rmdir(folder_path)
 
-def generate_latex_figure(latex_source, compiler="pdflatex", escape_shell=False, outfile=None, keep_intermediates=False):
+def generate_latex_figure(latex_source, compiler="pdflatex", escape_shell=False, outfile=None, keep_intermediates=False, rerun=0):
     assets_folder = os.path.join(@vault_path, 'attachments/')
-    figure_folder = compile_and_crop_figure(latex_source, assets_folder)
+    figure_folder = compile_and_crop_figure(latex_source, assets_folder, rerun=rerun)
     if outfile:
         export_figure('figure.svg', outfile, figure_folder, assets_folder)
         export_figure('figure.pdf', outfile, figure_folder, assets_folder)
-        export_figure('figure.tex', outfile, figure_folder, assets_folder)
     print_figure('figure.svg', figure_folder, '.temp')
     if not keep_intermediates:
         delete_figure(figure_folder)
@@ -104,8 +105,9 @@ generate_latex_figure(r"""
 \begin{document}
 Hello World!
 \end{document}
-""", outfile='figure hello world')
+""")
 ```
+
 
 Minimal example
 
@@ -127,10 +129,48 @@ Hello World!
 
 ![figure hello world.svg](./attachments/figure%20hello%20world.svg)
 
+Rerun to get cross-references right
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\usepackage{mathtools}
+\begin{document}
+I use \eqref{eq:einstein} a lot.
+\[
+    E = mc^2 \tag{1}\label{eq:einstein}
+\]
+\end{document}
+```
+
 Regular python code
 
 ```python {ignore='all'}
 import uuid
 print("figure_" + str(uuid.uuid4()))
 @show(@vault_url + '/attachments/.temp.svg')
+```
+
+
+```python {ignore='global'}
+def check_file_for_patterns(file_path):
+    import re
+    patterns = [
+        r"Rerun to get cross-references right",
+        r"Rerun to get outlines right",
+        r"Label\(s\) may have changed\. Rerun"
+    ]
+    
+    with open(file_path, 'r') as file:
+        content = file.read()
+        
+    for pattern in patterns:
+        if re.search(pattern, content):
+            return True
+    
+    return False
+
+if check_file_for_patterns(r'C:\Users\anton\AppData\Local\Temp\tmpxnojtw_g\figure.log'):
+    print("Rerun needed. Will compile again.")
+else:
+    print("No rerun needed. Compilation complete.")
 ```
