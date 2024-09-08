@@ -118,7 +118,7 @@ Calculate the following values, with row number $r$:
 \begin{tblr}[tall,caption={Calculate bold trip expenses, distances},note{}={
 We travel \textbf{%
 \cellAccum{3,6}{2}{abs(\nCell-\nAccum)}{}~km} 
-on the Mecklenburg Lakeland and \textbf{%
+through the Mecklenburg Lakeland and \textbf{%
 \cellAccum{8,11}{2}{abs(\nCell-\nAccum)}{}~km} 
 on the Havel River. Overnight prices range from \textbf{%
 \cellAccum{3-11}{4}{\nCell != 0 ? min(\nAccum,\nCell) : \nAccum}{\cInfFp}~€} 
