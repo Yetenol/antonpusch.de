@@ -85,8 +85,8 @@ Calculate the following values, with row number $r$:
 
 ```latex
 \documentclass{standalone} \renewcommand{\thetable}{6.2}
-\usepackage{tabularray}
-\UseTblrLibrary{functional,siunitx}
+\usepackage{tabularray,textcomp}
+\UseTblrLibrary{functional}
 \ExplSyntaxOn
 \clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell 
 \intNew\nRow \intNew\nColumn
@@ -134,7 +134,9 @@ hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l},
 cell{1}{2-Z}={c}, row{2,7}={abovesep+=6pt,belowsep+=2pt},
 cell{2-Z}{1}={cmd=\quad}, cell{2,7}{1}={c=6}{cmd={},font=\bfseries},
 cell{2-Z}{2,4,5}={font=\bfseries},
-cell{4-6,9-11}{3}={cmd={\fpEval{
+cell{2-Z}{2}={appto={~km}}, cell{4-6,9-11}{3}={cmd={$\Delta\,$},appto={~km}},
+cell{2-Z}{5}={l,preto={$\times$ },appto={ $=$}}, cell{2-Z}{4,6}={appto={~€}},
+cell{4-6,9-11}{3}={preto={\fpEval{
     \cellAccum{(-1)-(0)}{2}{abs(\nCell-\nAccum)}{}  }}},
 cell{3-11}{6}={cmd={\fpEval{ 
     \cellAccum{}{4-5}{\nAccum * \nCell}{1}  }}},
