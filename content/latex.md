@@ -6,7 +6,7 @@ aliases: LaTeX
 ---
 The powerful typesetting system LaTeX is well known in the world of academia, scientific publishing, and technical documentation. While LaTeX mainly gets used to produce pages of PDF, it integrates well as a pre-processing tool to create vector graphics in notes, websites, and documents, too. Guides show how to improve, or generate the following content elements:
 
-[Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath](./math.md)
+[Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing AMSmath](./math.md)
 
 $$
 \begin{align*} \qquad&\hspace{-2em}
@@ -16,7 +16,7 @@ $$
 \end{align*}
 $$
 
-[Tables - Separate content and styles like alignment, spacing, markup, and calculation, utilizing tabularray](./tables.md)
+[Tables - Separate content in plaintext and styles like alignment, spacing, markup, and calculation, utilizing Tabularray](./tables.md)
 
 ![table headers.svg](./attachments/table%20headers.svg)
 

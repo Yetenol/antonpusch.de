@@ -4,8 +4,8 @@ dg-publish: true
 ---
 
 - [How does code work and how is it stores](How%20does%20code%20work%20and%20how%20is%20it%20stores.md)
-- [Extract part of the function or invert conditions to denest your code](./extract%20part%20of%20the%20function%20or%20invert%20conditions%20to%20denest%20your%20code.md)
 - [Comments - Express way of intent with code not comments](./comments.md)
+- [Extract part of the function or invert conditions to denest your code](./extract%20part%20of%20the%20function%20or%20invert%20conditions%20to%20denest%20your%20code.md)
 
 
 

@@ -16,7 +16,7 @@ $$
 \end{align*}
 $$
 
-[Tables - Separate content and styles like alignment, spacing, markup, and calculation, utilizing Tabularray](./tables.md)
+[Tables - Separate content in plaintext and styles like alignment, spacing, markup, and calculation, utilizing Tabularray](./tables.md)
 
 ![table headers.svg](./attachments/table%20headers.svg)
 
