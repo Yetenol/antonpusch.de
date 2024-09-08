@@ -1,5 +1,5 @@
 ---
-title: "Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing amsmath"
+title: "Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing AMSmath"
 dg-publish: true
 dg-show-toc: true
 aliases:
@@ -17,7 +17,7 @@ My main resources are *Mathematical Typesetting with LaTeX*[^1] and the older La
 
 > The amsmath package is a LATEX package that provides miscellaneous enhancements for improving the information structure and printed output of documents
 > that contain mathematical formulas.
-- [Introduction p. 5](https://texdoc.org/serve/amsmath/0#page=5) from AMSmath User’s Guide
+- from [Introduction p. 5](https://texdoc.org/serve/amsmath/0#page=5) in AMSmath User’s Guide
 
 
 Let $f = x^2 + \frac{1}{11}$:
