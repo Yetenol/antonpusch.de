@@ -18,8 +18,8 @@ dg-publish: true
 \begin{document}
 \begin{tblr}[tall,caption={Legend},evaluate=\fileInput,
 remark{$t$} = {Time when datapoint was meassured},
-remark{$U_\mathrm{mess}$} = {Voltage meassured}, ]{
-hline{4,7,10,13,16,19,22,25,28,31}={dashed},
+remark{$U_1$} = {Voltage meassured}, ]{
+hline{5,8,11,14,17}={dashed},
 hline{1,Z}={.08em},hline{2}, columns={r}, row{1}={c},
 cell{2-Z}{2}={cmd=\pgfmathprintnumber},
 }
@@ -78,7 +78,7 @@ $t$ in ms & $U_1$ in V \\
     \prgReturn{\fpEval{ sqrt(\lTmpbFp / \lTmpcFp) } } }
 \ExplSyntaxOff
 \begin{document}
-\begin{tblr}[tall,caption=Statistics,evaluate=\fileInput, ]{
+\begin{tblr}[tall,caption={Statistics\vphantom{g}},evaluate=\fileInput, ]{
 hline{5,8,11,14,17}={dashed},
 hline{1,Z}={.08em},hline{2,X}, columns={r}, row{1}={c},
 cell{2-X}{2}={cmd={\pgfmathprintnumber}},
@@ -105,9 +105,10 @@ $\sigma$ \\
     \prgReturn{ \tlUse\lTmpaTl }
 }
 \begin{document}
-\begin{tblr}[tall,caption={File data.csv},evaluate=all]{
+\begin{tblr}[tall,caption={File data.csv\vphantom{g}},evaluate=all]{
 hline{1,Z}={.08em}, columns={font=\ttfamily}
 }
+\\
 \fileVerbatim{data.tex}{}
 \end{tblr}
 \end{document}
@@ -121,9 +122,9 @@ hline{1,Z}={.08em}, columns={font=\ttfamily}
 \documentclass{standalone}
 \usepackage{graphbox}
 \begin{document}
-\includegraphics[align=c]{table file input legend} \hspace{1em}
-\includegraphics[align=c]{table file input stats} \hspace{1em}
-\includegraphics[align=c]{table file input verbatim}
+\includegraphics[align=t]{table file input legend} \hspace{1em}
+\includegraphics[align=t]{table file input stats}
+\includegraphics[align=t]{table file input verbatim}
 \end{document}
 ```
 
