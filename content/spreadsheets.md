@@ -88,26 +88,15 @@ Calculate the following values, with row number $r$:
 \ExplSyntaxOn
 \clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell 
 \regexConst\lNumberPattern {(\d+)} \regexConst\gParenthesePattern {\((.+?)\)}
-\prgNewFunction\rowAbsoluteRangesToList{ m }{
-\__tblr_get_childs:nx{ #1 }{ \therowcount } 
-\prgReturn{\tlUse\l_tblr_childs_clist}  
+\prgNewFunction\tblrRangesToList{ mm }{ 
+\__tblr_get_childs:nx{ #1 }{ #2 }
+\prgReturn{\tlUse\l_tblr_childs_clist}
 }
-\prgNewFunction\columnAbsoluteRangesToList{ m }{ 
-\__tblr_get_childs:nx{ #1 }{ \thecolcount }
-\prgReturn{\l_tblr_childs_clist}
-}
-\prgNewFunction\rowRelativeAndAbsoluteRangesToList{ m }{
+\prgNewFunction\relativeAndTblrRangesToList{ mmm }{
 \tlIfEmptyTF{#1} { \tlSet\lTmpaTl{ (0) } }{ \tlSet\lTmpaTl{ #1 } }
-\regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 + \c{therownum} \cE\} }\lTmpaTl
+\regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 + \c{arabic}\{#2\} \cE\} }\lTmpaTl
 \tlSet\lTmpaTl{ \evalWhole{ \tlUse\lTmpaTl }}
-\tlSet\lTmpaTl{ \rowAbsoluteRangesToList{ \tlUse\lTmpaTl } }
-\prgReturn{ \tlUse\lTmpaTl }
-}
-\prgNewFunction\columnRelativeAndAbsoluteRangesToList{ m }{
-\tlIfEmptyTF{#1} { \tlSet\lTmpaTl{ (0) } }{ \tlSet\lTmpaTl{ #1 } }
-\regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 + \c{thecolnum} \cE\} }\lTmpaTl
-\tlSet\lTmpaTl{ \evalWhole{ \tlUse\lTmpaTl }}
-\tlSet\lTmpaTl{ \columnAbsoluteRangesToList{ \tlUse\lTmpaTl } }
+\tlSet\lTmpaTl{ \tblrRangesToList{ \tlUse\lTmpaTl }{ \arabic{#3} } }
 \prgReturn{ \tlUse\lTmpaTl }
 }
 \prgNewConditional\containsNumber{ m }{
@@ -119,8 +108,8 @@ Calculate the following values, with row number $r$:
     \prgReturn\cFalseBool  
 }}
 \prgNewFunction\cellAccum{ mmmm }{
-\clistSet\rowList{ \rowRelativeAndAbsoluteRangesToList{#1} } 
-\clistSet\columnList{ \columnRelativeAndAbsoluteRangesToList{#2} }
+\clistSet\rowList{ \relativeAndTblrRangesToList{#1}{rownum}{rowcount} } 
+\clistSet\columnList{ \relativeAndTblrRangesToList{#2}{colnum}{colcount} }
 \tlIfEmptyTF{#4}{ \fpZero\nAccum }{ \fpSet\nAccum{#4} }
 \clistVarMapVariable \rowList \lTmpaInt{
     \clistVarMapVariable \columnList \lTmpbInt{
@@ -150,13 +139,15 @@ to
 \cellAccum{3-11}{4}{max(\nAccum,\nCell)}{\cMinusInfFp}~EUR. 
 In total, accommodation costs 
 \cellAccum{3-11}{6}{\nAccum+\nCell}{}~EUR
-averaging \qty{14.3}{EUR} per night.},
+averaging 
+\cellAccum{3-11}{6}{\nAccum+1}{0}~EUR
+per night.},
 ]{
 hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l}, 
 cell{1}{2-Z}={c}, row{2,7}={abovesep+=6pt,belowsep+=2pt},
 cell{2-Z}{1}={cmd=\quad}, cell{2,7}{1}={c=6}{cmd={},font=\bfseries},
 cell{2-Z}{2,4,5}={font=\bfseries},
-cell{4-6,9-11}{3}={preto={\fpEval{
+cell{4-6,9-11}{3}={cmd={\fpEval{
     \cellAccum{(-1)-(0)}{2}{abs(\nCell-\nAccum)}{}  }}},
 cell{3-11}{6}={cmd={\fpEval{ 
     \cellAccum{}{4-5}{\nAccum * \nCell}{1}  }}},
