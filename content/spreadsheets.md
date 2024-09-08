@@ -125,9 +125,9 @@ on the Havel River. Overnight prices range from \textbf{%
 to \textbf{%
 \cellAccum{3-11}{4}{max(\nAccum,\nCell)}{\cMinusInfFp}~€}. 
 In total, accommodation costs 
-\cellAccum{3-11}{6}{\nAccum+\nCell}{}~€
+\cellAccum{3-11}{4}{\nAccum+\nCell}{}~€
 averaging 
-\cellAccum{3-11}{6}{\nAccum+1}{0}~€
+\fpEval{\cellAccum{3-11}{4}{\nAccum+\nCell}{} / \cellAccum{3-11}{4}{\nAccum+1}{}}~€
 per night.},
 ]{
 hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l}, 
@@ -138,7 +138,7 @@ cell{2-Z}{2}={appto={~km}}, cell{4-6,9-11}{3}={cmd={$\Delta\,$},appto={~km}},
 cell{2-Z}{5}={l,preto={$\times$ },appto={ $=$}}, cell{2-Z}{4,6}={appto={~€}},
 cell{4-6,9-11}{3}={preto={\fpEval{
     \cellAccum{(-1)-(0)}{2}{abs(\nCell-\nAccum)}{}  }}},
-cell{3-11}{6}={cmd={\fpEval{ 
+cell{3-11}{6}={preto={\fpEval{ 
     \cellAccum{}{4-5}{\nAccum * \nCell}{1}  }}},
 }
 {Location along\\the rivers} & {River\\marker} & {Trip\\distance} & {Price\\per night} &
