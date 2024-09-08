@@ -28,19 +28,19 @@ Available dynamic values for calculation:
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
 \clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell
-\prgNewFunction\rowRangesToList{ n }{
+\prgNewFunction\rowAbsoluteRangesToList{ n }{
 \__tblr_get_childs:nx{ #1 }{ \therowcount } 
 \prgReturn{\l_tblr_childs_clist}  
 }
-\prgNewFunction\ColumnRangesToList{ n }{ 
+\prgNewFunction\columnAbsoluteRangesToList{ n }{ 
 \__tblr_get_childs:nx{ #1 }{ \thecolcount }
 \prgReturn{\l_tblr_childs_clist}
 }
 \prgNewFunction\cellAccum{ mmmm }{
 \clistSet\rowList{ \tlIfEmptyTF{#1}{
-    \tlUse{\therownum}  }{  \tlUse{\rowRangesToList{#1}}}  }
+    \tlUse{\therownum}  }{  \tlUse{\rowAbsoluteRangesToList{#1}}}  }
 \clistSet\columnList{ \tlIfEmptyTF{#2}{
-    \tlUse{\thecolnum}  }{  \tlUse{\ColumnRangesToList{#2}}}  }
+    \tlUse{\thecolnum}  }{  \tlUse{\columnAbsoluteRangesToList{#2}}}  }
 \tlIfEmptyTF{#4}{ \fpZero\nAccum }{ \fpSet\nAccum{#4} }
 \clistVarMapVariable \rowList \lTmpaInt{
     \clistVarMapVariable \columnList \lTmpbInt{
@@ -71,9 +71,9 @@ t      & U      \\
 Calculate the following values, with row number $r$:
 
 - Trip distance: $dist_r \coloneqq \left| marker_{r - 1} - marker_r \right|$ for $r \in \{ 4, \ldots,  6,  9, \ldots,  11 \}$ 
-- Total price: $total_r \coloneqq  price_r \cdot  overnights_r$ for $r \in \{ 3, \ldots,  6,  8, \ldots,  11 \}$ 
-- Distance on Mecklenburg Lakeland: $meck \coloneqq \sum_{r = 4}^{6} dist_r$ 
-- Distance on Havel River: $havel \coloneqq \sum_{r = 9}^{11} dist_r$ 
+- Total price: $total_r \coloneqq  price_r \cdot  overnights_r$ for ${} r \in \{ 3, \ldots, 11 \} {}$ 
+- Distance on Mecklenburg Lakeland: $meck \coloneqq \sum_{r = 4}^{3} dist_r$ 
+- Distance on Havel River: $havel \coloneqq \sum_{r = 8}^{11} dist_r$ 
 - Minimum overnight price: $min \coloneqq \min(price_3, \ldots, price_{11} )$ 
 - Maximum overnight price: $max \coloneqq \max(price_3, \ldots, price_{11} )$
 - Total accommodation cost: $accom \coloneqq \sum_{r = 3}^{11} total_r$
@@ -86,45 +86,79 @@ Calculate the following values, with row number $r$:
 \usepackage{tabularray}
 \UseTblrLibrary{functional,siunitx}
 \ExplSyntaxOn
-\clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell
-\prgNewFunction\rowRangesToList{ n }{
+\clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell 
+\regexConst\lNumberPattern {(\d+)} \regexConst\gParenthesePattern {\((.+?)\)}
+\prgNewFunction\rowAbsoluteRangesToList{ m }{
 \__tblr_get_childs:nx{ #1 }{ \therowcount } 
-\prgReturn{\l_tblr_childs_clist}  
+\prgReturn{\tlUse\l_tblr_childs_clist}  
 }
-\prgNewFunction\ColumnRangesToList{ n }{ 
+\prgNewFunction\columnAbsoluteRangesToList{ m }{ 
 \__tblr_get_childs:nx{ #1 }{ \thecolcount }
 \prgReturn{\l_tblr_childs_clist}
 }
+\prgNewFunction\rowRelativeAndAbsoluteRangesToList{ m }{
+\tlIfEmptyTF{#1} { \tlSet\lTmpaTl{ (0) } }{ \tlSet\lTmpaTl{ #1 } }
+\regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 + \c{therownum} \cE\} }\lTmpaTl
+\tlSet\lTmpaTl{ \evalWhole{ \tlUse\lTmpaTl }}
+\tlSet\lTmpaTl{ \rowAbsoluteRangesToList{ \tlUse\lTmpaTl } }
+\prgReturn{ \tlUse\lTmpaTl }
+}
+\prgNewFunction\columnRelativeAndAbsoluteRangesToList{ m }{
+\tlIfEmptyTF{#1} { \tlSet\lTmpaTl{ (0) } }{ \tlSet\lTmpaTl{ #1 } }
+\regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 + \c{thecolnum} \cE\} }\lTmpaTl
+\tlSet\lTmpaTl{ \evalWhole{ \tlUse\lTmpaTl }}
+\tlSet\lTmpaTl{ \columnAbsoluteRangesToList{ \tlUse\lTmpaTl } }
+\prgReturn{ \tlUse\lTmpaTl }
+}
+\prgNewConditional\containsNumber{ m }{
+\regexVarExtractOnceTF\lNumberPattern{ #1 }\lTmpaSeq{ 
+    \fpSet\nCell{ \seqVarItem\lTmpaSeq{1} }  
+    \prgReturn\cTrueBool
+}{
+    \fpZero\nCell
+    \prgReturn\cFalseBool  
+}}
 \prgNewFunction\cellAccum{ mmmm }{
-\clistSet\rowList{ \tlIfEmptyTF{#1}{
-    \tlUse{\therownum}  }{  \tlUse{\rowRangesToList{#1}}}  }
-\clistSet\columnList{ \tlIfEmptyTF{#2}{
-    \tlUse{\thecolnum}  }{  \tlUse{\ColumnRangesToList{#2}}}  }
+\clistSet\rowList{ \rowRelativeAndAbsoluteRangesToList{#1} } 
+\clistSet\columnList{ \columnRelativeAndAbsoluteRangesToList{#2} }
 \tlIfEmptyTF{#4}{ \fpZero\nAccum }{ \fpSet\nAccum{#4} }
 \clistVarMapVariable \rowList \lTmpaInt{
     \clistVarMapVariable \columnList \lTmpbInt{
-        \fpSet\nCell{ \cellGetText{\lTmpaInt}{\lTmpbInt} }
-        \fpSet\nAccum{ #3 }  }  }
+        \containsNumberT{ \cellGetText{\lTmpaInt}{\lTmpbInt} }{
+            \fpSet\nAccum{ #3 }
+        }  }  }
 \prgReturn{ \fpEval{ round(\nAccum,2) }} 
 }
-\prgNewFunction\cellRel{ mm }{
-\intSet\lTmpaInt{ \therownum + #1 }
-\intSet\lTmpbInt{ \thecolnum + #2 }
-\intSet\lTmpcInt{ \cellGetText{\intUse\lTmpaInt}{\intUse\lTmpbInt} }
-\prgReturn{\intUse\lTmpcInt}
+\prgNewFunction\rRel{ m }{
+\clistClear\lTmpaClist
+\clistMapVariable{ \tlUse{\rowAbsoluteRangesToList{#1}} }\lTmpaInt{
+    \clistPutRight\lTmpaClist{ \intEval{ \lTmpaInt + \therownum} }
+}
+\clistLog\lTmpaClist
+\prgReturn{ \tlUse\lTmpaClist }
 }
 \ExplSyntaxOff
 \begin{document}
-\begin{tblr}[tall,caption={Calculate non-bold trip expenses, distances},
-note{}={We travel \qty{30}{km} on the Mecklenburg Lakeland and \qty{20}{km} on the Havel River. Overnight prices range from \qty{0}{EUR} to \qty{16}{EUR}. In total, accommodation costs \qty{120}{EUR} averaging \qty{14.3}{EUR} per night.},
+\begin{tblr}[tall,caption={Calculate non-bold trip expenses, distances},note{}={
+We travel 
+\cellAccum{4-6}{3}{\nAccum+\nCell}{}~km 
+on the Mecklenburg Lakeland and 
+\cellAccum{9-11}{3}{\nAccum+\nCell}{}~km 
+on the Havel River. Overnight prices range from 
+\cellAccum{3-11}{4}{\nCell != 0 ? min(\nAccum,\nCell) : \nAccum}{\cInfFp}~EUR 
+to 
+\cellAccum{3-11}{4}{max(\nAccum,\nCell)}{\cMinusInfFp}~EUR. 
+In total, accommodation costs 
+\cellAccum{3-11}{6}{\nAccum+\nCell}{}~EUR
+averaging \qty{14.3}{EUR} per night.},
 ]{
 hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l}, 
 cell{1}{2-Z}={c}, row{2,7}={abovesep+=6pt,belowsep+=2pt},
 cell{2-Z}{1}={cmd=\quad}, cell{2,7}{1}={c=6}{cmd={},font=\bfseries},
 cell{2-Z}{2,4,5}={font=\bfseries},
-cell{4-6,9-11}{3}={cmd={\fpEval{
-    abs(\cellRel{-1}{-1} - \cellRel{0}{-1})  }}},
-cell{3-6,8-11}{6}={cmd={\fpEval{ 
+cell{4-6,9-11}{3}={preto={\fpEval{
+    \cellAccum{(-1)-(0)}{2}{abs(\nCell-\nAccum)}{}  }}},
+cell{3-11}{6}={cmd={\fpEval{ 
     \cellAccum{}{4-5}{\nAccum * \nCell}{1}  }}},
 }
 {Location along\\the rivers} & {River\\marker} & {Trip\\distance} & {Price\\per night} &
@@ -144,15 +178,41 @@ Evergreen Glade   & 100 && 16 & 1 \\
 \end{document}
 ```
 
+# Regex
+
+> This module provides regular expression testing, extraction of submatches, splitting, and replacement, all acting on token lists. The syntax of regular expressions is mostly a subset of the pcre syntax (and very close to posix), with some additions due to the fact that TEX manipulates tokens rather than characters. For performance reasons, only a limited set of features are implemented. Notably, back-references are not supported.
+
+- see [Regular Expressions (Regex) ch. 13 p. 87](http://mirrors.ctan.org/macros/latex/contrib/functional/functional.pdf#page=87) in functional documentation
+
+- Uses pcre syntax
+- only a limited set of features are implemented, back-references are not supported
+
 # Extract numbers
 
 ```latex
 \documentclass{standalone}
 \usepackage{tabularray}
+\UseTblrLibrary{functional}
 \ExplSyntaxOn
-
+\regexConst\lNumberPattern {(\d+)}
+\fpNew\nCell
+\prgNewConditional\containsNumber{ m }{
+\regexVarExtractOnceTF\lNumberPattern{ #1 }\lTmpaSeq{ 
+    \fpSet\nCell{ \seqVarItem\lTmpaSeq{1} }  
+    \prgReturn\cTrueBool
+}{
+    \fpZero\nCell
+    \prgReturn\cFalseBool  
+}}
+\regexConst\gParenthesePattern {\((.+?)\)}
+\prgNewFunction\rowRelativeAndAbsoluteRangesToList{ m }{
+\tlSet\lTmpaTl{ #1 }
+\regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 - 1 \cE\} }\lTmpaTl
+\prgReturn{ \tlUse\lTmpaTl }
+}
 \ExplSyntaxOff
 \begin{document}
-
+\containsNumberT{12 km} {\fpUse\nCell}
+,11-\rowRelativeAndAbsoluteRangesToList{(12)-(3)},
 \end{document}
 ```
