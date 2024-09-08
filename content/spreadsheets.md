@@ -117,25 +117,25 @@ Calculate the following values, with row number $r$:
 \begin{document}
 \begin{tblr}[tall,caption={Calculate bold trip expenses, distances},note{}={
 We canoe \textbf{%
-\cellAccum{3,6}{2}{abs(\nCell-\nAccum)}{}~km} 
+\cellAccum{3,6}{2}{abs(\nCell-\nAccum)}{}\,km} 
 through the Mecklenburg Lakeland and \textbf{%
-\cellAccum{8,11}{2}{abs(\nCell-\nAccum)}{}~km} 
+\cellAccum{8,11}{2}{abs(\nCell-\nAccum)}{}\,km} 
 on the Havel River. Overnight prices range from \textbf{%
-\cellAccum{3-11}{4}{\nCell != 0 ? min(\nAccum,\nCell) : \nAccum}{\cInfFp}~€} 
+\cellAccum{3-11}{4}{\nCell != 0 ? min(\nAccum,\nCell) : \nAccum}{\cInfFp}\,€} 
 to \textbf{%
-\cellAccum{3-11}{4}{max(\nAccum,\nCell)}{\cMinusInfFp}~€}. 
+\cellAccum{3-11}{4}{max(\nAccum,\nCell)}{\cMinusInfFp}\,€}. 
 In total, accommodation costs 
-\cellAccum{3-11}{4}{\nAccum+\nCell}{}~€
+\cellAccum{3-11}{4}{\nAccum+\nCell}{}\,€
 averaging 
-\fpEval{\cellAccum{3-11}{4}{\nAccum+\nCell}{} / \cellAccum{3-11}{4}{\nAccum+1}{}}~€
+\fpEval{\cellAccum{3-11}{4}{\nAccum+\nCell}{} / \cellAccum{3-11}{4}{\nAccum+1}{}}\,€
 per night.},
 ]{
 hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l}, 
 cell{1}{2-Z}={c}, row{2,7}={abovesep+=6pt,belowsep+=2pt},
 cell{2-Z}{1}={cmd=\quad}, cell{2,7}{1}={c=6}{cmd={},font=\bfseries},
 cell{2-Z}{3,6}={font=\bfseries},
-cell{2-Z}{2}={appto={~km}}, cell{4-6,9-11}{3}={cmd={$\Delta\,$},appto={~km}},
-cell{2-Z}{5}={l,preto={$\times$ },appto={ $=$}}, cell{2-Z}{4,6}={appto={~€}},
+cell{2-Z}{2}={appto={\,km}}, cell{4-6,9-11}{3}={cmd={$\Delta\,$},appto={\,km}},
+cell{2-Z}{5}={l,preto={$\times$ },appto={ $=$}}, cell{2-Z}{4,6}={appto={\,€}},
 cell{4-6,9-11}{3}={preto={\fpEval{
     \cellAccum{(-1)-(0)}{2}{abs(\nCell-\nAccum)}{}  }}},
 cell{3-11}{6}={preto={\fpEval{ 
