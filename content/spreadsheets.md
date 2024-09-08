@@ -116,7 +116,7 @@ Calculate the following values, with row number $r$:
 \ExplSyntaxOff
 \begin{document}
 \begin{tblr}[tall,caption={Calculate bold trip expenses, distances},note{}={
-We travel \textbf{%
+We canoe \textbf{%
 \cellAccum{3,6}{2}{abs(\nCell-\nAccum)}{}~km} 
 through the Mecklenburg Lakeland and \textbf{%
 \cellAccum{8,11}{2}{abs(\nCell-\nAccum)}{}~km} 
