@@ -72,11 +72,11 @@ t      & U      \\
 
 Calculate the following values, with row number $r$:
 
-- Trip distance: $dist_r \coloneqq \left| marker_{r - 1} - marker_r \right|$ for $r \in \{ 4, \ldots,  6,  9, \ldots,  11 \}$ 
-- Total price: $total_r \coloneqq  price_r \cdot  overnights_r$ for ${} r \in \{ 3, \ldots, 11 \} {}$ 
-- Distance on Mecklenburg Lakeland: $meck \coloneqq \sum_{r = 4}^{3} dist_r$ 
-- Distance on Havel River: $havel \coloneqq \sum_{r = 8}^{11} dist_r$ 
-- Minimum overnight price: $min \coloneqq \min(price_3, \ldots, price_{11} )$ 
+- Trip distance: $dist_r \coloneqq \left| marker_{r - 1} - marker_r \right|$ for $r \in \{ 4, 5, 6, 9, 10, 11 \}$ 
+- Total price: $total_r \coloneqq  price_r \cdot  overnights_r$ for $r \in \{ 3, 4, \ldots, 11 \}$ 
+- Distance on Mecklenburg Lakeland: $meck \coloneqq \left| marker_3 - marker_6 \right|$ 
+- Distance on Havel River: $havel \coloneqq \left| marker_8 - marker_{11}  \right|$ 
+- Minimum non-zero overnight price: $min \coloneqq \min \big( \{ price_r \in Price \mid price_c > 0, r \in \{ 3, 4, \ldots, 11 \} \big)$ 
 - Maximum overnight price: $max \coloneqq \max(price_3, \ldots, price_{11} )$
 - Total accommodation cost: $accom \coloneqq \sum_{r = 3}^{11} total_r$
 - Daily average: $avg \coloneqq accom \div \operatorname{count-nonnull}(total_3, \ldots, total_{11} )$ 
@@ -89,6 +89,7 @@ Calculate the following values, with row number $r$:
 \UseTblrLibrary{functional,siunitx}
 \ExplSyntaxOn
 \clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell 
+\intNew\nRow \intNew\nColumn
 \regexConst\lNumberPattern {(\d+)} \regexConst\gParenthesePattern {\((.+?)\)}
 \prgNewFunction\tblrRangesToList{ mm }{ 
     \__tblr_get_childs:nx{#1}{#2}  \prgReturn{\tlUse\l_tblr_childs_clist} }
@@ -98,26 +99,27 @@ Calculate the following values, with row number $r$:
     \tlSet\lTmpaTl{ \evalWhole{ \tlUse\lTmpaTl }}
     \tlSet\lTmpaTl{ \tblrRangesToList{ \tlUse\lTmpaTl }{ \arabic{#3} } }
     \prgReturn{ \tlUse\lTmpaTl }  }
-\prgNewConditional\containsNumber{ m }{
-    \regexVarExtractOnceTF\lNumberPattern{ #1 }\lTmpaSeq{ 
+\prgNewConditional\extractNumber{ mm }{
+    \tlSet\lTmpaTl{ \evalWhole{ \cellGetText{ \intEval{#1} }{ \intEval{#2} } }}
+    \regexVarExtractOnceTF\lNumberPattern{ \tlUse\lTmpaTl }\lTmpaSeq{ 
         \fpSet\nCell{ \seqVarItem\lTmpaSeq{1} }  \prgReturn\cTrueBool 
     }{  \fpZero\nCell \prgReturn\cFalseBool }}
 \prgNewFunction\cellAccum{ mmmm }{
     \clistSet\rowList{ \relativeAndTblrRangesToList{#1}{rownum}{rowcount} } 
     \clistSet\columnList{ \relativeAndTblrRangesToList{#2}{colnum}{colcount} }
     \tlIfEmptyTF{#4}{ \fpZero\nAccum }{ \fpSet\nAccum{#4} }
-    \clistVarMapVariable \rowList \lTmpaInt{
-        \clistVarMapVariable \columnList \lTmpbInt{
-            \containsNumberT{ \cellGetText{\lTmpaInt}{\lTmpbInt} }{
+    \clistVarMapVariable \rowList \nRow{
+        \clistVarMapVariable \columnList \nColumn{
+            \extractNumberT{\nRow}{\nColumn}{
                 \fpSet\nAccum{ #3 } } } }
     \prgReturn{ \fpEval{ round(\nAccum,2) }}}
 \ExplSyntaxOff
 \begin{document}
 \begin{tblr}[tall,caption={Calculate non-bold trip expenses, distances},note{}={
 We travel 
-\cellAccum{4-6}{3}{\nAccum+\nCell}{}~km 
+\cellAccum{3,6}{2}{abs(\nCell-\nAccum)}{}~km 
 on the Mecklenburg Lakeland and 
-\cellAccum{9-11}{3}{\nAccum+\nCell}{}~km 
+\cellAccum{8,11}{2}{abs(\nCell-\nAccum)}{}~km 
 on the Havel River. Overnight prices range from 
 \cellAccum{3-11}{4}{\nCell != 0 ? min(\nAccum,\nCell) : \nAccum}{\cInfFp}~EUR 
 to 
