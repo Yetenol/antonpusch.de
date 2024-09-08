@@ -115,25 +115,25 @@ Calculate the following values, with row number $r$:
     \prgReturn{ \fpEval{ round(\nAccum,2) }}}
 \ExplSyntaxOff
 \begin{document}
-\begin{tblr}[tall,caption={Calculate non-bold trip expenses, distances},note{}={
-We travel 
-\cellAccum{3,6}{2}{abs(\nCell-\nAccum)}{}~km 
-on the Mecklenburg Lakeland and 
-\cellAccum{8,11}{2}{abs(\nCell-\nAccum)}{}~km 
-on the Havel River. Overnight prices range from 
-\cellAccum{3-11}{4}{\nCell != 0 ? min(\nAccum,\nCell) : \nAccum}{\cInfFp}~EUR 
-to 
-\cellAccum{3-11}{4}{max(\nAccum,\nCell)}{\cMinusInfFp}~EUR. 
+\begin{tblr}[tall,caption={Calculate bold trip expenses, distances},note{}={
+We travel \textbf{%
+\cellAccum{3,6}{2}{abs(\nCell-\nAccum)}{}~km} 
+on the Mecklenburg Lakeland and \textbf{%
+\cellAccum{8,11}{2}{abs(\nCell-\nAccum)}{}~km} 
+on the Havel River. Overnight prices range from \textbf{%
+\cellAccum{3-11}{4}{\nCell != 0 ? min(\nAccum,\nCell) : \nAccum}{\cInfFp}~€} 
+to \textbf{%
+\cellAccum{3-11}{4}{max(\nAccum,\nCell)}{\cMinusInfFp}~€}. 
 In total, accommodation costs 
-\cellAccum{3-11}{6}{\nAccum+\nCell}{}~EUR
+\cellAccum{3-11}{6}{\nAccum+\nCell}{}~€
 averaging 
-\cellAccum{3-11}{6}{\nAccum+1}{0}~EUR
+\cellAccum{3-11}{6}{\nAccum+1}{0}~€
 per night.},
 ]{
 hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l}, 
 cell{1}{2-Z}={c}, row{2,7}={abovesep+=6pt,belowsep+=2pt},
 cell{2-Z}{1}={cmd=\quad}, cell{2,7}{1}={c=6}{cmd={},font=\bfseries},
-cell{2-Z}{2,4,5}={font=\bfseries},
+cell{2-Z}{3,6}={font=\bfseries},
 cell{2-Z}{2}={appto={~km}}, cell{4-6,9-11}{3}={cmd={$\Delta\,$},appto={~km}},
 cell{2-Z}{5}={l,preto={$\times$ },appto={ $=$}}, cell{2-Z}{4,6}={appto={~€}},
 cell{4-6,9-11}{3}={preto={\fpEval{
