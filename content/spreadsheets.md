@@ -89,43 +89,38 @@ Calculate the following values, with row number $r$:
 \clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell 
 \regexConst\lNumberPattern {(\d+)} \regexConst\gParenthesePattern {\((.+?)\)}
 \prgNewFunction\tblrRangesToList{ mm }{ 
-\__tblr_get_childs:nx{ #1 }{ #2 }
-\prgReturn{\tlUse\l_tblr_childs_clist}
-}
+    \__tblr_get_childs:nx{ #1 }{ #2 }
+    \prgReturn{\tlUse\l_tblr_childs_clist}  }
 \prgNewFunction\relativeAndTblrRangesToList{ mmm }{
-\tlIfEmptyTF{#1} { \tlSet\lTmpaTl{ (0) } }{ \tlSet\lTmpaTl{ #1 } }
-\regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 + \c{arabic}\{#2\} \cE\} }\lTmpaTl
-\tlSet\lTmpaTl{ \evalWhole{ \tlUse\lTmpaTl }}
-\tlSet\lTmpaTl{ \tblrRangesToList{ \tlUse\lTmpaTl }{ \arabic{#3} } }
-\prgReturn{ \tlUse\lTmpaTl }
-}
+    \tlIfEmptyTF{#1} { \tlSet\lTmpaTl{ (0) } }{ \tlSet\lTmpaTl{ #1 } }
+    \regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 + \c{arabic}\{#2\} \cE\} }\lTmpaTl
+    \tlSet\lTmpaTl{ \evalWhole{ \tlUse\lTmpaTl }}
+    \tlSet\lTmpaTl{ \tblrRangesToList{ \tlUse\lTmpaTl }{ \arabic{#3} } }
+    \prgReturn{ \tlUse\lTmpaTl }  }
 \prgNewConditional\containsNumber{ m }{
-\regexVarExtractOnceTF\lNumberPattern{ #1 }\lTmpaSeq{ 
-    \fpSet\nCell{ \seqVarItem\lTmpaSeq{1} }  
-    \prgReturn\cTrueBool
-}{
-    \fpZero\nCell
-    \prgReturn\cFalseBool  
-}}
+    \regexVarExtractOnceTF\lNumberPattern{ #1 }\lTmpaSeq{ 
+        \fpSet\nCell{ \seqVarItem\lTmpaSeq{1} }  
+        \prgReturn\cTrueBool
+    }{
+        \fpZero\nCell
+        \prgReturn\cFalseBool  
+    }}
 \prgNewFunction\cellAccum{ mmmm }{
-\clistSet\rowList{ \relativeAndTblrRangesToList{#1}{rownum}{rowcount} } 
-\clistSet\columnList{ \relativeAndTblrRangesToList{#2}{colnum}{colcount} }
-\tlIfEmptyTF{#4}{ \fpZero\nAccum }{ \fpSet\nAccum{#4} }
-\clistVarMapVariable \rowList \lTmpaInt{
-    \clistVarMapVariable \columnList \lTmpbInt{
-        \containsNumberT{ \cellGetText{\lTmpaInt}{\lTmpbInt} }{
-            \fpSet\nAccum{ #3 }
-        }  }  }
-\prgReturn{ \fpEval{ round(\nAccum,2) }} 
-}
+    \clistSet\rowList{ \relativeAndTblrRangesToList{#1}{rownum}{rowcount} } 
+    \clistSet\columnList{ \relativeAndTblrRangesToList{#2}{colnum}{colcount} }
+    \tlIfEmptyTF{#4}{ \fpZero\nAccum }{ \fpSet\nAccum{#4} }
+    \clistVarMapVariable \rowList \lTmpaInt{
+        \clistVarMapVariable \columnList \lTmpbInt{
+            \containsNumberT{ \cellGetText{\lTmpaInt}{\lTmpbInt} }{
+                \fpSet\nAccum{ #3 } } } }
+    \prgReturn{ \fpEval{ round(\nAccum,2) }}}
 \prgNewFunction\rRel{ m }{
-\clistClear\lTmpaClist
-\clistMapVariable{ \tlUse{\rowAbsoluteRangesToList{#1}} }\lTmpaInt{
-    \clistPutRight\lTmpaClist{ \intEval{ \lTmpaInt + \therownum} }
-}
-\clistLog\lTmpaClist
-\prgReturn{ \tlUse\lTmpaClist }
-}
+    \clistClear\lTmpaClist
+    \clistMapVariable{ \tlUse{\rowAbsoluteRangesToList{#1}} }\lTmpaInt{
+        \clistPutRight\lTmpaClist{ \intEval{ \lTmpaInt + \therownum} }
+    }
+    \clistLog\lTmpaClist
+    \prgReturn{ \tlUse\lTmpaClist } }
 \ExplSyntaxOff
 \begin{document}
 \begin{tblr}[tall,caption={Calculate non-bold trip expenses, distances},note{}={
