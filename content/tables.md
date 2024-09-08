@@ -79,11 +79,19 @@ My main resources are the official package documentation of Tabularray[^2], and 
 
 ![table accumulate trip expenses.svg](./attachments/table%20accumulate%20trip%20expenses.svg)
 
-## Table calculation
+## Process files
+
+- See source examples: [CSV Input - Dynamically generate table from file](./csv%20input.md)
+
+![table file input.svg](./attachments/table%20file%20input.svg)
+
+## Add statistics to data
 
 - See source examples: [Table calculation](./table%20calculation.md)
 
 ![table accumulate.svg](./attachments/table%20accumulate.svg)
+
+# Compact data tables
 
 # Set cell text, style with functions
 
