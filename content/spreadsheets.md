@@ -72,14 +72,14 @@ t      & U      \\
 
 Calculate the following values, with row number $r$:
 
-- Trip distance: $dist_r \coloneqq \left| marker_{r - 1} - marker_r \right|$ for $r \in \{ 4, 5, 6, 9, 10, 11 \}$ 
-- Total price: $total_r \coloneqq  price_r \cdot  overnights_r$ for $r \in \{ 3, 4, \ldots, 11 \}$ 
-- Distance on Mecklenburg Lakeland: $meck \coloneqq \left| marker_3 - marker_6 \right|$ 
-- Distance on Havel River: $havel \coloneqq \left| marker_8 - marker_{11}  \right|$ 
-- Minimum non-zero overnight price: $min \coloneqq \min \big( \{ price_r \in Price \mid price_c > 0, r \in \{ 3, 4, \ldots, 11 \} \big)$ 
-- Maximum overnight price: $max \coloneqq \max(price_3, \ldots, price_{11} )$
-- Total accommodation cost: $accom \coloneqq \sum_{r = 3}^{11} total_r$
-- Daily average: $avg \coloneqq accom \div \operatorname{count-nonnull}(total_3, \ldots, total_{11} )$ 
+- Trip distance $dist_r \coloneqq \left| marker_{r - 1} - marker_r \right|$ for $r \in \{ 4, 5, 6, 9, 10, 11 \}$ 
+- Total price $total_r \coloneqq  price_r \cdot  overnights_r$ for $r \in \{ 3, 4, \ldots, 11 \}$ 
+- Distance through Mecklenburg Lakeland $meck \coloneqq \left| marker_3 - marker_6 \right|$ 
+- Distance on Havel River $havel \coloneqq \left| marker_8 - marker_{11}  \right|$ 
+- Minimum non-zero overnight price $min \coloneqq \min \big( \{ price_r \in Price \mid price_c > 0, r \in \{ 3, 4, \ldots, 11 \} \big)$ 
+- Maximum overnight price $max \coloneqq \max(price_3, \ldots, price_{11} )$
+- Total accommodation cost $accom \coloneqq \sum_{r = 3}^{11} total_r$
+- Daily average $avg \coloneqq accom \div \operatorname{count-nonnull}(total_3, \ldots, total_{11} )$ 
 
 ![table accumulate trip expenses.svg](./attachments/table%20accumulate%20trip%20expenses.svg)
 
