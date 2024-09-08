@@ -89,8 +89,7 @@ Calculate the following values, with row number $r$:
 \clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell 
 \regexConst\lNumberPattern {(\d+)} \regexConst\gParenthesePattern {\((.+?)\)}
 \prgNewFunction\tblrRangesToList{ mm }{ 
-    \__tblr_get_childs:nx{ #1 }{ #2 }
-    \prgReturn{\tlUse\l_tblr_childs_clist}  }
+    \__tblr_get_childs:nx{#1}{#2}  \prgReturn{\tlUse\l_tblr_childs_clist} }
 \prgNewFunction\relativeAndTblrRangesToList{ mmm }{
     \tlIfEmptyTF{#1} { \tlSet\lTmpaTl{ (0) } }{ \tlSet\lTmpaTl{ #1 } }
     \regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 + \c{arabic}\{#2\} \cE\} }\lTmpaTl
@@ -99,12 +98,8 @@ Calculate the following values, with row number $r$:
     \prgReturn{ \tlUse\lTmpaTl }  }
 \prgNewConditional\containsNumber{ m }{
     \regexVarExtractOnceTF\lNumberPattern{ #1 }\lTmpaSeq{ 
-        \fpSet\nCell{ \seqVarItem\lTmpaSeq{1} }  
-        \prgReturn\cTrueBool
-    }{
-        \fpZero\nCell
-        \prgReturn\cFalseBool  
-    }}
+        \fpSet\nCell{ \seqVarItem\lTmpaSeq{1} }  \prgReturn\cTrueBool 
+    }{  \fpZero\nCell \prgReturn\cFalseBool }}
 \prgNewFunction\cellAccum{ mmmm }{
     \clistSet\rowList{ \relativeAndTblrRangesToList{#1}{rownum}{rowcount} } 
     \clistSet\columnList{ \relativeAndTblrRangesToList{#2}{colnum}{colcount} }
@@ -117,8 +112,7 @@ Calculate the following values, with row number $r$:
 \prgNewFunction\rRel{ m }{
     \clistClear\lTmpaClist
     \clistMapVariable{ \tlUse{\rowAbsoluteRangesToList{#1}} }\lTmpaInt{
-        \clistPutRight\lTmpaClist{ \intEval{ \lTmpaInt + \therownum} }
-    }
+        \clistPutRight\lTmpaClist{ \intEval{ \lTmpaInt + \therownum} } }
     \clistLog\lTmpaClist
     \prgReturn{ \tlUse\lTmpaClist } }
 \ExplSyntaxOff
