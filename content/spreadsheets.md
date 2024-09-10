@@ -28,7 +28,8 @@ Available dynamic values for calculation:
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
 \clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell 
-\regexConst\lNumberPattern {([-+]?(?:\d*\.\d+|\d*))} \regexConst\gParenthesePattern {\((.+?)\)}
+\regexConst\lNumberPattern {([-+]?(?:\d*\.\d+|\d*)(?:e[-+]?\d+))} 
+\regexConst\gParenthesePattern {\((.+?)\)}
 \prgNewFunction\tblrRangesToList{ mm }{ 
     \__tblr_get_childs:nx{#1}{#2}  \prgReturn{\tlUse\l_tblr_childs_clist} }
 \prgNewFunction\relativeAndTblrRangesToList{ mmm }{
@@ -88,58 +89,69 @@ Calculate the following values, with row number $r$:
 \usepackage{tabularray,textcomp}
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
-\clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell 
-\intNew\nRow \intNew\nColumn
-\regexConst\lNumberPattern {(\d+)} \regexConst\gParenthesePattern {\((.+?)\)}
+\regexConst\gNumberPattern {([-+]?(?:\d*\.)?\d+(?:e[-+]?\d+)?)} 
 \prgNewFunction\tblrRangesToList{ mm }{ 
     \__tblr_get_childs:nx{#1}{#2}  \prgReturn{\tlUse\l_tblr_childs_clist} }
-\prgNewFunction\relativeAndTblrRangesToList{ mmm }{
-    \tlIfEmptyTF{#1} { \tlSet\lTmpaTl{ (0) } }{ \tlSet\lTmpaTl{ #1 } }
-    \regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 + \c{arabic}\{#2\} \cE\} }\lTmpaTl
-    \tlSet\lTmpaTl{ \evalWhole{ \tlUse\lTmpaTl }}
-    \tlSet\lTmpaTl{ \tblrRangesToList{ \tlUse\lTmpaTl }{ \arabic{#3} } }
-    \prgReturn{ \tlUse\lTmpaTl }  }
-\prgNewConditional\extractNumber{ mm }{
-    \tlSet\lTmpaTl{ \evalWhole{ \cellGetText{ \intEval{#1} }{ \intEval{#2} } }}
-    \regexVarExtractOnceTF\lNumberPattern{ \tlUse\lTmpaTl }\lTmpaSeq{ 
-        \fpSet\nCell{ \seqVarItem\lTmpaSeq{1} }  \prgReturn\cTrueBool 
-    }{  \fpZero\nCell \prgReturn\cFalseBool }}
-\prgNewFunction\cellAccum{ mmmm }{
-    \clistSet\rowList{ \relativeAndTblrRangesToList{#1}{rownum}{rowcount} } 
-    \clistSet\columnList{ \relativeAndTblrRangesToList{#2}{colnum}{colcount} }
-    \tlIfEmptyTF{#4}{ \fpZero\nAccum }{ \fpSet\nAccum{#4} }
-    \clistVarMapVariable \rowList \nRow{
-        \clistVarMapVariable \columnList \nColumn{
-            \extractNumberT{\nRow}{\nColumn}{
-                \fpSet\nAccum{ #3 } } } }
-    \prgReturn{ \fpEval{ round(\nAccum,2) }}}
+\prgNewConditional\cellNumber{ mmn }{
+    \regexVarExtractOnceTF\gNumberPattern{
+        \evalWhole{ \cellGetText{#1}{#2} }
+    }\lTmpaSeq{
+        \fpSet{#3}{\evalWhole{ \seqVarItem\lTmpaSeq{1} }}
+        \prgReturn\cTrueBool
+    }{  \prgReturn\cFalseBool } }
+\prgNewFunction\cellCopy{ m }{
+    \propSetFromKeyval\lTmpbProp{#1}
+    \propGet\lTmpbProp{r}\lTmpaClist
+    \propGet\lTmpbProp{c}\lTmpbClist 
+    \propGet\lTmpbProp{accum}\lTmpaTl 
+    \propGetTF\lTmpbProp{initial}\lTmpbTl{
+        \fpSet\lTmpaFp{ \fpEval{ \lTmpbTl }}
+    }{  \fpZero\lTmpaFp \tlClear\lTmpbTl }
+    \clistSet\lTmpaClist{ \tblrRangesToList{\tlUse\lTmpaClist}{rowcount} }
+    \clistSet\lTmpbClist{ \tblrRangesToList{\tlUse\lTmpbClist}{colcount} }
+    \clistVarMapInline\lTmpaClist{\clistVarMapInline\lTmpbClist{
+        \cellNumberT{##1}{####1}\lTmpcFp{
+            \fpSet\lTmpaFp{\fpEval{ \lTmpaTl }} } }}
+    \prgReturn{ \fpUse\lTmpaFp } }
 \ExplSyntaxOff
 \begin{document}
 \begin{tblr}[tall,caption={Calculate bold trip expenses, distances},note{}={
-We canoe \textbf{%
-\cellAccum{3,6}{2}{abs(\nCell-\nAccum)}{}\,km} 
-through the Mecklenburg Lakeland and \textbf{%
-\cellAccum{8,11}{2}{abs(\nCell-\nAccum)}{}\,km} 
-on the Havel River. Overnight prices range from \textbf{%
-\cellAccum{3-11}{4}{\nCell != 0 ? min(\nAccum,\nCell) : \nAccum}{\cInfFp}\,€} 
-to \textbf{%
-\cellAccum{3-11}{4}{max(\nAccum,\nCell)}{\cMinusInfFp}\,€}. 
-In total, accommodation costs 
-\cellAccum{3-11}{4}{\nAccum+\nCell}{}\,€
-averaging 
-\fpEval{\cellAccum{3-11}{4}{\nAccum+\nCell}{} / \cellAccum{3-11}{4}{\nAccum+1}{}}\,€
-per night.},
+    We canoe \textbf{%
+    \cellCopy{r={3,6},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}\,km} 
+    through the Mecklenburg Lakeland and \textbf{%
+    \cellCopy{r={8,11},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}\,km} 
+    on the Havel River. Overnight prices range from \textbf{%
+    \cellCopy{r={3-11},c={4},accum={\lTmpcFp != 0 ? min(\lTmpaFp,\lTmpcFp) : \lTmpaFp},initial={999999}}\,€} 
+    to \textbf{%
+    \cellCopy{r={3-11},c={4},accum={max(\lTmpaFp,\lTmpcFp)}, initial={-999999}}\,€}. 
+    In total, accommodation costs \textbf{%
+    \cellCopy{r={3-11},c={6},accum={\lTmpaFp + \lTmpcFp}}\,€}
+    averaging \textbf{%
+    \fpEval{ round(
+    \cellCopy{r={3-11},c={6},accum={\lTmpaFp + \lTmpcFp}} /
+    \cellCopy{r={3-11},c={6},accum={\lTmpaFp + 1}}, 2) }\,€}
+    per night.},
 ]{
-hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l}, 
-cell{1}{2-Z}={c}, row{2,7}={abovesep+=6pt,belowsep+=2pt},
-cell{2-Z}{1}={cmd=\quad}, cell{2,7}{1}={c=6}{cmd={},font=\bfseries},
-cell{2-Z}{3,6}={font=\bfseries},
-cell{2-Z}{2}={appto={\,km}}, cell{4-6,9-11}{3}={cmd={$\Delta\,$},appto={\,km}},
-cell{2-Z}{5}={l,preto={$\times$ },appto={ $=$}}, cell{2-Z}{4,6}={appto={\,€}},
-cell{4-6,9-11}{3}={preto={\fpEval{
-    \cellAccum{(-1)-(0)}{2}{abs(\nCell-\nAccum)}{}  }}},
-cell{3-11}{6}={preto={\fpEval{ 
-    \cellAccum{}{4-5}{\nAccum * \nCell}{1}  }}},
+    hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l}, 
+    cell{1}{2-Z}={c}, row{2,7}={abovesep+=6pt,belowsep+=2pt},
+    cell{2-Z}{1}={cmd=\quad}, cell{2,7}{1}={c=6}{cmd={},font=\bfseries},
+    cell{2-Z}{3,6}={font=\bfseries},
+    cell{2-Z}{2}={appto={\,km}}, cell{4-6,9-11}{3}={cmd={$\Delta\,$},appto={\,km}},
+    cell{2-Z}{5}={l,preto={$\times$ },appto={ $=$}}, cell{2-Z}{4,6}={appto={\,€}},
+    cell{4}{3}={preto={\cellCopy{r={3,4},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{5}{3}={preto={\cellCopy{r={4,5},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{6}{3}={preto={\cellCopy{r={5,6},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{9}{3}={preto={\cellCopy{r={8,9},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{10}{3}={preto={\cellCopy{r={9,10},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{11}{3}={preto={\cellCopy{r={10,11},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{3}{6}={preto={\cellCopy{r={3},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{4}{6}={preto={\cellCopy{r={4},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{5}{6}={preto={\cellCopy{r={5},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{6}{6}={preto={\cellCopy{r={6},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{8}{6}={preto={\cellCopy{r={8},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{9}{6}={preto={\cellCopy{r={9},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{10}{6}={preto={\cellCopy{r={10},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{11}{6}={preto={\cellCopy{r={11},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
 }
 {Location along\\the rivers} & {River\\marker} & {Trip\\distance} & {Price\\per night} &
 {Overnight\\stays} & {Total\\price} \\
