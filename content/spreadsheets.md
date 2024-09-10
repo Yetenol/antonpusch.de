@@ -27,36 +27,37 @@ Available dynamic values for calculation:
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
-\clistNew\columnList \clistNew\rowList \fpNew\nAccum \fpNew\nCell 
-\regexConst\lNumberPattern {([-+]?(?:\d*\.\d+|\d*)(?:e[-+]?\d+))} 
-\regexConst\gParenthesePattern {\((.+?)\)}
+\regexConst\cNumberPattern {([-+]?(?:\d*\.)?\d+(?:e[-+]?\d+)?)} 
 \prgNewFunction\tblrRangesToList{ mm }{ 
     \__tblr_get_childs:nx{#1}{#2}  \prgReturn{\tlUse\l_tblr_childs_clist} }
-\prgNewFunction\relativeAndTblrRangesToList{ mmm }{
-    \tlIfEmptyTF{#1} { \tlSet\lTmpaTl{ (0) } }{ \tlSet\lTmpaTl{ #1 } }
-    \regexVarReplaceAll\gParenthesePattern{ \c{intEval}\cB\{ \1 + \c{arabic}\{#2\} \cE\} }\lTmpaTl
-    \tlSet\lTmpaTl{ \evalWhole{ \tlUse\lTmpaTl }}
-    \tlSet\lTmpaTl{ \tblrRangesToList{ \tlUse\lTmpaTl }{ \arabic{#3} } }
-    \prgReturn{ \tlUse\lTmpaTl }  }
-\prgNewConditional\containsNumber{ m }{
-    \regexVarExtractOnceTF\lNumberPattern{ #1 }\lTmpaSeq{ 
-        \fpSet\nCell{ \seqVarItem\lTmpaSeq{1} }  \prgReturn\cTrueBool 
-    }{  \fpZero\nCell \prgReturn\cFalseBool }}
-\prgNewFunction\cellAccum{ mmmm }{
-    \clistSet\rowList{ \relativeAndTblrRangesToList{#1}{rownum}{rowcount} } 
-    \clistSet\columnList{ \relativeAndTblrRangesToList{#2}{colnum}{colcount} }
-    \tlIfEmptyTF{#4}{ \fpZero\nAccum }{ \fpSet\nAccum{#4} }
-    \clistVarMapVariable \rowList \lTmpaInt{
-        \clistVarMapVariable \columnList \lTmpbInt{
-            \containsNumberT{ \cellGetText{\lTmpaInt}{\lTmpbInt} }{
-                \fpSet\nAccum{ #3 } } } }
-    \prgReturn{ \fpEval{ \nAccum }}}
+\prgNewConditional\cellExtractNumber{ mmn }{
+    \regexVarExtractOnceTF\cNumberPattern{ 
+        \evalWhole{ \cellGetText{#1}{#2} } 
+    }\lTmpaSeq{
+        \fpSet{#3}{\evalWhole{ \seqVarItem\lTmpaSeq{1} }} 
+        \prgReturn\cTrueBool
+    }{  \prgReturn\cFalseBool } }
+\prgNewFunction\cellCopy{ m }{
+    \propSetFromKeyval\lTmpbProp{#1}
+    \propGet\lTmpbProp{r}\lTmpaClist
+    \propGet\lTmpbProp{c}\lTmpbClist 
+    \propGet\lTmpbProp{accum}\lTmpaTl 
+    \propGetTF\lTmpbProp{initial}\lTmpbTl{ \fpSet\lTmpaFp{ \tlUse\lTmpbTl }}{
+        \fpZero\lTmpaFp }
+    \clistSet\lTmpaClist{ 
+        \tblrRangesToList{\tlUse\lTmpaClist}{\arabic{rowcount}} }
+    \clistSet\lTmpbClist{ 
+        \tblrRangesToList{\tlUse\lTmpbClist}{\arabic{colcount}} }
+    \clistVarMapInline\lTmpaClist{\clistVarMapInline\lTmpbClist{
+        \cellExtractNumberT{##1}{####1}\lTmpcFp{
+            \fpSet\lTmpaFp{\fpEval{ \lTmpaTl }} } }}
+    \prgReturn{ \fpUse\lTmpaFp } }
 \ExplSyntaxOff
 \begin{document}
 \begin{tblr}[tall,caption=Sum]{
 column{1-Z}={r,mode=math}, row{1}={c,mode=text}, 
 hline{1,Z}={.08em},hline{2,Y},
-cell{Z}{2}={cmd=\cellAccum{2-Y}{}{\nAccum + \nCell}{}}
+cell{Z}{2}={cmd=\cellCopy{r=2-Y,c=2,accum=\lTmpaFp + \lTmpcFp}}
 }
 t      & U      \\
 2      & 78.52  \\  
