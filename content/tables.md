@@ -21,10 +21,10 @@ My main resources are the official package documentation of Tabularray[^2], and 
 
 ## Format headers (first row, first column)
 
-- **Group** row, column headings, see 1a
-- Visually clarify table **boundaries**: Thick horizontal lines 1a
-- Visually clarify **column titles** and **row titles**: Thin border line 1b, 1c; Left-aligned first column 1a, 1b
-- Apply border **pattern**: Inner **gridlines** $\mathrm{1c}$
+- **Group** row, column headings, see 1.1
+- Visually clarify table **boundaries**: Thick horizontal lines 1.1, 1.2
+- Visually clarify **column titles** and **row titles**: Thin border line 1.1-1.3a; Left-aligned first column 1.1, 1.2
+- Apply **pattern** to border lines: Inner **gridlines** 1.3a, shortline for column headers
 - Multicolumn header
 - See source examples: [Format headers - Group, align, rotate, separate, and abbreviate the titles for rows and columns](./format%20headers.md)
 
@@ -32,7 +32,7 @@ My main resources are the official package documentation of Tabularray[^2], and 
 
 ## Format numbers
 
-- Prefix, Suffix, url, numbers right-aligned, text/left center-aligned; Number format, scientific notation, rounding, group every three digits, monospace, evaluate. Stats, also see [more styles](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
+- Prefix, Suffix,  numbers right-aligned, text/left center-aligned; Number format, scientific notation, rounding, group every three digits, monospace, evaluate. Stats, also see [more styles](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
 - pgfmathparse, dash 3rd line, math, siunit, pgfmathparse, date, money, command, macro, bold, color, fraction styles
 - dateformat, fraction format, yes/no symbol, 
 - See source examples: [Format numbers - Evaluate, Round to precision, Set decimal and thousands separator, Use scientific notations](./format%20numbers.md)
@@ -48,6 +48,7 @@ My main resources are the official package documentation of Tabularray[^2], and 
 
 # Layout the final document
 
+- g has different vertical height vphantom? captionsetup?
 -  Reference floating tables
 - Let table float here, superwide, above, below, next to a page's main text
 - Add caption,  and reference the table elsewhere
@@ -84,6 +85,8 @@ My main resources are the official package documentation of Tabularray[^2], and 
 - See source examples: [CSV Input - Dynamically generate table from file](./csv%20input.md)
 
 ![table file input.svg](./attachments/table%20file%20input.svg)
+
+
 
 ## Add statistics to data
 
