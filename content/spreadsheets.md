@@ -154,7 +154,7 @@ Calculate the following values, with row number $r$:
     cell{11}{6}={preto={\cellCopy{r={11},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
 }
 {Location along\\the rivers} & {River\\marker} & {Trip\\distance} 
-& {Price\\per night} & {Overnight\\stays} & {Total\\price} \\
+    & {Price\\per night} & {Overnight\\stays} & {Total\\price} \\
 Mecklenburg Lakeland            \\
 Wilderness Haven & 62 && 5  & 0 \\
 Adventure Oasis  & 48 && 0  & 2 \\
