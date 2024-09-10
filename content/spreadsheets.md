@@ -89,14 +89,14 @@ Calculate the following values, with row number $r$:
 \usepackage{tabularray,textcomp}
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
-\regexConst\gNumberPattern {([-+]?(?:\d*\.)?\d+(?:e[-+]?\d+)?)} 
+\regexConst\cNumberPattern {([-+]?(?:\d*\.)?\d+(?:e[-+]?\d+)?)} 
 \prgNewFunction\tblrRangesToList{ mm }{ 
     \__tblr_get_childs:nx{#1}{#2}  \prgReturn{\tlUse\l_tblr_childs_clist} }
 \prgNewConditional\cellNumber{ mmn }{
-    \regexVarExtractOnceTF\gNumberPattern{
-        \evalWhole{ \cellGetText{#1}{#2} }
+    \regexVarExtractOnceTF\cNumberPattern{ 
+        \evalWhole{ \cellGetText{#1}{#2} } 
     }\lTmpaSeq{
-        \fpSet{#3}{\evalWhole{ \seqVarItem\lTmpaSeq{1} }}
+        \fpSet{#3}{\evalWhole{ \seqVarItem\lTmpaSeq{1} }} 
         \prgReturn\cTrueBool
     }{  \prgReturn\cFalseBool } }
 \prgNewFunction\cellCopy{ m }{
@@ -104,11 +104,12 @@ Calculate the following values, with row number $r$:
     \propGet\lTmpbProp{r}\lTmpaClist
     \propGet\lTmpbProp{c}\lTmpbClist 
     \propGet\lTmpbProp{accum}\lTmpaTl 
-    \propGetTF\lTmpbProp{initial}\lTmpbTl{
-        \fpSet\lTmpaFp{ \fpEval{ \lTmpbTl }}
-    }{  \fpZero\lTmpaFp \tlClear\lTmpbTl }
-    \clistSet\lTmpaClist{ \tblrRangesToList{\tlUse\lTmpaClist}{\arabic{rowcount}} }
-    \clistSet\lTmpbClist{ \tblrRangesToList{\tlUse\lTmpbClist}{\arabic{colcount}} }
+    \propGetTF\lTmpbProp{initial}\lTmpbTl{ \fpSet\lTmpaFp{ \tlUse\lTmpbTl }}{
+        \fpZero\lTmpaFp }
+    \clistSet\lTmpaClist{ 
+        \tblrRangesToList{\tlUse\lTmpaClist}{\arabic{rowcount}} }
+    \clistSet\lTmpbClist{ 
+        \tblrRangesToList{\tlUse\lTmpbClist}{\arabic{colcount}} }
     \clistVarMapInline\lTmpaClist{\clistVarMapInline\lTmpbClist{
         \cellNumberT{##1}{####1}\lTmpcFp{
             \fpSet\lTmpaFp{\fpEval{ \lTmpaTl }} } }}
@@ -138,30 +139,30 @@ Calculate the following values, with row number $r$:
     cell{2-Z}{3,6}={font=\bfseries},
     cell{2-Z}{2}={appto={\,km}}, cell{4-6,9-11}{3}={cmd={$\Delta\,$},appto={\,km}},
     cell{2-Z}{5}={l,preto={$\times$ },appto={ $=$}}, cell{2-Z}{4,6}={appto={\,€}},
-    cell{4}{3}={preto={\cellCopy{r={3,4},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
-    cell{5}{3}={preto={\cellCopy{r={4,5},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
-    cell{6}{3}={preto={\cellCopy{r={5,6},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
-    cell{9}{3}={preto={\cellCopy{r={8,9},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
-    cell{10}{3}={preto={\cellCopy{r={9,10},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
-    cell{11}{3}={preto={\cellCopy{r={10,11},c={2}, accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
-    cell{3}{6}={preto={\cellCopy{r={3},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
-    cell{4}{6}={preto={\cellCopy{r={4},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
-    cell{5}{6}={preto={\cellCopy{r={5},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
-    cell{6}{6}={preto={\cellCopy{r={6},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
-    cell{8}{6}={preto={\cellCopy{r={8},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
-    cell{9}{6}={preto={\cellCopy{r={9},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
-    cell{10}{6}={preto={\cellCopy{r={10},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
-    cell{11}{6}={preto={\cellCopy{r={11},c={4-5}, accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{4}{3}={preto={\cellCopy{r={3,4},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{5}{3}={preto={\cellCopy{r={4,5},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{6}{3}={preto={\cellCopy{r={5,6},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{9}{3}={preto={\cellCopy{r={8,9},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{10}{3}={preto={\cellCopy{r={9,10},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{11}{3}={preto={\cellCopy{r={10,11},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
+    cell{3}{6}={preto={\cellCopy{r={3},c={4-5},accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{4}{6}={preto={\cellCopy{r={4},c={4-5},accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{5}{6}={preto={\cellCopy{r={5},c={4-5},accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{6}{6}={preto={\cellCopy{r={6},c={4-5},accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{8}{6}={preto={\cellCopy{r={8},c={4-5},accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{9}{6}={preto={\cellCopy{r={9},c={4-5},accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{10}{6}={preto={\cellCopy{r={10},c={4-5},accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
+    cell{11}{6}={preto={\cellCopy{r={11},c={4-5},accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
 }
-{Location along\\the rivers} & {River\\marker} & {Trip\\distance} 
-    & {Price\\per night} & {Overnight\\stays} & {Total\\price} \\
-Mecklenburg Lakeland            \\
+{Location along\\the rivers} & {River\\marker} & {Trip\\distance} & {Price\\per night} &
+{Overnight\\stays} & {Total\\price} \\
+Mecklenburg Lakeland \\
 Wilderness Haven & 62 && 5  & 0 \\
 Adventure Oasis  & 48 && 0  & 2 \\
 Forest Escape    & 23 && 7  & 1 \\
 Lakeview Camp    & 5  && 11 & 1 \\
 
-Havel River                       \\
+Havel River \\
 Whispering Woods  & 25  && 12 & 0 \\
 Sunset Pines      & 58  && 5  & 1 \\
 Starlight Meadows & 72  && 8  & 1 \\
