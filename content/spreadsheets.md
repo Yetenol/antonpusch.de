@@ -107,8 +107,8 @@ Calculate the following values, with row number $r$:
     \propGetTF\lTmpbProp{initial}\lTmpbTl{
         \fpSet\lTmpaFp{ \fpEval{ \lTmpbTl }}
     }{  \fpZero\lTmpaFp \tlClear\lTmpbTl }
-    \clistSet\lTmpaClist{ \tblrRangesToList{\tlUse\lTmpaClist}{rowcount} }
-    \clistSet\lTmpbClist{ \tblrRangesToList{\tlUse\lTmpbClist}{colcount} }
+    \clistSet\lTmpaClist{ \tblrRangesToList{\tlUse\lTmpaClist}{\arabic{rowcount}} }
+    \clistSet\lTmpbClist{ \tblrRangesToList{\tlUse\lTmpbClist}{\arabic{colcount}} }
     \clistVarMapInline\lTmpaClist{\clistVarMapInline\lTmpbClist{
         \cellNumberT{##1}{####1}\lTmpcFp{
             \fpSet\lTmpaFp{\fpEval{ \lTmpaTl }} } }}
