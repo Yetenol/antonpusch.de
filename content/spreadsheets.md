@@ -163,7 +163,7 @@ Lakeview Camp    & 5  && 11 & 1 \\
 
 Havel River \\
 Whispering Woods  & 25  && 12 & 0 \\
-Sunset Pines      & 66  && 5  & 1 \\
+Sunset Pines      & 58  && 5  & 1 \\
 Starlight Meadows & 72  && 8  & 1 \\
 Evergreen Glade   & 100 && 16 & 1 \\
 \end{tblr}
