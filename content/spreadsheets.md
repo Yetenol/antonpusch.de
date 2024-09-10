@@ -121,15 +121,15 @@ Calculate the following values, with row number $r$:
     through the Mecklenburg Lakeland and \textbf{%
     \cellCopy{r={8,11},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}\,km} 
     on the Havel River. Overnight prices range from \textbf{%
-    \cellCopy{r={3-11},c={4},accum={\lTmpcFp != 0 ? min(\lTmpaFp,\lTmpcFp) : \lTmpaFp},initial={999999}}\,€} 
+    \cellCopy{r={3-Z},c={4},accum={\lTmpcFp != 0 ? min(\lTmpaFp,\lTmpcFp) : \lTmpaFp},initial={999999}}\,€} 
     to \textbf{%
-    \cellCopy{r={3-11},c={4},accum={max(\lTmpaFp,\lTmpcFp)}, initial={-999999}}\,€}. 
+    \cellCopy{r={3-Z},c={4},accum={max(\lTmpaFp,\lTmpcFp)}, initial={-999999}}\,€}. 
     In total, accommodation costs \textbf{%
-    \cellCopy{r={3-11},c={6},accum={\lTmpaFp + \lTmpcFp}}\,€}
+    \cellCopy{r={3-Z},c={6},accum={\lTmpaFp + \lTmpcFp}}\,€}
     averaging \textbf{%
     \fpEval{ round(
-    \cellCopy{r={3-11},c={6},accum={\lTmpaFp + \lTmpcFp}} /
-    \cellCopy{r={3-11},c={6},accum={\lTmpaFp + 1}}, 2) }\,€}
+    \cellCopy{r={3-Z},c={6},accum={\lTmpaFp + \lTmpcFp}} /
+    \cellCopy{r={3-Z},c={6},accum={\lTmpaFp + 1}}, 2) }\,€}
     per night.},
 ]{
     hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l}, 
