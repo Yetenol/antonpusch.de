@@ -177,7 +177,7 @@ cell{1}{2,4}={c=2}{c},
 hline{2} = {2-3}{leftpos = -1, rightpos = -1, endpos},
 hline{2} = {4-5}{leftpos = -1, rightpos = -1, endpos},
 %
-hline{1,Z}={.1em}, hline{3},
+hline{1,Z}={.08em}, hline{3},
 cell{2}{2-Z}={appto={\stepcounter{colindex}$_{\roman{colindex}}$}},
 column{2-Z}={colsep=2pt},
 column{2,4}={leftsep+=6pt},
