@@ -9,7 +9,7 @@ dg-publish: true
 
 ```latex
 \documentclass{standalone}
-\usepackage{tabularray,mathtools,tikz}
+\usepackage{tabularray,tikz}
 \renewcommand{\thetable}{2.1}
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
@@ -51,18 +51,10 @@ dg-publish: true
 
 ```latex
 \documentclass{standalone}
-\usepackage{tabularray,mathtools,tikz}
+\usepackage{tabularray}
 \renewcommand{\thetable}{2.2}
-\UseTblrLibrary{functional,siunitx}
+\UseTblrLibrary{siunitx}
 \sisetup{exponent-product = \cdot}
-\usetikzlibrary{fpu}
-\ExplSyntaxOn
-\regexConst\cNumberPattern {([-+]?(?:\d*\.)?\d+(?:e[-+]?\d+)?)} 
-\prgNewFunction\printNum{ mm }{
-    \tlSet\lTmpaTl{\evalWhole{#2}}
-    \regexVarReplaceOnce\cNumberPattern{\c{num}\[#1\]\cB\{\0\cE\}}\lTmpaTl
-    \prgReturn{ \tlUse\lTmpaTl }}
-\ExplSyntaxOff
 \begin{document}
 \begin{tblr}[tall,caption=SiUnitX number formats]{
     hline{1,Z}={.08em},hline{3},
