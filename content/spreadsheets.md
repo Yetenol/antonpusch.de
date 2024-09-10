@@ -92,7 +92,7 @@ Calculate the following values, with row number $r$:
 \regexConst\cNumberPattern {([-+]?(?:\d*\.)?\d+(?:e[-+]?\d+)?)} 
 \prgNewFunction\tblrRangesToList{ mm }{ 
     \__tblr_get_childs:nx{#1}{#2}  \prgReturn{\tlUse\l_tblr_childs_clist} }
-\prgNewConditional\cellNumber{ mmn }{
+\prgNewConditional\cellExtractNumber{ mmn }{
     \regexVarExtractOnceTF\cNumberPattern{ 
         \evalWhole{ \cellGetText{#1}{#2} } 
     }\lTmpaSeq{
@@ -111,7 +111,7 @@ Calculate the following values, with row number $r$:
     \clistSet\lTmpbClist{ 
         \tblrRangesToList{\tlUse\lTmpbClist}{\arabic{colcount}} }
     \clistVarMapInline\lTmpaClist{\clistVarMapInline\lTmpbClist{
-        \cellNumberT{##1}{####1}\lTmpcFp{
+        \cellExtractNumberT{##1}{####1}\lTmpcFp{
             \fpSet\lTmpaFp{\fpEval{ \lTmpaTl }} } }}
     \prgReturn{ \fpUse\lTmpaFp } }
 \ExplSyntaxOff
@@ -154,15 +154,16 @@ Calculate the following values, with row number $r$:
     cell{10}{6}={preto={\cellCopy{r={10},c={4-5},accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
     cell{11}{6}={preto={\cellCopy{r={11},c={4-5},accum={\lTmpaFp * \lTmpcFp}, initial=1}}},
 }
-{Location along\\the rivers} & {River\\marker} & {Trip\\distance} & {Price\\per night} &
+{Location along\\the rivers} & {River\\marker} & {Trip\\distance} 
+    & {Price\\per night} &
 {Overnight\\stays} & {Total\\price} \\
-Mecklenburg Lakeland \\
+Mecklenburg Lakeland            \\
 Wilderness Haven & 62 && 5  & 0 \\
 Adventure Oasis  & 48 && 0  & 2 \\
 Forest Escape    & 23 && 7  & 1 \\
 Lakeview Camp    & 5  && 11 & 1 \\
 
-Havel River \\
+Havel River                       \\
 Whispering Woods  & 25  && 12 & 0 \\
 Sunset Pines      & 58  && 5  & 1 \\
 Starlight Meadows & 72  && 8  & 1 \\
