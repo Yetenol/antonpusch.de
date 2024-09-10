@@ -155,13 +155,13 @@ Calculate the following values, with row number $r$:
 }
 {Location along\\the rivers} & {River\\marker} & {Trip\\distance} & {Price\\per night} &
 {Overnight\\stays} & {Total\\price} \\
-Mecklenburg Lakeland \\
+Mecklenburg Lakeland            \\
 Wilderness Haven & 62 && 5  & 0 \\
 Adventure Oasis  & 48 && 0  & 2 \\
 Forest Escape    & 23 && 7  & 1 \\
 Lakeview Camp    & 5  && 11 & 1 \\
 
-Havel River \\
+Havel River                       \\
 Whispering Woods  & 25  && 12 & 0 \\
 Sunset Pines      & 58  && 5  & 1 \\
 Starlight Meadows & 72  && 8  & 1 \\
