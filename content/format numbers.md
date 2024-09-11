@@ -3,14 +3,62 @@ title: "Format numbers - Evaluate, Round to precision, Set decimal and thousands
 dg-publish: true
 ---
 
+![table numbers fractions.svg](./attachments/table%20numbers%20fractions.svg)
+
+```latex
+\documentclass{standalone} \renewcommand{\thetable}{2.1}
+\usepackage{tabularray}
+\let\oldfrac\frac
+\renewcommand{\frac}[2]{\mathchoice 
+    {\oldfrac{#1}{#2}} {{^{#1}\!/_{\!#2}}}
+    {\oldfrac{#1}{#2}} {\oldfrac{#1}{#2}}  }
+\begin{document}
+\begin{tblr}[tall]{
+    cell{2-Z}{1-Z}={r,mode=math},
+    cell{2}{1-Z}={r,mode=math},
+    cell{3}{1-Z}={r,mode=dmath}
+}
+Numbers & Fractions \\
+1 & {1\over5} \\
+-3 & \frac{1}{5} \\
+\oldfrac{1}{5} & \frac{1}{5} \\
+\end{tblr}
+\end{document}
+```
+
+![table numbers scientific.svg](./attachments/table%20numbers%20scientific.svg)
+
+```latex
+\documentclass{standalone} \renewcommand{\thetable}{2.2}
+\usepackage{tabularray}
+\UseTblrLibrary{siunitx}
+\sisetup{exponent-product = \cdot}
+\begin{document}
+\begin{tblr}[tall,caption={Exponent, Uncertainty, Round}]{
+    hline{1,Z}={.08em},hline{2},
+    column{1}={r,cmd={\num[exponent-mode=scientific, uncertainty-mode=compact-marker, round-mode=figures, round-mode=uncertainty]}},
+    column{2}={r,cmd={\num[exponent-mode=engineering,uncertainty-mode=separate]}},
+    row{1}={c,cmd={}}
+}
+scientific & engineering \\
+0.25      & 0.25     \\
+-42       & -42      \\
+289       & 289      \\
+4225.31   & 4225.31  \\
+66049(1)     & 66049(1)    \\
+263169(12:34)    & 263169(12:34)   \\
+1.0563e6  & 1.0563e6 \\
+\end{tblr}
+\end{document}
+```
+
 # Number formattings
 
 ![table number formats pgf.svg](./attachments/table%20number%20formats%20pgf.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \renewcommand{\thetable}{2.3}
 \usepackage{tabularray,tikz}
-\renewcommand{\thetable}{2.1}
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
 \ExplSyntaxOn
@@ -50,24 +98,32 @@ dg-publish: true
 ![table number formats siunitx.svg](./attachments/table%20number%20formats%20siunitx.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \renewcommand{\thetable}{2.4}
 \usepackage{tabularray}
-\renewcommand{\thetable}{2.2}
 \UseTblrLibrary{siunitx}
 \sisetup{exponent-product = \cdot}
 \begin{document}
 \begin{tblr}[tall,caption=SiUnitX number formats]{
-    hline{1,Z}={.08em},hline{3},
+    hline{1,Z}={.08em},hline{5},
     hline{6,9,12,15,18,21,24,27,30,33}={dashed},
-    column{1}={r,cmd=\num},
-    column{2}={r,cmd={\num[exponent-mode=scientific]}},
-    column{3}={r,cmd={\num[exponent-mode=engineering]}},
-    column{4}={r,cmd={\num[uncertainty-mode=separate]}},
-    row{1,2}={c,m,cmd={}}, cell{1}{2}={c=2}{}, cell{1}{1,4}={r=2}{},
-    hline{2}={2-3}{leftpos=-2,rightpos=-2,endpos},
+    column{2}={r,cmd={\num[exponent-mode=fixed, uncertainty-mode=full, round-mode=places]}},
+    column{3}={r,cmd={\num[exponent-mode=scientific, uncertainty-mode=compact-marker, round-mode=figures, round-mode=uncertainty]}},
+    column{4}={r,cmd={\num[exponent-mode=engineering,uncertainty-mode=separate]}},
+    cell{1-4}{2-Z}={c,appto={,},cmd={}}, column{1}={l,cmd=\quad}, row{2-Z}={rowsep=0pt},
+    cell{1,5,11}{1}={c=4}{font=\bfseries,cmd={}},
+    row{5,11}={abovesep=6pt,belowsep=2pt},
 }
-{Auto\\format} & Exponent mode             && uncertainty-mode \\
-               & scientific   & engineering            \\
+Settings \\
+Exponent: & fixed           & scientific   & engineering  \\
+Uncertainty: & full & compact-marker & separate           \\
+Round: & places & figures & uncertainty \\
+Integer                                                \\
+7        & 7        & 7        & 7        \\
+-83      & -83      & -83      & -83      \\
+4225     & 4225     & 4225     & 4225     \\
+263169   & 263169   & 263169   & 263169   \\
+1.0563e6 & 1.0563e6 & 1.0563e6 & 1.0563e6 \\
+Floating points                           \\
 0.25           & 0.25         & 0.25        & 0.25     \\
 8(12:34)       & 8(12:34)     & 8(12:34)    & 8(12:34) \\
 289            & 289          & 289         & 289      \\
@@ -79,15 +135,58 @@ dg-publish: true
 \end{document}
 ```
 
-# Evaluate mathematical terms
+# Prefix, Suffix
 
-![table body evaluate math.svg](./attachments/table%20body%20evaluate%20math.svg)
+![table numbers money.svg](./attachments/table%20numbers%20money.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \renewcommand{\thetable}{2.5}
+\usepackage{tabularray,mathtools,amsfonts,amssymb}
+\UseTblrLibrary{functional,siunitx}
+\sisetup{exponent-product = \cdot}
+\ExplSyntaxOn
+\regexConst\cNumberPattern {([-+]?(?:\d*\.)?\d+(?:e[-+]?\d+)?)} 
+\prgNewFunction\printNum{ mm }{
+    \propSetFromKeyval\lTmpbProp{#1}
+    \propGetTF\lTmpbProp{preto}\lTmpbTl{ \tlPutRight\lTmpbTl{\,} }{ \tlClear\lTmpbTl }
+    \propGetTF\lTmpbProp{appto}\lTmpcTl{ \tlPutLeft\lTmpcTl{\,} }{ \tlClear\lTmpcTl }
+    \propGetTF\lTmpbProp{si}\lTmpdTl{ \tlSet\lTmpdTl{\evalWhole{%
+        \sisetup{\tlUse\lTmpdTl}%
+    }}}{ \tlClear\lTmpdTl }
+    \tlSet\lTmpaTl{\evalWhole{#2}}
+    \regexVarReplaceOnceTF\cNumberPattern{\evalWhole{ \c{tlUse}\c{lTmpbTl} \c{num}\cB\{\0\cE\} \c{tlUse}\c{lTmpcTl}}}\lTmpaTl{
+        \prgReturn{\evalWhole{\lTmpdTl\lTmpaTl}}
+    }{ \prgReturn{#2} } }
+\ExplSyntaxOff
+\begin{document}
+\sisetup{exponent-mode=fixed}
+\begin{tblr}[tall,caption={Money, Prefix, Suffix}]{
+    hline{1,Z}={.08em},hline{2},
+    %cell{2-Z}{1}={preto={}},
+    column{1}={r,cmd=\printNum{appto=€,si={minimum-decimal-digits=2,zero-decimal-as-symbol}}},
+    column{2}={r,cmd=\printNum{preto=\$,si={round-mode=places,round-direction=up,round-precision=0,negative-color=red}}},
+    row{1}={c,m,cmd={}},
+}
+{Append unit,\\Dash zero} & {Prepend unit\\Round up} \\
+0.25     & 0.254    \\
+-42      & -42      \\
+289.3    &          \\
+         & 4225.31  \\
+66049    & 66049    \\
+263169   & 263169   \\
+1.0563e6 & 1.0563e6 \\
+\end{tblr}
+\end{document}
+```
+
+# Evaluate mathematical terms
+
+![table numbers evaluate.svg](./attachments/table%20numbers%20evaluate.svg)
+
+```latex
+\documentclass{standalone} \renewcommand{\thetable}{2.6}
 \usepackage{tabularray,tikz}
 \usetikzlibrary{fpu}
-\renewcommand{\thetable}{2.3}
 \begin{document}
 $\begin{tblr}[tall,caption=Evaluate]{ hline{1,Z}={.08em},
     column{1}={r,rightsep=3pt},
@@ -176,7 +275,6 @@ float    & sci      & {sci\\sub.} & frac     & num      \\
 \end{document}
 ```
 
-
 # Figure collection for note preview
 
 ![table body.svg](./attachments/table%20body.svg)
@@ -184,10 +282,8 @@ float    & sci      & {sci\\sub.} & frac     & num      \\
 ```latex
 \documentclass{standalone} \usepackage{graphbox}
 \begin{document}
-\begin{minipage}{\textwidth} \centering{}
-\includegraphics{table number formats pgf} \hspace{1em}
-\includegraphics{table body evaluate math} \\[1em]
-\includegraphics[align=c]{table number formats siunitx}
-\end{minipage}
+\includegraphics[align=c]{table numbers scientific} \hspace{1em}
+\includegraphics[align=c]{table numbers money} \hspace{1em}
+\includegraphics[align=c]{table numbers evaluate}
 \end{document}
 ```
