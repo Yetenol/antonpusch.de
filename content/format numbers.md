@@ -30,13 +30,13 @@ Numbers & Fractions \\
 
 ```latex
 \documentclass{standalone} \renewcommand{\thetable}{2.2}
-\usepackage{tabularray}
+\usepackage{tabularray,tikz}
 \UseTblrLibrary{siunitx}
 \sisetup{exponent-product = \cdot}
 \begin{document}
 \begin{tblr}[tall,caption={Exponent, Uncertainty, Round}]{
     hline{1,Z}={.08em},hline{2},
-    column{1}={r,cmd={\num[exponent-mode=scientific, uncertainty-mode=compact-marker, round-mode=figures, round-mode=uncertainty]}},
+    column{1}={r,cmd={\pgfmathprintnumber}},
     column{2}={r,cmd={\num[exponent-mode=engineering,uncertainty-mode=separate]}},
     row{1}={c,cmd={}}
 }
@@ -45,8 +45,8 @@ scientific & engineering \\
 -42       & -42      \\
 289       & 289      \\
 4225.31   & 4225.31  \\
-66049(1)     & 66049(1)    \\
-263169(12:34)    & 263169(12:34)   \\
+66049     & 66049(1)    \\
+263169    & 263169(12:34)   \\
 1.0563e6  & 1.0563e6 \\
 \end{tblr}
 \end{document}
