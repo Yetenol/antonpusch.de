@@ -3,6 +3,38 @@ title: "Format numbers - Evaluate, Round to precision, Set decimal and thousands
 dg-publish: true
 ---
 
+# Scientific notation
+
+![table numbers scientific notation.svg](./attachments/table%20numbers%20scientific%20notation.svg)
+
+```latex
+\documentclass{standalone} \renewcommand{\thetable}{2.1}
+\usepackage{tabularray,tikz}
+\UseTblrLibrary{siunitx}
+\sisetup{exponent-product = \cdot}
+\begin{document}
+\begin{tblr}[tall,caption=Scientific notation]{
+    hline{1,Z}={.08em},hline{2},
+    column{1}={r,cmd={\pgfmathprintnumber}},
+    column{2}={r,cmd={\pgfkeys{/pgf/number format/.cd,
+        sci, sci zerofill}\pgfmathprintnumber}},
+    column{3}={r,cmd={\num[exponent-mode=engineering,round-mode=figures,uncertainty-mode=separate]}},
+    row{1}={c,cmd={}},
+}
+$U$ in V & $R_1$ in \unit{\ohm} & $I_1$ in \unit{\ampere} \\
+.00093  & 4219e7 & 24       \\
+.005693 & 3799e5 & 64\pm1   \\
+.4893   & 2959e2 & 244(2:3) \\
+2.93    & 1279   & 336(31)  \\
+93      & 81     & 724(520) \\
+6307    & 701    & 2(1)e3   \\
+19107   & 49121  & 268840   \\
+95907   & 102881 & 5376400  \\
+198307  & 210401 & 10752400 \\
+\end{tblr}
+\end{document}
+```
+
 ![table numbers fractions.svg](./attachments/table%20numbers%20fractions.svg)
 
 ```latex
@@ -282,7 +314,7 @@ float    & sci      & {sci\\sub.} & frac     & num      \\
 ```latex
 \documentclass{standalone} \usepackage{graphbox}
 \begin{document}
-\includegraphics[align=c]{table numbers scientific} \hspace{1em}
+\includegraphics[align=c]{table numbers scientific notation} \hspace{1em}
 \includegraphics[align=c]{table numbers money} \hspace{1em}
 \includegraphics[align=c]{table numbers evaluate}
 \end{document}
