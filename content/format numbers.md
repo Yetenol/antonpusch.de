@@ -148,8 +148,7 @@ Floating points                           \\
 \end{document}
 ```
 
-
-# Localize, Monetary values, dates
+# Localized dates and time
 
 ![table numbers datetimes.svg](./attachments/table%20numbers%20datetimes.svg)
 
@@ -160,7 +159,7 @@ English
 \usepackage{tabularray,babel,datetime2}
 \DTMsetup{useregional}
 \begin{document}
-\begin{tblr}[tall,caption=English format]{ 
+\begin{tblr}[tall,caption=English date \& time]{ 
     hline{1,Z}={.08em},hline{2}, row{1}={c},
     cell{2-Z}{1}={r,cmd={\DTMdate}}, cell{2-Z}{2}={r,cmd={\DTMtime}}, }
 Date & Time \\
@@ -177,7 +176,7 @@ British
 \usepackage{tabularray,babel,datetime2}
 \DTMsetup{useregional}
 \begin{document}
-\begin{tblr}[tall,caption=British format]{ 
+\begin{tblr}[tall,caption=British date \& time]{ 
     hline{1,Z}={.08em},hline{2}, row{1}={c},
     cell{2-Z}{1}={r,cmd={\DTMdate}}, cell{2-Z}{2}={r,cmd={\DTMtime}}, 
 }
@@ -195,7 +194,7 @@ German
 \usepackage{tabularray,babel,datetime2}
 \DTMsetup{useregional}
 \begin{document}
-\begin{tblr}[tall,caption=German format]{ 
+\begin{tblr}[tall,caption={German date, time}]{ 
     hline{1,Z}={.08em},hline{2}, row{1}={c},
     cell{2-Z}{1}={r,cmd={\DTMdate}}, cell{2-Z}{2}={r,cmd={\DTMtime}}, 
 }
@@ -213,7 +212,7 @@ Dutch
 \usepackage{tabularray,babel,datetime2}
 \DTMsetup{useregional}
 \begin{document}
-\begin{tblr}[tall,caption=Dutch format]{ hline{1,Z}={.08em},hline{2}, row{1}={c},
+\begin{tblr}[tall,caption=Dutch date \& time]{ hline{1,Z}={.08em},hline{2}, row{1}={c},
     cell{2-Z}{1}={r,cmd={\DTMdate}}, cell{2-Z}{2}={r,cmd={\DTMtime}}, }
 Date & Time \\
 2024-03-03 & 14:55:00 \\
@@ -223,26 +222,133 @@ Date & Time \\
 ```
 
 ```latex
-\documentclass{article}\pagestyle{empty}
-\usepackage{graphbox}
+\documentclass{standalone} \usepackage{graphbox,tabularray}
 \begin{document}
-\begin{minipage}{.45\textwidth} \raggedleft{}
-\includegraphics{table numbers datetime english} \\[1em]
-\includegraphics{table numbers datetime british}
-\end{minipage} \hspace{1em}
-\begin{minipage}{.45\textwidth} \raggedright{}
-\includegraphics{table numbers datetime german} \\[1em]
-\includegraphics{table numbers datetime dutch}
-\end{minipage}
+\begin{tblr}{rows={c,rowsep=8pt}}
+\includegraphics{table numbers datetime english} &
+\includegraphics{table numbers datetime british} \\
+\includegraphics{table numbers datetime german} &
+\includegraphics{table numbers datetime dutch} \\
+\end{tblr}
 \end{document}
 ```
 
-
 # Prefix, Suffix
+
+## Show price with cents and currency
+
+![table numbers backwaren.svg](./attachments/table%20numbers%20backwaren.svg)
+
+Select non-empty cells manually
+
+```latex
+\documentclass[german]{standalone} \renewcommand{\thetable}{2.6a}
+\usepackage{tabularray,babel,textcomp}
+\UseTblrLibrary{siunitx,functional}
+\ExplSyntaxOn
+\regexConst\cNumberPattern {([-+]?(?:\d*[\.\,])?\d+(?:e[-+]?\d+)?)} 
+\prgNewFunction\printNumber{ m }{
+    \tlSet\lTmpaTl{\evalWhole{#1}}
+    \regexVarReplaceOnce\cNumberPattern{\c{num}\cB\{\0\cE\}}\lTmpaTl
+    \prgReturn{\evalWhole{\lTmpaTl}}}
+\ExplSyntaxOff
+\sisetup{round-mode=places,zero-decimal-as-symbol}
+\begin{document}
+\begin{tblr}[tall,caption={Aligned prices with cents}]{
+    hline{1,Z}={.08em},hline{2}, colspec={lr}, row{1}={c},
+    cell{2,3,5}{2}={appto=\,€,cmd=\printNumber},
+}
+Backwaren        & Preis \\
+Roggenbrötchen   & .45   \\
+Bienenstich      & 1     \\
+Kuchen des Tages &       \\
+Mischbrot        & 2,3   \\
+\end{tblr}
+\end{document}
+```
+
+Skip empty cells automatically
+
+```py
+generate_latex_figure(r"""
+\documentclass[german]{standalone} \renewcommand{\thetable}{2.6b}
+\usepackage{tabularray,babel,textcomp}
+\UseTblrLibrary{siunitx,functional}
+\ExplSyntaxOn
+\regexConst\cNumberPattern {([-+]?(?:\d*[\.\,])?\d+(?:e[-+]?\d+)?)} 
+\prgNewFunction\printNum{ mm }{
+    \propSetFromKeyval\lTmpbProp{#1}
+    \propGetTF\lTmpbProp{preto}\lTmpbTl
+        { \tlPutRight\lTmpbTl{\,} }{ \tlClear\lTmpbTl }
+    \propGetTF\lTmpbProp{appto}\lTmpcTl
+        { \tlPutLeft\lTmpcTl{\,} }{ \tlClear\lTmpcTl }
+    \propGetTF\lTmpbProp{si}\lTmpdTl
+        { \tlSet\lTmpdTl{\evalWhole{\sisetup{\tlUse\lTmpdTl}}}}
+        { \tlClear\lTmpdTl }
+    \tlSet\lTmpaTl{\evalWhole{#2}}
+    \regexVarReplaceOnceTF\cNumberPattern{\c{tlUse}\c{lTmpbTl} \c{num}\cB\{\0\cE\} \c{tlUse}\c{lTmpcTl}}\lTmpaTl{
+        \prgReturn{\evalWhole{\lTmpdTl\lTmpaTl}}
+    }{ \prgReturn{#2} } }
+\ExplSyntaxOff
+\begin{document}
+\begin{tblr}[tall,caption=Skip empty cells]{
+    hline{1,Z}={.08em},hline{2}, colspec={lr}, row{1}={c},
+    column{2}={cmd={\printNum{appto={\,€},si={
+        round-mode=places,zero-decimal-as-symbol}}}},
+}
+Backwaren        & Preis \\
+Roggenbrötchen   & .45   \\
+Bienenstich      & 1     \\
+Kuchen des Tages &       \\
+Mischbrot        & 2,3   \\
+\end{tblr}
+\end{document}
+""", outfile="table numbers backwaren 2")
+```
+
+```py
+generate_latex_figure(r"""
+\documentclass{standalone} \usepackage{graphbox}
+\begin{document}
+\includegraphics{table numbers backwaren 1} \hspace{1em}
+\includegraphics{table numbers backwaren 2}
+\end{document}
+""", outfile="table numbers backwaren")
+```
+
+## Round up, emphasize negative values
+
+![table numbers budget.svg](./attachments/table%20numbers%20budget.svg)
+
+```py
+generate_latex_figure(r"""
+\documentclass{standalone} \renewcommand{\thetable}{2.7}
+\usepackage{tabularray}
+\UseTblrLibrary{siunitx}
+\sisetup{round-mode=places,round-direction=up,
+    round-precision=0,negative-color=red}
+\begin{document}
+\begin{tblr}[tall,caption={Round up, Negatives, Separate thousands}]{
+    hline{1,Z}={.08em},hline{2}, colspec={lr}, row{1}={c},
+    cell{2-Z}{2}={cmd=\$\,\num}
+}
+Name           & Budget \\
+Kitty Peck     & 12.30  \\
+Hayley Santos  & -42.3  \\
+Lottie Noble   & 4226.7 \\
+Scrooge McDuck & 12366049  \\
+\end{tblr}
+\end{document}
+""", outfile="table numbers budget")
+```
+
+## More monetary values
+
 
 ![table numbers money.svg](./attachments/table%20numbers%20money.svg)
 
-```latex
+```py
+generate_latex_figure(r"""
 \documentclass{standalone} \renewcommand{\thetable}{2.5}
 \usepackage{tabularray,mathtools,amsfonts,amssymb}
 \UseTblrLibrary{functional,siunitx}
@@ -280,6 +386,7 @@ Date & Time \\
 1.0563e6 & 1.0563e6 \\
 \end{tblr}
 \end{document}
+""", outfile="table numbers money")
 ```
 
 # Fractions
@@ -418,14 +525,16 @@ float    & sci      & {sci\\sub.} & frac     & num      \\
 
 ```py
 generate_latex_figure(r"""
-\documentclass{standalone} \usepackage{graphbox}
+\documentclass{standalone} 
+\usepackage{tabularray,graphbox}
 \begin{document}
-\includegraphics[align=c]{table numbers scientific notation} \hspace{1em}
-\includegraphics[align=c]{table numbers money} \hspace{1em}
-\begin{minipage}{.45\textwidth}
-\includegraphics{table numbers datetime english} \\[1em]
-\includegraphics{table numbers datetime german}
-\end{minipage}
+\begin{tblr}{rows={m,c,rowsep=8pt},cell{1}{1}={r=2}{}}
+\includegraphics{table numbers scientific notation} &
+\includegraphics{table numbers backwaren 1} &
+\includegraphics{table numbers budget} \\&
+\includegraphics{table numbers datetime english} &
+\includegraphics{table numbers datetime german} \\
+\end{tblr}
 \end{document}
 """, outfile="table body")
 ```
