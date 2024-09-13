@@ -248,8 +248,8 @@ Select non-empty cells manually
 \UseTblrLibrary{siunitx,functional}
 \ExplSyntaxOn
 \regexConst\cNumberPattern {([-+]?(?:\d*[\.\,])?\d+(?:e[-+]?\d+)?)} 
-\prgNewFunction\printNumber{ m }{
-    \tlSet\lTmpaTl{\evalWhole{#1}}
+\prgNewFunction\printNumber{ mm }{
+    \tlSet\lTmpaTl{\evalWhole{#2}}
     \regexVarReplaceOnce\cNumberPattern{\c{num}\cB\{\0\cE\}}\lTmpaTl
     \prgReturn{\evalWhole{\lTmpaTl}}}
 \ExplSyntaxOff
@@ -257,7 +257,7 @@ Select non-empty cells manually
 \begin{document}
 \begin{tblr}[tall,caption={Prices w/ cents, equal width}]{
     hline{1,Z}={.08em},hline{2}, colspec={lr}, row{1}={c},
-    cell{2,3,5}{2}={appto=\,€,cmd=\printNumber},
+    cell{2,3,5}{2}={appto=\,€,cmd=\printNumber{}},
 }
 Baked goods     & Price \\
 Pretzel         & .45   \\
@@ -277,7 +277,7 @@ generate_latex_figure(r"""
 \UseTblrLibrary{siunitx,functional}
 \ExplSyntaxOn
 \regexConst\cNumberPattern {([-+]?(?:\d*[\.\,])?\d+(?:e[-+]?\d+)?)} 
-\prgNewFunction\printNum{ mm }{
+\prgNewFunction\printNumber{ mm }{
     \propSetFromKeyval\lTmpbProp{#1}
     \propGetTF\lTmpbProp{preto}\lTmpbTl
         { \tlPutRight\lTmpbTl{\,} }{ \tlClear\lTmpbTl }
@@ -294,7 +294,7 @@ generate_latex_figure(r"""
 \begin{document}
 \begin{tblr}[tall,caption=Skip empty cells]{
     hline{1,Z}={.08em},hline{2}, colspec={lr}, row{1}={c},
-    column{2}={cmd={\printNum{appto={\,€},si={
+    column{2}={cmd={\printNumber{appto={\,€},si={
         round-mode=places,zero-decimal-as-symbol}}}},
 }
 Baked goods     & Price \\
