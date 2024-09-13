@@ -76,12 +76,12 @@ devmgmt.msc & Device Manager \\
 \end{document}
 ```
 
-# Text formatting
+# Colorful text, frames
 
 ![table text color.svg](./attachments/table%20text%20color.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \renewcommand{\thetable}{3.3}
 \usepackage{tabularray,tcolorbox}
 \newtcbox{\xmybox}[1][red]{on line,
     arc=7pt, opacityback=1,colframe=#1!50!black,
@@ -91,27 +91,28 @@ devmgmt.msc & Device Manager \\
 \begin{tblr}[tall]{
     columns={c,m}, hline{1,Z}={.08em},hline{2},
     column{1}={l}, row{1}={c},
-    cell{2-4}{3}={cmd=\xmybox[green]},
-    cell{7}{3}={cmd=\xmybox[red]},
-    cell{5,6,8,9}{3}={fg=gray},
+    cell{2-3}{3}={cmd=\xmybox[green]},
+    cell{4,6}{3}={fg=gray},
+    cell{5}{3}={cmd=\xmybox[red]},
 }
 Name            & ID     & Status  \\
 Megan Johnson   & MD1319 & Active  \\
 Charlotte Davis & GH1256 & Active  \\
-Hannah Wilson   & EU1173 & Active  \\
 Chloe Jones     & GN7388 & Archive \\
-Lucy Brown      & JW4939 & Archive \\
 Emily Smith     & AU2431 & Blocked \\
-Jessica Miller  & MC2798 & Archive \\
-Sophie Williams & WR8993 & Archive \\
+Lucy Brown      & JW4939 & Archive \\
 \end{tblr}
 \end{document}
 ```
 
+# Hyperlinks
+
+![table text hyperlinks.svg](./attachments/table%20text%20hyperlinks.svg)
+
 ![table text hyperlinks.pdf](./attachments/table%20text%20hyperlinks.pdf)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \renewcommand{\thetable}{3.4}
 \usepackage{tabularray,hyperref}
 \hypersetup{colorlinks,linkcolor=blue}
 \begin{document}
@@ -138,7 +139,8 @@ Sophie Williams & WR8993 &  \\
 ```latex
 \documentclass{standalone} \usepackage{graphicx,graphbox}
 \begin{document}
-\includegraphics[align=c]{table body macro verbatim} \hspace{1em}
-\includegraphics[align=c]{table body monospace}
+\includegraphics[align=c]{table body monospace} \hspace{1em}
+\includegraphics[align=c]{table text color} \hspace{1em}
+\includegraphics[align=c]{table body macro verbatim}
 \end{document}
 ```
