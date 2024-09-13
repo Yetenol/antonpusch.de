@@ -212,7 +212,8 @@ Dutch
 \usepackage{tabularray,babel,datetime2}
 \DTMsetup{useregional}
 \begin{document}
-\begin{tblr}[tall,caption=Dutch date \& time]{ hline{1,Z}={.08em},hline{2}, row{1}={c},
+\begin{tblr}[tall,caption=Dutch date \& time]{ 
+    hline{1,Z}={.08em},hline{2}, row{1}={c},
     cell{2-Z}{1}={r,cmd={\DTMdate}}, cell{2-Z}{2}={r,cmd={\DTMtime}}, }
 Date & Time \\
 2024-03-03 & 14:55:00 \\
