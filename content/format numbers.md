@@ -3,6 +3,8 @@ title: "Format numbers - Evaluate, Round to precision, Set decimal and thousands
 dg-publish: true
 ---
 
+
+
 # Scientific notation
 
 ![table numbers scientific notation.svg](./attachments/table%20numbers%20scientific%20notation.svg)
@@ -22,41 +24,20 @@ dg-publish: true
     row{1}={c,cmd={}},
 }
 $U$ in V & $R_1$ in \unit{\ohm} & $I_1$ in \unit{\ampere} \\
-.00093  & 4219e7 & 24      \\       
-.005693 & 3799e5 & 64\pm1  \\       
-.4893   & 2959e2 & 244(2:3)       
-2.93    & 1279   & 336(31)   \\       
-93      & 81     & 724(520)   \\     
-6307    & 701    & 2(1)e3  \\      
-19107   & 49121  & 268840  \\       
-95907   & 102881 & 5376400  \\       
-198307  & 210401 & 10752400 \\   
+.00093  & 4219e7 & 24       \\
+.005693 & 3799e5 & 64\pm1   \\
+.4893   & 2959e2 & 244(2:3) \\
+2.93    & 1279   & 336(31)  \\
+93      & 81     & 724(520) \\
+6307    & 701    & 2(1)e3   \\
+19107   & 49121  & 268840   \\
+95907   & 102881 & 5376400  \\
+198307  & 210401 & 10752400 \\
 \end{tblr}
 \end{document}
 ```
 
-![table numbers fractions.svg](./attachments/table%20numbers%20fractions.svg)
-
-```latex
-\documentclass{standalone} \renewcommand{\thetable}{2.1}
-\usepackage{tabularray}
-\let\oldfrac\frac
-\renewcommand{\frac}[2]{\mathchoice 
-    {\oldfrac{#1}{#2}} {{^{#1}\!/_{\!#2}}}
-    {\oldfrac{#1}{#2}} {\oldfrac{#1}{#2}}  }
-\begin{document}
-\begin{tblr}[tall]{
-    cell{2-Z}{1-Z}={r,mode=math},
-    cell{2}{1-Z}={r,mode=math},
-    cell{3}{1-Z}={r,mode=dmath}
-}
-Numbers & Fractions \\
-1 & {1\over5} \\
--3 & \frac{1}{5} \\
-\oldfrac{1}{5} & \frac{1}{5} \\
-\end{tblr}
-\end{document}
-```
+## Scientific vs Engineering 
 
 ![table numbers scientific.svg](./attachments/table%20numbers%20scientific.svg)
 
@@ -84,7 +65,7 @@ scientific & engineering \\
 \end{document}
 ```
 
-# Number formattings
+## Pgf
 
 ![table number formats pgf.svg](./attachments/table%20number%20formats%20pgf.svg)
 
@@ -167,6 +148,96 @@ Floating points                           \\
 \end{document}
 ```
 
+
+# Localize, Monetary values, dates
+
+![table numbers datetimes.svg](./attachments/table%20numbers%20datetimes.svg)
+
+English
+
+```latex
+\documentclass[english]{standalone} \renewcommand{\thetable}{2.5a}
+\usepackage{tabularray,babel,datetime2}
+\DTMsetup{useregional}
+\begin{document}
+\begin{tblr}[tall,caption=English format]{ 
+    hline{1,Z}={.08em},hline{2}, row{1}={c},
+    cell{2-Z}{1}={r,cmd={\DTMdate}}, cell{2-Z}{2}={r,cmd={\DTMtime}}, }
+Date & Time \\
+2024-03-03 & 14:55:00 \\
+2024-09-13 & 09:12:28 \\
+\end{tblr}
+\end{document}
+```
+
+British
+
+```latex
+\documentclass[british]{standalone} \renewcommand{\thetable}{2.5b}
+\usepackage{tabularray,babel,datetime2}
+\DTMsetup{useregional}
+\begin{document}
+\begin{tblr}[tall,caption=British format]{ 
+    hline{1,Z}={.08em},hline{2}, row{1}={c},
+    cell{2-Z}{1}={r,cmd={\DTMdate}}, cell{2-Z}{2}={r,cmd={\DTMtime}}, 
+}
+Date & Time \\
+2024-03-03 & 14:55:00 \\
+2024-09-13 & 09:12:28 \\
+\end{tblr}
+\end{document}
+```
+
+German
+
+```latex
+\documentclass[german]{standalone} \renewcommand{\thetable}{2.5c}
+\usepackage{tabularray,babel,datetime2}
+\DTMsetup{useregional}
+\begin{document}
+\begin{tblr}[tall,caption=German format]{ 
+    hline{1,Z}={.08em},hline{2}, row{1}={c},
+    cell{2-Z}{1}={r,cmd={\DTMdate}}, cell{2-Z}{2}={r,cmd={\DTMtime}}, 
+}
+Date & Time \\
+2024-03-03 & 14:55:00 \\
+2024-09-13 & 09:12:28 \\
+\end{tblr}
+\end{document}
+```
+
+Dutch
+
+```latex
+\documentclass[dutch]{standalone} \renewcommand{\thetable}{2.5d}
+\usepackage{tabularray,babel,datetime2}
+\DTMsetup{useregional}
+\begin{document}
+\begin{tblr}[tall,caption=Dutch format]{ hline{1,Z}={.08em},hline{2}, row{1}={c},
+    cell{2-Z}{1}={r,cmd={\DTMdate}}, cell{2-Z}{2}={r,cmd={\DTMtime}}, }
+Date & Time \\
+2024-03-03 & 14:55:00 \\
+2024-09-13 & 09:12:28 \\
+\end{tblr}
+\end{document}
+```
+
+```latex
+\documentclass{article}\pagestyle{empty}
+\usepackage{graphbox}
+\begin{document}
+\begin{minipage}{.45\textwidth} \raggedleft{}
+\includegraphics{table numbers datetime english} \\[1em]
+\includegraphics{table numbers datetime british}
+\end{minipage} \hspace{1em}
+\begin{minipage}{.45\textwidth} \raggedright{}
+\includegraphics{table numbers datetime german} \\[1em]
+\includegraphics{table numbers datetime dutch}
+\end{minipage}
+\end{document}
+```
+
+
 # Prefix, Suffix
 
 ![table numbers money.svg](./attachments/table%20numbers%20money.svg)
@@ -211,11 +282,40 @@ Floating points                           \\
 \end{document}
 ```
 
+# Fractions
+
+![table numbers fractions.svg](./attachments/table%20numbers%20fractions.svg)
+
+```py
+generate_latex_figure(r"""
+\documentclass{standalone} \renewcommand{\thetable}{2.1}
+\usepackage{tabularray}
+\let\oldfrac\frac
+\renewcommand{\frac}[2]{\mathchoice 
+    {\oldfrac{#1}{#2}} {{^{#1}\!/_{\!#2}}}
+    {\oldfrac{#1}{#2}} {\oldfrac{#1}{#2}}  }
+\begin{document}
+\begin{tblr}[tall]{
+    cell{2-Z}{1-Z}={r,mode=math},
+    cell{2}{1-Z}={r,mode=math},
+    cell{3}{1-Z}={r,mode=dmath}
+}
+Numbers & Fractions \\
+1 & {1\over5} \\
+-3 & \frac{1}{5} \\
+\oldfrac{1}{5} & \frac{1}{5} \\
+\end{tblr}
+\end{document}
+""", outfile="table numbers fractions")
+```
+
+
 # Evaluate mathematical terms
 
 ![table numbers evaluate.svg](./attachments/table%20numbers%20evaluate.svg)
 
-```latex
+```py
+generate_latex_figure(r"""
 \documentclass{standalone} \renewcommand{\thetable}{2.6}
 \usepackage{tabularray,tikz}
 \usetikzlibrary{fpu}
@@ -230,13 +330,15 @@ $\begin{tblr}[tall,caption=Evaluate]{ hline{1,Z}={.08em},
 13          & 13      \\
 \end{tblr}$
 \end{document}
+""", outfile="table numbers evaluate")
 ```
 
 # Complex evaluate, assign cell content with PgfPlotsTable
 
 ![table body pgfplotstable.svg](./attachments/table%20body%20pgfplotstable.svg)
 
-```latex
+```py
+generate_latex_figure(r"""
 \documentclass{standalone}
 \usepackage{tabularray,pgfplotstable,amsmath,amssymb,graphicx}
 \renewcommand{\thetable}{2.4}
@@ -268,13 +370,15 @@ $\begin{tblr}[tall,caption=Evaluate]{ hline{1,Z}={.08em},
     13          & 13      \\
 }
 \end{document}
+""", outfile="table body pgfplotstable")
 ```
 
 # Alternative without functional
 
 ![table body number format no functional.svg](./attachments/table%20body%20number%20format%20no%20functional.svg)
 
-```latex
+```py
+generate_latex_figure(r"""
 \documentclass{standalone}
 \usepackage{tabularray,mathtools,tikz}
 \renewcommand{\thetable}{2.1}
@@ -305,17 +409,23 @@ float    & sci      & {sci\\sub.} & frac     & num      \\
 1.0563e6 & 1.0563e6 & 1.0563e6    & 1.0563e6 & 1.0563e6 \\
 \end{tblr}
 \end{document}
+""", outfile="table body number format no functional")
 ```
 
 # Figure collection for note preview
 
 ![table body.svg](./attachments/table%20body.svg)
 
-```latex
+```py
+generate_latex_figure(r"""
 \documentclass{standalone} \usepackage{graphbox}
 \begin{document}
 \includegraphics[align=c]{table numbers scientific notation} \hspace{1em}
 \includegraphics[align=c]{table numbers money} \hspace{1em}
-\includegraphics[align=c]{table numbers evaluate}
+\begin{minipage}{.45\textwidth}
+\includegraphics{table numbers datetime english} \\[1em]
+\includegraphics{table numbers datetime german}
+\end{minipage}
 \end{document}
+""", outfile="table body")
 ```
