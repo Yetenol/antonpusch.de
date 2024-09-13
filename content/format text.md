@@ -80,31 +80,6 @@ devmgmt.msc & Device Manager \\
 
 ![table text color.svg](./attachments/table%20text%20color.svg)
 
-```latex
-\documentclass{standalone} \renewcommand{\thetable}{3.3}
-\usepackage{tabularray,tcolorbox}
-\newtcbox{\xmybox}[1][red]{on line,
-    arc=7pt, opacityback=1,colframe=#1!50!black,
-    before upper={\rule[-3pt]{0pt}{10pt}},boxrule=1pt,
-    boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
-\begin{document}
-\begin{tblr}[tall]{
-    columns={c,m}, hline{1,Z}={.08em},hline{2},
-    column{1}={l}, row{1}={c},
-    cell{2-3}{3}={cmd=\xmybox[green]},
-    cell{4,6}{3}={fg=gray},
-    cell{5}{3}={cmd=\xmybox[red]},
-}
-Name            & ID     & Status  \\
-Megan Johnson   & MD1319 & Active  \\
-Charlotte Davis & GH1256 & Active  \\
-Chloe Jones     & GN7388 & Archive \\
-Emily Smith     & AU2431 & Blocked \\
-Lucy Brown      & JW4939 & Archive \\
-\end{tblr}
-\end{document}
-```
-
 # Hyperlinks
 
 ![table text hyperlinks.svg](./attachments/table%20text%20hyperlinks.svg)
