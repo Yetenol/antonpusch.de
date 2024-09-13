@@ -242,8 +242,8 @@ Date & Time \\
 Select non-empty cells manually
 
 ```latex
-\documentclass[german]{standalone} \renewcommand{\thetable}{2.6a}
-\usepackage{tabularray,babel,textcomp}
+\documentclass{standalone} \renewcommand{\thetable}{2.6a}
+\usepackage{tabularray,textcomp}
 \UseTblrLibrary{siunitx,functional}
 \ExplSyntaxOn
 \regexConst\cNumberPattern {([-+]?(?:\d*[\.\,])?\d+(?:e[-+]?\d+)?)} 
@@ -254,15 +254,15 @@ Select non-empty cells manually
 \ExplSyntaxOff
 \sisetup{round-mode=places,zero-decimal-as-symbol}
 \begin{document}
-\begin{tblr}[tall,caption={Aligned prices with cents}]{
+\begin{tblr}[tall,caption={Prices w/ cents, equal width}]{
     hline{1,Z}={.08em},hline{2}, colspec={lr}, row{1}={c},
     cell{2,3,5}{2}={appto=\,€,cmd=\printNumber},
 }
-Backwaren        & Preis \\
-Roggenbrötchen   & .45   \\
-Bienenstich      & 1     \\
-Kuchen des Tages &       \\
-Mischbrot        & 2,3   \\
+Baked goods     & Price \\
+Pretzel         & .45   \\
+Brownie         & 1     \\
+Cake of the day &       \\
+German bread    & 2,3   \\
 \end{tblr}
 \end{document}
 ```
@@ -296,11 +296,11 @@ generate_latex_figure(r"""
     column{2}={cmd={\printNum{appto={\,€},si={
         round-mode=places,zero-decimal-as-symbol}}}},
 }
-Backwaren        & Preis \\
-Roggenbrötchen   & .45   \\
-Bienenstich      & 1     \\
-Kuchen des Tages &       \\
-Mischbrot        & 2,3   \\
+Baked goods     & Price \\
+Pretzel         & .45   \\
+Brownie         & 1     \\
+Cake of the day &       \\
+German bread    & 2,3   \\
 \end{tblr}
 \end{document}
 """, outfile="table numbers backwaren 2")
