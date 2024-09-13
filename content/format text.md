@@ -76,6 +76,61 @@ devmgmt.msc & Device Manager \\
 \end{document}
 ```
 
+# Text formatting
+
+![table text color.svg](./attachments/table%20text%20color.svg)
+
+```latex
+\documentclass{standalone}
+\usepackage{tabularray,tcolorbox}
+\newtcbox{\xmybox}[1][red]{on line,
+    arc=7pt, opacityback=1,colframe=#1!50!black,
+    before upper={\rule[-3pt]{0pt}{10pt}},boxrule=1pt,
+    boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt}
+\begin{document}
+\begin{tblr}[tall]{
+    columns={c,m}, hline{1,Z}={.08em},hline{2},
+    column{1}={l}, row{1}={c},
+    cell{2-4}{3}={cmd=\xmybox[green]},
+    cell{7}{3}={cmd=\xmybox[red]},
+    cell{5,6,8,9}{3}={fg=gray},
+}
+Name            & ID     & Status  \\
+Megan Johnson   & MD1319 & Active  \\
+Charlotte Davis & GH1256 & Active  \\
+Hannah Wilson   & EU1173 & Active  \\
+Chloe Jones     & GN7388 & Archive \\
+Lucy Brown      & JW4939 & Archive \\
+Emily Smith     & AU2431 & Blocked \\
+Jessica Miller  & MC2798 & Archive \\
+Sophie Williams & WR8993 & Archive \\
+\end{tblr}
+\end{document}
+```
+
+![table text hyperlinks.pdf](./attachments/table%20text%20hyperlinks.pdf)
+
+```latex
+\documentclass{standalone}
+\usepackage{tabularray,hyperref}
+\hypersetup{colorlinks,linkcolor=blue}
+\begin{document}
+\begin{tblr}[tall]{
+    columns={c,m}, hline{1,Z}={.08em},hline{2},
+}
+Name            & ID     & Homepage  \\
+Megan Johnson   & MD1319 & \href{https://en.wikipedia.org/wiki/Amirhossein_Nikpour}{Amirhossein Nikpour - Wikipedia}  \\
+Charlotte Davis & GH1256 & \url{https://en.wikipedia.org/wiki/Diyaluma_Falls}   \\
+Hannah Wilson   & EU1173 &   \\
+Chloe Jones     & GN7388 &  \\
+Lucy Brown      & JW4939 &  \\
+Emily Smith     & AU2431 &  \\
+Jessica Miller  & MC2798 &  \\
+Sophie Williams & WR8993 &  \\
+\end{tblr}
+\end{document}
+```
+
 # Figure collection for note preview
 
 ![table text formatting.svg](./attachments/table%20text%20formatting.svg)
