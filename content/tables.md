@@ -32,9 +32,13 @@ My main resources are the official package documentation of Tabularray[^2], and 
 
 ## Format numbers
 
-- Prefix, Suffix,  numbers right-aligned, text/left center-aligned; Number format, scientific notation, rounding, group every three digits, monospace, evaluate. Stats, also see [more styles](./follow%20varying%20typographic%20conventions%20with%20the%20same%20input%20syntax.md)
-- pgfmathparse, dash 3rd line, math, siunit, pgfmathparse, date, money, command, macro, bold, color, fraction styles
-- dateformat, fraction format, yes/no symbol, 
+Numbers are rich in information, but **visually heavy**. Uniform **right**-aligned, distinct presentation and highlighting of **important figures** makes them easier to use.
+
+- **Scientific notation** $x \cdot 10^y$: emphasizes **significant figures**, is shorter, easier to read and compare, and less prone to error; Use exponents starting from $\pm5$, or multiples of 3 
+- **Align figures**, see 2.5: Separate digits into **thousands**; Cents are **uniformly wide** and stroked if zero
+- **Emphasize differences** of similar values: Short **preceding** or **appended** text but put scientific units in the table header or footer; **Color negative** values
+- **Localize**: Adapt **date** and **time** representation and separators for decimal point, thousands, and exponent to language specifications
+- More: Style fractions; Calculate value of math expressions
 - See source examples: [Format numbers - Evaluate, Round to precision, Set decimal and thousands separator, Use scientific notations](./format%20numbers.md)
 
 ![table body.svg](./attachments/table%20body.svg)
@@ -170,6 +174,7 @@ Calculate column sum
 
 ---
 Sources:
+- [Tables and Figures | Engineering Writing Center | College of Engineering | USU](https://engineering.usu.edu/students/ewc/writing-resources/tables-figures)
 
 Related:
 - [Graphical elements - Standardize tables, images, plots](./graphical%20elements.md)
