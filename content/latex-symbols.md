@@ -8,7 +8,7 @@ priority: 1
 
 # Relations
 
-| Positive relation                                    | negated                     |
+| Symbol and `Macro`                                   | Negated Variant             |
 | ---------------------------------------------------- | --------------------------- |
 | $=$ <code>=</code>                                   | $\ne$ `\ne`, `\neq`         |
 | $\approx$ `\approx`                                  | $\not\approx$ `\not\approx` |
@@ -27,9 +27,10 @@ priority: 1
 | $\sim$ `\sim`                                        | $\nsim$ `\nsim`             |
 | $\ll$ `\ll`                                          | $\not\ll$ `\not\ll`         |
 | $\gg$ `\gg`                                          | $\not\gg$ `\not\gg`         |
-|                                                      |                             |
 
-| Logic/Extensible Arrow                                                                 | negated                                                                                                                        |
+## Logical/Extensible Arrow
+
+| Arrow and `Macro`                                                                      | Negated Variant                                                                                                                |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | $\implies$ `\implies`<br>$\;\xRightarrow{xxx}\;$ `\;\xRightarrow{xxx}\;`               | $\;=\!\nRightarrow\;$ `\;=\!\nRightarrow\;`<br>$\!\!\mathrlap{\quad\not}\implies$ `\mathrlap{\quad\not}\implies`               |
 | $\impliedby$ `\impliedby`<br>$\;\xLeftarrow{xxx}\;$ `\;\xLeftarrow{xxx}\;`<br>         | $\;\nLeftarrow\!=\;$ `\;\nLeftarrow\!=\;`<br>$\!\!\mathrlap{\quad\not}\impliedby$ `\mathrlap{\quad\not}\impliedby`<br>         |
@@ -40,7 +41,9 @@ priority: 1
 | $\xlongequal{xxx}$ `\xlongequal{xxx}`                                                  |                                                                                                                                |
 | $\xmapsto{xxx}$ `\xmapsto{xxx}`                                                        |                                                                                                                                |
 
-| Regular Arrow                                                                                       | another                                                                                     |
+## Regular Arrow
+
+| Arrow and `Macro`                                                                                   | Mirrored Version                                                                            |
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | $\circlearrowright$ `\circlearrowright`                                                             | $\circlearrowleft$ `\circlearrowleft`                                                       |
 | $\curvearrowright$ `\curvearrowright`                                                               | $\curvearrowleft$ `\curvearrowleft`                                                         |
@@ -54,7 +57,7 @@ priority: 1
 | $\Downarrow$ `\Downarrow`                                                                           | $\Uparrow$ `\Uparrow`                                                                       |
 | $\Leftrightarrow$ `\Leftrightarrow`<br>$\Longleftrightarrow$ `\Longleftrightarrow`<br>$\iff$ `\iff` | $\Updownarrow$ `\Updownarrow`                                                               |
 
-See more relations in external resources
+See more relations and arrows in external resources
 - [Relation Symbols](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=2) from LaTeX math symbols
 - Packages for [Relations p. 67](https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf#page=69) or [Arrows p. 94](https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf#page=96) from Comprehensive LaTeX Symbol List
 - [Arrows](https://katex.org/docs/supported#arrows) from KaTeX docs; [Arrows](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf#page=3) from LaTeX math symbols
@@ -65,11 +68,11 @@ Generically negate/comment any relation
 
 # Operators
 
-| Operator                                                                 | another                                                        |
+| Operator and `Macro`                                                     | Similar Operator                                               |
 | ------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | $+$ `+`                                                                  | $-$ `-`                                                        |
 | $\cdot$ `\cdot`<br>$\times$ `\times`                                     | $/$ `/`<br>$\div$ `\div`                                       |
-| $:$ `:`                                                                  | $^\circ$ `^\circ`                                           |
+| $:$ `:`                                                                  | $^\circ$ `^\circ`                                              |
 | $\mid$ `\mid`                                                            | $\parallel$ `\parallel`                                        |
 | $\cup$ `\cup`                                                            | $\cap$ `\cap`                                                  |
 | $\setminus$ `\setminus`                                                  | $\neg$ `\neq`, `lnot`                                          |
@@ -185,244 +188,6 @@ See more delimiters in external resources
 - [Delimiters](https://katex.org/docs/supported#delimiters) from KaTeX docs
 
 ---
-
-# Non-Mathematical Symbols
-
-These symbols can also be used in text mode.
-
-| Command                                 | Rendering      | Name or _Function_                   | Usage Example                                                 |
-| --------------------------------------- | -------------- | ------------------------------------ | ------------------------------------------------------------- |
-| `-`                                     | -              | hyphen                               | daughter-in-law, X-rated                                      |
-| `--`                                    | –              | en-dash                              | pages 13–67                                                   |
-| `---`                                   | —              | em-dash                              | yes—or no?                                                    |
-| `$-1$`                                  | −              | minus-sign                           | 0, 1 and −1                                                   |
-| `/`                                     | /              | _prevents hyphenation_               | 5 MB/s                                                        |
-| `\slash{}`                              | /              | _supports hyphenation_               | read/write                                                    |
-| `\ldots{}`                              | …              | ellipsis                             | a, b, c, …                                                    |
-| `Mr.~Smith`                             | Mr.&#160;Smith | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith ⠀win ⠀today?                              |
-| `\dag{}`                                | †              | Dagger                               |                                                               |
-| `\ddag{}`                               | ‡              | Double Dagger                        |                                                               |
-| `\S{}`                                  | §              | Section Sign                         |                                                               |
-| `\P{}`                                  | ¶              | Pilcrow Sign                         |                                                               |
-| `\%{}`                                  | %              | Percent Sign                         |                                                               |
-| `\textsuperscript{\textcopyright}`      | ©              | Copyright Sign                       |                                                               |
-| `\textsuperscript{\textregistered}`     | ®              | Registered Trade Mark Sign           |                                                               |
-| `\texttrademark{}`                      | ™              | Trade Mark Sign                      |                                                               |
-| `\unit{\degree}` <br> `\textdegree{}`   | °              | Degree Sign                          | [siunitx](https://texdoc.org/serve/siunitx/0) <br> _built in_ |
-| `\ang{5}`                               | 5°             | Angle                                | [siunitx](https://texdoc.org/serve/siunitx/0)                 |
-| `\unit{\celsius}` <br> `\textcelsius{}` | ℃              | Degree Celsius                       | [siunitx](https://texdoc.org/serve/siunitx/0) <br> _built in_ |
-| `\qty{5}{\celsius}`                     | 5 ℃            |                                      | [siunitx](https://texdoc.org/serve/siunitx/0)                 |
-
-# Money and currencies
-
-`€`, `\$`, `pounds` and `\yen` are not recommended
-
-| Dependency                                                                                       | Command      | Rendering |         |
-| ------------------------------------------------------------------------------------------------ | ------------ | --------- | ------- |
-| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\cEUR{}`    | €         | setup]] |
-| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\cUSD{}`    | $         | setup]] |
-| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\cJPY{}`    | ¥         | setup]] |
-| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\cGBP{}`    | £         | setup]] |
-| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\dEUR{1.5}` | 1.50 €    | setup]] |
-| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\dUSD{1.5}` | $ 1.50    | setup]] |
-| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\dJPY{1.5}` | 2 ¥       | setup]] |
-| [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values - | `\dGBP{1.5}` | £ 1.50    | setup]] |
-
-# Degree Symbols
-
-| Command           | Rendering        | Dependency         |
-| ----------------- | ---------------- | ------------------ |
-| `^\circ`          | $^\circ$         |                    |
-| `\unit{\degree}`  | $^\circ$         | [siunitx](https://texdoc.org/serve/siunitx/0) |
-| `\unit{\celsius}` | $^\circ\text{C}$ | [siunitx](https://texdoc.org/serve/siunitx/0) |
-
-# Math Mode Accents
-
-| Command           | Rendering         |
-| ----------------- | ----------------- |
-| `\acute{a}`       | $\acute{a}$       |
-| `\bar{a}`         | $\bar{a}$         |
-| `\breve{a}`       | $\breve{a}$       |
-| `\check{a}`       | $\check{a}$       |
-| `\ddot{a}`        | $\ddot{a}$        |
-| `\dot{a}`         | $\dot{a}$         |
-| `\grave{a}`       | $\grave{a}$       |
-| `\hat{a}`         | $\hat{a}$         |
-| `\mathring{a}`    | $\mathring{a}$    |
-| `\tilde{a}`       | $\tilde{a}$       |
-| `\vec{a}`         | $\vec{a}$         |
-| `\widehat{AAA}`   | $\widehat{AAA}$   |
-| `\widetilde{AAA}` | $\widetilde{AAA}$ |
-
-Set the **style** of the letter in the preamble
-
-| Preamble Command                       | Rendering     | Original   | Dependency                                    |
-| -------------------------------------- | ------------- | ---------- | --------------------------------------------- |
-| `\renewcommand{\epsilon}{\varepsilon}` | $\varepsilon$ | $\epsilon$ |                                               |
-| `\renewcommand{\theta}{\vartheta}`     | $\vartheta$   | $\theta$   |                                               |
-| `\renewcommand{\kappa}{\varkappa}`     | $\varkappa$   | $\kappa$   | [amssymb](https://texdoc.org/serve/amssymb/0) |
-| `\renewcommand{\pi}{\varpi}`           | $\varpi$      | $\pi$      |                                               |
-| `\renewcommand{\rho}{\varrho}`         | $\varrho$     | $\rho$     |                                               |
-| `\renewcommand{\sigma}{\varsigma}`     | $\varsigma$   | $\sigma$   |                                               |
-| `\renewcommand{\phi}{\varphi}`         | $\varphi$     | $\phi$     |                                               |
-
-# Hebrew Letters
-
-| Command   | Rendering | Dependency         |
-| --------- | --------- | ------------------ |
-| `\beth`   | $\beth$   | [amssymb](https://texdoc.org/serve/amssymb/0) |
-| `\gimel`  | $\gimel$  | [amssymb](https://texdoc.org/serve/amssymb/0) |
-| `\daleth` | $\daleth$ | [amssymb](https://texdoc.org/serve/amssymb/0) |
-
-# Number sets
-
-| Command      | Rendering    |
-| ------------ | ------------ |
-| `\mathbb{A}` | $\mathbb{A}$ |
-| `\mathbb{C}` | $\mathbb{C}$ |
-| `\mathbb{H}` | $\mathbb{H}$ |
-| `\mathbb{N}` | $\mathbb{N}$ |
-| `\mathbb{O}` | $\mathbb{O}$ |
-| `\mathbb{Q}` | $\mathbb{Q}$ |
-| `\mathbb{R}` | $\mathbb{R}$ |
-| `\mathbb{S}` | $\mathbb{S}$ |
-| `\mathbb{Z}` | $\mathbb{Z}$ |
-|              |              |
-
-# Favorites
-
-| Command      | Rendering    |
-| ------------ | ------------ |
-| `\lnot`      | $\lnot$      |
-| `\land`      | $\land$      |
-| `\lor`       | $\lor$       |
-| `\to`        | $\to$        |
-| `\gets`      | $\gets$      |
-| `\iff`       | $\iff$       |
-| `\implies`   | $\implies$   |
-| `\impliedby` | $\impliedby$ |
-| `\mathbb{R}` | $\mathbb{R}$ |
-| `\approx`    | $\approx$    |
-| `\subseteq`  | $\subseteq$  |
-| `\supseteq`  | $\supseteq$  |
-| `\setminus`  | $\setminus$  |
-| `\times`     | $\times$     |
-| `\leq`       | $\leq$       |
-| `\geq`       | $\geq$       |
-| `\cap`       | $\cap$       |
-| `\cup`       | $\cup$       |
-
-# Arrows as Accents
-
-| Command                    | Rendering                  |
-| -------------------------- | -------------------------- |
-| `\overrightarrow{AB}`      | $\overrightarrow{AB}$      |
-| `\underrightarrow{AB}`     | $\underrightarrow{AB}$     |
-| `\overleftarrow{AB}`       | $\overleftarrow{AB}$       |
-| `\underleftarrow{AB}`      | $\underleftarrow{AB}$      |
-| `\overleftrightarrow{AB}`  | $\overleftrightarrow{AB}$  |
-| `\underleftrightarrow{AB}` | $\underleftrightarrow{AB}$ |
-
-# Delimiters
-
-# Large Delimiters
-
-| Command       | Rendering     |
-| ------------- | ------------- |
-| `\lgroup`     | $\lgroup$     |
-| `\rgroup`     | $\rgroup$     |
-| `\lmoustache` | $\lmoustache$ |
-| `\arrowvert`  | $\arrowvert$  |
-| `\Arrowvert`  | $\Arrowvert$  |
-| `\bracevert`  | $\bracevert$  |
-| `\rmoustache` | $\rmoustache$ |
-
-# Miscellaneous Symbols
-
-| Command              | Rendering            | Variants       | Dependency                                      |
-| -------------------- | -------------------- | -------------- | ----------------------------------------------- |
-| `\dots`              | $\dots$              |                |                                                 |
-| `\cdots`             | $\cdots$             |                |                                                 |
-| `\vdots`             | $\vdots$             |                |                                                 |
-| `\ddots`             | $\ddots$             |                |                                                 |
-| `\hbar`              | $\hbar$              |                |                                                 |
-| `\imath`             | $\imath$             |                |                                                 |
-| `\jmath`             | $\jmath$             |                |                                                 |
-| `\ell`               | $\ell$               |                |                                                 |
-| `\Re`                | $\Re$                |                |                                                 |
-| `\Im`                | $\Im$                |                |                                                 |
-| `\aleph`             | $\aleph$             |                |                                                 |
-| `\wp`                | $\wp$                |                |                                                 |
-| `\forall`            | $\forall$            |                |                                                 |
-| `\exists`            | $\exists$            |                |                                                 |
-| `\mho`               | $\mho$               |                | [latexsym](https://texdoc.org/serve/latexsym/0) |
-| `\partial`           | $\partial$           |                |                                                 |
-| `'`                  | $'$                  |                |                                                 |
-| `\prime`             | $\prime$             |                |                                                 |
-| `\emptyset`          | $\emptyset$          |                |                                                 |
-| `\infty`             | $\infty$             |                |                                                 |
-| `\nabla`             | $\nabla$             |                |                                                 |
-| `\triangle`          | $\triangle$          | $\vartriangle$ | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\Box`               | $\Box$               |                | [latexsym](https://texdoc.org/serve/latexsym/0) |
-| `\Diamond`           | $\Diamond$           |                | [latexsym](https://texdoc.org/serve/latexsym/0) |
-| `\bot`               | $\bot$               |                |                                                 |
-| `\top`               | $\top$               |                |                                                 |
-| `\angle`             | $\angle$             |                |                                                 |
-| `\surd`              | $\surd$              |                |                                                 |
-| `\diamondsuit`       | $\diamondsuit$       |                |                                                 |
-| `\heartsuit`         | $\heartsuit$         |                |                                                 |
-| `\clubsuit`          | $\clubsuit$          |                |                                                 |
-| `\spadesuit`         | $\spadesuit$         |                |                                                 |
-| `\neg` <br> `\lnot`  | $\neg$ <br> $\lnot$  |                |                                                 |
-| `\flat`              | $\flat$              |                |                                                 |
-| `\natural`           | $\natural$           |                |                                                 |
-| `\sharp`             | $\sharp$             |                |                                                 |
-| `\square`            | $\square$            |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\vartriangle`       | $\vartriangle$       |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\triangledown`      | $\triangledown$      |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\lozenge`           | $\lozenge$           |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\diagup`            | $\diagup$            |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\hslash`            | $\hslash$            |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\blacksquare`       | $\blacksquare$       |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\blacktriangle`     | $\blacktriangle$     |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\blacktriangledown` | $\blacktriangledown$ |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\blacklozenge`      | $\blacklozenge$      |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\measuredangle`     | $\measuredangle$     |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\diagdown`          | $\diagdown$          |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\nexists`           | $\nexists$           |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\Finv`              | $\Finv$              |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\eth`               | $\eth$               |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\sphericalangle`    | $\sphericalangle$    |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\Bbbk`              | $\Bbbk$              |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\circledS`          | $\circledS$          |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\complement`        | $\complement$        |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\Game`              | $\Game$              |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\bigstar`           | $\bigstar$           |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\backprime`         | $\backprime$         |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\varnothing`        | $\varnothing$        |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-| `\mho`               | $\mho$               |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
-
-Set the **style** of the symbols in the preamble
-
-| Preamble Command                         | Rendering      | Original    | Dependency         |
-| ---------------------------------------- | -------------- | ----------- | ------------------ |
-| `\renewcommand{\triangle}{\vartriangle}` | $\vartriangle$ | $\triangle$ | [amssymb](https://texdoc.org/serve/amssymb/0) |
-
-# Math Alphabets
-
-example TEXT: `ABCDEabcde1234`
-
-| Command             | Rendering                     | Dependency                                                                                       |
-| ------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------ |
-| `\mathrm{TEXT}`     | $\mathrm{ABCDEabcde1234}$     |                                                                                                  |
-| `\mathit{TEXT}`     | $\mathit{ABCDEabcde1234}$     |                                                                                                  |
-| `\mathnormal{TEXT}` | $\mathnormal{ABCDEabcde1234}$ |                                                                                                  |
-| `\mathcal{TEXT}`    | $\mathcal{ABCDE}$             |                                                                                                  |
-| `\mathscr{TEXT}`    | $\mathscr{ABCDE}$             | [mathrsfs](https://texdoc.org/serve/mathrsfs/0)                                                  |
-| `\mathfrak{TEXT}`   | $\mathfrak{ABCDEabcde1234}$   | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |
-| `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amssymb/0) |
-
----
 Sources:
 - 2022-06-10: [The Not So Short Introduction to LaTeX2e](https://tobi.oetiker.ch/lshort/lshort.pdf)
 - 2022-06-10: [LaTeX Math Symbols Cheat Sheet - Kapeli](https://kapeli.com/cheat_sheets/LaTeX_Math_Symbols.docset/Contents/Resources/Documents/index)
@@ -431,6 +196,7 @@ Sources:
 
 Related:
 [Vary the style of mathematical symbols - ϖ vs π](Vary%20the%20style%20of%20mathematical%20symbols%20-%20%CF%96%20vs%20%CF%80.md)
+[Other LaTeX symbols](Other%20LaTeX%20symbols.md)
 
 Tags:
 [Values  - Standardize math, numbers, symbols, quantities, money](./values.md)
