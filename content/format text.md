@@ -80,6 +80,32 @@ devmgmt.msc & Device Manager \\
 
 ![table text color.svg](./attachments/table%20text%20color.svg)
 
+
+```latex
+\documentclass{standalone} \renewcommand{\thetable}{3.3}
+\usepackage{tabularray,tcolorbox}
+\newtcbox{\xmybox}[1][red]{opacityback=0,on line,arc=6pt, 
+    standard jigsaw, colframe=#1!50!black,boxrule=1pt,
+    boxsep=0pt,left=5pt,right=5pt,top=3pt,bottom=3pt}
+\begin{document}
+\begin{tblr}[tall]{
+    columns={c,m}, hline{1,Z}={.08em},hline{2},
+    column{1}={l}, row{1}={c}, rows={ht=1.5em},
+    %cell{2-Z}{2}={font=\ttfamily},
+    cell{2-3}{3}={cmd=\xmybox[green]},
+    cell{4,6}{3}={fg=gray},
+    cell{5}{3}={cmd=\xmybox[red]},
+}
+Name            & ID     & Status  \\
+Megan Johnson   & MD1319 & Active  \\
+Charlotte Davis & GH1256 & Active  \\
+Chloe Jones     & IN$7388$ & Archive \\
+Emily Smith     & AU2431 & Blocked \\
+Lucy Brown      & JW4939 & Archive \\
+\end{tblr}
+\end{document}
+```
+
 # Hyperlinks
 
 ![table text hyperlinks.svg](./attachments/table%20text%20hyperlinks.svg)
