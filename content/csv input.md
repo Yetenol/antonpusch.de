@@ -42,12 +42,7 @@ $t$ in ms & $U_1$ in V \\
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
 \ExplSyntaxOn
-\boolConst\cDoDebug{\cFalseBool}
-\boolVarIfT\cDoDebug{ \nonstopmode }
 \regexConst\cNumberPattern {([-+]?(?:\d*\.)?\d+(?:e[-+]?\d+)?)} 
-\prgNewFunction\showIf{ m }{
-    \boolVarIfT\cDoDebug{ \tlShow{\evalWhole{#1}} }
-}
 \prgNewFunction\tblrRangesToList{ mm }{ 
     \__tblr_get_childs:nx{#1}{#2}  \prgReturn{\tlUse\l_tblr_childs_clist} }
 \prgNewConditional\cellExtractNumber{ mmn }{
@@ -55,10 +50,8 @@ $t$ in ms & $U_1$ in V \\
         \evalWhole{ \cellGetText{#1}{#2} }
     }\lTmpaSeq{
         \fpSet{#3}{\evalWhole{ \seqVarItem\lTmpaSeq{1} }}
-        \showIf{NUMBER~{#1}{#2}={\seqVarItem\lTmpaSeq{1}}}
         \prgReturn\cTrueBool
     }{
-        \showIf{NO-NUMBER~{#1}{#2}}
         \prgReturn\cFalseBool
     }
 }
@@ -69,30 +62,17 @@ $t$ in ms & $U_1$ in V \\
     \propGet\lTmpbProp{accum}\lTmpaTl 
     \propGetTF\lTmpbProp{initial}\lTmpbTl{ \fpSet\lTmpaFp{ \tlUse\lTmpbTl }}{
         \fpZero\lTmpaFp }
-    \showIf{>>>ACCUMULATE~{\tlUse\lTmpaClist}{\tlUse\lTmpbClist}~
-        a={\tlUse\lTmpaTl}, i={\propVarItem\lTmpbProp{initial}}}
     \clistSet\lTmpaClist{ 
         \tblrRangesToList{\tlUse\lTmpaClist}{\arabic{rowcount}} }
     \clistSet\lTmpbClist{ 
         \tblrRangesToList{\tlUse\lTmpbClist}{\arabic{colcount}} }
     \clistVarMapInline\lTmpaClist{\clistVarMapInline\lTmpbClist{
-        \cellExtractNumberTF{##1}{####1}\lTmpcFp{
-            \fpCompareTF{\lTmpaFp}={inf}{  
-                \tlSet\lTmpdTl{inf} 
-            }{ \fpCompareTF{\lTmpaFp}={-inf}{
-                \tlSet\lTmpdTl{-inf} 
-            }{    
-                \tlSet\lTmpdTl{\fpUse\lTmpaFp}
-            }}
-            \showIf{USE~{##1}{####1}~a={\tlUse\lTmpdTl} ,cell={\fpUse\lTmpcFp}, {\tlUse\lTmpaTl}={\fpEval{ \lTmpaTl }}}
+        \cellExtractNumberT{##1}{####1}\lTmpcFp{
             \fpSet\lTmpaFp{\fpEval{ \lTmpaTl }}
-        }{
-            \showIf{skipped~r={##1}, c={####1}}
         }
     }}
-    \showIf{>>>ACCUMULATE~{\tlUse\lTmpaClist}{\tlUse\lTmpbClist}~resulted={\fpUse\lTmpaFp}}
     \prgReturn{ \fpUse\lTmpaFp } }
-\prgNewFunction\printScientificNotation{ m }{
+\prgNewFunction\printNumber{ m }{
     \tlSet\lTmpaTl{\evalWhole{#1}}
     \regexVarReplaceOnce\cNumberPattern{\c{pgfmathprintnumber}\cB\{\0\cE\}}\lTmpaTl
     \prgReturn{ \tlUse\lTmpaTl }}
@@ -113,7 +93,7 @@ $t$ in ms & $U_1$ in V \\
 \begin{tblr}[tall,caption={Statistics\vphantom{g}},evaluate=\fileInput, ]{
 hline{5,8,11,14,17}={dashed},
 hline{1,Z}={.08em},hline{2,X}, columns={r}, row{1}={c},
-cell{2-Z}{2}={cmd=\printScientificNotation},
+cell{2-Z}{2}={cmd=\printNumber},
 cell{Y}{2}={preto=\cellMean{r=2-X,c=2} },
 cell{Z}{2}={preto=\cellStandardDeviation{r=2-X,c=2} },
 }
