@@ -68,3 +68,6 @@ Related:
 
 Tags:
 [Computer Language](./computer%20language.md)
+
+https://blog.ppresume.com/posts/on-typesetting-engines
+On Typesetting Engines: A Programmer's Perspective https://blog.ppresume.com/posts/on-typesetting-engines
