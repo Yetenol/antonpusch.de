@@ -180,7 +180,7 @@ $$
 # Things to avoid, deprecated, bad syntax
 
 - no `\\` at end of align
-- put `[]` after suqenvironments
+- put `[]` after subenvironments
 - [How not to typeset math in latex](How%20not%20to%20typeset%20math%20in%20latex.md)
 Deprecated
 - eqnarray
