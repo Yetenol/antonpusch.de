@@ -1,4 +1,5 @@
 ---
+title: "Git - Track changes, collaborate, and backup"
 dg-publish: true
 dg-show-toc: true
 ---
@@ -131,3 +132,12 @@ Related:
 
 Tags:
 [Computer Language](./computer%20language.md)
+
+https://mergiraf.org/
+
+https://github.com/JohannesKaufmann/html-to-markdown
+https://github.com/dandavison/delta
+
+https://mergiraf.org/
+
+Introduction - Mergiraf https://mergiraf.org/
