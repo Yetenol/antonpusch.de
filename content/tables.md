@@ -32,11 +32,11 @@ My main resources are the official package documentation of Tabularray[^2], and 
 
 ## Format numbers
 
-Numbers are rich in information, but **visually heavy**. Uniform **right**-aligned, distinct presentation and highlighting of **important figures** makes them easier to use.
+Numbers are very information-dense, but visually heavy. To make them understandable at a glance, and quicker and more robust to use, format them **right**-aligned, unify their presentation with **separation** and **exponents** that also emphasize **significant digits**, and most importantly, keep them consistent.
 
-- **Scientific notation** $x \cdot 10^y$, see 2.2: emphasizes **significant figures**, is shorter, easier to read and compare, and less prone to error; Use exponents starting from $\pm5$, or multiples of 3 
+- **Scientific notation** $x \cdot 10^y$: emphasizes **significant figures**, is shorter, easier to read and compare, and less prone to error; Use exponents starting from $\pm5$, or multiples of 3 
 - **Align figures**, see 2.5: Separate digits into **thousands**; Cents are **uniformly wide** and stroked if zero
-- **Emphasize differences** of similar values, see 2.5: Short **preceding** or **appended** text but put scientific units in the table header or footer; **Color negative** values
+- **Emphasize differences** of similar values: Short **preceding** or **appended** text but put scientific units in the table header or footer; **Color negative** values
 - **Localize**: Adapt **date** and **time** representation and separators for decimal point, thousands, and exponent to language specifications
 - More: Style fractions; Calculate value of math expressions
 - See source examples: [Format numbers - Evaluate, Round to precision, Set decimal and thousands separator, Use scientific notations](./format%20numbers.md)

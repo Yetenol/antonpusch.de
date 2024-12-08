@@ -59,9 +59,22 @@ $$
 ![figure heatmap.svg](./attachments/figure%20heatmap.svg)
 
 
+- Fractals
+- Public transport map
+- (trail) Maps
+- orbital paths
+- engineering blueprint
+- Minecraft blueprint
+- Factorio blueprint
+- music notes
+- timeline
+- geographic maps with transparent circles
+- low-poly art
+
+
 - [Values  - Standardize math, numbers, symbols, quantities, money](./values.md)
 - [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./float.md)
-- [Graphics, Plots - Generate dynamic professional vector graphics with matching fonts, design](./graphics%20plots.md)
+- [Graphics, Plots, Visualization - Generate dynamic professional vector graphics with matching fonts, design](./graphics%20plots,%20visualization.md)
 - [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 - [Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials](./learn%20and%20troubleshoot%20latex.md)
 - [Project structure - Create folders for setup, resources, bibliographies](./project%20structure.md)
@@ -72,7 +85,9 @@ $$
 Color gradients
 - [Color gradients and my gradual descent into madness – Typst Blog](https://typst.app/blog/2023/color-gradients/)
 
-
+Animation
+- [GitHub - ManimCommunity/manim: A community-maintained Python framework for creating mathematical animations.](https://github.com/ManimCommunity/manim/)
+![Untitled Diagram 8.svg](Untitled%20Diagram%208.svg)
 Learn, Troubleshoot, Debugging/Help/Documentation
 - keep package number low
 - don't create macros

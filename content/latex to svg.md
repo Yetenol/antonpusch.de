@@ -51,7 +51,7 @@ def compile_and_crop_figure(latex_source, attachments_folder, compiler="pdflatex
         subprocess.run(['texfot', 'pdflatex', 
             f'-output-directory={intermediates_folder}', input_file])
         for _ in range(rerun):
-            subprocess.run(['texfot', 'pdflatex', 
+            subprocess.run(['texfot', 'pdflatex',
                 f'-output-directory={intermediates_folder}', input_file])
     with temporary_working_directory(intermediates_folder):
         if not is_standalone_class(latex_source):
