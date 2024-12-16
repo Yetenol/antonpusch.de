@@ -5,8 +5,6 @@ dg-publish: true
 
 # Tikzpicture
 
-- [Embed TikZ in Obsidian](Embed%20TikZ%20in%20Obsidian.md)
-
 ![figure tikz 2.svg](./attachments/figure%20tikz%202.svg)
 
 ```latex
@@ -26,9 +24,9 @@ dg-publish: true
 \end{document}
 ```
 
-# 3D Plot - PgfPlots
+- Source: [GitHub - artisticat1/obsidian-tikzjax](https://github.com/artisticat1/obsidian-tikzjax)
 
-- [Embed TikZ in Obsidian](Embed%20TikZ%20in%20Obsidian.md)
+# 3D Plot - PgfPlots
 
 ![figure 3d plot.svg](./attachments/figure%203d%20plot.svg)
 
@@ -46,6 +44,7 @@ dg-publish: true
 \end{document}
 ```
 
+- Source: Obsidian TikZJax[^1]
 # Figure collection for note preview
 
 ![figure plots.svg](./attachments/figure%20plots.svg)
@@ -58,3 +57,12 @@ dg-publish: true
 \includegraphics{figure 3d plot.pdf}
 \end{document}
 ```
+
+
+---
+Sources:
+[^1]: [GitHub - artisticat1/obsidian-tikzjax: Render LaTeX and TikZ diagrams in your notes](https://github.com/artisticat1/obsidian-tikzjax)
+
+Related:
+
+Tags:
