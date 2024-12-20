@@ -5,8 +5,7 @@ dg-publish: true
 
 # Electrical circuit
 
-- [Embed TikZ in Obsidian](Embed%20TikZ%20in%20Obsidian.md)
-
+Example from [Obsidian TikZJax](https://github.com/artisticat1/obsidian-tikzjax)
 ![figure electrical circuit.svg](./attachments/figure%20electrical%20circuit.svg)
 
 ```latex
