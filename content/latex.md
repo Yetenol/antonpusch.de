@@ -58,6 +58,9 @@ $$
 
 ![figure heatmap.svg](./attachments/figure%20heatmap.svg)
 
+[Gantt chart](./gantt%20chart.md)
+
+![gantt portfolio examination.svg](./attachments/gantt%20portfolio%20examination.svg)
 
 - Fractals
 - Public transport map
@@ -87,7 +90,6 @@ Color gradients
 
 Animation
 - [GitHub - ManimCommunity/manim: A community-maintained Python framework for creating mathematical animations.](https://github.com/ManimCommunity/manim/)
-![Untitled Diagram 8.svg](Untitled%20Diagram%208.svg)
 Learn, Troubleshoot, Debugging/Help/Documentation
 - keep package number low
 - don't create macros
@@ -139,6 +141,7 @@ Related:
 - [Markdown - Write plaintext in a centralized location and generate to PDF, Jupiter notebooks, web pages, social media posts](Markdown%20-%20Write%20plaintext%20in%20a%20centralized%20location%20and%20generate%20to%20PDF,%20Jupiter%20notebooks,%20web%20pages,%20social%20media%20posts.md)
 - [Excel to latex - Embed spreadsheet files as latex tables](Excel%20to%20latex%20-%20Embed%20spreadsheet%20files%20as%20latex%20tables.md)
 - [latex, pdf to cropped svg - Redraw selection of a pdf as paths in a svg with Inkscape](latex,%20pdf%20to%20cropped%20svg%20-%20Redraw%20selection%20of%20a%20pdf%20as%20paths%20in%20a%20svg%20with%20Inkscape.md)
+- [The Errors of TeX [pdf] (1989)](The%20Errors%20of%20TeX%20pdf)
  
 
 Tags:
