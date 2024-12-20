@@ -230,7 +230,7 @@ Hide the language swapper icon in the taskbbar
 intl.cpl
 ```
 
-- `English (Germany)` ← Format
+- `English (United States)` ← Format
 - Click `Additional settings...`  
   - Open `Numbers` tab
     - `.` ← Decimal symbol
