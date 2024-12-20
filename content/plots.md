@@ -24,7 +24,7 @@ dg-publish: true
 \end{document}
 ```
 
-- Source: [GitHub - artisticat1/obsidian-tikzjax](https://github.com/artisticat1/obsidian-tikzjax)
+- Example from [Obsidian TikZJax](https://github.com/artisticat1/obsidian-tikzjax) 
 
 # 3D Plot - PgfPlots
 
@@ -44,7 +44,8 @@ dg-publish: true
 \end{document}
 ```
 
-- Source: Obsidian TikZJax[^1]
+- Example from [Obsidian TikZJax](https://github.com/artisticat1/obsidian-tikzjax) 
+
 # Figure collection for note preview
 
 ![figure plots.svg](./attachments/figure%20plots.svg)
@@ -57,12 +58,3 @@ dg-publish: true
 \includegraphics{figure 3d plot.pdf}
 \end{document}
 ```
-
-
----
-Sources:
-[^1]: [GitHub - artisticat1/obsidian-tikzjax: Render LaTeX and TikZ diagrams in your notes](https://github.com/artisticat1/obsidian-tikzjax)
-
-Related:
-
-Tags:

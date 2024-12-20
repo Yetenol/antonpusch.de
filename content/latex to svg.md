@@ -4,16 +4,24 @@ dg-publish: true
 ---
 # Dependencies
 
-[TeX Live](https://www.tug.org/texlive/)
-- `pdflatex`: Compile LaTeX source to PDF
-- `texfot`: filter pdflatex stdout to only relevant messages , see [CTAN: Package texdoc](https://ctan.org/pkg/texdoc)
-- `pdfcrop`: trim PDF of whitespace border, see [CTAN: Package pdfcrop](https://ctan.org/pkg/pdfcrop)
+TeX Live
+- Install from website [Easy install - tug.org](https://www.tug.org/texlive/windows.html) 
+- Provides `pdflatex` to compile LaTeX source to PDF
+- Provides `texfot` to filter pdflatex stdout to only relevant messages , see [CTAN: Package texdoc](https://ctan.org/pkg/texdoc)
+- Provides `pdfcrop` to trim PDF of whitespace border, see [CTAN: Package pdfcrop](https://ctan.org/pkg/pdfcrop)
 
-[pdf2svg](https://github.com/dawbarton/pdf2svg)
+pdf2svg
+- Clone repository [dawbarton/pdf2svg](https://github.com/dawbarton/pdf2svg)
+- Add `dist-64bits` subfolder to PATH environment variable
 - Convert PDF to SVG
 
-[Execute Code](./execute%20code.md)
+Execute Code
+- Install Obsidian extension via Comminity plugins, Webstore
 - Generate LaTeX figure from Obsidian code block
+
+Python
+- Install from website [Downloads - python.org](https://www.python.org/downloads/)
+- Execute tools from Obsidian code blocks
 
 # Setup Execute Code
 
@@ -174,3 +182,14 @@ if check_file_for_patterns(r'C:\Users\anton\AppData\Local\Temp\tmpxnojtw_g\figur
 else:
     print("No rerun needed. Compilation complete.")
 ```
+
+
+---
+Sources:
+
+Related:
+
+Tags:
+[TeX Live](./tex%20live.md)
+[pdf2svg](pdf2svg)
+[Python](Python.md)

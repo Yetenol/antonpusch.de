@@ -1,4 +1,5 @@
 ---
+title: "Uninstall pre-installed apps"
 dg-publish: true
 priority: 2
 ---
@@ -35,6 +36,7 @@ winget uninstall -e Disney.37853FC22B2CE_6rarf9sa4v8jt                     # Dis
 winget uninstall -e XINGAG.XING_xpfg3f7e9an52                              # XING
 winget uninstall -e Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe           # Power Automate
 winget uninstall -e Microsoft.BingWeather_8wekyb3d8bbwe                    # Weather
+winget uninstall -e Microsoft.DevHome # Dev Home
 ```
 
 # Hardware specific configuration apps

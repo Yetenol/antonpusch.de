@@ -5,8 +5,6 @@ dg-publish: true
 
 # Chemistry
 
-- [Embed TikZ in Obsidian](Embed%20TikZ%20in%20Obsidian.md)
-
 ![figure stereochemistry.svg](./attachments/figure%20stereochemistry.svg)
 
 ```latex
@@ -18,9 +16,10 @@ dg-publish: true
 \end{document}
 ```
 
+- Example from [Obsidian TikZJax](https://github.com/artisticat1/obsidian-tikzjax) 
+
 # Molecule with repeating pattern
 
-- [Embed TikZ in Obsidian](Embed%20TikZ%20in%20Obsidian.md)
 
 ![figure molecule repeating.svg](./attachments/figure%20molecule%20repeating.svg)
 
@@ -38,6 +37,8 @@ dg-publish: true
     !\fragment{234} !\fragment{306} }
 \end{document}
 ```
+
+- Example from [Obsidian TikZJax](https://github.com/artisticat1/obsidian-tikzjax) 
 
 # Figure collection for note preview
 
