@@ -60,7 +60,7 @@ $$
 
 [Gantt chart](./gantt%20chart.md)
 
-![gantt portfolio examination.svg](./attachments/gantt%20portfolio%20examination.svg)
+![gantt portfolio examination 2.svg](./attachments/gantt%20portfolio%20examination%202.svg)
 
 Roadmap for further data visualizations
 
@@ -88,17 +88,17 @@ Learn, Troubleshoot, Debugging/Help/Documentation
 - keep package number low
 - don't create macros
 - problem with text, quotes, math, tables, images, floats, listings, layout, development, setup, conversion, compile time, plots, graphics, citations
+- [Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials](./learn%20and%20troubleshoot%20latex.md)
+- [Develop LaTeX packages](./develop%20latex%20packages.md)
 
 Other topics
 
 - [Values  - Standardize math, numbers, symbols, quantities, money](./values.md)
 - [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./float.md)
 - [Graphics, Plots, Visualization - Generate dynamic professional vector graphics with matching fonts, design](./graphics%20plots,%20visualization.md)
-- [Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials](./learn%20and%20troubleshoot%20latex.md)
 - [Project structure - Create folders for setup, resources, bibliographies](./project%20structure.md)
 - [Graphical elements - Standardize tables, images, plots](./graphical%20elements.md)
 - [Layout the document - Setup margins, hyphenation, table of contents](./layout%20the%20document.md)
-- [Develop LaTeX packages](./develop%20latex%20packages.md)
 
 Color gradients
 - [Color gradients and my gradual descent into madness – Typst Blog](https://typst.app/blog/2023/color-gradients/)
