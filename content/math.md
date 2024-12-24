@@ -182,15 +182,26 @@ $$
 - no `\\` at end of align
 - put `[]` after subenvironments
 - [How not to typeset math in latex](How%20not%20to%20typeset%20math%20in%20latex.md)
+
 Deprecated
-- eqnarray
+- package eqnarray
 - font syntax
-- stackrel
-- xalignat, xxalignat
+- macro stackrel
+- environments xalignat and  xxalignat
 - new operator [Mathematical Typesetting with Latex 0.34 2024-02-06, page 41](./attachments/mathematical%20typesetting%20with%20latex%200.34%202024-02-06.pdf.md#page=41&selection=259,7,259,18)
 
 - In markdown put display math delimiters `$$` on a separate line
 - Don't leave spaces in front of caret to prevent block reference detection (write `a^2` instead of `a ^2`)
+
+# Alternatives
+
+OfficeMath for Microsoft Office
+- [OfficeMath - Math in Office](https://devblogs.microsoft.com/math-in-office/officemath/)
+- [OfficeMath - Create mathematical equations and expressions in Microsoft Office products](./officemath.md)
+
+Typst Math
+- [Math – Typst Documentation](https://typst.app/docs/reference/math/)
+- [TYPST - A modern, readable, robust, fast typesetting system](./typst.md)
 
 [^1]: [Mathematical Typesetting with LaTeX](https://www.tug.org/~hvoss/PDF/mathmode.pdf) by Herbert Voß in 2024 which is an updated version of his 2014 [Math mode](https://mirror.physik.tu-berlin.de/pub/CTAN/obsolete/info/math/voss/mathmode/Mathmode.pdf) 
 [^2]: [The Not So Short Introduction to LATEX](https://tobi.oetiker.ch/lshort/lshort.pdf) - Or LATEX in 280 minutes by Tobias Oetiker, Marcin Serwin Hubert Partl, Irene Hyna, and Elisabeth Schlegl in 2023 which in based on the german [LATEX 2ε-Kurzbeschreibung](https://ftp.gwdg.de/pub/ctan/info/lshort/german/l2kurz.pdf) by Marco Daniel, Patrick Gundlach, Walter Schmidt, Jörg Knappen, Hubert Partl, and Irene Hyna in 2018
