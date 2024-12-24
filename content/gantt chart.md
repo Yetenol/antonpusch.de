@@ -41,6 +41,37 @@ Portfolio examination
 \end{document}
 ```
 
+Portfolio examination hline
+
+![gantt portfolio examination hline.svg](./attachments/gantt%20portfolio%20examination%20hline.svg)
+
+```latex
+\documentclass{standalone}
+\usepackage{pgfgantt}
+\begin{document}
+\begin{ganttchart}[
+    time slot format=isodate,
+    x unit=.7mm, y unit title=6mm, 
+    title height=1, group height=.1,
+    canvas/.append style={fill=none}, title/.append style={fill=none},
+    vgrid={*{5}{draw=none}, dotted, {draw=none}}, 
+]{2024-10-01}{2025-03-31}
+\gantttitlecalendar{year, month=shortname} \\
+\ganttgroup{First attempt}{2024-11-15}{2025-02-25} \\
+\ganttbar{Quiz}{2024-11-15}{2024-12-01} \\
+\ganttlinkedbar{Lab report}{2024-12-10}{2025-01-08} \\ 
+\ganttlinkedmilestone{Exam A}{2025-02-25} \\
+\ganttmilestone{Exam B}{2025-03-23}
+\ganttlink[link mid=.32]{elem2}{elem4} \\[dotted]
+\ganttgroup{Second attempt}{2025-03-10}{2025-03-23} \\
+\ganttbar{Quiz\textsubscript{2nd}}{2025-03-10}{2025-03-14} 
+\ganttlink[link/.append style={dashed}]{elem3}{elem6} \\
+\ganttlinkedbar[link type=dr]{Lab report\textsubscript{2nd}}{2025-03-15}{2025-03-19} \\
+\ganttlinkedmilestone{Exam B}{2025-03-23}
+\end{ganttchart}
+\end{document}
+```
+
 
 Portfolio examination
 
@@ -363,7 +394,8 @@ hgrid
 
 ![gantt chart 1.svg](./attachments/gantt%20chart%201.svg)
 
-```latex
+```py
+generate_latex_figure(r"""
 \documentclass[tikz, margin=5mm]{standalone}
 \usepackage{pgfgantt}
 \title{Gantt Charts with the pgfgantt Package}
@@ -384,6 +416,7 @@ hgrid
 \end{ganttchart}
 
 \end{document}
+""", outfile="gantt chart 1")
 ```
 
 # Typst

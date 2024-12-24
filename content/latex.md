@@ -62,6 +62,9 @@ $$
 
 ![gantt portfolio examination.svg](./attachments/gantt%20portfolio%20examination.svg)
 
+Roadmap for further data visualizations
+
+- spiderweb diagram
 - Fractals
 - Public transport map
 - (trail) Maps
@@ -74,11 +77,23 @@ $$
 - geographic maps with transparent circles
 - low-poly art
 
+Roadmap for setup comparisons
+
+- writing, conversion, lint, debug
+- which editor comparison
+- Don't spent so much time on your setup, start writing code
+- alternative markup systems
+
+Learn, Troubleshoot, Debugging/Help/Documentation
+- keep package number low
+- don't create macros
+- problem with text, quotes, math, tables, images, floats, listings, layout, development, setup, conversion, compile time, plots, graphics, citations
+
+Other topics
 
 - [Values  - Standardize math, numbers, symbols, quantities, money](./values.md)
 - [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./float.md)
 - [Graphics, Plots, Visualization - Generate dynamic professional vector graphics with matching fonts, design](./graphics%20plots,%20visualization.md)
-- [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 - [Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials](./learn%20and%20troubleshoot%20latex.md)
 - [Project structure - Create folders for setup, resources, bibliographies](./project%20structure.md)
 - [Graphical elements - Standardize tables, images, plots](./graphical%20elements.md)
@@ -90,23 +105,8 @@ Color gradients
 
 Animation
 - [GitHub - ManimCommunity/manim: A community-maintained Python framework for creating mathematical animations.](https://github.com/ManimCommunity/manim/)
-Learn, Troubleshoot, Debugging/Help/Documentation
-- keep package number low
-- don't create macros
-- problem with text, quotes, math, tables, images, floats, listings, layout, development, setup, conversion, compile time, plots, graphics, citations
 
-Basis text elements
-Math
-Tables
-Images
-Listings
-Formatting, Layout
-Development 
-My setup
-- writing, conversion, lint, debug
-- which editor comparison
-- Don't spent so much time on your setup, start writing code
-- alternative markup systems
+# Motivation and use cases for LaTeX
 
 LaTeX is a powerful typesetting system widely used in academia, scientific publishing, and technical documentation. 
 This lookup system showcases LaTeX capabilities beyond creating an entire document. 
@@ -138,6 +138,7 @@ Sources:
 - [The LaTeX fetish (Or: Don’t write in LaTeX! It’s just for typesetting) – Daniel Allington](http://www.danielallington.net/2016/09/the-latex-fetish/)
 
 Related:
+- [LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex-symbols.md)
 - [Markdown - Write plaintext in a centralized location and generate to PDF, Jupiter notebooks, web pages, social media posts](Markdown%20-%20Write%20plaintext%20in%20a%20centralized%20location%20and%20generate%20to%20PDF,%20Jupiter%20notebooks,%20web%20pages,%20social%20media%20posts.md)
 - [Excel to latex - Embed spreadsheet files as latex tables](Excel%20to%20latex%20-%20Embed%20spreadsheet%20files%20as%20latex%20tables.md)
 - [latex, pdf to cropped svg - Redraw selection of a pdf as paths in a svg with Inkscape](latex,%20pdf%20to%20cropped%20svg%20-%20Redraw%20selection%20of%20a%20pdf%20as%20paths%20in%20a%20svg%20with%20Inkscape.md)
