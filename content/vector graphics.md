@@ -5,7 +5,7 @@ dg-publish: true
 
 PyX
 
-![pyx plot example.svg](./attachments/pyx%20plot%20example.svg)
+![pyx multple.svg](./attachments/pyx%20multple.svg)
 
 
 PGFplots
