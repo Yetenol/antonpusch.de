@@ -78,7 +78,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Set up the figure with a wide aspect ratio
-plt.figure(figsize=(12, 4))
+plt.figure(figsize=(8, 4))
 
 # Generate data
 x = np.linspace(-2*np.pi, 2*np.pi, 200)
@@ -139,7 +139,7 @@ x = np.linspace(-2*np.pi, 2*np.pi, 100)
 y = np.sin(x)
 
 # Create the plot
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(6, 3))
 plt.plot(x, y)
 plt.title(r'$f(x) = \sin(x)$')
 plt.xlabel(r'$x$')
