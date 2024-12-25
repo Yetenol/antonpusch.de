@@ -58,3 +58,9 @@ dg-publish: true
 \includegraphics{figure 3d plot.pdf}
 \end{document}
 ```
+
+https://pyx-project.org/
+https://pyx-project.org/gallery/graph/index.html
+
+https://asymptote.sourceforge.io/
+https://gertingold.github.io/pythonnawi/graphics.html

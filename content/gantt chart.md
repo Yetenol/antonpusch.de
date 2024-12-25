@@ -52,11 +52,16 @@ Portfolio examination hline
 \begin{ganttchart}[
     time slot format=isodate,
     x unit=.7mm, y unit title=6mm, 
-    title height=1, group height=.1,
-    canvas/.append style={fill=none}, title/.append style={fill=none},
+    %title height=1,
+    group right peak width=2,
+    group left peak width=2,
+    canvas/.style={fill=none}, 
+    title/.style={fill=none},
+    group/.append style={draw,fill=none},
     vgrid={*{5}{draw=none}, dotted, {draw=none}}, 
 ]{2024-10-01}{2025-03-31}
-\gantttitlecalendar{year, month=shortname} \\
+\gantttitlecalendar{year} \\[solid]
+\gantttitlecalendar{month=shortname} \\
 \ganttgroup{First attempt}{2024-11-15}{2025-02-25} \\
 \ganttbar{Quiz}{2024-11-15}{2024-12-01} \\
 \ganttlinkedbar{Lab report}{2024-12-10}{2025-01-08} \\ 
@@ -88,18 +93,30 @@ Portfolio examination
 \begin{tikzpicture}[framed,show background top,show background bottom]
 \begin{ganttchart}[
     time slot format=isodate,
-    x unit=.7mm, y unit title=6mm, title height=1,
-    canvas/.style={background rectangle/.style={},
-    framed,show background top, show background bottom}, title/.append style={fill=none},
-    hgrid, vgrid={*{5}{draw=none}, dotted, {draw=none}}, 
-]{2024-10-01}{2025-03-31}
-\gantttitlecalendar{year, month=shortname} \\
+    x unit=.7mm, y unit title=6mm, 
+    title height=1,
+    group right peak width=2, group left peak width=2,
+    canvas/.style={fill=none}, title/.style={fill=none},
+    group/.append style={draw,fill=white},
+    group label node/.append style={
+        align=left, 
+        text width=2.8cm  },
+    bar label node/.append style={
+        align=left, left=-1em,
+        text width=2.8cm  },
+    milestone label node/.append style={
+        align=left, left=-1em,
+        text width=2.8cm  },
+    vgrid={*{5}{draw=none}, dotted, {draw=none}}, 
+]{2024-11-01}{2025-03-31}
+\gantttitlecalendar{year} \\[solid]
+\gantttitlecalendar{month=shortname} \\
 \ganttgroup{First attempt}{2024-11-15}{2025-02-25} \\
 \ganttbar{Quiz}{2024-11-15}{2024-12-01} \\
 \ganttlinkedbar{Lab report}{2024-12-10}{2025-01-08} \\ 
 \ganttlinkedmilestone{Exam A}{2025-02-25} \\
 \ganttmilestone{Exam B}{2025-03-23}
-\ganttlink[link mid=.32]{elem2}{elem4} \\[solid]
+\ganttlink[link mid=.32]{elem2}{elem4} \\[dotted]
 \ganttgroup{Second attempt}{2025-03-10}{2025-03-23} \\
 \ganttbar{Quiz\textsubscript{2nd}}{2025-03-10}{2025-03-14} 
 \ganttlink[link/.append style={dashed}]{elem3}{elem6} \\
@@ -137,6 +154,8 @@ Portfolio examination
 \end{ganttchart}
 \end{document}
 ```
+
+![gantt chart myline.svg](./attachments/gantt%20chart%20myline.svg)
 
 ```latex
 \documentclass[]{standalone}

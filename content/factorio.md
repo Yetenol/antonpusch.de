@@ -26,20 +26,32 @@ Factorio - A game about automation, logistics and network optimizations is a [ga
 - Download it from the [publisher's website](https://factorio.com/download)
 - Open in [Steam](steam://store/427520)
 
+
 # Tips to play the game
 
 # Aspects of the game
 
+- [Building supplies - Bulk craft any item without a mall](Building%20supplies%20-%20Bulk%20craft%20any%20item%20without%20a%20mall.md)
 - [Train network](Train%20network.md)
+- [Flying robots](Flying%20robots.md)
 - [Logistics in Factorio](Logistics%20in%20Factorio.md)
 - [Input controls](Input%20controls.md)
 - [Base layouts](Base%20layouts.md)
+- [Circuit networks](Circuit%20networks.md)
+- Main bus, Compact bus
+- City block
+- Modules
+- Combat
+
+# Discussions
+
+- [Should logistic bots supply only the character or the factory as well](Should%20logistic%20bots%20supply%20only%20the%20character%20or%20the%20factory%20as%20well.md)
+- [How far can you reach - How much can you do remotely](How%20far%20can%20you%20reach%20-%20How%20much%20can%20you%20do%20remotely.md)
+- Turret creep
 
 # Playstyles
 
 - [Biters pathing logic - Factorio Forums](https://forums.factorio.com/viewtopic.php?t=78808)
-- [How far can you reach - How much can you do remotely](How%20far%20can%20you%20reach%20-%20How%20much%20can%20you%20do%20remotely.md)
-- [Should logistic bots supply only the character or the factory as well](Should%20logistic%20bots%20supply%20only%20the%20character%20or%20the%20factory%20as%20well.md)
 - Compact bus
 - Main bus
 - City block
@@ -68,7 +80,6 @@ Remote access, far reach
 
 # Possible phases of the game
 
-- [Hand-feed phase](Hand-feed%20phase.md)
 - [Jump start base](Jump%20start%20base.md)
 - [Starter base phase](Starter%20base%20phase.md)
 
@@ -163,33 +174,13 @@ Tweak game aspects - Does this mod go to far?
 Replace local settings with synchronized cloud settings
 
 ```powershell
-Invoke-Command {
-$cloudFolder = "D:\PlutosCloud\Gaming\Factorio"
-$localFolder = "$env:AppData\Factorio"
-$syncItems = @(
-    'saves\', 'config\', 'mods\', 
-    'achievements.dat', 'achievements-modded.dat', 
-    'blueprint-storage.dat', 'player-data.json'
-)
-
-Remove-Item "$localFolder\config\default_config.ini" -ErrorAction Ignore
-
-# Replace local files with references to synchronized cloud files
-$syncItems | foreach {
-    New-Item -ItemType SymbolicLink -Path "$localFolder\$_" -Target "$cloudFolder\$_" -Force -ErrorAction Stop
-}
-
-# Keep all cloud files, that are accessible via symlinks, fully present locally
-Set-Location $cloudFolder -ErrorAction Stop
-@(
-    Get-Item $syncItems | where PSIsContainer | Get-ChildItem -Recurse
-    Get-Item $syncItems
-) | foreach { 
-    $_.Attributes = $_.Attributes -bor 0x080000 -band (-bnot 0x400000) 
-}
+New-Item "$env:AppData\Factorio" -Target "D:\PlutosCloud\Gaming\Factorio Space Age" -ItemType SymbolicLink -Force
+$filesToKeepAvailable = Get-ChildItem "D:\PlutosCloud\Gaming\Factorio Space Age" -Recurse
+$filesToKeepAvailable += Get-Item "D:\PlutosCloud\Gaming\Factorio Space Age"
+$filesToKeepAvailable | foreach {
+    $_.Attributes = $_.Attributes -bor 0x080000 -band (-bnot 0x100000)
 }
 ```
-
 
 ---
 Sources:
