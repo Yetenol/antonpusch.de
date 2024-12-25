@@ -14,6 +14,7 @@ PGFplots
 
 [PyPlot](./pyplot.md)
 
+
 ![latex_plot.svg](./attachments/latex_plot.svg)
 
 [MathPlotLib](MathPlotLib.md)
