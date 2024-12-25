@@ -13,7 +13,7 @@ To navigate, simply follow the links between notes or search keywords. There's n
 
 - [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex.md)
 - [PGF, Tikz - Generate vector graphics, visualize data](PGF,%20Tikz%20-%20Generate%20vector%20graphics,%20visualize%20data.md)
-- [Plot data](./plot%20data.md)
+- [Vector graphics](./vector%20graphics.md)
 - [Interactives - Maps, presentation slides, charts](./interactives.md)
 - [PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](./powershell.md)
 - [Factorio - A game about automation, logistics and network optimizations](./factorio.md)

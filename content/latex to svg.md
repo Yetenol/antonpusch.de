@@ -4,22 +4,23 @@ dg-publish: true
 ---
 # Dependencies
 
-TeX Live
+[TeX Live](./tex%20live.md)
 - Install from website [Easy install - tug.org](https://www.tug.org/texlive/windows.html) 
 - Provides `pdflatex` to compile LaTeX source to PDF
 - Provides `texfot` to filter pdflatex stdout to only relevant messages , see [CTAN: Package texdoc](https://ctan.org/pkg/texdoc)
 - Provides `pdfcrop` to trim PDF of whitespace border, see [CTAN: Package pdfcrop](https://ctan.org/pkg/pdfcrop)
 
-pdf2svg
+[pdf2svg](./pdf2svg)
 - Clone repository [dawbarton/pdf2svg](https://github.com/dawbarton/pdf2svg)
 - Add `dist-64bits` subfolder to PATH environment variable
 - Convert PDF to SVG
 
-Execute Code
+[Execute Code](./execute%20code.md)
 - Install Obsidian extension via Comminity plugins, Webstore
 - Generate LaTeX figure from Obsidian code block
 
 Python
+- [Python 3.13](./python%203.13.md)
 - Install from website [Downloads - python.org](https://www.python.org/downloads/)
 - Execute tools from Obsidian code blocks
 
@@ -191,5 +192,5 @@ Related:
 
 Tags:
 [TeX Live](./tex%20live.md)
-[pdf2svg](pdf2svg)
-[Python](Python.md)
+[pdf2svg](./pdf2svg)
+[Python 3.13](./python%203.13.md)
