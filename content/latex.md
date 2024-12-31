@@ -2,7 +2,8 @@
 title: "LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules"
 dg-publish: true
 dg-permalink: latex
-aliases: LaTeX
+aliases:
+  - LaTeX
 ---
 The powerful typesetting system LaTeX is well known in the world of academia, scientific publishing, and technical documentation. While LaTeX mainly gets used to produce pages of PDF, it integrates well as a pre-processing tool to create vector graphics in notes, websites, and documents, too. Guides show how to improve, or generate the following content elements:
 
