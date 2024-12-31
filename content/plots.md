@@ -1,6 +1,8 @@
 ---
 title: "Plots - Dynamically plot mathematical functions as a vector graphic"
 dg-publish: true
+permalink: plot
+socialImage: ../../content/attachments/figure tikz 2.svg
 ---
 
 # Tikzpicture
