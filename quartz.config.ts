@@ -11,6 +11,7 @@ const config: QuartzConfig = {
     pageTitle: "Anton's Digital Garden",
     enableSPA: true,
     enablePopovers: true,
+    generateSocialImages: true,
     analytics: {
       provider: "plausible",
     },
