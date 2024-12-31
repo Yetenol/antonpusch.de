@@ -1,3 +1,16 @@
+# Static Site Generator for antonpusch.de
+
+## Dependencies
+
+Node.js (LTS)
+
+```powershell
+winget install -e OpenJS.NodeJS.LTS
+```
+
+
+
+
 # Quartz v4
 
 > “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
