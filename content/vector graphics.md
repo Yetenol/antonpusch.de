@@ -7,7 +7,6 @@ PyX
 
 ![pyx multple.svg](./attachments/pyx%20multple.svg)
 
-
 PGFplots
 
 ![figure tikz 2.svg](./attachments/figure%20tikz%202.svg)
