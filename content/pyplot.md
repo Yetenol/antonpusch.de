@@ -59,7 +59,7 @@ x = np.linspace(0, 10, 100)
 y = np.sin(x)
 
 # Create the plot
-plt.figure(figsize=(8, 6))
+plt.figure(figsize=(8, 4))
 plt.plot(x, y)
 plt.title('Sine Wave')
 plt.xlabel('X axis')
