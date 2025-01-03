@@ -1,26 +1,102 @@
 ---
-title: "Git - Track changes, collaborate, and backup"
-date: "2024-11-09T00:00:00.000+01:00"
+title: "Git"
+date: "2024-09-29T00:00:00.000+02:00"
 dg-publish: true
-dg-show-toc: true
+microsoft-id: 
+winget-id: Git.Git
+website: https://git-scm.com/download/win
+priority: 1
+categories:
+  - Development
+synopsis: Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 ---
 
-Git is a software for tracking changes in any set of files.
-It works best for non-binary text files
+Git is a [essential](install%20essential%20apps.md.md), [development](install%20development%20apps.md.md) app. Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
-## Manage multiple repositories
+- Invoke the installer listed on Windows Package Manager:
+  ```powershell
+  winget install -e Git.Git
+  ```
+- Download it from the [publisher's website](https://git-scm.com/download/win)
 
-**Find** all child repositories
+
+Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
+
+# Modify installation
+
+Rerun the installer `64-bit Git for Windows Setup` from the [Web](https://git-scm.com/download/win)
+- Only show new options: **☐ No**
+- Continue until `Select Components`
+    - Windows Explorer integration: **☐ No**
+    - (NEW!) Add a GIT Bash Profile to Windows Terminal: **☒ Yes**
+- Continue until `Choosing the default editor used by Git`
+    - choose **Use Visual Studio Code as Git's default editor**
+- Continue until `Adjusting the name of the initial branch in new repositories`
+    - Override the default branch name for new repositories: **☒ Yes**
+    - Branch name: **main**
+- Continue installation
+
+# Setup profile
+
 ```powershell
-Get-ChildItem -Path "." -Directory -Recurse | 
-foreach { $_.FullName } | foreach {
-    if (Test-Path -Path "$_\.git") {
-        Write-Output $_
-    }
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+## Setup communication
+
+1. Open Git Bash
+
+```powershell
+& "$env:ProgramFiles\Git\bin\sh.exe" --login
+```
+
+2. **Generate** a new SSH key
+    [🛈](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)  
+    The public key is saved in the clipboard  
+
+```bash
+ssh-keygen -t ed25519 -C `hostname`
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+clip < ~/.ssh/id_ed25519.pub
+```
+
+3. **Register** the SSH key in the **GitHub** account
+    [🛈](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)  
+    - [add a new SSH key](https://github.com/settings/ssh/new)
+    - [view already registered keys](https://github.com/settings/keys)
+
+## Use existing repositories
+
+> Fix error when using repositories from previous computers:  
+> `fatal: detected dubious ownership in repository at '/media/data/users/jhu3szh/serialize'`
+
+**Take ownership** of the **current** repository
+
+```powershell
+takeown /F ".\.git\" /R /SKIPSL
+```
+
+**Take ownership** of multiple **paths** and **subfolders**  
+- Run elevated
+
+```powershell
+[string[]]@(
+'D:\DEV\';
+'D:\ICEBERG\';
+'D:\LATEX\';
+'D:\STUDIT\';
+'D:\Notes\';
+'D:\TUB';
+'D:\WIKI\';
+;) | foreach {
+    takeown /F $_ /R /SKIPSL
 }
 ```
 
 **Pull** all child repositories
+
 ```powershell
 Get-ChildItem -Path "." -Directory -Recurse | 
 foreach { $_.FullName } | foreach {
@@ -31,114 +107,10 @@ foreach { $_.FullName } | foreach {
 }
 ```
 
-Review and upload **feature**
-- `rebase`: review all feature commits 
-  - `reword`: rename commits
-  - `fixup`: combine commits into a single one
-- `push`: upload current branch to remote
-- `push`: integrate current branch into remote's main branch
-- `fetch`: download remote branches
-```powershell
-$currentBranch = (git branch --show-current).trim()
-$mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
-git rebase --interactive origin/$mainBranch
-if ($LASTEXITCODE -ne 0) {
-    git rebase --abort
-} else {
-    git push origin $currentBranch":"$mainBranch
-    git pull origin $mainBranch":"$mainBranch
-}
-```
-
-In case main changed and changes have to be merged, do so and run
-```powershell
-git rebase --continue
-git push origin $currentBranch":"$mainBranch
-git pull origin $mainBranch":"$mainBranch
-```
-
-## Branch handling
-
-**Squash** multiple commits into one before pushing
-```powershell
-git rebase --interactive origin/HEAD
-```
-
-**Push** my branch to remote's **main** branch    
-- see [git publish script](https://github.com/Yetenol/alias/blob/main/git-publish.ps1)
-```powershell
-$currentBranch = (git branch --show-current).trim()
-$mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
-git rebase --interactive origin/$mainBranch
-git push origin $currentBranch":"$mainBranch
-git pull origin $mainBranch":"$mainBranch
-```
-```powershell
-git push origin current:main
-git fetch origin main:main
-```
-- abbreviate dirty:  
-    `git push origin $($(git branch --show-current).trim()+":"+(git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/",""))`
-
-## Remove binaries from history
-
-- **Shrinks** the **repository size** by excluding files or folders from the commit history.  
-- **Rewrites** all **effected** commits and their children to erase a folder/file from their changes.  
-- Avoid when collaborating, as it rewrites many commits.  
-
-Exclude a **file**
-```bash
-git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch \"PATH/TO_ITEM\"' --prune-empty --tag-name-filter cat -- --all
-```
-
-Exclude a **folder** and its content
-```bash
-git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch -r \"PATH/TO_ITEM\"' --prune-empty --tag-name-filter cat -- --all
-```
-
-# Useful commands
-
-**Amend all changes** to previous commit
-```bash
-alias gitamend='git commit --amend --no-edit'
-``` 
-
-Show git graph  
-```bash
-git log --graph \
---abbrev-commit \
---pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-```
-
-# Alias
-
-Alias **internal command**  
-```bash
-git config --global alias.<shortcut> <command>
-```
-- and call it using `git amend`
-
-Alias **external command**    
-```shell
-git config --global alias.sourcetree '!/executable'
-```
-
-
 ---
 Sources:
-- 2022-12-14: [Creating Git shortcuts](https://blog.frankel.ch/creating-git-shortcuts/)
-- 2023-06-19: [git: Was ihr an der Uni noch nicht über die Versionsverwaltung gelernt habt. Ein praxisorientierter Workshop.](https://docs.freitagsrunde.org/Veranstaltungen/techtalk/2023/git/23-02-24_mhuebner_git-workshop_v2.pdf)
 
 Related:
+[Visual Studio Code](./visual-studio-code.md)
 
 Tags:
-[Computer Language](./computer-language.md)
-
-https://mergiraf.org/
-
-https://github.com/JohannesKaufmann/html-to-markdown
-https://github.com/dandavison/delta
-
-https://mergiraf.org/
-
-Introduction - Mergiraf https://mergiraf.org/
