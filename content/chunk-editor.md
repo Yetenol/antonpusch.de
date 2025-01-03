@@ -1,0 +1,22 @@
+---
+title: "Chunk Editor"
+date: "2025-01-03T00:00:00.000+01:00"
+dg-publish: true
+microsoft-id: 
+winget-id: 
+github-repo: Querz/mcaselector
+github-release-filename: MCA_Selector_Setup.exe
+website: 
+priority: 10
+synopsis: Export or delete selected chunks and regions from a world save
+---
+
+MCA Selector is an external tool to export or delete selected chunks and regions from a world save of Minecraft Java Edition.
+
+---
+Sources:
+
+Related:
+[CurseForge](./curseforge.md)
+
+Tags:
