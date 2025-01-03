@@ -1,17 +1,36 @@
 ---
-title: "Moodle - App vs Website"
+title: "Moodle"
 dg-publish: true
+not-in-use: true
+microsoft-id: 
+winget-id: 
+github-repo: 
+github-release-filename: 
+website: https://play.google.com/store/apps/details?id=com.moodle.moodlemobile
+priority: 
+link-modportals: 
+modportal0-id: 
+thumbnail: 
+categories: []
+synopsis: |
+  Access your online courses with the official Moodle mobile app
 ---
-Wofür nutzt die die Moodle-App? Ich hab sie lange genutzt, bin dieses Semester aber wieder größtenteils auf die auf die Weboberfläche zurückgekehrt.
+
+Moodle is a **discarded** app. Access your online courses with the official Moodle mobile app 
+
+- Download it from the [publisher's website](https://play.google.com/store/apps/details?id=com.moodle.moodlemobile)
+
+
+Wofür nutzt die die Moddle-App? Ich hab sie lange genutzt, bin dieses Semester aber wieder größtenteils auf die auf die Weboberfläche zurückgekehrt.
 
 Was mit sehr gefallen hat:
-- [p] Push-Benachrichtigungen für anstehende Abgaben
-- [p] geöffnete PDF sind auch offline verfügbar, ohne dass man den Downloadsordner durchwühlen muss
+- [x] Push-Benachrichtigungen für anstehende Abgaben
+- [x] geöffnete PDF sind auch offline verfügbar, ohne dass man den Downloadsordner durchwühlen muss
 
 Was mir nicht gefallen hat:
-- [c] viele ISIS Plugins wie Videos/Quiz/Tests werden nicht unterstützt
-- [c] Navigation innerhalb eines Moduls ist deutlich langsamer als Website
-- [c] Forenbenachrichtigungen kommen nicht als Push-Benachrichtigungen (serverseitige Einstellung, kann man nichts machen)
+- [ ] viele ISIS Plugins wie Videos/Quiz/Tests werden nicht unterstützt
+- [ ] Navigation innerhalb eines Moduls ist deutlich langsamer als Website
+- [ ] Forenbenachrichtigungen kommen nicht als Push-Benachrichtigungen (serverseitige Einstellung, kann man nichts machen)
 
 
 ---
