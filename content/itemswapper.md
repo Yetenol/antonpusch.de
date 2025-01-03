@@ -1,0 +1,25 @@
+---
+title: "ItemSwapper"
+date: "2025-01-03T00:00:00.000+01:00"
+dg-publish: true
+not-in-use: 
+microsoft-id: 
+winget-id: 
+github-repo: 
+github-release-filename: 
+website: 
+priority: 
+link-modportals: 
+modportal0-id: itemswapper
+thumbnail: https://cdn.modrinth.com/data/RPOSBQgq/2ab4614cc4288baa911be0365cd22203e75b9233.png
+categories: 
+synopsis: Adds an item switch interface triggered by pressing a hotkey
+extends-app: "[[Minecraft|Minecraft]]"
+modportal1-id: itemswapper
+---
+
+![thumbnail](https://cdn.modrinth.com/data/RPOSBQgq/2ab4614cc4288baa911be0365cd22203e75b9233.png) ItemSwapper is a [Minecraft](./minecraft.md) extension. Adds an item switch interface triggered by pressing a hotkey
+
+- Install extension via [Modrinth](https://modrinth.com/mod/itemswapper)
+- Install extension via [CurseForge](https://www.curseforge.com/minecraft/mc-mods/itemswapper)
+
