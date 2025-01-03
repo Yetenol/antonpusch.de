@@ -92,6 +92,9 @@ td>pre>code {
     word-wrap: break-word;
     white-space: pre-wrap;
 }
+td>pre {
+    padding: unset;
+}
 
 // Smaller font size for headings
 h1 {
