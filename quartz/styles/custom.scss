@@ -86,6 +86,13 @@ footer > p {
     display: none;
 }
 
+// Wrap codeblocks in tables
+td>pre>code {
+    display: block;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
 // Smaller font size for headings
 h1 {
     font-size: 1.4rem !important;
