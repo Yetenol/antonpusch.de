@@ -1,6 +1,6 @@
 ---
 title: "PyPlot"
-date: "2024-12-25T00:00:00.000+01:00"
+date: "2025-01-03T00:00:00.000+01:00"
 dg-publish: true
 ---
 Plot of values for $x = 0, 1, \ldots$
@@ -66,7 +66,9 @@ plt.xlabel('X axis')
 plt.ylabel('Y axis')
 
 # Save the plot as SVG
+plt.rcParams['svg.fonttype'] = 'none'
 plt.savefig(@vault_path + '/attachments/sine_wave_plot.svg', format='svg', dpi=300, bbox_inches='tight', transparent=True)
+plt.show()
 plt.close()
 ```
 
