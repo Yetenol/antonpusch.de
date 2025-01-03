@@ -30,4 +30,3 @@ Sources:
 Related:
 
 Tags:
-[Setup my computers](./setup%20my%20computers.md)
