@@ -88,9 +88,10 @@ footer > p {
 
 // Wrap codeblocks in tables
 td>pre>code {
-    display: block;
     word-wrap: break-word;
     white-space: pre-wrap;
+    display: block;
+    line-height: 1.2rem;
 }
 td>pre {
     padding: unset;
