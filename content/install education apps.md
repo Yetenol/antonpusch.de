@@ -21,11 +21,3 @@ dg-content-classes:
 | **LTSpice** 🗑️<div>[Website](https://ltspice.analog.com/software/LTspice64.exe) </div><div></div>                                                                                                                                                                                                                                                                                                                                                                               | [more details](./ltspice.md)                                                                                                       |
 | **MATLAB** 🗑️<div>[Website](https://www.mathworks.com/academia/tah-portal/tu-berlin-31461245.html) </div><div></div>                                                                                                                                                                                                                                                                                                                                                            | [more details](./matlab.md)                                                                                                        |
 
-
----
-Sources:
-
-Related:
-
-Tags:
-[Setup my computers](./setup%20my%20computers.md)

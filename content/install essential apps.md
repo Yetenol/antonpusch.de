@@ -24,11 +24,3 @@ dg-content-classes:
 | **Text Snippets**<div>[Github](https://github.com/ArianaKhit/text-snippets-obsidian/releases/latest) </div><div></div><div class='category-tag'>[Editing](Install%20Editing%20apps.md)</div>                                                                                                                                                                                                                                                                                                                                                                                                                          | Snippets for faster typing. Allows you to replace text templates, create your own, and expand tex... [more details](./text%20snippets.md)      |
 | **Microsoft Edge** 🗑️<div>[Microsoft Store](ms-windows-store://pdp/?ProductId=XPFFTQ037JWMHS&mode=mini)  [Github](https://github.com/SimonBrazell/privacy-redirect/releases/latest) </div><div><button class='copy-winget-button' onclick="navigator.clipboard.writeText('winget install -e XPFFTQ037JWMHS --accept-package-agreements')">XPFFTQ037JWMHS📋</button><button class='copy-winget-button' onclick="navigator.clipboard.writeText('winget install -e Microsoft.Edge')">Microsoft.Edge📋</button></div><div class='category-tag'>[Office](Install%20Office%20apps.md)</div>                                | Microsoft Edge is the best performing browser on Windows 10.  Let Microsoft Edge help you stay in... [more details](./microsoft%20edge.md)     |
 
-
----
-Sources:
-
-Related:
-
-Tags:
-[Setup my computers](./setup%20my%20computers.md)

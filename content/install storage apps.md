@@ -22,11 +22,3 @@ dg-content-classes:
 | **Recuva** 🗑️<div>[Website](https://www.ccleaner.com/recuva/download) </div><div></div>                                                                                                                                                                                                                                                                                                                                                                                                                   | [more details](./recuva.md)                                                                                                           |
 | **Resource Hacker** 🗑️<div>[Website](http://www.angusj.com/resourceh*acker/#download) </div><div></div>                                                                                                                                                                                                                                                                                                                                                                                                   | [more details](./resource%20hacker.md)                                                                                                  |
 
-
----
-Sources:
-
-Related:
-
-Tags:
-[Setup my computers](./setup%20my%20computers.md)

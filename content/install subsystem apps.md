@@ -17,11 +17,3 @@ dg-content-classes:
 | **Windows Subsystem for Linux** 🗑️<div>[Microsoft Store](ms-windows-store://pdp/?ProductId=9nblggh4msv6&mode=mini) </div><div><button class='copy-winget-button' onclick="navigator.clipboard.writeText('winget install -e 9NBLGGH4MSV6 --accept-package-agreements')">9NBLGGH4MSV6📋</button></div>                                                                                                                       | [more details](./windows%20subsystem%20for%20linux.md)                |
 | **WSATools** 🗑️<div>[Microsoft Store](ms-windows-store://pdp/?ProductId=9n4p75dxl6fg&mode=mini) </div><div><button class='copy-winget-button' onclick="navigator.clipboard.writeText('winget install -e 9N4P75DXL6FG --accept-package-agreements')">9N4P75DXL6FG📋</button></div>                                                                                                                                          | [more details](./wsatools.md)                                   |
 
-
----
-Sources:
-
-Related:
-
-Tags:
-[Setup my computers](./setup%20my%20computers.md)
