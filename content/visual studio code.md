@@ -23,7 +23,9 @@ dg-content-classes:
   - cards
 ---
 
-Visual Studio Code also called VS Code is a [essential](install%20essential%20apps.md.md), [development](install%20development%20apps.md.md) app. Visual Studio Code is a free, lightweight, and extensible code editor for building web, desktop, and mobile applications, using any programming language and framework.  - Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=XP9KHM4BK9FZ7Q&mode=mini) or invoke:
+Visual Studio Code also called VS Code is a [essential](install%20essential%20apps.md.md), [development](install%20development%20apps.md.md) app. Visual Studio Code is a free, lightweight, and extensible code editor for building web, desktop, and mobile applications, using any programming language and framework.
+
+  - Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=XP9KHM4BK9FZ7Q&mode=mini) or invoke:
   ```
   winget install -e XP9KHM4BK9FZ7Q --accept-package-agreements
   ```
