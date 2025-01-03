@@ -17,11 +17,3 @@ dg-content-classes:
 | **Minecraft (Bedrock Edition)**<div>[Microsoft Store](ms-windows-store://pdp/?ProductId=9NBLGGH2JHXJ&mode=mini) </div><div><button class='copy-winget-button' onclick="navigator.clipboard.writeText('winget install -e 9NBLGGH2JHXJ --accept-package-agreements')">9NBLGGH2JHXJ📋</button></div> | [more details](./minecraft%20bedrock%20edition).md)                                                                                                           |
 | **CurseForge** 🗑️<div>[Website](https://download.curseforge.com/) </div><div><button class='copy-winget-button' onclick="navigator.clipboard.writeText('winget install -e Overwolf.CurseForge')">Overwolf.CurseForge📋</button></div>                                                            | [more details](./curseforge.md)                                                                                                                            |
 
-
----
-Sources:
-
-Related:
-
-Tags:
-[Setup my computers](./setup%20my%20computers.md)
