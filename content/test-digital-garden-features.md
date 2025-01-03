@@ -69,4 +69,4 @@ Sources:
 Related:
 
 Tags:
-[Test (File) - Test syntax for quartz](./test%20(file)%20-%20test%20syntax%20for%20quartz.md)
+[Test (File) - Test syntax for quartz](./test-file.md)
