@@ -24,6 +24,15 @@ extends-app: "[[Python|Python]]"
 - Download it from the [publisher's website](https://matplotlib.org/stable/gallery/index.html)
 
 
+
+> Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations.
+
+- Source: [Matplotlib documentation — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/)
+
+> The fundamental package for scientific computing with Python
+
+- Source: [NumPy -](https://numpy.org/)
+
 Example plot
 ![figure plt.svg](./attachments/figure-plt.svg)
 
@@ -52,102 +61,136 @@ plt.savefig(@vault_path + '/attachments/figure plt.svg', format='svg', transpare
 plt.show()
 ```
 
-Attempt to generate commands for PGF drawing
+# Color gradients
+
+- [CMasher: Scientific colormaps for making accessible, informative and cmashing plots — CMasher documentation](https://cmasher.readthedocs.io/)
+
+## Layout multiple subfigures
+
+- [Quick start guide — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/users/explain/quick_start.html#working-with-multiple-figures-and-axes)
+
+# API interfaces
+
+## Axes interface
+
+> create a Figure and one or more Axes objects, then explicitly use methods on these objects to add data, configure limits, set labels etc.
+
+## PyPlot interface
+
+> matplotlib.pyplot is a state-based interface to matplotlib. It provides an implicit, MATLAB-like, way of plotting. It also opens figures on your screen, and acts as the figure GUI manager. pyplot is mainly intended for interactive plots and simple cases of programmatic plot generation:
+
+- [matplotlib.pyplot — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/api/pyplot_summary.html#module-matplotlib.pyplot)
+
+
+- [bad matplotlib attempts](bad%20matplotlib%20attempts.md)
+
+# Modify spines
+
+![Pasted image 20250106192047.png](./attachments/pasted-image-20250106192047.png)
+
+- [Spines — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/gallery/spines/spines.html#sphx-glr-gallery-spines-spines-py)
+- [Spine placement — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/gallery/spines/spine_placement_demo.html#sphx-glr-gallery-spines-spine-placement-demo-py)
 
 ```python
-import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 2 * np.pi, 100)
+y = np.sin(x)
+
+# Constrained layout makes sure the labels don't overlap the Axes.
+fig, (ax0, ax1, ax2) = plt.subplots(ncols=3, layout='constrained')
+
+ax0.plot(x, y)
+ax0.set_title('normal')
+
+ax1.plot(x, y)
+ax1.set_title('bottom-left')
+
+# Hide the right and top spines
+ax1.spines.right.set_visible(False)
+ax1.spines.top.set_visible(False)
+
+ax2.plot(x, y)
+ax2.set_title('data range')
+
+# Only draw spines for the data range, not in the margins
+ax2.spines.bottom.set_bounds(x.min(), x.max())
+ax2.spines.left.set_bounds(y.min(), y.max())
+# Hide the right and top spines
+ax2.spines.right.set_visible(False)
+ax2.spines.top.set_visible(False)
+
+plt.show()
+```
+
+Spines
+
+![plot spines.svg](./attachments/plot-spines.svg)
+
+```python
 import numpy as np
 import matplotlib.pyplot as plt
+plt.rcParams['text.usetex'] = True
+plt.rcParams['font.family'] = 'serif'
+x = np.linspace(0, 4, 100)
+plt.figure(figsize=(3, 2.5))
+plt.plot(x, x, label=r"$f(x) = x$")
+plt.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
+plt.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
+plt.legend()
+plt.grid(True)
+plt.savefig(@vault_path + '/attachments/plot spine normal.svg', format='svg', transparent=True)
+plt.savefig(@vault_path + '/attachments/plot spine normal.pdf', transparent=True)
+plt.show()
+```
 
-matplotlib.use("pgf")
-matplotlib.rcParams.update({
-    "pgf.texsystem": "pdflatex",
-    'font.family': 'serif',
-    'font.size' : 11,
-    'text.usetex': True,
-    'pgf.rcfonts': False,
-})
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams['text.usetex'] = True
+plt.rcParams['font.family'] = 'serif'
+x = np.linspace(0, 4, 100)
+plt.figure(figsize=(3, 2.5))
+ax = plt.subplot()
+ax.plot(x, x, label=r"$f(x) = x$")
+ax.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
+ax.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
+ax.spines[['right', 'top']].set_visible(False)
+ax.legend()
+ax.grid(True)
+plt.savefig(@vault_path + '/attachments/plot spine bottom-left.svg', format='svg', transparent=True)
+plt.savefig(@vault_path + '/attachments/plot spine bottom-left.pdf', transparent=True)
+plt.show()
+```
 
-np.random.seed(19680801)
 
-# example data
-mu = 100  # mean of distribution
-sigma = 15  # standard deviation of distribution
-x = mu + sigma * np.random.randn(437)
-
-num_bins = 50
-
-fig, ax = plt.subplots()
-
-# the histogram of the data
-n, bins, patches = ax.hist(x, num_bins, density=1)
-
-# add a 'best fit' line
-y = ((1 / (np.sqrt(2 * np.pi) * sigma)) *
-     np.exp(-0.5 * (1 / sigma * (bins - mu))**2))
-ax.plot(bins, y, '--')
-ax.set_xlabel('Smarts')
-ax.set_ylabel('Probability density')
-ax.set_title(r'Histogram of IQ: $\mu=100$, $\sigma=15$')
-
-# Tweak spacing to prevent clipping of ylabel
-fig.tight_layout()
-fig.set_size_inches(4.7747,3.5)
-plt.savefig(@vault_path + '/attachments/histogram.pgf')
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams['text.usetex'] = True
+plt.rcParams['font.family'] = 'serif'
+x = np.linspace(0, 4, 100)
+plt.figure(figsize=(3, 2.5))
+ax = plt.subplot()
+ax.plot(x, x, label=r"$f(x) = x$")
+ax.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
+ax.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
+ax.spines[['left', 'bottom']].set_position('center')
+ax.spines[['top', 'right']].set_visible(False)
+ax.legend()
+ax.grid(True)
+plt.savefig(@vault_path + '/attachments/plot spine zero.svg', format='svg', transparent=True)
+plt.savefig(@vault_path + '/attachments/plot spine zero.pdf', transparent=True)
 plt.show()
 ```
 
 ```latex
-\documentclass[a4paper]{article}
-\usepackage[utf8]{inputenc}
-
-\usepackage{tikz}
-\usepackage{tikz-cd}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.14}
-
+\documentclass{standalone}
+\usepackage{graphbox}
 \begin{document}
-
-\section{Histogram}
-
-\begin{figure}[h]
-    \begin{center}
-        \input{histogram.pgf}
-    \end{center}
-    \caption{A PGF histogram from \texttt{matplotlib}.}
-\end{figure}
-
+\includegraphics{plot spine normal}
+\includegraphics{plot spine bottom-left}
+\includegraphics{plot spine zero}
 \end{document}
 ```
-
-
-```python
-import matplotlib.pyplot as plt
-
-#Direct input 
-plt.rcParams['text.latex.preamble']=[r"\usepackage{lmodern}"]
-#Options
-params = {'text.usetex' : True,
-          'font.size' : 11,
-          'font.family' : 'lmodern',
-          'text.latex.unicode': True,
-          }
-plt.rcParams.update(params) 
-
-fig = plt.figure()
-
-#You must select the correct size of the plot in advance
-fig.set_size_inches(3.54,3.54) 
-
-plt.plot([1,2,3,4])
-plt.xlabel("Excitation-Energy")
-plt.ylabel("Intensität")
-plt.savefig(@vault_path + '/attachments/graph.pdf', 
-            #This is simple recomendation for publication plots
-            dpi=1000, 
-            # Plot will be occupy a maximum of available space
-            bbox_inches='tight', 
-            )
-plt.show()
-```
-
