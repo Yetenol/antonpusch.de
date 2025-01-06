@@ -101,9 +101,9 @@ plt.figure(figsize=(3, 2.5))
 plt.plot(x, x, label=r"$f(x) = x$")
 plt.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
 plt.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
+plt.title("Figure 1.1: Normal spines", fontsize=10)
 plt.legend()
 plt.grid(True)
-plt.savefig(@vault_path + '/attachments/plot spine normal.svg', format='svg', transparent=True)
 plt.savefig(@vault_path + '/attachments/plot spine normal.pdf', transparent=True)
 plt.show()
 ```
@@ -119,12 +119,22 @@ ax = plt.subplot()
 ax.plot(x, x, label=r"$f(x) = x$")
 ax.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
 ax.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
+plt.title("Figure 1.2: Left and bottom spine", fontsize=10)
 ax.spines[['right', 'top']].set_visible(False)
 ax.legend()
 ax.grid(True)
-plt.savefig(@vault_path + '/attachments/plot spine bottom-left.svg', format='svg', transparent=True)
 plt.savefig(@vault_path + '/attachments/plot spine bottom-left.pdf', transparent=True)
 plt.show()
+```
+
+```latex
+\documentclass{article}\pagestyle{empty} \renewcommand{\thefigure}{1.1}
+\usepackage{graphicx}
+\begin{document}
+\begin{figure} \caption{Normal spines} \centering{}
+\includegraphics{plot spine bottom-left}
+\end{figure}
+\end{document}
 ```
 
 
@@ -139,21 +149,22 @@ ax = plt.subplot()
 ax.plot(x, x, label=r"$f(x) = x$")
 ax.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
 ax.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
-ax.spines[['left', 'bottom']].set_position('zero0')
+plt.title("Figure 1.3: Spines through $(0,0)$", fontsize=10)
+ax.spines[['left', 'bottom']].set_position('zero')
 ax.spines[['top', 'right']].set_visible(False)
 ax.legend()
 ax.grid(True)
-plt.savefig(@vault_path + '/attachments/plot spine zero.svg', format='svg', transparent=True)
 plt.savefig(@vault_path + '/attachments/plot spine zero.pdf', transparent=True)
 plt.show()
 ```
 
 ```latex
-\documentclass{standalone}
-\usepackage{graphbox}
+\documentclass{standalone} \usepackage{graphicx,tabularray}
 \begin{document}
-\includegraphics{plot spine normal}
-\includegraphics{plot spine bottom-left}
+\begin{tblr}{}
+\includegraphics{plot spine normal} &
+\includegraphics{plot spine bottom-left} \\
 \includegraphics{plot spine zero}
+\end{tblr}
 \end{document}
 ```
