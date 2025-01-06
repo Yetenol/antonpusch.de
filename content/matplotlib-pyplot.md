@@ -88,6 +88,7 @@ plt.show()
 
 - [Spines — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/gallery/spines/spines.html#sphx-glr-gallery-spines-spines-py)
 - [Spine placement — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/gallery/spines/spine_placement_demo.html#sphx-glr-gallery-spines-spine-placement-demo-py)
+- [Axis line styles — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/gallery/axisartist/demo_axisline_style.html)
 
 ![plot spines.svg](./attachments/plot-spines.svg)
 
@@ -182,3 +183,4 @@ plt.show()
 \end{tblr}
 \end{document}
 ```
+
