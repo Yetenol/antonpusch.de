@@ -127,17 +127,6 @@ plt.savefig(@vault_path + '/attachments/plot spine bottom-left.pdf', transparent
 plt.show()
 ```
 
-```latex
-\documentclass{article}\pagestyle{empty} \renewcommand{\thefigure}{1.1}
-\usepackage{graphicx}
-\begin{document}
-\begin{figure} \caption{Normal spines} \centering{}
-\includegraphics{plot spine bottom-left}
-\end{figure}
-\end{document}
-```
-
-
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -158,13 +147,38 @@ plt.savefig(@vault_path + '/attachments/plot spine zero.pdf', transparent=True)
 plt.show()
 ```
 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.axisartist.axislines import AxesZero
+plt.rcParams['text.usetex'] = True
+plt.rcParams['font.family'] = 'serif'
+x = np.linspace(0, 4, 100)
+plt.figure(figsize=(3, 2.5))
+ax = plt.subplot(axes_class=AxesZero)
+ax.plot(x, x, label=r"$f(x) = x$")
+ax.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
+ax.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
+plt.title("Figure 1.4: Spines with arrows", fontsize=10)
+for direction in ["xzero", "yzero"]:
+    ax.axis[direction].set_axisline_style("-|>")
+    ax.axis[direction].set_visible(True)
+for direction in ["left", "right", "bottom", "top"]:
+    ax.axis[direction].set_visible(False)
+ax.legend()
+ax.grid(True)
+plt.savefig(@vault_path + '/attachments/plot spine arrows.pdf', transparent=True)
+plt.show()
+```
+
 ```latex
 \documentclass{standalone} \usepackage{graphicx,tabularray}
 \begin{document}
 \begin{tblr}{}
-\includegraphics{plot spine normal} &
+\includegraphics{plot spine normal} 
 \includegraphics{plot spine bottom-left} \\
 \includegraphics{plot spine zero}
+\includegraphics{plot spine arrows}
 \end{tblr}
 \end{document}
 ```
