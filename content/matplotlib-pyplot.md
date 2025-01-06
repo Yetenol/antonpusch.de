@@ -86,45 +86,8 @@ plt.show()
 
 # Modify spines
 
-![Pasted image 20250106192047.png](./attachments/pasted-image-20250106192047.png)
-
 - [Spines — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/gallery/spines/spines.html#sphx-glr-gallery-spines-spines-py)
 - [Spine placement — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/gallery/spines/spine_placement_demo.html#sphx-glr-gallery-spines-spine-placement-demo-py)
-
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-
-x = np.linspace(0, 2 * np.pi, 100)
-y = np.sin(x)
-
-# Constrained layout makes sure the labels don't overlap the Axes.
-fig, (ax0, ax1, ax2) = plt.subplots(ncols=3, layout='constrained')
-
-ax0.plot(x, y)
-ax0.set_title('normal')
-
-ax1.plot(x, y)
-ax1.set_title('bottom-left')
-
-# Hide the right and top spines
-ax1.spines.right.set_visible(False)
-ax1.spines.top.set_visible(False)
-
-ax2.plot(x, y)
-ax2.set_title('data range')
-
-# Only draw spines for the data range, not in the margins
-ax2.spines.bottom.set_bounds(x.min(), x.max())
-ax2.spines.left.set_bounds(y.min(), y.max())
-# Hide the right and top spines
-ax2.spines.right.set_visible(False)
-ax2.spines.top.set_visible(False)
-
-plt.show()
-```
-
-Spines
 
 ![plot spines.svg](./attachments/plot-spines.svg)
 
@@ -176,7 +139,7 @@ ax = plt.subplot()
 ax.plot(x, x, label=r"$f(x) = x$")
 ax.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
 ax.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
-ax.spines[['left', 'bottom']].set_position('center')
+ax.spines[['left', 'bottom']].set_position('zero')
 ax.spines[['top', 'right']].set_visible(False)
 ax.legend()
 ax.grid(True)
