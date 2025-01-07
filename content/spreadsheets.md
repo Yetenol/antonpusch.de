@@ -118,7 +118,7 @@ Calculate the following values, with row number $r$:
     \prgReturn{ \fpUse\lTmpaFp } }
 \ExplSyntaxOff
 \begin{document}
-\begin{tblr}[tall,caption={Calculate values in \textbf{bold} (distances, trip expenses)},note{}={
+\begin{tblr}[tall,caption={Calculate trip distances, expenses that are \textbf{bold}},note{}={
     We canoe \textbf{%
     \cellCopy{r={3,6},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}\,km} 
     through the Mecklenburg Lakeland and \textbf{%
