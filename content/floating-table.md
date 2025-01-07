@@ -1,56 +1,324 @@
 ---
-title: "Floating Table - Add caption, cross reference a table"
-date: "2024-09-01T00:00:00.000+02:00"
+title: "Floating table - Let table float here, superwide, above, below, next to a page's main text"
+date: "2024-09-08T00:00:00.000+02:00"
 dg-publish: true
-priority: 1
 ---
 
-Tabular environments should be nested in a **floating object** aka float.
-- see [Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page](./float.md)
+# Float tables
+
+![table floats.svg](./attachments/table-floats.svg)
 
 ```latex
-\begin{table}
-    \begin{⟨tabular environment⟩}
-    \end{⟨tabular environment⟩}
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{4.1\alph{table}}
+\usepackage{tabularray,sidenotes,lipsum,graphbox,float}
+\captionsetup[table]{skip=2pt}
+\begin{document}
+\lipsum[4]
+
+\begin{table}[H] \centering{}
+\begin{minipage}[b]{.4\textwidth} \centering{}
+\caption{Pre-compiled table}
+\includegraphics{table reference nolabel}
+\end{minipage}
+\hspace{1em}
+\begin{minipage}[b]{.4\textwidth} \centering{}
+\begin{tblr}[tall,baseline=b,note{}={Drivers ride busses.},
+caption={Multiple tables in same float},
+]{
+hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name          & Job \\
+Zaid Knowles  & Teacher \\
+Hayley Conner & Doctor  \\
+Susan Wood    & Driver \\
+\end{tblr}
+\end{minipage}
 \end{table}
+
+\begin{margintable}
+\begin{tblr}[tall, note{}={as of 2014},
+entry={No caption, just an entry in list of tables},
+]{
+colspec={XX[r]}, hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name   & Age \\
+Peter  & 7   \\
+Io     & 14  \\
+Lara   & 10  \\
+\end{tblr}
+\end{margintable}
+
+\lipsum[2]
+
+\begin{table*}
+\begin{tblr}[tall, 
+caption={Superwide table spanning into the margins with adjustable width}, 
+]{
+colspec={lX}, hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+column{1}={wd=15em}, column{2}={font=\ttfamily},
+}
+Page &
+    URI \\
+Bluetooth \& other devices & 
+    {ms-settings:bluetooth\\ms-settings:connecteddevices} \\
+Connect to wireless display or audio device & 
+    ms-settings-connectabledevices:devicediscovery \\
+Printers \& scanners & 
+    ms-settings:printers \\
+Mouse & 
+    ms-settings:mousetouchpad \\
+\end{tblr}
+\end{table*}
+
+\listoftables
+\end{document}
 ```
 
-- `⟨tabular environment⟩`: Environment defining the style and syntax of the table
+## Use custom caption styles
 
-Always provide a **caption** displayed underneath and a **label**, to cross reference in elsewhere. Horizontally center the float as well.
+![table floats 2.svg](./attachments/table-floats-2.svg)
 
 ```latex
-\begin{table}
-    \begin{⟨tabular environment⟩}
-    \end{⟨tabular environment⟩}
-    \centering % horizontally center the float
-    \caption{⟨caption⟩} % title displayed below the table and in the index
-    \label{tab:⟨table name⟩} % a handle to cross reference the table
+\documentclass{article} \pagestyle{empty} 
+\renewcommand{\thetable}{4.2\alph{table}}
+\usepackage{tabularray,sidenotes,float,lipsum}
+\begin{document}
+\lipsum[4]
+
+\begin{table}[H]
+\caption{Float here}
+\begin{tblr}[tall,label=none,entry=none,note{}={Drivers ride busses.}]{
+colspec={XX}, hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name          & Job \\
+Zaid Knowles  & Teacher \\
+Hayley Conner & Doctor  \\
+Susan Wood    & Driver \\
+\end{tblr}
 \end{table}
+
+\begin{margintable}
+\caption{Float right}
+\begin{tblr}[tall,label=none,entry=none,note{}={Drivers ride busses.}]{
+colspec={XX[r]}, hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name   & Age \\
+Peter  & 7   \\
+Io     & 14  \\
+Lara   & 10  \\
+\end{tblr}
+\end{margintable}
+
+\lipsum[2]
+
+\begin{table*}
+\caption{Float superwide}
+\begin{tblr}[tall,label=none,entry=none,note{}={Drivers ride busses.}]{
+colspec={XX[r]}, hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name   & Age \\
+Peter  & 7   \\
+Io     & 14  \\
+Lara   & 10  \\
+\end{tblr}
+\end{table*}
+
+\listoftables
+\end{document}
 ```
 
-- `⟨caption⟩`: Title displayed below the table and in the index
-- `⟨table name⟩`: Filename and handle to cross reference the table
+# References
 
-Table floats contain many lines of text, so they are distracting in the main text. Therefore, extract each floating object into a separate file.
+Table without label, caption
 
-1. Extract the float into a **separate file** like `floating-tables/⟨table name⟩.tex`
-2. **Request to place** the floating object at the next possible position considering the placement parameters
+![table reference nolabel.svg](./attachments/table-reference-nolabel.svg)
 
-    ```latex
-    \input{floating-tables/⟨table name⟩}
-    ```
+```latex
+\documentclass{standalone} 
+\usepackage{tabularray}
+\begin{document}
+\begin{tblr}[tall,label=none,note{}={Drivers ride busses.}]{
+hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name          & Job \\
+Zaid Knowles  & Teacher \\
+Hayley Conner & Doctor  \\
+Susan Wood    & Driver \\
+\end{tblr}
+\end{document}
+```
 
-3. Write a reference to the floating object, as it might not appear on the same page
+![table reference nolabel 2.svg](./attachments/table-reference-nolabel-2.svg)
 
-    ```latex
-    Our measurement results can be seen in Table \ref{tab:⟨table name⟩}.
-    ```
+```latex
+\documentclass{standalone} 
+\usepackage{tabularray}
+\begin{document}
+\begin{tblr}[tall,label=none,note{}={as of 2014}]{
+hline{1,Z}={.08em}, hline{2}, colspec={lr}, row{1}={c},
+}
+Name   & Age \\
+Peter  & 7   \\
+Io     & 14  \\
+Lara   & 10  \\
+\end{tblr}
+\end{document}
+```
 
----
-Sources:
+# Text mode
 
-Related:
+Caption on tables in text mode
 
-Tags:
-[Graphical elements - Standardize tables, images, plots](./graphical-elements.md)
+![table reference text mode.svg](./attachments/table-reference-text-mode.svg)
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{4.3\alph{table}}
+\usepackage{tabularray,graphbox,caption}
+\captionsetup[table]{skip=2pt}
+\begin{document}
+\begin{minipage}{.4\textwidth} \centering{}
+\captionof{table}{Pre-compiled table}
+\includegraphics{table reference nolabel}
+\end{minipage}
+%
+\begin{tblr}[tall,caption={Inline table},note{}={Drivers ride busses.}]{
+hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name          & Job \\
+Zaid Knowles  & Teacher \\
+Hayley Conner & Doctor  \\
+Susan Wood    & Driver \\
+\end{tblr}
+\listoftables
+\end{document}
+```
+
+# Floating tables
+
+![table reference float mode.svg](./attachments/table-reference-float-mode.svg)
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{4.4\alph{table}}
+\usepackage{tabularray,graphbox}
+\begin{document}
+\begin{table}[h] \centering{}
+\caption{Pre-compiled table}
+\includegraphics{table reference nolabel}
+\end{table}
+%
+\begin{center}
+\begin{tblr}[tall,caption={Inline table},note{}={Drivers ride busses.}]{
+hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name          & Job \\
+Zaid Knowles  & Teacher \\
+Hayley Conner & Doctor  \\
+Susan Wood    & Driver \\
+\end{tblr}
+\end{center}
+\listoftables
+\end{document}
+```
+
+Floating tables in sidebar
+
+![table reference float sidebar.svg](./attachments/table-reference-float-sidebar.svg)
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{4.5\alph{table}}
+\usepackage{tabularray,graphbox,sidenotes,lipsum}
+\begin{document}
+See tables in the sidebar.
+
+\begin{margintable}
+\caption{Pre-compiled table}
+\includegraphics{table reference nolabel}
+\end{margintable}
+\begin{margintable}
+\begin{tblr}[tall,caption={Inline table},note{}={Drivers ride busses.}]{
+hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name          & Job \\
+Zaid Knowles  & Teacher \\
+Hayley Conner & Doctor  \\
+Susan Wood    & Driver \\
+\end{tblr}
+\end{margintable}
+\listoftables
+\end{document}
+```
+
+
+# Sub-float mode
+
+![table reference subfloat mode.svg](./attachments/table-reference-subfloat-mode.svg)
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{4.6\alph{table}}
+\usepackage{tabularray,graphbox}
+\begin{document}
+\begin{table}
+\begin{minipage}[b]{0.35\textwidth} \centering{}
+\caption{Pre-compiled} \vspace{3pt}
+\includegraphics{table reference nolabel}
+\end{minipage}
+\hspace{1em}
+\begin{minipage}[b]{0.35\textwidth} \centering{}
+\begin{tblr}[tall,baseline=b,caption={Inline table},note{}={Drivers ride busses.}]{
+hline{1,Z}={.08em}, hline{2}, row{1}={c}, 
+}
+Name          & Job \\
+Zaid Knowles  & Teacher \\
+Hayley Conner & Doctor  \\
+Susan Wood    & Driver \\
+\end{tblr}
+\end{minipage}
+\end{table}
+\listoftables
+\end{document}
+```
+
+![table reference subfloat mode 2.svg](./attachments/table-reference-subfloat-mode-2.svg)
+
+```latex
+\documentclass{article} \pagestyle{empty}
+\renewcommand{\thetable}{4.7\alph{table}}
+\usepackage{tabularray,graphbox}
+\begin{document}
+\begin{table}
+\begin{minipage}[b]{.2\textwidth} \centering{}
+\caption{P} \vspace{4pt}
+\includegraphics{table reference nolabel 2}
+\end{minipage}
+\hspace{1em}
+\begin{minipage}[b]{.2\textwidth} \centering{}
+\begin{tblr}[tall,baseline=b,caption={I},note{}={as of 2014}]{
+hline{1,Z}={.08em}, hline{2}, colspec={lr}, row{1}={c},
+}
+Name   & Age \\
+Peter  & 7   \\
+Io     & 14  \\
+Lara   & 10  \\
+\end{tblr}
+\end{minipage}
+\hspace{1em}
+\begin{minipage}[b]{.2\textwidth} \centering{}
+\caption{C} \vspace{4pt}
+\begin{tblr}[tall,baseline=b,entry=none,label=none,note{}={as of 2014}]{
+hline{1,Z}={.08em}, hline{2}, colspec={lr}, row{1}={c},
+}
+Name   & Age \\
+Peter  & 7   \\
+Io     & 14  \\
+Lara   & 10  \\
+\end{tblr}
+\end{minipage}
+\end{table}
+\listoftables
+\end{document}
+```
