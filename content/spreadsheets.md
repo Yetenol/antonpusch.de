@@ -1,6 +1,6 @@
 ---
 title: "Spreadsheets - Calculate sum, mean, standard deviation, max, and min across selection of cells"
-date: "2024-09-11T00:00:00.000+02:00"
+date: "2025-01-07T00:00:00.000+01:00"
 dg-publish: true
 ---
 
@@ -88,7 +88,7 @@ Calculate the following values, with row number $r$:
 
 ```latex
 \documentclass{standalone} \renewcommand{\thetable}{6.2}
-\usepackage{tabularray,textcomp}
+\usepackage{tabularray,eurosym}
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
 \regexConst\cNumberPattern {([-+]?(?:\d*\.)?\d+(?:e[-+]?\d+)?)} 
@@ -118,21 +118,21 @@ Calculate the following values, with row number $r$:
     \prgReturn{ \fpUse\lTmpaFp } }
 \ExplSyntaxOff
 \begin{document}
-\begin{tblr}[tall,caption={Calculate bold trip expenses, distances},note{}={
+\begin{tblr}[tall,caption={Calculate values in \textbf{bold} (distances, trip expenses)},note{}={
     We canoe \textbf{%
     \cellCopy{r={3,6},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}\,km} 
     through the Mecklenburg Lakeland and \textbf{%
     \cellCopy{r={8,11},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}\,km} 
     on the Havel River. Overnight prices range from \textbf{%
-    \cellCopy{r={3-Z},c={4},accum={\lTmpcFp != 0 ? min(\lTmpaFp,\lTmpcFp) : \lTmpaFp},initial={999999}}\,€} 
+    \cellCopy{r={3-Z},c={4},accum={\lTmpcFp != 0 ? min(\lTmpaFp,\lTmpcFp) : \lTmpaFp},initial={999999}}\,\euro} 
     to \textbf{%
-    \cellCopy{r={3-Z},c={4},accum={max(\lTmpaFp,\lTmpcFp)}, initial={-999999}}\,€}. 
+    \cellCopy{r={3-Z},c={4},accum={max(\lTmpaFp,\lTmpcFp)}, initial={-999999}}\,\euro}. 
     In total, accommodation costs \textbf{%
-    \cellCopy{r={3-Z},c={6},accum={\lTmpaFp + \lTmpcFp}}\,€}
+    \cellCopy{r={3-Z},c={6},accum={\lTmpaFp + \lTmpcFp}}\,\euro}
     averaging \textbf{%
     \fpEval{ round(
     \cellCopy{r={3-Z},c={6},accum={\lTmpaFp + \lTmpcFp}} /
-    \cellCopy{r={3-Z},c={6},accum={\lTmpaFp + 1}}, 2) }\,€}
+    \cellCopy{r={3-Z},c={6},accum={\lTmpaFp + 1}}, 2) }\,\euro}
     per night.},
 ]{
     hline{1,Z}={.08em},hline{2}, column{2-Z}={r}, column{1}={l}, 
@@ -140,7 +140,7 @@ Calculate the following values, with row number $r$:
     cell{2-Z}{1}={cmd=\quad}, cell{2,7}{1}={c=6}{cmd={},font=\bfseries},
     cell{2-Z}{3,6}={font=\bfseries},
     cell{2-Z}{2}={appto={\,km}}, cell{4-6,9-11}{3}={cmd={$\Delta\,$},appto={\,km}},
-    cell{2-Z}{5}={l,preto={$\times$ },appto={ $=$}}, cell{2-Z}{4,6}={appto={\,€}},
+    cell{2-Z}{5}={l,preto={$\times$ },appto={ $=$}}, cell{2-Z}{4,6}={appto={\,\euro}},
     cell{4}{3}={preto={\cellCopy{r={3,4},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
     cell{5}{3}={preto={\cellCopy{r={4,5},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
     cell{6}{3}={preto={\cellCopy{r={5,6},c={2},accum={ abs(\lTmpaFp - \lTmpcFp) }}}},
