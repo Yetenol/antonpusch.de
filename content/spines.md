@@ -13,13 +13,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.rcParams['text.usetex'] = True
 plt.rcParams['font.family'] = 'serif'
-x = np.linspace(0, 4, 100)
+x = np.linspace(0, np.pi*2, 100)
 plt.figure(figsize=(2.7, 2))
 plt.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
 plt.grid(True)
 plt.title("Figure 1.1: Normal spines", fontsize=10)
 export_plt_figure(plt, outfile="plot spine 1")
-plt.show1
+plt.show()
 ```
 
 Hide spines
@@ -31,7 +31,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.rcParams['text.usetex'] = True
 plt.rcParams['font.family'] = 'serif'
-x = np.linspace(0, 4, 100)
+x = np.linspace(0, np.pi*2, 100)
 plt.figure(figsize=(2.7, 2))
 plt.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
 plt.title("Figure 1.2: Left, bottom spines", fontsize=10)
@@ -52,7 +52,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.axisartist.axislines import AxesZero
 plt.rcParams['text.usetex'] = True
 plt.rcParams['font.family'] = 'serif'
-x = np.linspace(0, 4, 100)
+x = np.linspace(0, np.pi*2, 100)
 plt.figure(figsize=(3, 2.5))
 ax = plt.subplot(axes_class=AxesZero)
 ax.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
