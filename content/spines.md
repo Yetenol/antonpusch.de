@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['text.usetex'] = True
 plt.rcParams['font.family'] = 'serif'
 x = np.linspace(0, np.pi*2, 100)
-plt.figure(figsize=(2.7, 2))
+plt.figure(figsize=(2.7, 2), layout='constrained')
 plt.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
 plt.grid(True)
 plt.title("Figure 1.1: Normal spines", fontsize=10)
@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['text.usetex'] = True
 plt.rcParams['font.family'] = 'serif'
 x = np.linspace(0, np.pi*2, 100)
-plt.figure(figsize=(2.7, 2))
+plt.figure(figsize=(2.7, 2), layout='constrained')
 plt.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
 plt.title("Figure 1.2: Left, bottom spines", fontsize=10)
 plt.grid(True)
@@ -53,10 +53,10 @@ from mpl_toolkits.axisartist.axislines import AxesZero
 plt.rcParams['text.usetex'] = True
 plt.rcParams['font.family'] = 'serif'
 x = np.linspace(0, np.pi*2, 100)
-plt.figure(figsize=(3, 2.5))
+plt.figure(figsize=(3, 2.5), layout='constrained')
 ax = plt.subplot(axes_class=AxesZero)
 ax.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
-plt.title("Figure 1.3: Origin, Arrow tips", fontsize=10)
+plt.title("Figure 1.3: Spines with arrow tips,\n through origin $(0,0)$, \n", fontsize=10)
 plt.grid(True)
 for direction in ["xzero", "yzero"]:
     ax.axis[direction].set_axisline_style("-|>")
