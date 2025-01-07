@@ -3,13 +3,91 @@ title: "Spines - Place axis spines of plots"
 date: "2025-01-07T00:00:00.000+01:00"
 dg-publish: true
 ---
+
+Normal spines
+
+![plot spine 1.svg](./attachments/plot-spine-1.svg)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams['text.usetex'] = True
+plt.rcParams['font.family'] = 'serif'
+x = np.linspace(0, 4, 100)
+plt.figure(figsize=(2.7, 2))
+plt.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+plt.grid(True)
+plt.title("Figure 1.1: Normal spines", fontsize=10)
+export_plt_figure(plt, outfile="plot spine 1")
+plt.show1
+```
+
+Hide spines
+
+![plot spine 2.svg](./attachments/plot-spine-2.svg)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams['text.usetex'] = True
+plt.rcParams['font.family'] = 'serif'
+x = np.linspace(0, 4, 100)
+plt.figure(figsize=(2.7, 2))
+plt.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+plt.title("Figure 1.2: Left, bottom spines", fontsize=10)
+plt.grid(True)
+ax = plt.subplot()
+ax.spines[['right', 'top']].set_visible(False)
+export_plt_figure(plt, outfile="plot spine 2")
+plt.show()
+```
+
+Spines through $(0,0)$ and with arrows
+
+![plot spine 3.svg](./attachments/plot-spine-3.svg)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.axisartist.axislines import AxesZero
+plt.rcParams['text.usetex'] = True
+plt.rcParams['font.family'] = 'serif'
+x = np.linspace(0, 4, 100)
+plt.figure(figsize=(3, 2.5))
+ax = plt.subplot(axes_class=AxesZero)
+ax.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+plt.title("Figure 1.3: Origin, Arrow tips", fontsize=10)
+plt.grid(True)
+for direction in ["xzero", "yzero"]:
+    ax.axis[direction].set_axisline_style("-|>")
+    ax.axis[direction].set_visible(True)
+for direction in ["left", "right", "bottom", "top"]:
+    ax.axis[direction].set_visible(False)
+export_plt_figure(plt, outfile="plot spine 3")
+plt.show()
+```
+
+# Collection for note preview
+
+![plot spines.svg](./attachments/plot-spines.svg)
+
+```latex
+\documentclass{standalone} \usepackage{graphbox}
+\begin{document}
+\includegraphics[align=c]{plot spine 1}
+\includegraphics[align=c]{plot spine 2}
+\includegraphics[align=c]{plot spine 3}
+\end{document}
+```
+
+
 # Modify spines
 
 - [Spines — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/gallery/spines/spines.html#sphx-glr-gallery-spines-spines-py)
 - [Spine placement — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/gallery/spines/spine_placement_demo.html#sphx-glr-gallery-spines-spine-placement-demo-py)
 - [Axis line styles — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/gallery/axisartist/demo_axisline_style.html)
 
-![plot spines.svg](./attachments/plot-spines.svg)
+![plot spines 2.svg](./attachments/plot-spines-2.svg)
 
 ```python
 import numpy as np

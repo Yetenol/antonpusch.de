@@ -3,7 +3,6 @@ title: "Plots - Dynamically plot mathematical functions as a vector graphic"
 date: "2025-01-07T00:00:00.000+01:00"
 dg-publish: true
 ---
-
 # Native and external processing tools 
 
 ![plot engine comparison.svg](./attachments/plot-engine-comparison.svg)
