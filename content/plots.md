@@ -32,6 +32,17 @@ export_plt_figure(plt, outfile="")
 plt.show()
 ``````
 
+# Modify spines of the x or y axis
+
+- Hide unwanted spines, see 1.2, 1.3
+- Move spines to origin $(0,0)$, see 1.3
+- Add arrow tips to the top and right end of the spines
+- See source code examples: [Spines - Place axis spines of plots](./spines.md)
+
+![plot spines.svg](./attachments/plot-spines.svg)
+
+
+
 # Size
 
 - [Size of plots](Size%20of%20plots.md)
@@ -39,12 +50,6 @@ plt.show()
 # Legend
 
 - [Function legend - Show formulas for multiple functions](./function-legend.md)
-
-# Modify spines (axis lines)
-
-- See source code examples: [Spines - Place axis spines of plots](./spines.md)
-
-![plot spines.svg](./attachments/plot-spines.svg)
 
 
 Color gradients

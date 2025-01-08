@@ -3,7 +3,7 @@ title: "Spines - Place axis spines of plots"
 date: "2025-01-08T00:00:00.000+01:00"
 dg-publish: true
 ---
-# Combines plots
+# Modify spines of x and y axis
 
 See [figures for print documents (PDF)](./attachments/plot-spines.pdf) or figures for displays:
 
@@ -43,7 +43,7 @@ plot_with_left_and_bottom_spine(axs[1])
 plot_with_spines_at_zero(axs[2])
 plt.savefig(@vault_path + '/attachments/plot spines.svg')
 
-# Generate graphic for print documents
+# Redraw figure for print documents
 plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
 plt.clf()
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
