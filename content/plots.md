@@ -21,7 +21,9 @@ Implicit Axes through PyPlot `plt`
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({"text.usetex":True, 'font.family':'serif'})
+plt.rcParams.update({"text.usetex":True, 'font.family':'serif',
+    'figure.constrained_layout.use':True, 
+    'axes.grid':True, 'grid.linestyle':':'})
 x = np.linspace(0, np.pi*2, 100)
 fig, ax = plt.subplots(layout='constrained')
 ax.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
