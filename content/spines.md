@@ -1,8 +1,131 @@
 ---
 title: "Spines - Place axis spines of plots"
-date: "2025-01-07T00:00:00.000+01:00"
+date: "2025-01-08T00:00:00.000+01:00"
 dg-publish: true
 ---
+# Combines plots
+
+![plot spines.svg](./attachments/plot-spines.svg)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams.update({"text.usetex":True, 'font.family':'serif',
+    'axes.grid':True, 'grid.linestyle':':'})
+x = np.linspace(0, np.pi*2, 100)
+fig, axs = plt.subplots(ncols=3, figsize=(6,2.2), layout='constrained')
+axs[0].set_title("Figure 1.1: Default spines")
+axs[0].plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+
+axs[1].set_title("Figure 1.2: Left,\n bottom spine")
+axs[1].plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+axs[1].spines[['right', 'top']].set_visible(False)
+
+axs[2].set_title("Figure 1.3: Spines\n through origin")
+axs[2].plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+axs[2].spines[['right', 'top']].set_visible(False)
+axs[2].spines[['left', 'bottom']].set_position('zero')
+export_plt_figure(plt, outfile="plot spines")
+plt.show()
+```
+
+Normal, default spines
+
+![plot spine default.svg](./attachments/plot-spine-default.svg)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams.update({"text.usetex":True, 'font.family':'serif'})
+x = np.linspace(0, np.pi*2, 100)
+fig, ax = plt.subplots()
+fig.set_figwidth(2.5)
+ax.set_aspect(2.5)
+ax.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+ax.grid(True)
+ax.set_title("Figure 1.1: Default spines")
+fig.tight_layout()
+export_plt_figure(fig, outfile="plot spine default", crop=True)
+plt.show()
+```
+
+Only left and bottom spines
+
+![plot spine left bottom.svg](./attachments/plot-spine-left-bottom.svg)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams['text.usetex'] = True
+plt.rcParams['font.family'] = 'serif'
+x = np.linspace(0, np.pi*2, 100)
+fig, ax = plt.subplots()
+fig.set_figwidth(2.5)
+ax.set_aspect(2.5)
+ax.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+ax.grid(True)
+ax.set_title("Figure 1.2: Left, bottom spines")
+ax.spines[['right', 'top']].set_visible(False)
+fig.tight_layout()
+export_plt_figure(fig, outfile="plot spine left bottom", crop=True)
+plt.show()
+```
+
+Only left and bottom spines
+
+![plot spine arrrow tips.svg](./attachments/plot-spine-arrrow-tips.svg)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.axisartist.axislines import AxesZero
+plt.rcParams['text.usetex'] = True
+plt.rcParams['font.family'] = 'serif'
+x = np.linspace(0, np.pi*2, 100)
+fig, ax1 = plt.subplots()
+fig.set_figwidth(2.5)
+ax = fig.subplots(1, 1, axes_class=AxesZero)
+ax.set_aspect(2.5)
+ax.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+ax.grid(True)
+plt.title("Figure 1.3: Spines with arrow tips,\n through origin $(0,0)$, \n", fontsize=10)
+plt.grid(True)
+for direction in ["xzero", "yzero"]:
+    ax.axis[direction].set_axisline_style("-|>")
+    ax.axis[direction].set_visible(True)
+for direction in ["left", "right", "bottom", "top"]:
+    ax.axis[direction].set_visible(False)
+export_plt_figure(plt, outfile="plot spine arrrow tips", crop=True)
+plt.show()
+```
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+fig, ax = plt.subplots()
+# Move the left and bottom spines to x = 0 and y = 0, respectively.
+ax.spines["left"].set_position(("data", 0))
+ax.spines["bottom"].set_position(("data", 0))
+# Hide the top and right spines.
+ax.spines["top"].set_visible(False)
+ax.spines["right"].set_visible(False)
+
+# Draw arrows (as black triangles: ">k"/"^k") at the end of the axes.  In each
+# case, one of the coordinates (0) is a data coordinate (i.e., y = 0 or x = 0,
+# respectively) and the other one (1) is an axes coordinate (i.e., at the very
+# right/top of the axes).  Also, disable clipping (clip_on=False) as the marker
+# actually spills out of the axes.
+ax.plot(1, 0, ">k", transform=ax.get_yaxis_transform(), clip_on=False)
+ax.plot(0, 1, "^k", transform=ax.get_xaxis_transform(), clip_on=False)
+
+# Some sample data.
+x = np.linspace(-0.5, 1., 100)
+ax.plot(x, np.sin(x*np.pi))
+
+plt.show()
+```
 
 Normal spines
 

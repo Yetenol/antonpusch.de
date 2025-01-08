@@ -1,6 +1,6 @@
 ---
 title: "Plots - Dynamically plot mathematical functions as a vector graphic"
-date: "2025-01-07T00:00:00.000+01:00"
+date: "2025-01-08T00:00:00.000+01:00"
 dg-publish: true
 ---
 
@@ -18,6 +18,21 @@ Explicit Axes through Figure `fig` , Axes `ax`
 Implicit Axes through PyPlot `plt`
 
 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams.update({"text.usetex":True, 'font.family':'serif'})
+x = np.linspace(0, np.pi*2, 100)
+fig, ax = plt.subplots(layout='constrained')
+ax.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+ax.set_title("Sample plot")
+export_plt_figure(plt, outfile="")
+plt.show()
+``````
+
+# Size
+
+- [Size of plots](Size%20of%20plots.md)
 
 # Legend
 
