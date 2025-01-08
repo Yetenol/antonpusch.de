@@ -9,7 +9,7 @@ dg-publish: true
 
 ![plot spines 1.svg](./attachments/plot-spines-1.svg)
 
-![plot_spines.pdf](./attachments/plot_spines.pdf)
+[Print Version (PDF)](./attachments/plot_spines.pdf)
 
 ```python
 import numpy as np
