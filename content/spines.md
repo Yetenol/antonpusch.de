@@ -12,8 +12,9 @@ See [figures for print documents (PDF)](./attachments/plot-spines.pdf) or figure
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'axes.grid':True, 'grid.linestyle':':',
-    'figure.constrained_layout.use':True, 'axes.titlesize': 10})
+plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
+    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
+    'axes.grid':True, 'grid.linestyle':':'})
 def plot_with_default_spines(axes):
     x = np.linspace(0, 2.5, 100)
     axes.set_title("Figure 1.1: Default spines")
@@ -35,14 +36,12 @@ def plot_with_spines_at_zero(axes):
     axes.spines[['right', 'top']].set_visible(False)
     axes.spines[['left', 'bottom']].set_position('zero')
     axes.legend()
-    
-# Generate graphic for displays
-plt.rcParams.update({'svg.fonttype':'none'})
+
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
 plot_with_default_spines(axs[0])
 plot_with_left_and_bottom_spine(axs[1])
 plot_with_spines_at_zero(axs[2])
-plt.savefig(@vault_path + '/attachments/plot spines.svg', transparent=True)
+plt.savefig(@vault_path + '/attachments/plot spines.svg')
 
 # Generate graphic for print documents
 plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
@@ -51,7 +50,7 @@ fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
 plot_with_default_spines(axs[0])
 plot_with_left_and_bottom_spine(axs[1])
 plot_with_spines_at_zero(axs[2])
-plt.savefig(@vault_path + '/attachments/plot spines.pdf', transparent=True)
+plt.savefig(@vault_path + '/attachments/plot spines.pdf')
 plt.show()
 ```
 
