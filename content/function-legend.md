@@ -1,6 +1,6 @@
 ---
 title: "Function legend - Show formulas for multiple functions"
-date: "2025-01-08T00:00:00.000+01:00"
+date: "2025-01-09T00:00:00.000+01:00"
 dg-publish: true
 ---
 
@@ -115,12 +115,12 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'axes.grid':True, 'grid.linestyle':':'})
 def plot_example_function_foreach(axes_list):
     for axes in axes_list:
-        x = np.linspace(0, 5, 100)
+        x = np.linspace(0, 4, 100)
         axes.set_xlabel("x")
-        axes.plot(x, np.cos(x), 
-            label=r"$f(x) = \cos{x}$")
-        axes.plot(x, np.exp(x)/20, 
-            label=r"$g(x) = \frac{e^x}{20}$")
+        axes.plot(x, np.pow(x, 2), 
+            label=r"$f(x) = x^2$")
+        axes.plot(x, np.exp(x), 
+            label=r"$g(x) = e^x$")
 def show_legend_best(axes):
     axes.set_title("Figure 2.1:\n Auto placement")
     axes.legend()
@@ -130,8 +130,10 @@ def show_legend_underneath(axes):
     axes.legend(loc='upper center', bbox_to_anchor=(0.5, -0.25), ncols=2)
 def annotate_lines(axes):
     axes.set_title("Figure 2.3:\n Annotate lines")
-    axes.text(0.8, 1.5, r"$f(x) =$" + '\n' + r"$\cos{x}$", horizontalalignment='center', color='C0')
-    axes.text(3.5, 6, r"$g(x) = \frac{e^x}{20}$", horizontalalignment='center', color='C1')
+    axes.text(4, 0, r"$f(x) = x^2$", 
+        horizontalalignment='right', color='C0')
+    axes.text(3.8, 45, r"$g(x) = e^x$", 
+        horizontalalignment='right', color='C1')
 
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.6))
 plot_example_function_foreach(axs)
