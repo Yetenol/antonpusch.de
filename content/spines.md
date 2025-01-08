@@ -40,7 +40,7 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'axes.grid':True, 'grid.linestyle':':'})
 def plot_with_left_and_bottom_spine(axes):
     x = np.linspace(0, 2.5, 100)
-    axes.set_title("Figure 1.2: Left,\n bottom spine")
+    axes.set_title("Figure 1.2: Left, bottom spine")
     axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
@@ -65,7 +65,7 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'axes.grid':True, 'grid.linestyle':':'})
 def plot_with_spines_at_zero(axes):
     x = np.linspace(0, 2.5, 100)
-    axes.set_title("Figure 1.3: Spines\n through origin")
+    axes.set_title("Figure 1.3: Spines through origin")
     axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
