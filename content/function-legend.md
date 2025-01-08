@@ -135,7 +135,7 @@ def annotate_lines(axes):
     axes.text(3.8, 45, r"$g(x) = e^x$", 
         horizontalalignment='right', color='C1')
 
-fig, axs = plt.subplots(ncols=3, figsize=(6,2.6))
+fig, axs = plt.subplots(ncols=3, figsize=(6,2.4))
 plot_example_function_foreach(axs)
 show_legend_best(axs[0])
 show_legend_underneath(axs[1])
@@ -145,7 +145,7 @@ plt.savefig(@vault_path + '/attachments/plot legend.svg')
 # Redraw figure for print documents
 plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
 plt.clf()
-fig, axs = plt.subplots(ncols=3, figsize=(6,2.6))
+fig, axs = plt.subplots(ncols=3, figsize=(6,2.4))
 plot_example_function_foreach(axs)
 show_legend_best(axs[0])
 show_legend_underneath(axs[1])
