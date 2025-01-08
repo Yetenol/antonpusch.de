@@ -19,7 +19,7 @@ def plot_with_default_spines(axes):
     axes.set_title("Figure 1.1: Default spines")
     axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
-        label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
+        label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
     axes.legend()
 
 fig, axs = plt.subplots(figsize=(6,2.2))
@@ -43,7 +43,7 @@ def plot_with_left_and_bottom_spine(axes):
     axes.set_title("Figure 1.2: Left, bottom spine")
     axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
-        label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
+        label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
     axes.legend()
     axes.spines[['right', 'top']].set_visible(False)
 
@@ -68,7 +68,7 @@ def plot_with_spines_at_zero(axes):
     axes.set_title("Figure 1.3: Spines through origin")
     axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
-        label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
+        label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
     axes.legend()
     axes.spines[['right', 'top']].set_visible(False)
     axes.spines[['left', 'bottom']].set_position('zero')
