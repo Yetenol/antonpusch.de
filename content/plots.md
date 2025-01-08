@@ -21,16 +21,21 @@ Implicit Axes through PyPlot `plt`
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({"text.usetex":True, 'font.family':'serif',
-    'figure.constrained_layout.use':True, 
+plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
+    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-x = np.linspace(0, np.pi*2, 100)
-fig, ax = plt.subplots(layout='constrained')
-ax.plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
-ax.set_title("Sample plot")
-export_plt_figure(plt, outfile="")
+def plot_example_function(axes):
+    x = np.linspace(0, 2.5, 100)
+    axes.set_xlabel("x")
+    axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
+        label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
+    axes.legend()
+
+fig, ax = plt.subplots(figsize=(6,2.2))
+plot_example_function(ax)
+# plt.savefig(@vault_path + '/attachments/plot .svg')
 plt.show()
-``````
+```
 
 # Modify spines of the x or y axis
 
@@ -41,7 +46,11 @@ plt.show()
 
 ![plot spines.svg](./attachments/plot-spines.svg)
 
+# Add legend
 
+- See source code example: [Function legend - Show formulas for multiple functions](./function-legend.md)
+
+![plot legend.svg](./attachments/plot-legend.svg)
 
 # Size
 
