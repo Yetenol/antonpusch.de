@@ -22,8 +22,8 @@ def plot_with_default_spines(axes):
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
     axes.legend()
 
-fig, axs = plt.subplots(figsize=(6,2.2))
-plot_with_default_spines(axs)
+fig, ax = plt.subplots(figsize=(6,2.2))
+plot_with_default_spines(ax)
 plt.savefig(@vault_path + '/attachments/plot spine default.svg')
 plt.show()
 ```
@@ -47,8 +47,8 @@ def plot_with_left_and_bottom_spine(axes):
     axes.legend()
     axes.spines[['right', 'top']].set_visible(False)
 
-fig, axs = plt.subplots(figsize=(6,2.2))
-plot_with_left_and_bottom_spine(axs)
+fig, ax = plt.subplots(figsize=(6,2.2))
+plot_with_left_and_bottom_spine(ax)
 plt.savefig(@vault_path + '/attachments/plot spine left bottom.svg')
 plt.show()
 ```
@@ -73,8 +73,8 @@ def plot_with_spines_at_zero(axes):
     axes.spines[['right', 'top']].set_visible(False)
     axes.spines[['left', 'bottom']].set_position('zero')
 
-fig, axs = plt.subplots(figsize=(6,2.2))
-plot_with_spines_at_zero(axs)
+fig, ax = plt.subplots(figsize=(6,2.2))
+plot_with_spines_at_zero(ax)
 plt.savefig(@vault_path + '/attachments/plot spine origin.svg')
 plt.show()
 ```
