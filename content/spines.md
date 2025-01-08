@@ -5,70 +5,53 @@ dg-publish: true
 ---
 # Combines plots
 
+See [figures for print documents (PDF)](./attachments/plot-spines.pdf) or figures for displays:
+
 ![plot spines.svg](./attachments/plot-spines.svg)
 
-![plot spines 1.svg](./attachments/plot-spines-1.svg)
-
-[Print Version (PDF)](./attachments/plot_spines.pdf)
-
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'text.usetex':True, 'font.family':'serif',
-    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
-    'axes.grid':True, 'grid.linestyle':':'})
-x = np.linspace(0, 2.5, 100)
+plt.rcParams.update({'axes.grid':True, 'grid.linestyle':':',
+    'figure.constrained_layout.use':True, 'axes.titlesize': 10})
+def plot_with_default_spines(axes):
+    x = np.linspace(0, 2.5, 100)
+    axes.set_title("Figure 1.1: Default spines")
+    axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
+        label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
+    axes.legend()
+def plot_with_left_and_bottom_spine(axes):
+    x = np.linspace(0, 2.5, 100)
+    axes.set_title("Figure 1.2: Left,\n bottom spine")
+    axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
+        label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
+    axes.spines[['right', 'top']].set_visible(False)
+    axes.legend()
+def plot_with_spines_at_zero(axes):
+    x = np.linspace(0, 2.5, 100)
+    axes.set_title("Figure 1.3: Spines\n through origin")
+    axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
+        label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
+    axes.spines[['right', 'top']].set_visible(False)
+    axes.spines[['left', 'bottom']].set_position('zero')
+    axes.legend()
+    
+# Generate graphic for displays
+plt.rcParams.update({'svg.fonttype':'none'})
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
-axs[0].set_title("Figure 1.1: Default spines")
-axs[0].plot(x, np.cos(np.pi*x)*np.exp(-x), 
-    label=r"$f(x) = \displaystyle\frac{\cos(\pi x)}{e^x}$")
-axs[0].legend()
+plot_with_default_spines(axs[0])
+plot_with_left_and_bottom_spine(axs[1])
+plot_with_spines_at_zero(axs[2])
+plt.savefig(@vault_path + '/attachments/plot spines.svg', transparent=True)
 
-axs[1].set_title("Figure 1.2: Left,\n bottom spine")
-axs[1].plot(x, np.cos(np.pi*x)*np.exp(-x), 
-    label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
-axs[1].spines[['right', 'top']].set_visible(False)
-axs[1].legend()
-
-axs[2].set_title("Figure 1.3: Spines\n through origin")
-axs[2].plot(x, np.cos(np.pi*x)*np.exp(-x), 
-    label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
-axs[2].spines[['right', 'top']].set_visible(False)
-axs[2].spines[['left', 'bottom']].set_position('zero')
-axs[2].legend()
-export_plt_figure(plt, outfile="plot spines")
-plt.show()
-```
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-plt.rcParams.update({'svg.fonttype':'none',
-    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
-    'axes.grid':True, 'grid.linestyle':':'})
-x = np.linspace(0, 2.5, 100)
+# Generate graphic for print documents
+plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
+plt.clf()
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
-axs[0].set_title("Figure 1.1: Default spines")
-axs[0].plot(x, np.cos(np.pi*x)*np.exp(-x), 
-    label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
-axs[0].legend()
-
-axs[1].set_title("Figure 1.2: Left,\n bottom spine")
-axs[1].plot(x, np.cos(np.pi*x)*np.exp(-x), 
-    label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
-axs[1].spines[['right', 'top']].set_visible(False)
-axs[1].legend()
-
-axs[2].set_title("Figure 1.3: Spines\n through origin")
-axs[2].plot(x, np.cos(np.pi*x)*np.exp(-x), 
-    label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
-axs[2].spines[['right', 'top']].set_visible(False)
-axs[2].spines[['left', 'bottom']].set_position('zero')
-axs[2].legend()
-# export_plt_figure(plt, outfile="plot spines")
-plt.savefig(@vault_path + '/attachments/plot spines 1.svg', transparent=True)
-plt.rcParams.update({"text.usetex":True})
-plt.savefig(@vault_path + '/attachments/plot spines 1.pdf', transparent=True)
+plot_with_default_spines(axs[0])
+plot_with_left_and_bottom_spine(axs[1])
+plot_with_spines_at_zero(axs[2])
+plt.savefig(@vault_path + '/attachments/plot spines.pdf', transparent=True)
 plt.show()
 ```
 
