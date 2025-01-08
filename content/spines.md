@@ -9,12 +9,12 @@ dg-publish: true
 
 ![plot spines 1.svg](./attachments/plot-spines-1.svg)
 
-![plot spines.pdf](./attachments/plot-spines.pdf)
+![plot_spines.pdf](./attachments/plot_spines.pdf)
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'text.usetex':True, 'font.family':'serif', 
+plt.rcParams.update({'text.usetex':True, 'font.family':'serif',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
 x = np.linspace(0, 2.5, 100)
