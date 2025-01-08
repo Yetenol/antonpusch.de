@@ -7,19 +7,21 @@ dg-publish: true
 
 ![plot spines.svg](./attachments/plot-spines.svg)
 
+![plot spines 1.svg](./attachments/plot-spines-1.svg)
+
 ![plot spines.pdf](./attachments/plot-spines.pdf)
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'text.usetex':True, 'font.family':'serif',
-    'figure.constrained_layout.use':True, 
+plt.rcParams.update({'text.usetex':True, 'font.family':'serif', 
+    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
 x = np.linspace(0, 2.5, 100)
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
 axs[0].set_title("Figure 1.1: Default spines")
 axs[0].plot(x, np.cos(np.pi*x)*np.exp(-x), 
-    label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
+    label=r"$f(x) = \displaystyle\frac{\cos(\pi x)}{e^x}$")
 axs[0].legend()
 
 axs[1].set_title("Figure 1.2: Left,\n bottom spine")
@@ -41,28 +43,32 @@ plt.show()
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'font.family':'serif', 'svg.fonttype':'none',
-    'figure.constrained_layout.use':True, 
+plt.rcParams.update({'svg.fonttype':'none',
+    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-x = np.linspace(0, np.pi*2, 100)
+x = np.linspace(0, 2.5, 100)
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
 axs[0].set_title("Figure 1.1: Default spines")
-axs[0].plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+axs[0].plot(x, np.cos(np.pi*x)*np.exp(-x), 
+    label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
+axs[0].legend()
 
 axs[1].set_title("Figure 1.2: Left,\n bottom spine")
-axs[1].plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+axs[1].plot(x, np.cos(np.pi*x)*np.exp(-x), 
+    label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
 axs[1].spines[['right', 'top']].set_visible(False)
+axs[1].legend()
 
 axs[2].set_title("Figure 1.3: Spines\n through origin")
-axs[2].plot(x, np.sin(x), label=r"$f(x) = \sin(x)$")
+axs[2].plot(x, np.cos(np.pi*x)*np.exp(-x), 
+    label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
 axs[2].spines[['right', 'top']].set_visible(False)
 axs[2].spines[['left', 'bottom']].set_position('zero')
 axs[2].legend()
-plt.ion()
 # export_plt_figure(plt, outfile="plot spines")
-plt.savefig(@vault_path + '/attachments/plot spines.svg', transparent=True)
+plt.savefig(@vault_path + '/attachments/plot spines 1.svg', transparent=True)
 plt.rcParams.update({"text.usetex":True})
-plt.savefig(@vault_path + '/attachments/plot spines.pdf', transparent=True)
+plt.savefig(@vault_path + '/attachments/plot spines 1.pdf', transparent=True)
 plt.show()
 ```
 
