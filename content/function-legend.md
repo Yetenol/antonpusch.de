@@ -14,10 +14,10 @@ Auto placed
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
-    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
-    'axes.grid':True, 'grid.linestyle':':'})
-def plot_example_functions(axes):
+plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
+    'figure.constrained_layout.use':True, 'svg.fonttype':'none',
+    'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
+def graph_example_functions(axes):
     x = np.linspace(0, 4, 100)
     axes.set_xlabel("x")
     axes.plot(x, x, label=r"$f(x) = x$")
@@ -28,7 +28,7 @@ def show_legend_auto(axes):
     axes.legend()
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-plot_example_functions(ax)
+graph_example_functions(ax)
 show_legend_auto(ax)
 plt.savefig(@vault_path + '/attachments/plot legend auto.svg')
 plt.show()
@@ -44,10 +44,10 @@ plt.show()
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
-    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
-    'axes.grid':True, 'grid.linestyle':':'})
-def plot_example_functions(axes):
+plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
+    'figure.constrained_layout.use':True, 'svg.fonttype':'none',
+    'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
+def graph_example_functions(axes):
     x = np.linspace(0, 4, 100)
     axes.set_xlabel("x")
     axes.plot(x, x, label=r"$f(x) = x$")
@@ -58,7 +58,7 @@ def show_legend_top_right(axes):
     axes.legend(loc="upper right")
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-plot_example_functions(ax)
+graph_example_functions(ax)
 show_legend_top_right(ax)
 plt.savefig(@vault_path + '/attachments/plot legend inside.svg')
 plt.show()
@@ -77,10 +77,10 @@ plt.show()
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
-    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
-    'axes.grid':True, 'grid.linestyle':':'})
-def plot_example_functions(axes_list):
+plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
+    'figure.constrained_layout.use':True, 'svg.fonttype':'none',
+    'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
+def graph_example_functions(axes_list):
     x = np.linspace(0, 4, 100)
     for axes in axes_list:
         axes.set_xlabel("x")
@@ -95,7 +95,7 @@ def show_legend_alongside_subplots(figure):
     figure.legend(loc="outside center right")
 
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
-plot_example_functions(axs)
+graph_example_functions(axs)
 show_legend_alongside_subplots(fig)
 plt.savefig(@vault_path + '/attachments/plot legend figure.svg')
 plt.show()
@@ -110,10 +110,10 @@ See [figures for print documents (PDF)](./attachments/plot-legend.pdf) or figure
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
-    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
-    'axes.grid':True, 'grid.linestyle':':'})
-def plot_example_function_foreach(axes_list):
+plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
+    'figure.constrained_layout.use':True, 'svg.fonttype':'none',
+    'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
+def graph_example_function_foreach(axes_list):
     for axes in axes_list:
         x = np.linspace(0, 4, 100)
         axes.set_xlabel("x")
@@ -134,7 +134,7 @@ def annotate_lines(axes):
         horizontalalignment='right', color='C1')
 
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.4))
-plot_example_function_foreach(axs)
+graph_example_function_foreach(axs)
 show_legend_best(axs[0])
 show_legend_underneath(axs[1])
 annotate_lines(axs[2])
@@ -144,7 +144,7 @@ plt.savefig(@vault_path + '/attachments/plot legend.svg')
 plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
 plt.clf()
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.4))
-plot_example_function_foreach(axs)
+graph_example_function_foreach(axs)
 show_legend_best(axs[0])
 show_legend_underneath(axs[1])
 annotate_lines(axs[2])

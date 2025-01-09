@@ -9,14 +9,13 @@ dg-publish: true
 
 ![plot engine comparison.svg](./attachments/plot-engine-comparison.svg)
 
-- Compare: [PGF vs MatPlotLib vs PyX - Compare native and externalk calculation and drawing engines for plotting](PGF%20vs%20MatPlotLib%20vs%20PyX%20-%20Compare%20native%20and%20externalk%20calculation%20and%20drawing%20engines%20for%20plotting.md)
+- Compare: [Graphing tool comparison - Compare native and external calculation and drawing engines like PGF, MatPlotLib, PyX for visualising data](Graphing%20tool%20comparison%20-%20Compare%20native%20and%20external%20calculation%20and%20drawing%20engines%20like%20PGF,%20MatPlotLib,%20PyX%20for%20visualising%20data.md)
 
 # Terminology
 
 Explicit Axes through Figure `fig` , Axes `ax`
 
 Implicit Axes through PyPlot `plt`
-
 
 ```python
 import numpy as np
