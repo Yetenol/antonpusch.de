@@ -17,6 +17,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
+plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes):
     x = np.linspace(0, 4, 100)
     axes.set_xlabel("x")
@@ -47,6 +48,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
+plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes):
     x = np.linspace(0, 4, 100)
     axes.set_xlabel("x")
@@ -80,6 +82,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
+plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes_list):
     x = np.linspace(0, 4, 100)
     for axes in axes_list:
@@ -92,7 +95,7 @@ def graph_example_functions(axes_list):
 def show_legend_alongside_subplots(figure):
     figure.suptitle("Figure 2.4: Combined figure legend for all axes",
         fontsize=10)
-    figure.legend(loc="outside center right")
+    figure.legend(loc="outside right center", frameon=False)
 
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
 graph_example_functions(axs)
@@ -113,6 +116,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
+plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_function_foreach(axes_list):
     for axes in axes_list:
         x = np.linspace(0, 4, 100)
@@ -124,8 +128,8 @@ def show_legend_best(axes):
     axes.legend()
 def show_legend_underneath(axes):
     axes.set_title("Figure 2.2:\n Legend underneath")
-    box = axes.get_position()
-    axes.legend(loc='upper center', bbox_to_anchor=(0.5, -0.25), ncols=2)
+    axes.legend(loc='upper center', ncols=2, 
+        bbox_to_anchor=(0.5, -0.25), frameon=False)
 def annotate_lines(axes):
     axes.set_title("Figure 2.3:\n Annotate lines")
     axes.text(4, 0, r"$f(x) = x^2$", 
@@ -151,6 +155,5 @@ annotate_lines(axs[2])
 plt.savefig(@vault_path + '/attachments/plot legend.pdf')
 plt.show()
 ```
-
 
 [Other plot legends](Other%20plot%20legends.md)
