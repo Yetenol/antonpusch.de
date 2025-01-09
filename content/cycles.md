@@ -20,7 +20,6 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes):
     x = np.linspace(0, np.pi, 100)
-    axes.set_xlabel("x")
     axes.plot(x, np.sin(x), label=r"$f(x) = \sin{x}$")
     axes.plot(x, np.cos(x), label=r"$g(x) = \cos{x}$")
     axes.plot(x, np.cos(2*x)/3, label=r"$h(x) = \frac{\cos(2x)}{3}$")
@@ -28,9 +27,13 @@ def graph_example_functions(axes):
     axes.plot(x, -np.cos(x), label=r"$j(x) = -\cos{x}$")
     axes.plot(x, -np.cos(2*x)/3, label=r"$k(x) = -\frac{\cos(2x)}{3}$")
     axes.legend()
+    axes.set_xlabel('x')
+    axes.set_ylabel('y', rotation=0)
+    axes.xaxis.set_label_coords(1.0, -0.025)
+    axes.yaxis.set_label_coords(0, 1.025)
 def show_legend_underneath(axes):
     axes.legend(loc='upper center', ncols=3, 
-        bbox_to_anchor=(0.5, -0.25), frameon=False)
+        bbox_to_anchor=(0.5, -0.15), frameon=False)
 
 fig, ax = plt.subplots(figsize=(6,2.4))
 graph_example_functions(ax)
@@ -55,7 +58,6 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes):
     x = np.linspace(0, np.pi, 100)
-    axes.set_xlabel("x")
     axes.plot(x, np.sin(x), label=r"$f(x) = \sin{x}$")
     axes.plot(x, np.cos(x), label=r"$g(x) = \cos{x}$")
     axes.plot(x, np.cos(2*x)/3, label=r"$h(x) = \frac{\cos(2x)}{3}$")
@@ -63,13 +65,17 @@ def graph_example_functions(axes):
     axes.plot(x, -np.cos(x), label=r"$j(x) = -\cos{x}$")
     axes.plot(x, -np.cos(2*x)/3, label=r"$k(x) = -\frac{\cos(2x)}{3}$")
     axes.legend()
+    axes.set_xlabel('x')
+    axes.set_ylabel('y', rotation=0)
+    axes.xaxis.set_label_coords(1.0, -0.025)
+    axes.yaxis.set_label_coords(0, 1.025)
 def use_cycler_linestyle(pyplot):
     linestyle_cycler = cycler('linestyle',['-','--',':','-.',
         (0,(3,1,1,1,1,1)), (0,(3,1,3,1,1,1)) ])
     plt.rcParams.update({ 'axes.prop_cycle' : linestyle_cycler })
 def show_legend_underneath(axes):
     axes.legend(loc='upper center', ncols=3, 
-        bbox_to_anchor=(0.5, -0.25), frameon=False)
+        bbox_to_anchor=(0.5, -0.2), frameon=False)
 
 use_cycler_linestyle(plt)
 fig, ax = plt.subplots(figsize=(6,2.4))
@@ -184,7 +190,6 @@ plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight',
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes):
     x = np.linspace(0, np.pi, 100)
-    axes.set_xlabel("x")
     axes.plot(x, np.sin(x), label=r"$f(x) = \sin{x}$")
     axes.plot(x, np.cos(x), label=r"$g(x) = \cos{x}$")
     axes.plot(x, np.cos(2*x)/3, label=r"$h(x) = \frac{\cos(2x)}{3}$")
@@ -192,6 +197,10 @@ def graph_example_functions(axes):
     axes.plot(x, -np.cos(x), label=r"$j(x) = -\cos{x}$")
     axes.plot(x, -np.cos(2*x)/3, label=r"$k(x) = -\frac{\cos(2x)}{3}$")
     axes.legend()
+    axes.set_xlabel('x')
+    axes.set_ylabel('y', rotation=0)
+    axes.xaxis.set_label_coords(1.0, -0.025)
+    axes.yaxis.set_label_coords(0, 1.025)
 def keep_cycler_color(axes):
     axes.set_title("Figure 3.1: Colors")
 def set_cycler_linestyle(axes):
@@ -201,7 +210,7 @@ def set_cycler_linestyle(axes):
     axes.set_prop_cycle(linestyle_cycler)
 def show_legend_underneath(axes):
     axes.legend(loc='upper center', ncols=2, 
-        bbox_to_anchor=(0.5, -0.25), frameon=False)
+        bbox_to_anchor=(0.5, -0.2), frameon=False)
 
 fig, axs = plt.subplots(ncols=2, figsize=(6,2.4))
 keep_cycler_color(axs[0])
