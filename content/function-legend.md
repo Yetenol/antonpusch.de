@@ -20,10 +20,13 @@ plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight',
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes):
     x = np.linspace(0, 4, 100)
-    axes.set_xlabel("x")
     axes.plot(x, x, label=r"$f(x) = x$")
     axes.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
     axes.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
+    axes.set_xlabel('x')
+    axes.set_ylabel('y', rotation=0)
+    axes.xaxis.set_label_coords(1, -.025)
+    axes.yaxis.set_label_coords(0, 1)
 def show_legend_auto(axes):
     axes.set_title("Figure 2.1: Automatic placement at best location")
     axes.legend()
@@ -51,10 +54,13 @@ plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight',
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes):
     x = np.linspace(0, 4, 100)
-    axes.set_xlabel("x")
     axes.plot(x, x, label=r"$f(x) = x$")
     axes.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
     axes.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
+    axes.set_xlabel('x')
+    axes.set_ylabel('y', rotation=0)
+    axes.xaxis.set_label_coords(1, -.025)
+    axes.yaxis.set_label_coords(0, 1.025)
 def show_legend_top_right(axes):
     axes.set_title("Figure 2.2: Show legend inside data")
     axes.legend(loc="upper right")
@@ -85,13 +91,16 @@ plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight',
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes_list):
     x = np.linspace(0, 4, 100)
-    for axes in axes_list:
-        axes.set_xlabel("x")
     axes_list[0].plot(x, x, label=r"$f(x) = x$")
     axes_list[1].plot(x, np.exp(x)/20, color='C1',
         label=r"$g(x) = \frac{1}{20}\, e^x$")
     axes_list[2].plot(x, np.sin(x), color='C2', 
         label=r"$h(x) = \sin(x)$")
+    for axes in axes_list:
+        axes.set_xlabel('x')
+        axes.set_ylabel('y', rotation=0)
+        axes.xaxis.set_label_coords(1, -.025)
+        axes.yaxis.set_label_coords(-.025, 1)
 def show_legend_alongside_subplots(figure):
     figure.suptitle("Figure 2.4: Combined figure legend for all axes",
         fontsize=10)
@@ -120,16 +129,19 @@ plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_function_foreach(axes_list):
     for axes in axes_list:
         x = np.linspace(0, 4, 100)
-        axes.set_xlabel("x")
         axes.plot(x, np.pow(x, 2), label=r"$f(x) = x^2$")
         axes.plot(x, np.exp(x), label=r"$g(x) = e^x$")
+        axes.set_xlabel('x')
+        axes.set_ylabel('y', rotation=0)
+        axes.xaxis.set_label_coords(1.0, -.025)
+        axes.yaxis.set_label_coords(-.025, .95)
 def show_legend_best(axes):
     axes.set_title("Figure 2.1:\n Auto placement")
     axes.legend()
 def show_legend_underneath(axes):
     axes.set_title("Figure 2.2:\n Legend underneath")
     axes.legend(loc='upper center', ncols=2, 
-        bbox_to_anchor=(0.5, -0.25), frameon=False)
+        bbox_to_anchor=(0.5, -0.15), frameon=False)
 def annotate_lines(axes):
     axes.set_title("Figure 2.3:\n Annotate lines")
     axes.text(4, 0, r"$f(x) = x^2$", 
