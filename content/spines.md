@@ -20,9 +20,12 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'axes.grid':True, 'grid.linestyle':':'})
 def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
-    axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
+    axes.set_xlabel('x')
+    axes.set_ylabel('y', rotation=0)
+    axes.xaxis.set_label_coords(1.0, -0.025)
+    axes.yaxis.set_label_coords(-0.025, 1.0)
     axes.legend()
 def keep_spines_normal(axes):
     axes.set_title("Figure 1.1: Default spines")
@@ -48,9 +51,12 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'axes.grid':True, 'grid.linestyle':':'})
 def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
-    axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
+    axes.text(1, 0, "x", va='top', 
+        transform=axes.get_yaxis_transform())
+    axes.text(0, 1, "y", ha='right', 
+        transform=axes.get_xaxis_transform())
     axes.legend()
 def move_spines_to_origin(axes):
     axes.set_title("Figure 1.2: Spines through origin")
@@ -81,9 +87,14 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'axes.grid':True, 'grid.linestyle':':'})
 def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
-    axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
+    axes.set_xlabel('x')
+    axes.set_ylabel('y', rotation=0)
+    axes.xaxis.set_label_coords(1.0, -0.025, 
+        transform=axes.get_yaxis_transform())
+    axes.yaxis.set_label_coords(0, 1.04,
+        transform=axes.get_xaxis_transform())
     axes.legend()
 def move_spines_to_origin_and_add_arrows(axes):
     axes.set_title("Figure 1.3: Spines with arrow tips, through origin")
@@ -115,9 +126,12 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'axes.grid':True, 'grid.linestyle':':'})
 def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
-    axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
+    axes.set_xlabel('x')
+    axes.set_ylabel('y', rotation=0)
+    axes.xaxis.set_label_coords(1.0, -0.025)
+    axes.yaxis.set_label_coords(0, 1.025)
     axes.legend()
 def hide_spines(axes):
     axes.set_title("Figure 1.4: Hide spines")
@@ -146,18 +160,23 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
 def graph_example_function_foreach(axes_list):
     for axes in axes_list:
         x = np.linspace(0, 2.5, 100)
-        axes.set_xlabel("x")
         axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
             label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
+        axes.set_xlabel('x')
+        axes.set_ylabel('y', rotation=0)
+        axes.xaxis.set_label_coords(1.0, -0.025)
+        axes.yaxis.set_label_coords(-0.025, 1.0)
         axes.legend()
 def keep_spines_normal(axes):
-    axes.set_title("Figure 1.1: Default spines")
+    axes.set_title("Figure 1.1: Frame")
 def move_spines_to_origin(axes):
-    axes.set_title("Figure 1.2: Spines\n through origin")
+    axes.set_title("Figure 1.2: At origin")
     axes.spines[['right', 'top']].set_visible(False)
     axes.spines[['left', 'bottom']].set_position('zero')
+    axes.xaxis.set_label_coords(1.0, -0.025, 
+        transform=axes.get_yaxis_transform())
 def hide_spines(axes):
-    axes.set_title("Figure 1.4: Hide spines")
+    axes.set_title("Figure 1.4: No spines")
     axes.spines[:].set_visible(False)
 
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
