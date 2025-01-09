@@ -1,6 +1,6 @@
 ---
 title: "LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules"
-date: "2024-12-31T00:00:00.000+01:00"
+date: "2025-01-09T00:00:00.000+01:00"
 dg-publish: true
 dg-permalink: latex
 aliases:
@@ -40,7 +40,7 @@ $$
 \end{gather*}
 $$
 
-[Plots - Dynamically plot mathematical functions as a vector graphic](./plots.md)
+[Graph function - Dynamically plot mathematical functions as a vector graphic](./graph-function.md)
 
 ![figure plots.svg](./attachments/figure-plots.svg)
 

@@ -1,6 +1,6 @@
 ---
 title: "TeX Live"
-date: "2024-12-25T00:00:00.000+01:00"
+date: "2025-01-07T00:00:00.000+01:00"
 dg-publish: true
 not-in-use: false
 microsoft-id: 
@@ -15,13 +15,20 @@ thumbnail:
 categories:
   - Office
   - Development
+  - Education
 synopsis: TeX Live is a comprehensive cross-platform distribution of the TeX document production system that includes major TeX-related programs, fonts, and documentation.
 extends-app: 
 ---
 
-TeX Live is a [office](install%20office%20apps.md.md), [development](install%20development%20apps.md.md) app. TeX Live is a comprehensive cross-platform distribution of the TeX document production system that includes major TeX-related programs, fonts, and documentation.
+TeX Live is a [office](install%20office%20apps.md.md), [development](install%20development%20apps.md.md), [education](install%20education%20apps.md.md) app. TeX Live is a comprehensive cross-platform distribution of the TeX document production system that includes major TeX-related programs, fonts, and documentation.
 
 - Download it from the [publisher's website](https://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe)
 
 
-[Install education apps](./install-education-apps.md)
+```powershell
+# Update the package database
+tlmgr update --self
+
+# Update all packages
+tlmgr update --all
+```
