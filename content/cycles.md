@@ -1,0 +1,585 @@
+---
+title: "Cycles - Differentiate data set with colors or line style"
+date: "2025-01-09T00:00:00.000+01:00"
+dg-publish: true
+---
+
+# Default color cycle
+
+- Default color cycle: `C0`, `C1`, `C2`, `C3`, `C4`, `C5`, `C6`, `C7`, `C8`, `C9`
+- [Changes to the default style — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/users/prev_whats_new/dflt_style_changes.html#colors-in-default-property-cycle)
+
+![plot cycles color.svg](./attachments/plot-cycles-color.svg)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
+    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
+    'axes.grid':True, 'grid.linestyle':':'})
+def graph_example_functions(axes):
+    x = np.linspace(0, np.pi, 100)
+    axes.set_xlabel("x")
+    axes.plot(x, np.sin(x), label=r"$f(x) = \sin{x}$")
+    axes.plot(x, np.cos(x), label=r"$f(x) = \cos{x}$")
+    axes.plot(x, -np.sin(x), label=r"$f(x) = -\sin{x}$")
+    axes.plot(x, -np.cos(x), label=r"$f(x) = -\cos{x}$")
+    axes.plot(x, np.cos(2*x)/3, label=r"$f(x) = -\frac{\cos(2x)}{3}$")
+    axes.plot(x, -np.cos(2*x)/3, label=r"$f(x) = -\frac{\cos{x}}{3}$")
+    axes.legend()
+def show_legend_underneath(axes):
+    axes.legend(loc='upper center', bbox_to_anchor=(0.5, -0.25), ncols=3)
+
+fig, ax = plt.subplots(figsize=(6,2.4))
+graph_example_functions(ax)
+show_legend_underneath(ax)
+plt.savefig(@vault_path + '/attachments/plot cycles color.svg')
+plt.show()
+```
+
+[Styling with cycler — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/users/explain/artists/color_cycle.html)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from cycler import cycler
+plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
+    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
+    'axes.grid':True, 'grid.linestyle':':'})
+def graph_example_functions(axes):
+    x = np.linspace(0, np.pi, 100)
+    axes.set_xlabel("x")
+    axes.plot(x, np.sin(x), label=r"$f(x) = \sin{x}$")
+    axes.plot(x, np.cos(x), label=r"$f(x) = \cos{x}$")
+    axes.plot(x, -np.sin(x), label=r"$f(x) = -\sin{x}$")
+    axes.plot(x, -np.cos(x), label=r"$f(x) = -\cos{x}$")
+    axes.plot(x, np.cos(2*x)/3, label=r"$f(x) = -\frac{\cos(2x)}{3}$")
+    axes.plot(x, -np.cos(2*x)/3, label=r"$f(x) = -\frac{\cos{x}}{3}$")
+    axes.legend()
+def use_cycler_linestyle(pyplot):
+    plt.rcParams.update({ 'axes.prop_cycle' : 
+        cycler('linestyle',['-','--',':','-.',
+        (0,(3,1,1,1,1,1)), (0,(3,1,3,1,1,1)) ]) })
+def show_legend_underneath(axes):
+    axes.legend(loc='upper center', bbox_to_anchor=(0.5, -0.25), ncols=3)
+
+use_cycler_linestyle(plt)
+fig, ax = plt.subplots(figsize=(6,2.4))
+graph_example_functions(ax)
+show_legend_underneath(ax)
+plt.savefig(@vault_path + '/attachments/plot cycles color.svg')
+plt.show()
+```
+
+# Available line styles
+
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="504pt" height="576pt" viewBox="0 0 504 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2025-01-09T11:04:03.864364</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 576 
+L 504 576 
+L 504 0 
+L 0 0 
+L 0 576 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 134.22274 150.799219 
+L 500.99976 150.799219 
+L 500.99976 16.598678 
+L 134.22274 16.598678 
+L 134.22274 150.799219 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1"/>
+    <g id="xtick_2"/>
+    <g id="xtick_3"/>
+    <g id="xtick_4"/>
+    <g id="xtick_5"/>
+    <g id="xtick_6"/>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="137.82337" transform="rotate(-0 127.22274 137.82337)">dashdot</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="104.273235" transform="rotate(-0 127.22274 104.273235)">dashed</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="70.723099" transform="rotate(-0 127.22274 70.723099)">dotted</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="37.172964" transform="rotate(-0 127.22274 37.172964)">solid</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_1">
+    <path d="M 150.894423 134.024151 
+L 187.942607 134.024151 
+L 224.99079 134.024151 
+L 262.038974 134.024151 
+L 299.087158 134.024151 
+L 336.135342 134.024151 
+L 373.183526 134.024151 
+L 410.23171 134.024151 
+L 447.279893 134.024151 
+L 484.328077 134.024151 
+" clip-path="url(#p9a7334b7da)" style="fill: none; stroke-dasharray: 9.6,2.4,1.5,2.4; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 150.894423 100.474016 
+L 187.942607 100.474016 
+L 224.99079 100.474016 
+L 262.038974 100.474016 
+L 299.087158 100.474016 
+L 336.135342 100.474016 
+L 373.183526 100.474016 
+L 410.23171 100.474016 
+L 447.279893 100.474016 
+L 484.328077 100.474016 
+" clip-path="url(#p9a7334b7da)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 150.894423 66.92388 
+L 187.942607 66.92388 
+L 224.99079 66.92388 
+L 262.038974 66.92388 
+L 299.087158 66.92388 
+L 336.135342 66.92388 
+L 373.183526 66.92388 
+L 410.23171 66.92388 
+L 447.279893 66.92388 
+L 484.328077 66.92388 
+" clip-path="url(#p9a7334b7da)" style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 150.894423 33.373745 
+L 187.942607 33.373745 
+L 224.99079 33.373745 
+L 262.038974 33.373745 
+L 299.087158 33.373745 
+L 336.135342 33.373745 
+L 373.183526 33.373745 
+L 410.23171 33.373745 
+L 447.279893 33.373745 
+L 484.328077 33.373745 
+" clip-path="url(#p9a7334b7da)" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="146.024151" transform="rotate(-0 128.22274 146.024151)">'dashdot'</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="112.474016" transform="rotate(-0 128.22274 112.474016)">'dashed'</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="78.92388" transform="rotate(-0 128.22274 78.92388)">'dotted'</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="45.373745" transform="rotate(-0 128.22274 45.373745)">'solid'</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="317.61125" y="10.598678" transform="rotate(-0 317.61125 10.598678)">Named linestyles</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 134.22274 572.99976 
+L 500.99976 572.99976 
+L 500.99976 170.398136 
+L 134.22274 170.398136 
+L 134.22274 572.99976 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_7"/>
+    <g id="xtick_8"/>
+    <g id="xtick_9"/>
+    <g id="xtick_10"/>
+    <g id="xtick_11"/>
+    <g id="xtick_12"/>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_5">
+     <g id="text_10">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="561.314301" transform="rotate(-0 127.22274 561.314301)">densely dashdotdotted</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="530.344945" transform="rotate(-0 127.22274 530.344945)">loosely dashdotdotted</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="499.37559" transform="rotate(-0 127.22274 499.37559)">dashdotdotted</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="text_13">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="468.406234" transform="rotate(-0 127.22274 468.406234)">densely dashdotted</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="text_14">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="437.436878" transform="rotate(-0 127.22274 437.436878)">dashdotted</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="text_15">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="406.467523" transform="rotate(-0 127.22274 406.467523)">loosely dashdotted</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="text_16">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="375.498167" transform="rotate(-0 127.22274 375.498167)">densely dashed</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="text_17">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="344.528811" transform="rotate(-0 127.22274 344.528811)">dashed</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="text_18">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="313.559456" transform="rotate(-0 127.22274 313.559456)">loosely dashed</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="text_19">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="282.5901" transform="rotate(-0 127.22274 282.5901)">long dash with offset</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="text_20">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="251.620744" transform="rotate(-0 127.22274 251.620744)">densely dotted</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="text_21">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="220.651389" transform="rotate(-0 127.22274 220.651389)">dotted</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="text_22">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="127.22274" y="189.682033" transform="rotate(-0 127.22274 189.682033)">loosely dotted</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_5">
+    <path d="M 150.894423 557.515082 
+L 187.942607 557.515082 
+L 224.99079 557.515082 
+L 262.038974 557.515082 
+L 299.087158 557.515082 
+L 336.135342 557.515082 
+L 373.183526 557.515082 
+L 410.23171 557.515082 
+L 447.279893 557.515082 
+L 484.328077 557.515082 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 4.5,1.5,1.5,1.5,1.5,1.5; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 150.894423 526.545726 
+L 187.942607 526.545726 
+L 224.99079 526.545726 
+L 262.038974 526.545726 
+L 299.087158 526.545726 
+L 336.135342 526.545726 
+L 373.183526 526.545726 
+L 410.23171 526.545726 
+L 447.279893 526.545726 
+L 484.328077 526.545726 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 4.5,15,1.5,15,1.5,15; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 150.894423 495.576371 
+L 187.942607 495.576371 
+L 224.99079 495.576371 
+L 262.038974 495.576371 
+L 299.087158 495.576371 
+L 336.135342 495.576371 
+L 373.183526 495.576371 
+L 410.23171 495.576371 
+L 447.279893 495.576371 
+L 484.328077 495.576371 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 4.5,7.5,1.5,7.5,1.5,7.5; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 150.894423 464.607015 
+L 187.942607 464.607015 
+L 224.99079 464.607015 
+L 262.038974 464.607015 
+L 299.087158 464.607015 
+L 336.135342 464.607015 
+L 373.183526 464.607015 
+L 410.23171 464.607015 
+L 447.279893 464.607015 
+L 484.328077 464.607015 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 4.5,1.5,1.5,1.5; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 150.894423 433.637659 
+L 187.942607 433.637659 
+L 224.99079 433.637659 
+L 262.038974 433.637659 
+L 299.087158 433.637659 
+L 336.135342 433.637659 
+L 373.183526 433.637659 
+L 410.23171 433.637659 
+L 447.279893 433.637659 
+L 484.328077 433.637659 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 4.5,7.5,1.5,7.5; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 150.894423 402.668304 
+L 187.942607 402.668304 
+L 224.99079 402.668304 
+L 262.038974 402.668304 
+L 299.087158 402.668304 
+L 336.135342 402.668304 
+L 373.183526 402.668304 
+L 410.23171 402.668304 
+L 447.279893 402.668304 
+L 484.328077 402.668304 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 4.5,15,1.5,15; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 150.894423 371.698948 
+L 187.942607 371.698948 
+L 224.99079 371.698948 
+L 262.038974 371.698948 
+L 299.087158 371.698948 
+L 336.135342 371.698948 
+L 373.183526 371.698948 
+L 410.23171 371.698948 
+L 447.279893 371.698948 
+L 484.328077 371.698948 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 7.5,1.5; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 150.894423 340.729592 
+L 187.942607 340.729592 
+L 224.99079 340.729592 
+L 262.038974 340.729592 
+L 299.087158 340.729592 
+L 336.135342 340.729592 
+L 373.183526 340.729592 
+L 410.23171 340.729592 
+L 447.279893 340.729592 
+L 484.328077 340.729592 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 7.5,7.5; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_13">
+    <path d="M 150.894423 309.760237 
+L 187.942607 309.760237 
+L 224.99079 309.760237 
+L 262.038974 309.760237 
+L 299.087158 309.760237 
+L 336.135342 309.760237 
+L 373.183526 309.760237 
+L 410.23171 309.760237 
+L 447.279893 309.760237 
+L 484.328077 309.760237 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 7.5,15; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_14">
+    <path d="M 150.894423 278.790881 
+L 187.942607 278.790881 
+L 224.99079 278.790881 
+L 262.038974 278.790881 
+L 299.087158 278.790881 
+L 336.135342 278.790881 
+L 373.183526 278.790881 
+L 410.23171 278.790881 
+L 447.279893 278.790881 
+L 484.328077 278.790881 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 15,4.5; stroke-dashoffset: 7.5; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_15">
+    <path d="M 150.894423 247.821525 
+L 187.942607 247.821525 
+L 224.99079 247.821525 
+L 262.038974 247.821525 
+L 299.087158 247.821525 
+L 336.135342 247.821525 
+L 373.183526 247.821525 
+L 410.23171 247.821525 
+L 447.279893 247.821525 
+L 484.328077 247.821525 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 1.5,1.5; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 150.894423 216.85217 
+L 187.942607 216.85217 
+L 224.99079 216.85217 
+L 262.038974 216.85217 
+L 299.087158 216.85217 
+L 336.135342 216.85217 
+L 373.183526 216.85217 
+L 410.23171 216.85217 
+L 447.279893 216.85217 
+L 484.328077 216.85217 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 1.5,7.5; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_17">
+    <path d="M 150.894423 185.882814 
+L 187.942607 185.882814 
+L 224.99079 185.882814 
+L 262.038974 185.882814 
+L 299.087158 185.882814 
+L 336.135342 185.882814 
+L 373.183526 185.882814 
+L 410.23171 185.882814 
+L 447.279893 185.882814 
+L 484.328077 185.882814 
+" clip-path="url(#p18668b82d1)" style="fill: none; stroke-dasharray: 1.5,15; stroke-dashoffset: 0; stroke: #000000; stroke-width: 1.5"/>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="569.515082" transform="rotate(-0 128.22274 569.515082)">(0, (3, 1, 1, 1, 1, 1))</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="538.545726" transform="rotate(-0 128.22274 538.545726)">(0, (3, 10, 1, 10, 1, 10))</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="507.576371" transform="rotate(-0 128.22274 507.576371)">(0, (3, 5, 1, 5, 1, 5))</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="476.607015" transform="rotate(-0 128.22274 476.607015)">(0, (3, 1, 1, 1))</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="445.637659" transform="rotate(-0 128.22274 445.637659)">(0, (3, 5, 1, 5))</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="414.668304" transform="rotate(-0 128.22274 414.668304)">(0, (3, 10, 1, 10))</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="383.698948" transform="rotate(-0 128.22274 383.698948)">(0, (5, 1))</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="352.729592" transform="rotate(-0 128.22274 352.729592)">(0, (5, 5))</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="321.760237" transform="rotate(-0 128.22274 321.760237)">(0, (5, 10))</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="290.790881" transform="rotate(-0 128.22274 290.790881)">(5, (10, 3))</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="259.821525" transform="rotate(-0 128.22274 259.821525)">(0, (1, 1))</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="228.85217" transform="rotate(-0 128.22274 228.85217)">(0, (1, 5))</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: end" x="128.22274" y="197.882814" transform="rotate(-0 128.22274 197.882814)">(0, (1, 10))</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="317.61125" y="164.398136" transform="rotate(-0 317.61125 164.398136)">Parametrized linestyles</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9a7334b7da">
+   <rect x="134.22274" y="16.598678" width="366.77702" height="134.200541"/>
+  </clipPath>
+  <clipPath id="p18668b82d1">
+   <rect x="134.22274" y="170.398136" width="366.77702" height="402.601624"/>
+  </clipPath>
+ </defs>
+</svg>
+
+
+![plot cycles linestyles.svg](./attachments/plot-cycles-linestyles.svg)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
+    'figure.constrained_layout.use':True, 'axes.titlesize': 10})
+
+linestyle_str = [
+     ('solid', 'solid'),      # Same as (0, ()) or '-'
+     ('dotted', 'dotted'),    # Same as ':'
+     ('dashed', 'dashed'),    # Same as '--'
+     ('dashdot', 'dashdot')]  # Same as '-.'
+
+linestyle_tuple = [
+     ('loosely dotted',        (0, (1, 10))),
+     ('dotted',                (0, (1, 5))),
+     ('densely dotted',        (0, (1, 1))),
+
+     ('long dash with offset', (5, (10, 3))),
+     ('loosely dashed',        (0, (5, 10))),
+     ('dashed',                (0, (5, 5))),
+     ('densely dashed',        (0, (5, 1))),
+
+     ('loosely dashdotted',    (0, (3, 10, 1, 10))),
+     ('dashdotted',            (0, (3, 5, 1, 5))),
+     ('densely dashdotted',    (0, (3, 1, 1, 1))),
+
+     ('dashdotdotted',         (0, (3, 5, 1, 5, 1, 5))),
+     ('loosely dashdotdotted', (0, (3, 10, 1, 10, 1, 10))),
+     ('densely dashdotdotted', (0, (3, 1, 1, 1, 1, 1)))]
+
+
+def plot_linestyles(ax, linestyles, title):
+    X, Y = np.linspace(0, 100, 10), np.zeros(10)
+    yticklabels = []
+
+    for i, (name, linestyle) in enumerate(linestyles):
+        ax.plot(X, Y+i, linestyle=linestyle, linewidth=1.5, color='black')
+        yticklabels.append(name)
+
+    ax.set_title(title)
+    ax.set(ylim=(-0.5, len(linestyles)-0.5),
+           yticks=np.arange(len(linestyles)),
+           yticklabels=yticklabels)
+    ax.tick_params(left=False, bottom=False, labelbottom=False)
+    ax.spines[:].set_visible(False)
+
+    # For each line style, add a text annotation with a small offset from
+    # the reference point (0 in Axes coords, y tick value in Data coords).
+    for i, (name, linestyle) in enumerate(linestyles):
+        ax.annotate(repr(linestyle),
+                    xy=(0.0, i), xycoords=ax.get_yaxis_transform(),
+                    xytext=(-6, -12), textcoords='offset points',
+                    fontsize=8, ha="right", family="monospace")
+
+
+fig, (ax0, ax1) = plt.subplots(2, 1, figsize=(7, 8), height_ratios=[1, 3],
+                               layout='constrained')
+
+plot_linestyles(ax0, linestyle_str[::-1], title='Named linestyles')
+plot_linestyles(ax1, linestyle_tuple[::-1], title='Parametrized linestyles')
+plt.savefig(@vault_path + '/attachments/plot cycles linestyles.svg')
+plt.show()
+```
