@@ -99,7 +99,7 @@ def graph_example_functions(axes_list):
     for axes in axes_list:
         axes.set_xlabel('x')
         axes.set_ylabel('y', rotation=0)
-        axes.xaxis.set_label_coords(1, -.025)
+        axes.xaxis.set_label_coords(1, 0)
         axes.yaxis.set_label_coords(-.025, 1)
 def show_legend_alongside_subplots(figure):
     figure.suptitle("Figure 2.4: Combined figure legend for all axes",
@@ -133,7 +133,7 @@ def graph_example_function_foreach(axes_list):
         axes.plot(x, np.exp(x), label=r"$g(x) = e^x$")
         axes.set_xlabel('x')
         axes.set_ylabel('y', rotation=0)
-        axes.xaxis.set_label_coords(1, 0)
+        axes.xaxis.set_label_coords(1.025, 0)
         axes.yaxis.set_label_coords(-.025, .95)
 def show_legend_best(axes):
     axes.set_title("Figure 2.1:\n Auto placement")
