@@ -34,37 +34,6 @@ plt.savefig(@vault_path + '/attachments/plot spine default.svg')
 plt.show()
 ```
 
-# Hide spines
-
-Only keep left and bottom spine
-
-- Keep focus on the function line with less visual distraction 
-
-![plot spine left bottom.svg](./attachments/plot-spine-left-bottom.svg)
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
-    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
-    'axes.grid':True, 'grid.linestyle':':'})
-def graph_example_function(axes):
-    x = np.linspace(0, 2.5, 100)
-    axes.set_xlabel("x")
-    axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
-        label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
-    axes.legend()
-def hide_spines_top_and_right(axes):
-    axes.set_title("Figure 1.2: Left, bottom spine")
-    axes.spines[['right', 'top']].set_visible(False)
-
-fig, ax = plt.subplots(figsize=(6,2.2))
-graph_example_function(ax)
-hide_spines_top_and_right(ax)
-plt.savefig(@vault_path + '/attachments/plot spine left bottom.svg')
-plt.show()
-```
-
 # Through origin
 
 Move spines to make them intersect at the origin $(0,0)$
@@ -84,7 +53,7 @@ def graph_example_function(axes):
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
     axes.legend()
 def move_spines_to_origin(axes):
-    axes.set_title("Figure 1.3: Spines through origin")
+    axes.set_title("Figure 1.2: Spines through origin")
     axes.spines[['right', 'top']].set_visible(False)
     axes.spines[['left', 'bottom']].set_position('zero')
 
@@ -117,7 +86,7 @@ def graph_example_function(axes):
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
     axes.legend()
 def move_spines_to_origin_and_add_arrows(axes):
-    axes.set_title("Figure 1.4: Spines with arrow tips, through origin")
+    axes.set_title("Figure 1.3: Spines with arrow tips, through origin")
     axes.spines[['right', 'top']].set_visible(False)
     axes.spines[['left', 'bottom']].set_position('zero')
     axes.plot(1, 0, ">k", transform=axes.get_yaxis_transform(), 
@@ -131,6 +100,36 @@ move_spines_to_origin_and_add_arrows(ax)
 plt.savefig(@vault_path + '/attachments/plot spine arrow tips.svg')
 plt.show()
 ```
+
+# Hide all spines
+
+- Keep focus on the function line with less visual distraction 
+
+![plot spines hidden.svg](./attachments/plot-spines-hidden.svg)
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
+    'figure.constrained_layout.use':True, 'axes.titlesize': 10,
+    'axes.grid':True, 'grid.linestyle':':'})
+def graph_example_function(axes):
+    x = np.linspace(0, 2.5, 100)
+    axes.set_xlabel("x")
+    axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
+        label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
+    axes.legend()
+def hide_spines(axes):
+    axes.set_title("Figure 1.4: Hide spines")
+    axes.spines[:].set_visible(False)
+
+fig, ax = plt.subplots(figsize=(6,2.2))
+graph_example_function(ax)
+hide_spines(ax)
+plt.savefig(@vault_path + '/attachments/plot spines hidden.svg')
+plt.show()
+```
+
 
 # Figure collection for note preview
 
@@ -153,19 +152,19 @@ def graph_example_function_foreach(axes_list):
         axes.legend()
 def keep_spines_normal(axes):
     axes.set_title("Figure 1.1: Default spines")
-def hide_spines_top_and_right(axes):
-    axes.set_title("Figure 1.2: Left,\n bottom spine")
-    axes.spines[['right', 'top']].set_visible(False)
 def move_spines_to_origin(axes):
-    axes.set_title("Figure 1.3: Spines\n through origin")
+    axes.set_title("Figure 1.2: Spines\n through origin")
     axes.spines[['right', 'top']].set_visible(False)
     axes.spines[['left', 'bottom']].set_position('zero')
+def hide_spines(axes):
+    axes.set_title("Figure 1.4: Hide spines")
+    axes.spines[:].set_visible(False)
 
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
 graph_example_function_foreach(axs)
 keep_spines_normal(axs[0])
-hide_spines_top_and_right(axs[1])
-move_spines_to_origin(axs[2])
+move_spines_to_origin(axs[1])
+hide_spines(axs[2])
 plt.savefig(@vault_path + '/attachments/plot spines.svg')
 
 # Redraw figure for print documents
@@ -174,8 +173,8 @@ plt.clf()
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
 graph_example_function_foreach(axs)
 keep_spines_normal(axs[0])
-hide_spines_top_and_right(axs[1])
-move_spines_to_origin(axs[2])
+move_spines_to_origin(axs[1])
+hide_spines(axs[2])
 plt.savefig(@vault_path + '/attachments/plot spines.pdf')
 plt.show()
 ```
