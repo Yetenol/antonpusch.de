@@ -1,6 +1,6 @@
 ---
 title: "PyX"
-date: "2025-01-06T00:00:00.000+01:00"
+date: "2025-01-07T00:00:00.000+01:00"
 dg-publish: true
 not-in-use: 
 microsoft-id: 
@@ -27,7 +27,7 @@ extends-app: "[[Python|Python]]"
 
 Example plot
 
-![pyx 1.svg](./attachments/pyx-1.svg)
+![plot pyx.svg](./attachments/plot-pyx.svg)
 
 ```python
 from pyx import *
@@ -39,9 +39,9 @@ g.plot([graph.data.function("y(x)=x", title=r"$f(x) = x$"),
         graph.data.function("y(x)=1/20*e**x", title=r"$g(x) = {1 \over 20} e^x$"),
         graph.data.function("y(x)=sin(x)", title=r"$h(x) = \sin{x}$")],
        [graph.style.line([color.gradient.BlackBlue])])
-g.writeSVGfile(@vault_path + '/attachments/pxy1')
-g.writePDFfile(@vault_path + '/attachments/pxy1')
-@show(@vault_url + '/attachments/pxy1.svg')
+g.writeSVGfile(@vault_path + '/attachments/plot pyx 1')
+g.writePDFfile(@vault_path + '/attachments/plot pyx 1')
+@show(@vault_url + '/attachments/plot pyx 1.svg')
 ```
 
 Example plot with export function
@@ -65,7 +65,7 @@ g.plot([graph.data.function("y(x)=x", title=r"$f(x) = x$"),
         graph.data.function("y(x)=1/20*e**x", title=r"$g(x) = {1 \over 20} e^x$"),
         graph.data.function("y(x)=sin(x)", title=r"$h(x) = \sin{x}$")],
        [graph.style.line([color.gradient.BlackBlue])])
-export_and_show_pyx_figure(g, "pyx 1")
+export_and_show_pyx_figure(g, "plot pyx 2")
 ```
 
 ```python
@@ -78,6 +78,15 @@ g.plot([graph.data.function("y(x)=x", title=r"$f(x) = x$"),
         graph.data.function("y(x)=1/20*e**x", title=r"$g(x) = {1 \over 20} e^x$"),
         graph.data.function("y(x)=sin(x)", title=r"$h(x) = \sin{x}$")],
        [graph.style.line([color.gradient.BlackBlue])])
-export_and_show_pyx_figure(g, "pyx 2")
+export_and_show_pyx_figure(g, "plot pyx 3")
 ```
 
+```latex
+\documentclass{article}\pagestyle{empty} \renewcommand{\thefigure}{1.4}
+\usepackage{graphbox} 
+\begin{document}
+\begin{figure} \centering{} \caption{PyX}
+\includegraphics{plot pyx 1}
+\end{figure}
+\end{document}
+```
