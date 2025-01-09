@@ -17,6 +17,14 @@ Explicit Axes through Figure `fig` , Axes `ax`
 
 Implicit Axes through PyPlot `plt`
 
+- figure: entire canvas
+- axes: subplot
+- spines: connecting lines between ticks
+- savefig.bbox: add tight padding around figure to prevent cropped legends
+- constrained_layout: Place elements next to each other instead of overlaying
+- titlesize 10: default fontsize for latex figures, allows longer titles
+- grid linesstyle: less visual dominant that solid lines, to keep focus on function line
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
