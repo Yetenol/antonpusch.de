@@ -1,6 +1,6 @@
 ---
 title: "Python"
-date: "2025-01-03T00:00:00.000+01:00"
+date: "2025-01-04T00:00:00.000+01:00"
 dg-publish: true
 not-in-use: 
 microsoft-id: 
@@ -22,6 +22,7 @@ cssclasses:
 dg-content-classes:
   - cards
 ---
+
 
 Python is a [development](install%20development%20apps.md.md) app. Python is a high-level, versatile programming language known for its clean syntax and readability, making it popular for everything from web development to data science and artificial intelligence.
 
