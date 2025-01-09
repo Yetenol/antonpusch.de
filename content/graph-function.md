@@ -49,6 +49,9 @@ plt.show()
 - Hide unwanted spines, see 1.2, 1.3
 - Move spines to origin $(0,0)$, see 1.3
 - Add arrow tips to the top and right end of the spines
+- [Physical Review Journals - Axis Labels and Scales on Graphs - H-18](https://journals.aps.org/authors/axis-labels-and-scales-on-graphs-h18)
+- [graphics - Are there any guidelines for labeling axes in plots/graphs? - Academia Stack Exchange](https://academia.stackexchange.com/questions/18357/are-there-any-guidelines-for-labeling-axes-in-plots-graphs)
+- [How to Label Axes and Units in Data Visualizations](https://www.linkedin.com/advice/0/what-best-practices-labeling-axes-units-data-visualizations-laftc#:~:text=%F0%9F%9A%80When%20labeling%20axes%2C%20use,associated%20with%20the%20corresponding%20data.)
 - See source code examples: [Spines - Place axis spines of plots](./spines.md)
 
 ![plot spines.svg](./attachments/plot-spines.svg)
@@ -69,7 +72,13 @@ See source code examples: [Cycles - Differentiate data set with colors or line s
 
 ![plot cycles.svg](./attachments/plot-cycles.svg)
 
+
+# Dufte
+
+- Source code examples: [dufte plots](dufte%20plots.md)
+
 # Size
+
 
 - [Size of plots](Size%20of%20plots.md)
 
