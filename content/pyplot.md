@@ -158,3 +158,12 @@ plt.show()
 ```
 
 ![latex_plot.svg](./attachments/latex_plot.svg)
+
+
+# Better SVG rendering
+
+- [Using Fonts in SVG](https://vecta.io/blog/using-fonts-in-svg)
+- shrink and compress svg
+- use web font
+- use katex/mathjax inside svg
+- [html - MathJax inside SVG - Stack Overflow](https://stackoverflow.com/questions/15962325/mathjax-inside-svg)
