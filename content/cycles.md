@@ -17,6 +17,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
+plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes):
     x = np.linspace(0, np.pi, 100)
     axes.set_xlabel("x")
@@ -28,7 +29,8 @@ def graph_example_functions(axes):
     axes.plot(x, -np.cos(2*x)/3, label=r"$k(x) = -\frac{\cos(2x)}{3}$")
     axes.legend()
 def show_legend_underneath(axes):
-    axes.legend(loc='upper center', bbox_to_anchor=(0.5, -0.25), ncols=3)
+    axes.legend(loc='upper center', ncols=3, 
+        bbox_to_anchor=(0.5, -0.25), frameon=False)
 
 fig, ax = plt.subplots(figsize=(6,2.4))
 graph_example_functions(ax)
@@ -50,6 +52,7 @@ from cycler import cycler
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
+plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes):
     x = np.linspace(0, np.pi, 100)
     axes.set_xlabel("x")
@@ -65,7 +68,8 @@ def use_cycler_linestyle(pyplot):
         (0,(3,1,1,1,1,1)), (0,(3,1,3,1,1,1)) ])
     plt.rcParams.update({ 'axes.prop_cycle' : linestyle_cycler })
 def show_legend_underneath(axes):
-    axes.legend(loc='upper center', bbox_to_anchor=(0.5, -0.25), ncols=3)
+    axes.legend(loc='upper center', ncols=3, 
+        bbox_to_anchor=(0.5, -0.25), frameon=False)
 
 use_cycler_linestyle(plt)
 fig, ax = plt.subplots(figsize=(6,2.4))
@@ -177,6 +181,7 @@ from cycler import cycler
 plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
+plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def graph_example_functions(axes):
     x = np.linspace(0, np.pi, 100)
     axes.set_xlabel("x")
@@ -195,7 +200,8 @@ def set_cycler_linestyle(axes):
         ['-','--',':','-.', (0,(3,1,1,1,1,1)), (0,(3,1,3,1,1,1)) ])
     axes.set_prop_cycle(linestyle_cycler)
 def show_legend_underneath(axes):
-    axes.legend(loc='upper center', bbox_to_anchor=(0.5, -0.3), ncols=2)
+    axes.legend(loc='upper center', ncols=2, 
+        bbox_to_anchor=(0.5, -0.25), frameon=False)
 
 fig, axs = plt.subplots(ncols=2, figsize=(6,2.4))
 keep_cycler_color(axs[0])
