@@ -117,10 +117,8 @@ def plot_example_function_foreach(axes_list):
     for axes in axes_list:
         x = np.linspace(0, 4, 100)
         axes.set_xlabel("x")
-        axes.plot(x, np.pow(x, 2), 
-            label=r"$f(x) = x^2$")
-        axes.plot(x, np.exp(x), 
-            label=r"$g(x) = e^x$")
+        axes.plot(x, np.pow(x, 2), label=r"$f(x) = x^2$")
+        axes.plot(x, np.exp(x), label=r"$g(x) = e^x$")
 def show_legend_best(axes):
     axes.set_title("Figure 2.1:\n Auto placement")
     axes.legend()

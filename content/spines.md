@@ -1,12 +1,14 @@
 ---
 title: "Spines - Place axis spines of plots"
-date: "2025-01-08T00:00:00.000+01:00"
+date: "2025-01-09T00:00:00.000+01:00"
 dg-publish: true
 ---
 
 # Default spines
 
 Spines are the lines connecting the axis tick marks and noting the boundaries of the data area. They can be placed at arbitrary positions. By default, Matplotlib displays spines on all four sides of the plot.
+
+-  Default frame clearly marks boundaries of data
 
 ![plot spine default.svg](./attachments/plot-spine-default.svg)
 
@@ -35,6 +37,8 @@ plt.show()
 # Hide spines
 
 Only keep left and bottom spine
+
+- Keep focus on the function line with less visual distraction 
 
 ![plot spine left bottom.svg](./attachments/plot-spine-left-bottom.svg)
 
@@ -96,6 +100,7 @@ plt.show()
 > Draw filled triangles and the top and right end of the spines, intersecting at $(0,0)$. In each case, one of the coordinates (0) is a data coordinate (i.e., y = 0 or x = 0, respectively) and the other one (1) is an axes coordinate (i.e., at the very right/top of the axes).  Also, disable clipping (clip_on=False) as the marker actually spills out of the axes.
 
 - Source: [Centered spines with arrows — Matplotlib 3.3.4 documentation](https://matplotlib.org/3.3.4/gallery/recipes/centered_spines_with_arrows.html)
+- 👎 triangle shape is also used for scatter data points
 
 ![plot spine arrow tips.svg](./attachments/plot-spine-arrow-tips.svg)
 
