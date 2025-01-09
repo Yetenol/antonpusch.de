@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def plot_example_function(axes):
+def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
     axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
@@ -28,7 +28,7 @@ def keep_spines_normal(axes):
     axes.set_title("Figure 1.1: Default spines")
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-plot_example_function(ax)
+graph_example_function(ax)
 keep_spines_normal(ax)
 plt.savefig(@vault_path + '/attachments/plot spine default.svg')
 plt.show()
@@ -48,7 +48,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def plot_example_function(axes):
+def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
     axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
@@ -59,7 +59,7 @@ def hide_spines_top_and_right(axes):
     axes.spines[['right', 'top']].set_visible(False)
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-plot_example_function(ax)
+graph_example_function(ax)
 hide_spines_top_and_right(ax)
 plt.savefig(@vault_path + '/attachments/plot spine left bottom.svg')
 plt.show()
@@ -77,7 +77,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def plot_example_function(axes):
+def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
     axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
@@ -89,7 +89,7 @@ def move_spines_to_origin(axes):
     axes.spines[['left', 'bottom']].set_position('zero')
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-plot_example_function(ax)
+graph_example_function(ax)
 move_spines_to_origin(ax)
 plt.savefig(@vault_path + '/attachments/plot spine origin.svg')
 plt.show()
@@ -110,7 +110,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def plot_example_function(axes):
+def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
     axes.set_xlabel("x")
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
@@ -126,7 +126,7 @@ def move_spines_to_origin_and_add_arrows(axes):
         clip_on=False)
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-plot_example_function(ax)
+graph_example_function(ax)
 move_spines_to_origin_and_add_arrows(ax)
 plt.savefig(@vault_path + '/attachments/plot spine arrow tips.svg')
 plt.show()
@@ -144,7 +144,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def plot_example_function_foreach(axes_list):
+def graph_example_function_foreach(axes_list):
     for axes in axes_list:
         x = np.linspace(0, 2.5, 100)
         axes.set_xlabel("x")
@@ -162,7 +162,7 @@ def move_spines_to_origin(axes):
     axes.spines[['left', 'bottom']].set_position('zero')
 
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
-plot_example_function_foreach(axs)
+graph_example_function_foreach(axs)
 keep_spines_normal(axs[0])
 hide_spines_top_and_right(axs[1])
 move_spines_to_origin(axs[2])
@@ -172,7 +172,7 @@ plt.savefig(@vault_path + '/attachments/plot spines.svg')
 plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
 plt.clf()
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
-plot_example_function_foreach(axs)
+graph_example_function_foreach(axs)
 keep_spines_normal(axs[0])
 hide_spines_top_and_right(axs[1])
 move_spines_to_origin(axs[2])
