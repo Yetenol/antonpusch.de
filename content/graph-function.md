@@ -1,6 +1,6 @@
 ---
 title: "Graph function - Dynamically plot mathematical functions as a vector graphic"
-date: "2025-01-09T00:00:00.000+01:00"
+date: "2025-01-10T00:00:00.000+01:00"
 dg-publish: true
 ---
 
@@ -28,9 +28,10 @@ Implicit Axes through PyPlot `plt`
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
+plt.rcParams.update({'savefig.transparent':True,  
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
+plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
 def plot_example_function(axes):
     x = np.linspace(0, 2.5, 100)
     axes.set_xlabel("x")
@@ -44,6 +45,12 @@ plot_example_function(ax)
 plt.show()
 ```
 
+```
+def wrap_title(axes):
+    import textwrap as tw
+    long_title = axes.get_title()
+    axes.set_title(tw.fill(long_title, 20))
+```
 # Modify spines of the x or y axis
 
 - Hide unwanted spines, see 1.2, 1.3
