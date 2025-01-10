@@ -1,6 +1,6 @@
 ---
 title: "Regular Expressions - Search, extract and manipulate text in a specified pattern"
-date: "2024-08-30T00:00:00.000+02:00"
+date: "2024-08-30T14:46:56.427+02:00"
 dg-publish: true
 dg-show-toc: true
 ---
