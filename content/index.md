@@ -1,6 +1,6 @@
 ---
 title: Welcome to my Digital Garden
-date: "2024-12-25T00:00:00.000+01:00"
+date: "2025-01-10T00:00:00.000+01:00"
 dg-publish: true
 dg-home: true
 dg-show-inline-title: false
@@ -13,8 +13,7 @@ This is my Digital Garden - a collection of interconnected notes on topics that 
 To navigate, simply follow the links between notes or search keywords. There's no strict hierarchy; instead, ideas are connected in a wiki-like graph network. You can start exploring by checking out these topics:
 
 - [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex.md)
-- [PGF, Tikz - Generate vector graphics, visualize data](./pgf-tikz.md)
-- [Vector graphics](./vector-graphics.md)
+- [Plots - Dynamically plot mathematical functions, values as a vector graphic](./plots.md)
 - [Interactives - Maps, presentation slides, charts](./interactives.md)
 - [PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](./powershell.md)
 - [Factorio - A game about automation, logistics and network optimizations](./factorio.md)
