@@ -11,6 +11,47 @@ dg-publish: true
 
 - Compare: [Graphing tool comparison - Compare native and external calculation and drawing engines like PGF, MatPlotLib, PyX for visualising data](Graphing%20tool%20comparison%20-%20Compare%20native%20and%20external%20calculation%20and%20drawing%20engines%20like%20PGF,%20MatPlotLib,%20PyX%20for%20visualising%20data.md)
 
+# Modify spines of the x or y axis
+
+- Hide unwanted spines, see 1.2, 1.3
+- Move spines to origin $(0,0)$, see 1.3
+- Add arrow tips to the top and right end of the spines
+- [Physical Review Journals - Axis Labels and Scales on Graphs - H-18](https://journals.aps.org/authors/axis-labels-and-scales-on-graphs-h18)
+- [graphics - Are there any guidelines for labeling axes in plots/graphs? - Academia Stack Exchange](https://academia.stackexchange.com/questions/18357/are-there-any-guidelines-for-labeling-axes-in-plots-graphs)
+- [How to Label Axes and Units in Data Visualizations](https://www.linkedin.com/advice/0/what-best-practices-labeling-axes-units-data-visualizations-laftc#:~:text=%F0%9F%9A%80When%20labeling%20axes%2C%20use,associated%20with%20the%20corresponding%20data.)
+- See source code examples: [Spines - Place axis spines of plots](./spines.md)
+
+![plot spines.svg](./attachments/plot-spines.svg)
+
+# Add legend
+
+- Show legend at best determined location inside data, see 2.1
+- Position legend outside data, see 2.2
+- Position legend entries horizontally or in a grid, see 2.2
+- Annotate the lines directly within the data, see 2.3
+- See source code examples: [Function legend - Show formulas for multiple functions](./function-legend.md)
+
+![plot legend.svg](./attachments/plot-legend.svg)
+
+# Differentiate functions with color or line style
+
+See source code examples: [Cycles - Differentiate data set with colors or line style](./cycles.md)
+
+![plot cycles.svg](./attachments/plot-cycles.svg)
+
+# Text
+
+annotate interval
+Multiline titles: Wrap overlong title
+
+```
+def wrap_title(axes):
+    import textwrap as tw
+    long_title = axes.get_title()
+    axes.set_title(tw.fill(long_title, 20))
+```
+
+
 # Terminology
 
 Explicit Axes through Figure `fig` , Axes `ax`
@@ -45,39 +86,6 @@ plot_example_function(ax)
 plt.show()
 ```
 
-```
-def wrap_title(axes):
-    import textwrap as tw
-    long_title = axes.get_title()
-    axes.set_title(tw.fill(long_title, 20))
-```
-# Modify spines of the x or y axis
-
-- Hide unwanted spines, see 1.2, 1.3
-- Move spines to origin $(0,0)$, see 1.3
-- Add arrow tips to the top and right end of the spines
-- [Physical Review Journals - Axis Labels and Scales on Graphs - H-18](https://journals.aps.org/authors/axis-labels-and-scales-on-graphs-h18)
-- [graphics - Are there any guidelines for labeling axes in plots/graphs? - Academia Stack Exchange](https://academia.stackexchange.com/questions/18357/are-there-any-guidelines-for-labeling-axes-in-plots-graphs)
-- [How to Label Axes and Units in Data Visualizations](https://www.linkedin.com/advice/0/what-best-practices-labeling-axes-units-data-visualizations-laftc#:~:text=%F0%9F%9A%80When%20labeling%20axes%2C%20use,associated%20with%20the%20corresponding%20data.)
-- See source code examples: [Spines - Place axis spines of plots](./spines.md)
-
-![plot spines.svg](./attachments/plot-spines.svg)
-
-# Add legend
-
-- Show legend at best determined location inside data, see 2.1
-- Position legend outside data, see 2.2
-- Position legend entries horizontally or in a grid, see 2.2
-- Annotate the lines directly within the data, see 2.3
-- See source code examples: [Function legend - Show formulas for multiple functions](./function-legend.md)
-
-![plot legend.svg](./attachments/plot-legend.svg)
-
-# Differentiate functions with color or line style
-
-See source code examples: [Cycles - Differentiate data set with colors or line style](./cycles.md)
-
-![plot cycles.svg](./attachments/plot-cycles.svg)
 
 # Dufte
 
