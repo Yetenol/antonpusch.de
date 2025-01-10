@@ -1,6 +1,6 @@
 ---
 title: "Spines - Place axis spines of plots"
-date: "2025-01-09T00:00:00.000+01:00"
+date: "2025-01-10T00:00:00.000+01:00"
 dg-publish: true
 ---
 
@@ -22,11 +22,14 @@ def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
-    axes.set_xlabel('x')
-    axes.set_ylabel('y', rotation=0)
-    axes.xaxis.set_label_coords(1.0, -0.025)
-    axes.yaxis.set_label_coords(-0.025, 1.0)
+    axes.set_xlabel('$x$')
+    axes.set_ylabel('$y$')
+    move_xylabels_to_corners(axes)
     axes.legend()
+def move_xylabels_to_corners(axes):
+    axes.xaxis.set_label_coords(1, -.025)
+    axes.yaxis.set_label_coords(-.025, 1)
+    axes.yaxis.label.set(rotation=0)
 def keep_spines_normal(axes):
     axes.set_title("Figure 1.1: Default spines")
 
@@ -53,11 +56,16 @@ def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
-    axes.text(1, 0, "x", va='top', 
-        transform=axes.get_yaxis_transform())
-    axes.text(0, 1, "y", ha='right', 
-        transform=axes.get_xaxis_transform())
+    axes.set_xlabel('$x$')
+    axes.set_ylabel('$y$')
+    move_xylabels_to_xyaxis(axes)
     axes.legend()
+def move_xylabels_to_xyaxis(axes):
+    axes.xaxis.set_label_coords(1, 0, 
+        transform=axes.get_yaxis_transform())
+    axes.yaxis.set_label_coords(0, 1, 
+        transform=axes.get_xaxis_transform())
+    axes.yaxis.label.set(rotation=0)
 def move_spines_to_origin(axes):
     axes.set_title("Figure 1.2: Spines through origin")
     axes.spines[['right', 'top']].set_visible(False)
@@ -72,7 +80,7 @@ plt.show()
 
 # Arrow tips
 
-> Draw filled triangles and the top and right end of the spines, intersecting at $(0,0)$. In each case, one of the coordinates (0) is a data coordinate (i.e., y = 0 or x = 0, respectively) and the other one (1) is an axes coordinate (i.e., at the very right/top of the axes).  Also, disable clipping (clip_on=False) as the marker actually spills out of the axes.
+> Draw filled triangles and the top and right end of the spines, intersecting at $(0,0)$. In each case, one of the coordinates (0) is a data coordinate (i.e., y = 0 or x = 0, respectively) and the other one (1) is an axes coordinate (i.e., at the very right/top of the axes). Also, disable clipping (clip_on=False) as the marker actually spills out of the axes.
 
 - Source: [Centered spines with arrows — Matplotlib 3.3.4 documentation](https://matplotlib.org/3.3.4/gallery/recipes/centered_spines_with_arrows.html)
 - 👎 triangle shape is also used for scatter data points
@@ -89,13 +97,16 @@ def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
-    axes.set_xlabel('x')
-    axes.set_ylabel('y', rotation=0)
-    axes.xaxis.set_label_coords(1.0, -0.025, 
-        transform=axes.get_yaxis_transform())
-    axes.yaxis.set_label_coords(0, 1.04,
-        transform=axes.get_xaxis_transform())
+    axes.set_xlabel('$x$')
+    axes.set_ylabel('$y$')
+    move_xylabels_to_xyaxis(axes)
     axes.legend()
+def move_xylabels_to_xyaxis(axes):
+    axes.xaxis.set_label_coords(1, -.025, 
+        transform=axes.get_yaxis_transform())
+    axes.yaxis.set_label_coords(-.025, 1, 
+        transform=axes.get_xaxis_transform())
+    axes.yaxis.label.set(rotation=0)
 def move_spines_to_origin_and_add_arrows(axes):
     axes.set_title("Figure 1.3: Spines with arrow tips, through origin")
     axes.spines[['right', 'top']].set_visible(False)
@@ -128,11 +139,14 @@ def graph_example_function(axes):
     x = np.linspace(0, 2.5, 100)
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
-    axes.set_xlabel('x')
-    axes.set_ylabel('y', rotation=0)
-    axes.xaxis.set_label_coords(1.0, -0.025)
-    axes.yaxis.set_label_coords(0, 1.025)
+    axes.set_xlabel('$x$')
+    axes.set_ylabel('$y$')
+    move_xylabels_to_corners(axes)
     axes.legend()
+def move_xylabels_to_corners(axes):
+    axes.xaxis.set_label_coords(1, 0)
+    axes.yaxis.set_label_coords(0, 1)
+    axes.yaxis.label.set(rotation=0)
 def hide_spines(axes):
     axes.set_title("Figure 1.4: Hide spines")
     axes.spines[:].set_visible(False)
@@ -143,7 +157,6 @@ hide_spines(ax)
 plt.savefig(@vault_path + '/attachments/plot spines hidden.svg')
 plt.show()
 ```
-
 
 # Figure collection for note preview
 
@@ -157,30 +170,37 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def graph_example_function_foreach(axes_list):
-    for axes in axes_list:
-        x = np.linspace(0, 2.5, 100)
-        axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
-            label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
-        axes.set_xlabel('x')
-        axes.set_ylabel('y', rotation=0)
-        axes.xaxis.set_label_coords(1.0, -0.025)
-        axes.yaxis.set_label_coords(-0.025, 1.0)
-        axes.legend()
+def graph_example_function(axes):
+    x = np.linspace(0, 2.5, 100)
+    axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
+        label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
+    axes.set_xlabel('$x$')
+    axes.set_ylabel('$y$')
+    move_xylabels_to_corners(axes)
+    axes.legend()
+def move_xylabels_to_corners(axes):
+    axes.xaxis.set_label_coords(1, -.025)
+    axes.yaxis.set_label_coords(-.025, 1)
+    axes.yaxis.label.set(rotation=0)
+def move_xylabels_to_xyaxis(axes):
+    axes.xaxis.set_label_coords(1, -.025, 
+        transform=axes.get_yaxis_transform())
+    axes.yaxis.set_label_coords(-.025, 1, 
+        transform=axes.get_xaxis_transform())
+    axes.yaxis.label.set(rotation=0)
 def keep_spines_normal(axes):
     axes.set_title("Figure 1.1: Frame")
 def move_spines_to_origin(axes):
     axes.set_title("Figure 1.2: At origin")
     axes.spines[['right', 'top']].set_visible(False)
     axes.spines[['left', 'bottom']].set_position('zero')
-    axes.xaxis.set_label_coords(1.0, -0.025, 
-        transform=axes.get_yaxis_transform())
+    move_xylabels_to_xyaxis(axes)
 def hide_spines(axes):
     axes.set_title("Figure 1.4: No spines")
     axes.spines[:].set_visible(False)
 
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
-graph_example_function_foreach(axs)
+[graph_example_function(ax) for ax in axs]
 keep_spines_normal(axs[0])
 move_spines_to_origin(axs[1])
 hide_spines(axs[2])
@@ -190,7 +210,7 @@ plt.savefig(@vault_path + '/attachments/plot spines.svg')
 plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
 plt.clf()
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
-graph_example_function_foreach(axs)
+[graph_example_function(ax) for ax in axs]
 keep_spines_normal(axs[0])
 move_spines_to_origin(axs[1])
 hide_spines(axs[2])
