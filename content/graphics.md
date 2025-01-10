@@ -1,13 +1,13 @@
 ---
 title: "Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf"
-date: "2025-01-09T00:00:00.000+01:00"
+date: "2025-01-10T00:00:00.000+01:00"
 dg-publish: true
 cssclasses:
   - img-grid
 ---
 - [LaTeX to SVG - Embed LaTeX figures in markdown. Automate compiling, cropping, and exporting.](./latex-to-svg)
 
-[Graph function - Dynamically plot mathematical functions as a vector graphic](./graph-function.md)
+[Plots - Dynamically plot mathematical functions, values as a vector graphic](./plots.md)
 
 ![figure plots.svg](./attachments/figure-plots.svg)
 
