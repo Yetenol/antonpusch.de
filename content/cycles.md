@@ -180,7 +180,7 @@ plt.show()
 
 # Figure collection for note preview
 
-See [figures for print documents (PDF)](./attachments/plot-cycles.pdf) or figures for displays:
+See [graphic for print documents (PDF)](./attachments/plot-cycles.pdf) or graphic for displays:
 
 ![plot cycles.svg](./attachments/plot-cycles.svg)
 
