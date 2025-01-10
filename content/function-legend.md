@@ -20,7 +20,7 @@ plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight',
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
-def graph_example_functions(axes):
+def plot_function_values(axes):
     x = np.linspace(0, 4, 100)
     axes.plot(x, x, label=r"$f(x) = x$")
     axes.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
@@ -37,7 +37,7 @@ def show_legend_auto(axes):
     axes.legend()
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-graph_example_functions(ax)
+plot_function_values(ax)
 show_legend_auto(ax)
 plt.savefig(@vault_path + '/attachments/plot legend auto.svg')
 plt.show()
@@ -57,7 +57,7 @@ plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight',
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
-def graph_example_functions(axes):
+def plot_function_values(axes):
     x = np.linspace(0, 4, 100)
     axes.plot(x, x, label=r"$f(x) = x$")
     axes.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
@@ -74,7 +74,7 @@ def show_legend_top_right(axes):
     axes.legend(loc="upper right")
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-graph_example_functions(ax)
+plot_function_values(ax)
 show_legend_top_right(ax)
 plt.savefig(@vault_path + '/attachments/plot legend inside.svg')
 plt.show()
@@ -95,7 +95,7 @@ plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight',
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
-def graph_example_functions(axes):
+def plot_function_values(axes):
     x = np.linspace(0, 4, 100)
     axes.plot(x, x, label=r"$f(x) = x$")
     axes.plot(x, np.exp(x)/20, label=r"$g(x) = \frac{1}{20}\, e^x$")
@@ -113,7 +113,7 @@ def show_legend_underneath(axes):
         bbox_to_anchor=(0.5, -0.2), frameon=False)
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-graph_example_functions(ax)
+plot_function_values(ax)
 show_legend_underneath(ax)
 plt.savefig(@vault_path + '/attachments/plot legend outside.svg')
 plt.show()
@@ -130,7 +130,7 @@ plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight',
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
-def graph_example_functions(axes_list):
+def plot_function_values(axes_list):
     x = np.linspace(0, 4, 100)
     axes_list[0].plot(x, x, label=r"$f(x) = x$")
     axes_list[1].plot(x, np.exp(x)/20, color='C1',
@@ -151,7 +151,7 @@ def show_legend_alongside_subplots(figure):
     figure.legend(loc="outside right center", frameon=False)
 
 fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
-graph_example_functions(axs)
+plot_function_values(axs)
 show_legend_alongside_subplots(fig)
 plt.savefig(@vault_path + '/attachments/plot legend figure.svg')
 plt.show()
@@ -275,23 +275,18 @@ def show_legend_besides_lines(axes):
         axes.annotate(label, xy=(1, last_y_value), xytext=(0, 0), 
             color=line.get_color(), xycoords=axes.get_yaxis_transform(), 
             textcoords="offset points", va="center")
-
-fig, axs = plt.subplots(ncols=3, figsize=(6,2.4))
-[graph_example_function(ax) for ax in axs] 
-show_legend_best(axs[0])
-show_legend_underneath(axs[1])
-show_legend_besides_lines(axs[2])
-plt.savefig(@vault_path + '/attachments/plot legend.svg')
-
-# Redraw figure for print documents
-plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
+def draw_figure(filetype):
+    fig, axs = plt.subplots(ncols=3, figsize=(6,2.4))
+    [graph_example_function(ax) for ax in axs] 
+    show_legend_best(axs[0])
+    show_legend_underneath(axs[1])
+    show_legend_besides_lines(axs[2])
+    plt.savefig(@vault_path + '/attachments/plot legend.' + filetype)
+    
+draw_figure('svg')
 plt.clf()
-fig, axs = plt.subplots(ncols=3, figsize=(6,2.4))
-[graph_example_function(ax) for ax in axs] 
-show_legend_best(axs[0])
-show_legend_underneath(axs[1])
-show_legend_besides_lines(axs[2])
-plt.savefig(@vault_path + '/attachments/plot legend.pdf')
+plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
+draw_figure('pdf')
 plt.show()
 ```
 
