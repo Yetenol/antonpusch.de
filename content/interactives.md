@@ -1,6 +1,6 @@
 ---
 title: "Interactives - Maps, presentation slides, charts"
-date: "2024-12-25T00:00:00.000+01:00"
+date: "2024-12-25T10:40:51.262+01:00"
 dg-publish: true
 ---
 [Datawrapper](Datawrapper.md)
