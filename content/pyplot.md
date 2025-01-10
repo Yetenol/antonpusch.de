@@ -1,6 +1,6 @@
 ---
 title: "PyPlot"
-date: "2025-01-03T00:00:00.000+01:00"
+date: "2025-01-03T19:19:26.461+01:00"
 dg-publish: true
 ---
 Plot of values for $x = 0, 1, \ldots$
