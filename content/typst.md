@@ -1,6 +1,6 @@
 ---
 title: "TYPST - A modern, readable, robust, fast typesetting system"
-date: "2024-08-30T00:00:00.000+02:00"
+date: "2024-08-30T14:21:41.430+02:00"
 dg-publish: true
 ---
 
