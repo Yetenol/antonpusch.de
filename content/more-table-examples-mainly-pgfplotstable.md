@@ -1,6 +1,6 @@
 ---
 title: "More table examples, mainly pgfplotstable"
-date: "2024-09-07T00:00:00.000+02:00"
+date: "2024-09-07T11:16:09.707+02:00"
 dg-publish: true
 ---
 
