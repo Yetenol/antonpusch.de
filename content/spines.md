@@ -160,7 +160,7 @@ plt.show()
 
 # Figure collection for note preview
 
-See [figures for print documents (PDF)](./attachments/plot-spines.pdf) or figures for displays:
+See [graphic for print documents (PDF)](./attachments/plot-spines.pdf) or graphic for displays:
 
 ![plot spines.svg](./attachments/plot-spines.svg)
 

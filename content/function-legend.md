@@ -198,7 +198,7 @@ plt.savefig(@vault_path + '/attachments/plot legend next to line.svg')
 plt.show()
 ```
 
-## Labels inside data
+## Labels inside data region
 
 ![plot legend at line.svg](./attachments/plot-legend-at-line.svg)
 
@@ -222,10 +222,11 @@ def move_xylabels_to_corners(axes):
     axes.yaxis.label.set(rotation=0)
 def annotate_lines(axes):
     axes.set_title("Figure 2.6: Label lines in data region")
-    axes.text(4, 0, r"$f(x) = x^2$", 
-        horizontalalignment='right', color='C0')
-    axes.text(3.8, 45, r"$g(x) = e^x$", 
-        horizontalalignment='right', color='C1')
+    lines = axes.get_lines()
+    axes.text(4, 7, horizontalalignment='right', 
+        s=lines[0].get_label(), color=lines[0].get_color())
+    axes.text(3.8, 45, horizontalalignment='right',
+        s=lines[1].get_label(), color=lines[1].get_color())
 
 fig, ax = plt.subplots(figsize=(6,2.4))
 graph_example_function(ax)
@@ -236,7 +237,7 @@ plt.show()
 
 # Figure collection for note preview
 
-See [figures for print documents (PDF)](./attachments/plot-legend.pdf) or figures for displays:
+See [graphic for print documents (PDF)](./attachments/plot-legend.pdf) or graphic for displays:
 
 ![plot legend.svg](./attachments/plot-legend.svg)
 
