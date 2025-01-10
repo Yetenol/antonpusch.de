@@ -1,6 +1,6 @@
 ---
 title: "Plots - Dynamically plot mathematical functions, values as a vector graphic"
-date: "2025-01-10T00:00:00.000+01:00"
+date: "2025-01-10T14:49:36.671+01:00"
 dg-publish: true
 ---
 
