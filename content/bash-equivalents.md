@@ -1,6 +1,6 @@
 ---
 title: "Bash Equivalents - Replace code from Linux Bash with PowerShell equivalents"
-date: "2025-01-03T00:00:00.000+01:00"
+date: "2025-01-03T13:04:48.265+01:00"
 dg-publish: true
 dg-show-toc: true
 ---

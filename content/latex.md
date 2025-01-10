@@ -1,6 +1,6 @@
 ---
 title: "LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules"
-date: "2025-01-10T00:00:00.000+01:00"
+date: "2025-01-10T14:49:33.671+01:00"
 dg-publish: true
 dg-permalink: latex
 aliases:

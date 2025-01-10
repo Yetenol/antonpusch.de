@@ -1,6 +1,6 @@
 ---
 title: "Create a simple table with borders"
-date: "2024-08-25T00:00:00.000+02:00"
+date: "2024-08-25T13:49:23.050+02:00"
 dg-publish: true
 ---
 

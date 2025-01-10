@@ -1,6 +1,6 @@
 ---
 title: "Cinematography"
-date: "2024-09-21T00:00:00.000+02:00"
+date: "2024-09-21T07:11:35.408+02:00"
 dg-publish: true
 ---
 

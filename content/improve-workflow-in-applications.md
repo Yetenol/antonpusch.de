@@ -1,6 +1,6 @@
 ---
 title: "Improve workflow in applications"
-date: "2024-09-02T00:00:00.000+02:00"
+date: "2024-09-02T10:58:05.862+02:00"
 dg-publish: true
 ---
 

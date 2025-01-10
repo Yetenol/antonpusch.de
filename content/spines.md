@@ -1,6 +1,6 @@
 ---
 title: "Spines - Place axis spines of plots"
-date: "2025-01-10T00:00:00.000+01:00"
+date: "2025-01-10T14:22:20.903+01:00"
 dg-publish: true
 ---
 

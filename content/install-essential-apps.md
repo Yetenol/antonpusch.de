@@ -1,6 +1,6 @@
 ---
 title: "Install essential apps"
-date: "2025-01-03T00:00:00.000+01:00"
+date: "2025-01-03T13:03:29.173+01:00"
 dg-publish: true
 dg-link-preview: true
 priority: 3

@@ -1,6 +1,6 @@
 ---
 title: "Showcase of math equations"
-date: "2024-08-29T00:00:00.000+02:00"
+date: "2024-08-29T21:17:08.859+02:00"
 dg-publish: true
 ---
 

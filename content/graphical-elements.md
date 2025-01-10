@@ -1,6 +1,6 @@
 ---
 title: "Graphical elements - Standardize tables, images, plots"
-date: "2024-09-06T00:00:00.000+02:00"
+date: "2024-09-06T16:12:31.593+02:00"
 dg-publish: true
 priority: 5
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Automatic Train Fuel Stop"
-date: "2025-01-03T00:00:00.000+01:00"
+date: "2025-01-03T13:04:02.209+01:00"
 dg-publish: true
 microsoft-id: 
 winget-id: 

@@ -1,6 +1,6 @@
 ---
 title: "Format numbers - Evaluate, Round to precision, Set decimal and thousands separator, Use scientific notations"
-date: "2024-09-13T00:00:00.000+02:00"
+date: "2024-09-13T05:56:02.145+02:00"
 dg-publish: true
 ---
 

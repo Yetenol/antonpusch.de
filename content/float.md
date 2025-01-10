@@ -1,6 +1,6 @@
 ---
 title: "Float - Dynamically place figures, images, tables, and listings at the top, bottom, or single page"
-date: "2024-09-01T00:00:00.000+02:00"
+date: "2024-09-01T09:46:52.464+02:00"
 dg-publish: true
 ---
 

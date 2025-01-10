@@ -1,6 +1,6 @@
 ---
 title: "Networks, Commutative diagrams - Dynamically draw graph networks as a vector graphic"
-date: "2025-01-01T00:00:00.000+01:00"
+date: "2025-01-01T13:31:05.000+01:00"
 dg-publish: true
 ---
 

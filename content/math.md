@@ -1,6 +1,6 @@
 ---
 title: "Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing AMSmath"
-date: "2025-01-01T00:00:00.000+01:00"
+date: "2025-01-01T13:28:45.000+01:00"
 dg-publish: true
 dg-show-toc: true
 aliases:

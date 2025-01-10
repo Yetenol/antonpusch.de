@@ -1,6 +1,6 @@
 ---
 title: "Electrical circuit - Dynamically draw electronic circuit diagrams as a vector graphic"
-date: "2024-12-16T00:00:00.000+01:00"
+date: "2024-12-16T12:17:41.980+01:00"
 dg-publish: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Install Windows 11 with 2 partitions"
-date: "2024-09-29T00:00:00.000+02:00"
+date: "2024-09-29T05:20:26.376+02:00"
 dg-publish: true
 priority: 1
 ---

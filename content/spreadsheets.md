@@ -1,6 +1,6 @@
 ---
 title: "Spreadsheets - Calculate sum, mean, standard deviation, max, and min across selection of cells"
-date: "2025-01-07T00:00:00.000+01:00"
+date: "2025-01-07T14:35:00.978+01:00"
 dg-publish: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Code Snippets - Print source code with syntax highlighting in latex with listings"
-date: "2024-09-02T00:00:00.000+02:00"
+date: "2024-09-02T18:05:31.486+02:00"
 dg-publish: true
 ---
 - Combine `<=` to $\le$

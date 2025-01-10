@@ -1,6 +1,6 @@
 ---
 title: "Table calculation"
-date: "2024-09-05T00:00:00.000+02:00"
+date: "2024-09-05T22:33:23.229+02:00"
 dg-publish: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Moodle - App vs Website"
-date: "2024-08-30T00:00:00.000+02:00"
+date: "2024-08-30T05:42:14.072+02:00"
 dg-publish: true
 ---
 Wofür nutzt die die Moodle-App? Ich hab sie lange genutzt, bin dieses Semester aber wieder größtenteils auf die auf die Weboberfläche zurückgekehrt.

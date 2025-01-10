@@ -1,6 +1,6 @@
 ---
 title: "Add title numbers, caption, and reference the table elsewhere"
-date: "2024-08-25T00:00:00.000+02:00"
+date: "2024-08-25T11:38:58.127+02:00"
 dg-publish: true
 ---
 

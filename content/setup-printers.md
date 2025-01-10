@@ -1,6 +1,6 @@
 ---
 title: "Setup printers - Install drivers, setup scanning software"
-date: "2024-07-24T00:00:00.000+02:00"
+date: "2024-07-24T13:25:20.478+02:00"
 dg-publish: true
 ---
 

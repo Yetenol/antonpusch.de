@@ -1,6 +1,6 @@
 ---
 title: "Graphics, Plots, Visualization - Generate dynamic professional vector graphics with matching fonts, design"
-date: "2024-11-25T00:00:00.000+01:00"
+date: "2024-11-25T00:33:50.000+01:00"
 dg-publish: true
 ---
 # Design

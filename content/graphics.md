@@ -1,6 +1,6 @@
 ---
 title: "Graphics - Draw vector networks, graphs, images, plots in latex with tikz, pgf"
-date: "2025-01-10T00:00:00.000+01:00"
+date: "2025-01-10T14:49:33.653+01:00"
 dg-publish: true
 cssclasses:
   - img-grid

@@ -1,6 +1,6 @@
 ---
 title: "Array-like environments - Align equations and relation symbol relative to each other"
-date: "2024-09-01T00:00:00.000+02:00"
+date: "2024-09-01T15:40:39.536+02:00"
 dg-publish: true
 ---
 

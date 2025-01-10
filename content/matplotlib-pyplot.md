@@ -1,6 +1,6 @@
 ---
 title: "MatPlotLib PyPlot"
-date: "2025-01-08T00:00:00.000+01:00"
+date: "2025-01-08T11:19:00.719+01:00"
 dg-publish: true
 not-in-use: 
 microsoft-id: 

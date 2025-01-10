@@ -1,6 +1,6 @@
 ---
 title: "Uninstall pre-installed apps"
-date: "2024-11-26T00:00:00.000+01:00"
+date: "2024-11-26T03:00:05.522+01:00"
 dg-publish: true
 priority: 2
 ---

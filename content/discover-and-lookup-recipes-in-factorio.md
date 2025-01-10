@@ -1,6 +1,6 @@
 ---
 title: "Discover and lookup recipes in Factorio"
-date: "2024-09-30T00:00:00.000+02:00"
+date: "2024-09-30T18:35:09.000+02:00"
 dg-publish: true
 cssclasses:
   - cards

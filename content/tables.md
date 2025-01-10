@@ -1,6 +1,6 @@
 ---
 title: "Tables - Separate content in plaintext and styles like alignment, spacing, markup, and calculation, utilizing Tabularray"
-date: "2025-01-01T00:00:00.000+01:00"
+date: "2025-01-01T13:30:42.000+01:00"
 dg-publish: true
 dg-show-toc: true
 aliases:

@@ -1,6 +1,6 @@
 ---
 title: "Calculate statistics for table numbers"
-date: "2024-09-06T00:00:00.000+02:00"
+date: "2024-09-06T11:26:25.019+02:00"
 dg-publish: true
 ---
 - Keep the data in **raw** and **universal** (csv) form: Update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell

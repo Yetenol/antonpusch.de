@@ -1,6 +1,6 @@
 ---
 title: "Enjoy a favorite movie again"
-date: "2024-09-01T00:00:00.000+02:00"
+date: "2024-09-01T16:00:23.986+02:00"
 dg-publish: true
 dg-link-preview: true
 cssclasses:

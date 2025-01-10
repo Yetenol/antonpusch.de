@@ -1,6 +1,6 @@
 ---
 title: "PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks"
-date: "2024-08-25T00:00:00.000+02:00"
+date: "2024-08-25T23:30:54.155+02:00"
 dg-publish: true
 dg-permalink: powershell
 ---

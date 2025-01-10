@@ -1,6 +1,6 @@
 ---
 title: "LaTeX Symbols - Lookup mathematical symbols, operations, relations, and arrows"
-date: "2024-12-08T00:00:00.000+01:00"
+date: "2024-12-08T13:59:08.280+01:00"
 dg-publish: true
 dg-show-toc: true
 dg-permalink: latex-symbols

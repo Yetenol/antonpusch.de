@@ -1,6 +1,6 @@
 ---
 title: "Setup my computers"
-date: "2025-01-01T00:00:00.000+01:00"
+date: "2025-01-01T15:14:33.000+01:00"
 dg-publish: true
 cssclasses: []
 ---

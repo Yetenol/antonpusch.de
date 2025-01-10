@@ -1,6 +1,6 @@
 ---
 title: "Which apps should have command palettes or dark mode"
-date: "2024-09-02T00:00:00.000+02:00"
+date: "2024-09-02T19:58:26.501+02:00"
 dg-publish: true
 ---
 Many programs have a command palette but their keyboard shortcuts are extremely inconsistent. I propose a universal keyboard shortcuts that opens the command palette in all supported applications. It triggers on `ctrl+k` and sends the appropriate keystroke to the currently active applications.
