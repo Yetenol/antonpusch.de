@@ -1,4 +1,6 @@
 ---
+title: "Configure networking in nextcloudpi"
+date: "2025-01-10T00:00:00.000+01:00"
 dg-publish: true
 priority: 2
 ---
