@@ -1,6 +1,6 @@
 ---
 title: "Project structure - Create folders for setup, resources, bibliographies"
-date: "2024-07-24T00:00:00.000+02:00"
+date: "2024-07-24T04:25:20.474+02:00"
 dg-publish: true
 priority: 2
 ---
