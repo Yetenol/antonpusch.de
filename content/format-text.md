@@ -1,6 +1,6 @@
 ---
 title: "Format text - Style body text in monospace, macros with slash"
-date: "2024-09-13T00:00:00.000+02:00"
+date: "2024-09-13T19:04:30.483+02:00"
 dg-publish: true
 ---
 # Print macros in table
