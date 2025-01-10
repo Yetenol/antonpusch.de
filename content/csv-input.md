@@ -1,6 +1,6 @@
 ---
 title: "CSV Input - Dynamically generate table from file"
-date: "2024-09-10T00:00:00.000+02:00"
+date: "2024-09-10T14:11:41.945+02:00"
 dg-publish: true
 ---
 ![table measurements 1.svg](./attachments/table-measurements-1.svg)
