@@ -1,6 +1,6 @@
 ---
 title: "Watch a new movie"
-date: "2024-09-02T00:00:00.000+02:00"
+date: "2024-09-02T01:01:55.966+02:00"
 dg-publish: true
 dg-link-preview: true
 cssclasses:
