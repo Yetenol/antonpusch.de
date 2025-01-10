@@ -32,50 +32,50 @@ The info column can contain the following symbols:
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- | ---------------------------------------- |
 | [7-Zip](./7-zip.md)                                                                                                                                     |      | Development                              |
 | [AusweisApp2](./ausweisapp2.md)                                                                                                                         |      | Office                                   |
+| [AutoHotkey](AutoHotkey.md)                                                                                                                           |      | Development                              |
 | [Auto Dark Mode](./auto-dark-mode.md)                                                                                                                   |      | Personalization                          |
 | [Bitwarden](./bitwarden.md)                                                                                                                             |      | \-                                       |
-| [Brave](./brave.md)                                                                                                                                     | !    | Office                                   |
 | [Bypass Paywalls](./bypass-paywalls.md)                                                                                                                 |      | \-                                       |
-| [Chunk Editor](./chunk-editor.md)                                                                                                                       |      | \-                                       |
-| [AutoHotkey](AutoHotkey.md)                                                                                                                           |      | Development                              |
+| [Brave](./brave.md)                                                                                                                                     | !    | Office                                   |
+| [Cryptomator](./cryptomator.md)                                                                                                                         |      | Storage                                  |
 | [Discord](./discord.md)                                                                                                                                 |      | Messenger                                |
+| [Chunk Editor](./chunk-editor.md)                                                                                                                       |      | \-                                       |
 | [eM Client](./em-client.md)                                                                                                                             |      | Messenger                                |
 | [File Explorer](./file-explorer.md)                                                                                                                     | !    | \-                                       |
-| [Factorio - A game about automation, logistics and network optimizations](./factorio.md) |      | Gaming                                   |
 | [Files](./files.md)                                                                                                                                     |      | \-                                       |
 | [Firefox](./firefox.md)                                                                                                                                 |      | Office                                   |
 | [FreeTube](./freetube.md)                                                                                                                               |      | Entertainment                            |
 | [GIMP](./gimp.md)                                                                                                                                       |      | Office                                   |
-| [Git](./git.md)                                                                                                                                         | !    | Development                              |
+| [Factorio - A game about automation, logistics and network optimizations](./factorio.md) |      | Gaming                                   |
 | [Inkscape](./inkscape.md)                                                                                                                               |      | \-                                       |
+| [Git](./git.md)                                                                                                                                         | !    | Development                              |
 | [JetBrains DataGrip](./jetbrains-datagrip.md)                                                                                                           |      | Education, Development                   |
 | [KeeWeb](./keeweb.md)                                                                                                                                   | !    | Storage                                  |
 | [Lenovo Vantage](./lenovo-vantage.md)                                                                                                                   | !    | \-                                       |
-| [Cryptomator](./cryptomator.md)                                                                                                                         |      | Storage                                  |
 | [Mail and Calendar](./mail-and-calendar.md)                                                                                                             |      | Messenger                                |
 | [MediathekView](./mediathekview.md)                                                                                                                     |      | Entertainment                            |
 | [Microsoft 365](./microsoft-365.md)                                                                                                                     |      | Office                                   |
+| [NBT Editor](./nbt-editor.md)                                                                                                                           |      | \-                                       |
+| [Nextcloud](./nextcloud.md)                                                                                                                             |      | Storage                                  |
 | [Minecraft (Bedrock Edition)](./minecraft-bedrock-edition.md)                                                                                         |      | Gaming                                   |
 | [Minecraft](./minecraft.md)                                                                                                                             |      | Gaming                                   |
-| [NBT Editor](./nbt-editor.md)                                                                                                                           |      | \-                                       |
-| [OBS Studio](./obs-studio.md)                                                                                                                           |      | Entertainment                            |
-| [Nextcloud](./nextcloud.md)                                                                                                                             |      | Storage                                  |
 | [Node-js](./node-js.md)                                                                                                                                 |      | Development                              |
+| [OBS Studio](./obs-studio.md)                                                                                                                           |      | Entertainment                            |
 | [Obsidian](./obsidian.md)                                                                                                                               |      | Office, Education                        |
 | [OneDrive](./onedrive.md)                                                                                                                               |      | Storage                                  |
 | [Pandoc](./pandoc.md)                                                                                                                                   |      | \-                                       |
 | [PDFsam](./pdfsam.md)                                                                                                                                   |      | Office                                   |
-| [pdf2svg](./pdf2svg)                                                                                                                                 |      | Development, Office                      |
 | [PocketCast](./pocketcast.md)                                                                                                                           |      | \-                                       |
 | [PowerToys](./powertoys.md)                                                                                                                             |      | Personalization                          |
 | [Python](./python.md)                                                                                                                                   |      | Development                              |
+| [pdf2svg](./pdf2svg)                                                                                                                                 |      | Development, Office                      |
 | [shortcutFox](./shortcutfox.md)                                                                                                                         | !    | Personalization                          |
 | [Terminal](./terminal.md)                                                                                                                               | !    | Development                              |
 | [Threema](./threema.md)                                                                                                                                 |      | Messenger                                |
 | [TreeSize](./treesize.md)                                                                                                                               |      | Storage                                  |
-| [Unigram](./unigram.md)                                                                                                                                 |      | Messenger                                |
-| [VLC](./vlc.md)                                                                                                                                         |      | Entertainment                            |
 | [Visual Studio Code](./visual-studio-code.md)                                                                                                           | !    | Development                              |
+| [VLC](./vlc.md)                                                                                                                                         |      | Entertainment                            |
+| [Unigram](./unigram.md)                                                                                                                                 |      | Messenger                                |
 | [WhatsApp](./whatsapp.md)                                                                                                                               |      | Messenger                                |
 | [Youtube-dl](./youtube-dl.md)                                                                                                                           |      | Entertainment                            |
 | [Zoom](./zoom.md)                                                                                                                                       |      | Messenger                                |
@@ -86,11 +86,11 @@ The info column can contain the following symbols:
 | [Belt Reverser](./belt-reverser.md)                                                                                                                     | \+   | Quality of life                          |
 | [Bottleneck Lite](./bottleneck-lite.md)                                                                                                                 | \+   | Testing, Visual                          |
 | [C, C++](./c-c.md)                                                                                                                                   | \+   | \-                                       |
-| [Change Case](./change-case.md)                                                                                                                         | \+   | \-                                       |
 | [CMake Tools](./cmake-tools.md)                                                                                                                         | \+   | \-                                       |
 | [Copy as Latex](./copy-as-latex.md)                                                                                                                     | \+   | \-                                       |
-| [deepL](./deepl.md)                                                                                                                                     | \+   | Editing Translation                      |
+| [Change Case](./change-case.md)                                                                                                                         | \+   | \-                                       |
 | [Dana](./dana.md)                                                                                                                                       | \+   | \-                                       |
+| [deepL](./deepl.md)                                                                                                                                     | \+   | Editing Translation                      |
 | [Diagrams](./diagrams.md)                                                                                                                               | \+   | Visualisation, Graphics                  |
 | [Digital Garden](./digital-garden.md)                                                                                                                   | \+   | Publishing                               |
 | [Dynamic Embed](./dynamic-embed.md)                                                                                                                     | \+   | Visualisation                            |
@@ -105,11 +105,11 @@ The info column can contain the following symbols:
 | [Microsoft Excel](./microsoft-excel.md)                                                                                                                 | \+   | \-                                       |
 | [Microsoft PowerPoint](./microsoft-powerpoint.md)                                                                                                       | \+   | \-                                       |
 | [Microsoft Word](./microsoft-word.md)                                                                                                                   | \+   | \-                                       |
-| [Mouse Wheelie](./mouse-wheelie.md)                                                                                                                     | \+   | \-                                       |
 | [Obsidian Git](./obsidian-git.md)                                                                                                                       | \+   | Synchronization, Version control, Backup |
 | [One Dark theme](./one-dark-theme.md)                                                                                                                   | \+   | Visual                                   |
 | [Ore Eraser](./ore-eraser.md)                                                                                                                           | \+   | Environment                              |
 | [Pavement Drive Assist](./pavement-drive-assist.md)                                                                                                     | \+   | Transportation                           |
+| [Mouse Wheelie](./mouse-wheelie.md)                                                                                                                     | \+   | \-                                       |
 | [Plotly Python](./plotly-python.md)                                                                                                                     | \+   | Visualisation                            |
 | [Privacy Redirect](./privacy-redirect.md)                                                                                                               | \+   | \-                                       |
 | [PyX](./pyx.md)                                                                                                                                         | \+   | Visualisation                            |
@@ -118,9 +118,9 @@ The info column can contain the following symbols:
 | [Remotely Save](./remotely-save.md)                                                                                                                     | \+   | Synchronization                          |
 | [Remove requester, buffer, activer provider chests](./remove-requester-buffer-activer-provider-chests.md)                                             | \+   | Logistic network                         |
 | [Shell commands](./shell-commands.md)                                                                                                                   | \+   | Programming                              |
-| [Simple Landfill Mining](./simple-landfill-mining.md)                                                                                                   | \+   | Environment                              |
 | [SmallOnlineTools](./smallonlinetools.md)                                                                                                               | \+   | \-                                       |
 | [Sodium](./sodium.md)                                                                                                                                   | \+   | \-                                       |
+| [Simple Landfill Mining](./simple-landfill-mining.md)                                                                                                   | \+   | Environment                              |
 | [Stack Size Tooltip](./stack-size-tooltip.md)                                                                                                           | \+   | Visual                                   |
 | [Tapeline](./tapeline.md)                                                                                                                               | \+   | Visual, Designing                        |
 | [Task List](./task-list.md)                                                                                                                             | \+   | Collaboration, Organisation, Multiplayer |
@@ -129,19 +129,19 @@ The info column can contain the following symbols:
 | [Translate](./translate.md)                                                                                                                             | \+   | Editing, Translation                     |
 | [uBlock Origin](./ublock-origin.md)                                                                                                                     | \+   | \-                                       |
 | [Underground Indicators](./underground-indicators.md)                                                                                                   | \+   | Visual, Designing                        |
-| [Unstoppable by Cliffs Force](./unstoppable-by-cliffs-force.md)                                                                                         | \+   | Simplifier                               |
 | [VehicleSnap](./vehiclesnap.md)                                                                                                                         | \+   | Transportation                           |
-| [vscode-autohotkey-debug](./vscode-autohotkey-debug.md)                                                                                                 | \+   | AutoHotkey                               |
+| [Unstoppable by Cliffs Force](./unstoppable-by-cliffs-force.md)                                                                                         | \+   | Simplifier                               |
 | [VSCode Keymap](./vscode-keymap.md)                                                                                                                     | \+!  | Personalization                          |
+| [vscode-autohotkey-debug](./vscode-autohotkey-debug.md)                                                                                                 | \+   | AutoHotkey                               |
 | [Wire Shortcuts](./wire-shortcuts.md)                                                                                                                   | \+   | Simplifier, Circuit network              |
-| [TeX Live](./tex-live.md)                                                                                                                               |      | Office, Development                      |
+| [TeX Live](./tex-live.md)                                                                                                                               |      | Office, Development, Education           |
 | [AutoHotkey v2 Language Support](./autohotkey-v2-language-support.md)                                                                                   | \+   | AutoHotkey                               |
 | [Dataview - Create dynamic tables using data stored in note properties](./dataview.md)     | \+   | Dynamic content                          |
 | [Execute Code](./execute-code.md)                                                                                                                       | \+   | Programming                              |
 | [Terminal Command Keys](./terminal-command-keys.md)                                                                                                     | \+   | Version control                          |
 | [Adobe Acrobat Reader](./adobe-acrobat-reader.md)                                                                                                       | ⊘    | Office                                   |
-| [Amazon Prime Video](./amazon-prime-video.md)                                                                                                           | ⊘    | Entertainment                            |
 | [Adobe Photoshop Express](./adobe-photoshop-express.md)                                                                                                 | ⊘    | Office                                   |
+| [Amazon Prime Video](./amazon-prime-video.md)                                                                                                           | ⊘    | Entertainment                            |
 | [BatteryBar Pro](./batterybar-pro.md)                                                                                                                   | ⊘    | Personalization                          |
 | [Boxcryptor](./boxcryptor.md)                                                                                                                           | ⊘    | Storage                                  |
 | [Capture2Text](./capture2text.md)                                                                                                                       | ⊘    | Personalization                          |
@@ -153,8 +153,8 @@ The info column can contain the following symbols:
 | [Fishshell - Syntax highlighting, auto-suggestions for a linux shell](./fishshell.md)         | ⊘    | Development                              |
 | [GeoGebra](./geogebra.md)                                                                                                                               | ⊘    | Education                                |
 | [Gitkraken](./gitkraken.md)                                                                                                                             | ⊘    | Development                              |
-| [JetBrains IntelliJ IDEA](./jetbrains-intellij-idea.md)                                                                                                 | ⊘    | Development                              |
 | [KeePass](./keepass.md)                                                                                                                                 | ⊘    | Storage                                  |
+| [JetBrains IntelliJ IDEA](./jetbrains-intellij-idea.md)                                                                                                 | ⊘    | Development                              |
 | [LapLock](./laplock.md)                                                                                                                                 | ⊘    | Personalization                          |
 | [Lenovo Pen Settings](./lenovo-pen-settings.md)                                                                                                         | ⊘    | Personalization                          |
 | [LTSpice](./ltspice.md)                                                                                                                                 | ⊘    | Education                                |
@@ -171,22 +171,22 @@ The info column can contain the following symbols:
 | [Samsung Dex](./samsung-dex.md)                                                                                                                         | ⊘    | \-                                       |
 | [ShareX](./sharex.md)                                                                                                                                   | ⊘    | Personalization                          |
 | [SharpKeys](./sharpkeys.md)                                                                                                                             | ⊘    | Personalization                          |
-| [Signal](./signal.md)                                                                                                                                   | ⊘    | Messenger                                |
 | [Simplenote](./simplenote.md)                                                                                                                           | ⊘    | Office                                   |
+| [Signal](./signal.md)                                                                                                                                   | ⊘    | Messenger                                |
 | [Teams](./teams.md)                                                                                                                                     | ⊘    | Messenger                                |
-| [Windows Subsystem for Android](./windows-subsystem-for-android.md)                                                                                     | ⊘    | Subsystem                                |
 | [Windows Subsystem for Linux](./windows-subsystem-for-linux.md)                                                                                         | ⊘    | Subsystem                                |
 | [Windscribe](./windscribe.md)                                                                                                                           | ⊘    | Entertainment                            |
+| [Windows Subsystem for Android](./windows-subsystem-for-android.md)                                                                                     | ⊘    | Subsystem                                |
 | [WSATools](./wsatools.md)                                                                                                                               | ⊘    | Subsystem                                |
-| [Blueprint logistics requests](./blueprint-logistics-requests.md)                                                                                       | \+⊘  | Quality of life                          |
-| [Code Emitter](./code-emitter.md)                                                                                                                       | \+⊘  | Programming                              |
 | [Auto Hide](./auto-hide.md)                                                                                                                             | \+⊘  | \-                                       |
+| [Code Emitter](./code-emitter.md)                                                                                                                       | \+⊘  | Programming                              |
+| [Blueprint logistics requests](./blueprint-logistics-requests.md)                                                                                       | \+⊘  | Quality of life                          |
 | [Inventory Essentials](./inventory-essentials.md)                                                                                                       | \+⊘  | \-                                       |
 | [Inventory Profiles Next](./inventory-profiles-next.md)                                                                                                 | \+⊘  | \-                                       |
 | [InventoryTabs](./inventorytabs.md)                                                                                                                     | \+⊘  | \-                                       |
 | [Long Inserters](./long-inserters.md)                                                                                                                   | \+⊘  | Content, Logistics                       |
-| [Microsoft Outlook](./microsoft-outlook.md)                                                                                                             | \+⊘  | \-                                       |
 | [Microsoft OneNote](./microsoft-onenote.md)                                                                                                             | \+⊘  | Office                                   |
+| [Microsoft Outlook](./microsoft-outlook.md)                                                                                                             | \+⊘  | \-                                       |
 | [Mouse Tweaks](./mouse-tweaks.md)                                                                                                                       | \+⊘  | \-                                       |
 | [Player Request Crafting Layout](./player-request-crafting-layout.md)                                                                                   | \+⊘  | Quality of life                          |
 | [Self-hosted LiveSync](./self-hosted-livesync.md)                                                                                                       | \+⊘  | Synchronization                          |
