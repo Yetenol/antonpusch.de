@@ -1,6 +1,6 @@
 ---
 title: "Gantt chart"
-date: "2024-12-24T00:00:00.000+01:00"
+date: "2024-12-24T21:16:50.266+01:00"
 dg-publish: true
 ---
 - page width chart `expand chart`
