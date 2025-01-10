@@ -1,6 +1,6 @@
 ---
 title: "OfficeMath - Create mathematical equations and expressions in Microsoft Office products"
-date: "2024-12-24T00:00:00.000+01:00"
+date: "2024-12-24T15:53:15.673+01:00"
 dg-publish: true
 ---
  
