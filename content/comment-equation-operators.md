@@ -1,6 +1,6 @@
 ---
 title: "Comment equation operators"
-date: "2024-09-06T00:00:00.000+02:00"
+date: "2024-09-06T15:31:22.780+02:00"
 dg-publish: true
 ---
 # Describe an operator
