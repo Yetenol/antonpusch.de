@@ -18,7 +18,7 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
-def graph_example_functions(axes):
+def plot_function_values(axes):
     x = np.linspace(0, np.pi, 100)
     axes.plot(x, np.sin(x), label=r"$f(x) = \sin{x}$")
     axes.plot(x, np.cos(x), label=r"$g(x) = \cos{x}$")
@@ -38,7 +38,7 @@ def show_legend_underneath(axes):
         bbox_to_anchor=(0.5, -0.15), frameon=False)
 
 fig, ax = plt.subplots(figsize=(6,2.4))
-graph_example_functions(ax)
+plot_function_values(ax)
 show_legend_underneath(ax)
 plt.savefig(@vault_path + '/attachments/plot cycles color.svg')
 plt.show()
@@ -57,7 +57,7 @@ plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
-def graph_example_functions(axes):
+def plot_function_values(axes):
     x = np.linspace(0, np.pi, 100)
     axes.plot(x, np.sin(x), label=r"$f(x) = \sin{x}$")
     axes.plot(x, np.cos(x), label=r"$g(x) = \cos{x}$")
@@ -83,7 +83,7 @@ def show_legend_underneath(axes):
 
 use_cycler_linestyle(plt)
 fig, ax = plt.subplots(figsize=(6,2.4))
-graph_example_functions(ax)
+plot_function_values(ax)
 show_legend_underneath(ax)
 plt.savefig(@vault_path + '/attachments/plot cycles linestyle.svg')
 plt.show()
@@ -191,7 +191,7 @@ plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight',
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
-def graph_example_functions(axes):
+def plot_function_values(axes):
     x = np.linspace(0, np.pi, 100)
     axes.plot(x, np.sin(x), label=r"$f(x) = \sin{x}$")
     axes.plot(x, np.cos(x), label=r"$g(x) = \cos{x}$")
@@ -211,27 +211,23 @@ def keep_cycler_color(axes):
     axes.set_title("Figure 3.1: Colors")
 def set_cycler_linestyle(axes):
     import cycler as cy
-    axes.set_title("Figure 3.2: Linestyle")
+    axes.set_title("Figure 3.2: Line style")
     linestyle_cycler = cy.cycler(color=['k']) * cy.cycler('linestyle', 
         ['-','--',':','-.', (0,(3,1,1,1,1,1)), (0,(3,1,3,1,1,1)) ])
     axes.set_prop_cycle(linestyle_cycler)
 def show_legend_underneath(axes):
     axes.legend(loc='upper center', ncols=2, 
         bbox_to_anchor=(0.5, -0.2), frameon=False)
-
-fig, axs = plt.subplots(ncols=2, figsize=(6,2.4))
-keep_cycler_color(axs[0])
-set_cycler_linestyle(axs[1])
-[graph_example_functions(ax) for ax in axs]
-plt.savefig(@vault_path + '/attachments/plot cycles.svg')
-
-# Redraw figure for print documents
-plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
+def draw_figure(filetype):
+    fig, axs = plt.subplots(ncols=2, figsize=(6,2.4))
+    keep_cycler_color(axs[0])
+    set_cycler_linestyle(axs[1])
+    [plot_function_values(ax) for ax in axs]
+    plt.savefig(@vault_path + '/attachments/plot cycles.' + filetype)
+    
+draw_figure('svg')
 plt.clf()
-fig, axs = plt.subplots(ncols=2, figsize=(6,2.4))
-keep_cycler_color(axs[0])
-set_cycler_linestyle(axs[1])
-[graph_example_functions(ax) for ax in axs]
-plt.savefig(@vault_path + '/attachments/plot cycles.pdf')
+plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
+draw_figure('pdf')
 plt.show()
 ```

@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def graph_example_function(axes):
+def plot_function_values(axes):
     x = np.linspace(0, 2.5, 100)
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
@@ -34,7 +34,7 @@ def keep_spines_normal(axes):
     axes.set_title("Figure 1.1: Default spines")
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-graph_example_function(ax)
+plot_function_values(ax)
 keep_spines_normal(ax)
 plt.savefig(@vault_path + '/attachments/plot spine default.svg')
 plt.show()
@@ -52,7 +52,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def graph_example_function(axes):
+def plot_function_values(axes):
     x = np.linspace(0, 2.5, 100)
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
@@ -72,7 +72,7 @@ def move_spines_to_origin(axes):
     axes.spines[['left', 'bottom']].set_position('zero')
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-graph_example_function(ax)
+plot_function_values(ax)
 move_spines_to_origin(ax)
 plt.savefig(@vault_path + '/attachments/plot spine origin.svg')
 plt.show()
@@ -93,7 +93,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def graph_example_function(axes):
+def plot_function_values(axes):
     x = np.linspace(0, 2.5, 100)
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
@@ -117,7 +117,7 @@ def move_spines_to_origin_and_add_arrows(axes):
         clip_on=False)
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-graph_example_function(ax)
+plot_function_values(ax)
 move_spines_to_origin_and_add_arrows(ax)
 plt.savefig(@vault_path + '/attachments/plot spine arrow tips.svg')
 plt.show()
@@ -135,7 +135,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def graph_example_function(axes):
+def plot_function_values(axes):
     x = np.linspace(0, 2.5, 100)
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \dfrac{\cos(\pi x)}{e^x}$")
@@ -152,7 +152,7 @@ def hide_spines(axes):
     axes.spines[:].set_visible(False)
 
 fig, ax = plt.subplots(figsize=(6,2.2))
-graph_example_function(ax)
+plot_function_values(ax)
 hide_spines(ax)
 plt.savefig(@vault_path + '/attachments/plot spines hidden.svg')
 plt.show()
@@ -170,7 +170,7 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
-def graph_example_function(axes):
+def plot_function_values(axes):
     x = np.linspace(0, 2.5, 100)
     axes.plot(x, np.cos(np.pi*x)*np.exp(-x), 
         label=r"$f(x) = \frac{\cos(\pi x)}{e^x}$")
@@ -198,23 +198,18 @@ def move_spines_to_origin(axes):
 def hide_spines(axes):
     axes.set_title("Figure 1.4: No spines")
     axes.spines[:].set_visible(False)
+def draw_figure(filetype):
+    fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
+    [plot_function_values(ax) for ax in axs]
+    keep_spines_normal(axs[0])
+    move_spines_to_origin(axs[1])
+    hide_spines(axs[2])
+    plt.savefig(@vault_path + '/attachments/plot spines.' + filetype)
 
-fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
-[graph_example_function(ax) for ax in axs]
-keep_spines_normal(axs[0])
-move_spines_to_origin(axs[1])
-hide_spines(axs[2])
-plt.savefig(@vault_path + '/attachments/plot spines.svg')
-
-# Redraw figure for print documents
-plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
+draw_figure('svg')
 plt.clf()
-fig, axs = plt.subplots(ncols=3, figsize=(6,2.2))
-[graph_example_function(ax) for ax in axs]
-keep_spines_normal(axs[0])
-move_spines_to_origin(axs[1])
-hide_spines(axs[2])
-plt.savefig(@vault_path + '/attachments/plot spines.pdf')
+plt.rcParams.update({'text.usetex':True, 'font.family':'serif'})
+draw_figure('pdf')
 plt.show()
 ```
 

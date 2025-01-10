@@ -28,7 +28,7 @@ Implicit Axes through PyPlot `plt`
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams.update({'savefig.transparent':True,  
+plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
 plt.rc('axes.spines', left=False, top=False, right=False, bottom=False)
@@ -78,7 +78,6 @@ def wrap_title(axes):
 See source code examples: [Cycles - Differentiate data set with colors or line style](./cycles.md)
 
 ![plot cycles.svg](./attachments/plot-cycles.svg)
-
 
 # Dufte
 
