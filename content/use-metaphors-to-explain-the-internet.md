@@ -1,6 +1,6 @@
 ---
 title: "Use metaphors to explain the internet"
-date: "2024-08-30T00:00:00.000+02:00"
+date: "2024-08-30T14:49:18.287+02:00"
 dg-publish: true
 ---
 Alternative names for the Internet
