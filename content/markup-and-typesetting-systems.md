@@ -1,6 +1,6 @@
 ---
 title: "Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography"
-date: "2024-12-25T00:00:00.000+01:00"
+date: "2024-12-25T11:23:58.904+01:00"
 dg-publish: true
 aliases:
   - Textsatzsysteme
