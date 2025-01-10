@@ -1,6 +1,6 @@
 ---
 title: "Follow varying typographic conventions with the same input syntax"
-date: "2024-08-27T00:00:00.000+02:00"
+date: "2024-08-27T04:35:48.179+02:00"
 dg-publish: true
 ---
 # Numbers
