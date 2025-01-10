@@ -1,6 +1,6 @@
 ---
 title: "Curved vs flat monitor"
-date: "2024-09-08T00:00:00.000+02:00"
+date: "2024-09-08T06:18:02.861+02:00"
 dg-publish: true
 ---
 # Curved monitor
