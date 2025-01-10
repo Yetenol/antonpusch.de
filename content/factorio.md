@@ -1,6 +1,6 @@
 ---
 title: "Factorio - A game about automation, logistics and network optimizations"
-date: "2024-11-25T00:00:00.000+01:00"
+date: "2024-11-25T17:36:40.990+01:00"
 dg-publish: true
 microsoft-id: 
 winget-id: 
