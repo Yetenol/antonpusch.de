@@ -1,6 +1,6 @@
 ---
 title: "Cycles - Differentiate data set with colors or line style"
-date: "2025-01-09T00:00:00.000+01:00"
+date: "2025-01-10T00:00:00.000+01:00"
 dg-publish: true
 ---
 
@@ -26,11 +26,13 @@ def graph_example_functions(axes):
     axes.plot(x, -np.sin(x), label=r"$i(x) = -\sin{x}$")
     axes.plot(x, -np.cos(x), label=r"$j(x) = -\cos{x}$")
     axes.plot(x, -np.cos(2*x)/3, label=r"$k(x) = -\frac{\cos(2x)}{3}$")
-    axes.legend()
-    axes.set_xlabel('x')
-    axes.set_ylabel('y', rotation=0)
-    axes.xaxis.set_label_coords(1.0, -0.025)
-    axes.yaxis.set_label_coords(0, 1.025)
+    axes.set_xlabel('$x$')
+    axes.set_ylabel('$y$')
+    move_xylabels_to_corners(axes)
+def move_xylabels_to_corners(axes):
+    axes.xaxis.set_label_coords(1, 0)
+    axes.yaxis.set_label_coords(0, 1)
+    axes.yaxis.label.set(rotation=0)
 def show_legend_underneath(axes):
     axes.legend(loc='upper center', ncols=3, 
         bbox_to_anchor=(0.5, -0.15), frameon=False)
@@ -51,7 +53,6 @@ plt.show()
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-from cycler import cycler
 plt.rcParams.update({'savefig.transparent':True, 'svg.fonttype':'none',
     'figure.constrained_layout.use':True, 'axes.titlesize': 10,
     'axes.grid':True, 'grid.linestyle':':'})
@@ -64,15 +65,18 @@ def graph_example_functions(axes):
     axes.plot(x, -np.sin(x), label=r"$i(x) = -\sin{x}$")
     axes.plot(x, -np.cos(x), label=r"$j(x) = -\cos{x}$")
     axes.plot(x, -np.cos(2*x)/3, label=r"$k(x) = -\frac{\cos(2x)}{3}$")
-    axes.legend()
-    axes.set_xlabel('x')
-    axes.set_ylabel('y', rotation=0)
-    axes.xaxis.set_label_coords(1.0, -0.025)
-    axes.yaxis.set_label_coords(0, 1.025)
+    axes.set_xlabel('$x$')
+    axes.set_ylabel('$y$')
+    move_xylabels_to_corners(axes)
+def move_xylabels_to_corners(axes):
+    axes.xaxis.set_label_coords(1, 0)
+    axes.yaxis.set_label_coords(0, 1)
+    axes.yaxis.label.set(rotation=0)
 def use_cycler_linestyle(pyplot):
-    linestyle_cycler = cycler('linestyle',['-','--',':','-.',
+    import cycler as cy
+    linestyle_cycler = cy.cycler('linestyle',['-','--',':','-.',
         (0,(3,1,1,1,1,1)), (0,(3,1,3,1,1,1)) ])
-    plt.rcParams.update({ 'axes.prop_cycle' : linestyle_cycler })
+    plt.rcParams['axes.prop_cycle'] = linestyle_cycler
 def show_legend_underneath(axes):
     axes.legend(loc='upper center', ncols=3, 
         bbox_to_anchor=(0.5, -0.2), frameon=False)
@@ -183,7 +187,6 @@ See [figures for print documents (PDF)](./attachments/plot-cycles.pdf) or figure
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-from cycler import cycler
 plt.rcParams.update({'savefig.transparent':True, 'savefig.bbox':'tight', 
     'figure.constrained_layout.use':True, 'svg.fonttype':'none',
     'axes.titlesize': 10, 'axes.grid':True, 'grid.linestyle':':'})
@@ -196,16 +199,20 @@ def graph_example_functions(axes):
     axes.plot(x, -np.sin(x), label=r"$i(x) = -\sin{x}$")
     axes.plot(x, -np.cos(x), label=r"$j(x) = -\cos{x}$")
     axes.plot(x, -np.cos(2*x)/3, label=r"$k(x) = -\frac{\cos(2x)}{3}$")
-    axes.legend()
-    axes.set_xlabel('x')
-    axes.set_ylabel('y', rotation=0)
-    axes.xaxis.set_label_coords(1.0, -0.025)
-    axes.yaxis.set_label_coords(0, 1.025)
+    axes.set_xlabel('$x$')
+    axes.set_ylabel('$y$')
+    move_xylabels_to_corners(axes)
+    show_legend_underneath(axes)
+def move_xylabels_to_corners(axes):
+    axes.xaxis.set_label_coords(1, 0)
+    axes.yaxis.set_label_coords(0, 1)
+    axes.yaxis.label.set(rotation=0)
 def keep_cycler_color(axes):
     axes.set_title("Figure 3.1: Colors")
 def set_cycler_linestyle(axes):
+    import cycler as cy
     axes.set_title("Figure 3.2: Linestyle")
-    linestyle_cycler = cycler(color=['k']) * cycler('linestyle', 
+    linestyle_cycler = cy.cycler(color=['k']) * cy.cycler('linestyle', 
         ['-','--',':','-.', (0,(3,1,1,1,1,1)), (0,(3,1,3,1,1,1)) ])
     axes.set_prop_cycle(linestyle_cycler)
 def show_legend_underneath(axes):
@@ -215,9 +222,7 @@ def show_legend_underneath(axes):
 fig, axs = plt.subplots(ncols=2, figsize=(6,2.4))
 keep_cycler_color(axs[0])
 set_cycler_linestyle(axs[1])
-for axes in axs:
-    graph_example_functions(axes)
-    show_legend_underneath(axes)
+[graph_example_functions(ax) for ax in axs]
 plt.savefig(@vault_path + '/attachments/plot cycles.svg')
 
 # Redraw figure for print documents
@@ -226,9 +231,7 @@ plt.clf()
 fig, axs = plt.subplots(ncols=2, figsize=(6,2.4))
 keep_cycler_color(axs[0])
 set_cycler_linestyle(axs[1])
-for axes in axs:
-    graph_example_functions(axes)
-    show_legend_underneath(axes)
+[graph_example_functions(ax) for ax in axs]
 plt.savefig(@vault_path + '/attachments/plot cycles.pdf')
 plt.show()
 ```
