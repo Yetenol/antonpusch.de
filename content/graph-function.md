@@ -51,7 +51,6 @@ def wrap_title(axes):
     axes.set_title(tw.fill(long_title, 20))
 ```
 
-
 # Terminology
 
 Explicit Axes through Figure `fig` , Axes `ax`
