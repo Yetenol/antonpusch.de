@@ -1,6 +1,6 @@
 ---
 title: "LaTeX to SVG - Embed LaTeX figures in markdown. Automate compiling, cropping, and exporting."
-date: "2025-01-06T00:00:00.000+01:00"
+date: "2025-01-06T13:25:12.031+01:00"
 dg-publish: true
 ---
 # Dependencies
