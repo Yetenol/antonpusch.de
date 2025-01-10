@@ -1,6 +1,6 @@
 ---
 title: "Dataview - Create dynamic tables using data stored in note properties"
-date: "2024-08-31T00:00:00.000+02:00"
+date: "2024-08-31T20:09:13.723+02:00"
 dg-publish: true
 not-in-use: false
 microsoft-id: 
