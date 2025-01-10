@@ -1,6 +1,6 @@
 ---
 title: "Ja, aber - Füge Information hinzu ohne das ursprüngliche Statement zu relativieren, verharmlosen, oder abzuschwächen"
-date: "2024-08-30T00:00:00.000+02:00"
+date: "2024-08-30T05:45:47.438+02:00"
 dg-publish: true
 ---
 
