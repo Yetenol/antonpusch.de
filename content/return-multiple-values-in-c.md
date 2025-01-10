@@ -1,6 +1,6 @@
 ---
 title: "Return multiple values in C"
-date: "2024-09-08T00:00:00.000+02:00"
+date: "2024-09-08T15:18:39.525+02:00"
 dg-publish: true
 ---
 
