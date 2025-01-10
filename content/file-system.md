@@ -1,6 +1,6 @@
 ---
 title: "File System - Use paths, get meta data, link, download, and encrypt files and folders"
-date: "2024-07-24T00:00:00.000+02:00"
+date: "2024-07-24T04:25:01.085+02:00"
 dg-publish: true
 priority: 3
 ---
