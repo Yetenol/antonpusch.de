@@ -1,6 +1,6 @@
 ---
 title: "PowerShell Objects - Handle, Import, Export, Filter and RegEx query objects"
-date: "2024-08-25T00:00:00.000+02:00"
+date: "2024-08-25T13:34:57.897+02:00"
 dg-publish: true
 priority: 2
 ---
