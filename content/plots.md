@@ -1,6 +1,6 @@
 ---
 title: "Plots - Dynamically plot mathematical functions, values as a vector graphic"
-date: "2025-01-10T14:49:36.671+01:00"
+date: "2025-01-11T19:10:12.076+01:00"
 dg-publish: true
 ---
 
@@ -40,6 +40,8 @@ See source code examples: [Cycles - Differentiate data set with colors or line s
 
 # Text
 
+- [Annotate - Write text on the plot](Annotate%20-%20Write%20text%20on%20the%20plot.md)
+
 annotate interval
 Multiline titles: Wrap overlong title
 
@@ -51,6 +53,9 @@ def wrap_title(axes):
 ```
 
 # Terminology
+
+
+
 
 Explicit Axes through Figure `fig` , Axes `ax`
 
