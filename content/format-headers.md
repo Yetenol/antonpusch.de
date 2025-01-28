@@ -1,12 +1,10 @@
 ---
 title: "Format headers - Group, align, rotate, separate, and abbreviate the titles for rows and columns"
-date: "2025-01-28T18:58:46.336+01:00"
+date: "2025-01-28T19:49:30.028+01:00"
 dg-publish: true
 ---
 
 # Pet Owners
-
-![table pet owners.svg](./attachments/table-pet-owners.svg)
 
 ![figure pet owners.svg](./attachments/figure-pet-owners.svg)
 
@@ -44,12 +42,10 @@ Rural     & 5    & 12 & --   & 14 \\
 
 - Beware: Rotated title clips out of table
 
-![table comparison 1.svg](./attachments/table-comparison-1.svg)
-
-![figure comparison table.svg](./attachments/figure-comparison-table.svg)
+![figure comparison table 1.svg](figure%20comparison%20table%201.svg)
 
 ```latex
-\documentclass{standalone} \title{comparison table}
+\documentclass{standalone} \title{comparison table 1}
 \renewcommand{\thetable}{1.2}
 \usepackage{tabularray,rotating,makecell}
 \setlength\rotheadsize{1.25cm}
@@ -75,8 +71,6 @@ Feautures & ++       & +        \\
 # Two dimensional table
 
 - To dynamically calculate the sum, see [Calculate statistics for table numbers](./calculate-statistics-for-table-numbers.md)
-
-![table probabilities 1.svg](./attachments/table-probabilities-1.svg)
 
 ![figure probabilities table 1.svg](./attachments/figure-probabilities-table-1.svg)
 
@@ -108,8 +102,6 @@ $\begin{tblr}[tall,caption=Probabilities,
 ```
 
 ## More variants
-
-![table probabilities.svg](./attachments/table-probabilities.svg)
 
 ![figure probabilities table.svg](./attachments/figure-probabilities-table.svg)
 
@@ -184,10 +176,10 @@ x= \\
 
 ## Rotated headers without tabularray
 
-![table headers rotated.svg](./attachments/table-headers-rotated.svg)
+![figure table headers rotated.svg](./attachments/figure-table-headers-rotated.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table comparison 2}
 \usepackage{adjustbox,array,float}
 \renewcommand{\thetable}{1.2\alph{table}}\setcounter{table}{2}
 \newcolumntype{R}[2]{%
@@ -209,19 +201,20 @@ System 3 & X                &                  & X                \\ \hline
 ```
 
 ```latex
-\documentclass{standalone} \usepackage{graphbox}
+\documentclass{standalone} \title{table headers rotated}
+\usepackage{graphbox}
 \begin{document}
-\includegraphics[align=c]{table comparison 1} \hspace{1em}
-\includegraphics[align=c]{table comparison 2}
+\includegraphics[align=c]{figure table comparison 1} \hspace{1em}
+\includegraphics[align=c]{figure table comparison 2}
 \end{document}
 ```
 
 ## PgfPlotsTable and tabularray
 
-![table headers pgfplotstable.svg](./attachments/table-headers-pgfplotstable.svg)
+![figure table headers pgfplotstable.svg](./attachments/figure-table-headers-pgfplotstable.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table headers pgfplotstable}
 \usepackage{pgfplotstable,tabularray}
 \renewcommand{\thetable}{1.5\alph{table}}
 \UseTblrLibrary{diagbox}
@@ -269,13 +262,14 @@ Simple  & $\circ$ & +    \\
 
 # Figure collection for note preview
 
-![table headers.svg](./attachments/table-headers.svg)
+![figure table headers.svg](./attachments/figure-table-headers.svg)
 
 ```latex
-\documentclass{standalone} \usepackage{graphbox}
+\documentclass{standalone} \title{table headers}
+\usepackage{graphbox}
 \begin{document}
-\includegraphics[align=c]{table pet owners} \hspace{1em}
-\includegraphics[align=c]{table comparison 1} \hspace{1em}
-\includegraphics[align=c]{table probabilities 1}
+\includegraphics[align=c]{figure pet owners} \hspace{1em}
+\includegraphics[align=c]{figure comparison table} \hspace{1em}
+\includegraphics[align=c]{figure probabilities table 1}
 \end{document}
 ```
