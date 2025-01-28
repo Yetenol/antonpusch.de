@@ -1,6 +1,6 @@
 ---
 title: "Format numbers - Evaluate, Round to precision, Set decimal and thousands separator, Use scientific notations"
-date: "2024-09-13T05:56:02.145+02:00"
+date: "2025-01-28T19:40:32.487+01:00"
 dg-publish: true
 ---
 
@@ -8,10 +8,11 @@ dg-publish: true
 
 # Scientific notation
 
-![table numbers scientific notation.svg](./attachments/table-numbers-scientific-notation.svg)
+![figure table numbers scientific notation.svg](./attachments/figure-table-numbers-scientific-notation.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{2.1}
+\documentclass{standalone} \title{table numbers scientific notation}
+\renewcommand{\thetable}{2.1}
 \usepackage{tabularray,tikz}
 \UseTblrLibrary{siunitx}
 \sisetup{exponent-product = \cdot}
@@ -40,10 +41,11 @@ $U$ in V & $R_1$ in \unit{\ohm} & $I_1$ in \unit{\ampere} \\
 
 ## Scientific vs Engineering 
 
-![table numbers scientific.svg](./attachments/table-numbers-scientific.svg)
+![figure table numbers scientific.svg](./attachments/figure-table-numbers-scientific.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{2.2}
+\documentclass{standalone} \title{table numbers scientific}
+\renewcommand{\thetable}{2.2}
 \usepackage{tabularray,tikz}
 \UseTblrLibrary{siunitx}
 \sisetup{exponent-product = \cdot}
@@ -68,10 +70,11 @@ scientific & engineering \\
 
 ## Pgf
 
-![table number formats pgf.svg](./attachments/table-number-formats-pgf.svg)
+![figure table number formats pgf.svg](./attachments/figure-table-number-formats-pgf.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{2.3}
+\documentclass{standalone} \title{table number formats pgf}
+\renewcommand{\thetable}{2.3}
 \usepackage{tabularray,tikz}
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
@@ -109,10 +112,11 @@ scientific & engineering \\
 
 ## SiUnitX
 
-![table number formats siunitx.svg](./attachments/table-number-formats-siunitx.svg)
+![figure table number formats siunitx.svg](./attachments/figure-table-number-formats-siunitx.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{2.4}
+\documentclass{standalone} \title{table number formats siunitx}
+\renewcommand{\thetable}{2.4}
 \usepackage{tabularray}
 \UseTblrLibrary{siunitx}
 \sisetup{exponent-product = \cdot}
@@ -151,12 +155,13 @@ Floating points                           \\
 
 # Localized dates and time
 
-![table numbers datetimes.svg](./attachments/table-numbers-datetimes.svg)
+![figure table numbers datetimes.svg](./attachments/figure-table-numbers-datetimes.svg)
 
 English
 
 ```latex
-\documentclass[english]{standalone} \renewcommand{\thetable}{2.5a}
+\documentclass[english]{standalone} \title{table numbers datetime english} 
+\renewcommand{\thetable}{2.5a}
 \usepackage{tabularray,babel,datetime2}
 \DTMsetup{useregional}
 \begin{document}
@@ -173,7 +178,8 @@ Date & Time \\
 British
 
 ```latex
-\documentclass[british]{standalone} \renewcommand{\thetable}{2.5b}
+\documentclass[british]{standalone} \title{table numbers datetime british} 
+\renewcommand{\thetable}{2.5b}
 \usepackage{tabularray,babel,datetime2}
 \DTMsetup{useregional}
 \begin{document}
@@ -191,7 +197,8 @@ Date & Time \\
 German
 
 ```latex
-\documentclass[german]{standalone} \renewcommand{\thetable}{2.5c}
+\documentclass[german]{standalone} \title{table numbers datetime german} 
+\renewcommand{\thetable}{2.5c}
 \usepackage{tabularray,babel,datetime2}
 \DTMsetup{useregional}
 \begin{document}
@@ -209,7 +216,8 @@ Date & Time \\
 Dutch
 
 ```latex
-\documentclass[dutch]{standalone} \renewcommand{\thetable}{2.5d}
+\documentclass[dutch]{standalone} \title{table numbers datetime dutch} 
+\renewcommand{\thetable}{2.5d}
 \usepackage{tabularray,babel,datetime2}
 \DTMsetup{useregional}
 \begin{document}
@@ -224,13 +232,14 @@ Date & Time \\
 ```
 
 ```latex
-\documentclass{standalone} \usepackage{graphbox,tabularray}
+\documentclass{standalone} \title{table numbers datetimes} 
+\usepackage{graphbox,tabularray}
 \begin{document}
 \begin{tblr}{rows={c,rowsep=8pt}}
-\includegraphics{table numbers datetime english} &
-\includegraphics{table numbers datetime british} \\
-\includegraphics{table numbers datetime german} &
-\includegraphics{table numbers datetime dutch} \\
+\includegraphics{figure table numbers datetime english} &
+\includegraphics{figure table numbers datetime british} \\
+\includegraphics{figure table numbers datetime german} &
+\includegraphics{figure table numbers datetime dutch} \\
 \end{tblr}
 \end{document}
 ```
@@ -239,12 +248,13 @@ Date & Time \\
 
 ## Show price with cents and currency
 
-![table numbers backwaren.svg](./attachments/table-numbers-backwaren.svg)
+![figure table numbers backwaren.svg](./attachments/figure-table-numbers-backwaren.svg)
 
 Select non-empty cells manually
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{2.6a}
+\documentclass{standalone} \title{table numbers backwaren 1} 
+\renewcommand{\thetable}{2.6a}
 \usepackage{tabularray,textcomp}
 \UseTblrLibrary{siunitx,functional}
 \ExplSyntaxOn
@@ -271,9 +281,9 @@ German bread    & 2,3   \\
 
 Skip empty cells automatically
 
-```py
-generate_latex_figure(r"""
-\documentclass[german]{standalone} \renewcommand{\thetable}{2.6b}
+```latex
+\documentclass[german]{standalone} \title{table numbers backwaren 2} 
+\renewcommand{\thetable}{2.6b}
 \usepackage{tabularray,babel,textcomp}
 \UseTblrLibrary{siunitx,functional}
 \ExplSyntaxOn
@@ -305,26 +315,24 @@ Cake of the day &       \\
 German bread    & 2,3   \\
 \end{tblr}
 \end{document}
-""", outfile="table numbers backwaren 2")
 ```
 
-```py
-generate_latex_figure(r"""
-\documentclass{standalone} \usepackage{graphbox}
+```latex
+\documentclass{standalone} \title{table numbers backwaren} 
+\usepackage{graphbox}
 \begin{document}
-\includegraphics{table numbers backwaren 1} \hspace{1em}
-\includegraphics{table numbers backwaren 2}
+\includegraphics{figure table numbers backwaren 1} \hspace{1em}
+\includegraphics{figure table numbers backwaren 2}
 \end{document}
-""", outfile="table numbers backwaren")
 ```
 
 ## Round up, emphasize negative values
 
-![table numbers budget.svg](./attachments/table-numbers-budget.svg)
+![figure table numbers budget.svg](./attachments/figure-table-numbers-budget.svg)
 
-```py
-generate_latex_figure(r"""
-\documentclass{standalone} \renewcommand{\thetable}{2.7}
+```latex
+\documentclass{standalone} \title{table numbers budget}
+\renewcommand{\thetable}{2.7}
 \usepackage{tabularray}
 \UseTblrLibrary{siunitx}
 \sisetup{round-mode=places,round-direction=up,
@@ -341,17 +349,16 @@ Lottie Noble   & 4226.7 \\
 Scrooge McDuck & 12366049  \\
 \end{tblr}
 \end{document}
-""", outfile="table numbers budget")
 ```
 
 ## More monetary values
 
 
-![table numbers money.svg](./attachments/table-numbers-money.svg)
+![figure table numbers money.svg](./attachments/figure-table-numbers-money.svg)
 
-```py
-generate_latex_figure(r"""
-\documentclass{standalone} \renewcommand{\thetable}{2.5}
+```latex
+\documentclass{standalone} \title{table numbers money}
+\renewcommand{\thetable}{2.5}
 \usepackage{tabularray,mathtools,amsfonts,amssymb}
 \UseTblrLibrary{functional,siunitx}
 \sisetup{exponent-product = \cdot}
@@ -388,16 +395,15 @@ generate_latex_figure(r"""
 1.0563e6 & 1.0563e6 \\
 \end{tblr}
 \end{document}
-""", outfile="table numbers money")
 ```
 
 # Fractions
 
-![table numbers fractions.svg](./attachments/table-numbers-fractions.svg)
+![figure table numbers fractions.svg](./attachments/figure-table-numbers-fractions.svg)
 
-```py
-generate_latex_figure(r"""
-\documentclass{standalone} \renewcommand{\thetable}{2.1}
+```latex
+\documentclass{standalone} \title{table numbers fractions}
+\renewcommand{\thetable}{2.1}
 \usepackage{tabularray}
 \let\oldfrac\frac
 \renewcommand{\frac}[2]{\mathchoice 
@@ -415,17 +421,16 @@ Numbers & Fractions \\
 \oldfrac{1}{5} & \frac{1}{5} \\
 \end{tblr}
 \end{document}
-""", outfile="table numbers fractions")
 ```
 
 
 # Evaluate mathematical terms
 
-![table numbers evaluate.svg](./attachments/table-numbers-evaluate.svg)
+![figure table numbers evaluate.svg](./attachments/figure-table-numbers-evaluate.svg)
 
-```py
-generate_latex_figure(r"""
-\documentclass{standalone} \renewcommand{\thetable}{2.6}
+```latex
+\documentclass{standalone} \title{table numbers evaluate}
+\renewcommand{\thetable}{2.6}
 \usepackage{tabularray,tikz}
 \usetikzlibrary{fpu}
 \begin{document}
@@ -439,16 +444,14 @@ $\begin{tblr}[tall,caption=Evaluate]{ hline{1,Z}={.08em},
 13          & 13      \\
 \end{tblr}$
 \end{document}
-""", outfile="table numbers evaluate")
 ```
 
 # Complex evaluate, assign cell content with PgfPlotsTable
 
-![table body pgfplotstable.svg](./attachments/table-body-pgfplotstable.svg)
+![figure table body pgfplotstable.svg](./attachments/figure-table-body-pgfplotstable.svg)
 
-```py
-generate_latex_figure(r"""
-\documentclass{standalone}
+```latex
+\documentclass{standalone} \title{table body pgfplotstable} 
 \usepackage{tabularray,pgfplotstable,amsmath,amssymb,graphicx}
 \renewcommand{\thetable}{2.4}
 \pgfplotstableset{
@@ -479,16 +482,14 @@ generate_latex_figure(r"""
     13          & 13      \\
 }
 \end{document}
-""", outfile="table body pgfplotstable")
 ```
 
 # Alternative without functional
 
-![table body number format no functional.svg](./attachments/table-body-number-format-no-functional.svg)
+![figure table body number format no functional.svg](./attachments/figure-table-body-number-format-no-functional.svg)
 
-```py
-generate_latex_figure(r"""
-\documentclass{standalone}
+```latex
+\documentclass{standalone} \title{table body number format no functional} 
 \usepackage{tabularray,mathtools,tikz}
 \renewcommand{\thetable}{2.1}
 \UseTblrLibrary{siunitx}
@@ -518,25 +519,22 @@ float    & sci      & {sci\\sub.} & frac     & num      \\
 1.0563e6 & 1.0563e6 & 1.0563e6    & 1.0563e6 & 1.0563e6 \\
 \end{tblr}
 \end{document}
-""", outfile="table body number format no functional")
 ```
 
 # Figure collection for note preview
 
-![table body.svg](./attachments/table-body.svg)
+![figure table body.svg](./attachments/figure-table-body.svg)
 
-```py
-generate_latex_figure(r"""
-\documentclass{standalone} 
+```latex
+\documentclass{standalone} \title{table body}
 \usepackage{tabularray,graphbox}
 \begin{document}
 \begin{tblr}{rows={m,c,rowsep=8pt},cell{1}{1}={r=2}{}}
-\includegraphics{table numbers scientific notation} &
-\includegraphics{table numbers backwaren 1} &
-\includegraphics{table numbers budget} \\&
-\includegraphics{table numbers datetime english} &
-\includegraphics{table numbers datetime german} \\
+\includegraphics{figure table numbers scientific notation} &
+\includegraphics{figure table numbers backwaren 1} &
+\includegraphics{figure table numbers budget} \\&
+\includegraphics{figure table numbers datetime english} &
+\includegraphics{figure table numbers datetime german} \\
 \end{tblr}
 \end{document}
-""", outfile="table body")
 ```
