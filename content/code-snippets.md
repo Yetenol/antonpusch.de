@@ -1,8 +1,28 @@
 ---
 title: "Code Snippets - Print source code with syntax highlighting in latex with listings"
-date: "2024-09-02T18:05:31.486+02:00"
+date: "2025-01-28T20:27:40.304+01:00"
 dg-publish: true
 ---
+
+![figure code listing.svg](./attachments/figure-code-listing.svg)
+
+```latex
+\documentclass{article} \title{code listing}
+\usepackage{listings,xcolor}
+\lstdefinestyle{hlines}{
+    basicstyle=\ttfamily\scriptsize, commentstyle=\textcolor{gray},
+    breaklines=true, showstringspaces=false, columns=flexible,
+    numbers=left, numberstyle=\tiny, frame=lines, frame=tb,
+}
+\lstset{style=hlines}
+\begin{document}
+\begin{lstinputlisting}[language=python, caption={Prime number}]{example.py}
+\end{lstinputlisting}
+\end{document}
+```
+
+---
+
 - Combine `<=` to $\le$
 - All languages
 - listings vs minted

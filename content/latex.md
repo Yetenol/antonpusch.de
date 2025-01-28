@@ -1,6 +1,6 @@
 ---
 title: "LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules"
-date: "2025-01-10T14:49:33.671+01:00"
+date: "2025-01-28T20:28:22.114+01:00"
 dg-publish: true
 dg-permalink: latex
 aliases:
@@ -20,11 +20,11 @@ $$
 
 [Tables - Separate content in plaintext and styles like alignment, spacing, markup, and calculation, utilizing Tabularray](./tables.md)
 
-![table headers.svg](./attachments/table-headers.svg)
+![figure table headers.svg](./attachments/figure-table-headers.svg)
 
 [Code Snippets - Print source code with syntax highlighting in latex with listings](./code-snippets.md)
 
-![code block.svg](./attachments/code-block.svg)
+![figure code listing.svg](./attachments/figure-code-listing.svg)
 
 [Follow varying typographic conventions with the same input syntax](./follow-varying-typographic-conventions-with-the-same-input-syntax.md)
 
