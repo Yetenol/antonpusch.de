@@ -1,6 +1,6 @@
 ---
 title: "Format headers - Group, align, rotate, separate, and abbreviate the titles for rows and columns"
-date: "2025-01-28T19:49:30.028+01:00"
+date: "2025-01-28T20:20:01.089+01:00"
 dg-publish: true
 ---
 
@@ -42,7 +42,7 @@ Rural     & 5    & 12 & --   & 14 \\
 
 - Beware: Rotated title clips out of table
 
-![figure comparison table 1.svg](figure%20comparison%20table%201.svg)
+![figure comparison table 1.svg](./attachments/figure-comparison-table-1.svg)
 
 ```latex
 \documentclass{standalone} \title{comparison table 1}
@@ -111,22 +111,23 @@ Separate the sum row and column with more spacing instead of additional border l
 \documentclass{standalone}  \title{probabilities table 2}
 \renewcommand{\thetable}{1.3b}
 \usepackage{tabularray}
-\UseTblrLibrary{diagbox}
 \let\oldfrac\frac
 \renewcommand{\frac}[2]{\mathchoice 
     {\oldfrac{#1}{#2}} {{^{#1}\!/_{\!#2}}}
     {\oldfrac{#1}{#2}} {\oldfrac{#1}{#2}}  }
+\newcommand{\diagtext}[2]{
+    {_{\displaystyle{#1}}\,^{\displaystyle{#2}}}  }
 \begin{document}
 $\begin{tblr}[tall,caption=Separation instead of vlines,
     remark{$x$}={horizontal axis}, remark{$y$}={vertical axis} 
 ]{  hline{1,Z}={.08em}, hline{2}={leftpos=-7,endpos},
     column{1-Z}={c}, column{1}={colsep=2pt},
     row{Z}={abovesep+=6pt}, column{Z}={leftsep+=6pt},
-    cell{1}{1}={preto={\diagbox[linewidth=-100pt]}},
+    cell{1}{1}={preto=\diagtext},
     cell{1}{Z}={h}, cell{Z}{1}={l},
     cell{1,Z}{1,Z}={font=\boldmath},
 }
-{x}{y} & 0            & 1            & 2            & \Sigma      \\
+{x}{y} & 0 & 1 & 2 & \Sigma \\
 0      & \frac{1}{16} & \frac{1}{16} & 0            & \frac{1}{8} \\
 1      & \frac{2}{16} & \frac{3}{16} & \frac{1}{16} & \frac{3}{8} \\
 2      & \frac{1}{16} & \frac{3}{16} & \frac{2}{16} & \frac{3}{8} \\

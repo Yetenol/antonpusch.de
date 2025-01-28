@@ -1,6 +1,6 @@
 ---
 title: "Tables - Separate content in plaintext and styles like alignment, spacing, markup, and calculation, utilizing Tabularray"
-date: "2025-01-01T13:30:42.000+01:00"
+date: "2025-01-28T19:53:49.958+01:00"
 dg-publish: true
 dg-show-toc: true
 aliases:
@@ -29,7 +29,7 @@ My main resources are the official package documentation of Tabularray[^2], and 
 - Multicolumn header
 - See examples with source code: [Format headers - Group, align, rotate, separate, and abbreviate the titles for rows and columns](./format-headers.md)
 
-![table headers.svg](./attachments/table-headers.svg)
+![figure table headers.svg](./attachments/figure-table-headers.svg)
 
 ## Format numbers
 
@@ -42,8 +42,7 @@ Numbers are very information-dense, but visually heavy. To make them understanda
 - More: Style fractions; Calculate value of math expressions
 - See examples with source code: [Format numbers - Evaluate, Round to precision, Set decimal and thousands separator, Use scientific notations](./format-numbers.md)
 
-![table body.svg](./attachments/table-body.svg)
-
+![figure table body.svg](./attachments/figure-table-body.svg)
 ## Format text
 
 - Url, Monospace, Movie list, regex, detect name, replace LaTeX -> `\LaTeX`, auto truncate to footnote, autoheaders(rotate, group), vgroupdetect, hgroupdetect, auto format, replace empty cells, texttt
