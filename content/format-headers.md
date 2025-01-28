@@ -1,6 +1,6 @@
 ---
 title: "Format headers - Group, align, rotate, separate, and abbreviate the titles for rows and columns"
-date: "2024-09-07T01:55:46.979+02:00"
+date: "2025-01-28T18:58:46.336+01:00"
 dg-publish: true
 ---
 
@@ -8,8 +8,11 @@ dg-publish: true
 
 ![table pet owners.svg](./attachments/table-pet-owners.svg)
 
+![figure pet owners.svg](./attachments/figure-pet-owners.svg)
+
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{1.1}
+\documentclass{standalone} \title{pet owners}
+\renewcommand{\thetable}{1.1}
 \usepackage{tabularray}
 \begin{document}
 \noindent
@@ -43,8 +46,11 @@ Rural     & 5    & 12 & --   & 14 \\
 
 ![table comparison 1.svg](./attachments/table-comparison-1.svg)
 
+![figure comparison table.svg](./attachments/figure-comparison-table.svg)
+
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{1.2}
+\documentclass{standalone} \title{comparison table}
+\renewcommand{\thetable}{1.2}
 \usepackage{tabularray,rotating,makecell}
 \setlength\rotheadsize{1.25cm}
 \renewcommand\theadfont{}
@@ -72,8 +78,11 @@ Feautures & ++       & +        \\
 
 ![table probabilities 1.svg](./attachments/table-probabilities-1.svg)
 
+![figure probabilities table 1.svg](./attachments/figure-probabilities-table-1.svg)
+
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{1.3a}
+\documentclass{standalone} \title{probabilities table 1}
+\renewcommand{\thetable}{1.3a}
 \usepackage{tabularray}
 \UseTblrLibrary{diagbox}
 \let\oldfrac\frac
@@ -102,10 +111,13 @@ $\begin{tblr}[tall,caption=Probabilities,
 
 ![table probabilities.svg](./attachments/table-probabilities.svg)
 
+![figure probabilities table.svg](./attachments/figure-probabilities-table.svg)
+
 Separate the sum row and column with more spacing instead of additional border lines
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{1.3b}
+\documentclass{standalone}  \title{probabilities table 2}
+\renewcommand{\thetable}{1.3b}
 \usepackage{tabularray}
 \UseTblrLibrary{diagbox}
 \let\oldfrac\frac
@@ -135,7 +147,8 @@ $\begin{tblr}[tall,caption=Separation instead of vlines,
 Don't combine $x$ and $y$ in the same diagbox cell
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{1.3c}
+\documentclass{standalone} \title{probabilities table 3}
+\renewcommand{\thetable}{1.3c}
 \usepackage{tabularray}
 \begin{document}
 $\begin{tblr}[tall,caption=No diagbox,
@@ -146,23 +159,24 @@ $\begin{tblr}[tall,caption=No diagbox,
     cell{1}{1,Z}={h,font=\boldmath}, cell{2,Z}{1}={l,font=\boldmath},
     row{1}={ht=1.8em}, cell{1}{2-Y}={f}
 }
-y=     & 0              & 1              & 2              & \Sigma        \\
-x=                                                                        \\
-0      & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & 0              & ^1{\!/\!}_{8} \\
-1      & ^2{\!/\!}_{16} & ^3{\!/\!}_{16} & ^1{\!/\!}_{16} & ^3{\!/\!}_{8} \\
-2      & ^1{\!/\!}_{16} & ^3{\!/\!}_{16} & ^2{\!/\!}_{16} & ^3{\!/\!}_{8} \\
-3      & 0              & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & ^1{\!/\!}_{8} \\
-\Sigma & ^1{\!/\!}_{4}  & ^1{\!/\!}_{2}  & ^1{\!/\!}_{4}  & 1             \\
+y= & 0 & 1 & 2 & \Sigma \\
+x= \\
+0  & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & 0              & ^1{\!/\!}_{8} \\
+1  & ^2{\!/\!}_{16} & ^3{\!/\!}_{16} & ^1{\!/\!}_{16} & ^3{\!/\!}_{8} \\
+2  & ^1{\!/\!}_{16} & ^3{\!/\!}_{16} & ^2{\!/\!}_{16} & ^3{\!/\!}_{8} \\
+3  & 0              & ^1{\!/\!}_{16} & ^1{\!/\!}_{16} & ^1{\!/\!}_{8} \\
+\Sigma & ^1{\!/\!}_{4} & ^1{\!/\!}_{2} & ^1{\!/\!}_{4}  & 1 \\
 \end{tblr}$
 \end{document}
 ```
 
 ```latex
-\documentclass{standalone} \usepackage{graphbox}
+\documentclass{standalone} \title{probabilities table}
+\usepackage{graphbox}
 \begin{document}
-\includegraphics[align=c]{table probabilities 1} \hspace{1em}
-\includegraphics[align=c]{table probabilities 2} \hspace{1em}
-\includegraphics[align=c]{table probabilities 3}
+\includegraphics[align=c]{figure probabilities table 1} \hspace{1em}
+\includegraphics[align=c]{figure probabilities table 2} \hspace{1em}
+\includegraphics[align=c]{figure probabilities table 3}
 \end{document}
 ```
 
