@@ -1,15 +1,16 @@
 ---
 title: "Cell addresses - Count rows and columns relative to the entire table, its body, or the current group"
-date: "2024-09-10T00:35:16.862+02:00"
+date: "2025-01-31T01:07:44.530+01:00"
 dg-publish: true
 ---
 
 # Add row number relative to table body
 
-![table counter rownum 1.svg](./attachments/table-counter-rownum-1.svg)
+![figure table counter rownum 1.svg](./attachments/figure-table-counter-rownum-1.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{5.1\alph{table}}
+\documentclass{standalone} \title{table counter rownum 1}
+\renewcommand{\thetable}{5.1\alph{table}}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \begin{document}
@@ -31,10 +32,11 @@ cell{2-Z}{1}={r,cmd=\fpEval{\therownum - 1}}
 
 ## Align first, last names
 
-![table counter rownum 1, 2.svg](./attachments/table-counter-rownum-1-2.svg)
+![figure table counter rownum 1, 2.svg](./attachments/figure-table-counter-rownum-1-2.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{5.1b}
+\documentclass{standalone} \title{table counter rownum 2}
+\renewcommand{\thetable}{5.1b}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \begin{document}
@@ -57,15 +59,14 @@ cell{2-Z}{1}={cmd=\fpEval{\therownum - 1}}
 \end{document}
 ```
 
-
 ```latex
-\documentclass{standalone} \usepackage{graphbox}
+\documentclass{standalone} \title{table counter rownum 1, 2}
+\usepackage{graphbox}
 \begin{document}
-\includegraphics[align=c]{table counter rownum 1} \hspace{1em}
-\includegraphics[align=c]{table counter rownum 2}
+\includegraphics[align=c]{figure table counter rownum 1} \hspace{1em}
+\includegraphics[align=c]{figure table counter rownum 2}
 \end{document}
 ```
-
 
 # Tabularray's built-in counters relative to the entire table
 
@@ -73,10 +74,11 @@ cell{2-Z}{1}={cmd=\fpEval{\therownum - 1}}
 Print counter with format
 - `\arabic{rownum}`, `\alph{rownum}`, `\Alph{rownum}`, `\roman{rownum}`, `\Roman{rownum}`, `\therownum`
 
-![table counter absolute.svg](./attachments/table-counter-absolute.svg)
+![figure table counter absolute.svg](./attachments/figure-table-counter-absolute.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{5.2a}
+\documentclass{standalone} \title{table counter absolute}
+\renewcommand{\thetable}{5.2a}
 \usepackage{tabularray}
 \begin{document}
 \begin{tblr}[tall,caption=Absolute counters in different alphabets]{ 
@@ -107,10 +109,11 @@ Roman  \\
 
 # Offset counters relative to table body
 
-![table counter absolute, body.svg](./attachments/table-counter-absolute-body.svg)
+![figure table counter absolute, body.svg](./attachments/figure-table-counter-absolute-body.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{5.2b}
+\documentclass{standalone} \title{table counter body}
+\renewcommand{\thetable}{5.2b}
 \usepackage{tabularray}
 \UseTblrLibrary{counter,functional}
 \IgnoreSpacesOn
@@ -155,19 +158,21 @@ Roman  \\
 ```
 
 ```latex
-\documentclass{standalone} \usepackage{graphbox}
+\documentclass{standalone} \title{table counter absolute, body}
+\usepackage{graphbox}
 \begin{document}
-\includegraphics[align=c]{table counter absolute} \hspace{1em}
-\includegraphics[align=c]{table counter body}
+\includegraphics[align=c]{figure table counter absolute} \hspace{1em}
+\includegraphics[align=c]{figure table counter body}
 \end{document}
 ```
 
 # Skip cells with group names
 
-![table counter skip.svg](./attachments/table-counter-skip.svg)
+![figure table counter skip.svg](./attachments/figure-table-counter-skip.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{5.3a}
+\documentclass{standalone} \title{table counter skip}
+\renewcommand{\thetable}{5.3a}
 \usepackage{tabularray}
 \UseTblrLibrary{counter}
 \newcounter{rowindex} \newcounter{colindex}
@@ -201,10 +206,11 @@ Rural     & 5    & 12 & --   & 14 \\
 
 # Restart counter for each group
 
-![table counter skip, groups.svg](./attachments/table-counter-skip-groups.svg)
+![figure table counter skip, groups.svg](./attachments/figure-table-counter-skip-groups.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{5.3b}
+\documentclass{standalone} \title{table counter groups}
+\renewcommand{\thetable}{5.3b}
 \usepackage{tabularray}
 \UseTblrLibrary{counter}
 \newcounter{rowindex} \newcounter{colindex}
@@ -239,24 +245,26 @@ Rural     & 5    & 12 & --   & 14 \\
 ```
 
 ```latex
-\documentclass{standalone} \usepackage{graphbox}
+\documentclass{standalone} \title{table counter skip, groups}
+\usepackage{graphbox}
 \begin{document}
-\includegraphics[align=c]{table counter skip} \hspace{1em}
-\includegraphics[align=c]{table counter groups}
+\includegraphics[align=c]{figure table counter skip} \hspace{1em}
+\includegraphics[align=c]{figure table counter groups}
 \end{document}
 ```
 
 # Figure collection for note preview
 
-![table counters.svg](./attachments/table-counters.svg)
+![figure table counters.svg](./attachments/figure-table-counters.svg)
 
 ```latex
-\documentclass{standalone} \usepackage{graphbox}
+\documentclass{standalone} \title{table counters}
+\usepackage{graphbox}
 \begin{document}
 \begin{minipage}{\textwidth} \centering{}
-\includegraphics{table counter rownum 1} \hspace{1em}
-\includegraphics{table counter groups} \\ \vspace{1em}
-\includegraphics{table counter body} 
+\includegraphics{figure table counter rownum 1} \hspace{1em}
+\includegraphics{figure table counter groups} \\ \vspace{1em}
+\includegraphics{figure table counter body} 
 \end{minipage}
 \end{document}
 ```
