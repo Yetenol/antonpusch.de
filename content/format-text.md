@@ -1,11 +1,12 @@
 ---
 title: "Format text - Style body text in monospace, macros with slash"
-date: "2025-01-31T00:54:47.889+01:00"
+date: "2025-01-31T02:05:18.758+01:00"
 dg-publish: true
 ---
+
 # Print macros in table
 
-![table body macro column.svg](./attachments/table-body-macro-column.svg)
+![figure table body macro column.svg](./attachments/figure-table-body-macro-column.svg)
 
 ```latex
 \documentclass{standalone} \title{table body macro column}
@@ -28,7 +29,8 @@ Name          && Unicode & {Alt\\code} \\
 ```
 
 Compare to cells with inline formatting
-![table body macros.svg](./attachments/table-body-macros.svg)
+
+![figure table body macros.svg](./attachments/figure-table-body-macros.svg)
 
 ```latex
 \documentclass{standalone} \title{table body macro verbatim}
@@ -61,7 +63,7 @@ $\delta$ \fakeverb{\delta} &
 
 # Glossary of commands in monospace
 
-![table body monospace.svg](./attachments/table-body-monospace.svg)
+![figure table body monospace.svg](./attachments/figure-table-body-monospace.svg)
 
 ```latex
 \documentclass{standalone} \title{table body monospace}
@@ -83,8 +85,7 @@ devmgmt.msc & Device Manager \\
 
 # Colorful text, frames
 
-![table text color.svg](./attachments/table-text-color.svg)
-
+![figure table text color.svg](./attachments/figure-table-text-color.svg)
 
 ```latex
 \documentclass{standalone} \title{table text color}
@@ -114,9 +115,7 @@ Lucy Brown      & JW4939 & Archive \\
 
 # Hyperlinks
 
-![table text hyperlinks.svg](./attachments/table-text-hyperlinks.svg)
-
-![table text hyperlinks.pdf](./attachments/table-text-hyperlinks.pdf)
+![figure table text hyperlinks.svg](./attachments/figure-table-text-hyperlinks.svg)
 
 ```latex
 \documentclass{standalone} \title{table text hyperlinks}
@@ -142,14 +141,14 @@ Sophie Williams & WR8993 &  \\
 
 # Figure collection for note preview
 
-![table text formatting.svg](./attachments/table-text-formatting.svg)
+![figure table text formatting.svg](./attachments/figure-table-text-formatting.svg)
 
 ```latex
 \documentclass{standalone} \title{table text formatting}
 \usepackage{graphicx,graphbox}
 \begin{document}
-\includegraphics[align=c]{table body monospace} \hspace{1em}
-\includegraphics[align=c]{table text color} \hspace{1em}
-\includegraphics[align=c]{table body macro verbatim}
+\includegraphics[align=c]{figure table body monospace} \hspace{1em}
+\includegraphics[align=c]{figure table text color} \hspace{1em}
+\includegraphics[align=c]{figure table body macro verbatim}
 \end{document}
 ```
