@@ -1,6 +1,6 @@
 ---
 title: "Tables - Separate content in plaintext and styles like alignment, spacing, markup, and calculation, utilizing Tabularray"
-date: "2025-01-31T01:45:37.969+01:00"
+date: "2025-01-31T02:36:23.881+01:00"
 dg-publish: true
 dg-show-toc: true
 aliases:
@@ -62,7 +62,7 @@ Numbers are very information-dense, but visually heavy. To make them understanda
 - Center, Caption, Reference, Longtable, Caption below/above, Caption number, Figurename
 - See examples with source code: [Floating table - Let table float here, superwide, above, below, next to a page's main text](./floating-table.md)
 
-![table floats.svg](./attachments/table-floats.svg)
+![figure table floats.svg](./attachments/figure-table-floats.svg)
 
 # Dynamically calculate cell text, style
 
