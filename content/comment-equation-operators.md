@@ -1,6 +1,6 @@
 ---
 title: "Comment equation operators"
-date: "2024-09-06T15:31:22.780+02:00"
+date: "2025-01-31T01:54:34.389+01:00"
 dg-publish: true
 ---
 # Describe an operator
@@ -95,10 +95,10 @@ $$
 
 # Comment matrix columns
 
-![minimal 34.svg](./attachments/minimal-34.svg) 
+![figure comment matrix columns.svg](./attachments/figure-comment-matrix-columns.svg)
 
 ```latex
-\documentclass{article}
+\documentclass{article} \title{comment matrix columns}
 \usepackage{amsmath,amssymb,mathtools,aligned-overset,array}
 \begin{document}
 \def\rb#1{\rotatebox{90}{$\xleftarrow{#1}$}}
@@ -119,10 +119,10 @@ X_z & Y_z & Z_z & T_z \\
 
 # Overlapping braces
 
-![minimal 35.svg](./attachments/minimal-35.svg) 
+![figure overlapping braces.svg](./attachments/figure-overlapping-braces.svg)
 
 ```latex
-\documentclass{article}
+\documentclass{article} \title{overlapping braces}
 \usepackage{amsmath,amssymb,mathtools,aligned-overset,array,xcolor}
 \begin{document}
 \begin{align}\label{eq:pqFormel}
@@ -149,11 +149,10 @@ y\textcolor{blue}{-\frac{31}{8}}
 
 # Vertical and horizontal aligned braces
 
-![minimal 36.svg](./attachments/minimal-36.svg) 
+![figure vertical and horizontal aligned braces.svg](./attachments/figure-vertical-and-horizontal-aligned-braces.svg)
 
 ```latex
-\documentclass{article}
-\pagestyle{empty}
+\documentclass{article} \title{vertical and horizontal aligned braces}
 \usepackage{amsmath,amssymb,amsfonts,mathtools,aligned-overset,array,xcolor}
 \begin{document}
 \def\num#1{\hphantom{#1}}
