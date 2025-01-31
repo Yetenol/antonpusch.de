@@ -1,6 +1,6 @@
 ---
 title: "Table calculation"
-date: "2024-09-05T22:33:23.229+02:00"
+date: "2025-01-31T01:15:42.257+01:00"
 dg-publish: true
 ---
 
@@ -29,15 +29,15 @@ Available function:
 - Integer factorial: `fact x`
 - See more [functional p. 51](https://texdoc.org/serve/functional/0#page=51) - CTAN documentation
 
-![table accumulate.svg](./attachments/table-accumulate.svg)
+![figure table accumulate.svg](./attachments/figure-table-accumulate.svg)
 
 
 # Minimal examples: Calculate sum of second column
 
-![table calculation 1.svg](./attachments/table-calculation-1.svg)
+![figure table calculation 1.svg](./attachments/figure-table-calculation-1.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table calculation 1}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
@@ -92,10 +92,11 @@ t      & U      \\
 
 - Use regex to test if it is a number
 
-![table accumulate.svg](./attachments/table-accumulate.svg)
+![figure table accumulate.svg](./attachments/figure-table-accumulate.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table accumulate}
+
 \usepackage{tabularray}
 \usepackage{tabularray,tikz}
 \UseTblrLibrary{functional}
@@ -159,11 +160,10 @@ t      & U      \\
 
 # Add statistics to data table
 
-![table accumulate 2.svg](./attachments/table-accumulate-2.svg)
+![figure table accumulate 2.svg](./attachments/figure-table-accumulate-2.svg)
 
 ```latex
-\documentclass{standalone}
-\usepackage{tabularray}
+\documentclass{standalone} \title{table accumulate 2}
 \usepackage{tabularray,tikz}
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
