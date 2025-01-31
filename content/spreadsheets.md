@@ -1,6 +1,6 @@
 ---
 title: "Spreadsheets - Calculate sum, mean, standard deviation, max, and min across selection of cells"
-date: "2025-01-07T14:35:00.978+01:00"
+date: "2025-01-31T01:09:44.634+01:00"
 dg-publish: true
 ---
 
@@ -21,10 +21,11 @@ Available dynamic values for calculation:
 - `\therownum`: current row number
 - `\thecolnum`: current column number
 
-![table accumulate sum.svg](./attachments/table-accumulate-sum.svg)
+![figure table accumulate sum.svg](./attachments/figure-table-accumulate-sum.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{6.1}
+\documentclass{standalone} \title{table accumulate sum}
+\renewcommand{\thetable}{6.1}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
@@ -84,10 +85,11 @@ Calculate the following values, with row number $r$:
 - Total accommodation cost $accom \coloneqq \sum_{r = 3}^{11} total_r$
 - Daily average $avg \coloneqq accom \div \operatorname{count-nonnull}(total_3, \ldots, total_{11} )$ 
 
-![table accumulate trip expenses.svg](./attachments/table-accumulate-trip-expenses.svg)
+![figure table accumulate trip expenses.svg](./attachments/figure-table-accumulate-trip-expenses.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{6.2}
+\documentclass{standalone} \title{table accumulate trip expenses}
+\renewcommand{\thetable}{6.2}
 \usepackage{tabularray,eurosym}
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
@@ -186,7 +188,8 @@ Evergreen Glade   & 100 && 16 & 1 \\
 # Extract numbers
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{}
+
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
