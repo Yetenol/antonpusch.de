@@ -1,6 +1,6 @@
 ---
 title: "Array-like environments - Align equations and relation symbol relative to each other"
-date: "2024-09-01T15:40:39.536+02:00"
+date: "2025-01-31T01:47:04.298+01:00"
 dg-publish: true
 ---
 
@@ -93,8 +93,8 @@ Alternating **right/left**-aligned columns²³⁴
 
 LaTeX supported by Overleaf, VS Code (pdflatex)
 ```latex
-\documentclass{article}\pagestyle{empty}
-\usepackage{mathtools,amssymb,amsfonts,multicol}
+\documentclass{article} \title{layout multiple equations}
+\usepackage{mathtools,amssymb,amsfonts,multicol} \pagestyle{empty}
 \begin{document}
 \section{Multicolumn \dotfill}
 \begin{multicols}{3}\allowdisplaybreaks\vspace*{-1cm}
@@ -121,7 +121,7 @@ LaTeX supported by Overleaf, VS Code (pdflatex)
 \end{document}
 ```
 
-![minimal 40.svg](./attachments/minimal-40.svg)
+![figure layout multiple equations.svg](./attachments/figure-layout-multiple-equations.svg)
 
 (2) Markdown math supported by Obsidian, VS Code, Quartz
 ```
