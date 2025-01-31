@@ -1,19 +1,19 @@
 ---
 title: "Floating table - Let table float here, superwide, above, below, next to a page's main text"
-date: "2025-01-31T01:01:33.840+01:00"
+date: "2025-01-31T02:37:43.025+01:00"
 dg-publish: true
 ---
 
 # Float tables
 
-![table floats.svg](./attachments/table-floats.svg)
+![figure table floats.svg](./attachments/figure-table-floats.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
-\renewcommand{\thetable}{4.1\alph{table}}
-\usepackage{tabularray,sidenotes,lipsum,graphbox,float}
+\documentclass{article} \title{table floats}
+\renewcommand{\thetable}{4.1\alph{table}} \pagestyle{empty}
+\usepackage{tabularray,sidenotes,lipsum,graphbox,float,lastpage}
 \captionsetup[table]{skip=2pt}
-\begin{document}
+\begin{document} \phantom{\ref{lastpage}}
 \lipsum[4]
 
 \begin{table}[H] \centering{}
@@ -77,13 +77,13 @@ Mouse &
 
 ## Use custom caption styles
 
-![table floats 2.svg](./attachments/table-floats-2.svg)
+![figure table floats 2.svg](./attachments/figure-table-floats-2.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty} 
-\renewcommand{\thetable}{4.2\alph{table}}
-\usepackage{tabularray,sidenotes,float,lipsum}
-\begin{document}
+\documentclass{article} \title{table floats 2}
+\renewcommand{\thetable}{4.2\alph{table}} \pagestyle{empty}
+\usepackage{tabularray,sidenotes,float,lipsum,lastpage}
+\begin{document} \phantom{\ref{lastpage}}
 \lipsum[4]
 
 \begin{table}[H]
@@ -132,10 +132,10 @@ Lara   & 10  \\
 
 Table without label, caption
 
-![table reference nolabel.svg](./attachments/table-reference-nolabel.svg)
+![figure table reference nolabel.svg](./attachments/figure-table-reference-nolabel.svg)
 
 ```latex
-\documentclass{standalone} 
+\documentclass{standalone} \title{table reference nolabel}
 \usepackage{tabularray}
 \begin{document}
 \begin{tblr}[tall,label=none,note{}={Drivers ride busses.}]{
