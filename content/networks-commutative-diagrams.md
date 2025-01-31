@@ -1,6 +1,6 @@
 ---
 title: "Networks, Commutative diagrams - Dynamically draw graph networks as a vector graphic"
-date: "2025-01-01T13:31:05.000+01:00"
+date: "2025-01-31T02:01:12.834+01:00"
 dg-publish: true
 ---
 
@@ -27,7 +27,7 @@ $$
 ![figure automata.svg](./attachments/figure-automata.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{figure automata}
 \usepackage{tikz}
 \usetikzlibrary{trees, decorations, arrows, automata, shadows, positioning, plotmarks, calc, matrix}
 \tikzstyle{alter}=[circle, minimum size=16pt, draw, inner sep=1pt] 
@@ -64,7 +64,7 @@ $$
 ![figure tikzcd.svg](./attachments/figure-tikzcd.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{figure tikzcd}
 \usepackage{tikz-cd}
 \begin{document}
 \begin{tikzcd}
@@ -94,7 +94,7 @@ C' \arrow[rr,"k'" near end] \arrow[dr,swap,"c"] && D' \arrow[dr,swap,"d"] \\
 ![figure networks.svg](./attachments/figure-networks.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{figure networks}
 \usepackage{graphicx}
 \begin{document}
 \includegraphics{figure automata.pdf}
