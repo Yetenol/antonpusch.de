@@ -1,6 +1,6 @@
 ---
 title: "Calculate statistics for table numbers"
-date: "2024-09-06T11:26:25.019+02:00"
+date: "2025-01-31T01:45:29.818+01:00"
 dg-publish: true
 ---
 - Keep the data in **raw** and **universal** (csv) form: Update data anytime with external programs like Excel, Python, MATLAB, R, PowerShell
@@ -11,7 +11,7 @@ dg-publish: true
 - More ideas: filter, sort, custom column titles, multi column names, Align at decimal or scientific separator
 - See source examples: [Layout the table](./layout-the-table.md)
 
-![table measurements 1.svg](./attachments/table-measurements-1.svg)
+![figure table measurements 1.svg](./attachments/figure-table-measurements-1.svg)
 
 calculate sum, mean, standard deviation under table
 - [Add rows for sum/mean/std at end of pgfplotstable - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/179177/add-rows-for-sum-mean-std-at-end-of-pgfplotstable)
@@ -24,11 +24,10 @@ calculate sum, mean, standard deviation under table
 
 # Calculate sum, mean, or standard deviation for each column
 
-![table stats.svg](./attachments/table-stats.svg)
+![figure table stats.svg](./attachments/figure-table-stats.svg)
 
 ```latex
-\documentclass{standalone}
-\usepackage{tabularray}
+\documentclass{standalone} \title{table stats}
 \usepackage{tabularray,tikz}
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
@@ -83,10 +82,10 @@ calculate sum, mean, standard deviation under table
 [Table calculation](./table-calculation.md)
 # Sum up integers
 
-![table stats integer sum.svg](./attachments/table-stats-integer-sum.svg)
+![figure table stats integer sum.svg](./attachments/figure-table-stats-integer-sum.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table stats integer sum}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \renewcommand{\thetable}{3.1}
@@ -118,11 +117,10 @@ calculate sum, mean, standard deviation under table
 
 # Sum up floats
 
-![table stats float sum.svg](./attachments/table-stats-float-sum.svg)
+![figure table stats float sum.svg](./attachments/figure-table-stats-float-sum.svg)
 
 ```latex
-\documentclass{standalone}
-\usepackage{tabularray}
+\documentclass{standalone} \title{table stats float sum}
 \usepackage{tabularray,tikz}
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
@@ -157,8 +155,7 @@ calculate sum, mean, standard deviation under table
 
 
 ```latex
-\documentclass{standalone}
-\usepackage{tabularray}
+\documentclass{standalone} \title{}
 \usepackage{tabularray,tikz}
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
@@ -206,7 +203,7 @@ calculate sum, mean, standard deviation under table
 ```
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \begin{document}
@@ -224,7 +221,7 @@ calculate sum, mean, standard deviation under table
 ```
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \ExplSyntaxOn
@@ -249,14 +246,14 @@ a & b & c & d \\
 
 # Figure collection for note preview
 
-![table functional.svg](./attachments/table-functional.svg)
+![figure table functional.svg](./attachments/figure-table-functional.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table functional}
 \usepackage{graphics}
 \begin{document}
-\includegraphics{table counters 2}
+\includegraphics{figure table counter body}
 \hspace{1em}
-\includegraphics{table stats}
+\includegraphics{figure table stats}
 \end{document}
 ```
