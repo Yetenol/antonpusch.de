@@ -1,6 +1,6 @@
 ---
 title: "Floating table - Let table float here, superwide, above, below, next to a page's main text"
-date: "2025-01-31T02:37:43.025+01:00"
+date: "2025-01-31T02:45:37.406+01:00"
 dg-publish: true
 ---
 
@@ -13,13 +13,13 @@ dg-publish: true
 \renewcommand{\thetable}{4.1\alph{table}} \pagestyle{empty}
 \usepackage{tabularray,sidenotes,lipsum,graphbox,float,lastpage}
 \captionsetup[table]{skip=2pt}
-\begin{document} \phantom{\ref{lastpage}}
+\begin{document} \vphantom{\ref{lastpage}}
 \lipsum[4]
 
 \begin{table}[H] \centering{}
 \begin{minipage}[b]{.4\textwidth} \centering{}
 \caption{Pre-compiled table}
-\includegraphics{table reference nolabel}
+\includegraphics{figure table reference nolabel}
 \end{minipage}
 \hspace{1em}
 \begin{minipage}[b]{.4\textwidth} \centering{}
