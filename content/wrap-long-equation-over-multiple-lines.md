@@ -1,14 +1,16 @@
 ---
 title: "Wrap long equation over multiple lines"
-date: "2025-01-03T13:08:14.246+01:00"
+date: "2025-01-31T01:51:29.980+01:00"
 dg-publish: true
 ---
 
 # Shrink long fractions
 
+![figure shrink long fraction.svg](./attachments/figure-shrink-long-fraction.svg)
+
 ```latex
-\documentclass{article}\pagestyle{empty}
-\usepackage{mathtools,amssymb,amsfonts}
+\documentclass{article} \title{shrink long fraction}
+\usepackage{mathtools,amssymb,amsfonts} \pagestyle{empty}
 \begin{document}
 \[
 a = \frac{ \splitfrac{xxxxxxx}{+ xxxx} }{(1)}
@@ -19,8 +21,6 @@ a = \frac{ \splitfrac{xxxxxxx}{+ xxxx} }{(1)}
 \]
 \end{document}
 ```
-
-![minimal 44.svg](./attachments/minimal-44.svg)
 
 - use (1) in Obsidian
 ```
@@ -45,9 +45,11 @@ a = \frac{ \substack{xxxxxxx \\ +xxxx} }{(5)}
 
 # Indent subsequent lines
 
+![figure indent subsequent lines.svg](./attachments/figure-indent-subsequent-lines.svg)
+
 ```latex
-\documentclass{article}\pagestyle{empty}
-\usepackage{mathtools,amssymb,amsfonts}
+\documentclass{article} \title{indent subsequent lines}
+\usepackage{mathtools,amssymb,amsfonts} \pagestyle{empty}
 \begin{document}
 \begin{align*} \qquad&\hspace{-2em}
     R_1 =  \frac{\rho_i \,}{a_i \,\pi}\int_{0}^{h}\left(\frac{r_2-r_1}{h}y+r_1\right)^{-2}dy 
@@ -88,10 +90,10 @@ $$
 
 # Set operators as column divider
 
+![figure operator as column divider.svg](./attachments/figure-operator-as-column-divider.svg)
 
 ```latex
-\documentclass{article}
-\pagestyle{empty}
+\documentclass{article} \title{operator as column divider}
 \usepackage{amsmath,amssymb,mathtools,aligned-overset,array}
 \begin{document}
 \[
@@ -108,10 +110,7 @@ y_n & a_{n1}x_1 & a_{n2}x_2 & a_{n3}x_3 & \dots & a_{(n)(n-1)}x_{n-1} & a_{nn}x_
 ```
 - [mirror.physik.tu-berlin.de/pub/CTAN/obsolete/info/math/voss/mathmode/Mathmode.pdf#page=110](https://mirror.physik.tu-berlin.de/pub/CTAN/obsolete/info/math/voss/mathmode/Mathmode.pdf#page=110)
 
-![minimal 33.svg](./attachments/minimal-33.svg)
-
 # More
-
 
 $$
 a=\frac{

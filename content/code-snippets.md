@@ -1,6 +1,6 @@
 ---
 title: "Code Snippets - Print source code with syntax highlighting in latex with listings"
-date: "2025-01-28T20:27:40.304+01:00"
+date: "2025-01-30T22:28:33.336+01:00"
 dg-publish: true
 ---
 

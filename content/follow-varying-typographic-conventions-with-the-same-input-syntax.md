@@ -1,19 +1,17 @@
 ---
 title: "Follow varying typographic conventions with the same input syntax"
-date: "2024-08-27T04:35:48.179+02:00"
+date: "2025-01-31T01:58:33.035+01:00"
 dg-publish: true
 ---
+
 # Numbers
-
-
-
 
 # Delimiters
 
-![minimal 82.svg](./attachments/minimal-82.svg)
+![figure delimiters.svg](./attachments/figure-delimiters.svg)
 
 ```latex
-\documentclass{article}\pagestyle{empty}
+\documentclass{article} \title{delimiters}
 \usepackage{mathtools, amssymb, amsfonts}
 \begin{document}
 $\displaystyle \left( \left( \left( ( ) \sqrt{2} \right) \right) \right)$ \quad
@@ -34,10 +32,10 @@ $$
 # Fractions
 
 Dynamic macro
-![minimal 78.svg](./attachments/minimal-78.svg)
+![figure fraction styles.svg](./attachments/figure-fraction-styles.svg)
 
 ```latex
-\documentclass{article}\pagestyle{empty}
+\documentclass{article} \title{fraction styles}
 \usepackage{amsmath, lipsum, xcolor}
 \let\oldfrac\frac
 \renewcommand{\frac}[2]{%
@@ -72,16 +70,17 @@ $$
 \frac{1}{2} + \frac{3}{4} = \frac{5}{4}
 \end{align*}
 ```
+
 # Split Equations to equal part to Multi column
 
 - [p] easy to move equations up and down
 - [p] allows tag placement in every line
 
 Dynamic macro
-![minimal 37.svg](./attachments/minimal-37.svg)
+![figure split equations to equal part.svg](./attachments/figure-split-equations-to-equal-part.svg)
 
 ```latex
-\documentclass{article}
+\documentclass{article} \title{split equations to equal part}
 \usepackage{mathtools,amssymb,amsfonts,multicol}
 \begin{document}
 \begin{multicols}{6}\allowdisplaybreaks\vspace*{-1cm}
@@ -121,10 +120,10 @@ $$
 
 Dynamic macro
 
-![minimal 77.svg](./attachments/minimal-77.svg)
+![figure aligned overset.svg](./attachments/figure-aligned-overset.svg)
 
 ```latex
-\documentclass{article}\pagestyle{empty}
+\documentclass{article} \title{aligned overset}
 \usepackage{mathtools, amssymb, amsfonts, aligned-overset}
 \begin{document}
 \begin{align*}\MoveEqLeft{}
@@ -172,7 +171,6 @@ $$
 ```
 
 # More
-
 
 $$
 \begin{align*}
