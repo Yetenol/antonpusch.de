@@ -1,6 +1,6 @@
 ---
 title: "Tables - Separate content in plaintext and styles like alignment, spacing, markup, and calculation, utilizing Tabularray"
-date: "2025-01-28T19:53:49.958+01:00"
+date: "2025-01-31T01:45:37.969+01:00"
 dg-publish: true
 dg-show-toc: true
 aliases:
@@ -48,7 +48,7 @@ Numbers are very information-dense, but visually heavy. To make them understanda
 - Url, Monospace, Movie list, regex, detect name, replace LaTeX -> `\LaTeX`, auto truncate to footnote, autoheaders(rotate, group), vgroupdetect, hgroupdetect, auto format, replace empty cells, texttt
 - See examples with source code: [Format text - Style body text in monospace, macros with slash](./format-text.md)
 
-![table text formatting.svg](./attachments/table-text-formatting.svg)
+![figure table text formatting.svg](./attachments/figure-table-text-formatting.svg)
 
 # Layout the final document
 
@@ -76,19 +76,19 @@ Numbers are very information-dense, but visually heavy. To make them understanda
 
 - See examples with source code: [Cell addresses - Count rows and columns relative to the entire table, its body, or the current group](./cell-addresses.md)
 
-![table counters.svg](./attachments/table-counters.svg)
+![figure table counters.svg](./attachments/figure-table-counters.svg)
 
 ## Spreadsheets
 
 - See examples with source code: [Spreadsheets - Calculate sum, mean, standard deviation, max, and min across selection of cells](./spreadsheets.md)
 
-![table accumulate trip expenses.svg](./attachments/table-accumulate-trip-expenses.svg)
+![figure table accumulate trip expenses.svg](./attachments/figure-table-accumulate-trip-expenses.svg)
 
 ## Process files
 
 - See examples with source code: [CSV Input - Dynamically generate table from file](./csv-input.md)
 
-![table file input.svg](./attachments/table-file-input.svg)
+![figure table file input.svg](./attachments/figure-table-file-input.svg)
 
 
 
@@ -96,7 +96,7 @@ Numbers are very information-dense, but visually heavy. To make them understanda
 
 - See examples with source code: [Table calculation](./table-calculation.md)
 
-![table accumulate.svg](./attachments/table-accumulate.svg)
+![figure table accumulate.svg](./attachments/figure-table-accumulate.svg)
 
 # Compact data tables
 
@@ -106,7 +106,7 @@ Numbers are very information-dense, but visually heavy. To make them understanda
 - excels capture values with text
 -  See examples with source code: [Calculate statistics for table numbers](./calculate-statistics-for-table-numbers.md)
 
-![table functional.svg](./attachments/table-functional.svg)
+![figure table functional.svg](./attachments/figure-table-functional.svg)
 
 ## Import data from files
 
@@ -118,7 +118,7 @@ Numbers are very information-dense, but visually heavy. To make them understanda
 - More ideas: filter, sort, custom column titles, multi column names, Align at decimal or scientific separator
 - See examples with source code: [Process, and format values from files](./process-and-format-values-from-files.md)
 
-![table measurements 1.svg](./attachments/table-measurements-1.svg)
+![figure table measurements 1.svg](./attachments/figure-table-measurements-1.svg)
 
 # Layout, reference the table
 
@@ -127,13 +127,13 @@ Numbers are very information-dense, but visually heavy. To make them understanda
 - Split in equal parts; 4a: Longtable split in half; References
 - See examples with source code: [Layout the table](./layout-the-table.md)
 
-![table layout 1.svg](./attachments/table-layout-1.svg)
+![figure table layout 1.svg](./attachments/figure-table-layout-1.svg)
 
 
 
 # Export formatted table
 
-![table body macro column.svg](./attachments/table-body-macro-column.svg)
+![figure table body macro column.svg](./attachments/figure-table-body-macro-column.svg)
 
 $$
 \begin{gather*}

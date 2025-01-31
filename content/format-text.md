@@ -1,6 +1,6 @@
 ---
 title: "Format text - Style body text in monospace, macros with slash"
-date: "2024-09-13T19:04:30.483+02:00"
+date: "2025-01-31T00:54:47.889+01:00"
 dg-publish: true
 ---
 # Print macros in table
@@ -8,7 +8,8 @@ dg-publish: true
 ![table body macro column.svg](./attachments/table-body-macro-column.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{3.1a}
+\documentclass{standalone} \title{table body macro column}
+\renewcommand{\thetable}{3.1a}
 \usepackage{tabularray}
 \begin{document}
 \begin{tblr}[tall,caption=Macro names]{  
@@ -30,7 +31,8 @@ Compare to cells with inline formatting
 ![table body macros.svg](./attachments/table-body-macros.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{3.1b}
+\documentclass{standalone} \title{table body macro verbatim}
+\renewcommand{\thetable}{3.1b}
 \usepackage{tabularray,codehigh,amsmath}
 \begin{document}
 \begin{tblr}[tall, caption=Preformatted text]{  
@@ -49,7 +51,8 @@ $\delta$ \fakeverb{\delta} &
 ```
 
 ```latex
-\documentclass{standalone} \usepackage{graphicx,graphbox}
+\documentclass{standalone} \title{table body macros}
+\usepackage{graphicx,graphbox}
 \begin{document}
 \includegraphics[align=c]{table body macro column} \hspace{1em}
 \includegraphics[align=c]{table body macro verbatim}
@@ -61,7 +64,8 @@ $\delta$ \fakeverb{\delta} &
 ![table body monospace.svg](./attachments/table-body-monospace.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{3.2}
+\documentclass{standalone} \title{table body monospace}
+\renewcommand{\thetable}{3.2}
 \usepackage{tabularray}
 \begin{document}
 \begin{tblr}[tall, caption=Monospace]{
@@ -83,7 +87,8 @@ devmgmt.msc & Device Manager \\
 
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{3.3}
+\documentclass{standalone} \title{table text color}
+\renewcommand{\thetable}{3.3}
 \usepackage{tabularray,tcolorbox}
 \newtcbox{\xmybox}[1][red]{opacityback=0,on line,arc=6pt, 
     standard jigsaw, colframe=#1!50!black,boxrule=1pt,
@@ -114,7 +119,8 @@ Lucy Brown      & JW4939 & Archive \\
 ![table text hyperlinks.pdf](./attachments/table-text-hyperlinks.pdf)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{3.4}
+\documentclass{standalone} \title{table text hyperlinks}
+\renewcommand{\thetable}{3.4}
 \usepackage{tabularray,hyperref}
 \hypersetup{colorlinks,linkcolor=blue}
 \begin{document}
@@ -139,7 +145,8 @@ Sophie Williams & WR8993 &  \\
 ![table text formatting.svg](./attachments/table-text-formatting.svg)
 
 ```latex
-\documentclass{standalone} \usepackage{graphicx,graphbox}
+\documentclass{standalone} \title{table text formatting}
+\usepackage{graphicx,graphbox}
 \begin{document}
 \includegraphics[align=c]{table body monospace} \hspace{1em}
 \includegraphics[align=c]{table text color} \hspace{1em}

@@ -1,6 +1,6 @@
 ---
 title: "Process, and format values from files"
-date: "2024-09-03T03:56:20.054+02:00"
+date: "2025-01-31T01:39:15.338+01:00"
 dg-publish: true
 ---
 # Main example
@@ -13,11 +13,12 @@ Calculate sum, Standardabweichung, Varianz in footer with line
 call snippet style raw snippet
 call set environment->lock environment
 
-![table measurements 1.svg](./attachments/table-measurements-1.svg)
+![figure table measurements 1.svg](./attachments/figure-table-measurements-1.svg)
 
 Faked second table
+
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table measurements 1.svg}
 \usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
 \renewcommand{\thetable}{3.1\alph{table}}
 \pgfplotstableset{
@@ -70,10 +71,10 @@ t & U \\
 \end{document}
 ```
 
-![table measurements 2.svg](./attachments/table-measurements-2.svg)
+![figure table measurements 2.svg](./attachments/figure-table-measurements-2.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table measurements 2}
 \usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
 \renewcommand{\thetable}{3.2\alph{table}}
 \pgfplotstableset{
@@ -145,10 +146,11 @@ combine files
 ]{testdata.table}
 ```
 
-![table measurements 3.svg](./attachments/table-measurements-3.svg)
+![figure table measurements 3.svg](./attachments/figure-table-measurements-3.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table measurements 3}
+\pagestyle{empty}
 \usepackage{tikz,pgfplots,pgfplotstable}
 \renewcommand{\thetable}{3.3}
 \pgfplotsset{compat=newest}
@@ -282,10 +284,11 @@ decimal align
 
 ![minimal 62.svg](./attachments/minimal-62.svg)
 
-![table measurements 4.svg](./attachments/table-measurements-4.svg)
+![figure table measurements 4.svg](./attachments/figure-table-measurements-4.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table measurements 4}
+\pagestyle{empty}
 \usepackage{pgfplotstable,tabularray,mathtools,amssymb,amsfonts}
 \renewcommand{\thetable}{3.4\alph{table}}
 \pgfplotstableset{
@@ -328,10 +331,11 @@ decimal align
 \end{document}
 ```
 
-![table measurements 5.svg](./attachments/table-measurements-5.svg)
+![figure table measurements 5.svg](./attachments/figure-table-measurements-5.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table measurements 5}
+\pagestyle{empty}
 \usepackage{pgfplotstable,tabularray}
 \renewcommand{\thetable}{3.5\alph{table}}
 \pgfplotstableset{
@@ -362,12 +366,10 @@ decimal align
 
 # Main example
 
-![minimal 18.svg](./attachments/minimal-18.svg)
-
-![table measurements 6.svg](./attachments/table-measurements-6.svg)
+![figure table measurements 6.svg](./attachments/figure-table-measurements-6.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table measurements 6}
 \usepackage{pgfplotstable,tabularray}
 \renewcommand{\thetable}{3.6\alph{table}}
 \pgfplotstableset{
@@ -415,12 +417,10 @@ $t$ in ms, $U_{mess}$ in V
 - color rows with `\rowcolor[gray]{0.9}` from `colortbl`
 - create dashed horizontal lines with `\hdashline` from `arydshln`
 
-![minimal 24.svg](./attachments/minimal-24.svg)
-
-![table measurements 7.svg](./attachments/table-measurements-7.svg)
+![figure table measurements 7.svg](./attachments/figure-table-measurements-7.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table measurements 7}
 \usepackage{pgfplotstable,booktabs,colortbl,arydshln}
 \renewcommand{\thetable}{3.7\alph{table}}
 \pgfplotstableset{

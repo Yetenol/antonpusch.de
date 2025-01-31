@@ -1,13 +1,13 @@
 ---
 title: "Layout the table"
-date: "2024-09-04T08:36:56.628+02:00"
+date: "2025-01-31T01:33:35.506+01:00"
 dg-publish: true
 ---
 
-![table layout 4.svg](./attachments/table-layout-4.svg)
+![figure table layout 4.svg](./attachments/figure-table-layout-4.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table layout 4}
 \usepackage{pgfplotstable,tabularray,pgffor}
 \renewcommand{\thetable}{3.1\alph{table}}
 \pgfplotstableset{
@@ -34,7 +34,7 @@ dg-publish: true
 ```
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{}
 \usepackage{tabularray,tikz}
 \begin{document}
 \begin{tblr}[tall, caption]{
@@ -59,12 +59,12 @@ t       & U              \\
 
 - set baseline
 
-![table layout 1.svg](./attachments/table-layout-1.svg)
+![figure table layout 1.svg](./attachments/figure-table-layout-1.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table layout 1} 
 \usepackage{pgfplotstable,tabularray,pgffor}
-\renewcommand{\thetable}{3.1\alph{table}}
+\renewcommand{\thetable}{3.1\alph{table}} \pagestyle{empty}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -91,16 +91,16 @@ t       & U              \\
     split3/.style = {
         create on use/blank/.style = {create col/expr = {0}},
         columns={[index]0,[index]1,blank,[index]0,[index]1,blank,[index]0,[index]1},
-        display columns/0/.style={select equal part entry of={0}{3}},% first part of `A'
-        display columns/1/.style={select equal part entry of={0}{3}},% first part of `B'
+        display columns/0/.style={select equal part entry of={0}{3}},% first part of 'A'
+        display columns/1/.style={select equal part entry of={0}{3}},% first part of 'B'
         display columns/2/.style={select equal part entry of={0}{3},column name={},
             assign cell content/.style = {/pgfplots/table/@cell content = {}}},
-        display columns/3/.style={select equal part entry of={1}{3}},% second part of `A'
-        display columns/4/.style={select equal part entry of={1}{3}},% second part of `B'
+        display columns/3/.style={select equal part entry of={1}{3}},% second part of 'A'
+        display columns/4/.style={select equal part entry of={1}{3}},% second part of 'B'
         display columns/5/.style={select equal part entry of={1}{3},column name={},
             assign cell content/.style = {/pgfplots/table/@cell content = {}}},
-        display columns/6/.style={select equal part entry of={2}{3}},% third part of `A'
-        display columns/7/.style={select equal part entry of={2}{3}},% third part of `B'
+        display columns/6/.style={select equal part entry of={2}{3}},% third part of 'A'
+        display columns/7/.style={select equal part entry of={2}{3}},% third part of 'B'
         tblr={ hline{1-Z}={3,6}{0pt}, column{3,6}={wd=.5cm}, row{1}={halign=c}, row{2-Z}={halign=r}  }},
     split/.style 2 args={display columns/#1/.style={select equal part entry of={#2}{2} }},
     rename2/.style={columns={[index]0,[index]1,[index]0,[index]1},split/.list={00,10,21,31}},
@@ -114,12 +114,12 @@ t       & U              \\
 \end{document}
 ```
 
-![table layout 2.svg](./attachments/table-layout-2.svg)
+![figure table layout 2.svg](./attachments/figure-table-layout-2.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table layout 2} 
 \usepackage{pgfplotstable,tabularray}
-\renewcommand{\thetable}{3.2\alph{table}}
+\renewcommand{\thetable}{3.2\alph{table}} \pagestyle{empty}
 \pgfplotstableset{
     /pgfplots/compat = 1.17,
     tex/.style = {col sep = &, row sep = \\},
@@ -140,26 +140,26 @@ t       & U              \\
     split2/.style = {
         create on use/blank/.style = {create col/expr = {0}},
         columns={[index]0,[index]1,blank,[index]0,[index]1},
-        display columns/0/.style={select equal part entry of={0}{2}},% first part of `A'
-        display columns/1/.style={select equal part entry of={0}{2}},% first part of `B'
+        display columns/0/.style={select equal part entry of={0}{2}},% first part of 'A'
+        display columns/1/.style={select equal part entry of={0}{2}},% first part of 'B'
         display columns/2/.style={select equal part entry of={0}{2}},% blank column
         columns/blank/.style={column name={},assign cell content/.style = {/pgfplots/table/@cell content = {}}},
-        display columns/3/.style={select equal part entry of={1}{2}},% second part of `A'
-        display columns/4/.style={select equal part entry of={1}{2}},% second part of `B'
+        display columns/3/.style={select equal part entry of={1}{2}},% second part of 'A'
+        display columns/4/.style={select equal part entry of={1}{2}},% second part of 'B'
         tblr={ hline{1-Z}={3}{0pt}, column{3}={wd=.5cm}, row{1}={halign=c}, row{2-Z}={halign=r} }},
     split3/.style = {
         create on use/blank/.style = {create col/expr = {0}},
         columns={[index]0,[index]1,blank,[index]0,[index]1,blank,[index]0,[index]1},
-        display columns/0/.style={select equal part entry of={0}{3}},% first part of `A'
-        display columns/1/.style={select equal part entry of={0}{3}},% first part of `B'
+        display columns/0/.style={select equal part entry of={0}{3}},% first part of 'A'
+        display columns/1/.style={select equal part entry of={0}{3}},% first part of 'B'
         display columns/2/.style={select equal part entry of={0}{3},column name={},
             assign cell content/.style = {/pgfplots/table/@cell content = {}}},
-        display columns/3/.style={select equal part entry of={1}{3}},% second part of `A'
-        display columns/4/.style={select equal part entry of={1}{3}},% second part of `B'
+        display columns/3/.style={select equal part entry of={1}{3}},% second part of 'A'
+        display columns/4/.style={select equal part entry of={1}{3}},% second part of 'B'
         display columns/5/.style={select equal part entry of={1}{3},column name={},
             assign cell content/.style = {/pgfplots/table/@cell content = {}}},
-        display columns/6/.style={select equal part entry of={2}{3}},% third part of `A'
-        display columns/7/.style={select equal part entry of={2}{3}},% third part of `B'
+        display columns/6/.style={select equal part entry of={2}{3}},% third part of 'A'
+        display columns/7/.style={select equal part entry of={2}{3}},% third part of 'B'
         tblr={ hline{1-Z}={3,6}{0pt}, column{3,6}={wd=.5cm}, row{1}={halign=c}, row{2-Z}={halign=r}  }},
     csv, numberic cells, hlines, center table, caption,
 }
@@ -174,12 +174,11 @@ t       & U              \\
 
 # Main example
 
-![table layout 3.svg](./attachments/table-layout-3.svg)
+![figure table layout 3.svg](./attachments/figure-table-layout-3.svg)
 
 ```latex
-\documentclass{article}
-\pagestyle{empty}
-\usepackage{pgfplotstable,tabularray,float}
+\documentclass{article} \title{table layout 3}
+\usepackage{pgfplotstable,tabularray,float} \pagestyle{empty}
 \UseTblrLibrary{booktabs}
 \UseTblrLibrary{booktabs}\SetTblrInner{column{1,Z}={c}}
 \pgfplotstableset{
@@ -195,27 +194,27 @@ t       & U              \\
     split2/.style = {
         create on use/blank/.style = {create col/expr = {0}},
         columns={[index]0,[index]1,blank,[index]0,[index]1},
-        display columns/0/.style={select equal part entry of={0}{2}},% first part of `A'
-        display columns/1/.style={select equal part entry of={0}{2}},% first part of `B'
+        display columns/0/.style={select equal part entry of={0}{2}},% first part of 'A'
+        display columns/1/.style={select equal part entry of={0}{2}},% first part of 'B'
         display columns/2/.style={select equal part entry of={0}{2}},% blank column
         columns/blank/.style={column name={},assign cell content/.style = {/pgfplots/table/@cell content = {}}},
-        display columns/3/.style={select equal part entry of={1}{2}},% second part of `A'
-        display columns/4/.style={select equal part entry of={1}{2}},% second part of `B'
+        display columns/3/.style={select equal part entry of={1}{2}},% second part of 'A'
+        display columns/4/.style={select equal part entry of={1}{2}},% second part of 'B'
         every table/.append code=\SetTblrInner{
             hline{1-Z}={3}{0pt}, column{3}={wd=.5cm}, row{1}={halign=c}, row{2-Z}={halign=r}  }},
     split3/.style = {
         create on use/blank/.style = {create col/expr = {0}},
         columns={[index]0,[index]1,blank,[index]0,[index]1,blank,[index]0,[index]1},
-        display columns/0/.style={select equal part entry of={0}{3}},% first part of `A'
-        display columns/1/.style={select equal part entry of={0}{3}},% first part of `B'
+        display columns/0/.style={select equal part entry of={0}{3}},% first part of 'A'
+        display columns/1/.style={select equal part entry of={0}{3}},% first part of 'B'
         display columns/2/.style={select equal part entry of={0}{3},column name={},
             assign cell content/.style = {/pgfplots/table/@cell content = {}}},
-        display columns/3/.style={select equal part entry of={1}{3}},% second part of `A'
-        display columns/4/.style={select equal part entry of={1}{3}},% second part of `B'
+        display columns/3/.style={select equal part entry of={1}{3}},% second part of 'A'
+        display columns/4/.style={select equal part entry of={1}{3}},% second part of 'B'
         display columns/5/.style={select equal part entry of={1}{3},column name={},
             assign cell content/.style = {/pgfplots/table/@cell content = {}}},
-        display columns/6/.style={select equal part entry of={2}{3}},% third part of `A'
-        display columns/7/.style={select equal part entry of={2}{3}},% third part of `B'
+        display columns/6/.style={select equal part entry of={2}{3}},% third part of 'A'
+        display columns/7/.style={select equal part entry of={2}{3}},% third part of 'B'
         every table/.append code=\SetTblrInner{
             hline{1-Z}={3,6}{0pt}, column{3,6}={wd=.5cm}, row{1}={halign=c}, row{2-Z}={halign=r}  }},
 }
