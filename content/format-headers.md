@@ -1,6 +1,6 @@
 ---
 title: "Format headers - Group, align, rotate, separate, and abbreviate the titles for rows and columns"
-date: "2025-01-28T20:20:01.089+01:00"
+date: "2025-01-30T22:27:40.716+01:00"
 dg-publish: true
 ---
 
@@ -118,7 +118,7 @@ Separate the sum row and column with more spacing instead of additional border l
 \newcommand{\diagtext}[2]{
     {_{\displaystyle{#1}}\,^{\displaystyle{#2}}}  }
 \begin{document}
-$\begin{tblr}[tall,caption=Separation instead of vlines,
+$\begin{tblr}[tall,caption={Combined row,\\ column title cell},
     remark{$x$}={horizontal axis}, remark{$y$}={vertical axis} 
 ]{  hline{1,Z}={.08em}, hline{2}={leftpos=-7,endpos},
     column{1-Z}={c}, column{1}={colsep=2pt},
