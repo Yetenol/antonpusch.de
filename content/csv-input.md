@@ -1,18 +1,19 @@
 ---
 title: "CSV Input - Dynamically generate table from file"
-date: "2024-09-10T14:11:41.945+02:00"
+date: "2025-01-31T01:39:26.212+01:00"
 dg-publish: true
 ---
-![table measurements 1.svg](./attachments/table-measurements-1.svg)
+![figure table measurements 1.svg](./attachments/figure-table-measurements-1.svg)
 
 
 # Legend
 
 
-![table file input legend.svg](./attachments/table-file-input-legend.svg)
+![figure table file input legend.svg](./attachments/figure-table-file-input-legend.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{7.1a}
+\documentclass{standalone} \title{table file input legend}
+ \renewcommand{\thetable}{7.1a}
 \usepackage{tabularray,tikz}
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
@@ -35,10 +36,11 @@ $t$ in ms & $U_1$ in V \\
 - TODO: format numbers in stats consistent
 - reliable dash every 3rd line without the stats
 
-![table file input stats.svg](./attachments/table-file-input-stats.svg)
+![figure table file input stats.svg](./attachments/figure-table-file-input-stats.svg)
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{7.1b}
+\documentclass{standalone} \title{table file input stats}
+ \renewcommand{\thetable}{7.1b}
 \usepackage{tabularray,tikz}
 \UseTblrLibrary{functional}
 \usetikzlibrary{fpu}
@@ -109,7 +111,8 @@ $\sigma$ \\
 # Verbatim print data file
 
 ```latex
-\documentclass{standalone} \renewcommand{\thetable}{7.1c}
+\documentclass{standalone} \title{table file input verbatim}
+ \renewcommand{\thetable}{7.1c}
 \usepackage{tabularray}
 \UseTblrLibrary{functional}
 \prgNewFunction\fileVerbatim{ m }{
@@ -129,15 +132,16 @@ hline{1,Z}={.08em}, columns={font=\ttfamily}
 
 # Figure collection for note preview
 
-![table file input.svg](./attachments/table-file-input.svg)
+![figure table file input.svg](./attachments/figure-table-file-input.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{table file input}
+
 \usepackage{graphbox}
 \begin{document}
-\includegraphics[align=t]{table file input legend} \hspace{1em}
-\includegraphics[align=t]{table file input stats}
-\includegraphics[align=t]{table file input verbatim}
+\includegraphics[align=t]{figure table file input legend} \hspace{1em}
+\includegraphics[align=t]{figure table file input stats}
+\includegraphics[align=t]{figure table file input verbatim}
 \end{document}
 ```
 
