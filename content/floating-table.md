@@ -1,8 +1,25 @@
 ---
 title: "Floating table - Let table float here, superwide, above, below, next to a page's main text"
-date: "2025-01-31T02:45:37.406+01:00"
+date: "2025-02-01T21:36:56.237+01:00"
 dg-publish: true
 ---
+
+# Sidenotes
+
+![figure rerun sidenotes table.svg](./attachments/figure-rerun-sidenotes-table.svg)
+
+```latex
+\documentclass{article} \title{rerun sidenotes table}
+\usepackage{sidenotes,tabularray,lipsum,lastpage}
+\begin{document} \SetTblrInner{hlines}
+\sidenotetext{This is a marginal note.} \lipsum[1][1-3] 
+\begin{table*}
+\begin{tblr}[tall, caption={Expand table into page margins}]{X}
+    \lipsum[3][1-4]
+\end{tblr}
+\end{table*}
+\end{document}
+```
 
 # Float tables
 
@@ -13,7 +30,7 @@ dg-publish: true
 \renewcommand{\thetable}{4.1\alph{table}} \pagestyle{empty}
 \usepackage{tabularray,sidenotes,lipsum,graphbox,float,lastpage}
 \captionsetup[table]{skip=2pt}
-\begin{document} \vphantom{\ref{lastpage}}
+\begin{document}
 \lipsum[4]
 
 \begin{table}[H] \centering{}
@@ -83,7 +100,7 @@ Mouse &
 \documentclass{article} \title{table floats 2}
 \renewcommand{\thetable}{4.2\alph{table}} \pagestyle{empty}
 \usepackage{tabularray,sidenotes,float,lipsum,lastpage}
-\begin{document} \phantom{\ref{lastpage}}
+\begin{document}
 \lipsum[4]
 
 \begin{table}[H]
@@ -149,10 +166,10 @@ Susan Wood    & Driver \\
 \end{document}
 ```
 
-![table reference nolabel 2.svg](./attachments/table-reference-nolabel-2.svg)
+![figure table reference nolabel 2.svg](./attachments/figure-table-reference-nolabel-2.svg)
 
 ```latex
-\documentclass{standalone} 
+\documentclass{standalone} \title{table reference nolabel 2}
 \usepackage{tabularray}
 \begin{document}
 \begin{tblr}[tall,label=none,note{}={as of 2014}]{
@@ -170,12 +187,12 @@ Lara   & 10  \\
 
 Caption on tables in text mode
 
-![table reference text mode.svg](./attachments/table-reference-text-mode.svg)
+![figure table reference text mode.svg](./attachments/figure-table-reference-text-mode.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table reference text mode}
 \renewcommand{\thetable}{4.3\alph{table}}
-\usepackage{tabularray,graphbox,caption}
+\usepackage{tabularray,graphbox,caption,lastpage}
 \captionsetup[table]{skip=2pt}
 \begin{document}
 \begin{minipage}{.4\textwidth} \centering{}
@@ -197,12 +214,12 @@ Susan Wood    & Driver \\
 
 # Floating tables
 
-![table reference float mode.svg](./attachments/table-reference-float-mode.svg)
+![figure table reference float mode.svg](./attachments/figure-table-reference-float-mode.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table reference float mode}
 \renewcommand{\thetable}{4.4\alph{table}}
-\usepackage{tabularray,graphbox}
+\usepackage{tabularray,graphbox,lastpage}
 \begin{document}
 \begin{table}[h] \centering{}
 \caption{Pre-compiled table}
@@ -225,12 +242,12 @@ Susan Wood    & Driver \\
 
 Floating tables in sidebar
 
-![table reference float sidebar.svg](./attachments/table-reference-float-sidebar.svg)
+![figure table reference float sidebar.svg](./attachments/figure-table-reference-float-sidebar.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table reference float sidebar}
 \renewcommand{\thetable}{4.5\alph{table}}
-\usepackage{tabularray,graphbox,sidenotes,lipsum}
+\usepackage{tabularray,graphbox,sidenotes,lipsum,lastpage}
 \begin{document}
 See tables in the sidebar.
 
@@ -255,12 +272,12 @@ Susan Wood    & Driver \\
 
 # Sub-float mode
 
-![table reference subfloat mode.svg](./attachments/table-reference-subfloat-mode.svg)
+![figure table reference subfloat mode.svg](./attachments/figure-table-reference-subfloat-mode.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table reference subfloat mode}
 \renewcommand{\thetable}{4.6\alph{table}}
-\usepackage{tabularray,graphbox}
+\usepackage{tabularray,graphbox,lastpage}
 \begin{document}
 \begin{table}
 \begin{minipage}[b]{0.35\textwidth} \centering{}
@@ -283,10 +300,10 @@ Susan Wood    & Driver \\
 \end{document}
 ```
 
-![table reference subfloat mode 2.svg](./attachments/table-reference-subfloat-mode-2.svg)
+![figure table reference subfloat mode 2.svg](./attachments/figure-table-reference-subfloat-mode-2.svg)
 
 ```latex
-\documentclass{article} \pagestyle{empty}
+\documentclass{article} \title{table reference subfloat mode 2}
 \renewcommand{\thetable}{4.7\alph{table}}
 \usepackage{tabularray,graphbox}
 \begin{document}
