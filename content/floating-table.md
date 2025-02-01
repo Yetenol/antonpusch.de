@@ -1,6 +1,6 @@
 ---
 title: "Floating table - Let table float here, superwide, above, below, next to a page's main text"
-date: "2025-02-01T21:36:56.237+01:00"
+date: "2025-02-01T21:47:23.974+01:00"
 dg-publish: true
 ---
 
