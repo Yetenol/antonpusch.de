@@ -1,6 +1,6 @@
 ---
 title: "Networks, Commutative diagrams - Dynamically draw graph networks as a vector graphic"
-date: "2025-01-31T02:01:12.834+01:00"
+date: "2025-02-02T20:28:24.450+01:00"
 dg-publish: true
 ---
 
@@ -24,7 +24,8 @@ $$
 
 - [Automata Drawing Library - PGF/TikZ Manual](https://tikz.dev/library-automata)
 
-![figure automata.svg](./attachments/figure-automata.svg)
+
+![asdsadsadsadsa](./attachments/figure-automata.svg)
 
 ```latex
 \documentclass{standalone} \title{figure automata}
