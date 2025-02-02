@@ -1,6 +1,6 @@
 ---
 title: "Learn and troubleshoot LaTeX - Read (package) documentation, cheat sheets, tutorials"
-date: "2024-07-24T04:25:20.440+02:00"
+date: "2024-07-24T13:25:20.440+02:00"
 dg-publish: true
 priority: 1
 ---
