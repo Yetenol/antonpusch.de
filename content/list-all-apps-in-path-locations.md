@@ -1,6 +1,6 @@
 ---
 title: "List all apps in PATH locations"
-date: "2024-07-24T04:25:20.451+02:00"
+date: "2024-07-24T13:25:20.451+02:00"
 dg-publish: true
 priority: 
 ---
