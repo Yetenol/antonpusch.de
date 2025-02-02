@@ -1,6 +1,6 @@
 ---
 title: "Format headers - Group, align, rotate, separate, and abbreviate the titles for rows and columns"
-date: "2025-02-01T21:07:47.786+01:00"
+date: "2025-02-02T20:41:28.122+01:00"
 dg-publish: true
 ---
 
