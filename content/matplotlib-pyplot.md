@@ -1,6 +1,6 @@
 ---
 title: "MatPlotLib PyPlot"
-date: "2025-01-08T11:19:00.719+01:00"
+date: "2025-02-03T06:01:46.509+01:00"
 dg-publish: true
 not-in-use: 
 microsoft-id: 
@@ -34,7 +34,10 @@ extends-app: "[[Python|Python]]"
 - Source: [NumPy -](https://numpy.org/)
 
 Example plot
-![plot plt.svg](./attachments/plot-plt.svg)
+
+![figure plot matplotlib.svg](./attachments/figure-plot-matplotlib.svg)
+
+![figure plot plt.svg](./attachments/figure-plot-plt.svg)
 
 ```python
 import numpy as np
@@ -62,8 +65,8 @@ plt.legend()
 plt.grid(True)
 
 # Export static vector graphics
-plt.savefig(@vault_path + '/attachments/plot plt.svg', transparent=True)
-plt.savefig(@vault_path + '/attachments/plot plt.pdf', transparent=True)
+plt.savefig(@vault_path + '/attachments/figure plot plt.svg', transparent=True)
+plt.savefig(@vault_path + '/attachments/figure plot plt.pdf', transparent=True)
 plt.show()
 ```
 
@@ -97,7 +100,7 @@ plt.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
 plt.title("Figure 1.1: Normal spines", fontsize=10)
 plt.legend()
 plt.grid(True)
-export_plt_figure(plt, outfile="plot plt 1")
+export_plt_figure(plt, outfile="figure plot plt 1")
 plt.show()
 ```
 
@@ -114,7 +117,7 @@ plt.plot(x, np.sin(x), label=r"$h(x) = \sin(x)$")
 plt.title("Figure 1.1: Normal spines", fontsize=10)
 plt.legend()
 plt.grid(True)
-export_plt_figure(plt, outfile="plot plt 1")
+export_plt_figure(plt, outfile="figure plot plt 1")
 plt.show()
 ```
 
