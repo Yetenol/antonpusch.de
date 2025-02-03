@@ -1,6 +1,6 @@
 ---
 title: "LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules"
-date: "2025-02-03T00:19:25.645+01:00"
+date: "2025-02-03T06:17:55.139+01:00"
 dg-publish: true
 dg-permalink: latex
 aliases:
@@ -42,7 +42,7 @@ $$
 
 [Plots - Dynamically plot mathematical functions, values as a vector graphic](./plots.md)
 
-![figure plots.svg](./attachments/figure-plots.svg)
+![figure plot tikz collection.svg](./attachments/figure-plot-tikz-collection.svg)
 
 [Networks, Commutative diagrams - Dynamically draw graph networks as a vector graphic](./networks-commutative-diagrams.md)
 
@@ -62,7 +62,7 @@ $$
 
 [Gantt chart](./gantt-chart.md)
 
-![gantt portfolio examination 2.svg](./attachments/gantt-portfolio-examination-2.svg)
+![figure gantt portfolio examination 2.svg](./attachments/figure-gantt-portfolio-examination-2.svg)
 
 Roadmap for further data visualizations
 
