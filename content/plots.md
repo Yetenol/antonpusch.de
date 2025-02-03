@@ -1,12 +1,12 @@
 ---
 title: "Plots - Dynamically plot mathematical functions, values as a vector graphic"
-date: "2025-01-11T19:10:12.076+01:00"
+date: "2025-02-03T06:07:11.084+01:00"
 dg-publish: true
 ---
 
 # Native and external processing tools
 
-![plot engine comparison.svg](./attachments/plot-engine-comparison.svg)
+![figure plot engine comparison.svg](./attachments/figure-plot-engine-comparison.svg)
 
 - Compare: [Graphing tool comparison - Compare native and external calculation and drawing engines like PGF, MatPlotLib, PyX for visualising data](Graphing%20tool%20comparison%20-%20Compare%20native%20and%20external%20calculation%20and%20drawing%20engines%20like%20PGF,%20MatPlotLib,%20PyX%20for%20visualising%20data.md)
 
