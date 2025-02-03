@@ -1,6 +1,6 @@
 ---
 title: "Gantt chart"
-date: "2024-12-24T21:16:50.266+01:00"
+date: "2025-02-03T06:17:28.845+01:00"
 dg-publish: true
 ---
 - page width chart `expand chart`
@@ -14,10 +14,10 @@ dg-publish: true
 
 Portfolio examination
 
-![gantt portfolio examination.svg](./attachments/gantt-portfolio-examination.svg)
+![figure gantt portfolio examination.svg](./attachments/figure-gantt-portfolio-examination.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{gantt portfolio examination}
 \usepackage{pgfgantt}
 \begin{document}
 \begin{ganttchart}[
@@ -44,10 +44,10 @@ Portfolio examination
 
 Portfolio examination hline
 
-![gantt portfolio examination hline.svg](./attachments/gantt-portfolio-examination-hline.svg)
+![figure gantt portfolio examination hline.svg](./attachments/figure-gantt-portfolio-examination-hline.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{gantt portfolio examination hline}
 \usepackage{pgfgantt}
 \begin{document}
 \begin{ganttchart}[
@@ -81,10 +81,10 @@ Portfolio examination hline
 
 Portfolio examination
 
-![gantt portfolio examination 2.svg](./attachments/gantt-portfolio-examination-2.svg)
+![figure gantt portfolio examination 2.svg](./attachments/figure-gantt-portfolio-examination-2.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{gantt portfolio examination 2}
 \usepackage{pgfgantt}
 \usetikzlibrary {backgrounds}
 \tikzset{background rectangle/.style={inner sep=0pt},
@@ -131,10 +131,10 @@ Portfolio examination
 
 
 
-![gantt chart 2.svg](./attachments/gantt-chart-2.svg)
+![figure gantt chart 2.svg](./attachments/figure-gantt-chart-2.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{gantt chart 2}
 \usepackage{pgfgantt}
 \begin{document}
 \begin{ganttchart}[
@@ -156,10 +156,10 @@ Portfolio examination
 \end{document}
 ```
 
-![gantt chart myline.svg](./attachments/gantt-chart-myline.svg)
+![figure gantt chart myline.svg](./attachments/figure-gantt-chart-myline.svg)
 
 ```latex
-\documentclass[]{standalone}
+\documentclass{standalone} \title{gantt chart myline}
 % Uncomment the following line to allow the usage of graphics (.png, .jpg)
 %\usepackage[pdftex]{graphicx}
 % Comment the following line to NOT allow the usage of umlauts
@@ -170,9 +170,9 @@ Portfolio examination
 \definecolor{barblue}{RGB}{153,204,254}
 \definecolor{groupblue}{RGB}{51,102,254}
 \definecolor{linkred}{RGB}{165,0,33}
-\renewcommand\sfdefault{phv}
-\renewcommand\mddefault{mc}
-\renewcommand\bfdefault{bc}
+%\renewcommand\sfdefault{phv}
+%\renewcommand\mddefault{mc}
+%\renewcommand\bfdefault{bc}
 \setganttlinklabel{s-s}{START-TO-START}
 \setganttlinklabel{f-s}{FINISH-TO-START}
 \setganttlinklabel{f-f}{FINISH-TO-FINISH}
@@ -292,10 +292,10 @@ Portfolio examination
 
 First and second attempt
 
-![gantt chart 7.svg](./attachments/gantt-chart-7.svg)
+![figure gantt chart 7.svg](./attachments/figure-gantt-chart-7.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{gantt chart 7}
 \usepackage{pgfgantt}
 \begin{document}
 \begin{ganttchart}[
@@ -318,10 +318,10 @@ First and second attempt
 
 Time and weight
 
-![gantt chart 3.svg](./attachments/gantt-chart-3.svg)
+![figure gantt chart 3.svg](./attachments/figure-gantt-chart-3.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{gantt chart 3}
 \usepackage{pgfgantt}
 \begin{document}
 \begin{ganttchart}[
@@ -345,10 +345,10 @@ Time and weight
 
 Colors
 
-![gantt chart 5.svg](./attachments/gantt-chart-5.svg)
+![figure gantt chart 5.svg](./attachments/figure-gantt-chart-5.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{gantt chart 5}
 \usepackage{pgfgantt}
 \begin{document}
 \begin{ganttchart}[
@@ -376,7 +376,7 @@ Exams
 ![gantt chart 4.svg](./attachments/gantt-chart-4.svg)
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{gantt chart 4}
 \usepackage{pgfgantt}
 \begin{document}
 \begin{ganttchart}[
@@ -395,7 +395,7 @@ Exams
 ```
 
 ```latex
-\documentclass{standalone}
+\documentclass{standalone} \title{}
 \usepackage{pgfgantt}
 \begin{document}
 \begin{ganttchart}[
@@ -412,15 +412,13 @@ hgrid
 ```
 
 
-![gantt chart 1.svg](./attachments/gantt-chart-1.svg)
+![figure Gantt Charts with the pgfgantt Package.svg](./attachments/figure-gantt-charts-with-the-pgfgantt-package.svg)
 
-```py
-generate_latex_figure(r"""
-\documentclass[tikz, margin=5mm]{standalone}
+```latex
+\documentclass[tikz, margin=5mm]{standalone} \title{gantt chart 1}
 \usepackage{pgfgantt}
 \title{Gantt Charts with the pgfgantt Package}
 \begin{document}
-
 \begin{ganttchart}[
    vgrid={*{11}{gray, dotted}, *1{black, dashed}},
    bar label node/.append style={
@@ -432,11 +430,8 @@ generate_latex_figure(r"""
 \ganttbar{Aim 2. Software verification}{6}{12} \\
 \ganttbar{Aim 3. Hardware portability}{12}{18} \\
 \ganttbar{Aim 4. Documentation}{8}{24}
-
 \end{ganttchart}
-
 \end{document}
-""", outfile="gantt chart 1")
 ```
 
 # Typst
