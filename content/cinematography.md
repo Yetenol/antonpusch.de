@@ -15,8 +15,8 @@ dg-publish: true
 
 - [Entertainment](./entertainment.md)
 - [Internationale Filmfestspiele Berlin](./internationale-filmfestspiele-berlin.md)
-- [What kind of cinematography I like](What%20kind%20of%20cinematography%20I%20like.md)
 - [Why do we enjoy bad movies - Movies habe increasingly less story](Why%20do%20we%20enjoy%20bad%20movies%20-%20Movies%20habe%20increasingly%20less%20story.md)
+- [What kind of cinematography I like](What%20kind%20of%20cinematography%20I%20like.md)
 - [List all movies and TV series that have been referenced somewhere](List%20all%20movies%20and%20TV%20series%20that%20have%20been%20referenced%20somewhere.md)
 - [Enjoy a favorite video again](Enjoy%20a%20favorite%20video%20again.md)
 
