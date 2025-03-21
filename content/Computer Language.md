@@ -1,11 +1,11 @@
 ---
 publish: true
 ---
-- [Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography](./Markup%20and%20typesetting%20systems%20-%20Produce%20printed%20or%20digital%20documents%20aesthetically%20pleasing%20with%20readable%20typography.md)
-- [RegEx - Use Regular Expressions to search, extract and manipulate text in a specified pattern](./RegEx%20-%20Use%20Regular%20Expressions%20to%20search,%20extract%20and%20manipulate%20text%20in%20a%20specified%20pattern.md)
-- [Programming Languages - Communicate instructions between humans and computers](./Programming%20Languages%20-%20Communicate%20instructions%20between%20humans%20and%20computers.md)
+- [Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography](./Markup%20and%20typesetting%20systems.md)
+- [RegEx - Use Regular Expressions to search, extract and manipulate text in a specified pattern](./RegEx.md)
+- [Programming Languages - Communicate instructions between humans and computers](./programming%20languages.md)
 - Markdown - Write plaintext in a centralized location and generate to PDF, Jupiter notebooks, web pages, social media posts
 - [Code aesthetics and refactoring](./Code%20aesthetics%20and%20refactoring.md)
-- [Git - Track changes, collaborate, and backup](./Git%20-%20Track%20changes,%20collaborate,%20and%20backup.md)
-- [Unicode characters - Push files to the top of bottom of the list in alphabetical sorting](./Unicode%20characters%20-%20Push%20files%20to%20the%20top%20of%20bottom%20of%20the%20list%20in%20alphabetical%20sorting.md)
+- [Git - Track changes, collaborate, and backup](./Git.md)
+- [Unicode characters - Push files to the top of bottom of the list in alphabetical sorting](./Unicode%20characters.md)
 - Obsidian - Organize, link, and explore their thoughts, ideas, and information through a system of interconnected notes

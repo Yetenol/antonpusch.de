@@ -7,7 +7,7 @@ publish: true
 - Visually **guide horizontal reading**: Shade every other row $\mathrm{3a}$; Add dashed line every third row $\mathrm{3b}$ 
 - Process input data: sort with column $\mathrm{3c}$ 
 - More ideas: filter, sort, custom column titles, multi column names, Align at decimal or scientific separator
-- See source examples: [Layout the table](./Layout%20the%20table.md)
+- See source examples: [Layout the table](./layout%20the%20table.md)
 
 ![figure table measurements 1.svg](./attachments/figure%20table%20measurements%201.svg)
 
@@ -77,7 +77,7 @@ calculate sum, mean, standard deviation under table
 \end{tblr}
 \end{document}
 ```
-[Table calculation](./Table%20calculation.md)
+[Table calculation](./table%20calculation.md)
 # Sum up integers
 
 ![figure table stats integer sum.svg](./attachments/figure%20table%20stats%20integer%20sum.svg)

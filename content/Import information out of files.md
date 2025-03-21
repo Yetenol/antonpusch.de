@@ -51,7 +51,7 @@ $lines.Count
 
 # Import data out of plaintext files
 
-![RegEx Input Parsing - Import data out of plaintext using regular expressions > Overview](./RegEx%20Input%20Parsing%20-%20Import%20data%20out%20of%20plaintext%20using%20regular%20expressions.md#Overview)
+![RegEx Input Parsing - Import data out of plaintext using regular expressions > Overview](./RegEx%20Input%20parsing.md#Overview)
 
 
 ---
@@ -60,4 +60,4 @@ Sources:
 Related:
 
 Tags:
-[Handle PowerShell data - Handle, Import, Export, Filter and RegEx query objects](./Handle%20PowerShell%20data%20-%20Handle,%20Import,%20Export,%20Filter%20and%20RegEx%20query%20objects.md)
+[Handle PowerShell data - Handle, Import, Export, Filter and RegEx query objects](./Handle%20powershell%20data.md)

@@ -410,7 +410,7 @@ hgrid
 ```
 
 
-![figure Gantt Charts with the pgfgantt Package.svg](./attachments/figure%20Gantt%20Charts%20with%20the%20pgfgantt%20Package.svg)
+![figure Gantt Charts with the pgfgantt Package.svg](./attachments/figure%20Gantt%20Charts%20with%20the%20pgfgantt%20package.svg)
 
 ```latex
 \documentclass[tikz, margin=5mm]{standalone} \title{gantt chart 1}
@@ -434,7 +434,7 @@ hgrid
 
 # Typst
 
-![Pasted image 20241216163619.png](./attachments/Pasted%20image%2020241216163619.png)
+![Pasted image 20241216163619.png](./attachments/pasted%20image%2020241216163619.png)
 
 ```typst
 #import "@preview/timeliney:0.1.0"
@@ -497,4 +497,4 @@ Sources:
 Related:
 
 Tags:
-[LaTeX](./LaTeX%20-%20Typeset%20mathematical%20and%20scientific%20notation,%20handle%20cross-referencing%20and%20citations,%20and%20position%20images%20according%20to%20defined%20placement%20rules.md)
+[LaTeX](./latex/latex.md)

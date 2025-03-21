@@ -1,6 +1,6 @@
 ---
 publish: true
-priority: 
+priority: 4
 ---
 
 ```dynamic-embed

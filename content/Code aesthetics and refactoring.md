@@ -16,4 +16,4 @@ Sources:
 Related:
 
 Tags:
-[Computer Language](./Computer%20Language.md)
+[Computer Language](./Computer%20language.md)

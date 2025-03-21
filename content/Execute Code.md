@@ -26,9 +26,9 @@ Open Haskell language-specific settings
 
 # Combines setup
 
-- [LaTeX to SVG - Embed LaTeX figures in markdown. Automate compiling, cropping, and exporting.](./LaTeX%20to%20SVG%20-%20Embed%20LaTeX%20figures%20in%20markdown.%20Automate%20compiling,%20cropping,%20and%20exporting..md)
-- [PyX](./PyX.md)
-- [MatPlotLib PyPlot](./MatPlotLib%20PyPlot.md)
+- [LaTeX to SVG - Embed LaTeX figures in markdown. Automate compiling, cropping, and exporting.](./latex%20to%20sVG)
+- [PyX](./pyx.md)
+- [MatPlotLib PyPlot](./Matplotlib%20pyplot.md)
 
 ```python
 import os, contextlib

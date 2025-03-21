@@ -66,4 +66,4 @@ Sources:
 Related:
 
 Tags:
-[Properties - Inspect, filter, select, enrich, and sort objects](./Properties%20-%20Inspect,%20filter,%20select,%20enrich,%20and%20sort%20objects.md)
+[Properties - Inspect, filter, select, enrich, and sort objects](./properties.md)
