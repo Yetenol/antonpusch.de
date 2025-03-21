@@ -1,0 +1,23 @@
+---
+publish: true
+not-in-use: 
+microsoft-id: 
+winget-id: 
+github-repo: friebetill/obsidian-deepl
+github-release-filename: 
+website: 
+priority: 10
+link-modportals: 
+modportal0-id: deepl
+thumbnail: 
+categories:
+  - Editing Translation
+synopsis: |
+  Allows translation of selected texts into more than 25 languages with DeepL.
+modportal1-id: deepl
+extends-app: "[[Obsidian]]"
+---
+
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
