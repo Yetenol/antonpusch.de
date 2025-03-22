@@ -20,7 +20,7 @@ dg-content-classes:
 
 Rebase and **publish** all local commit to the remote main branch using `[ctrl+shift+p]`
 - Install script [git-publish.ps1](https://github.com/Yetenol/alias)
-- Install extension [Terminal Command Keys](../computer/apps/Terminal-Command-Keys.md)
+- Install extension [Terminal Command Keys](./computer/apps/Terminal-Command-Keys.md)
 - Bind `ctrl+shift+p` to execute `git-publish.ps1` in the terminal
 
 
@@ -56,5 +56,5 @@ Related:
 ```
 
 Tags:
-[Visual Studio Code](../computer/apps/Visual-Studio-Code.md)
+[Visual Studio Code](./computer/apps/Visual-Studio-Code.md)
 
