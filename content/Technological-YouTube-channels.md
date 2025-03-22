@@ -59,5 +59,5 @@ dg-publish: true
 
 ---
 Tags:
-[Visual Media](../visual-media/index.md),
-[Visual Media](../visual-media/index.md)
+[Visual Media](./visual-media/index.md),
+[Visual Media](./visual-media/index.md)
