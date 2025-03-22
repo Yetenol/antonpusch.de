@@ -16,4 +16,4 @@ Sources:
 Related:
 
 Tags:
-[Microsoft PowerPoint](../computer/apps/Microsoft-PowerPoint.md)
+[Microsoft PowerPoint](./computer/apps/Microsoft-PowerPoint.md)

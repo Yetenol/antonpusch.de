@@ -150,4 +150,4 @@ Related:
 
 Tags:
 [Workflows - Improve workflow in applications](./Workflows.md)
-[Microsoft OneNote](../computer/apps/Microsoft-OneNote.md)
+[Microsoft OneNote](./computer/apps/Microsoft-OneNote.md)

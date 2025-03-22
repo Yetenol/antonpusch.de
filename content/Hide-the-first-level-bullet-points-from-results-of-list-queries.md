@@ -5,9 +5,9 @@ description: "-"
 dg-publish: true
 ---
 
-[Dataview - Create dynamic tables using data stored in note properties](../computer/apps/Dataview.md)'s list type automatically creates bullet points before each entry, which is often undesirable. The following CSS snippets hide these first-level bullet points of and reduce the indentation by one level to start like regular paragraphs.
+[Dataview - Create dynamic tables using data stored in note properties](./computer/apps/Dataview.md)'s list type automatically creates bullet points before each entry, which is often undesirable. The following CSS snippets hide these first-level bullet points of and reduce the indentation by one level to start like regular paragraphs.
 
-Add a custom CSS snippet to [Obsidian](../computer/apps/Obsidian.md) to hide first level bullet point in query results.
+Add a custom CSS snippet to [Obsidian](./computer/apps/Obsidian.md) to hide first level bullet point in query results.
 
 ```css
 /* no need the previous padding adjustment if using Minimal */
@@ -24,7 +24,7 @@ ul.dataview.dataview-ul.dataview-result-list-ul {
 }
 ```
 
-The [Digital Garden](../computer/apps/Digital-Garden.md) plugin converts [Dataview queries](./Query-filter-sort-and-transform-frontmatter-of-your-notes.md) to pure Markdown so that it can be rendered by [Eleventy](Eleventy.md). Unfortunately, the CSS classes of the list elements are lost, so  generated list outputs cannot be distinguished from manually created Markdown bullet lists. Therefore the change can only be applied for all lists.
+The [Digital Garden](./computer/apps/Digital-Garden.md) plugin converts [Dataview queries](./Query-filter-sort-and-transform-frontmatter-of-your-notes.md) to pure Markdown so that it can be rendered by [Eleventy](Eleventy.md). Unfortunately, the CSS classes of the list elements are lost, so  generated list outputs cannot be distinguished from manually created Markdown bullet lists. Therefore the change can only be applied for all lists.
 
 ```css
 /* no need the previous padding adjustment if using Minimal */
@@ -49,4 +49,4 @@ Sources:
 Related:
 
 Tags:
-[Dataview - Create dynamic tables using data stored in note properties](../computer/apps/Dataview.md)
+[Dataview - Create dynamic tables using data stored in note properties](./computer/apps/Dataview.md)

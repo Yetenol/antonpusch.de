@@ -11,7 +11,7 @@ dg-publish: true
 - [p] opens current file, jumps to same line
 - [p] uses vault root as workspace folder
 - [p] works with spaces in filename
-- requires [Shell commands](../computer/apps/Shell-commands.md)
+- requires [Shell commands](./computer/apps/Shell-commands.md)
 - Uses vault's root folder as workspace
 
 ```cmd
@@ -23,14 +23,14 @@ code . --goto \"{{file_path:absolute}}":{{caret_position}}
 - [p] opens current file, jump to same line
 - [p] works with spaces in filename
 - [p] opens from predefined vault or symbolic links workspace folder as `D:\Notes\external`
-- requires [Terminal Command Keys](../computer/apps/Terminal-Command-Keys.md) and [Advanced URI](../computer/apps/Advanced-URI.md)
+- requires [Terminal Command Keys](./computer/apps/Terminal-Command-Keys.md) and [Advanced URI](./computer/apps/Advanced-URI.md)
 - replace `D:/Notes/` which occurs 3 times with your vault path (use `/` instead of `\`)
 - first character `\u0001` clears drafted prompt in the terminal
 - if the file is in your main vault, open it
 - otherwise update the `external/` symbolic link if necessary (requires admin privileges)
 - then opens the file in the main vault
 
-> [!warning] Ignore the folder `external/` in git and in [Remotely Save](../computer/apps/Remotely-Save.md)
+> [!warning] Ignore the folder `external/` in git and in [Remotely Save](./computer/apps/Remotely-Save.md)
 
 
 Add VS Code keyboard shortcut:
@@ -51,7 +51,7 @@ Open VS Code file **from** main vault in Obsidian
 - [p] opens current file, jump to same line
 - [p] works with spaces in filename
 - [c] file must be in the one predefined vault
-- requires [Terminal Command Keys](../computer/apps/Terminal-Command-Keys.md) and [Advanced URI](../computer/apps/Advanced-URI.md)
+- requires [Terminal Command Keys](./computer/apps/Terminal-Command-Keys.md) and [Advanced URI](./computer/apps/Advanced-URI.md)
 - default integrated terminal must be PowerShell
 - first character `\u0001` clears drafted prompt in the terminal
 - replace the vault name with yours
@@ -70,7 +70,7 @@ Add VS Code keyboard shortcut:
 ```
 
 Open VS Code file **at the top** **from** main vault in Obsidian
-- requires [Terminal Command Keys](../computer/apps/Terminal-Command-Keys.md)
+- requires [Terminal Command Keys](./computer/apps/Terminal-Command-Keys.md)
 - [p] opens current file
 - [p] works with spaces in filename
 - [c] file must be in the one predefined vault
@@ -115,6 +115,6 @@ Related:
 ```
 
 Tags:
-[Obsidian](../computer/apps/Obsidian.md)
-[Visual Studio Code](../computer/apps/Visual-Studio-Code.md)
+[Obsidian](./computer/apps/Obsidian.md)
+[Visual Studio Code](./computer/apps/Visual-Studio-Code.md)
 [Markdown - Write content-focused and format with hierarchy, abstract highlighting, and meta-information](./Markdown.md)

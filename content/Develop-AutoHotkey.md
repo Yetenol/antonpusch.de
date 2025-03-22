@@ -75,4 +75,4 @@ Related:
 ```
 
 Tags:
-[Visual Studio Code](../computer/apps/Visual-Studio-Code.md)
+[Visual Studio Code](./computer/apps/Visual-Studio-Code.md)

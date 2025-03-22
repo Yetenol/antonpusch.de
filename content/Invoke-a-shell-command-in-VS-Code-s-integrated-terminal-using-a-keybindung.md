@@ -29,7 +29,7 @@ Clear the terminal's draft, paste a shell command and invoke it. Requires at lea
 
 # Implement using an extension
 
-Add a custom key binding to invoke a certain shell command. Requires the extension [Terminal Command Keys](../computer/apps/Terminal-Command-Keys.md)
+Add a custom key binding to invoke a certain shell command. Requires the extension [Terminal Command Keys](./computer/apps/Terminal-Command-Keys.md)
 
 ```json
 {
@@ -55,6 +55,6 @@ Sources:
 Related:
 
 Tags:
-[Visual Studio Code](../computer/apps/Visual-Studio-Code.md)
+[Visual Studio Code](./computer/apps/Visual-Studio-Code.md)
 [Workflows - Improve workflow in applications](./Workflows.md)
-[Terminal Command Keys](../computer/apps/Terminal-Command-Keys.md)
+[Terminal Command Keys](./computer/apps/Terminal-Command-Keys.md)

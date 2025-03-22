@@ -55,4 +55,4 @@ Sources:
 Related:
 
 Tags:
-[Dataview - Create dynamic tables using data stored in note properties](../computer/apps/Dataview.md)
+[Dataview - Create dynamic tables using data stored in note properties](./computer/apps/Dataview.md)

@@ -34,6 +34,6 @@ Sources:
 Related:
 
 Tags:
-[Obsidian](../computer/apps/Obsidian.md)
+[Obsidian](./computer/apps/Obsidian.md)
 [Markdown - Write content-focused and format with hierarchy, abstract highlighting, and meta-information](./Markdown.md)
 Document conversion

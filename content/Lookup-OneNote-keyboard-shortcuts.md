@@ -13,4 +13,4 @@ Sources:
 Related:
 
 Tags:
-[Microsoft OneNote](../computer/apps/Microsoft-OneNote.md)
+[Microsoft OneNote](./computer/apps/Microsoft-OneNote.md)

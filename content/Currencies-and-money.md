@@ -91,7 +91,7 @@ Inherit **decimal marker** from [siunitx](https://texdoc.org/serve/siunitx/0)'s 
 Sources:
 
 Related:
-[Symbols - Lookup mathematical symbols, operations, relations, and arrows](../latex/Symbols.md)
+[Symbols - Lookup mathematical symbols, operations, relations, and arrows](./latex/Symbols.md)
 
 Tags:
 [Values  - Standardize math, numbers, symbols, quantities, money](./Values-.md)

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T21:05:35.790+01:00"
+date: "2025-03-22T21:18:54.485+01:00"
 title: "Known folders"
 description: "Access the recycle bin, desktop, downloads folder"
 dg-publish: true
@@ -14,12 +14,14 @@ $env:Pictures = (New-Object -ComObject Shell.Application).NameSpace('shell:My Pi
 ```
 
 [CLSID folders - Locate panels, system folders like the recycle bin](./CLSID-folders.md)
-[Deprecated panels and system folders - Locate deprecated 3D Objects folder](./Deprecated-panels-and-system-folders.md)
+
+```powershell
+explorer "shell:::{088e3905-0323-4b02-9826-5d99428e115f}"
+```
 
 # Import all user folders as environment variables
 
 Define user folder macros
-
 ```powershell
 @{
     AppData = 'AppData'; IECache = 'Cache'; IECookies = 'Cookies'; Desktop = 'Desktop'; Favorites = 'Favorites'; History = 'History'; LocalAppData = 'Local AppData'; Music = 'My Music'; Pictures = 'My Pictures'; Videos = 'My Video'; Documents = 'Personal'; Downloads = '{374DE290-123F-4565-9164-39C4925E467B}'; NetworkShortcuts = 'NetHood'; PrinterShortcuts = 'PrintHood'; Programs = 'Programs'; Recent = 'Recent'; SendTo = 'SendTo'; StartMenu = 'Start Menu'; Startup = 'Startup'; Templates = 'Templates'; CloudRoot = '{A52BBA46-E9E1-435F-B3D9-28DAA648C0F6}';
@@ -36,13 +38,11 @@ Define user folder macros
 ```
 
 Reveal folder in *File Explorer*    
-
 ```powershell
 Invoke-Item -Path $env:Pictures
 ```
 
 List available macros
-
 ```powershell
 Get-ChildItem env:
 ```
