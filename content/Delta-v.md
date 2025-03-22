@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.917+01:00"
+date: "2025-03-22T23:45:55.064+01:00"
 title: Delta-v
 description: |
   James Tighe, kurz JT, ist ein Glücksritter und der beste Höhlentaucher der Welt. Eines Tages lädt ihn der Milliardär Nathan Joyce auf seine private Insel, um ihm ein Angebot zu machen. Es geht um ein so visionäres wie hochgeheimes Projekt: Von einer Station im All soll ein riesiger Asteroid wirtschaftlich erschlossen werden. Denn die Menschheit des Jahres 2030 ist für ihr Überleben auf Rohstoffe angewiesen. Zusammen mit Ex-Soldaten, Astronauten, Wissenschaftlern soll JT zu einem Team verwachsen, das extreme Situationen bestehen muss. Ungeheure Reichtümer locken. Es droht auch jederzeit der Tod. Und sehr spät erst begreifen die Mitglieder von Delta-V, dass Nathan Joyce ein doppeltes Spiel treibt ...
