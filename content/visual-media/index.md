@@ -6,7 +6,7 @@ dg-publish: true
 dg-folder: visual-media
 dg-filename: index
 ---
-index
+[Movies & TV Shows](./media/index.md)
 
 - [Enjoy a favorite movie again](./Enjoy-a-favorite-movie-again.md)
 - [Enjoy a favorite television series again](./Enjoy-a-favorite-television-series-again.md)
