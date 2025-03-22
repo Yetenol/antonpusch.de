@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.715+01:00"
+date: "2025-03-22T23:36:03.690+01:00"
 title: The Witcher
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 20 Dec 2019
 type: series
 runtime: 60 min
 number-of-seasons: 3
-genres:
+tags:
   - Action
   - Adventure
   - Drama
