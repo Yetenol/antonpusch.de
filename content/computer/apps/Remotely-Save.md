@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.158+01:00"
+date: "2025-03-22T23:45:55.037+01:00"
 title: "Remotely Save"
 description: "-"
 dg-folder: computer/apps
@@ -21,8 +21,6 @@ synopsis: |
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-Remotely Save is a [Obsidian](./Obsidian.md) extension about synchronization. Yet another unofficial plugin allowing users to sync notes between local device and the cloud service (S3, Dropbox, webdav, OneDrive). 
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=remotely-save), [Webstore](https://obsidian.md/plugins?id=remotely-save)
-- Download the [latest release](https://github.com/remotely-save/remotely-save/releases/latest) of its source code [repository](https://github.com/remotely-save/remotely-save) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
