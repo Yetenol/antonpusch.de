@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:03:46.893+01:00"
+date: "2025-03-22T23:36:02.064+01:00"
 title: "Pirates of the Caribbean: The Curse of the Black Pearl"
 description: "-"
 dg-publish: true
@@ -14,7 +14,7 @@ release-date: 09 Jul 2003
 type: movie
 runtime: 143 min
 number-of-seasons: 
-genres:
+tags:
   - Action
   - Adventure
   - Fantasy
