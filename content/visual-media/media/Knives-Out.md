@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.752+01:00"
+date: "2025-03-22T23:36:01.458+01:00"
 title: Knives Out
 description: "-"
 dg-folder: visual-media/media
@@ -10,7 +10,7 @@ release-date: 27 Nov 2019
 type: movie
 runtime: 130 min
 number-of-seasons: 
-genres:
+tags:
   - Comedy
   - Crime
   - Drama
