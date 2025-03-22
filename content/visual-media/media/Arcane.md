@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.766+01:00"
+date: "2025-03-22T23:35:59.550+01:00"
 title: Arcane
 description: "-"
 dg-folder: visual-media/media
@@ -16,7 +16,7 @@ release-date: 06 Nov 2021
 type: series
 runtime: N/A
 number-of-seasons: 2
-genres:
+tags:
   - Animation
   - Action
   - Adventure
