@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T21:20:32.125+01:00"
+date: "2025-03-22T22:20:09.086+01:00"
 title: "PowerShell"
 description: "A command-line shell and scripting language to manage Windows system and automate administrative tasks"
 dg-publish: true
@@ -17,7 +17,6 @@ Get-Command -Noun Process*
 $PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
 $PSDefaultParameterValues['Set-Content:Encoding'] = 'utf8'
 $CONFIG = [PSCustomObject]@{
-    SourcePath       = "E:\Data\Analytics\SourceData"
     LogFile          = "C:\scripts\DataExport.log"
     MaxLogLines      = 1000
 }
@@ -47,11 +46,11 @@ $i.Attributes = $i.Attributes -bxor [IO.FileAttributes]::Hidden }
 [Known folders - Access the recycle bin, desktop, downloads folder](../windows/known-folders/index.md)
 
 ```powershell
-$env:Pictures = (New-Object -ComObject Shell.Application).NameSpace('shell:My Pictures').Self.Path
+[Environment]::GetFolderPath("MyPictures")
 $env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
 ```
 
-
+Other topics
 
 - [Learn and Troubleshoot Powershell  - Discover commands, and access documentation](./Learn-and-Troubleshoot-Powershell-.md)
 - [Programm PowerShell - Learn PowerShell's programming paradigms](./develop/index.md)
@@ -60,5 +59,3 @@ $env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{3
 - Command Prompt Comparison - PowerShell vs CMD
 - [Bash Equivalents - Replace code from Linux Bash with PowerShell equivalents](./Bash-Equivalents.md)
 - Bash Comparison - Powershell Core vs Bash
-
-[Programming Languages - Communicate instructions between humans and computers](../Programming-Languages.md)
