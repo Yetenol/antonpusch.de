@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:34.679+01:00"
+date: "2025-03-22T23:36:04.343+01:00"
 title: "To read is to voyage through time"
 description: "-"
 dg-publish: true
@@ -12,7 +12,7 @@ edition:
 datePublished: 
 pageNumbers: 
 publisher: 
-genres:
+tags:
   - books
   - literacy
   - reading
