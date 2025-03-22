@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:26.951+01:00"
+date: "2025-03-22T20:50:41.358+01:00"
 title: "Export to files like plaintext, CSV tables, JSON object, or encrypted binaries"
 description: "-"
 dg-publish: true
@@ -76,5 +76,5 @@ Sources:
 Related:
 
 Tags:
-[Handle PowerShell data - Handle, Import, Export, Filter and RegEx query objects](../powershell/data/index.md)
+[Handle data - Handle, Import, Export, Filter and RegEx query objects in PowerShell](./powershell/data/index.md)
 Document conversion
