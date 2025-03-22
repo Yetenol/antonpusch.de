@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.758+01:00"
+date: "2025-03-22T23:36:00.937+01:00"
 title: Gravity Falls
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 15 Jun 2012
 type: series
 runtime: 23 min
 number-of-seasons: 2
-genres:
+tags:
   - Animation
   - Action
   - Adventure
