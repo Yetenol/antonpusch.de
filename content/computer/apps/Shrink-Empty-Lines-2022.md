@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.158+01:00"
+date: "2025-03-22T23:45:55.037+01:00"
 title: "Shrink Empty Lines 2022"
 description: "-"
 dg-folder: computer/apps
@@ -19,7 +19,6 @@ synopsis:
 extends-app: "[[Visual Studio|Visual Studio]]"
 ---
 
-![thumbnail](https://visualstudioplatformteam.gallerycdn.vsassets.io/extensions/visualstudioplatformteam/syntacticlinecompression2022/17.0/1630426367563/Microsoft.VisualStudio.Services.Icons.Default) Shrink Empty Lines 2022 is a [Visual Studio](./Visual-Studio.md) extension. 
-
-- Install extension via [View in marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.SyntacticLineCompression2022)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
