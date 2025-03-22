@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.749+01:00"
+date: "2025-03-22T23:36:01.560+01:00"
 title: Lucifer
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 25 Jan 2016
 type: series
 runtime: 42 min
 number-of-seasons: 6
-genres:
+tags:
   - Crime
   - Drama
   - Fantasy
