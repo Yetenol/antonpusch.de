@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.732+01:00"
+date: "2025-03-22T23:36:03.075+01:00"
 title: The Last of Us
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 15 Jan 2023
 type: series
 runtime: 18S min
 number-of-seasons: 1
-genres:
+tags:
   - Action
   - Adventure
   - Drama
