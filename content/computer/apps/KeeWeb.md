@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.167+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "KeeWeb"
 description: "-"
 dg-folder: computer/apps
@@ -13,14 +13,9 @@ categories:
 synopsis: Free cross-platform password manager compatible with KeePass
 ---
 
-KeeWeb is a [essential](install%20essential%20apps.md.md), [storage](install%20storage%20apps.md.md) app. Free cross-platform password manager compatible with KeePass
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e KeeWeb.KeeWeb
-  ```
-- Download it from the [publisher's website](https://keeweb.info/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Motivation
 
