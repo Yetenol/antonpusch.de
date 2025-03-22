@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:50:58.835+01:00"
+date: "2025-03-22T21:55:55.934+01:00"
 title: "Essentials"
 description: "Access documentation, log data, handle errors in PowerShell"
 dg-publish: true
@@ -28,9 +28,9 @@ Get-Command -Noun Process*
 
 List available properties, methods for an object or command
 ```powershell
-Get-Item . | Get-Member -MemberType Properties
+h | Get-Member -MemberType Properties
 ```
-- abbreviate as `Get-Item . | gm`
+- abbreviate as `h | gm`
 - outputs Attributes, CreationTime, CreationTimeUtc, Exists, Extension, FullName, …
 
 Output a property
