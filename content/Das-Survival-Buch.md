@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.909+01:00"
+date: "2025-03-22T23:45:55.064+01:00"
 title: Das Survival-Buch
 description: |
   Endlich gibt es den unverzichtbaren, unzerstörbaren Führer für alle kritischen Lebenslagen. Survivalexperten bieten illustrierte Schritt-für-Schritt-Anleitungen für schnelle Hilfe, wenn: - ein Hai naht ... - Killerbienen angreifen ... - Sie aus einem fahrenden Auto heraus müssen ... - sich der Fallschirm nicht öffnet ... und für zahllose andere Extremsituationen!
