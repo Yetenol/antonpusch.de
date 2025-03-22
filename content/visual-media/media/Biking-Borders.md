@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.763+01:00"
+date: "2025-03-22T23:36:00.138+01:00"
 title: Biking Borders
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 19 Feb 2021
 type: movie
 runtime: 90 min
 number-of-seasons: 
-genres:
+tags:
   - Documentary
 directors:
   - Max Jabs
