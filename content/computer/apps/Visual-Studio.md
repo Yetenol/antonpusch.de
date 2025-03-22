@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.158+01:00"
+date: "2025-03-22T23:45:55.054+01:00"
 title: "Visual Studio"
 description: "-"
 dg-folder: computer/apps
@@ -25,14 +25,9 @@ dg-content-classes:
   - cards
 ---
 
-Visual Studio is a [development](install%20development%20apps.md.md) app. 
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Microsoft.VisualStudio.2022.Community --override "--quiet --add Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions"
-  ```
-- Download it from the [publisher's website](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Languages
 
