@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T21:18:54.485+01:00"
+date: "2025-03-22T21:41:16.063+01:00"
 title: "Known folders"
 description: "Access the recycle bin, desktop, downloads folder"
 dg-publish: true
@@ -10,6 +10,7 @@ dg-filename: index
 [User folders - Locate or redirect the download, desktop, This PC folder](./User-folders.md)
 
 ```powershell
+[Environment]::GetFolderPath("MyPictures")
 $env:Pictures = (New-Object -ComObject Shell.Application).NameSpace('shell:My Pictures').Self.Path
 ```
 
@@ -18,6 +19,13 @@ $env:Pictures = (New-Object -ComObject Shell.Application).NameSpace('shell:My Pi
 ```powershell
 explorer "shell:::{088e3905-0323-4b02-9826-5d99428e115f}"
 ```
+
+[CSIDL folders](./CSIDL-folders.md)
+
+```powershell
+(New-Object -ComObject Shell.Application).NameSpace(0x7).Self.Path
+```
+
 
 # Import all user folders as environment variables
 
