@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.181+01:00"
+date: "2025-03-22T23:45:54.998+01:00"
 title: "Digital Garden"
 description: "-"
 dg-folder: computer/apps
@@ -22,12 +22,9 @@ modportal1-id: digitalgarden
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-Digital Garden is a [Obsidian](./Obsidian.md) extension about publishing. Publish your notes to a digital garden for others to enjoy. 
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=digitalgarden), [Webstore](https://obsidian.md/plugins?id=digitalgarden)
-- Install extension via 
-- Download the [latest release](https://github.com/oleeskild/obsidian-digital-garden/releases/latest) of its source code [repository](https://github.com/oleeskild/obsidian-digital-garden) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Setup note publishing
 
