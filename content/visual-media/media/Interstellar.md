@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.752+01:00"
+date: "2025-03-22T23:21:28.300+01:00"
 title: Interstellar
 description: "-"
 dg-folder: visual-media/media
@@ -74,4 +74,3 @@ Finally I would like to mention the only three things that are good in this film
 2.  The apocalypse on Earth is realistic. It's not a huge meteor or a nuclear war or anything like that. It's shown in a simple, effective and believable way.
 3.  The robots were funny.
 
-#obsidian/stichpunkte
