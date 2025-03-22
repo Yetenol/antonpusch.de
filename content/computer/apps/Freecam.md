@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.180+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Freecam"
 description: "-"
 dg-folder: computer/apps
@@ -20,7 +20,6 @@ extends-app: "[[Minecraft|Minecraft]]"
 modportal1-id: free-cam
 ---
 
-![thumbnail](https://media.forgecdn.net/avatars/467/941/637750574586450724.png) Freecam is a [Minecraft](./Minecraft.md) extension.  This mod allows you to control your camera separately from your player. While it is enabled, you can fly around and travel through blocks within your render distance. Disabling it will restore you to your original position. This can be useful for quickly inspecting builds and exploring your world.
-
-- Install extension via [CurseForge](https://www.curseforge.com/minecraft/mc-mods/free-cam)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
