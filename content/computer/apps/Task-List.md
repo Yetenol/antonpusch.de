@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.152+01:00"
+date: "2025-03-22T23:45:55.046+01:00"
 title: "Task List"
 description: "-"
 dg-folder: computer/apps
@@ -22,9 +22,8 @@ synopsis: |
 extends-app: "[[Factorio - A game about automation, logistics and network optimizations|Factorio - A game about automation, logistics and network optimizations]]"
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/9c1fa1d5fbf7e1f203c2e7e36dc54d4c635ceae6.thumb.png) Task List is a [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension about collaboration, organisation, multiplayer. Keep track of your tasks in a simple and unobtrusive interface. Similar to Todo List. 
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/TaskList)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Task List is a simple and unobtrusive interface for managing your tasks. Keep track of ongoing issues, prioritize, and collaborate with your friends in multiplayer. Create as many levels of subtasks as you need to organize your work.
