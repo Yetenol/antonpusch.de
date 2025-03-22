@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.131+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Obsidian Git"
 description: "-"
 dg-folder: computer/apps
@@ -21,11 +21,9 @@ synopsis: |
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-Obsidian Git is a [Obsidian](./Obsidian.md) extension about synchronization, version control, backup. Plugin that allows you to back up your Obsidian.md vault to a remote Git repository (e.g. private repo on GitHub). 
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=obsidian-git), [Webstore](https://obsidian.md/plugins?id=obsidian-git)
-- Download the [latest release](https://github.com/denolehov/obsidian-git/releases/latest) of its source code [repository](https://github.com/denolehov/obsidian-git) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Synchronize vault between different devices
 
