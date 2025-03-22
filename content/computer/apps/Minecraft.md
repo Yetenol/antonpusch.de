@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.136+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Minecraft"
 description: "-"
 dg-folder: computer/apps
@@ -29,15 +29,9 @@ dg-content-classes:
   - cards
 ---
 
-![thumbnail](https://i.redd.it/ak9w918zi5r81.png) Minecraft also called Minecraft Java, Modrinth Launcher is a [gaming](install%20gaming%20apps.md.md) app. The Modrinth App is a unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in one neat little package.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Modrinth.ModrinthApp
-  ```
-- Download the [latest release](https://github.com/modrinth/theseus/releases/latest) of its source code [repository](https://github.com/modrinth/theseus) on GitHub
-- Download it from the [publisher's website](https://modrinth.com/app)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Change app directory to fix structure blocks being unable to be saved
 ```
