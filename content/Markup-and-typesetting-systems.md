@@ -8,7 +8,7 @@ aliases:
 ---
 # Content
 
-[Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing AMSmath](../latex/math/index.md)
+[Math - Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing AMSmath](./latex/math/index.md)
 
 $$
 \begin{align*} \qquad&\hspace{-2em}
@@ -18,11 +18,11 @@ $$
 \end{align*}
 $$
 
-[Tables - Separate content in plaintext and styles like alignment, spacing, markup, and calculation, utilizing Tabularray](../latex/tables/index.md)
+[Tables - Separate content in plaintext and styles like alignment, spacing, markup, and calculation, utilizing Tabularray](./latex/tables/index.md)
 
 ![table headers.svg](./table-headers.svg)
 
-[Code Snippets - Print source code with syntax highlighting in latex with listings](../latex/Code-Snippets.md)
+[Code Snippets - Print source code with syntax highlighting in latex with listings](./latex/Code-Snippets.md)
 
 ![code block.svg](./code-block.svg)
 
@@ -35,7 +35,7 @@ $$
 
 ![pyplot_features_demo.svg](./pyplot_features_demo.svg)
 
-[Dataview - Create dynamic tables using data stored in note properties](../computer/apps/Dataview.md)
+[Dataview - Create dynamic tables using data stored in note properties](./computer/apps/Dataview.md)
 
 - Convert dataview to static markdown for publishing
 

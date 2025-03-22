@@ -19,6 +19,6 @@ dg-publish: true
 Sources:
 
 Related:
-[Visual Media](../visual-media/index.md)
+[Visual Media](./visual-media/index.md)
 
 Tags:

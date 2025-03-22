@@ -35,4 +35,4 @@ Related:
 [Registry - Read and write to the registry](./Registry.md)
 
 Tags:
-[Windows](../windows/index.md)
+[Windows](./windows/index.md)

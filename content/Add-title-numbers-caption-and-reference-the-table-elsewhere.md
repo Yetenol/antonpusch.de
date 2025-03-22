@@ -35,7 +35,7 @@ Override the **entry** in the *List of Tables*, see $\mathrm{2b}$
 - Write `\listoftables` and the end of the document
 
 **Reference** a table using **label**, see $\mathrm{2c}$
-- See [Layout the table](../latex/tables/Layout-the-table.md) for clickable, colored links
+- See [Layout the table](./latex/tables/Layout-the-table.md) for clickable, colored links
 - Write `\ref{tab:identifiers}` to reference the table elsewhere
 - Use style **label=tab:identifiers** and optionally caption
 ```latex
@@ -45,7 +45,7 @@ See table \ref{tab:identifiers} for details. \\
 
 Put table in a **floating** environment, see $\mathrm{2d}$
 - table reserves the entire line width
-- See [Layout the table](../latex/tables/Layout-the-table.md) to set default placement specifiers
+- See [Layout the table](./latex/tables/Layout-the-table.md) to set default placement specifiers
 ```latex
 See table \ref{tab:identifiers} for details.
 \begin{table}[hbp]
