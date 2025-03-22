@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.136+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Pavement Drive Assist"
 description: "-"
 dg-folder: computer/apps
@@ -20,8 +20,6 @@ synopsis: |
 extends-app: "[[Factorio - A game about automation, logistics and network optimizations|Factorio - A game about automation, logistics and network optimizations]]"
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/c553302a8a7d9c58823b149ed32d585511a5ef9f.thumb.png) Pavement Drive Assist is a [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension about transportation. Introduces a driver assistance system that autonomously follows paved roads, while maintaining a preset cruise speed if desired. 
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/PavementDriveAssistContinued)
-- Download the [latest release](https://github.com/azaghal/Factorio-PavementDriveAssistContinued/releases/latest) of its source code [repository](https://github.com/azaghal/Factorio-PavementDriveAssistContinued) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
