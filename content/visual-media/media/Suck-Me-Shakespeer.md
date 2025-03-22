@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.737+01:00"
+date: "2025-03-22T23:36:02.542+01:00"
 title: Suck Me Shakespeer
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 07 Nov 2013
 type: movie
 runtime: 119 min
 number-of-seasons: 
-genres:
+tags:
   - Comedy
 directors:
   - Bora Dagtekin
