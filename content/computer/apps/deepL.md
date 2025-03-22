@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:55.054+01:00"
 title: "deepL"
 description: "-"
 dg-folder: computer/apps
@@ -22,9 +22,6 @@ modportal1-id: deepl
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-deepL is a [Obsidian](./Obsidian.md) extension about editing translation. Allows translation of selected texts into more than 25 languages with DeepL. 
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=deepl), [Webstore](https://obsidian.md/plugins?id=deepl)
-- Install extension via 
-- Download the [latest release](https://github.com/friebetill/obsidian-deepl/releases/latest) of its source code [repository](https://github.com/friebetill/obsidian-deepl) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
