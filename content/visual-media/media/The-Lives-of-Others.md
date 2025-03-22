@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.728+01:00"
+date: "2025-03-22T23:36:03.176+01:00"
 title: The Lives of Others
 description: "-"
 dg-folder: visual-media/media
@@ -10,7 +10,7 @@ release-date: 30 Mar 2007
 type: movie
 runtime: 137 min
 number-of-seasons: 
-genres:
+tags:
   - Drama
   - Mystery
   - Thriller
