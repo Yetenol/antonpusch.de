@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T10:36:38.457+01:00"
+date: "2025-03-22T21:32:16.130+01:00"
 title: "User folders"
 description: "Locate or redirect the download, desktop, This PC folder"
 dg-publish: true
@@ -17,6 +17,8 @@ Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer
 **Resolve one location**  
 - return the location as a string
 ```powershell
+${env:ProgramFiles(x86)}
+[Environment]::GetFolderPath("MyPictures")
 $env:Pictures = (New-Object -ComObject Shell.Application).NameSpace('shell:My Pictures').Self.Path
 $env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
 ```
