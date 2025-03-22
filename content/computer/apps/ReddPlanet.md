@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.146+01:00"
+date: "2025-03-22T23:45:55.037+01:00"
 title: "ReddPlanet"
 description: "-"
 dg-folder: computer/apps
@@ -20,13 +20,9 @@ categories:
 synopsis: An app for browsing reddit.
 ---
 
-ReddPlanet is a **discarded** [personalization](install%20personalization%20apps.md.md), [entertainment](install%20entertainment%20apps.md.md) app. An app for browsing reddit.
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=9NBLGGH4S44M&mode=mini), show in [webstore](https://microsoft.com/store/apps/9NBLGGH4S44M) or invoke:
-  ```powershell
-  winget install -e 9NBLGGH4S44M --accept-package-agreements
-  ```
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - no sign in required
 
