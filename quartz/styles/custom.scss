@@ -80,3 +80,25 @@ td>pre>code {
 td>pre {
     padding: unset;
 }
+
+// Smaller font size for headings
+h1 {
+    font-size: 1.4rem !important;
+    margin-top: 1.9rem !important;
+    margin-bottom: 1rem !important;
+}
+
+h2 {
+    font-size: 1.12rem !important;
+    margin-top: 1.62rem !important;
+    margin-bottom: 1rem !important;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+}
