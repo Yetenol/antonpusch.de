@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.166+01:00"
+date: "2025-03-22T23:29:09.187+01:00"
 title: "VLC"
 description: "-"
 dg-folder: computer/apps
@@ -27,7 +27,7 @@ If installed through winget and dialog `Privacy and Network Access Policy` appea
 
 Open `Preferences` [Ctrl + P]
 - Open `Interface` tab 
-- `Always` =: Continue playback? _<[#Playlist and Instances]>_
+- `Always` =: Continue playback? in Playlist and Instances
 
 Open `Subtitles / OSD`
 - [ ] Show media title on video start _# On Screen Display_
