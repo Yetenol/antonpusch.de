@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.746+01:00"
+date: "2025-03-22T23:36:01.904+01:00"
 title: Person of Interest
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 22 Sep 2011
 type: series
 runtime: 43 min
 number-of-seasons: 5
-genres:
+tags:
   - Action
   - Crime
   - Drama
