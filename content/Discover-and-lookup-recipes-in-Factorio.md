@@ -19,4 +19,4 @@ Sources:
 Related:
 
 Tags:
-[Factorio - A game about automation, logistics and network optimizations](../computer/apps/Factorio.md)
+[Factorio - A game about automation, logistics and network optimizations](./computer/apps/Factorio.md)
