@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.739+01:00"
+date: "2025-03-22T23:36:02.505+01:00"
 title: Stowaway
 description: "-"
 dg-folder: visual-media/media
@@ -10,7 +10,7 @@ release-date: 22 Apr 2021
 type: movie
 runtime: 116 min
 number-of-seasons: 
-genres:
+tags:
   - Adventure
   - Sci-Fi
   - Thriller
