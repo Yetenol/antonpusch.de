@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.152+01:00"
+date: "2025-03-22T23:45:55.048+01:00"
 title: "Terminal Command Keys"
 description: "-"
 dg-folder: computer/apps
@@ -21,11 +21,9 @@ synopsis: |
 extends-app: "[[Visual Studio Code|Visual Studio Code]]"
 ---
 
-![thumbnail](https://cdn.vsassets.io/v/M226_20230814.3/_content/Header/default_icon_128.png) Terminal Command Keys is a [Visual Studio Code](./Visual-Studio-Code.md) extension about version control. Assign terminal commands to a keybinding. 
-
-- Install extension via [Extensions](vscode:extension/petekinnecom.terminal-command-keys), [Web Marketplace](https://marketplace.visualstudio.com/items?itemName=petekinnecom.terminal-command-keys)
-- Download the [latest release](https://github.com/petekinnecom/terminal-command-keys.git/releases/latest) of its source code [repository](https://github.com/petekinnecom/terminal-command-keys.git) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Open current file in Obsidian using `[F10]`
 
