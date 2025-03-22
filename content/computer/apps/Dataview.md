@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.998+01:00"
 title: "Dataview"
 description: "Create dynamic tables using data stored in note properties"
 dg-folder: computer/apps
@@ -21,11 +21,9 @@ synopsis: |
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-Dataview - Create dynamic tables using data stored in note properties is a [Obsidian](./Obsidian.md) extension about dynamic content. Dataview is a live index and query engine over your knowledge base. You can associate _data_ (like tags, dates, snippets, numbers, and so on) with your markdown pages, and then _query_ (like filter, sort, transform) this data. 
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=dataview), [Webstore](https://obsidian.md/plugins?id=dataview)
-- Download the [latest release](https://github.com/blacksmithgu/obsidian-dataview/releases/latest) of its source code [repository](https://github.com/blacksmithgu/obsidian-dataview) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Guides
 
