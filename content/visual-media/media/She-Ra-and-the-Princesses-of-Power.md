@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.739+01:00"
+date: "2025-03-22T23:36:02.143+01:00"
 title: She-Ra and the Princesses of Power
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 13 Nov 2018
 type: series
 runtime: 30S min
 number-of-seasons: 5
-genres:
+tags:
   - Animation
   - Action
   - Adventure
