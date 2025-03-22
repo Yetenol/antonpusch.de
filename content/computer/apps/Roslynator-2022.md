@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.146+01:00"
+date: "2025-03-22T23:45:55.037+01:00"
 title: "Roslynator 2022"
 description: "-"
 dg-folder: computer/apps
@@ -19,7 +19,6 @@ synopsis:
 extends-app: "[[Visual Studio|Visual Studio]]"
 ---
 
-![thumbnail](https://josefpihrt.gallerycdn.vsassets.io/extensions/josefpihrt/roslynator2022/4.13.0/1739135512551/Microsoft.VisualStudio.Services.Icons.Default) Roslynator 2022 is a [Visual Studio](./Visual-Studio.md) extension. 
-
-- Install extension via [View in marketplace](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2022)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
