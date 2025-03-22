@@ -6,23 +6,23 @@ dg-publish: true
 ---
 # Dependencies
 
-[TeX Live](../computer/apps/TeX-Live.md)
+[TeX Live](./computer/apps/TeX-Live.md)
 - Install from website [Easy install - tug.org](https://www.tug.org/texlive/windows.html) 
 - Provides `pdflatex` to compile LaTeX source code to PDF
 - Provides `texfot` to filter pdflatex stdout to only relevant messages , see [CTAN: Package texfot](https://ctan.org/pkg/texfot)
 - Provides `pdfcrop` to trim PDF of whitespace border, see [CTAN: Package pdfcrop](https://ctan.org/pkg/pdfcrop)
 
-[pdf2svg](../computer/apps/pdf2svg)
+[pdf2svg](./computer/apps/pdf2svg)
 - Convert PDF to SVG
 - Clone repository [dawbarton/pdf2svg](https://github.com/dawbarton/pdf2svg)
 - Add `dist-64bits` subfolder to PATH environment variable
 
-[Execute Code](../computer/apps/Execute-Code.md)
+[Execute Code](./computer/apps/Execute-Code.md)
 - Install Obsidian extension via Comminity plugins, Webstore
 - Generate LaTeX figure from Obsidian code block
 
 Python
-- [Python](../computer/apps/Python.md)
+- [Python](./computer/apps/Python.md)
 - Install from website [Downloads - python.org](https://www.python.org/downloads/)
 - Execute tools from Obsidian code blocks
 
@@ -219,6 +219,6 @@ Sources:
 Related:
 
 Tags:
-[TeX Live](../computer/apps/TeX-Live.md)
-[pdf2svg](../computer/apps/pdf2svg)
-[Python](../computer/apps/Python.md)
+[TeX Live](./computer/apps/TeX-Live.md)
+[pdf2svg](./computer/apps/pdf2svg)
+[Python](./computer/apps/Python.md)
