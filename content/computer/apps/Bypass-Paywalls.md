@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.987+01:00"
 title: "Bypass Paywalls"
 description: "-"
 dg-folder: computer/apps
@@ -18,10 +18,9 @@ categories:
 synopsis: Extension allows you to read articles from (supported) sites that implement a paywall.
 ---
 
-![thumbnail](https://gitlab.com/uploads/-/system/project/avatar/22623311/thailand-magnolia-emblem.jpg?width=64) Bypass Paywalls is a app. Extension allows you to read articles from (supported) sites that implement a paywall.
-
-- Download it from the [publisher's website](https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 ---
 Sources:
