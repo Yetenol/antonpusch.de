@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.136+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Plotly Python"
 description: "-"
 dg-folder: computer/apps
@@ -20,12 +20,9 @@ synopsis: Generate interactive, publication-quality graphs
 extends-app: "[[Python|Python]]"
 ---
 
-![thumbnail](https://avatars.githubusercontent.com/u/5997976?s=280&v=4) Plotly Python is a [Python](./Python.md) extension about visualisation. Generate interactive, publication-quality graphs
-
-- Install extension via <pre><code class='language-powershell'>pip install plotly==6.0.0rc0</code></pre>
-- Download the [latest release](https://github.com/plotly/plotly.py/releases/latest) of its source code [repository](https://github.com/plotly/plotly.py) on GitHub
-- Download it from the [publisher's website](https://plotly.com/python/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 ![plotly 1.svg](plotly%201.svg)
 
 ```python
