@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.941+01:00"
+date: "2025-03-22T23:45:55.064+01:00"
 title: Einstein
 description: |
   From Isaacson, the bestselling author of "Benjamin Franklin," comes the first full biography of Albert Einstein since all his papers have become available--a fully realized portrait of a premier icon of his era.
