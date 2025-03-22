@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:21:28.300+01:00"
+date: "2025-03-22T23:36:01.301+01:00"
 title: Interstellar
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 07 Nov 2014
 type: movie
 runtime: 169 min
 number-of-seasons: 
-genres:
+tags:
   - Adventure
   - Drama
   - Sci-Fi
