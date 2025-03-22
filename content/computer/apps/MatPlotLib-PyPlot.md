@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.166+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "MatPlotLib PyPlot"
 description: "-"
 dg-folder: computer/apps
@@ -20,11 +20,9 @@ synopsis: Generate GUI, SVG, PDF figures with an implicit, MATLAB-like interface
 extends-app: "[[Python|Python]]"
 ---
 
-![thumbnail](https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg) MatPlotLib PyPlot is a [Python](./Python.md) extension about visualisation. Generate GUI, SVG, PDF figures with an implicit, MATLAB-like interface
-
-- Install extension via <pre><code class='language-powershell'>pip install matplotlib</code></pre>
-- Download it from the [publisher's website](https://matplotlib.org/stable/gallery/index.html)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 
 > Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations.
