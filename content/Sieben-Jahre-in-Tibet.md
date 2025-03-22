@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.986+01:00"
+date: "2025-03-22T23:45:55.071+01:00"
 title: Sieben Jahre in Tibet
 description: |
   "Funfzig Jahre nach der spektakulären Flucht Heinrich Harrers über den Himalaja nach Tibet kommt das Abenteuer des Jahrhunderts in der Verfilmung von Jean-Jacques Annaud mit Brad Pitt in der Hauptrolle in die Kinos. Der Tibetkenner Heinrich Harrer lebte als einziger Europäer am tibetanischen Königshof und wurde zum persönlichen Freund des Dalai Lama. Übersetzungen in mehr als vierzig Sprachen und Auflagen in Millionenhöhe liessen seine Erinnerungen zu einem Weldbestseller werden.
