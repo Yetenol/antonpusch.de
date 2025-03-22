@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:40:38.099+01:00"
+date: "2025-03-23T00:00:17.590+01:00"
 title: "Visual Media"
 description: "-"
 dg-publish: true
@@ -12,7 +12,6 @@ dg-filename: index
 - [Enjoy a favorite television series again](./Enjoy-a-favorite-television-series-again.md)
 - [Watch a new movie](./Watch-a-new-movie.md)
 - [Watch a new television series](./Watch-a-new-television-series.md)
-- [Berlinale 2022 - Internationale Filmfestspiele Berlin](./Berlinale-2022.md)
 - What kind of cinematography I like
 
 YouTube
