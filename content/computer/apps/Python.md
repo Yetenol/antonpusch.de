@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.143+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Python"
 description: "-"
 dg-folder: computer/apps
@@ -26,14 +26,9 @@ dg-content-classes:
 ---
 
 
-Python is a [development](install%20development%20apps.md.md) app. Python is a high-level, versatile programming language known for its clean syntax and readability, making it popular for everything from web development to data science and artificial intelligence.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Python.Python.3.13
-  ```
-- Download it from the [publisher's website](https://www.python.org/downloads/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Troubleshoot PATH setup
 - [List all apps in PATH locations](../../powershell/develop/List-all-apps-in-PATH-locations.md)
