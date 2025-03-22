@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.136+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Moodle"
 description: "-"
 dg-folder: computer/apps
@@ -19,10 +19,9 @@ synopsis: |
   Access your online courses with the official Moodle mobile app
 ---
 
-Moodle is a **discarded** app. Access your online courses with the official Moodle mobile app 
-
-- Download it from the [publisher's website](https://play.google.com/store/apps/details?id=com.moodle.moodlemobile)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Wofür nutzt die die Moddle-App? Ich hab sie lange genutzt, bin dieses Semester aber wieder größtenteils auf die auf die Weboberfläche zurückgekehrt.
 
