@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:32.034+01:00"
+date: "2025-03-22T23:45:55.071+01:00"
 title: Wer wir sind
 description: |
   Bauplan für die Seele Wie funktioniert der Mensch? Gibt es einen Bauplan für die Psyche, ein geistiges Grundgerüst, das alle Menschen teilen? Bestseller-Autorin Stefanie Stahl liefert faszinierende Einblicke in das Zusammenspiel von Wahrnehmung, Bewusstsein und Verhalten. Leichtfüßig und fundiert erklärt sie, warum Glücksgefühle unsere Lebensdroge sind, wie subjektiv die Wahrnehmung von der Welt ist und wie sich durch Erziehung und Erfahrungen das Selbstbild formt. Spannende Protokolle aus der Therapiepraxis sowie wertvolle Impulse zur Lösung seelischer Konflikte machen diese Reise in unser Innerstes zu einem wahren Erlebnis. Ein umfassender Einblick in unsere innere Schaltzentrale von Deutschlands Psychologin Nr. 1.
