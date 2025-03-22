@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.151+01:00"
+date: "2025-03-22T23:45:55.037+01:00"
 title: "SmallOnlineTools"
 description: "-"
 dg-folder: computer/apps
@@ -19,11 +19,9 @@ synopsis: Your one-stop shop for a wide range of easy-to-use online tools to sim
 extends-app: "[[Visual Studio Code|Visual Studio Code]]"
 ---
 
-![thumbnail](https://harveenatwal.gallerycdn.vsassets.io/extensions/harveenatwal/vscode-webtilities/3.1.1/1721716153159/Microsoft.VisualStudio.Services.Icons.Default) SmallOnlineTools is a [Visual Studio Code](./Visual-Studio-Code.md) extension. Your one-stop shop for a wide range of easy-to-use online tools to simplify your daily tasks.
-
-- Install extension via [Extensions](vscode:extension/HarveenAtwal.vscode-webtilities), [Web Marketplace](https://marketplace.visualstudio.com/items?itemName=HarveenAtwal.vscode-webtilities)
-- Download it from the [publisher's website](https://smallonlinetools.net/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 
 ---
