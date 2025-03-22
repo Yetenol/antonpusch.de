@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.181+01:00"
+date: "2025-03-22T23:45:55.054+01:00"
 title: "drawio Diagrams"
 description: "-"
 dg-folder: computer/apps
@@ -15,18 +15,9 @@ categories:
   - Education
 ---
 
-drawio Diagrams is a **discarded** [education](install%20education%20apps.md.md) app. 
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=9MVVSZK43QQW&mode=mini), show in [webstore](https://microsoft.com/store/apps/9MVVSZK43QQW) or invoke:
-  ```powershell
-  winget install -e 9MVVSZK43QQW --accept-package-agreements
-  ```
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e JGraph.Draw
-  ```
-- Download it from the [publisher's website](https://github.com/jgraph/drawio-desktop)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 ## Setup GUI
 
