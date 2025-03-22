@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.739+01:00"
+date: "2025-03-22T23:36:01.944+01:00"
 title: Picture a Scientist
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 12 Jun 2020
 type: movie
 runtime: 103 min
 number-of-seasons: 
-genres:
+tags:
   - Documentary
 directors:
   - Ian Cheney
