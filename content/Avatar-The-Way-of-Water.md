@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T22:56:24.685+01:00"
+date: "2025-03-22T23:35:59.674+01:00"
 title: "Avatar: The Way of Water"
 description: "-"
 dg-publish: true
@@ -14,7 +14,7 @@ release-date: 16 Dec 2022
 type: movie
 runtime: 192 min
 number-of-seasons: 
-genres:
+tags:
   - Action
   - Adventure
   - Fantasy
