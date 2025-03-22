@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T22:57:58.455+01:00"
+date: "2025-03-22T23:35:59.825+01:00"
 title: Avatar
 description: "-"
 dg-publish: true
@@ -14,7 +14,7 @@ release-date: 18 Dec 2009
 type: movie
 runtime: 162 min
 number-of-seasons: 
-genres:
+tags:
   - Action
   - Adventure
   - Fantasy
