@@ -5,7 +5,7 @@ description: "-"
 dg-publish: true
 ---
 
-[PyX](../computer/apps/PyX.md)
+[PyX](./computer/apps/PyX.md)
 
 ![pyx multple.svg](./pyx-multple.svg)
 
