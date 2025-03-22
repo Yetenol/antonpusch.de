@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Anton's digital garden",
-    pageTitleSuffix: "Anton's DG",
+    pageTitle: "Anton's Digital Garden",
+    pageTitleSuffix: " - Anton's DG",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -69,7 +69,7 @@ const config: QuartzConfig = {
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      Plugin.CrawlLinks({ markdownLinkResolution: "relative" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
