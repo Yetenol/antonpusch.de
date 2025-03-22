@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.760+01:00"
+date: "2025-03-22T23:36:00.225+01:00"
 title: Capricorn One
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 05 May 1978
 type: movie
 runtime: 123 min
 number-of-seasons: 
-genres:
+tags:
   - Action
   - Adventure
   - Drama
