@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.998+01:00"
 title: "CurseForge"
 description: "-"
 dg-folder: computer/apps
@@ -24,14 +24,9 @@ dg-content-classes:
   - cards
 ---
 
-CurseForge is a **discarded** [gaming](install%20gaming%20apps.md.md) app. 
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Overwolf.CurseForge
-  ```
-- Download it from the [publisher's website](https://download.curseforge.com/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - launch CurseForge and skip intro
 - install Minecraft with *Standard* modding folder
