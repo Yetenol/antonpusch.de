@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T22:58:44.110+01:00"
+date: "2025-03-22T23:36:03.325+01:00"
 title: "The Lord of the Rings: The Return of the King"
 description: "-"
 dg-publish: true
@@ -14,7 +14,7 @@ release-date: 17 Dec 2003
 type: movie
 runtime: 201 min
 number-of-seasons: 
-genres:
+tags:
   - Adventure
   - Drama
   - Fantasy
