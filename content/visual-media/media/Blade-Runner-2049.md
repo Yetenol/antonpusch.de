@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:02:02.686+01:00"
+date: "2025-03-22T23:36:00.145+01:00"
 title: Blade Runner 2049
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 06 Oct 2017
 type: movie
 runtime: 164 min
 number-of-seasons: 
-genres:
+tags:
   - Action
   - Drama
   - Mystery
