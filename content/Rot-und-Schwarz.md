@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.972+01:00"
+date: "2025-03-22T23:45:55.071+01:00"
 title: Rot und Schwarz
 description: ""
 dg-publish: true
