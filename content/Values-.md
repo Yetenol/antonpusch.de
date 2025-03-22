@@ -16,4 +16,4 @@ Sources:
 Related:
 
 Tags:
-[LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](../latex/index.md)
+[LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex/index.md)
