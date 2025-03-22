@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.967+01:00"
+date: "2025-03-22T23:45:55.070+01:00"
 title: Jenseits der blauen Grenze
 description: Die Schülerin Hanna lässt sich von ihrem besten Freund Andreas überreden mit ihm über die Ostsee schwimmend aus der DDR zu flüchten. Wird ihre Flucht glücken
 dg-publish: true
