@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.191+01:00"
+date: "2025-03-22T23:45:54.971+01:00"
 title: "Adobe Acrobat Reader"
 description: "-"
 dg-folder: computer/apps
@@ -15,31 +15,22 @@ categories:
   - Office
 ---
 
-Adobe Acrobat Reader is a **discarded** [office](install%20office%20apps.md.md) app. 
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=XPDP273C0XHQH2&mode=mini) or invoke:
-  ```powershell
-  winget install -e XPDP273C0XHQH2 --accept-package-agreements
-  ```
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Adobe.Acrobat.Reader.64-bit
-  ```
-- Download it from the [publisher's website](https://get.adobe.com/reader/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - Completely hide the Task Pane on the right-hand side
 
 >  Open `Menu > Edit > Preferences`
 >
 >> Open `Documents` tab 
->> - [x] Remember current state of Tools Pane *< [#Open Settings]*
+>> - [x] Remember current state of Tools Pane in Open Settings
 >>
 >> Open `Language` tab
->> - `Same as operating system` =: Application Language *< [#Language]*
+>> - `Same as operating system` =: Application Language in Language
 >>
 >> Open `General` tab
->> - [x] Enable PDF thumbnails in Windows Explorer *< [#Basic Tools]*
+>> - [x] Enable PDF thumbnails in Windows Explorer in Basic Tools
 >>
 >> Open `Page Display` tab
->> - `Two-Up Continuous` =: Page Layout *< [#Default Layout and Zoom]*
+>> - `Two-Up Continuous` =: Page Layout in Default Layout and Zoom
