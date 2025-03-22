@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.131+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "OBS Studio"
 description: "-"
 dg-folder: computer/apps
@@ -15,19 +15,9 @@ categories:
 synopsis: OBS Studio - Free and open source software for live streaming and screen recording
 ---
 
-OBS Studio is a [entertainment](install%20entertainment%20apps.md.md) app. OBS Studio - Free and open source software for live streaming and screen recording
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=XPFFH613W8V6LV&mode=mini) or invoke:
-  ```powershell
-  winget install -e XPFFH613W8V6LV --accept-package-agreements
-  ```
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e OBSProject.OBSStudio
-  ```
-- Download the [latest release](https://github.com/obsproject/obs-studio/releases/latest) of its source code [repository](https://github.com/obsproject/obs-studio) on GitHub
-- Download it from the [publisher's website](https://obsproject.com/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Output in display resolution
 
