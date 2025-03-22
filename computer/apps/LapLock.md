@@ -1,0 +1,22 @@
+---
+date: "2025-03-22T12:13:19.166+01:00"
+title: "LapLock"
+description: "-"
+dg-folder: computer/apps
+dg-publish: true
+not-in-use: true
+microsoft-id: 
+github-repo: dechamps/laplock
+github-release-filename: laplock.exe
+categories:
+  - Personalization
+---
+
+LapLock is a **discarded** [personalization](install%20personalization%20apps.md.md) app. 
+
+- Invoke the [installer](https://github.com/dechamps/laplock/releases/latest/download/laplock.exe) from the latest release of its source code [repository](https://github.com/dechamps/laplock) on GitHub
+  ```powershell
+  Invoke-WebRequest 'https://github.com/dechamps/laplock/releases/latest/download/laplock.exe' -OutFile "$env:Temp/laplock.exe"
+  if ($?) {Start-Process "$env:Temp/laplock.exe"}
+  ```
+
