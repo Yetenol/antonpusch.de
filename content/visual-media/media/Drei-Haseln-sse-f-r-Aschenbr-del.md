@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.758+01:00"
+date: "2025-03-22T23:36:00.625+01:00"
 title: Drei Haselnüsse für Aschenbrödel
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 16 Nov 1973
 type: movie
 runtime: 88 min
 number-of-seasons: 
-genres:
+tags:
   - Drama
   - Fantasy
   - Family
