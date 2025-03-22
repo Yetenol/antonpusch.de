@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:04:53.117+01:00"
+date: "2025-03-22T23:36:02.412+01:00"
 title: Spinning Out
 description: "-"
 dg-publish: true
@@ -14,7 +14,7 @@ release-date: 01 Jan 2020
 type: series
 runtime: 1 min
 number-of-seasons: 1
-genres:
+tags:
   - Drama
   - Sport
 directors:
