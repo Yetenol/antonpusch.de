@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.152+01:00"
+date: "2025-03-22T23:45:55.048+01:00"
 title: "Terminal"
 description: "-"
 dg-folder: computer/apps
@@ -12,17 +12,9 @@ categories:
 synopsis: The Windows Terminal is a modern, fast, efficient, powerful, and productive terminal application for users of command-line tools and shells like Command Prompt, PowerShell, and WSL. Its main features include multiple tabs, panes, Unicode and UTF-8 character support, a GPU accelerated text rendering engine, and custom themes, styles, and configurations.
 ---
 
-Terminal is a [essential](install%20essential%20apps.md.md), [development](install%20development%20apps.md.md) app. The Windows Terminal is a modern, fast, efficient, powerful, and productive terminal application for users of command-line tools and shells like Command Prompt, PowerShell, and WSL. Its main features include multiple tabs, panes, Unicode and UTF-8 character support, a GPU accelerated text rendering engine, and custom themes, styles, and configurations.
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=9N0DX20HK701&mode=mini), show in [webstore](https://microsoft.com/store/apps/9N0DX20HK701) or invoke:
-  ```powershell
-  winget install -e 9N0DX20HK701 --accept-package-agreements
-  ```
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Microsoft.WindowsTerminal
-  ```
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Cloud synchronization
 
