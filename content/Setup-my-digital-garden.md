@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:23:20.808+01:00"
+date: "2025-03-22T21:00:57.334+01:00"
 title: "Setup my digital garden"
 description: "-"
 dg-publish: true
@@ -42,7 +42,6 @@ Component.Footer({
 ## Generate sanitized filenames
 
 Open *Obsidian Setting > Enveloppe >File path*
-- **Default folder**: `content`
 - **Set the key where to get the value of the filename**: `dg-filename`
 
 Edit [Enveloppe > data.json](D:\Notes\.obsidian\plugins\obsidian-mkdocs-publisher\data.json)
@@ -50,7 +49,7 @@ Edit [Enveloppe > data.json](D:\Notes\.obsidian\plugins\obsidian-mkdocs-publishe
 "censorText": [
   {
     "entry": "/(?<!\\n)^---/",
-    "replace": "---\ndate: \"2025-03-22T20:23:20.808+01:00\"\ntitle: \"Setup my digital garden\"\ndescription: \"-\"\ndg-filename: \"setup my digital garden\"",
+    "replace": "---\ndate: \"2025-03-22T21:00:57.334+01:00\"\ntitle: \"Setup my digital garden\"\ndescription: \"-\"\ndg-filename: \"setup my digital garden\"",
     "flags": "", "after": false
   },
   {
@@ -105,8 +104,10 @@ Plugin.CrawlLinks({ markdownLinkResolution: "relative" }),
 ```
 
 Open *Obsidian Setting > Enveloppe >File path*
+- **Default folder**: `content`
 - **File tree in repository**: Property key
 - **Property key**: `dg-folder`
+- **Root folder**: `content`
 
 ## Frontmatter playground
 
@@ -181,8 +182,8 @@ with the content of the file and use `$1` to add a line break.
 
 # Custom Filters
 
-- Change [Execute Code](../computer/apps/Execute-Code.md)'s executable codeblocks to their regular language for syntax highlighting
-- Replace [Dynamic Embed](../computer/apps/Dynamic-Embed.md)'s blocks with the note's content. Use to following regex pattern and replace the note name
+- Change [Execute Code](./computer/apps/Execute-Code.md)'s executable codeblocks to their regular language for syntax highlighting
+- Replace [Dynamic Embed](./computer/apps/Dynamic-Embed.md)'s blocks with the note's content. Use to following regex pattern and replace the note name
 
 ```
 ```dynamic-embed\n\[\[Describe this app and list installation sources\]\]\n```
