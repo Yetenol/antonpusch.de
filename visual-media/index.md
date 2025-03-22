@@ -1,0 +1,31 @@
+---
+date: "2025-03-22T12:58:26.260+01:00"
+title: "Visual Media"
+description: "-"
+dg-publish: true
+dg-folder: visual-media
+dg-filename: index
+---
+Movies & TV Shows
+- [Enjoy a favorite movie again](./Enjoy-a-favorite-movie-again.md)
+- [Enjoy a favorite television series again](./Enjoy-a-favorite-television-series-again.md)
+- [Watch a new movie](./Watch-a-new-movie.md)
+- [Watch a new television series](./Watch-a-new-television-series.md)
+- [Berlinale 2022 - Internationale Filmfestspiele Berlin](./Berlinale-2022.md)
+- What kind of cinematography I like
+- List all movies and TV series that have been referenced somewhere
+
+YouTube
+- [Educational Youtube channels](../Educational-Youtube-channels.md)
+- [Technological YouTube channels](../Technological-YouTube-channels.md)
+- Was ist für mich unterhaltsam
+
+The Beauty of
+- [The Beauty Of Game of Thrones - YouTube](https://www.youtube.com/watch?v=VrJYq2exNAs)
+- [The Beauty Of Harry Potter - YouTube](https://www.youtube.com/watch?v=5Sa2MqfpqEs)
+- [The Beauty Of Middle Earth (4K) - YouTube](https://www.youtube.com/watch?v=qtRIPb0ufgU)
+- [The Expanse || A New Era - YouTube](https://www.youtube.com/watch?v=vlBTbmKPwKc)
+
+Other
+- [Alle theatrical plays](../Alle-theatrical-plays.md)
+- Why do we enjoy bad movies - Movies habe increasingly less story
