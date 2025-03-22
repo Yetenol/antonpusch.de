@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T19:39:32.399+01:00"
+date: "2025-03-22T19:54:48.806+01:00"
 title: "Setup my digital garden"
 description: "-"
 dg-publish: true
@@ -49,7 +49,7 @@ Edit [Enveloppe > data.json](D:\Notes\.obsidian\plugins\obsidian-mkdocs-publishe
 "censorText": [
   {
     "entry": "/(?<!\\n)^---/",
-    "replace": "---\ndate: \"2025-03-22T19:39:32.399+01:00\"\ntitle: \"Setup my digital garden\"\ndescription: \"-\"\ndg-filename: \"setup my digital garden\"",
+    "replace": "---\ndate: \"2025-03-22T19:54:48.806+01:00\"\ntitle: \"Setup my digital garden\"\ndescription: \"-\"\ndg-filename: \"setup my digital garden\"",
     "flags": "", "after": false
   },
   {
@@ -117,6 +117,43 @@ Open *Obsidian Setting > Enveloppe >File path*
 - **filename js**: setup my digital garden
 - **folder js**: computer/apps
 
+# Expand dynamic dataview embeds
+
+
+Edit [Enveloppe > data.json](D:\Notes\.obsidian\plugins\obsidian-mkdocs-publisher\data.json)
+```json
+"censorText": [
+  {
+    "entry": "/```dynamic-embed\\n\\[\\[Describe this app and list installation sources\\]\\]\\n```/",
+    "replace": "", 
+    "flags": "", "after": false, "inCodeBlocks": true
+  },
+  {
+    "entry": "/```dynamic-embed\\n\\[\\[Describe this movie\\]\\]\\n```/",
+    "replace": "", 
+    "flags": "", "after": false, "inCodeBlocks": true
+  },
+  {
+    "entry": "/```dynamic-embed\\n\\[\\[List apps of this category\\]\\]\\n```/",
+    "replace": "", 
+    "flags": "", "after": false, "inCodeBlocks": true
+  },
+  {
+    "entry": "/```dynamic-embed\\n\\[\\[List related movies\\]\\]\\n```/",
+    "replace": "", 
+    "flags": "", "after": false, "inCodeBlocks": true
+  }
+],
+```
+- add template file contents as escaped json in **replace** key
+
+
+Or add with Enveloppe UI
+```
+```dynamic-embed\n\[\[List related notes\]\]\n```
+```
+
+
 # Digital Obsidian Garden
 
 All my markdown notes to be published are uploaded on [Github](https://github.com/yetenol/digital-garden/) and automatically built as my [homepage](https://antonpusch.de/) with [Vercel](https://vercel.com/yetenols-projects/digitalgarden).
@@ -147,7 +184,7 @@ with the content of the file and use `$1` to add a line break.
 - Replace [Dynamic Embed](./computer/apps/Dynamic-Embed.md)'s blocks with the note's content. Use to following regex pattern and replace the note name
 
 ```
-```dynamic-embed(\n)\[\[Describe this app and list installation sources\]\]\n```
+```dynamic-embed\n\[\[Describe this app and list installation sources\]\]\n```
 ```
 
 Use `$1` to add a line break with pastes the grouped `(\n)` from the pattern
