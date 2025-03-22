@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:25.906+01:00"
+date: "2025-03-22T23:27:49.881+01:00"
 title: "CSV Table"
 description: "Generate table from raw data in a CSV file, automatically detect and format column headers, and values"
 dg-publish: true
@@ -147,7 +147,6 @@ a,b
 12,4
 ```
 
-#latex/test
 
 Escape *column separator* by enclosing the cell in braces `{}`
 
@@ -308,9 +307,6 @@ assign column name/.code = {
     ```
 
 ---
-#research/addExamples 
-#netlify/fixBuild
-
 Sources:
 - 2023-01-07: [https://texdoc.org/serve/pgfplotstable/0](https://texdoc.org/serve/pgfplotstable/0)
 
