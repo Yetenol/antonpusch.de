@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:05:26.309+01:00"
+date: "2025-03-22T23:36:03.036+01:00"
 title: "The Hobbit: The Battle of the Five Armies"
 description: "-"
 dg-publish: true
@@ -14,7 +14,7 @@ release-date: 17 Dec 2014
 type: movie
 runtime: 144 min
 number-of-seasons: 
-genres:
+tags:
   - Adventure
   - Fantasy
 directors:
