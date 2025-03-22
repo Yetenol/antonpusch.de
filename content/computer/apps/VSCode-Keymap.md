@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.166+01:00"
+date: "2025-03-22T23:45:55.052+01:00"
 title: "VSCode Keymap"
 description: "-"
 dg-folder: computer/apps
@@ -20,10 +20,9 @@ synopsis: VSCode keymap for all IntelliJ-based IDEs. Use this plugin if VSCode k
 extends-app: "[[JetBrains IntelliJ IDEA|JetBrains IntelliJ IDEA]]"
 ---
 
-![thumbnail](https://plugins.jetbrains.com/files/12062/341387/icon/pluginIcon.svg) VSCode Keymap is a [JetBrains IntelliJ IDEA](./JetBrains-IntelliJ-IDEA.md) extension about personalization. VSCode keymap for all IntelliJ-based IDEs. Use this plugin if VSCode keymap is not pre-installed in your IDE.
-
-- Install extension via [Marketplace](https://plugins.jetbrains.com/plugin/12062-vscode-keymap)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - Open `Keymap` via command palette (`Shift Shift`)
 - Select `VS Code`
