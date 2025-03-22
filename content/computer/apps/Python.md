@@ -31,7 +31,7 @@ dg-content-classes:
 ```
 
 Troubleshoot PATH setup
-- [List all apps in PATH locations](../../List-all-apps-in-PATH-locations.md)
+- [List all apps in PATH locations](../../powershell/develop/List-all-apps-in-PATH-locations.md)
 
 Find newest version
 ```powershell

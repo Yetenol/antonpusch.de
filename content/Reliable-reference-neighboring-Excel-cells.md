@@ -87,5 +87,5 @@ Sources:
 Related:
 
 Tags:
-[Microsoft Excel](./Microsoft-Excel.md)
+[Microsoft Excel](./computer/apps/Microsoft-Excel.md)
 [Workflows - Improve workflow in applications](./Workflows.md)

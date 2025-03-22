@@ -23,7 +23,7 @@ Known folders - Access the recycle bin, desktop, downloads folder
 
 Other
 
-- Manage schedules tasks
+- [Manage schedules tasks](../powershell/Manage-schedules-tasks.md)
 - [Registry - Read and write to the registry](../Registry.md)
 - [Win-X menu - Customize the Win-X shortcuts menu, replace default shell](../Win-X-menu.md)
 - [Context Menu - Add custom entries to the File Explorer's context menu](../Context-Menu.md)

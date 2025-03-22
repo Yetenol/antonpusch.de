@@ -28,4 +28,4 @@ Sources:
 Related:
 
 Tags:
-[Microsoft Edge](../../Microsoft-Edge.md)
+[Microsoft Edge](./Microsoft-Edge.md)

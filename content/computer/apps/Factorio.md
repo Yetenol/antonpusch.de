@@ -73,7 +73,7 @@ Combat
 
 Mobility
 - Move around using personal resupply trains or by hijacking regular trains
-- Drive parallelly to the terrain [VehicleSnap](../../VehicleSnap.md)
+- Drive parallelly to the terrain [VehicleSnap](./VehicleSnap.md)
 - Cruise drive on paved roads incentivizes you to build mobility infrastructure [Pavement Drive Assist](./Pavement-Drive-Assist.md)
 
 Remote access, far reach

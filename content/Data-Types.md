@@ -81,11 +81,11 @@ Third line
 
 # Date and time
 
-![Time and Dates - Handle temporal data like day of week, clock time, or first day of month > Overview](./Time-and-Dates.md#Overview)
+![Time and Dates - Handle temporal data like day of week, clock time, or first day of month > Overview](./powershell/data/Time-and-Dates.md#Overview)
 
 # Collect multiple items in containers like arrays or dictionaries
 
-![Containers - Collect multiple items in containers like arrays or dictionaries > Overview](./Containers.md#Overview)
+![Containers - Collect multiple items in containers like arrays or dictionaries > Overview](./powershell/data/Containers.md#Overview)
 
 
 ---

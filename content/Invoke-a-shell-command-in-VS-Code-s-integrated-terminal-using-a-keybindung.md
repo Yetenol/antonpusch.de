@@ -55,6 +55,6 @@ Sources:
 Related:
 
 Tags:
-[Visual Studio Code](./Visual-Studio-Code.md)
+[Visual Studio Code](./computer/apps/Visual-Studio-Code.md)
 [Workflows - Improve workflow in applications](./Workflows.md)
 [Terminal Command Keys](./computer/apps/Terminal-Command-Keys.md)

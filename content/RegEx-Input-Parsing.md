@@ -118,5 +118,5 @@ Related:
 [RegEx - Use Regular Expressions to search, extract and manipulate text in a specified pattern](./RegEx.md)
 
 Tags:
-[Handle PowerShell data - Handle, Import, Export, Filter and RegEx query objects](./Handle-PowerShell-data.md)
+[Handle PowerShell data - Handle, Import, Export, Filter and RegEx query objects](./powershell/data/index.md)
 Document conversion

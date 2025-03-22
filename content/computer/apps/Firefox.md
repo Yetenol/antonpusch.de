@@ -19,7 +19,7 @@ synopsis: Firefox Browser - fast, private & safe web browser
 [[Describe this app and list installation sources]]
 ```
 
-- if used as default browser, see [Microsoft Edge](../../Microsoft-Edge.md) for instructions
+- if used as default browser, see [Microsoft Edge](./Microsoft-Edge.md) for instructions
 
 
 

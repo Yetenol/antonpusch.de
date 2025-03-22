@@ -20,7 +20,7 @@ robocopy @robocopyParams
 Sources:
 
 Related:
-- [Handle PowerShell data - Handle, Import, Export, Filter and RegEx query objects](../../Handle-PowerShell-data.md)
+- [Handle PowerShell data - Handle, Import, Export, Filter and RegEx query objects](../data/index.md)
 
 Tags:
 [PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](../index.md)

@@ -37,7 +37,7 @@ Server host
 - OneDrive Host vault files
 
 PC
-- [Remotely Save](../../Remotely-Save.md) syncs files while Obsidian is running
+- [Remotely Save](./Remotely-Save.md) syncs files while Obsidian is running
 - Symbolic Link sync .obsidian config
 
 Phone

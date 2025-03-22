@@ -30,7 +30,7 @@ code . --goto \"{{file_path:absolute}}":{{caret_position}}
 - otherwise update the `external/` symbolic link if necessary (requires admin privileges)
 - then opens the file in the main vault
 
-> [!warning] Ignore the folder `external/` in git and in [Remotely Save](./Remotely-Save.md)
+> [!warning] Ignore the folder `external/` in git and in [Remotely Save](./computer/apps/Remotely-Save.md)
 
 
 Add VS Code keyboard shortcut:
@@ -116,5 +116,5 @@ Related:
 
 Tags:
 [Obsidian](./computer/apps/Obsidian.md)
-[Visual Studio Code](./Visual-Studio-Code.md)
+[Visual Studio Code](./computer/apps/Visual-Studio-Code.md)
 [Markdown - Write content-focused and format with hierarchy, abstract highlighting, and meta-information](./Markdown.md)

@@ -32,7 +32,7 @@ Open Haskell language-specific settings
 
 - [LaTeX to SVG - Embed LaTeX figures in markdown. Automate compiling, cropping, and exporting.](../../LaTeX-to-SVG)
 - [PyX](./PyX.md)
-- [MatPlotLib PyPlot](../../MatPlotLib-PyPlot.md)
+- [MatPlotLib PyPlot](./MatPlotLib-PyPlot.md)
 
 ```python
 import os, contextlib

@@ -108,6 +108,6 @@ foreach { $_.FullName } | foreach {
 Sources:
 
 Related:
-[Visual Studio Code](../../Visual-Studio-Code.md)
+[Visual Studio Code](./Visual-Studio-Code.md)
 
 Tags:
