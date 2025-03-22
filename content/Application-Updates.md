@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:25.645+01:00"
+date: "2025-03-22T22:19:37.813+01:00"
 title: "Application Updates"
 description: "Bulk upgrade applications from Microsoft Store, winget, or git"
 dg-publish: true
@@ -29,7 +29,7 @@ winget upgrade --all
 Sources:
 
 Related:
-[Autohotkey - Interact with applications and streamline repetitive tasks](./Autohotkey.md)
+[AutoHotkey - Interact with applications and streamline repetitive tasks](./AutoHotkey.md)
 
 Tags:
 [PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](./powershell/index.md)
