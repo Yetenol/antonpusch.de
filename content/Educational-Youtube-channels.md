@@ -91,4 +91,4 @@ Channel | Profile Picture
 
 ---
 Tags:
-[Visual Media](../visual-media/index.md)
+[Visual Media](./visual-media/index.md)
