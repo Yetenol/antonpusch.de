@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.723+01:00"
+date: "2025-03-22T23:36:03.542+01:00"
 title: The Martian
 description: "-"
 dg-folder: visual-media/media
@@ -10,7 +10,7 @@ release-date: 02 Oct 2015
 type: movie
 runtime: 144 min
 number-of-seasons: 
-genres:
+tags:
   - Adventure
   - Drama
   - Sci-Fi
