@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.987+01:00"
 title: "Cryptomator"
 description: "-"
 dg-folder: computer/apps
@@ -19,15 +19,9 @@ categories:
 synopsis: With Cryptomator, the key to your data is in your hands. Cryptomator encrypts your data quickly and easily. Afterwards you upload them protected to your favorite cloud service.
 ---
 
-Cryptomator is a [storage](install%20storage%20apps.md.md) app. With Cryptomator, the key to your data is in your hands. Cryptomator encrypts your data quickly and easily. Afterwards you upload them protected to your favorite cloud service.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Cryptomator.Cryptomator
-  ```
-- Download the [latest release](https://github.com/cryptomator/cryptomator/releases/latest) of its source code [repository](https://github.com/cryptomator/cryptomator) on GitHub
-- Download it from the [publisher's website](https://cryptomator.org/downloads/win/thanks/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 ## Redirect This PC folders
 
