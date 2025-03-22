@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:56:41.792+01:00"
+date: "2025-03-22T21:20:32.125+01:00"
 title: "PowerShell"
 description: "A command-line shell and scripting language to manage Windows system and automate administrative tasks"
 dg-publish: true
@@ -44,8 +44,15 @@ $i = Get-Item '.\enveloppe\' -Force
 $i.Attributes = $i.Attributes -bxor [IO.FileAttributes]::Hidden }
 ```
 
+[Known folders - Access the recycle bin, desktop, downloads folder](../windows/known-folders/index.md)
 
-- [Known folders - Access the recycle bin, desktop, downloads folder](../windows/known-folders/index.md)
+```powershell
+$env:Pictures = (New-Object -ComObject Shell.Application).NameSpace('shell:My Pictures').Self.Path
+$env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
+```
+
+
+
 - [Learn and Troubleshoot Powershell  - Discover commands, and access documentation](./Learn-and-Troubleshoot-Powershell-.md)
 - [Programm PowerShell - Learn PowerShell's programming paradigms](./develop/index.md)
 - [Naming Convention - Name PowerShell functions with one of the predefined verbs](./Naming-Convention.md)
