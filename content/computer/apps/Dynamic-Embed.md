@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.181+01:00"
+date: "2025-03-22T23:45:54.998+01:00"
 title: "Dynamic Embed"
 description: "-"
 dg-folder: computer/apps
@@ -20,7 +20,6 @@ synopsis: Embed snippets, templates and any linkable by delegating the current s
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-Dynamic Embed is a [Obsidian](./Obsidian.md) extension about visualisation. Embed snippets, templates and any linkable by delegating the current scope to the embedded file, treating it as content instead of a reference.
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=obsidian-dynamic-embed), [Webstore](https://obsidian.md/plugins?id=obsidian-dynamic-embed)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
