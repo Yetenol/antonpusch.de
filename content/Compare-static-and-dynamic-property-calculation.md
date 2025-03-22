@@ -69,4 +69,4 @@ Sources:
 Related:
 
 Tags:
-[Properties - Inspect, filter, select, enrich, and sort objects](../powershell/data/Properties.md)
+[Properties - Inspect, filter, select, enrich, and sort objects](./powershell/data/Properties.md)
