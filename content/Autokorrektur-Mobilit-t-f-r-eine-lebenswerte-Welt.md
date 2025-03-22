@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.863+01:00"
+date: "2025-03-22T23:45:55.064+01:00"
 title: Autokorrektur – Mobilität für eine lebenswerte Welt
 description: Ein Plädoyer für eine inklusive und klimagerechte Verkehrswende – Mit Schwung, Know-how und Kreativität macht die Mobilitätsexpertin Katja Diehl Lust auf eine Gesellschaft, die gemeinsam eine attraktive und klimafreundliche Zukunft für alle baut. Eine Zukunft, die mehr Lebensqualität in Städten und auf dem Land bietet sowie moderne Formen von Arbeit berücksichtigt. »Jede:r sollte das Recht haben, ein Leben ohne ein eigenes Auto führen zu können.« »Autokorrektur« will Kick Off einer Gesellschaft sein, die gemeinsam eine attraktive Mobiltätszukunft baut – und zwar schon heute. In Katja Diehls Vorstellung der Zukunft können die Menschen Auto fahren, so sie es denn wollen. Sie müssen es aber nicht mehr – denn es gibt attraktive Alternativen. Momentan ist nicht alles in unserem Land fair und klimagerecht, inklusiv und bezahlbar aufgestellt. Die Bedürfnisse vieler Menschen werden nicht angemessen berücksichtigt. Das können wir ändern, davon ist Mobilitätsexpertin Katja Diehl überzeugt und läutet die Verkehrswende ein. Die Mobilitätsexpertin Katja Diehl weist den Weg zu einer gerechten und fairen Mobilität der Zukunft, die den Menschen ins Zentrum stellt und unsere Welt lebenswert macht.
 dg-publish: true

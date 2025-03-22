@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.142+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "PowerToys"
 description: "-"
 dg-folder: computer/apps
@@ -12,18 +12,9 @@ categories:
   - Personalization
 ---
 
-PowerToys is a [personalization](install%20personalization%20apps.md.md) app. 
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=XP89DCGQ3K6VLD&mode=mini) or invoke:
-  ```powershell
-  winget install -e XP89DCGQ3K6VLD --accept-package-agreements
-  ```
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Microsoft.PowerToys
-  ```
-- Download the [latest release](https://github.com/microsoft/PowerToys/releases/latest) of its source code [repository](https://github.com/microsoft/PowerToys) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - Open `PowerToys Settings` by launching the application twice
 - Open `File Explorer add-ons`

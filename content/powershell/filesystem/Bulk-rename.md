@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:51:20.866+01:00"
+date: "2025-03-22T23:26:27.467+01:00"
 title: "Bulk rename"
 description: "Rename pictures and videos chronologically and consistently by their capture and creation time"
 dg-publish: true
@@ -188,10 +188,7 @@ Function Rename-Pictures
 }
 ```
 
-#powershell/test 
-
 Rename images without _date taken_ property to `yyyyMMdd_HHmmss`
-#powershell/program
 
 ---
 Sources:

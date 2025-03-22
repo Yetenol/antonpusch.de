@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.830+01:00"
+date: "2025-03-22T23:45:55.064+01:00"
 title: Anleitung zum Unglücklichsein
 description: |
   Paul Watzlawick hat mit seiner »Anleitung zum Unglücklichsein« einen Millionenbestseller geschrieben – was nur den Schluss zulässt, dass Leiden ungeheuer schön sein muss. Anders als die gängigen »Glücksanleitungen« führen Watzlawicks Geschichten uns vor Augen, was wir täglich gegen unser mögliches Glück tun. Nach der Lektüre werden auch Sie begreifen, warum Sie den Nachbarn, den Sie um einen Hammer baten, am liebsten erschlagen würden.

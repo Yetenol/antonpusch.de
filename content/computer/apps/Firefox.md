@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.180+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Firefox"
 description: "-"
 dg-folder: computer/apps
@@ -15,18 +15,9 @@ categories:
 synopsis: Firefox Browser - fast, private & safe web browser
 ---
 
-Firefox is a [office](install%20office%20apps.md.md) app. Firefox Browser - fast, private & safe web browser
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=9NZVDKPMR9RD&mode=mini), show in [webstore](https://microsoft.com/store/apps/9NZVDKPMR9RD) or invoke:
-  ```powershell
-  winget install -e 9NZVDKPMR9RD --accept-package-agreements
-  ```
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Mozilla.Firefox
-  ```
-- Download it from the [publisher's website](https://www.mozilla.org/en-US/firefox/download/thanks/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - if used as default browser, see [Microsoft Edge](./Microsoft-Edge.md) for instructions
 

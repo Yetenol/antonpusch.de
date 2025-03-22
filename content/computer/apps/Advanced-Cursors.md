@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.191+01:00"
+date: "2025-03-22T23:45:54.971+01:00"
 title: "Advanced Cursors"
 description: "-"
 dg-folder: computer/apps
@@ -21,8 +21,6 @@ synopsis: |
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-Advanced Cursors is a [Obsidian](./Obsidian.md) extension about editing. Use multiple cursors even more powerfully. 
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=advanced-cursors), [Webstore](https://obsidian.md/plugins?id=advanced-cursors)
-- Download the [latest release](https://github.com/SkepticMystic/advanced-cursors/releases/latest) of its source code [repository](https://github.com/SkepticMystic/advanced-cursors) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

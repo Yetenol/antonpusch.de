@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.136+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Player Request Crafting Layout"
 description: "-"
 dg-folder: computer/apps
@@ -21,11 +21,9 @@ extends-app: "[[Factorio - A game about automation, logistics and network optimi
 not-in-use: true
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/fd268eaf5688f5a78f594f9b4279f2e836a45e2d.thumb.png) Player Request Crafting Layout is a **discarded** [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension about quality of life. A way for players to apply their crafting item layout to their logistics window 
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/player_request_crafting_layout)
-- Download the [latest release](https://github.com/muppet9010/Factorio-Player-Request-Crafting-Layout/releases/latest) of its source code [repository](https://github.com/muppet9010/Factorio-Player-Request-Crafting-Layout) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - [p] You don't have to search for an item's request because they are in the same order as in the crafting tab
 - [c] get really hard to see for which items you actually have set request, therefore I disabled logistic requests most of the time

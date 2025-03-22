@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.131+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Obsidian"
 description: "-"
 dg-folder: computer/apps
@@ -23,19 +23,11 @@ cssclasses:
   - cards
 dg-content-classes:
   - cards
-tags:
-  - obsidian/cleanup
 ---
 
-Obsidian is a [office](install%20office%20apps.md.md), [education](install%20education%20apps.md.md) app. Obsidian is a powerful and extensible knowledge base that works on top of your local folder of plain text files.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Obsidian.Obsidian
-  ```
-- Download the [latest release](https://github.com/obsidianmd/obsidian-releases/releases/latest) of its source code [repository](https://github.com/obsidianmd/obsidian-releases) on GitHub
-- Download it from the [publisher's website](https://obsidian.md/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Synchronisation
 

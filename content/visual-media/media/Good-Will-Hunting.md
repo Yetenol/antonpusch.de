@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.758+01:00"
+date: "2025-03-22T23:36:00.825+01:00"
 title: Good Will Hunting
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 09 Jan 1998
 type: movie
 runtime: 126 min
 number-of-seasons: 
-genres:
+tags:
   - Drama
   - Romance
 directors:

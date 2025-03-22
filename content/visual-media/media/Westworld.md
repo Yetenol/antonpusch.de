@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.715+01:00"
+date: "2025-03-22T23:36:03.874+01:00"
 title: Westworld
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 02 Oct 2016
 type: series
 runtime: 62 min
 number-of-seasons: 4
-genres:
+tags:
   - Drama
   - Mystery
   - Sci-Fi

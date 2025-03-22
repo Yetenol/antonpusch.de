@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.736+01:00"
+date: "2025-03-22T23:36:02.725+01:00"
 title: The Dragon Prince
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 14 Sep 2018
 type: series
 runtime: 1 min
 number-of-seasons: 4
-genres:
+tags:
   - Animation
   - Action
   - Adventure

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.177+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Inventory Profiles Next"
 description: "-"
 dg-folder: computer/apps
@@ -20,8 +20,6 @@ extends-app: "[[Minecraft|Minecraft]]"
 modportal1-id: inventory-profiles-next
 ---
 
-![thumbnail](https://cdn.modrinth.com/data/O7RBXm3n/icon.png) Inventory Profiles Next is a **discarded** [Minecraft](./Minecraft.md) extension. Help you keep your inventory sorted. Replace your quasi-broken tool. Dump everything in that chest with one click. Move the items you have that are also already in the chest. Lock item slots in place so that sorting ignores them. Keep locked slots empty. Allow you to press R+C to set your shortcuts. Be pure client-side, so that it works everywhere
-
-- Install extension via [Modrinth](https://modrinth.com/mod/inventory-profiles-next)
-- Install extension via [CurseForge](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

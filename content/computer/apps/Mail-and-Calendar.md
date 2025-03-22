@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.166+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Mail and Calendar"
 description: "-"
 dg-folder: computer/apps
@@ -10,13 +10,9 @@ categories:
 synopsis: The Mail and Calendar apps help you stay up to date on your email, manage your schedule and stay in touch with people you care about the most. Designed for both work and home, these apps help you communicate quickly and focus on what’s important across all your accounts. Supports Office 365, Exchange, Outlook.com, Gmail, Yahoo! and other popular accounts.
 ---
 
-Mail and Calendar is a [messenger](install%20messenger%20apps.md.md) app. The Mail and Calendar apps help you stay up to date on your email, manage your schedule and stay in touch with people you care about the most. Designed for both work and home, these apps help you communicate quickly and focus on what’s important across all your accounts. Supports Office 365, Exchange, Outlook.com, Gmail, Yahoo! and other popular accounts.
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=9WZDNCRFHVQM&mode=mini), show in [webstore](https://microsoft.com/store/apps/9WZDNCRFHVQM) or invoke:
-  ```powershell
-  winget install -e 9WZDNCRFHVQM --accept-package-agreements
-  ```
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 ## Setup Mail
 
@@ -41,7 +37,7 @@ Mail and Calendar is a [messenger](install%20messenger%20apps.md.md) app. The Ma
 >> Open `Message list `
 >> - `Mark as read/unread` =: Swipe right
 >> - `Delete` =: Swipe left
->> - `Individual messages` =: How do you want your messages tobe organized? *< [#Organization]*
+>> - `Individual messages` =: How do you want your messages tobe organized? in Organization
 >
 >> Open `Signature`
 >> - `Viele Grüße Anton Pusch` =: Signature

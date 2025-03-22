@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.166+01:00"
+date: "2025-03-22T23:45:55.052+01:00"
 title: "VLC"
 description: "-"
 dg-folder: computer/apps
@@ -13,21 +13,16 @@ categories:
 synopsis: VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
 ---
 
-VLC is a [entertainment](install%20entertainment%20apps.md.md) app. VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e VideoLAN.VLC
-  ```
-- Download it from the [publisher's website](https://www.videolan.org/vlc/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 If installed through winget and dialog `Privacy and Network Access Policy` appears
 - [ ] Regularly check for VLC updates 
 
 Open `Preferences` [Ctrl + P]
 - Open `Interface` tab 
-- `Always` =: Continue playback? _<[#Playlist and Instances]>_
+- `Always` =: Continue playback? in Playlist and Instances
 
 Open `Subtitles / OSD`
 - [ ] Show media title on video start _# On Screen Display_

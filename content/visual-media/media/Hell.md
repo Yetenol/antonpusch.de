@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.752+01:00"
+date: "2025-03-22T23:36:00.956+01:00"
 title: Hell
 description: "-"
 dg-folder: visual-media/media
@@ -10,7 +10,7 @@ release-date: 10 Jul 2012
 type: movie
 runtime: 89 min
 number-of-seasons: 
-genres:
+tags:
   - Horror
   - Sci-Fi
   - Thriller

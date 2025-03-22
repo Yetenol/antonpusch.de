@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:27.918+01:00"
+date: "2025-03-22T23:21:56.791+01:00"
 title: "Java"
 description: "A platform independent, object-oriented programming framework designed to be simple, secure, and robust"
 dg-publish: true
@@ -79,14 +79,5 @@ Modul introprog = algodat;
 
 - nur ein Objekt wurde erzeugt
 
-
----
-#obsidian/translate #obsidian/rename 
-
 Sources:
 - 2022-05-04: [Pass-By-Value as a Parameter Passing Mechanism in Java - Baeldung](https://www.baeldung.com/java-pass-by-value-or-pass-by-reference)
-
-Related:
-
-Tags:
-[Programming Languages - Communicate instructions between humans and computers](./Programming-Languages.md)

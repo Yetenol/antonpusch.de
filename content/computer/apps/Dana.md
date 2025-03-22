@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.998+01:00"
 title: "Dana"
 description: "-"
 dg-folder: computer/apps
@@ -19,10 +19,9 @@ synopsis: Dana is an assistant mod to help making sense of Vanilla (or modded) c
 extends-app: "[[Factorio - A game about automation, logistics and network optimizations|Factorio - A game about automation, logistics and network optimizations]]"
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/1d7391aaa6e67c7dfad5824b3a95e3556df45904.thumb.png) Dana is a [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension. Dana is an assistant mod to help making sense of Vanilla (or modded) crafting graphs.
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/dana)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - [FNEI](https://mods.factorio.com/mod/FNEI)
 - [Recipe Book](https://mods.factorio.com/mod/RecipeBook)

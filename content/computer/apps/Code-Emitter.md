@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.987+01:00"
 title: "Code Emitter"
 description: "-"
 dg-folder: computer/apps
@@ -20,8 +20,6 @@ synopsis: Allows code blocks to be executed interactively in a sandbox like Jup
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-Code Emitter is a **discarded** [Obsidian](./Obsidian.md) extension about programming. Allows code blocks to be executed interactively in a sandbox like Jupyter notebooks. Supported language Rust, Kotlin, Python, JavaScript, TypeScript, etc.
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=code-emitter), [Webstore](https://obsidian.md/plugins?id=code-emitter)
-- Download the [latest release](https://github.com/mokeyish/obsidian-code-emitter/releases/latest) of its source code [repository](https://github.com/mokeyish/obsidian-code-emitter) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

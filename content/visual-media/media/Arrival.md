@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:00:29.792+01:00"
+date: "2025-03-22T23:35:59.600+01:00"
 title: Arrival
 description: "-"
 dg-folder: visual-media/media
@@ -10,7 +10,7 @@ release-date: 11 Nov 2016
 type: movie
 runtime: 116 min
 number-of-seasons: 
-genres:
+tags:
   - Drama
   - Mystery
   - Sci-Fi

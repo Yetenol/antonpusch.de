@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.168+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "JetBrains IntelliJ IDEA"
 description: "-"
 dg-folder: computer/apps
@@ -18,14 +18,9 @@ dg-content-classes:
   - cards
 ---
 
-JetBrains IntelliJ IDEA is a **discarded** [development](install%20development%20apps.md.md) app. 
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e JetBrains.IntelliJIDEA.Edu
-  ```
-- Download it from the [publisher's website](https://www.jetbrains.com/education/download/#section=idea)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Plugins
 

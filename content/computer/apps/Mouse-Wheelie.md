@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.131+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Mouse Wheelie"
 description: "-"
 dg-folder: computer/apps
@@ -20,8 +20,6 @@ extends-app: "[[Minecraft|Minecraft]]"
 modportal1-id: mouse-wheelie
 ---
 
-![thumbnail](https://cdn.modrinth.com/data/u5Ic2U1u/icon.png) Mouse Wheelie is a [Minecraft](./Minecraft.md) extension. A small clientside mod to enable various mouse wheel related actions. Features item scrolling, inventory sorting, item refilling and much more!
-
-- Install extension via [Modrinth](https://modrinth.com/mod/mouse-wheelie)
-- Install extension via [CurseForge](https://www.curseforge.com/minecraft/mc-mods/mouse-wheelie)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.760+01:00"
+date: "2025-03-22T23:36:00.528+01:00"
 title: Dominion
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 10 Jun 2018
 type: movie
 runtime: 120 min
 number-of-seasons: 
-genres:
+tags:
   - Documentary
   - Horror
 directors:

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.766+01:00"
+date: "2025-03-22T23:35:59.639+01:00"
 title: "Avatar: The Last Airbender"
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 21 Feb 2005
 type: series
 runtime: 23 min
 number-of-seasons: 3
-genres:
+tags:
   - Animation
   - Action
   - Adventure

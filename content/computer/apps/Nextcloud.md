@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.131+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Nextcloud"
 description: "-"
 dg-folder: computer/apps
@@ -19,14 +19,9 @@ categories:
 synopsis: The Nextcloud Desktop Client is a tool to synchronize files from Nextcloud Server with your computer.
 ---
 
-Nextcloud is a [storage](install%20storage%20apps.md.md) app. The Nextcloud Desktop Client is a tool to synchronize files from Nextcloud Server with your computer.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Nextcloud.NextcloudDesktop
-  ```
-- Download the [latest release](https://github.com/nextcloud/desktop/releases/latest) of its source code [repository](https://github.com/nextcloud/desktop) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 
 https://www.theverge.com/2024/2/18/24075077/bose-ultra-open-superlist-bulletin-text-files-note-apps-installer

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:27.034+01:00"
+date: "2025-03-22T23:25:23.902+01:00"
 title: "Floating Table"
 description: "Add caption, cross reference a table"
 dg-publish: true
@@ -47,11 +47,3 @@ Table floats contain many lines of text, so they are distracting in the main tex
     ```latex
     Our measurement results can be seen in Table \ref{tab:⟨table name⟩}.
     ```
-
----
-Sources:
-
-Related:
-
-Tags:
-[Graphical elements - Standardize tables, images, plots](./Graphical-elements.md)

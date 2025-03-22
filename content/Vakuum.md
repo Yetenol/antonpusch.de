@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:32.018+01:00"
+date: "2025-03-22T23:45:55.071+01:00"
 title: Vakuum
 description: |
   Der neue Science-Fiction-Thriller aus der Feder des Bestseller-Autors Phillip P. Peterson. Die Physikerin Susan Boyle überwacht im antarktischen Winter ein Neutrino-Teleskop. Sie empfängt ein starkes Signal aus der Richtung eines nahen Sternhaufens, kann aber nichts Außergewöhnliches erkennen. Bis nach und nach immer mehr Sterne am Himmel verschwinden. Der Astronaut Colin Curtis bereitet sich im Mondorbit auf seine Landung vor. Aber das Manöver wird abgebrochen, als eine Astronomin seiner Crew ein außerirdisches Raumschiff entdeckt, das sich mit großer Geschwindigkeit unserem Sonnensystem nähert. Es schickt eine Funkbotschaft an die Menschheit, die nur aus physikalischen Formeln besteht, bevor es – offensichtlich auf der Flucht – davonrast. Nach und nach wird den Wissenschaftler*innen klar: Aus den Tiefen des Raums kommt etwas auf uns zu. Etwas so Gewaltiges, dass es die Erde in ihren Grundfesten erschüttern wird. Große Science Fiction aus Deutschland: realistisch, spannend und wissenschaftlich fundiert. Für Leser*innen von Andreas Eschbach, Frank Schätzing, Cixin Liu, Andreas Brandhorst und Brandon Q. Morris

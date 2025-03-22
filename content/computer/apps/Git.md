@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.180+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Git"
 description: "-"
 dg-folder: computer/apps
@@ -13,14 +13,9 @@ categories:
 synopsis: Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 ---
 
-Git is a [essential](install%20essential%20apps.md.md), [development](install%20development%20apps.md.md) app. Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Git.Git
-  ```
-- Download it from the [publisher's website](https://git-scm.com/download/win)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
 

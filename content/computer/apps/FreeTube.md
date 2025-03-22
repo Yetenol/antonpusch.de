@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.180+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "FreeTube"
 description: "-"
 dg-folder: computer/apps
@@ -15,15 +15,9 @@ categories:
 synopsis: An Open Source YouTube app for privacy
 ---
 
-FreeTube is a [entertainment](install%20entertainment%20apps.md.md) app. An Open Source YouTube app for privacy
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e PrestonN.FreeTube
-  ```
-- Download the [latest release](https://github.com/FreeTubeApp/FreeTube/releases/latest) of its source code [repository](https://github.com/FreeTubeApp/FreeTube) on GitHub
-- Download it from the [publisher's website](https://freetubeapp.io/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Import subscriptions, history
 

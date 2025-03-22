@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.151+01:00"
+date: "2025-03-22T23:45:55.037+01:00"
 title: "Remove requester, buffer, activer provider chests"
 description: "-"
 dg-folder: computer/apps
@@ -20,10 +20,9 @@ synopsis: |
 extends-app: "[[Factorio - A game about automation, logistics and network optimizations|Factorio - A game about automation, logistics and network optimizations]]"
 ---
 
-Remove requester, buffer, activer provider chests is a [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension about logistic network. Makes the requester, buffer and activer provider chests unplaceable. Does not remove their items, recipes or technology. 
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/remove-requester-chest)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Motivation
 

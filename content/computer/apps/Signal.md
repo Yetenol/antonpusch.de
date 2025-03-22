@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.151+01:00"
+date: "2025-03-22T23:45:55.037+01:00"
 title: "Signal"
 description: "-"
 dg-folder: computer/apps
@@ -13,14 +13,9 @@ categories:
 synopsis: Say "hello" to a different messaging experience. An unexpected focus on privacy, combined with all of the features you expect.
 ---
 
-Signal is a **discarded** [messenger](install%20messenger%20apps.md.md) app. Say "hello" to a different messaging experience. An unexpected focus on privacy, combined with all of the features you expect.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e OpenWhisperSystems.Signal
-  ```
-- Download it from the [publisher's website](https://signal.org/en/download/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 > Open `Preferences`
 >> Open `General`

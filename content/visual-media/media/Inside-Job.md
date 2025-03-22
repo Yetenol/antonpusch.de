@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.752+01:00"
+date: "2025-03-22T23:36:01.143+01:00"
 title: Inside Job
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 22 Oct 2021
 type: series
 runtime: 2 min
 number-of-seasons: 2
-genres:
+tags:
   - Animation
   - Comedy
   - Fantasy

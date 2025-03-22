@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.180+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Git Graph"
 description: "-"
 dg-folder: computer/apps
@@ -20,10 +20,9 @@ synopsis: View a Git Graph of your repository, and easily perform Git actions fr
 extends-app: "[[Visual Studio Code|Visual Studio Code]]"
 ---
 
-![thumbnail](https://mhutchie.gallerycdn.vsassets.io/extensions/mhutchie/git-graph/1.30.0/1617594001998/Microsoft.VisualStudio.Services.Icons.Default) Git Graph is a [Visual Studio Code](./Visual-Studio-Code.md) extension about version control. View a Git Graph of your repository, and easily perform Git actions from the graph. Configurable to look the way you want!
-
-- Install extension via [Extensions](vscode:extension/mhutchie.git-graph), [Web Marketplace](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 ---
 Sources:

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.739+01:00"
+date: "2025-03-22T23:36:02.106+01:00"
 title: Pride & Prejudice
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 23 Nov 2005
 type: movie
 runtime: 129 min
 number-of-seasons: 
-genres:
+tags:
   - Drama
   - Romance
 directors:

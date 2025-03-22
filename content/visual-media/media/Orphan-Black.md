@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.746+01:00"
+date: "2025-03-22T23:36:01.808+01:00"
 title: Orphan Black
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 30 Mar 2013
 type: series
 runtime: 1 min
 number-of-seasons: 5
-genres:
+tags:
   - Drama
   - Sci-Fi
   - Thriller

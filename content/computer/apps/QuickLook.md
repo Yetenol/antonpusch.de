@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.145+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "QuickLook"
 description: "-"
 dg-folder: computer/apps

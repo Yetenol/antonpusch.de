@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T22:53:53.110+01:00"
+date: "2025-03-22T23:36:03.261+01:00"
 title: "The Lord of the Rings: The Fellowship of the Ring"
 description: "-"
 dg-publish: true
@@ -14,7 +14,7 @@ release-date: 19 Dec 2001
 type: movie
 runtime: 178 min
 number-of-seasons: 
-genres:
+tags:
   - Adventure
   - Drama
   - Fantasy

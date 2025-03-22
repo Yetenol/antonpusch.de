@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.732+01:00"
+date: "2025-03-22T23:36:02.976+01:00"
 title: The Godfather
 description: "-"
 dg-folder: visual-media/media
@@ -10,7 +10,7 @@ release-date: 24 Mar 1972
 type: movie
 runtime: 175 min
 number-of-seasons: 
-genres:
+tags:
   - Crime
   - Drama
 directors:

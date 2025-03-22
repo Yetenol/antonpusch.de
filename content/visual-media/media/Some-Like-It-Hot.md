@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.739+01:00"
+date: "2025-03-22T23:36:02.295+01:00"
 title: Some Like It Hot
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 19 Mar 1959
 type: movie
 runtime: 121 min
 number-of-seasons: 
-genres:
+tags:
   - Comedy
   - Music
   - Romance

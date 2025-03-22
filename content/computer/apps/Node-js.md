@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.131+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Node-js"
 description: "-"
 dg-folder: computer/apps
@@ -20,15 +20,9 @@ synopsis: Run JavaScript on a server.
 extends-app: 
 ---
 
-![thumbnail](https://cdn-icons-png.flaticon.com/512/5968/5968322.png) Node-js is a [development](install%20development%20apps.md.md) app. Run JavaScript on a server.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e OpenJS.NodeJS.LTS
-  ```
-- Download the [latest release](https://github.com/nodejs/node/releases/latest) of its source code [repository](https://github.com/nodejs/node) on GitHub
-- Download it from the [publisher's website](https://nodejs.org/en)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Update npm tool
 

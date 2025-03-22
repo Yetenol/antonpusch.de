@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.739+01:00"
+date: "2025-03-22T23:36:02.396+01:00"
 title: "Spider-Man: Across the Spider-Verse"
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 02 Jun 2023
 type: movie
 runtime: 140 min
 number-of-seasons: 
-genres:
+tags:
   - Animation
   - Action
   - Adventure

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.984+01:00"
+date: "2025-03-22T23:45:55.071+01:00"
 title: Schöne Neue Welt
 description: |
   Ein Meisterwerk neu in der Sprache unserer Zeit 1932 erschien eines der größten utopischen Bücher des 20. Jahrhunderts: ein heimtückisch verführerischer Aufriss unserer Zukunft, in der das Glück verabreicht wird wie eine Droge. Sex und Konsum fegen alle Bedenken hinweg und Reproduktionsfabriken haben das Fortpflanzungsproblem gelöst. Es ist die beste aller Welten – bis einer hinter die Kulissen schaut und einen Abgrund aus Arroganz und Bosheit entdeckt. Endlich erscheint die längst fällige Neuübersetzung von Uda Strätling. Das prophetische Buch, dessen Aktualität jeden Tag aufs Neue bewiesen wird, erhält eine sprachlich zeitgemäße Gestalt.

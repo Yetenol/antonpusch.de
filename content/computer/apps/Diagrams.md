@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.181+01:00"
+date: "2025-03-22T23:45:54.998+01:00"
 title: "Diagrams"
 description: "-"
 dg-folder: computer/apps
@@ -24,8 +24,6 @@ aliases:
   - draw.io
 ---
 
-Diagrams also called draw.io is a [Obsidian](./Obsidian.md) extension about visualisation, graphics. Create and edit Draw.io diagrams in Obsidian. 
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=drawio-obsidian), [Webstore](https://obsidian.md/plugins?id=drawio-obsidian)
-- Download the [latest release](https://github.com/zapthedingbat/drawio-obsidian/releases/latest) of its source code [repository](https://github.com/zapthedingbat/drawio-obsidian) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

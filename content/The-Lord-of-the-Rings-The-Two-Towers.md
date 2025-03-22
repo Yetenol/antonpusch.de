@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T22:59:37.612+01:00"
+date: "2025-03-22T23:36:03.504+01:00"
 title: "The Lord of the Rings: The Two Towers"
 description: "-"
 dg-publish: true
@@ -14,7 +14,7 @@ release-date: 18 Dec 2002
 type: movie
 runtime: 179 min
 number-of-seasons: 
-genres:
+tags:
   - Adventure
   - Drama
   - Fantasy

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.181+01:00"
+date: "2025-03-22T23:45:54.998+01:00"
 title: "Discord"
 description: "-"
 dg-folder: computer/apps
@@ -15,17 +15,8 @@ categories:
 synopsis: Discord is where you can make a home for your communities and friends. Where you can stay close and have fun over text, voice, and video. Whether you’re part of a school club, a gaming group, a worldwide art community, or just a handful of friends that want to spend time together, Discord makes it easy to talk every day and hang out more often.
 ---
 
-Discord is a [messenger](install%20messenger%20apps.md.md) app. Discord is where you can make a home for your communities and friends. Where you can stay close and have fun over text, voice, and video. Whether you’re part of a school club, a gaming group, a worldwide art community, or just a handful of friends that want to spend time together, Discord makes it easy to talk every day and hang out more often.
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=XPDC2RH70K22MN&mode=mini) or invoke:
-  ```powershell
-  winget install -e XPDC2RH70K22MN --accept-package-agreements
-  ```
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Discord.Discord
-  ```
-- Download it from the [publisher's website](https://discord.com/download)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - [ ] Run at startup

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.752+01:00"
+date: "2025-03-22T23:36:00.993+01:00"
 title: Inception
 description: "-"
 dg-folder: visual-media/media
@@ -10,7 +10,7 @@ release-date: 16 Jul 2010
 type: movie
 runtime: 148 min
 number-of-seasons: 
-genres:
+tags:
   - Action
   - Adventure
   - Sci-Fi

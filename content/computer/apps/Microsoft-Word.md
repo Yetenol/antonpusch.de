@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.124+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Microsoft Word"
 description: "-"
 dg-folder: computer/apps
@@ -20,12 +20,7 @@ synopsis: |
 extends-app: "[[Microsoft 365|Microsoft 365]]"
 ---
 
-![thumbnail](https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2PzgO) Microsoft Word is a [Microsoft 365](./Microsoft-365.md) extension. Create beautiful and engaging documents 
-
-- Install extension via [Microsoft Store](ms-windows-store://pdp/?ProductId=CFQ7TTC0K7C7), [Webstore](https://microsoft.com/store/apps/CFQ7TTC0K7C7)
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=CFQ7TTC0K7C7&mode=mini), show in [webstore](https://microsoft.com/store/apps/CFQ7TTC0K7C7) or invoke:
-  ```powershell
-  winget install -e CFQ7TTC0K7C7 --accept-package-agreements
-  ```
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 

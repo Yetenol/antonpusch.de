@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.987+01:00"
 title: "C, C++"
 description: "-"
 dg-folder: computer/apps
@@ -19,8 +19,7 @@ synopsis: C/C++ IntelliSense, debugging, and code browsing.
 extends-app: "[[Visual Studio Code|Visual Studio Code]]"
 ---
 
-C, C++ is a [Visual Studio Code](./Visual-Studio-Code.md) extension. C/C++ IntelliSense, debugging, and code browsing.
-
-- Install extension via [Extensions](vscode:extension/ms-vscode.cpptools), [Web Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 Develop C in VS Code

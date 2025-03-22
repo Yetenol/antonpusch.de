@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.736+01:00"
+date: "2025-03-22T23:36:02.706+01:00"
 title: Systemfehler - Wenn Inge tanzt
 description: "Wenn Inge tanzt"
 dg-folder: visual-media/media
@@ -10,7 +10,7 @@ release-date: 11 Jul 2013
 type: movie
 runtime: 98 min
 number-of-seasons: 
-genres:
+tags:
   - Comedy
   - Music
 directors:

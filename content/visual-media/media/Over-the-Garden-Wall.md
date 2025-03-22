@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.746+01:00"
+date: "2025-03-22T23:36:01.843+01:00"
 title: Over the Garden Wall
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 03 Nov 2014
 type: series
 runtime: 110 min
 number-of-seasons: 1
-genres:
+tags:
   - Animation
   - Short
   - Adventure

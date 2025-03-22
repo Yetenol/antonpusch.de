@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.166+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "MediathekView"
 description: "-"
 dg-folder: computer/apps
@@ -19,15 +19,9 @@ categories:
 synopsis: The MediathekView program searches the media libraries of various predominantly German-speaking public broadcasters, downloads articles from them or plays them back.
 ---
 
-MediathekView is a [entertainment](install%20entertainment%20apps.md.md) app. The MediathekView program searches the media libraries of various predominantly German-speaking public broadcasters, downloads articles from them or plays them back.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e MediathekViewTeam.MediathekView
-  ```
-- Download the [latest release](https://github.com/mediathekview/MediathekView/releases/latest) of its source code [repository](https://github.com/mediathekview/MediathekView) on GitHub
-- Download it from the [publisher's website](https://download.mediathekview.de/stabil/MediathekView-latest-win.exe)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Immer höchste Qualität verwenden
 

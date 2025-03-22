@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:06:46.298+01:00"
+date: "2025-03-22T23:36:03.860+01:00"
 title: Titanic
 description: "-"
 dg-publish: true
@@ -14,7 +14,7 @@ release-date: 19 Dec 1997
 type: movie
 runtime: 194 min
 number-of-seasons: 
-genres:
+tags:
   - Drama
   - Romance
 directors:

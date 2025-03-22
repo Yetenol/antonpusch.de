@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.146+01:00"
+date: "2025-03-22T23:45:55.037+01:00"
 title: "Self-hosted LiveSync"
 description: "-"
 dg-folder: computer/apps
@@ -20,8 +20,6 @@ synopsis: Community implementation of self-hosted livesync. Reflect your vault c
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-Self-hosted LiveSync is a **discarded** [Obsidian](./Obsidian.md) extension about synchronization. Community implementation of self-hosted livesync. Reflect your vault changes to some other devices immediately. Please make sure to disable other synchronize solutions to avoid content corruption or duplication.
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=obsidian-livesync), [Webstore](https://obsidian.md/plugins?id=obsidian-livesync)
-- Download the [latest release](https://github.com/vrtmrz/obsidian-livesync/releases/latest) of its source code [repository](https://github.com/vrtmrz/obsidian-livesync) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

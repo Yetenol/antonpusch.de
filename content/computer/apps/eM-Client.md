@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.180+01:00"
+date: "2025-03-22T23:45:55.054+01:00"
 title: "eM Client"
 description: "-"
 dg-folder: computer/apps
@@ -15,14 +15,9 @@ categories:
 synopsis: eM Client is a powerful email client and productivity tool with an intuitive and familiar interface.
 ---
 
-eM Client is a [messenger](install%20messenger%20apps.md.md) app. eM Client is a powerful email client and productivity tool with an intuitive and familiar interface.
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=9NM8S4PVF0N2&mode=mini), show in [webstore](https://microsoft.com/store/apps/9NM8S4PVF0N2) or invoke:
-  ```powershell
-  winget install -e 9NM8S4PVF0N2 --accept-package-agreements
-  ```
-- Download it from the [publisher's website](https://www.emclient.com/dist/latest/setup.msi)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # EteSync DAV Bridge
 

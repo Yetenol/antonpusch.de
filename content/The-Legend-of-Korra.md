@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:06:23.367+01:00"
+date: "2025-03-22T23:36:03.141+01:00"
 title: The Legend of Korra
 description: "-"
 dg-publish: true
@@ -14,7 +14,7 @@ release-date: 14 Apr 2012
 type: series
 runtime: 1 min
 number-of-seasons: 4
-genres:
+tags:
   - Animation
   - Action
   - Adventure

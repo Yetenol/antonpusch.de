@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.987+01:00"
 title: "Bitwarden"
 description: "-"
 dg-folder: computer/apps
@@ -20,14 +20,9 @@ synopsis:
 extends-app: 
 ---
 
-Bitwarden is a [storage](install%20storage%20apps.md.md) app. 
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Bitwarden.Bitwarden
-  ```
-- Download it from the [publisher's website](https://bitwarden.com/download/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 Don't use the MS Store version because it doesn't support browser integration.
 
 Change Settings via `Ctrl+,`

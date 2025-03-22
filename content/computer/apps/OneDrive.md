@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.131+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "OneDrive"
 description: "-"
 dg-folder: computer/apps
@@ -13,18 +13,9 @@ categories:
 synopsis: OneDrive lets you access and edit your files from all your devices anywhere. Use this Windows app to access and share your files from your Windows devices such as Xbox, Surface Hub or HoloLens. The OneDrive app for Windows 10 allows you to work with both your personal and work files easily.
 ---
 
-OneDrive is a [storage](install%20storage%20apps.md.md) app. OneDrive lets you access and edit your files from all your devices anywhere. Use this Windows app to access and share your files from your Windows devices such as Xbox, Surface Hub or HoloLens. The OneDrive app for Windows 10 allows you to work with both your personal and work files easily.
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=9WZDNCRFJ1P3&mode=mini), show in [webstore](https://microsoft.com/store/apps/9WZDNCRFJ1P3) or invoke:
-  ```powershell
-  winget install -e 9WZDNCRFJ1P3 --accept-package-agreements
-  ```
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Microsoft.OneDrive
-  ```
-- Download it from the [publisher's website](https://www.microsoft.com/de-de/microsoft-365/onedrive/download)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - Unlink device
     - Open `System Tray > OneDrive > Settings > Settings`

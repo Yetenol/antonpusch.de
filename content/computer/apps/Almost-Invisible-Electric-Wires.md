@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.191+01:00"
+date: "2025-03-22T23:45:54.971+01:00"
 title: "Almost Invisible Electric Wires"
 description: "-"
 dg-folder: computer/apps
@@ -21,7 +21,6 @@ synopsis: |
 extends-app: "[[Factorio - A game about automation, logistics and network optimizations|Factorio - A game about automation, logistics and network optimizations]]"
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/59d1d45c56a070f87e8ca63298f0a4ab49f57bcf.thumb.png) Almost Invisible Electric Wires is a [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension about visual, circuit network. You can make the wires 80%, 50% or completely invisible. The Red and Green wire can be Blue and Yellow, or invisible too. Now you can customize it in settings. 
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/AlmostInvisibleElectricWires)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

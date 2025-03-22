@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.168+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "JetBrains DataGrip"
 description: "-"
 dg-folder: computer/apps
@@ -26,14 +26,9 @@ dg-content-classes:
 inherit-extensions: "[[JetBrains IntelliJ IDEA|JetBrains IntelliJ IDEA]]"
 ---
 
-JetBrains DataGrip is a [education](install%20education%20apps.md.md), [development](install%20development%20apps.md.md) app. A database administration tool for SQL databases.
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e JetBrains.DataGrip
-  ```
-- Download it from the [publisher's website](https://www.jetbrains.com/datagrip/download/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Plugins
 

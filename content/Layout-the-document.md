@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:28.009+01:00"
+date: "2025-03-22T23:22:19.941+01:00"
 title: "Layout the document"
 description: "Setup margins, hyphenation, table of contents"
 dg-publish: true
@@ -75,14 +75,3 @@ Define the hyphenation of a word list
 | `\-`         | inserts a discretionary hyphen into a word. This also becomes the only point hyphenation is allowed in this word |
 | `mbox{text}` | be kept together under all circumstances (e.g. phone number)                                                     |
 | `\fbox`      | is similar to `\mbox`, but in addition there will be a visible box drawn around the content.                     |
-
-
----
-#obsidian/cleanup
-
-Sources:
-
-Related:
-
-Tags:
-[LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex/index.md)

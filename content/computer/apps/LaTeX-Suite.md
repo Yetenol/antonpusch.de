@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.166+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "LaTeX Suite"
 description: "-"
 dg-folder: computer/apps
@@ -21,11 +21,9 @@ synopsis: A plugin for Obsidian that aims to make typesetting LaTeX math as fast
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-LaTeX Suite is a [Obsidian](./Obsidian.md) extension about editing, math. A plugin for Obsidian that aims to make typesetting LaTeX math as fast as handwriting.
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=obsidian-latex-suite), [Webstore](https://obsidian.md/plugins?id=obsidian-latex-suite)
-- Download the [latest release](https://github.com/artisticat1/obsidian-latex-suite/releases/latest) of its source code [repository](https://github.com/artisticat1/obsidian-latex-suite) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Write custom snippets
 

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.145+01:00"
+date: "2025-03-22T23:45:55.021+01:00"
 title: "Microsoft OneNote"
 description: "-"
 dg-folder: computer/apps
@@ -23,14 +23,9 @@ synopsis: |
 extends-app: "[[Microsoft 365|Microsoft 365]]"
 ---
 
-![thumbnail](https://images-eds-ssl.xboxlive.com/image?url=Q_rwcVSTCIytJ0KOzcjWTYtI_MIrVq4WfN7M.qN7gV3ayNiQeJK6Uxg366DH3bnRbmlvHfpQtz47cZU0WIkSXLOXZAkwf1M65aSa3nRlf9AeesLx0aao_3L.SmU_nLV.oshxeE4.GIL3TAPJWWBqDg--&format=source&w=120) Microsoft OneNote also called OneNote for Windows 10 is a **discarded** [Microsoft 365](./Microsoft-365.md) extension about office. OneNote is your digital notebook for capturing and organizing everything across your devices. Jot down your ideas, keep track of classroom and meeting notes, clip from the web, or make a to-do list, as well as draw and sketch your ideas. 
-
-- Install extension via [Microsoft Store](ms-windows-store://pdp/?ProductId=9WZDNCRFHVJL), [Webstore](https://microsoft.com/store/apps/9WZDNCRFHVJL)
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=9WZDNCRFHVJL&mode=mini), show in [webstore](https://microsoft.com/store/apps/9WZDNCRFHVJL) or invoke:
-  ```powershell
-  winget install -e 9WZDNCRFHVJL --accept-package-agreements
-  ```
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - Click the three dots in the upper-right corner
 - Open `Settings > Options`

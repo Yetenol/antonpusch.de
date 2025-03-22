@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.159+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Microsoft Edge"
 description: "-"
 dg-folder: computer/apps
@@ -24,18 +24,9 @@ cssclasses:
 dg-content-classes:
   - cards
 ---
-Microsoft Edge is a **discarded** [essential](install%20essential%20apps.md.md), [office](install%20office%20apps.md.md) app. Microsoft Edge is the best performing browser on Windows 10.  Let Microsoft Edge help you stay in the flow, save big while shopping, and stay safer online with built-in tools that simply make browsing better.
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=XPFFTQ037JWMHS&mode=mini) or invoke:
-  ```powershell
-  winget install -e XPFFTQ037JWMHS --accept-package-agreements
-  ```
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Microsoft.Edge
-  ```
-- Download the [latest release](https://github.com/SimonBrazell/privacy-redirect/releases/latest) of its source code [repository](https://github.com/SimonBrazell/privacy-redirect) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 # Add custom search engines
 

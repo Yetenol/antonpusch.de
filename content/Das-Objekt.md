@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.900+01:00"
+date: "2025-03-22T23:45:55.064+01:00"
 title: Das Objekt
 description: |
   Das größte Science-Fiction-Epos seit dem internationalen Bestseller "Der Marsianer": Es ist das Signal, auf das die Welt seit Beginn der Weltraumforschung wartet – in der Nähe des Saturns ist ein künstliches, unbekanntes Objekt gesichtet worden. Ein amerikanisches Team bricht sofort zu dem fernen Planeten auf. Doch alles auf der Reise geht schief, und noch bevor sie den Saturn erreichen, erkennen die Astronauten, dass es nahezu unmöglich sein wird, zur Erde zurückzukehren. Und auch auf zwei weitere Dinge sind sie nicht vorbereitet: auf das, was sie in dem geheimnisvollen, kilometergroßen Objekt finden. Und auf ein skrupelloses, konkurrierendes Team, das ebenfalls als erstes am Ziel sein will. Bald geht es nicht mehr nur darum, die größte Entdeckung der Menschheitsgeschichte zu bewahren. Sondern ums blanke Überleben ... "Das Objekt" ist ein unnachahmlich spannender und cooler Trip in die Tiefen des Universums.

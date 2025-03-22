@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.145+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "PyX"
 description: "-"
 dg-folder: computer/apps
@@ -20,12 +20,9 @@ synopsis: Generate PDF, SVG graphics with LaTeX drawn text and PostScript drawin
 extends-app: "[[Python|Python]]"
 ---
 
-![thumbnail](https://pyx-project.org/pyxlogo.png) PyX is a [Python](./Python.md) extension about visualisation. Generate PDF, SVG graphics with LaTeX drawn text and PostScript drawing backend
-
-- Install extension via <pre><code class='language-powershell'>pip install PyX</code></pre>
-- Download the [latest release](https://github.com/pyx-project/pyx/releases/latest) of its source code [repository](https://github.com/pyx-project/pyx) on GitHub
-- Download it from the [publisher's website](https://pyx-project.org/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Example plot
 

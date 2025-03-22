@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.760+01:00"
+date: "2025-03-22T23:36:00.561+01:00"
 title: Don't Look Up
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 24 Dec 2021
 type: movie
 runtime: 138 min
 number-of-seasons: 
-genres:
+tags:
   - Comedy
   - Drama
   - Sci-Fi

@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.136+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Pandoc"
 description: "-"
 dg-folder: computer/apps
@@ -19,14 +19,9 @@ synopsis:
 extends-app: 
 ---
 
-Pandoc is a app. 
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e JohnMacFarlane.Pandoc
-  ```
-- Download it from the [publisher's website](https://pandoc.org/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 ---
 Sources:

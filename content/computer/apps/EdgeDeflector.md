@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.181+01:00"
+date: "2025-03-22T23:45:54.998+01:00"
 title: "EdgeDeflector"
 description: "-"
 dg-folder: computer/apps
@@ -16,15 +16,6 @@ categories:
 ---
 ---
 
-EdgeDeflector is a **discarded** [personalization](install%20personalization%20apps.md.md) app. 
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e da2x.edgedeflector
-  ```
-- Invoke the [installer](https://github.com/da2x/EdgeDeflector/releases/latest/download/EdgeDeflector_install.exe) from the latest release of its source code [repository](https://github.com/da2x/EdgeDeflector) on GitHub
-  ```powershell
-  Invoke-WebRequest 'https://github.com/da2x/EdgeDeflector/releases/latest/download/EdgeDeflector_install.exe' -OutFile "$env:Temp/EdgeDeflector_install.exe"
-  if ($?) {Start-Process "$env:Temp/EdgeDeflector_install.exe"}
-  ```
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

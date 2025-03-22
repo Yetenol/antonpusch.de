@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:31.954+01:00"
+date: "2025-03-22T23:45:55.069+01:00"
 title: In eisige Höhen
 description: |
   Der Klassiker zum Wiederentdecken: Mit seinem Weltbestseller revolutionierte der Bergsteiger und Schriftsteller Jon Krakauer die Abenteuerliteratur – und läßt Spannung und Faszination, Fassungslosigkeit und blankes Entsetzen eins werden. 1996 nahm der amerikanische Journalist Jon Krakauer an einer Mount-Everest-Expedition teil. Das Unternehmen endete in einer Katastrophe, fünf von Krakauers Kameraden kamen auf tragische Weise in einem peitschenden Schneesturm ums Leben, er selbst konnte sich mit letzter Kraft in Sicherheit bringen. Minutiös und eindrucksvoll schildert er in diesem Bericht den Verlauf der Expedition. Er äußert sich außerdem kritisch über die Auswüchse des modernen Alpinismus mit seinen oft tödlichen Folgen, vermittelt aber zugleich einen Eindruck von der magischen Anziehungskraft und der Faszination des Bergsteigens.

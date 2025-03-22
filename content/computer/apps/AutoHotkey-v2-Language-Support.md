@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.987+01:00"
 title: "AutoHotkey v2 Language Support"
 description: "-"
 dg-folder: computer/apps
@@ -20,10 +20,9 @@ synopsis: AutoHotkey v2 Language support for VS Code, features realization based
 extends-app: "[[Visual Studio Code|Visual Studio Code]]"
 ---
 
-![thumbnail](https://thqby.gallerycdn.vsassets.io/extensions/thqby/vscode-autohotkey2-lsp/2.2.2/1698148424549/Microsoft.VisualStudio.Services.Icons.Default) AutoHotkey v2 Language Support is a [Visual Studio Code](./Visual-Studio-Code.md) extension about autohotkey. AutoHotkey v2 Language support for VS Code, features realization based on v2 syntax analysis.
-
-- Install extension via [Extensions](vscode:extension/thqby.vscode-autohotkey2-lsp), [Web Marketplace](https://marketplace.visualstudio.com/items?itemName=thqby.vscode-autohotkey2-lsp)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 ---
 Sources:

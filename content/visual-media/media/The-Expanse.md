@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.732+01:00"
+date: "2025-03-22T23:36:02.887+01:00"
 title: The Expanse
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 23 Nov 2015
 type: series
 runtime: 60 min
 number-of-seasons: 6
-genres:
+tags:
   - Drama
   - Mystery
   - Sci-Fi

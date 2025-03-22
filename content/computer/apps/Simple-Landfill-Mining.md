@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.152+01:00"
+date: "2025-03-22T23:45:55.037+01:00"
 title: "Simple Landfill Mining"
 description: "-"
 dg-folder: computer/apps
@@ -20,7 +20,6 @@ synopsis: |
 extends-app: "[[Factorio - A game about automation, logistics and network optimizations|Factorio - A game about automation, logistics and network optimizations]]"
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/39d7b5c7f3038980c9d932c220932ee712906b21.thumb.png) Simple Landfill Mining is a [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension about environment. Lets players mine landfill so you can fix those mistakes you make. 
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/simple_landfill_mining)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

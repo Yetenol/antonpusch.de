@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:28.894+01:00"
+date: "2025-03-22T23:25:55.435+01:00"
 title: "Query, filter, sort and transform frontmatter of your notes"
 description: "-"
 dg-publish: true
@@ -25,11 +25,9 @@ FROM ""
 
 # Display an interactive list of tasks whose pages match the given query
 
-#research/addExamples 
 
 # Display a calendar view displaying each hit via a dot on its referred date
 
-#research/addExamples 
 
 ## General Format
 

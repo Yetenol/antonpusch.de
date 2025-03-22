@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.715+01:00"
+date: "2025-03-22T23:36:04.027+01:00"
 title: "When We Left Earth: The NASA Missions"
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 08 Jun 2008
 type: series
 runtime: 48 min
 number-of-seasons: 1
-genres:
+tags:
   - Documentary
   - History
 directors:

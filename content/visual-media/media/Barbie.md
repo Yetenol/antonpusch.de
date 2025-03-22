@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.764+01:00"
+date: "2025-03-22T23:36:00.013+01:00"
 title: Barbie
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 21 Jul 2023
 type: movie
 runtime: 114 min
 number-of-seasons: 
-genres:
+tags:
   - Adventure
   - Comedy
   - Fantasy

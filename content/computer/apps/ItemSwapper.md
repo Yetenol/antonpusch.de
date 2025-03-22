@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.168+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "ItemSwapper"
 description: "-"
 dg-folder: computer/apps
@@ -20,8 +20,6 @@ extends-app: "[[Minecraft|Minecraft]]"
 modportal1-id: itemswapper
 ---
 
-![thumbnail](https://cdn.modrinth.com/data/RPOSBQgq/2ab4614cc4288baa911be0365cd22203e75b9233.png) ItemSwapper is a [Minecraft](./Minecraft.md) extension. Adds an item switch interface triggered by pressing a hotkey
-
-- Install extension via [Modrinth](https://modrinth.com/mod/itemswapper)
-- Install extension via [CurseForge](https://www.curseforge.com/minecraft/mc-mods/itemswapper)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

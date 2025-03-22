@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.181+01:00"
+date: "2025-03-22T23:45:54.998+01:00"
 title: "EarTrumpet"
 description: "-"
 dg-folder: computer/apps
@@ -15,14 +15,6 @@ categories:
   - Personalization
 ---
 
-EarTrumpet is a **discarded** [personalization](install%20personalization%20apps.md.md) app. 
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=9NBLGGH516XP&mode=mini), show in [webstore](https://microsoft.com/store/apps/9NBLGGH516XP) or invoke:
-  ```powershell
-  winget install -e 9NBLGGH516XP --accept-package-agreements
-  ```
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e File-New-Project.EarTrumpet
-  ```
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

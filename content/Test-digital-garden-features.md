@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:29.632+01:00"
+date: "2025-03-22T23:30:35.506+01:00"
 title: "Test digital garden features"
 description: "-"
 dg-publish: true
@@ -18,8 +18,8 @@ Ich bin ein Satz.
 
 - Ich bin ein [Link](example.md) auf eine interne Notiz
 - Ich bin ein [Link](https://google.com) auf eine externe Website
-- Ich bin ein [Link mit #hashtag](https://google.com) auf eine externe Website
-- Ich bin ein [Link #hashtag](https://en.wikipedia.org/wiki/Hyperlink#link) auf ein externes Kapitel
+- Ich bin ein [Link mit hashtag](https://google.com) auf eine externe Website
+- Ich bin ein [Link hashtag](https://en.wikipedia.org/wiki/Hyperlink#link) auf ein externes Kapitel
 
 
 First Term

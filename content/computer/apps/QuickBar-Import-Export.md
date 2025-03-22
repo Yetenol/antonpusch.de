@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.145+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "QuickBar Import Export"
 description: "-"
 dg-folder: computer/apps
@@ -21,7 +21,6 @@ synopsis: |
 extends-app: "[[Factorio - A game about automation, logistics and network optimizations|Factorio - A game about automation, logistics and network optimizations]]"
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/f56adf79e74625258c16cb45c37b2d745b7495b3.thumb.png) QuickBar Import Export is a [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension about quality of life. Allows you to export your current quickbar and import it in a different save. 
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/quickbarimportexport)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

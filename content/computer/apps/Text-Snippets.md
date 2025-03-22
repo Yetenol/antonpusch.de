@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.152+01:00"
+date: "2025-03-22T23:45:55.048+01:00"
 title: "Text Snippets"
 description: "-"
 dg-folder: computer/apps
@@ -21,11 +21,9 @@ synopsis: |
 extends-app: "[Obsidian](./Obsidian.md)"
 ---
 
-Text Snippets is a [Obsidian](./Obsidian.md) extension about editing. Snippets for faster typing. Allows you to replace text templates, create your own, and expand text shortcuts. 
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=text-snippets-obsidian), [Webstore](https://obsidian.md/plugins?id=text-snippets-obsidian)
-- Download the [latest release](https://github.com/ArianaKhit/text-snippets-obsidian/releases/latest) of its source code [repository](https://github.com/ArianaKhit/text-snippets-obsidian) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 ---
 Sources:

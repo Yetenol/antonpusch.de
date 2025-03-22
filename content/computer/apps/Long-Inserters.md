@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.166+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Long Inserters"
 description: "-"
 dg-folder: computer/apps
@@ -22,7 +22,6 @@ extends-app: "[[Factorio - A game about automation, logistics and network optimi
 not-in-use: true
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/05a7985a9f013255b622d76c09458b24cca4eaf4.thumb.png) Long Inserters is a **discarded** [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension about content, logistics. Adds long fast, filter and stack inserters. 
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/Long%20Inserters)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

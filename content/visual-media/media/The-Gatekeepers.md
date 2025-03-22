@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.732+01:00"
+date: "2025-03-22T23:36:02.941+01:00"
 title: The Gatekeepers
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 14 Mar 2013
 type: movie
 runtime: 101 min
 number-of-seasons: 
-genres:
+tags:
   - Documentary
   - History
   - War

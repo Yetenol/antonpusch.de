@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.142+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "PocketCast"
 description: "-"
 dg-folder: computer/apps
@@ -19,10 +19,9 @@ categories: []
 
 synopsis::
 
-PocketCast is a app. 
-
-- Download it from the [publisher's website](https://play.google.com/store/apps/details?id=au.com.shiftyjelly.pocketcasts)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Ich nutze die App PocketCast und kann sie dir auch sehr empfehlen. Meine Lieblingsfeature sind:
 + Alle öffentlichen Podcasts sind verfügbar (bei Spotify fehlten mir beispielsweise Podcasts von NPR)

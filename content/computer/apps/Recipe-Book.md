@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.146+01:00"
+date: "2025-03-22T23:45:55.022+01:00"
 title: "Recipe Book"
 description: "-"
 dg-folder: computer/apps
@@ -20,7 +20,6 @@ synopsis: |
 extends-app: "[[Factorio - A game about automation, logistics and network optimizations|Factorio - A game about automation, logistics and network optimizations]]"
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/e5e4c8e95988688d6839c0bee14a85557a1a18e4.thumb.png) Recipe Book is a [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension about planning. Search for information about machines, materials, recipes, and technology in a clean, easy-to-use interface. Similar to FNEI and What is it Really Used For. 
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/RecipeBook)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```

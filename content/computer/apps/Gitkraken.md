@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.177+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Gitkraken"
 description: "-"
 dg-folder: computer/apps
@@ -12,14 +12,9 @@ categories:
   - Development
 ---
 
-Gitkraken is a **discarded** [development](install%20development%20apps.md.md) app. 
-
-- Invoke the installer listed on Windows Package Manager:
-  ```powershell
-  winget install -e Axosoft.GitKraken
-  ```
-- Download it from the [publisher's website](https://www.gitkraken.com/download/windows64)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - sign in using GitHub
 > Open `Preferences`

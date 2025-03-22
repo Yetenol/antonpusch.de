@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.987+01:00"
 title: "Capture2Text"
 description: "-"
 dg-folder: computer/apps
@@ -15,10 +15,9 @@ categories:
   - Personalization
 ---
 
-Capture2Text is a **discarded** [personalization](install%20personalization%20apps.md.md) app. 
-
-- Download it from the [publisher's website](https://sourceforge.net/projects/capture2text/files/Capture2Text/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - [ ] Run at startup
 
