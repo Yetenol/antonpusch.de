@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.180+01:00"
+date: "2025-03-22T23:45:55.003+01:00"
 title: "Execute Code"
 description: "-"
 dg-folder: computer/apps
@@ -20,11 +20,9 @@ synopsis: Execute code snippets within a note.
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-Execute Code is a [Obsidian](./Obsidian.md) extension about programming. Execute code snippets within a note.
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=execute-code), [Webstore](https://obsidian.md/plugins?id=execute-code)
-- Download the [latest release](https://github.com/twibiral/obsidian-execute-code/releases/latest) of its source code [repository](https://github.com/twibiral/obsidian-execute-code) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Open Haskell language-specific settings
 - [x] Use Ghci - Run haskell code with ghci instead of runghc
