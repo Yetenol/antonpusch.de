@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.152+01:00"
+date: "2025-03-22T23:45:55.050+01:00"
 title: "Translate"
 description: "-"
 dg-folder: computer/apps
@@ -22,8 +22,6 @@ synopsis: |
 extends-app: "[[Obsidian|Obsidian]]"
 ---
 
-Translate is a [Obsidian](./Obsidian.md) extension about editing, translation. Translate text and notes with Google Translate, DeepL, Azure, and more. 
-
-- Install extension via [Comminity plugins](obsidian://show-plugin?id=translate), [Webstore](https://obsidian.md/plugins?id=translate)
-- Download the [latest release](https://github.com/Fevol/obsidian-translate/releases/latest) of its source code [repository](https://github.com/Fevol/obsidian-translate) on GitHub
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
