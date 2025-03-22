@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.746+01:00"
+date: "2025-03-22T23:36:01.698+01:00"
 title: Minority Report
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 21 Jun 2002
 type: movie
 runtime: 145 min
 number-of-seasons: 
-genres:
+tags:
   - Action
   - Crime
   - Mystery
