@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.987+01:00"
 title: "Change Case"
 description: "-"
 dg-folder: computer/apps
@@ -19,10 +19,9 @@ synopsis: Quickly change the case with one keybinding
 extends-app: "[[Visual Studio Code|Visual Studio Code]]"
 ---
 
-![thumbnail](https://cdn.vsassets.io/v/M226_20230814.3/_content/Header/default_icon_128.png) Change Case is a [Visual Studio Code](./Visual-Studio-Code.md) extension. Quickly change the case with one keybinding
-
-- Install extension via [Extensions](vscode:extension/FinnTenzor.change-case), [Web Marketplace](https://marketplace.visualstudio.com/items?itemName=FinnTenzor.change-case)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 Switch word at cursor between camelCase, PascalCase, and CONSTANT_CASE using `[Shift + F3]`
 
