@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.183+01:00"
+date: "2025-03-22T23:45:54.987+01:00"
 title: "Automatic Train Fuel Stop"
 description: "-"
 dg-folder: computer/apps
@@ -21,8 +21,7 @@ synopsis: |
 extends-app: "[[Factorio - A game about automation, logistics and network optimizations|Factorio - A game about automation, logistics and network optimizations]]"
 ---
 
-![thumbnail](https://assets-mod.factorio.com/assets/900d7f7a4f5de9085c5c20f75074e4af212742a9.thumb.png) Automatic Train Fuel Stop is a [Factorio - A game about automation, logistics and network optimizations](./Factorio.md) extension about content, trains. This mod allows trains with low fuel to automatically enter the fuel stop to replenish fuel. 
-
-- Install extension via [Mod portal](https://mods.factorio.com/mod/FuelTrainStop)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
