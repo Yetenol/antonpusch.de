@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T13:18:44.760+01:00"
+date: "2025-03-22T23:36:00.293+01:00"
 title: Das doppelte Lottchen
 description: "-"
 dg-folder: visual-media/media
@@ -15,7 +15,7 @@ release-date: 02 Oct 1952
 type: movie
 runtime: 105 min
 number-of-seasons: 
-genres:
+tags:
   - Family
   - Comedy
 directors:
