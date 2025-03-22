@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:28.958+01:00"
+date: "2025-03-22T20:50:41.627+01:00"
 title: "RegEx Input Parsing"
 description: "Import data out of plaintext using regular expressions"
 dg-publish: true
@@ -118,5 +118,5 @@ Related:
 [RegEx - Use Regular Expressions to search, extract and manipulate text in a specified pattern](./RegEx.md)
 
 Tags:
-[Handle PowerShell data - Handle, Import, Export, Filter and RegEx query objects](../powershell/data/index.md)
+[Handle data - Handle, Import, Export, Filter and RegEx query objects in PowerShell](./powershell/data/index.md)
 Document conversion
