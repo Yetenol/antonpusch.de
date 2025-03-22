@@ -32,4 +32,4 @@ Related:
 [Autohotkey - Interact with applications and streamline repetitive tasks](./Autohotkey.md)
 
 Tags:
-[PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](../powershell/index.md)
+[PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](./powershell/index.md)
