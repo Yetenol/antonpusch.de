@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.180+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Files"
 description: "-"
 dg-folder: computer/apps
@@ -18,15 +18,9 @@ categories: []
 synopsis: Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.
 ---
 
-Files is a app. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=9NGHP3DX8HDX&mode=mini), show in [webstore](https://microsoft.com/store/apps/9NGHP3DX8HDX) or invoke:
-  ```powershell
-  winget install -e 9NGHP3DX8HDX --accept-package-agreements
-  ```
-- Download the [latest release](https://github.com/files-community/Files/releases/latest) of its source code [repository](https://github.com/files-community/Files) on GitHub
-- Download it from the [publisher's website](https://files.community/)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 # Konkrete Erleichterungen
 
 Springt man in den Überordner, ist der vorher besuchte Ordner markiert.
