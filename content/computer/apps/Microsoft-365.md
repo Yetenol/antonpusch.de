@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:13:19.166+01:00"
+date: "2025-03-22T23:45:55.004+01:00"
 title: "Microsoft 365"
 description: "-"
 dg-folder: computer/apps
@@ -27,14 +27,9 @@ aliases:
   - Microsoft Office
 ---
 
-Microsoft 365 also called Microsoft Office is a [office](install%20office%20apps.md.md) app. Microsoft 365 is a product family of productivity software, collaboration and cloud-based services owned by Microsoft.
-
-- Open in [Microsoft Store](ms-windows-store://pdp/?ProductId=CFQ7TTC0K5DM&mode=mini), show in [webstore](https://microsoft.com/store/apps/CFQ7TTC0K5DM) or invoke:
-  ```powershell
-  winget install -e CFQ7TTC0K5DM --accept-package-agreements
-  ```
-- Download it from the [publisher's website](https://account.microsoft.com/services/office/install)
-
+```dynamic-embed
+[[Describe this app and list installation sources]]
+```
 
 - Sign in using Microsoft account
 - Download [German Language Pack](https://support.microsoft.com/en-us/topic/install-the-german-language-pack-for-64-bit-office-b1d56217-5770-45db-99b5-2b4900bbe2eb?ui=en-us&rs=en-us&ad=us)
