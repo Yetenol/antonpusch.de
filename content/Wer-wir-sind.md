@@ -1,27 +1,40 @@
 ---
-date: "2025-03-22T07:21:32.031+01:00"
+date: "2025-03-22T07:21:32.034+01:00"
 title: Wer wir sind
 description: |
-  Sankt Petersburg/Ludwigsburg 1992. Ein Mädchen reist mit den Eltern, der Großmutter und ihrem Bruder nach Deutschland aus, in die Freiheit. Was sie dafür zurücklässt, sind ihre geliebte Hündin Asta, die Märchen-Telefonnummer und fast alles, was sie mit Djeduschka, Opa, verbindet – letztlich ihre Kindheit. Im Westen merkt die Elfjährige, dass sie jetzt eine andere und «die Fremde» ist. Ein Flüchtlingskind im selbstgeschneiderten Parka, das die Wörter so komisch ausspricht, dass andere lachen. Auch für die Eltern ist es schwer, im Sehnsuchtswesten wächst ihre russische Nostalgie; und die stolze Großmutter, die mal einen Betrieb leitete, ist hier einfach eine alte Frau ohne Sprache. Das erst fremde Deutsch kann dem Mädchen helfen – beim Erwachsenwerden, bei der Eroberung jenes erhofften Lebens. Aber die Vorstellungen, was Freiheit ist, was sie erlaubt, unterscheiden sich zwischen Eltern und Tochter immer mehr. Vor allem, als sie selbst eine Familie gründet und Entscheidungen treffen muss. Ein autobiographischer Roman, der zeigt, dass die Identität gerade im Zwiespalt zwischen Stolz und Scham, Eigensinn und Anpassung, Fremdsein und allem Dazwischen stark wird. «Wer wir sind» erzählt, wie eine Frau zu sich findet – und wer wir im heutigen Deutschland sind.
+  Bauplan für die Seele Wie funktioniert der Mensch? Gibt es einen Bauplan für die Psyche, ein geistiges Grundgerüst, das alle Menschen teilen? Bestseller-Autorin Stefanie Stahl liefert faszinierende Einblicke in das Zusammenspiel von Wahrnehmung, Bewusstsein und Verhalten. Leichtfüßig und fundiert erklärt sie, warum Glücksgefühle unsere Lebensdroge sind, wie subjektiv die Wahrnehmung von der Welt ist und wie sich durch Erziehung und Erfahrungen das Selbstbild formt. Spannende Protokolle aus der Therapiepraxis sowie wertvolle Impulse zur Lösung seelischer Konflikte machen diese Reise in unser Innerstes zu einem wahren Erlebnis. Ein umfassender Einblick in unsere innere Schaltzentrale von Deutschlands Psychologin Nr. 1.
 dg-publish: true
 is-read: false
-recommender: "[[Paul Brinkmann|Paul Brinkmann]]"
+recommender: 
 rating: 
 categories:
-  - Fiction
+  - Psychology
 authors:
-  - Lena Gorelik
-publisher: Rowohlt Verlag GmbH
-publish-date: 2021-05-18
-pages: 374
-isbn13: 9783644008786
-isbn10: 3644008787
-cover: http://books.google.com/books/content?id=DPQIEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
-cover-small: http://books.google.com/books/content?id=DPQIEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
-link: https://play.google.com/store/books/details?id=DPQIEAAAQBAJ
-preview-link: http://books.google.de/books?id=DPQIEAAAQBAJ&printsec=frontcover&dq=978-3-424-63235-4&hl=&as_pt=BOOKS&cd=2&source=gbs_api
+  - Stefanie Stahl
+publisher: Kailash Verlag
+publish-date: 2022-10-13
+pages: 320
+isbn13: 9783641295592
+isbn10: 3641295599
+cover: http://books.google.com/books/content?id=HERnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api
+cover-small: http://books.google.com/books/content?id=HERnEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+link: https://play.google.com/store/books/details?id=HERnEAAAQBAJ
+preview-link: http://books.google.de/books?id=HERnEAAAQBAJ&printsec=frontcover&dq=wer+wir+sind+Stefanie+stahl&hl=&as_pt=BOOKS&cd=2&source=gbs_api
 ---
 
 ```dynamic-embed
 [[Describe this book]]
 ```
+
+
+---
+Sources:
+
+Related:
+```dynamic-embed
+[[List related notes]]
+```
+
+Tags:
+[Read a new book - Bücherliste](./Read-a-new-book.md)
+Read about psychology - Psychologie Bücher, Recherchethemen
