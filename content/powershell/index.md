@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T11:18:59.830+01:00"
+date: "2025-03-23T11:38:32.829+01:00"
 title: "PowerShell"
 description: "A command-line shell and scripting language to manage Windows system and automate administrative tasks"
 dg-publish: true
@@ -62,19 +62,7 @@ Other topics
 
 Note preview
 
-![figure powershell listing.svg](../figure-powershell-listing.svg)
+![figure powershell collection.svg](../figure-powershell-collection.svg)
 
-```latex
-\documentclass{article} \title{powershell listing}
-\usepackage{listings,xcolor}
-\input{listings-styles} \input{listings-powershell} 
-\begin{document}
-\begin{lstlisting}[language=PowerShell,style=colorful]
-Read-Host -AsSecureString | ConvertFrom-SecureString > "encrypted.txt"
-[RegEx]::Match((Get-Date), '(\d+):(?<name>\d+)') | foreach { [PSCustomObject]@{
-    FirstCaptureGroup = $_.Groups[1].value
-    NamedCaptureGroup = $_.Groups["name"].value
-}}
-\end{lstlisting}
-\end{document}
-```
+
+[Example listing - Example code block for note preview](./Example-listing.md)
