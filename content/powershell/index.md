@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T22:20:09.086+01:00"
+date: "2025-03-23T10:46:56.346+01:00"
 title: "PowerShell"
 description: "A command-line shell and scripting language to manage Windows system and automate administrative tasks"
 dg-publish: true
@@ -39,8 +39,8 @@ Read-Host -AsSecureString | ConvertFrom-SecureString > "encrypted.txt"
 ```powershell
 $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("fake.txt")
 New-WinSCPSession -SessionOption $sessionOptions
-$i = Get-Item '.\enveloppe\' -Force
-$i.Attributes = $i.Attributes -bxor [IO.FileAttributes]::Hidden }
+$item.Attributes = $item.Attributes -bxor [IO.FileAttributes]::Hidden }
+[Environment]::SetEnvironmentVariable('PATH', "$env:Path$folder;", 'User')
 ```
 
 [Known folders - Access the recycle bin, desktop, downloads folder](../windows/known-folders/index.md)
@@ -59,3 +59,23 @@ Other topics
 - Command Prompt Comparison - PowerShell vs CMD
 - [Bash Equivalents - Replace code from Linux Bash with PowerShell equivalents](./Bash-Equivalents.md)
 - Bash Comparison - Powershell Core vs Bash
+
+Note preview
+
+![figure code listing.svg](../figure-code-listing.svg)
+
+```latex
+\documentclass{article} \title{code listing}
+\usepackage{listings,xcolor}
+\input{listings-powershell}
+\input{listings-styles}
+\begin{document}
+\begin{lstlisting}[language=PowerShell,style=colorful]
+Read-Host -AsSecureString | ConvertFrom-SecureString > "encrypted.txt"
+[RegEx]::Match((Get-Date), '(\d+):(?<name>\d+)') | foreach { [PSCustomObject]@{
+    FirstCaptureGroup = $_.Groups[1].value
+    NamedCaptureGroup = $_.Groups["name"].value
+}}
+\end{lstlisting}
+\end{document}
+```

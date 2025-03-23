@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:21:15.020+01:00"
+date: "2025-03-23T10:17:13.809+01:00"
 title: "Plots"
 description: "Dynamically plot mathematical functions, values as a vector graphic"
 dg-publish: true
@@ -108,6 +108,12 @@ Color gradients
 ## Layout multiple subfigures
 
 - [Quick start guide — Matplotlib 3.10.0 documentation](https://matplotlib.org/stable/users/explain/quick_start.html#working-with-multiple-figures-and-axes)
+
+# Collection for note preview
+
+![figure plots collection.svg](../figure-plots-collection.svg)
+
+Plot collection - Collage example plots for note preview
 
 ---
 Sources:
