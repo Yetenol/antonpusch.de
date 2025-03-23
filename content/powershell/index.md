@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T10:46:56.346+01:00"
+date: "2025-03-23T10:53:51.331+01:00"
 title: "PowerShell"
 description: "A command-line shell and scripting language to manage Windows system and automate administrative tasks"
 dg-publish: true
@@ -67,8 +67,7 @@ Note preview
 ```latex
 \documentclass{article} \title{code listing}
 \usepackage{listings,xcolor}
-\input{listings-powershell}
-\input{listings-styles}
+\input{listings-styles} \input{listings-powershell} 
 \begin{document}
 \begin{lstlisting}[language=PowerShell,style=colorful]
 Read-Host -AsSecureString | ConvertFrom-SecureString > "encrypted.txt"
