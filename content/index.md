@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T17:41:56.075+01:00"
+date: "2025-03-23T19:19:42.046+01:00"
 title: Welcome to my Digital Garden
 description: "-"
 dg-publish: true
@@ -26,6 +26,10 @@ To navigate, simply follow the links between notes or search keywords. There's n
 
 ![figure powershell collection.svg](./figure-powershell-collection.svg)
 
+[Computer - Setup my computers](./computer/index.md)
+
+![figure computer collection.svg](./figure-computer-collection.svg)
+
 [Visual Media - List movies, television series, YouTube channels, and theatrical performances](./visual-media/index.md)
 
 ![figure movie collage.png](./figure-movie-collage.png)
@@ -40,7 +44,6 @@ Other
 - [Human language](./Human-language.md)
 - [Windows](./windows/index.md)
 - [Workflows - Improve workflow in applications](./Workflows.md)
-- [Computer - Setup my computers](./computer/index.md)
 - [Discussions](./Discussions.md)
 
 This is a personal space for learning and growth, so you may encounter unfinished thoughts or work-in-progress pages. URLs to specific notes might change over time, as I update, restructure, or unlink pages.
