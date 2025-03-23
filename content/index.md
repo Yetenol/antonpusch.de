@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T10:32:34.946+01:00"
+date: "2025-03-23T10:59:07.043+01:00"
 title: Welcome to my Digital Garden
 description: "-"
 dg-publish: true
@@ -24,7 +24,7 @@ To navigate, simply follow the links between notes or search keywords. There's n
 
 [PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](./powershell/index.md)
 
-![figure code listing.svg](./figure-code-listing.svg)
+![figure powershell listing.svg](./figure-powershell-listing.svg)
 
 [Visual Media - List movies, television series, YouTube channels, and theatrical performances](./visual-media/index.md)
 

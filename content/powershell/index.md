@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T10:53:51.331+01:00"
+date: "2025-03-23T10:58:58.340+01:00"
 title: "PowerShell"
 description: "A command-line shell and scripting language to manage Windows system and automate administrative tasks"
 dg-publish: true
@@ -62,10 +62,10 @@ Other topics
 
 Note preview
 
-![figure code listing.svg](../figure-code-listing.svg)
+![figure powershell listing.svg](../figure-powershell-listing.svg)
 
 ```latex
-\documentclass{article} \title{code listing}
+\documentclass{article} \title{powershell listing}
 \usepackage{listings,xcolor}
 \input{listings-styles} \input{listings-powershell} 
 \begin{document}
