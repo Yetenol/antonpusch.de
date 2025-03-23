@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T11:37:07.536+01:00"
+date: "2025-03-23T12:57:39.543+01:00"
 title: Welcome to my Digital Garden
 description: "-"
 dg-publish: true
@@ -28,7 +28,7 @@ To navigate, simply follow the links between notes or search keywords. There's n
 
 [Visual Media - List movies, television series, YouTube channels, and theatrical performances](./visual-media/index.md)
 
-![figure movie collage.svg](./figure-movie-collage.svg)
+![figure movie collage.png](./figure-movie-collage.png)
 
 Other
 - [Factorio - A game about automation, logistics and network optimizations](./computer/apps/Factorio.md)
