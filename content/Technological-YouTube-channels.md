@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:45:23.104+01:00"
+date: "2025-03-23T08:08:52.468+01:00"
 title: "Technological YouTube channels"
 description: "-"
 dg-publish: true
@@ -59,5 +59,5 @@ dg-publish: true
 
 ---
 Tags:
-[Visual Media](./visual-media/index.md),
-[Visual Media](./visual-media/index.md)
+[Visual Media - List movies, television series, YouTube channels, and theatrical performances](./visual-media/index.md),
+[Visual Media - List movies, television series, YouTube channels, and theatrical performances](./visual-media/index.md)

@@ -1,12 +1,14 @@
 ---
-date: "2025-03-23T00:00:17.590+01:00"
+date: "2025-03-23T09:20:01.153+01:00"
 title: "Visual Media"
-description: "-"
+description: "List movies, television series, YouTube channels, and theatrical performances"
 dg-publish: true
 dg-folder: visual-media
 dg-filename: index
 ---
 [Movies & TV Shows](./media/index.md)
+
+![figure movie collage.svg](../figure-movie-collage.svg)
 
 - [Enjoy a favorite movie again](./Enjoy-a-favorite-movie-again.md)
 - [Enjoy a favorite television series again](./Enjoy-a-favorite-television-series-again.md)
@@ -28,3 +30,4 @@ The Beauty of
 Other
 - [Alle theatrical plays](../Alle-theatrical-plays.md)
 - Why do we enjoy bad movies - Movies habe increasingly less story
+- Create a collage of movie posters
