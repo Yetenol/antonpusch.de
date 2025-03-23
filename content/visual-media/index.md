@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T09:21:19.109+01:00"
+date: "2025-03-23T12:57:31.076+01:00"
 title: "Visual Media"
 description: "List movies, television series, YouTube channels, and theatrical performances"
 dg-publish: true
@@ -8,7 +8,7 @@ dg-filename: index
 ---
 [Movies & TV Shows](./media/index.md)
 
-![figure movie collage.svg](../figure-movie-collage.svg)
+![figure movie collage.png](../figure-movie-collage.png)
 
 - [Enjoy a favorite movie again](./Enjoy-a-favorite-movie-again.md)
 - [Enjoy a favorite television series again](./Enjoy-a-favorite-television-series-again.md)
