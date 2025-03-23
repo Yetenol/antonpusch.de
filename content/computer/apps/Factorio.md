@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:45:55.004+01:00"
+date: "2025-03-23T10:21:19.719+01:00"
 title: "Factorio"
 description: "A game about automation, logistics and network optimizations"
 dg-folder: computer/apps
@@ -24,9 +24,11 @@ dg-content-classes:
 thumbnail: https://styles.redditmedia.com/t5_2wabp/styles/communityIcon_lnp25hfmcbg01.png
 ---
 
-```dynamic-embed
-[[Describe this app and list installation sources]]
-```
+![thumbnail](https://styles.redditmedia.com/t5_2wabp/styles/communityIcon_lnp25hfmcbg01.png) Factorio - A game about automation, logistics and network optimizations is a [gaming](install%20gaming%20apps.md.md) app. Factorio is a game in which you build and maintain factories.
+
+- Download it from the [publisher's website](https://factorio.com/download)
+- Open in [Steam](steam://store/427520)
+
 
 # Tips to play the game
 
