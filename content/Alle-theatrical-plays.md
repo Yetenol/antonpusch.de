@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:45:22.722+01:00"
+date: "2025-03-23T08:08:52.396+01:00"
 title: "Alle theatrical plays"
 description: "-"
 dg-publish: true
@@ -19,6 +19,6 @@ dg-publish: true
 Sources:
 
 Related:
-[Visual Media](./visual-media/index.md)
+[Visual Media - List movies, television series, YouTube channels, and theatrical performances](./visual-media/index.md)
 
 Tags:
