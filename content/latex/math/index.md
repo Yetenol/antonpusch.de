@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:08:59.053+01:00"
+date: "2025-03-23T11:04:41.383+01:00"
 title: Math
 description: "Typeset, align, wrap, comment, enumerate, space out, scale, and style mathematical expressions, utilizing AMSmath"
 dg-publish: true
@@ -192,7 +192,6 @@ Deprecated
 - font syntax
 - macro stackrel
 - environments xalignat and  xxalignat
-- new operator [Mathematical Typesetting with Latex 0.34 2024-02-06, page 41](../../Mathematical-Typesetting-with-Latex-0-34-2024-02-06.pdf.md#page=41&selection=259,7,259,18)
 
 - In markdown put display math delimiters `$$` on a separate line
 - Don't leave spaces in front of caret to prevent block reference detection (write `a^2` instead of `a ^2`)
