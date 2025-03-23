@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:07:54.798+01:00"
+date: "2025-03-23T09:54:42.642+01:00"
 title: "LaTeX"
 description: "Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules"
 dg-publish: true
@@ -112,6 +112,37 @@ Animation
 - [GitHub - ManimCommunity/manim: A community-maintained Python framework for creating mathematical animations.](https://github.com/ManimCommunity/manim/)
 
 Motivation and use cases for LaTeX
+
+# Collection for note preview
+
+![figure math comments.svg](../figure-math-comments.svg)
+
+```latex
+\documentclass{article} \title{math comments}
+\usepackage{mathtools,amssymb,amsfonts}
+\begin{document}
+\begin{gather*}
++ - \cdot \times / \div :{} \Sigma \smallint \Im\,  \Re \mid\, \parallel \cap \setminus \neg \land \pm \Join \\
+=\, \approx\, <\, \ge\, \triangleq\, \coloneqq\, \equiv\, \in\, \subset\, \supseteq\, \gg, \ne\, \nless\, \nsupseteq\,  \nsim \\
+\sum_{\mathclap{x \in X(\Omega)}} \mathbb{P}(X = x)
+\overset{\text{def}}{=} x \overset{i}{=} xxx \overset{\mathclap{\text{use (4b)}}}{=} xxx \xRightarrow{+ xx} x \\
+x = \mathrlap{\phantom{(x)}\overbrace{\phantom{x xx}}^{\text{for }x}}  \underbrace{ (x)x }_{\text{for }x}  \underbrace{ \vphantom{(} xx \cdot x }_{ \mathclap{\substack{\text{for }x\\ \text{and relatives}} }  }
+= \begin{cases} xx  & \text{for } xx \\[-1ex] & \text{because}\ldots \\ x  & \text{ow.} \end{cases}
+\end{gather*}
+\end{document}
+```
+
+![figure latex collection.svg](../figure-latex-collection.svg)
+
+```latex
+\documentclass{standalone} \title{latex collection}
+\usepackage{graphbox}
+\begin{document}
+\includegraphics[align=c]{figure math comments} \hspace{1em}
+\includegraphics[align=c]{figure pet owners} \hspace{1em}
+\includegraphics[align=c]{figure automata}
+\end{document}
+```
 
 ---
 Sources:
