@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:45:23.055+01:00"
+date: "2025-03-23T10:32:34.946+01:00"
 title: Welcome to my Digital Garden
 description: "-"
 dg-publish: true
@@ -14,11 +14,24 @@ This is my Digital Garden - a collection of interconnected notes on topics that 
 
 To navigate, simply follow the links between notes or search keywords. There's no strict hierarchy; instead, ideas are connected in a wiki-like graph network. You can start exploring by checking out these topics:
 
-- [LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex/index.md)
-- [Plots - Dynamically plot mathematical functions, values as a vector graphic](./plots/index.md)
-- [PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](./powershell/index.md)
+[LaTeX - Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules](./latex/index.md)
+
+![figure latex collection.svg](./figure-latex-collection.svg)
+
+[Plots - Dynamically plot mathematical functions, values as a vector graphic](./plots/index.md)
+
+![figure plots collection.svg](./figure-plots-collection.svg)
+
+[PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](./powershell/index.md)
+
+![figure code listing.svg](./figure-code-listing.svg)
+
+[Visual Media - List movies, television series, YouTube channels, and theatrical performances](./visual-media/index.md)
+
+![figure movie collage.svg](./figure-movie-collage.svg)
+
+Other
 - [Factorio - A game about automation, logistics and network optimizations](./computer/apps/Factorio.md)
-- [Visual Media](./visual-media/index.md)
 - [Computer Language](./Computer-Language.md)
 - [Human language](./Human-language.md)
 - [Windows](./windows/index.md)
