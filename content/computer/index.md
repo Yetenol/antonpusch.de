@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T19:28:04.300+01:00"
+date: "2025-03-23T19:33:52.526+01:00"
 title: "Computer"
 description: "Setup my computers"
 dg-publish: true
@@ -202,4 +202,8 @@ The info column can contain the following symbols:
 | [Self-hosted LiveSync](./apps/Self-hosted-LiveSync.md)                                                                                                       | \+⊘  | Synchronization                          |
 
 
+Note preview
 
+![figure computer collection.svg](../figure-computer-collection.svg)
+
+- Preview computer
