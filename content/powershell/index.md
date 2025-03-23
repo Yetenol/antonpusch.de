@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T11:38:32.829+01:00"
+date: "2025-03-23T17:52:40.969+01:00"
 title: "PowerShell"
 description: "A command-line shell and scripting language to manage Windows system and automate administrative tasks"
 dg-publish: true
@@ -64,5 +64,5 @@ Note preview
 
 ![figure powershell collection.svg](../figure-powershell-collection.svg)
 
+- [Example listing - Example code block for note preview](./Example-listing.md)
 
-[Example listing - Example code block for note preview](./Example-listing.md)

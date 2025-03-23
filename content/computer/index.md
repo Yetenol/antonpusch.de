@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T17:53:07.255+01:00"
+date: "2025-03-23T19:28:04.300+01:00"
 title: "Computer"
 description: "Setup my computers"
 dg-publish: true
@@ -7,6 +7,8 @@ cssclasses:
 dg-folder: computer
 dg-filename: index
 ---
+
+![figure computer preview.svg](../figure-computer-preview.svg)
 
 - [Install Windows 11 with 2 partitions](./Install-Windows-11-with-2-partitions.md)
 - [Uninstall pre-installed apps](./Uninstall-pre-installed-apps.md)
@@ -24,13 +26,6 @@ dg-filename: index
 - [Setup printers - Install drivers, setup scanning software](./Setup-printers.md)
 - [Customize Windows Settings](./Customize-Windows-Settings.md)
 
-Note preview
-
-
-
-- Preview computer
-
-
 # List of all applications
 
 The info column can contain the following symbols:
@@ -43,53 +38,52 @@ The info column can contain the following symbols:
 | [7-Zip](./apps/7-Zip.md)                                                                                                                                     |      | Development                              |
 | [AusweisApp2](./apps/AusweisApp2.md)                                                                                                                         |      | Office                                   |
 | [Auto Dark Mode](./apps/Auto-Dark-Mode.md)                                                                                                                   |      | Personalization                          |
-| [Bitwarden](./apps/Bitwarden.md)                                                                                                                             |      | Storage                                  |
 | AutoHotkey                                                                                                                           |      | Development                              |
-| [Brave](./apps/Brave.md)                                                                                                                                     | !    | Office                                   |
+| [Bitwarden](./apps/Bitwarden.md)                                                                                                                             |      | Storage                                  |
 | [Bypass Paywalls](./apps/Bypass-Paywalls.md)                                                                                                                 |      | \-                                       |
+| [Brave](./apps/Brave.md)                                                                                                                                     | !    | Office                                   |
 | [Chunk Editor](./apps/Chunk-Editor.md)                                                                                                                       |      | \-                                       |
-| [Cryptomator](./apps/Cryptomator.md)                                                                                                                         |      | Storage                                  |
 | [Discord](./apps/Discord.md)                                                                                                                                 |      | Messenger                                |
-| [eM Client](./apps/eM-Client.md)                                                                                                                             |      | Messenger                                |
-| [Factorio - A game about automation, logistics and network optimizations](./apps/Factorio.md) |      | Gaming                                   |
 | [File Explorer](./apps/File-Explorer.md)                                                                                                                     | !    | \-                                       |
 | [Files](./apps/Files.md)                                                                                                                                     |      | \-                                       |
 | [Firefox](./apps/Firefox.md)                                                                                                                                 |      | Office                                   |
+| [eM Client](./apps/eM-Client.md)                                                                                                                             |      | Messenger                                |
 | [FreeTube](./apps/FreeTube.md)                                                                                                                               |      | Entertainment                            |
+| [Factorio - A game about automation, logistics and network optimizations](./apps/Factorio.md) |      | Gaming                                   |
 | [GIMP](./apps/GIMP.md)                                                                                                                                       |      | Office                                   |
 | [Git](./apps/Git.md)                                                                                                                                         | !    | Development                              |
 | [Inkscape](./apps/Inkscape.md)                                                                                                                               |      | \-                                       |
 | [JetBrains DataGrip](./apps/JetBrains-DataGrip.md)                                                                                                           |      | Education, Development                   |
 | [KeeWeb](./apps/KeeWeb.md)                                                                                                                                   | !    | Storage                                  |
 | [Lenovo Vantage](./apps/Lenovo-Vantage.md)                                                                                                                   | !    | \-                                       |
+| [Microsoft 365](./apps/Microsoft-365.md)                                                                                                                     |      | Office                                   |
 | [Mail and Calendar](./apps/Mail-and-Calendar.md)                                                                                                             |      | Messenger                                |
 | [MediathekView](./apps/MediathekView.md)                                                                                                                     |      | Entertainment                            |
-| [Microsoft 365](./apps/Microsoft-365.md)                                                                                                                     |      | Office                                   |
-| [Minecraft (Bedrock Edition)](./apps/Minecraft-Bedrock-Edition-.md)                                                                                         |      | Gaming                                   |
-| [Minecraft](./apps/Minecraft.md)                                                                                                                             |      | Gaming                                   |
 | [NBT Editor](./apps/NBT-Editor.md)                                                                                                                           |      | \-                                       |
-| [Nextcloud](./apps/Nextcloud.md)                                                                                                                             |      | Storage                                  |
+| [Minecraft](./apps/Minecraft.md)                                                                                                                             |      | Gaming                                   |
+| [Minecraft (Bedrock Edition)](./apps/Minecraft-Bedrock-Edition-.md)                                                                                         |      | Gaming                                   |
 | [Node-js](./apps/Node-js.md)                                                                                                                                 |      | Development                              |
+| [Nextcloud](./apps/Nextcloud.md)                                                                                                                             |      | Storage                                  |
 | [OBS Studio](./apps/OBS-Studio.md)                                                                                                                           |      | Entertainment                            |
 | [Obsidian](./apps/Obsidian.md)                                                                                                                               |      | Office, Education                        |
 | [OneDrive](./apps/OneDrive.md)                                                                                                                               |      | Storage                                  |
 | [Pandoc](./apps/Pandoc.md)                                                                                                                                   |      | \-                                       |
 | [pdf2svg](./apps/pdf2svg)                                                                                                                                 |      | Development, Office                      |
 | [PDFsam](./apps/PDFsam.md)                                                                                                                                   |      | Office                                   |
-| [PocketCast](./apps/PocketCast.md)                                                                                                                           |      | \-                                       |
-| [PowerToys](./apps/PowerToys.md)                                                                                                                             |      | Personalization                          |
 | [Python](./apps/Python.md)                                                                                                                                   |      | Development                              |
+| [PowerToys](./apps/PowerToys.md)                                                                                                                             |      | Personalization                          |
+| [PocketCast](./apps/PocketCast.md)                                                                                                                           |      | \-                                       |
 | [shortcutFox](./apps/shortcutFox.md)                                                                                                                         | !    | Personalization                          |
 | [Terminal](./apps/Terminal.md)                                                                                                                               | !    | Development                              |
-| [Threema](./apps/Threema.md)                                                                                                                                 |      | Messenger                                |
 | [TreeSize](./apps/TreeSize.md)                                                                                                                               |      | Storage                                  |
+| [Threema](./apps/Threema.md)                                                                                                                                 |      | Messenger                                |
 | [Unigram](./apps/Unigram.md)                                                                                                                                 |      | Messenger                                |
-| [Visual Studio](./apps/Visual-Studio.md)                                                                                                                     |      | Development                              |
-| [Visual Studio Code](./apps/Visual-Studio-Code.md)                                                                                                           | !    | Development                              |
 | [VLC](./apps/VLC.md)                                                                                                                                         |      | Entertainment                            |
+| [Visual Studio](./apps/Visual-Studio.md)                                                                                                                     |      | Development                              |
 | [WhatsApp](./apps/WhatsApp.md)                                                                                                                               |      | Messenger                                |
-| [yt-dlp](./apps/yt-dlp.md)                                                                                                                                   |      | Entertainment                            |
+| [Visual Studio Code](./apps/Visual-Studio-Code.md)                                                                                                           | !    | Development                              |
 | [Zoom](./apps/Zoom.md)                                                                                                                                       |      | Messenger                                |
+| [yt-dlp](./apps/yt-dlp.md)                                                                                                                                   |      | Entertainment                            |
 | [Advanced Cursors](./apps/Advanced-Cursors.md)                                                                                                               | \+   | Editing                                  |
 | [Advanced URI](./apps/Advanced-URI.md)                                                                                                                       | \+   | Programming                              |
 | [Almost Invisible Electric Wires](./apps/Almost-Invisible-Electric-Wires.md)                                                                                 | \+   | Visual, Circuit network                  |
@@ -101,14 +95,14 @@ The info column can contain the following symbols:
 | [CMake Tools](./apps/CMake-Tools.md)                                                                                                                         | \+   | \-                                       |
 | [Copy as Latex](./apps/Copy-as-Latex.md)                                                                                                                     | \+   | \-                                       |
 | [Dana](./apps/Dana.md)                                                                                                                                       | \+   | \-                                       |
+| [Digital Garden](./apps/Digital-Garden.md)                                                                                                                   | \+   | Publishing                               |
 | [deepL](./apps/deepL.md)                                                                                                                                     | \+   | Editing Translation                      |
 | [Diagrams](./apps/Diagrams.md)                                                                                                                               | \+   | Visualisation, Graphics                  |
-| [Digital Garden](./apps/Digital-Garden.md)                                                                                                                   | \+   | Publishing                               |
 | [Dynamic Embed](./apps/Dynamic-Embed.md)                                                                                                                     | \+   | Visualisation                            |
 | [Editor Extensions](./apps/Editor-Extensions.md)                                                                                                             | \+   | Testing, Planning                        |
 | [Freecam](./apps/Freecam.md)                                                                                                                                 | \+   | \-                                       |
-| [Git Graph](./apps/Git-Graph.md)                                                                                                                             | \+   | Version control                          |
 | [Git rebase shortcut](./apps/Git-rebase-shortcut.md)                                                                                                         | \+   | Version control                          |
+| [Git Graph](./apps/Git-Graph.md)                                                                                                                             | \+   | Version control                          |
 | [ItemSwapper](./apps/ItemSwapper.md)                                                                                                                         | \+   | \-                                       |
 | [LaTeX Suite](./apps/LaTeX-Suite.md)                                                                                                                         | \+   | Editing, Math                            |
 | [Lithium](./apps/Lithium.md)                                                                                                                                 | \+   | \-                                       |
@@ -122,25 +116,25 @@ The info column can contain the following symbols:
 | [Ore Eraser](./apps/Ore-Eraser.md)                                                                                                                           | \+   | Environment                              |
 | [Pavement Drive Assist](./apps/Pavement-Drive-Assist.md)                                                                                                     | \+   | Transportation                           |
 | [Plotly Python](./apps/Plotly-Python.md)                                                                                                                     | \+   | Visualisation                            |
+| [PyX](./apps/PyX.md)                                                                                                                                         | \+   | Visualisation                            |
 | [Privacy Redirect](./apps/Privacy-Redirect.md)                                                                                                               | \+   | \-                                       |
 | [QuickBar Import Export](./apps/QuickBar-Import-Export.md)                                                                                                   | \+   | Quality of life                          |
-| [PyX](./apps/PyX.md)                                                                                                                                         | \+   | Visualisation                            |
 | [Recipe Book](./apps/Recipe-Book.md)                                                                                                                         | \+   | Planning                                 |
-| [Remove requester, buffer, activer provider chests](./apps/Remove-requester-buffer-activer-provider-chests.md)                                             | \+   | Logistic network                         |
 | [Remotely Save](./apps/Remotely-Save.md)                                                                                                                     | \+   | Synchronization                          |
+| [Remove requester, buffer, activer provider chests](./apps/Remove-requester-buffer-activer-provider-chests.md)                                             | \+   | Logistic network                         |
 | [Roslynator 2022](./apps/Roslynator-2022.md)                                                                                                                 | \+   | \-                                       |
 | [Shell commands](./apps/Shell-commands.md)                                                                                                                   | \+   | Programming                              |
 | [Shrink Empty Lines 2022](./apps/Shrink-Empty-Lines-2022.md)                                                                                                 | \+   | \-                                       |
 | [Simple Landfill Mining](./apps/Simple-Landfill-Mining.md)                                                                                                   | \+   | Environment                              |
+| [SmallOnlineTools](./apps/SmallOnlineTools.md)                                                                                                               | \+   | \-                                       |
 | [Sodium](./apps/Sodium.md)                                                                                                                                   | \+   | \-                                       |
 | [Solution Error Visualizer 2022](./apps/Solution-Error-Visualizer-2022.md)                                                                                   | \+   | \-                                       |
-| [Stack Size Tooltip](./apps/Stack-Size-Tooltip.md)                                                                                                           | \+   | Visual                                   |
-| [SmallOnlineTools](./apps/SmallOnlineTools.md)                                                                                                               | \+   | \-                                       |
-| [Tapeline](./apps/Tapeline.md)                                                                                                                               | \+   | Visual, Designing                        |
 | [Task List](./apps/Task-List.md)                                                                                                                             | \+   | Collaboration, Organisation, Multiplayer |
+| [Tapeline](./apps/Tapeline.md)                                                                                                                               | \+   | Visual, Designing                        |
+| [Stack Size Tooltip](./apps/Stack-Size-Tooltip.md)                                                                                                           | \+   | Visual                                   |
 | [Text Snippets](./apps/Text-Snippets.md)                                                                                                                     | \+!  | Editing                                  |
-| [TlDraw](./apps/TlDraw.md)                                                                                                                                   | \+   | Graphics                                 |
 | [Translate](./apps/Translate.md)                                                                                                                             | \+   | Editing, Translation                     |
+| [TlDraw](./apps/TlDraw.md)                                                                                                                                   | \+   | Graphics                                 |
 | [uBlock Origin](./apps/uBlock-Origin.md)                                                                                                                     | \+   | \-                                       |
 | [Underground Indicators](./apps/Underground-Indicators.md)                                                                                                   | \+   | Visual, Designing                        |
 | [Unstoppable by Cliffs Force](./apps/Unstoppable-by-Cliffs-Force.md)                                                                                         | \+   | Simplifier                               |
@@ -160,6 +154,7 @@ The info column can contain the following symbols:
 | [Boxcryptor](./apps/Boxcryptor.md)                                                                                                                           | ⊘    | Storage                                  |
 | [Capture2Text](./apps/Capture2Text.md)                                                                                                                       | ⊘    | Personalization                          |
 | [Citavi](./apps/Citavi.md)                                                                                                                                   | ⊘    | Education                                |
+| [Cryptomator](./apps/Cryptomator.md)                                                                                                                         | ⊘    | Storage                                  |
 | [CurseForge](./apps/CurseForge.md)                                                                                                                           | ⊘    | Gaming                                   |
 | [drawio Diagrams](./apps/drawio-Diagrams.md)                                                                                                                 | ⊘    | Education                                |
 | [EarTrumpet](./apps/EarTrumpet.md)                                                                                                                           | ⊘    | Personalization                          |
@@ -169,8 +164,8 @@ The info column can contain the following symbols:
 | [Gitkraken](./apps/Gitkraken.md)                                                                                                                             | ⊘    | Development                              |
 | [JetBrains IntelliJ IDEA](./apps/JetBrains-IntelliJ-IDEA.md)                                                                                                 | ⊘    | Development                              |
 | [KeePass](./apps/KeePass.md)                                                                                                                                 | ⊘    | Storage                                  |
-| [LapLock](./apps/LapLock.md)                                                                                                                                 | ⊘    | Personalization                          |
 | [Lenovo Pen Settings](./apps/Lenovo-Pen-Settings.md)                                                                                                         | ⊘    | Personalization                          |
+| [LapLock](./apps/LapLock.md)                                                                                                                                 | ⊘    | Personalization                          |
 | [LTSpice](./apps/LTSpice.md)                                                                                                                                 | ⊘    | Education                                |
 | [MATLAB](./apps/MATLAB.md)                                                                                                                                   | ⊘    | Education                                |
 | [Microsoft Edge](./apps/Microsoft-Edge.md)                                                                                                                   | !⊘   | Office                                   |
@@ -189,20 +184,22 @@ The info column can contain the following symbols:
 | [Simplenote](./apps/Simplenote.md)                                                                                                                           | ⊘    | Office                                   |
 | [Teams](./apps/Teams.md)                                                                                                                                     | ⊘    | Messenger                                |
 | [Windows Subsystem for Android](./apps/Windows-Subsystem-for-Android.md)                                                                                     | ⊘    | Subsystem                                |
-| [Windows Subsystem for Linux](./apps/Windows-Subsystem-for-Linux.md)                                                                                         | ⊘    | Subsystem                                |
-| [Windscribe](./apps/Windscribe.md)                                                                                                                           | ⊘    | Entertainment                            |
 | [WSATools](./apps/WSATools.md)                                                                                                                               | ⊘    | Subsystem                                |
 | [Youtube-dl](./apps/Youtube-dl.md)                                                                                                                           | ⊘    | Entertainment                            |
+| [Windows Subsystem for Linux](./apps/Windows-Subsystem-for-Linux.md)                                                                                         | ⊘    | Subsystem                                |
+| [Windscribe](./apps/Windscribe.md)                                                                                                                           | ⊘    | Entertainment                            |
 | [Auto Hide](./apps/Auto-Hide.md)                                                                                                                             | \+⊘  | \-                                       |
 | [Blueprint logistics requests](./apps/Blueprint-logistics-requests.md)                                                                                       | \+⊘  | Quality of life                          |
 | [Code Emitter](./apps/Code-Emitter.md)                                                                                                                       | \+⊘  | Programming                              |
+| [InventoryTabs](./apps/InventoryTabs.md)                                                                                                                     | \+⊘  | \-                                       |
 | [Inventory Essentials](./apps/Inventory-Essentials.md)                                                                                                       | \+⊘  | \-                                       |
 | [Inventory Profiles Next](./apps/Inventory-Profiles-Next.md)                                                                                                 | \+⊘  | \-                                       |
-| [InventoryTabs](./apps/InventoryTabs.md)                                                                                                                     | \+⊘  | \-                                       |
 | [Long Inserters](./apps/Long-Inserters.md)                                                                                                                   | \+⊘  | Content, Logistics                       |
 | [Microsoft OneNote](./apps/Microsoft-OneNote.md)                                                                                                             | \+⊘  | Office                                   |
 | [Microsoft Outlook](./apps/Microsoft-Outlook.md)                                                                                                             | \+⊘  | \-                                       |
 | [Mouse Tweaks](./apps/Mouse-Tweaks.md)                                                                                                                       | \+⊘  | \-                                       |
 | [Player Request Crafting Layout](./apps/Player-Request-Crafting-Layout.md)                                                                                   | \+⊘  | Quality of life                          |
 | [Self-hosted LiveSync](./apps/Self-hosted-LiveSync.md)                                                                                                       | \+⊘  | Synchronization                          |
+
+
 
