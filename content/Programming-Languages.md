@@ -7,7 +7,7 @@ dg-publish: true
 
 - [PowerShell - A command-line shell and scripting language to manage Windows system and automate administrative tasks](./powershell/index.md)
 - Python - Prototype quickly and use powerful data structures
-- [AutoHotkey - Interact with applications and streamline repetitive tasks](./AutoHotkey.md)
+- [AutoHotkey - Interact with applications and streamline repetitive tasks](AutoHotkey%20-%20Interact%20with%20applications%20and%20streamline%20repetitive%20tasks.md)
 - [Java - A platform independent, object-oriented programming framework designed to be simple, secure, and robust](./Java.md)
 - [Rust - Write code that works and compiles reliably forever](./Rust.md)
 - [GDB - Debug C Programs with the GNU Debugger](./GDB.md)
