@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:45:22.814+01:00"
+date: "2025-03-23T08:08:52.418+01:00"
 title: "Educational Youtube channels"
 description: "-"
 dg-publish: true
@@ -91,4 +91,4 @@ Channel | Profile Picture
 
 ---
 Tags:
-[Visual Media](./visual-media/index.md)
+[Visual Media - List movies, television series, YouTube channels, and theatrical performances](./visual-media/index.md)
