@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T10:58:58.340+01:00"
+date: "2025-03-23T11:18:59.830+01:00"
 title: "PowerShell"
 description: "A command-line shell and scripting language to manage Windows system and automate administrative tasks"
 dg-publish: true
