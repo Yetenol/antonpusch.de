@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T21:00:57.334+01:00"
+date: "2025-03-24T01:38:20.837+01:00"
 title: "Setup my digital garden"
 description: "-"
 dg-publish: true
@@ -49,7 +49,7 @@ Edit [Enveloppe > data.json](D:\Notes\.obsidian\plugins\obsidian-mkdocs-publishe
 "censorText": [
   {
     "entry": "/(?<!\\n)^---/",
-    "replace": "---\ndate: \"2025-03-22T21:00:57.334+01:00\"\ntitle: \"Setup my digital garden\"\ndescription: \"-\"\ndg-filename: \"setup my digital garden\"",
+    "replace": "---\ndate: \"2025-03-24T01:38:20.837+01:00\"\ntitle: \"Setup my digital garden\"\ndescription: \"-\"\ndg-filename: \"setup my digital garden\"",
     "flags": "", "after": false
   },
   {
@@ -111,7 +111,7 @@ Open *Obsidian Setting > Enveloppe >File path*
 
 ## Frontmatter playground
 
-- **modified**: 2025-03-22T00:00:00.000+01:00
+- **modified**: 2025-03-24T00:00:00.000+01:00
 - **title**: Setup my digital garden
 - **description**: 
 - **title js**: Setup my digital garden
@@ -283,27 +283,9 @@ td>pre {
 }
 ```
 
+Workflow to create, collaborate, publish notes in my knowledge base
 
-```mermaid
-flowchart LR
-    subgraph notes
-    math
-    wikilinks
-    images
-    subgraph "Codeblock" 
-    figure[LaTeX figures]
-    end
-    subgraph fields
-    4["frontmatter \n inline queries \n block queries"]
-    end
-    end
-    subgraph one [attachments]
-    SVG
-    PDF
-    PDF -- pdf2svg --> SVG
-    end
-    figure -- pdflatex --> PDF
-```
+![d2 workflow knowledge base.svg](./d2-workflow-knowledge-base.svg)
 
 # Alternative publishing ideas
 
