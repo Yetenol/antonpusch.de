@@ -1,5 +1,5 @@
 ---
-date: "2025-03-29T15:32:15.011+01:00"
+date: "2025-03-29T15:39:40.546+01:00"
 title: "Factorio"
 description: "A game about automation, logistics and network optimizations"
 dg-folder: factorio
@@ -41,7 +41,7 @@ Bus-Based
 Train-Centric
 - **Outpost Network**: Specialized, isolated production areas connected by trains
 - **Hub and Spoke**: Central processing area with resource outposts feeding in
-- **City Blocks**: Grid-based layout with train tracks defining block boundaries
+- **City Blocks**: Grid-based layout with train tracks defining block boundaries, see [Example of a generic city block layout](./Example-of-a-generic-city-block-layout.md)
 
 Combat and Expansion
 - **Defensive**: Heavy fortifications with minimal territory
@@ -89,7 +89,7 @@ Logistics robots complement trains and belts, but their use should be strategic:
 
 - Build in surrounding chunks to prevent biter expansion
 - Change assembler recipes instead of building full automation for rarely used items
-- [Jump start base](./Jump-start-base.md)
+- See [Hand-feed, jump start base](./Hand-feed-jump-start-base.md)
 
 ## Mid Game
 
