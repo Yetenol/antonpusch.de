@@ -1,5 +1,5 @@
 ---
-date: "2025-03-29T14:50:41.536+01:00"
+date: "2025-03-29T15:32:15.011+01:00"
 title: "Factorio"
 description: "A game about automation, logistics and network optimizations"
 dg-folder: factorio
@@ -31,145 +31,99 @@ dg-filename: index
 - Open in [Steam](steam://store/427520)
 
 
-# Tips to play the game
+# Playstyles for Inspiration
 
-# Aspects of the game
+Bus-Based
+- **Main Bus**: Centralized organization with parallel belts of common materials
+- **Compact Bus**: Space-efficient variation with more vertical integration
+- **Direct Insertion**: Skip the bus for some products; produce where consumed
 
-- [Building supplies - Bulk craft any item without a mall](./Building-supplies.md)
-- [Train network](./Train-network.md)
-- [Flying robots](./Flying-robots.md)
-- [Logistics in Factorio](./Logistics-in-Factorio.md)
-- [Input controls](./Input-controls.md)
-- [Base layouts](./Base-layouts.md)
-- [Circuit networks](./Circuit-networks.md)
-- Main bus, Compact bus
-- City block
-- Modules
-- Combat
+Train-Centric
+- **Outpost Network**: Specialized, isolated production areas connected by trains
+- **Hub and Spoke**: Central processing area with resource outposts feeding in
+- **City Blocks**: Grid-based layout with train tracks defining block boundaries
 
-# Discussions
+Combat and Expansion
+- **Defensive**: Heavy fortifications with minimal territory
+- **Aggressive**: Constant biter clearing to minimize defensive needs
+- **Nomadic**: Temporary bases that relocate as resources deplete
 
-- [Should logistic bots supply only the character or the factory as well](./Should-logistic-bots-supply-only-the-character-or-the-factory-as-well.md)
-- index
-- Turret creep
+Personal Movement
+- **Train Passenger**: Add tracks, stations close to every part of for factory
+- **Remote building**: Use tank, spidertrons to stay off planet
+- **Road Infrastructure**: Build dedicated paths for cars, walking
 
-# Playstyles
+Resource Management
+- **Distributed Smelting**: Smelt ores at outposts to maximize train capacity
+- **Local Power**: Generate power at outposts vs. centralized generation
+- **JIT Production**: Produce items only as needed vs. buffer storage
 
-- [Biters pathing logic - Factorio Forums](https://forums.factorio.com/viewtopic.php?t=78808)
-- Compact bus
-- Main bus
-- City block
-- Don't produce main green chips, steel from main bus
-- If your factory is bad, use your resources to build a better one
-- Smelt ores directly at outpost using brought-in coal
-- Produce power locally in outpost using brought-in coal
-- Rail reach all mall chests
-- Don't plan ahead
-- [Wrong ways to play Factorio](../index.md)
-- index
+# Transportation
 
-Combat
-- Use area of affect weapons like grenades, flamethrowers, poison capsules (worms)
-- Don't turret creep, use combat robots
-- [Ideas to Avoid Turret Creeping - Factorio Forums](https://forums.factorio.com/viewtopic.php?t=32867)
-- [Friday Facts #166 - Combat Revisit | Factorio](https://www.factorio.com/blog/post/fff-166)
+## Train Network Design
 
-Mobility
-- Move around using personal resupply trains or by hijacking regular trains
-- Drive parallelly to the terrain [VehicleSnap](../computer/apps/VehicleSnap.md)
-- Cruise drive on paved roads incentivizes you to build mobility infrastructure [Pavement Drive Assist](../computer/apps/Pavement-Drive-Assist.md)
+- **Single resource per train**: Simplifies schedules and logistics
+- **Train limit set to 1**: Prevents train queues on the main track
+- **Bidirectional trains**: Allows more compact stations
+- **Refueling**: Automatic interruption at refueling stations
+- **Generic schedules**: Use train groups with interrupts based on cargo
 
-Remote access, far reach
-- index
+See [Train network](./Train-network.md)
 
-# Possible phases of the game
+## Logistics Robot Usage
 
+Logistics robots complement trains and belts, but their use should be strategic:
+
+**Good fit**: Variable demand, lower quantities
+- Player supply - Keep the player supplied with building materials  
+- Wall defense - Supply turrets with ammunition and repair materials  
+- Player mall - Handle items with high variety but low quantity  
+
+**Controversial use cases**: I don't use logistic bots for:
+- General factory supply - Avoid using for bulk production  
+- Smelting - Use belts for better efficiency
+
+# Game Phases
+
+## Early Game
+
+- Build in surrounding chunks to prevent biter expansion
+- Change assembler recipes instead of building full automation for rarely used items
 - [Jump start base](./Jump-start-base.md)
-- index
 
-Early game
-- Logistics: spaghetti 
-- modular armor with loaded up shields
-- build pollution stuff in chunks with many trees, trees damaging obsorbs 10 pollution 
-- Build row of 8 assemblers
-- change assembler recipes instead of belt automation
-- build in surrounding chunks to prevent biter expansion 
-- leave one wide gap between turrets
-- mark wall for deconstruction to make them only-player-passable
-- [Can you beat FACTORIO when the Biters start at 100% EVOLUTION - Full Movie (edited) - YouTube](https://youtu.be/KWBtboASrRM?si=StWIdFpGOzAWwaTs)
+## Mid Game
 
-Don'ts
-- Build spontaneously instead of planning ahead. The factory can easily be moved. Future requirements can usually be better implemented with a new factory section instead of upgrading existing ones.
-- If you hand-craft something you should probably add it to your mall.
-- If you are afk to wait for something to finish, a research or crafting
-- If hand-crafting takes too long, use assembling machines with speed modules
-- Don't play afk to wait for a research to finish, improve your production instead
-- Don't use buffers. They make seeing your actual production harder.
-- Don't drive trains manually. Temporary stops are much safe to travel with.
-- Overproduce instead of balancing the output precisely
+- Develop a rail network with standardized stations
+- Establish a mall for construction supplies
+- Set up centralized smelting
 
-Defence, Outposts
-- Don't attack from the north, less visibility 
-- Biters attack polluting machines (boiler, drills, pumpjack, refinery) and military targets (radar, walls, turrets)
-- Space out turrets at almost double shotting range to catch at incoming biters, temporarily space turret in the mittle to show ideal distance 
-- Build outposts instead of walling in everything, which gets hard to expand
-- Kill the nests in your pollution cloud
-- Move half of the resource patch's ores in the opposite direction in order to increase mining on the richer center
-- All outposts stations should be reachable independently from a bidirectional connection to the railroad
-- Wall of turrets with a one wide gap to prevent biters from reaching over
-- Leave 1 wide gap between turrets to prevent slash damage
-- Place distanced flamethrower turrets
-- Place repair roboports as far from wall as possible to let the flamethrower fire disappear before the bots reach the wall
-- Round of wall edges
-- Turret creep: Not have more entities in the blueprint than your personal roboports (10 robots each) can build at once to force the power to be built on the first flight, no corner turrets
-- Power armor: charge batteries with solar panels, replace with shields
-- Built roboport network in separate rectangles, so bots don't fly out of it
+## Late Game
 
-Trains
-- Use double headed trains on bidirectional outposts and connect them with directional railroads
-- Personal resupply train that can refill from the mall
-- Refuel trains automatically [Automatic Train Fuel Stop](../computer/apps/Automatic-Train-Fuel-Stop.md)
-- Place rails everywhere you want to visit like mall, defenses, miners
-- Refuel stop that auto detect train length
+- Modular, expandable production blocks
+- Circuit networks for advanced logistics
+- Nuclear power and beaconed setups
 
-Tweak game aspects - Does this mod go to far?
+# Defensive Strategies
 
-- [Discover and lookup recipes in Factorio](./Discover-and-lookup-recipes-in-Factorio.md)
+- Space turrets just inside overlapping range
+- Round wall corners to prevent splash damage
+- Place roboports far from walls to let flamethrower fire disappear before bots arrive
+- Use one-wide gaps between wall segments to prevent biter reach
 
-# External Sites
+# External Resources
 
-- [Seven Years of Factorio Friday Facts · William Spies](https://spieswl.github.io/blog/2020/seven-years-of-factorio-friday-facts)
 - [FactorioLab Ratio Calculator](https://factoriolab.github.io/)
 - [Factorio Cheat Sheet](https://factoriocheatsheet.com/)
 
-# Extensions
-
-- Picket Dollies: Move combinators
-- Tree Xray: See below trees
-- Temporary Stop Default: No 5s restart timer
-
-```dynamic-embed
-[[List extensions for this app]]
-```
-
-
-Replace local settings with synchronized cloud settings
-
-```powershell
-New-Item "$env:AppData\Factorio" -Target "D:\PlutosCloud\Gaming\Factorio Space Age" -ItemType SymbolicLink -Force
-$filesToKeepAvailable = Get-ChildItem "D:\PlutosCloud\Gaming\Factorio Space Age" -Recurse
-$filesToKeepAvailable += Get-Item "D:\PlutosCloud\Gaming\Factorio Space Age"
-$filesToKeepAvailable | foreach {
-    $_.Attributes = $_.Attributes -bor 0x080000 -band (-bnot 0x100000)
-}
-```
 
 ---
 Sources:
+- [There are wrong ways to play : factorio](https://www.reddit.com/r/factorio/comments/vffx7s/there_are_wrong_ways_to_play/)
+
 
 Related:
-```dynamic-embed
-[[List related notes]]
-```
+- Former Factorio overview page
+- Wrong ways to play Factorio
+- Should logistic bots supply only the character or the factory as well
 
 Tags:
