@@ -1,7 +1,7 @@
 ---
 date: "2025-03-29T14:51:40.898+01:00"
 title: "Train network"
-description: "-"
+description: "Design schedules interaction of pickup, drop off stations"
 dg-folder: factorio
 dg-publish: true
 ---

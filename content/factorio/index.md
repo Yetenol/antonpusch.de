@@ -1,5 +1,5 @@
 ---
-date: "2025-03-29T15:39:40.546+01:00"
+date: "2025-03-29T15:45:17.977+01:00"
 title: "Factorio"
 description: "A game about automation, logistics and network optimizations"
 dg-folder: factorio
@@ -68,7 +68,7 @@ Resource Management
 - **Refueling**: Automatic interruption at refueling stations
 - **Generic schedules**: Use train groups with interrupts based on cargo
 
-See [Train network](./Train-network.md)
+See [Train network - Design schedules interaction of pickup, drop off stations](./Train-network.md)
 
 ## Logistics Robot Usage
 
@@ -110,20 +110,20 @@ Logistics robots complement trains and belts, but their use should be strategic:
 - Place roboports far from walls to let flamethrower fire disappear before bots arrive
 - Use one-wide gaps between wall segments to prevent biter reach
 
+# Other notes
+
+- Former Factorio overview page
+- Wrong ways to play Factorio
+- Should logistic bots supply only the character or the factory as well
+
 # External Resources
 
 - [FactorioLab Ratio Calculator](https://factoriolab.github.io/)
 - [Factorio Cheat Sheet](https://factoriocheatsheet.com/)
 
 
----
 Sources:
 - [There are wrong ways to play : factorio](https://www.reddit.com/r/factorio/comments/vffx7s/there_are_wrong_ways_to_play/)
-
-
-Related:
-- Former Factorio overview page
-- Wrong ways to play Factorio
-- Should logistic bots supply only the character or the factory as well
-
-Tags:
+- [Friday Facts #224 - Bots versus belts | Factorio](https://www.factorio.com/blog/post/fff-224)
+- [Friday Facts #225 - Bots versus belts (part 2) | Factorio](https://www.factorio.com/blog/post/fff-225)
+- [Alt-F4 #63 - Dana Dev-Blog: Spaghettirezeptgraphen](https://alt-f4.blog/de/ALTF4-63/)

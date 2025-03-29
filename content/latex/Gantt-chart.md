@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:25:54.627+01:00"
+date: "2025-03-24T07:38:36.000+01:00"
 title: "Gantt chart"
 description: "-"
 dg-publish: true
@@ -436,6 +436,8 @@ hgrid
 \end{document}
 ```
 
+# Alternatives 
+
 # Typst
 
 ![Pasted image 20241216163619.png](../Pasted-image-20241216163619.png)
@@ -491,6 +493,12 @@ hgrid
 )
 ```
 
+
+# Figma
+
+![AL JOURNAL 2.0.png](../AL-JOURNAL-2-0.png)
+
+https://www.figma.com/templates/gantt-chart/
 
 ---
 Sources:
