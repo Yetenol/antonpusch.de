@@ -1,8 +1,8 @@
 ---
-date: "2025-03-23T10:21:19.719+01:00"
+date: "2025-03-29T14:50:41.536+01:00"
 title: "Factorio"
 description: "A game about automation, logistics and network optimizations"
-dg-folder: computer/apps
+dg-folder: factorio
 dg-publish: true
 microsoft-id: 
 winget-id: 
@@ -22,6 +22,7 @@ cssclasses:
 dg-content-classes:
   - cards
 thumbnail: https://styles.redditmedia.com/t5_2wabp/styles/communityIcon_lnp25hfmcbg01.png
+dg-filename: index
 ---
 
 ![thumbnail](https://styles.redditmedia.com/t5_2wabp/styles/communityIcon_lnp25hfmcbg01.png) Factorio - A game about automation, logistics and network optimizations is a [gaming](install%20gaming%20apps.md.md) app. Factorio is a game in which you build and maintain factories.
@@ -34,13 +35,13 @@ thumbnail: https://styles.redditmedia.com/t5_2wabp/styles/communityIcon_lnp25hfm
 
 # Aspects of the game
 
-- Building supplies - Bulk craft any item without a mall
-- Train network
-- Flying robots
-- Logistics in Factorio
-- Input controls
-- Base layouts
-- Circuit networks
+- [Building supplies - Bulk craft any item without a mall](./Building-supplies.md)
+- [Train network](./Train-network.md)
+- [Flying robots](./Flying-robots.md)
+- [Logistics in Factorio](./Logistics-in-Factorio.md)
+- [Input controls](./Input-controls.md)
+- [Base layouts](./Base-layouts.md)
+- [Circuit networks](./Circuit-networks.md)
 - Main bus, Compact bus
 - City block
 - Modules
@@ -48,8 +49,8 @@ thumbnail: https://styles.redditmedia.com/t5_2wabp/styles/communityIcon_lnp25hfm
 
 # Discussions
 
-- Should logistic bots supply only the character or the factory as well
-- How far can you reach - How much can you do remotely
+- [Should logistic bots supply only the character or the factory as well](./Should-logistic-bots-supply-only-the-character-or-the-factory-as-well.md)
+- index
 - Turret creep
 
 # Playstyles
@@ -64,8 +65,8 @@ thumbnail: https://styles.redditmedia.com/t5_2wabp/styles/communityIcon_lnp25hfm
 - Produce power locally in outpost using brought-in coal
 - Rail reach all mall chests
 - Don't plan ahead
-- Wrong ways to play Factorio
-- Design factories in Factorio
+- [Wrong ways to play Factorio](../index.md)
+- index
 
 Combat
 - Use area of affect weapons like grenades, flamethrowers, poison capsules (worms)
@@ -75,16 +76,16 @@ Combat
 
 Mobility
 - Move around using personal resupply trains or by hijacking regular trains
-- Drive parallelly to the terrain [VehicleSnap](./VehicleSnap.md)
-- Cruise drive on paved roads incentivizes you to build mobility infrastructure [Pavement Drive Assist](./Pavement-Drive-Assist.md)
+- Drive parallelly to the terrain [VehicleSnap](../computer/apps/VehicleSnap.md)
+- Cruise drive on paved roads incentivizes you to build mobility infrastructure [Pavement Drive Assist](../computer/apps/Pavement-Drive-Assist.md)
 
 Remote access, far reach
-- How far can you reach - How much can you do remotely
+- index
 
 # Possible phases of the game
 
-- Jump start base
-- Starter base phase
+- [Jump start base](./Jump-start-base.md)
+- index
 
 Early game
 - Logistics: spaghetti 
@@ -127,13 +128,13 @@ Defence, Outposts
 Trains
 - Use double headed trains on bidirectional outposts and connect them with directional railroads
 - Personal resupply train that can refill from the mall
-- Refuel trains automatically [Automatic Train Fuel Stop](./Automatic-Train-Fuel-Stop.md)
+- Refuel trains automatically [Automatic Train Fuel Stop](../computer/apps/Automatic-Train-Fuel-Stop.md)
 - Place rails everywhere you want to visit like mall, defenses, miners
 - Refuel stop that auto detect train length
 
 Tweak game aspects - Does this mod go to far?
 
-- [Discover and lookup recipes in Factorio](../../Discover-and-lookup-recipes-in-Factorio.md)
+- [Discover and lookup recipes in Factorio](./Discover-and-lookup-recipes-in-Factorio.md)
 
 # External Sites
 
