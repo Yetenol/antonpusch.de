@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T19:19:42.046+01:00"
+date: "2025-03-29T15:52:34.342+01:00"
 title: Welcome to my Digital Garden
 description: "-"
 dg-publish: true
@@ -34,11 +34,9 @@ To navigate, simply follow the links between notes or search keywords. There's n
 
 ![figure movie collage.png](./figure-movie-collage.png)
 
-[Robotics](./Robotics.md)
-
-![figure robotics collection.svg](./figure-robotics-collection.svg)
 
 Other
+- [Robotics](./Robotics.md)
 - [Factorio - A game about automation, logistics and network optimizations](./factorio/index.md)
 - [Computer Language](./Computer-Language.md)
 - [Human language](./Human-language.md)
