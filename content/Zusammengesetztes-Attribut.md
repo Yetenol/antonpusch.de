@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:30.145+01:00"
+date: "2025-07-17T08:13:59.093+02:00"
 title: "Zusammengesetztes Attribut"
 description: "-"
 dg-publish: true
