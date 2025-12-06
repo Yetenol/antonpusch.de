@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:02:28.863+01:00"
+date: "2025-07-17T08:13:59.037+02:00"
 title: "Which apps should have command palettes or dark mode"
 description: "-"
 dg-publish: true
