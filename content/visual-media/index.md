@@ -1,5 +1,5 @@
 ---
-date: "2025-03-29T15:50:35.711+01:00"
+date: "2025-07-17T08:13:59.002+02:00"
 title: "Visual Media"
 description: "List movies, television series, YouTube channels, and theatrical performances"
 dg-publish: true
