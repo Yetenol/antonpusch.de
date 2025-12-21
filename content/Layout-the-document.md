@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:22:19.941+01:00"
+date: "2025-07-17T08:13:58.377+02:00"
 title: "Layout the document"
 description: "Setup margins, hyphenation, table of contents"
 dg-publish: true
