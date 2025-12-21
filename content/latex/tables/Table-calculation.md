@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:18:57.162+01:00"
+date: "2025-07-17T08:13:58.852+02:00"
 title: "Table calculation"
 description: "-"
 dg-publish: true
