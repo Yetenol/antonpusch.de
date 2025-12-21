@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:35:05.675+01:00"
+date: "2025-07-17T08:13:58.925+02:00"
 title: "Troubleshooters"
 description: "Diagnose internet, audio, printer problems"
 dg-publish: true
