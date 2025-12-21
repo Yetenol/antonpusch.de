@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T18:16:59.413+01:00"
+date: "2025-10-26T14:20:14.979+01:00"
 title: "Programm PowerShell"
 description: "Learn PowerShell's programming paradigms"
 dg-publish: true
