@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T18:17:20.442+01:00"
+date: "2025-07-17T08:13:58.393+02:00"
 title: "List all apps in PATH locations"
 description: "-"
 dg-publish: true
