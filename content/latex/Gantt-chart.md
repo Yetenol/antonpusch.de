@@ -1,5 +1,5 @@
 ---
-date: "2025-03-24T07:38:36.000+01:00"
+date: "2025-07-17T08:13:58.204+02:00"
 title: "Gantt chart"
 description: "-"
 dg-publish: true
