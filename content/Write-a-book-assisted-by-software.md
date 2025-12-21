@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:30.129+01:00"
+date: "2025-07-17T08:13:59.070+02:00"
 title: "Write a book assisted by software"
 description: "-"
 dg-publish: true
