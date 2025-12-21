@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:29.683+01:00"
+date: "2025-07-17T08:13:58.923+02:00"
 title: "Triathlon Liepnitzsee"
 description: "-"
 dg-publish: true
