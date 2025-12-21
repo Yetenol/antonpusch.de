@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:29.500+01:00"
+date: "2025-07-17T08:13:58.855+02:00"
 title: "Table with Equal Width Columns"
 description: "Typeset tables with distributed column width"
 dg-publish: true
