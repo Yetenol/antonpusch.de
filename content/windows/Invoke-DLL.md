@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:52:50.210+01:00"
+date: "2025-07-17T08:13:58.320+02:00"
 title: "Invoke DLL"
 description: "Run Dynamic Link Libraries to create shortcuts etc."
 dg-publish: true
