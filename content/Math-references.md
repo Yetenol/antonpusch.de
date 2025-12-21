@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:28.227+01:00"
+date: "2025-07-17T08:13:58.424+02:00"
 title: "Math references"
 description: "Typeset mathematical equations and expressions"
 dg-publish: true
