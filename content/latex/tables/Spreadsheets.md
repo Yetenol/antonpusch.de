@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:18:42.046+01:00"
+date: "2025-07-17T08:13:58.788+02:00"
 title: "Spreadsheets"
 description: "Calculate sum, mean, standard deviation, max, and min across selection of cells"
 dg-publish: true
