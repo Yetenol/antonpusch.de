@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T22:19:59.381+01:00"
+date: "2025-07-17T08:13:58.607+02:00"
 title: "Programming Languages"
 description: "Communicate instructions between humans and computers"
 dg-publish: true
