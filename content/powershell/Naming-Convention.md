@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T18:18:26.954+01:00"
+date: "2025-07-17T08:13:58.478+02:00"
 title: "Naming Convention"
 description: "Name PowerShell functions with one of the predefined verbs"
 dg-publish: true
