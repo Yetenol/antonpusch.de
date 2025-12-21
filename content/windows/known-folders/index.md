@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T21:41:16.063+01:00"
+date: "2025-07-17T08:13:58.346+02:00"
 title: "Known folders"
 description: "Access the recycle bin, desktop, downloads folder"
 dg-publish: true
