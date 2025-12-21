@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:51:21.565+01:00"
+date: "2025-07-17T08:13:58.825+02:00"
 title: "Sudo"
 description: "Switch and test elevated execution, Run as Administrator"
 dg-publish: true
