@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:29.823+01:00"
+date: "2025-07-17T08:13:58.941+02:00"
 title: "Unicode characters"
 description: "Push files to the top of bottom of the list in alphabetical sorting"
 dg-publish: true
