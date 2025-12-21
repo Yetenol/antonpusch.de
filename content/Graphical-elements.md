@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:25:16.452+01:00"
+date: "2025-07-17T08:13:58.227+02:00"
 title: "Graphical elements"
 description: "Standardize tables, images, plots"
 dg-publish: true
