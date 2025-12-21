@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:29.043+01:00"
+date: "2025-07-17T08:13:58.711+02:00"
 title: "Rust"
 description: "Write code that works and compiles reliably forever"
 dg-publish: true
