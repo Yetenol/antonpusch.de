@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:51:21.229+01:00"
+date: "2025-10-20T09:31:21.691+02:00"
 title: "Links"
 description: "Create shortcut, symbolic link, hard link"
 dg-publish: true
