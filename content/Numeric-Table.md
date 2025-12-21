@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:28.379+01:00"
+date: "2025-07-17T08:13:58.504+02:00"
 title: "Numeric Table"
 description: "Typeset tables with numeric values, and display a symbol legend"
 dg-publish: true
