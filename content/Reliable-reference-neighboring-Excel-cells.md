@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:02:28.753+01:00"
+date: "2025-07-17T08:13:58.697+02:00"
 title: "Reliable reference neighboring Excel cells"
 description: "-"
 dg-publish: true
