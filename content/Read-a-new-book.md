@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:28.925+01:00"
+date: "2025-08-03T15:04:38.029+02:00"
 title: "Read a new book"
 description: "Bücherliste"
 dg-publish: true
