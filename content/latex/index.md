@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T09:54:42.642+01:00"
+date: "2025-07-26T08:56:17.765+02:00"
 title: "LaTeX"
 description: "Typeset mathematical and scientific notation, handle cross-referencing and citations, and position images according to defined placement rules"
 dg-publish: true
@@ -156,3 +156,5 @@ Related:
 
 Tags:
 [Markup and typesetting systems - Produce printed or digital documents aesthetically pleasing with readable typography](../Markup-and-typesetting-systems.md)
+
+https://github.com/mrkline/modern-latex
