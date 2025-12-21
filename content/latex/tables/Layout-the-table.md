@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:19:21.593+01:00"
+date: "2025-07-17T08:13:58.378+02:00"
 title: "Layout the table"
 description: "-"
 dg-publish: true
