@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:21:56.791+01:00"
+date: "2025-07-17T08:13:58.329+02:00"
 title: "Java"
 description: "A platform independent, object-oriented programming framework designed to be simple, secure, and robust"
 dg-publish: true
