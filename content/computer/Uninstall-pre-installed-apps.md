@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:14:32.053+01:00"
+date: "2025-07-17T08:13:58.942+02:00"
 title: "Uninstall pre-installed apps"
 description: "-"
 dg-publish: true
