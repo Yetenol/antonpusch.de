@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T10:36:38.292+01:00"
+date: "2025-07-17T08:13:58.187+02:00"
 title: "Format text"
 description: "Style body text in monospace, macros with slash"
 dg-publish: true
