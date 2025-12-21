@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:02:28.657+01:00"
+date: "2025-07-17T08:13:58.321+02:00"
 title: "Invoke a shell command in VS Code's integrated terminal using a keybindung"
 description: "-"
 dg-publish: true
