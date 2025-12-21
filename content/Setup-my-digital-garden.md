@@ -1,5 +1,5 @@
 ---
-date: "2025-03-24T01:38:20.837+01:00"
+date: "2025-08-09T14:13:57.461+02:00"
 title: "Setup my digital garden"
 description: "-"
 dg-publish: true
@@ -49,7 +49,7 @@ Edit [Enveloppe > data.json](D:\Notes\.obsidian\plugins\obsidian-mkdocs-publishe
 "censorText": [
   {
     "entry": "/(?<!\\n)^---/",
-    "replace": "---\ndate: \"2025-03-24T01:38:20.837+01:00\"\ntitle: \"Setup my digital garden\"\ndescription: \"-\"\ndg-filename: \"setup my digital garden\"",
+    "replace": "---\ndate: \"2025-08-09T14:13:57.461+02:00\"\ntitle: \"Setup my digital garden\"\ndescription: \"-\"\ndg-filename: \"setup my digital garden\"",
     "flags": "", "after": false
   },
   {
@@ -111,7 +111,7 @@ Open *Obsidian Setting > Enveloppe >File path*
 
 ## Frontmatter playground
 
-- **modified**: 2025-03-24T00:00:00.000+01:00
+- **modified**: 2025-08-09T00:00:00.000+02:00
 - **title**: Setup my digital garden
 - **description**: 
 - **title js**: Setup my digital garden
@@ -283,7 +283,7 @@ td>pre {
 }
 ```
 
-Workflow to create, collaborate, publish notes in my knowledge base
+[Workflow to create, collaborate, publish notes in my knowledge base](./Workflow-to-create-collaborate-publish-notes-in-my-knowledge-base.md)
 
 ![d2 workflow knowledge base.svg](./d2-workflow-knowledge-base.svg)
 
