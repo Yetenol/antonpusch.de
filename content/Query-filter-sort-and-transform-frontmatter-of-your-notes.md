@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:25:55.435+01:00"
+date: "2025-07-17T08:13:58.640+02:00"
 title: "Query, filter, sort and transform frontmatter of your notes"
 description: "-"
 dg-publish: true
