@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:29.469+01:00"
+date: "2025-07-17T08:13:58.848+02:00"
 title: "TYPST"
 description: "A modern, readable, robust, fast typesetting system"
 dg-publish: true
