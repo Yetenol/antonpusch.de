@@ -1,22 +1,25 @@
 ---
-date: "2025-03-29T14:51:40.898+01:00"
+date: "2025-08-24T12:21:03.038+02:00"
 title: "Train network"
 description: "Design schedules interaction of pickup, drop off stations"
 dg-folder: factorio
 dg-publish: true
 ---
-Trains
+# Trains
+
 - **Single resource**: Only one item, or fluid per train, Massively **simplifies schedules**
 - **Refuel**: Interrupt refueling station, Can force upgrade the fuel type
 - **Generic** schedules: Use train groups, Use generic schedules using interrupts dependent on picked up cargo
 - **Train limit 1**: Replaces train stackers, **Prevent** train **queues** on the main track, 
 - **Bidirectional** trains: Locomotives on both ends of the train, Allow more **compact** stations using terminus[^1] aka. terminal station
 
-Pickup stations
+# Output stations
+
 - Generic item, or fluid pickup
 - Buffer one train load (40 slots) per wagon, usually 4 chests limited to 10 slots each
 
-Dropoff stations
+# Input stations
+
 - Specific to one item, or fluid
 - Generic pickup stations
 - Train must always unload completely
@@ -24,7 +27,8 @@ Dropoff stations
     - multiple buffer chests per wagon
     - balance consumption between wagons
 
-Rail tracks
+# Rail tracks
+
 - Separate tracks per direction: Prevents deadlocks
 - Leave sufficient space for signals between lanes (6 tiles in 1.1)
 - Don't align to grid: Grids are inflexible, Adapt to terrain
@@ -32,6 +36,16 @@ Rail tracks
 - **Rail planner**: Don't use blueprint aligned to a grid, Adapt your tracks to the terrain instead of landfilling and flattening it to fit your blueprint
 - Redundant routes: Bypass high traffic, if you temporary stop on main track
 - No main base: Distributed production if more expandable and spreads out traffic
+
+# Schedules
+
+```d2
+Input: "[*] Input"
+Output
+Depot
+Depot -> Input
+```
+
 
 Junctions
 
