@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:28.944+01:00"
+date: "2025-07-31T14:22:38.499+02:00"
 title: "RegEx"
 description: "Use Regular Expressions to search, extract and manipulate text in a specified pattern"
 dg-publish: true
