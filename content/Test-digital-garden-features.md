@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T23:30:35.506+01:00"
+date: "2025-07-17T08:13:58.869+02:00"
 title: "Test digital garden features"
 description: "-"
 dg-publish: true
