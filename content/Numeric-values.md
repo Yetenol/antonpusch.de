@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:28.509+01:00"
+date: "2025-07-17T08:13:58.508+02:00"
 title: "Numeric values"
 description: "Typeset (large) numbers, physical quantities, units, money"
 dg-publish: true
