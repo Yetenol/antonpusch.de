@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:35:31.616+01:00"
+date: "2025-07-17T08:14:04.547+02:00"
 title: "ms-settings"
 description: "Open Windows settings pages like display"
 dg-publish: true
