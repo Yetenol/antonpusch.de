@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:25:35.899+01:00"
+date: "2025-07-17T08:13:58.458+02:00"
 title: "Molecules"
 description: "Dynamically draw structural formulas of chemical molecules as a vector graphic"
 dg-publish: true
