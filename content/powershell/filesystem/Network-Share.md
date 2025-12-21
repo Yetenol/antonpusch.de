@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T10:39:56.316+01:00"
+date: "2025-07-17T08:13:58.487+02:00"
 title: "Network Share"
 description: "Mount a Windows network share as file system drive to sync files via SMB in PowerShell"
 dg-publish: true
