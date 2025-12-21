@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:27.425+01:00"
+date: "2025-07-17T08:13:58.251+02:00"
 title: "Hide the first-level bullet points from results of list queries"
 description: "-"
 dg-publish: true
