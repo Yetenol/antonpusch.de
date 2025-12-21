@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:50:41.660+01:00"
+date: "2025-07-17T08:13:58.706+02:00"
 title: "Robocopy"
 description: "Mirror directory with Robust File Copy for Windows"
 dg-publish: true
