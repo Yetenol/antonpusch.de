@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:51:21.279+01:00"
+date: "2025-07-17T08:13:58.447+02:00"
 title: "Mirror directory to SFTP"
 description: "Use WinSCP module to mirror a directory to a SFTP remote with PowerShell"
 dg-publish: true
