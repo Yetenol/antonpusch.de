@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:23:33.025+01:00"
+date: "2025-07-17T08:13:58.196+02:00"
 title: "Function legend"
 description: "Show formulas for multiple functions"
 dg-publish: true
