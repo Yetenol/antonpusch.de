@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:19:47.019+01:00"
+date: "2025-07-17T08:13:58.466+02:00"
 title: "More table examples, mainly pgfplotstable"
 description: "-"
 dg-publish: true
