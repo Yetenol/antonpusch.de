@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:20:41.993+01:00"
+date: "2025-07-26T09:01:32.193+02:00"
 title: "Symbols"
 description: "Lookup mathematical symbols, operations, relations, and arrows"
 dg-publish: true
@@ -90,7 +90,7 @@ $$
 \begin{gather*}
 \min\, \max\, \log  \ln  \det  \lim \tag{1a} \\
 \sin\, \cos\, \tan\, \arcsin\, \arccos\, \arctan \tag{1b} \\
-x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x,\,  x sin() x} \tag{1c} \\
+x \sin \alpha,\, x \sin(\alpha),\, \sin^2\alpha, \cancel{x\mathrm{sin}x},\,  \cancel{x sin() x} \tag{1c} \\
 \lim_{a \to \infty}\, \lim\nolimits_{a \to \infty};\; 
 {\textstyle \sum_0^\infty \sum\limits_0^\infty};\; 
 \operatorname{pre-norm}()\, \mathop{\mathbb{P}_0}_a^b()  \tag{1d}
