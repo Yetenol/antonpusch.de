@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T10:17:13.809+01:00"
+date: "2025-07-17T08:13:58.590+02:00"
 title: "Plots"
 description: "Dynamically plot mathematical functions, values as a vector graphic"
 dg-publish: true
