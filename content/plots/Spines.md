@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:23:22.963+01:00"
+date: "2025-07-17T08:13:58.786+02:00"
 title: "Spines"
 description: "Place axis spines of plots"
 dg-publish: true
