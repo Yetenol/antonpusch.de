@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:29.383+01:00"
+date: "2025-07-17T08:13:58.805+02:00"
 title: "Stoch HA5 zum 2023-05-26"
 description: "-"
 dg-publish: true
