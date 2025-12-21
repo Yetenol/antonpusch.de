@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:50:41.392+01:00"
+date: "2025-07-17T08:13:58.291+02:00"
 title: "Import information out of files"
 description: "-"
 dg-publish: true
