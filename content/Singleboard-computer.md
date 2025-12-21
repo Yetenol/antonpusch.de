@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:29.323+01:00"
+date: "2025-07-17T08:13:58.764+02:00"
 title: "Singleboard computer"
 description: "-"
 dg-publish: true
