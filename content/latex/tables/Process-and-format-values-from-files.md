@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:19:13.494+01:00"
+date: "2025-07-17T08:13:58.603+02:00"
 title: "Process, and format values from files"
 description: "-"
 dg-publish: true
