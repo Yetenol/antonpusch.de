@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:26:18.016+01:00"
+date: "2025-07-17T08:13:58.380+02:00"
 title: "Learn and troubleshoot LaTeX"
 description: "Read (package) documentation, cheat sheets, tutorials"
 dg-publish: true
