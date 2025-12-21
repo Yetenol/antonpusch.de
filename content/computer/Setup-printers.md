@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:19:04.116+01:00"
+date: "2025-07-17T08:13:58.747+02:00"
 title: "Setup printers"
 description: "Install drivers, setup scanning software"
 dg-publish: true
