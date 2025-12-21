@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T18:17:29.107+01:00"
+date: "2025-07-17T08:13:58.847+02:00"
 title: "TUI Choice Menu"
 description: "Offer different options in a command line menu"
 dg-publish: true
