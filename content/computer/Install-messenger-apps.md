@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:18:15.750+01:00"
+date: "2025-07-17T08:13:58.308+02:00"
 title: "Install messenger apps"
 description: "-"
 dg-publish: true
@@ -13,18 +13,9 @@ dg-content-classes:
 dg-folder: computer
 ---
 
-| Name                                                 | Sources                                                                                                                                                                                                                                                                  | Categories | Description                                                                                                   |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------------------------------------------------------------------------------------------------------------- |
-| **[eM Client](./apps/eM-Client.md)**                 | [Microsoft Store](ms-windows-store://pdp/?ProductId=9NM8S4PVF0N2&mode=mini) , [Website](https://www.emclient.com/dist/latest/setup.msi)                                                                                                                                  | Messenger  | eM Client is a powerful email client and productivity tool with an intuitive and familiar interface.          |
-| **[WhatsApp](./apps/WhatsApp.md)**                   | [Microsoft Store](ms-windows-store://pdp/?ProductId=9nksqgp7f2nh&mode=mini) , [Website](https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe) , <pre><code class='language-powershell'>winget install -e WhatsApp.WhatsApp</code></pre>                | Messenger  | Private messaging across the world                                                                            |
-| **[Unigram](./apps/Unigram.md)**                     | [Microsoft Store](ms-windows-store://pdp/?ProductId=9n97zckpd60q&mode=mini) , [Github](https://github.com/UnigramDev/Unigram/releases/latest)                                                                                                                            | Messenger  | Pure instant messaging — simple, fast, secure, and synced across all your devices. One of the world's…        |
-| **[Discord](./apps/Discord.md)**                     | [Microsoft Store](ms-windows-store://pdp/?ProductId=xpdc2rh70k22mn&mode=mini) , [Website](https://discord.com/download) , <pre><code class='language-powershell'>winget install -e Discord.Discord</code></pre>                                                          | Messenger  | Discord is where you can make a home for your communities and friends. Where you can stay close and have…     |
-| **[Threema](./apps/Threema.md)**                     | [Website](https://releases.threema.ch/web-electron/v1/release/Threema-Latest.exe) , <pre><code class='language-powershell'>winget install -e Threema.Threema</code></pre>                                                                                                | Messenger  | Threema is a paid cross-platform encrypted instant messaging app developed by Threema GmbH in Switzerland…    |
-| **[Zoom](./apps/Zoom.md)**                           | [Microsoft Store](ms-windows-store://pdp/?ProductId=xp99j3kp4xz4vv&mode=mini) , [Website](https://zoom.us/download)                                                                                                                                                      | Messenger  | Start or join a secure meeting with flawless video and audio, instant screen sharing, and cross-platform…     |
-| **[Mail and Calendar](./apps/Mail-and-Calendar.md)** | [Microsoft Store](ms-windows-store://pdp/?ProductId=9wzdncrfhvqm&mode=mini)                                                                                                                                                                                              | Messenger  | The Mail and Calendar apps help you stay up to date on your email, manage your schedule and stay in touch…    |
-| **[Signal](./apps/Signal.md)** ⊘ Discarded           | [Website](https://signal.org/en/download/) , <pre><code class='language-powershell'>winget install -e OpenWhisperSystems.Signal</code></pre>                                                                                                                             | Messenger  | Say "hello" to a different messaging experience. An unexpected focus on privacy, combined with all of…        |
-| **[Teams](./apps/Teams.md)** ⊘ Discarded             | [Microsoft Store](ms-windows-store://pdp/?ProductId=XP8BT8DW290MPQ&mode=mini) , [Website](https://www.microsoft.com/en-us/microsoft-teams/download-app#desktopAppDownloadregion) , <pre><code class='language-powershell'>winget install -e Microsoft.Teams</code></pre> | Messenger  | Whether you’re working with teammates on a project or planning a weekend activity with loved ones, Microsoft… |
-
+```dynamic-embed
+[[List apps of this category]]
+```
 
 ---
 Sources:
