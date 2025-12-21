@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:27.236+01:00"
+date: "2025-07-17T08:13:58.199+02:00"
 title: "GDB"
 description: "Debug C Programs with the GNU Debugger"
 dg-publish: true
