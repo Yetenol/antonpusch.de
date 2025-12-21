@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:14:12.847+01:00"
+date: "2025-07-17T08:13:58.302+02:00"
 title: "Install Windows 11 with 2 partitions"
 description: "-"
 dg-publish: true
