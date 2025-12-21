@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:27.457+01:00"
+date: "2025-11-10T12:03:20.796+01:00"
 title: "Human language"
 description: "-"
 dg-publish: true
