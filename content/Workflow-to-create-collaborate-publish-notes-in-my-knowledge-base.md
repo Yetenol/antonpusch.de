@@ -1,30 +1,9 @@
 ---
-date: "2025-03-24T01:57:17.391+01:00"
+date: "2025-08-09T14:21:38.595+02:00"
 title: "Workflow to create, collaborate, publish notes in my knowledge base"
 description: "-"
 dg-publish: true
 ---
-
-```mermaid
-flowchart LR
-    subgraph notes
-    math
-    wikilinks
-    images
-    subgraph "Codeblock" 
-    figure[LaTeX figures]
-    end
-    subgraph fields
-    4["frontmatter \n inline queries \n block queries"]
-    end
-    end
-    subgraph one [attachments]
-    SVG
-    PDF
-    PDF -- pdf2svg --> SVG
-    end
-    figure -- pdflatex --> PDF
-```
 
 ![d2 workflow knowledge base.svg](./d2-workflow-knowledge-base.svg)
 
