@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T18:15:21.678+01:00"
+date: "2025-07-17T08:13:58.379+02:00"
 title: "Learn and Troubleshoot Powershell"
 description: "Discover commands, and access documentation"
 dg-publish: true
