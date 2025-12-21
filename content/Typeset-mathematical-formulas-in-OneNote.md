@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T12:02:28.805+01:00"
+date: "2025-07-17T08:13:58.934+02:00"
 title: "Typeset mathematical formulas in OneNote"
 description: "-"
 dg-publish: true
