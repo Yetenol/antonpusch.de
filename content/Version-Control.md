@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:30.016+01:00"
+date: "2025-07-17T08:13:58.993+02:00"
 title: "Version Control"
 description: "Track, commit, push, rebase changes in VS Code"
 dg-publish: true
