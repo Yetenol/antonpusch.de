@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:15:22.516+01:00"
+date: "2025-07-17T08:13:58.754+02:00"
 title: "Showcase of math equations"
 description: "-"
 dg-publish: true
