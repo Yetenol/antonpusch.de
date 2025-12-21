@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T19:35:37.131+01:00"
+date: "2025-07-17T08:13:58.241+02:00"
 title: "Handle data"
 description: "Handle, Import, Export, Filter and RegEx query objects in PowerShell"
 dg-publish: true
