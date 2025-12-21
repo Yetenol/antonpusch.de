@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T20:50:41.476+01:00"
+date: "2025-07-17T08:13:58.612+02:00"
 title: "Properties"
 description: "Inspect, filter, select, enrich, and sort objects"
 dg-publish: true
