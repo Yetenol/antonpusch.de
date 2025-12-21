@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:29:20.845+01:00"
+date: "2025-11-30T20:53:21.222+01:00"
 title: "Icon libraries"
 description: "Locate and use built-in icon image, network, … libraries"
 dg-publish: true
