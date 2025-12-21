@@ -1,5 +1,5 @@
 ---
-date: "2025-03-23T17:52:40.969+01:00"
+date: "2025-10-27T08:27:23.651+01:00"
 title: "PowerShell"
 description: "A command-line shell and scripting language to manage Windows system and automate administrative tasks"
 dg-publish: true
@@ -8,7 +8,6 @@ dg-folder: powershell
 dg-filename: index
 ---
 PowerShell is a command-line shell and scripting language developed by Microsoft for Windows, designed to provide a powerful and flexible interface for managing Windows systems and automating administrative tasks.
-
 
  [Essentials - Access documentation, log data, handle errors in PowerShell](./Essentials.md)
 
@@ -33,6 +32,12 @@ Read-Host -AsSecureString | ConvertFrom-SecureString > "encrypted.txt"
     NamedCaptureGroup = $_.Groups["name"].value
 }}
 ```
+
+Strong typing - Use types, classes, add dynamic members to objects
+
+Modules - Structure and load reusable code from library
+
+Script distribution - Use git to sync scripts and documentation to remote servers
 
  [File system operations - Use paths, get meta data, link, download, and encrypt files and folders](./filesystem/index.md)
 
