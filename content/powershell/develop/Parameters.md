@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T18:17:38.376+01:00"
+date: "2025-07-17T08:13:58.544+02:00"
 title: "Parameters"
 description: "Autocomplete or validate parameters for functions and scripts"
 dg-publish: true
