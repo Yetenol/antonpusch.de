@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:28.621+01:00"
+date: "2025-07-17T08:13:58.536+02:00"
 title: "PGF, Tikz"
 description: "Generate vector graphics, visualize data"
 dg-publish: true
