@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T18:17:54.774+01:00"
+date: "2025-07-17T08:13:58.394+02:00"
 title: "List all bluetooth devices"
 description: "-"
 dg-publish: true
