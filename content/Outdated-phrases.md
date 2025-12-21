@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T07:21:28.610+01:00"
+date: "2025-07-17T08:13:58.534+02:00"
 title: "Outdated phrases"
 description: "-"
 dg-publish: true
