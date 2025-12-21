@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T21:32:16.130+01:00"
+date: "2025-07-17T08:13:58.979+02:00"
 title: "User folders"
 description: "Locate or redirect the download, desktop, This PC folder"
 dg-publish: true
