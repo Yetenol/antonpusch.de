@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:16:54.052+01:00"
+date: "2025-09-09T10:48:43.829+02:00"
 title: "Networks, Commutative diagrams"
 description: "Dynamically draw graph networks as a vector graphic"
 dg-publish: true
@@ -19,8 +19,6 @@ C @>d>> D
 \end{CD}
 \end{align*}
 $$
-
-
 
 # Finite state automata and Turing machines - Automata TikZ
 
