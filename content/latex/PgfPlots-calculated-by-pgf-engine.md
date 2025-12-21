@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:22:53.515+01:00"
+date: "2025-07-17T08:13:58.563+02:00"
 title: "PgfPlots calculated by pgf engine"
 description: "-"
 dg-publish: true
