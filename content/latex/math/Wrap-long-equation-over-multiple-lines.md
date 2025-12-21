@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T10:36:38.469+01:00"
+date: "2025-07-17T08:13:59.069+02:00"
 title: "Wrap long equation over multiple lines"
 description: "-"
 dg-publish: true
