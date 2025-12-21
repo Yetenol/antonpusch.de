@@ -1,5 +1,5 @@
 ---
-date: "2025-03-29T14:51:49.042+01:00"
+date: "2025-07-17T08:13:58.401+02:00"
 title: "Logistics in Factorio"
 description: "-"
 dg-folder: factorio
