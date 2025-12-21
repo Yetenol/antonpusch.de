@@ -1,5 +1,5 @@
 ---
-date: "2025-03-22T11:26:04.047+01:00"
+date: "2025-07-17T08:13:58.247+02:00"
 title: "Heatmaps"
 description: "-"
 dg-publish: true
